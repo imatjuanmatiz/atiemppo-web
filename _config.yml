@@ -1,0 +1,52 @@
+# Configuración del sitio
+title: Atiemppo
+description: Optimización de visibilidad en inteligencia artificial para marcas y equipos de América Latina
+url: "https://atiemppo.com"
+baseurl: ""
+
+# SEO
+author: Juan Pablo Matiz - Atiemppo
+twitter_username: atiemppo
+github_username: imatjuanmatiz
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Configuración de permalinks
+permalink: /blog/:year/:month/:day/:title/
+
+# Configuración de colecciones
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Juan Pablo Matiz"
+
+# Exclude from processing
+exclude:
+  - README.md
+  - COWORK_SETUP.md
+  - GODADDY_SETUP.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Timezone
+timezone: America/Bogota
+
+# Encoding
+encoding: utf-8
