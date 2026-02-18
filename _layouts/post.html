@@ -1,56 +1,27 @@
 ---
 layout: default
 ---
-
 <article class="post-article">
   <header class="post-header">
     <div class="post-meta-top">
-      {% if page.lab %}
-        <span class="post-lab-tag">{{ page.lab }}</span>
-      {% endif %}
-      <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">
-        {{ page.date | date: "%d de %B de %Y" }}
-      </time>
-      {% if page.author %}
-        <span class="post-author">· {{ page.author }}</span>
-      {% endif %}
+      {% if page.lab %}<span class="post-lab-tag">{{ page.lab }}</span>{% endif %}
+      <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d de %B de %Y" }}</time>
+      {% if page.author %}<span class="post-author">· {{ page.author }}</span>{% endif %}
     </div>
     <h1 class="post-title">{{ page.title }}</h1>
-    {% if page.description %}
-      <p class="post-excerpt">{{ page.description }}</p>
-    {% endif %}
+    {% if page.description %}<p class="post-excerpt">{{ page.description }}</p>{% endif %}
   </header>
-
-  <div class="post-body">
-    {{ content }}
-  </div>
-
+  <div class="post-body">{{ content }}</div>
   <footer class="post-footer">
     {% if page.tags %}
-      <div class="post-tags">
-        {% for tag in page.tags %}
-          <span class="post-tag">#{{ tag }}</span>
-        {% endfor %}
-      </div>
+      <div class="post-tags">{% for tag in page.tags %}<span class="post-tag">#{{ tag }}</span>{% endfor %}</div>
     {% endif %}
-
     <a href="/blog/" class="post-back">← Volver al blog</a>
   </footer>
 </article>
-
 {% if page.previous.url or page.next.url %}
 <nav class="post-nav">
-  {% if page.previous.url %}
-    <a href="{{ page.previous.url }}" class="post-nav-link post-nav-prev">
-      <span class="post-nav-label">← Anterior</span>
-      <span class="post-nav-title">{{ page.previous.title }}</span>
-    </a>
-  {% endif %}
-  {% if page.next.url %}
-    <a href="{{ page.next.url }}" class="post-nav-link post-nav-next">
-      <span class="post-nav-label">Siguiente →</span>
-      <span class="post-nav-title">{{ page.next.title }}</span>
-    </a>
-  {% endif %}
+  {% if page.previous.url %}<a href="{{ page.previous.url }}" class="post-nav-link"><span class="post-nav-label">← Anterior</span><span class="post-nav-title">{{ page.previous.title }}</span></a>{% endif %}
+  {% if page.next.url %}<a href="{{ page.next.url }}" class="post-nav-link post-nav-next"><span class="post-nav-label">Siguiente →</span><span class="post-nav-title">{{ page.next.title }}</span></a>{% endif %}
 </nav>
 {% endif %}

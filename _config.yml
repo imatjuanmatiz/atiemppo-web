@@ -1,58 +1,40 @@
-# Configuración del sitio
-title: Atiemppo
-tagline: Agencia de Agentes Inteligentes & Soluciones de Contexto
-description: Orquestamos agentes inteligentes que comprenden el contexto real de tu negocio y actúan de inmediato. Metodología C.A.D.A. — Bogotá, Colombia.
+# ═══════════════════════════════════════
+# ATIEMPPO — Jekyll Configuration
+# ═══════════════════════════════════════
+title: "Atiemppo — Agencia de Agentes Inteligentes & Soluciones de Contexto"
+description: "Orquestamos agentes inteligentes que entienden el contexto real de tu negocio y actúan de inmediato. Metodología C.A.D.A. — Bogotá, Colombia."
 url: "https://atiemppo.com"
 baseurl: ""
+lang: "es-CO"
+timezone: "America/Bogota"
 
-# SEO & AEO
-author: Juan Pablo Matiz — Atiemppo
-twitter_username: atiemppo
-github_username: imatjuanmatiz
-lang: es-CO
+# Author
+author:
+  name: "Juan Pablo Matiz"
+  email: "juanmatiz@atiemppo.co"
+  twitter: "@atiemppo"
 
-# LLMs.txt autodiscovery
-llms_txt: /llms.txt
-
-# Build settings
+# Build
 markdown: kramdown
-theme: minima
+highlighter: rouge
+permalink: /blog/:year/:month/:title/
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Collections
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Permalinks
-permalink: /blog/:year/:month/:day/:title/
+# AEO
+llms_txt: /llms.txt
 
-# Colecciones
-collections:
-  posts:
-    output: true
-    permalink: /blog/:year/:month/:day/:title/
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      author: "Juan Pablo Matiz"
-
-# Exclude from processing
+# Exclude from build
 exclude:
-  - README.md
-  - COWORK_SETUP.md
-  - GODADDY_SETUP.md
   - Gemfile
   - Gemfile.lock
+  - README.md
   - node_modules
   - vendor
-  - index.md
-
-# Timezone
-timezone: America/Bogota
-
-# Encoding
-encoding: utf-8
