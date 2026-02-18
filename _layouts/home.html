@@ -1,118 +1,26 @@
 ---
 layout: none
-title: Atiemppo — Agencia de Agentes Inteligentes & Soluciones de Contexto
-description: Orquestamos agentes inteligentes que entienden el contexto real de tu negocio y actúan de inmediato. Metodología C.A.D.A. — Bogotá, Colombia.
-permalink: /
 ---
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Atiemppo — Inteligencia en Acción</title>
-<meta name="description" content="Orquestamos agentes inteligentes que entienden el contexto real de tu negocio y actúan de inmediato. Metodología C.A.D.A. — Bogotá, Colombia."/>
-
-<!-- AEO / GEO Meta Tags -->
+<title>{{ page.title | default: site.title }}</title>
+<meta name="description" content="{{ page.description | default: site.description }}"/>
 <meta name="ai-content-declaration" content="human-authored"/>
 <meta name="llms-txt" content="https://atiemppo.com/llms.txt"/>
 <link rel="alternate" type="text/plain" title="LLMs.txt" href="/llms.txt"/>
-
-<!-- Open Graph -->
-<meta property="og:title" content="Atiemppo — Agencia de Agentes Inteligentes"/>
-<meta property="og:description" content="Orquestamos agentes que entienden el contexto real de tu negocio y actúan de inmediato. Metodología C.A.D.A. Bogotá, Colombia."/>
+<meta property="og:title" content="{{ page.title | default: site.title }}"/>
+<meta property="og:description" content="{{ page.description | default: site.description }}"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://atiemppo.com"/>
 <meta property="og:locale" content="es_CO"/>
-
-<!-- Structured Data: Organization -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Atiemppo",
-  "alternateName": "Atiemppo Lab",
-  "description": "Agencia de Agentes Inteligentes y Soluciones de Contexto para empresas en Colombia y Latinoamérica. Metodología C.A.D.A.: Contexto, Acción, Datos, Auditable.",
-  "url": "https://atiemppo.com",
-  "foundingDate": "2013",
-  "foundingLocation": "Bogotá, Colombia",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Calle 146 #7-64, oficina 401",
-    "addressLocality": "Bogotá",
-    "addressCountry": "CO"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+57-310-768-7010",
-    "contactType": "customer service",
-    "email": "juanmatiz@atiemppo.co"
-  },
-  "founder": {
-    "@type": "Person",
-    "name": "Juan Pablo Matiz",
-    "jobTitle": "Fundador & CEO",
-    "email": "juanmatiz@atiemppo.co",
-    "sameAs": "https://linkedin.com/in/juanmatizg"
-  },
-  "knowsAbout": ["Agentes inteligentes","Automatización operativa","Business Intelligence","Transporte y logística Colombia","SICETAC","AI Engine Optimization","Transformación digital"],
-  "areaServed": ["Colombia","América Latina"],
-  "sameAs": ["https://dashboards.atiemppo.co","https://insigniaimpact.com"]
-}
-</script>
-
-<!-- Structured Data: FAQ -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "¿Qué es Atiemppo?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Atiemppo es una agencia colombiana que orquesta agentes inteligentes y soluciones de contexto para empresas en Colombia y Latinoamérica. Diseñamos agentes que comprenden el entorno real del negocio y actúan de forma inmediata, medible y auditable."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Qué es la metodología C.A.D.A.?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "C.A.D.A. es la metodología propia de Atiemppo: Contexto (capturar el entorno real), Acción (el agente actúa en tiempo real), Datos (evidencia dinámica), Auditable (cada paso es trazable y verificable)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Qué es ATICA?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "ATICA es el primer agente especializado en el mercado colombiano del transporte, desarrollado por Atiemppo. Responde, analiza y entiende la complejidad regulatoria y tarifaria del transporte en Colombia en tiempo real."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Qué es SICETAC-LAB?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "SICETAC-LAB es el primer sistema dinámico sobre el SICETAC colombiano. Permite cálculo instantáneo de costos y optimización de rutas de transporte en Colombia y Latinoamérica."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Cómo contactar a Atiemppo?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Email: juanmatiz@atiemppo.co. WhatsApp: +57 310 768 7010. Diagnóstico gratuito de 30 minutos disponible en https://atiemppo.com. Sede en Bogotá, Colombia."
-      }
-    }
-  ]
-}
-</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <style>
+
 :root{
   --bg:#060810;
   --surface:#0d1117;
@@ -950,446 +858,301 @@ footer{
   .form-row{grid-template-columns:1fr}
   .hero-stats{flex-direction:column;align-items:center}
 }
+
 </style>
 </head>
 <body>
 
-<!-- ══ NAV ══ -->
-<nav>
-  <a href="#" class="nav-logo">
-    <div class="nav-logo-dot"></div>
-    ATIEMPPO
-  </a>
-  <ul class="nav-links">
-    <li><a href="#cada">Método C.A.D.A.</a></li>
-    <li><a href="#nosotros">Nosotros</a></li>
-    <li><a href="#casos">Casos</a></li>
-    <li><a href="#labs">Labs</a></li>
-    <li><a href="#blog">Blog</a></li>
-    <li><a href="#contacto" class="nav-cta">Iniciar experimento</a></li>
-  </ul>
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <span class="logo-dot"></span>
+      <span class="logo-text">ATIEMPPO</span>
+    </a>
+    <button class="nav-burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#cada">Método C.A.D.A.</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#casos">Casos</a></li>
+      <li><a href="#labs">Labs</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="#contacto" class="nav-cta">Iniciar experimento</a></li>
+    </ul>
+  </div>
 </nav>
 
-<!-- ══ HERO ══ -->
-<section class="hero">
+<!-- HERO -->
+<section class="hero" id="inicio">
   <canvas id="bg"></canvas>
-  <div class="hero-glow"></div>
-
-  <div class="hero-inner">
-    <div class="hero-badge">
-      <div class="hero-badge-dot"></div>
-      Agencia de Agentes &amp; Soluciones de Contexto
-    </div>
-
-    <h1 class="hero-h1">
-      ¿TU OPERACIÓN<br/>YA <em>ACTÚA</em> SOLA?
+  <div class="hero-content container">
+    <div class="hero-badge reveal">{{ page.hero.badge }}</div>
+    <h1 class="hero-title reveal">
+      {{ page.hero.headline_1 }}<br/>
+      <span class="hero-cyan">{{ page.hero.headline_2 }}</span>
     </h1>
-
-    <p class="hero-sub">
-      La mayoría de empresas tienen datos. Pocas tienen agentes que actúen con ellos.<br/>
-      <strong style="color:var(--white);font-weight:500">Orquestamos agentes inteligentes</strong> que entienden el contexto real de tu negocio y actúan de inmediato.
-    </p>
-
-    <p class="hero-method">Metodología C.A.D.A. · Contexto → Acción → Datos → Auditable</p>
-
-    <div class="hero-cta-group">
-      <a href="#contacto" class="btn btn-primary">
-        Inicia un experimento — Diagnóstico 30 min gratis →
-      </a>
-      <a href="#cada" class="btn btn-ghost">Ver el método</a>
+    <p class="hero-sub reveal">{{ page.hero.subhead }}</p>
+    <div class="hero-ctas reveal">
+      <a href="{{ page.hero.cta_primary_url }}" class="btn-primary">{{ page.hero.cta_primary }}</a>
+      <a href="{{ page.hero.cta_secondary_url }}" class="btn-ghost">{{ page.hero.cta_secondary }}</a>
     </div>
-
-    <div class="hero-stats">
-      <div class="hero-stat">
-        <span class="hero-stat-num">+18K</span>
-        <span class="hero-stat-label">evaluaciones de visibilidad<br/>procesadas</span>
+    <div class="stats-row reveal">
+      {%- for stat in page.stats %}
+      <div class="stat-card">
+        <div class="stat-val">{{ stat.value }}</div>
+        <div class="stat-lab">{{ stat.label }}</div>
       </div>
-      <div class="hero-stat">
-        <span class="hero-stat-num">+88K</span>
-        <span class="hero-stat-label">activos controlados<br/>en tiempo real</span>
-      </div>
-      <div class="hero-stat">
-        <span class="hero-stat-num">$1.5B</span>
-        <span class="hero-stat-label">COP pagados<br/>digitalmente</span>
-      </div>
-      <div class="hero-stat">
-        <span class="hero-stat-num">+15K</span>
-        <span class="hero-stat-label">cirugías seguidas<br/>multipaís</span>
-      </div>
+      {%- endfor %}
     </div>
   </div>
 </section>
 
-<!-- ══ MARQUEE ══ -->
-<div class="marquee">
+<!-- MARQUEE -->
+<div class="marquee-wrap" aria-hidden="true">
   <div class="marquee-track">
-    <div class="marquee-item"><span>◆</span> Orquestación de Agentes</div>
-    <div class="marquee-item"><span>◆</span> Metodología C.A.D.A.</div>
-    <div class="marquee-item"><span>◆</span> SICETAC-LAB Activo</div>
-    <div class="marquee-item"><span>◆</span> ATICA — Transporte Colombia</div>
-    <div class="marquee-item"><span>◆</span> Contexto antes que Datos</div>
-    <div class="marquee-item"><span>◆</span> Acción Inmediata</div>
-    <div class="marquee-item"><span>◆</span> Auditable 100%</div>
-    <div class="marquee-item"><span>◆</span> Plataforma EUREKA</div>
-    <div class="marquee-item"><span>◆</span> Orquestación de Agentes</div>
-    <div class="marquee-item"><span>◆</span> Metodología C.A.D.A.</div>
-    <div class="marquee-item"><span>◆</span> SICETAC-LAB Activo</div>
-    <div class="marquee-item"><span>◆</span> ATICA — Transporte Colombia</div>
-    <div class="marquee-item"><span>◆</span> Contexto antes que Datos</div>
-    <div class="marquee-item"><span>◆</span> Acción Inmediata</div>
-    <div class="marquee-item"><span>◆</span> Auditable 100%</div>
-    <div class="marquee-item"><span>◆</span> Plataforma EUREKA</div>
+    {%- for item in page.marquee %}
+    <div class="marquee-item"><span>&#9670;</span> {{ item }}</div>
+    {%- endfor %}
+    {%- for item in page.marquee %}
+    <div class="marquee-item"><span>&#9670;</span> {{ item }}</div>
+    {%- endfor %}
   </div>
 </div>
 
-<!-- ══ MÉTODO CADA ══ -->
+<!-- CADA -->
 <section class="cada-bg" id="cada">
   <div class="container">
     <div class="cada-header reveal">
       <div class="tag">Nuestro Método</div>
-      <h2 class="s-title">Le damos la vuelta<br/>al análisis tradicional.</h2>
-      <p class="s-body">
-        Primero el <strong style="color:var(--white)">contexto</strong>, luego la <strong style="color:var(--white)">acción</strong>.<br/>
-        Así la IA no informa… resuelve en el mundo real.
-      </p>
+      <h2 class="s-title">{{ page.cada.intro }}</h2>
+      <p class="s-body">{{ page.cada.subintro }}</p>
     </div>
-
     <div class="cada-grid reveal">
+      {%- for step in page.cada.steps %}
       <div class="cada-card">
-        <div class="cada-letter">C</div>
-        <div class="cada-title">Contexto</div>
-        <div class="cada-sub">El entorno</div>
-        <p class="cada-desc">Antes del dato, capturamos tu realidad: mercado, regulaciones, clientes, variables locales y comportamientos dinámicos. Nuestros agentes "ven" tu negocio como tú lo vives.</p>
+        <div class="cada-letter">{{ step.letter }}</div>
+        <div class="cada-title">{{ step.title }}</div>
+        <div class="cada-sub">{{ step.sub }}</div>
+        <p class="cada-desc">{{ step.desc }}</p>
       </div>
-      <div class="cada-card">
-        <div class="cada-letter">A</div>
-        <div class="cada-title">Acción</div>
-        <div class="cada-sub">La respuesta</div>
-        <p class="cada-desc">El agente actúa ya: ejecuta decisiones, ajusta procesos, resuelve problemas en tiempo real. No reportes estáticos; impacto operativo inmediato.</p>
-      </div>
-      <div class="cada-card">
-        <div class="cada-letter">D</div>
-        <div class="cada-title">Datos</div>
-        <div class="cada-sub">La evidencia</div>
-        <p class="cada-desc">Datos dinámicos de múltiples fuentes alimentan al agente para precisión y aprendizaje continuo. El sistema mejora en cada ciclo.</p>
-      </div>
-      <div class="cada-card">
-        <div class="cada-letter">A</div>
-        <div class="cada-title">Auditable</div>
-        <div class="cada-sub">La transparencia</div>
-        <p class="cada-desc">Cada paso es traceable, seguro y verificable. Confianza absoluta en la automatización inteligente. Nada ocurre en caja negra.</p>
-      </div>
+      {%- endfor %}
     </div>
   </div>
 </section>
 
-<!-- ══ QUIÉNES SOMOS ══ -->
-<section id="nosotros">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-img reveal">
-        <div class="about-img-placeholder">
-          <div class="about-img-icon">👤</div>
-          <div class="about-img-text">Juan Pablo Matiz<br/>Fundador &amp; CEO</div>
-        </div>
-        <div class="about-img-frame"></div>
-      </div>
-
-      <div class="about-text reveal">
-        <div class="tag">Quiénes Somos</div>
-        <h2 class="s-title">Expertos en convertir complejidad en acción inteligente.</h2>
-        <p class="s-body" style="margin-bottom:1rem">
-          Con más de <strong style="color:var(--white)">25 años</strong> como estrategas en mercadeo, procesos y transporte, sabemos que un dato sin contexto es ruido.
-        </p>
-        <p class="s-body">
-          Bajo el liderazgo de <strong style="color:var(--white)">Juan Pablo Matiz</strong>, en Atiemppo diseñamos agentes y soluciones inteligentes que tratan cada cliente, ruta o proceso como un entorno vivo y dinámico.
-        </p>
-        <div class="about-advantages" style="margin-top:2.5rem">
-          <div class="adv-item">
-            <span class="adv-arrow">→</span>
-            Experiencia profunda en punto de venta, logística regional y operaciones complejas
-          </div>
-          <div class="adv-item">
-            <span class="adv-arrow">→</span>
-            Enfoque obsesivo en contexto antes que en datos aislados
-          </div>
-          <div class="adv-item">
-            <span class="adv-arrow">→</span>
-            Prototipado rápido con IA aplicada y motor interno EUREKA
-          </div>
-          <div class="adv-item">
-            <span class="adv-arrow">→</span>
-            Del análisis estático a respuestas accionables que generan resultados reales
-          </div>
-        </div>
-      </div>
+<!-- NOSOTROS -->
+<section class="nos-bg" id="nosotros">
+  <div class="container nos-grid">
+    <div class="nos-img reveal">
+      <div class="nos-img-inner">JP</div>
+    </div>
+    <div class="nos-copy">
+      <div class="tag reveal">Quiénes Somos</div>
+      <h2 class="s-title reveal">{{ page.nosotros.headline }}</h2>
+      <p class="s-body reveal">{{ page.nosotros.bio }}</p>
+      <ul class="nos-list">
+        {%- for v in page.nosotros.ventajas %}
+        <li class="nos-item reveal">
+          <span class="nos-check">&#10003;</span>
+          <span>{{ v }}</span>
+        </li>
+        {%- endfor %}
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- ══ CASOS ══ -->
-<section class="cases-bg" id="casos">
+<!-- CASOS -->
+<section class="casos-bg" id="casos">
   <div class="container">
-    <div class="reveal">
-      <div class="tag">Agentes en Acción</div>
-      <h2 class="s-title">Nuestras soluciones ya resuelven<br/>problemas críticos en el mundo real.</h2>
+    <div class="s-header reveal">
+      <div class="tag">Casos Reales</div>
+      <h2 class="s-title">Agentes que ya<br/>están en operación.</h2>
     </div>
-
-    <div class="cases-grid">
-      <div class="case-card reveal">
-        <div class="case-client">Haleon</div>
-        <div class="case-title">Toma de información, validación &amp; dispersión</div>
-        <p class="case-desc">Entiende el contexto de mayoristas en Colombia, valida evaluaciones de visibilidad en punto de venta y procesa la dispersión de fondos de forma segura y auditable.</p>
-        <div class="case-stats">
-          <div class="case-stat"><div class="case-stat-dot"></div>+18.000 evaluaciones de visibilidad validadas</div>
-          <div class="case-stat"><div class="case-stat-dot"></div>+$1.500M COP procesados anualmente</div>
-          <div class="case-stat"><div class="case-stat-dot"></div>Dispersión 100% auditable</div>
+    <div class="casos-grid">
+      {%- for caso in page.casos %}
+      <div class="caso-card reveal">
+        <div class="caso-top">
+          <div class="caso-emoji">{{ caso.emoji }}</div>
+          <div>
+            <div class="caso-cliente">{{ caso.cliente }}</div>
+            <div class="caso-tag">{{ caso.tag }}</div>
+          </div>
+        </div>
+        <h3 class="caso-title">{{ caso.titulo }}</h3>
+        <p class="caso-desc">{{ caso.desc }}</p>
+        <div class="caso-metricas">
+          {%- for m in caso.metricas %}
+          <span class="caso-metrica">{{ m }}</span>
+          {%- endfor %}
         </div>
       </div>
-
-      <div class="case-card reveal">
-        <div class="case-client">Ifurniture</div>
-        <div class="case-title">Control de activos con contexto físico</div>
-        <p class="case-desc">Gestiona registros inmobiliarios con contexto físico completo: ubicación, fotos, novedades y alertas en tiempo real para equipos de campo y dirección.</p>
-        <div class="case-stats">
-          <div class="case-stat"><div class="case-stat-dot"></div>+88.000 activos controlados</div>
-          <div class="case-stat"><div class="case-stat-dot"></div>Alertas en tiempo real</div>
-          <div class="case-stat"><div class="case-stat-dot"></div>Visibilidad total campo–oficina</div>
-        </div>
-      </div>
-
-      <div class="case-card reveal">
-        <div class="case-client">Johnson &amp; Johnson</div>
-        <div class="case-title">Seguimiento en salud multipaís</div>
-        <p class="case-desc">Navega entornos médicos complejos para el seguimiento de cirugías en múltiples países, con dashboards dinámicos y reportes automáticos para equipos clínicos.</p>
-        <div class="case-stats">
-          <div class="case-stat"><div class="case-stat-dot"></div>+15.000 cirugías seguidas</div>
-          <div class="case-stat"><div class="case-stat-dot"></div>Cobertura multipaís</div>
-          <div class="case-stat"><div class="case-stat-dot"></div>Dashboards + reportes automáticos</div>
-        </div>
-      </div>
+      {%- endfor %}
     </div>
   </div>
 </section>
 
-<!-- ══ LABS ══ -->
-<section id="labs">
+<!-- LABS -->
+<section class="labs-bg" id="labs">
   <div class="container">
-    <div class="reveal">
-      <div class="tag">Pipeline &amp; Laboratorios</div>
-      <h2 class="s-title">Próximos agentes<br/>en desarrollo.</h2>
-      <p class="s-body">Siempre experimentando. Siempre adaptándonos a lo que tu negocio necesita.</p>
+    <div class="s-header reveal">
+      <div class="tag">Pipeline de Laboratorios</div>
+      <h2 class="s-title">Lo que estamos<br/>construyendo.</h2>
     </div>
-
     <div class="labs-grid">
-      <div class="lab-card reveal">
-        <div class="lab-icon">⚡</div>
-        <div class="lab-badge active">Ya activo</div>
-        <div>
-          <div class="lab-title">SICETAC-LAB</div>
-          <p class="lab-desc">Agentes para cálculo instantáneo de costos y optimización de rutas en transporte Colombia / LatAm. El primer sistema dinámico sobre el SICETAC colombiano.</p>
+      {%- for lab in page.labs %}
+      <div class="lab-card{{ ' lab-card--featured' | prepend: '' }}{%- if lab.featured %} lab-card--featured{%- endif %} reveal">
+        <div class="lab-card-top">
+          <span class="lab-emoji">{{ lab.emoji }}</span>
+          <span class="lab-status {%- if lab.status == 'Activo' %} lab-status--active{%- endif %}">{{ lab.status }}</span>
         </div>
+        <h3 class="lab-name">{{ lab.nombre }}</h3>
+        <p class="lab-desc">{{ lab.desc }}</p>
+        {%- if lab.url and lab.url != "#" %}
+        <a href="{{ lab.url }}" class="lab-link" {%- if lab.url contains "http" %} target="_blank" rel="noopener"{%- endif %}>
+          Conocer {{ lab.nombre }} &#8599;
+        </a>
+        {%- endif %}
       </div>
-
-      <div class="lab-card reveal">
-        <div class="lab-icon">🤖</div>
-        <div class="lab-badge active">Ya activo</div>
-        <div>
-          <div class="lab-title">ATICA</div>
-          <p class="lab-desc">El primer agente especializado de transporte en Colombia. Responde, analiza y entiende la complejidad del mercado colombiano del transporte en tiempo real.</p>
-        </div>
-      </div>
-
-      <div class="lab-card reveal">
-        <div class="lab-icon">🛒</div>
-        <div class="lab-badge soon">Próximamente</div>
-        <div>
-          <div class="lab-title">Retail-Context Lab</div>
-          <p class="lab-desc">Agentes que capturan sell-out, detectan tendencias en punto de venta y reaccionan en tiempo real. Contexto completo del canal moderno y tradicional.</p>
-        </div>
-      </div>
-
-      <div class="lab-card lab-card--featured reveal">
-        <div class="lab-icon">🌐</div>
-        <div class="lab-badge active">Ya activo</div>
-        <div>
-          <div class="lab-title">Insignia Impact</div>
-          <p class="lab-desc">Proceso dedicado para que empresas y marcas sean entendidas y recomendadas por las IAs. AEO (AI Engine Optimization) para visibilidad en los motores de inteligencia artificial.</p>
-          <a href="https://insigniaimpact.com" target="_blank" class="lab-link">Conocer Insignia Impact ↗</a>
-        </div>
-      </div>
+      {%- endfor %}
     </div>
   </div>
 </section>
 
-<!-- ══ BLOG ══ -->
-<section class="blog-bg" id="blog">
+<!-- BLOG PREVIEW -->
+<section class="blog-bg" id="blog-preview">
   <div class="container">
     <div class="blog-header reveal">
       <div>
         <div class="tag">Laboratorio en Vivo</div>
         <h2 class="s-title">Avances, experimentos<br/>y aprendizajes.</h2>
       </div>
-      <a href="#blog" class="blog-ver-todos">Ver todos los artículos →</a>
+      <a href="/blog/" class="blog-ver-todos">Ver todos los artículos &#8594;</a>
     </div>
-
     <div class="blog-grid">
-
-      <!-- Card destacada -->
       <a href="#" class="blog-card blog-card--featured reveal">
-        <div class="blog-card-img">
-          🚚
-          <div class="blog-card-img-line"></div>
-        </div>
+        <div class="blog-card-img">&#128666;<div class="blog-card-img-line"></div></div>
         <div class="blog-card-body">
-          <div class="blog-meta">
-            <span class="blog-lab-tag">SICETAC-LAB</span>
-            <span class="blog-date">Feb 2026</span>
-          </div>
-          <div class="blog-card-title">SICETAC-LAB: Cómo construimos el primer agente de costos de transporte en Colombia</div>
-          <p class="blog-card-excerpt">El sistema SICETAC existe hace años pero nadie lo había convertido en un agente interactivo. Aquí explicamos el proceso técnico, los retos regulatorios y cómo ATICA puede responder en segundos lo que antes tomaba horas de consulta manual.</p>
-          <div class="blog-read-more">Leer artículo →</div>
+          <div class="blog-meta"><span class="blog-lab-tag">SICETAC-LAB</span><span class="blog-date">Feb 2026</span></div>
+          <div class="blog-card-title">SICETAC-LAB: El primer agente de costos de transporte en Colombia</div>
+          <p class="blog-card-excerpt">Cómo convertimos el sistema SICETAC en un agente interactivo que responde en segundos lo que antes tomaba horas de consulta manual.</p>
+          <div class="blog-read-more">Leer artículo &#8594;</div>
         </div>
       </a>
-
-      <!-- Cards secundarias -->
       <a href="#" class="blog-card reveal">
-        <div class="blog-card-img" style="font-size:2.2rem">
-          🤖
-          <div class="blog-card-img-line"></div>
-        </div>
+        <div class="blog-card-img" style="font-size:2.2rem">&#129302;<div class="blog-card-img-line"></div></div>
         <div class="blog-card-body">
-          <div class="blog-meta">
-            <span class="blog-lab-tag">ATICA</span>
-            <span class="blog-date">Ene 2026</span>
-          </div>
+          <div class="blog-meta"><span class="blog-lab-tag">ATICA</span><span class="blog-date">Ene 2026</span></div>
           <div class="blog-card-title">ATICA: El agente que entiende el mercado colombiano del transporte</div>
-          <p class="blog-card-excerpt">Cómo entrenamos a ATICA con contexto regulatorio real, tarifas vigentes y dinámicas de mercado para que sus respuestas sean accionables.</p>
-          <div class="blog-read-more">Leer artículo →</div>
+          <p class="blog-card-excerpt">Cómo entrenamos a ATICA con contexto regulatorio real para que sus respuestas sean accionables.</p>
+          <div class="blog-read-more">Leer &#8594;</div>
         </div>
       </a>
-
       <a href="#" class="blog-card reveal">
-        <div class="blog-card-img" style="font-size:2.2rem">
-          🌐
-          <div class="blog-card-img-line"></div>
-        </div>
+        <div class="blog-card-img" style="font-size:2.2rem">&#127760;<div class="blog-card-img-line"></div></div>
         <div class="blog-card-body">
-          <div class="blog-meta">
-            <span class="blog-lab-tag">Insignia Impact</span>
-            <span class="blog-date">Feb 2026</span>
-          </div>
+          <div class="blog-meta"><span class="blog-lab-tag">Insignia Impact</span><span class="blog-date">Feb 2026</span></div>
           <div class="blog-card-title">AEO: Por qué el próximo SEO lo indexan las IAs, no Google</div>
-          <p class="blog-card-excerpt">ChatGPT, Claude y Perplexity ya recomiendan marcas a millones de usuarios. Si tu empresa no está optimizada para IA, perdiste la venta antes de que empezara.</p>
-          <div class="blog-read-more">Leer artículo →</div>
+          <p class="blog-card-excerpt">ChatGPT, Claude y Perplexity ya recomiendan marcas a millones de usuarios. Si no estás optimizado, perdiste la venta antes de empezar.</p>
+          <div class="blog-read-more">Leer &#8594;</div>
         </div>
       </a>
-
     </div>
   </div>
 </section>
 
-<!-- ══ INSIGNIA BRIDGE ══ -->
+<!-- BRIDGE INSIGNIA -->
 <div class="bridge">
   <div class="bridge-inner">
     <div class="reveal">
       <div class="bridge-eyebrow">Del ecosistema Atiemppo</div>
-      <h2 class="bridge-title">¿Tu operación actúa.<br/>Pero <em>¿las IAs te conocen?</em></h2>
-      <p class="bridge-desc">
-        Tener agentes inteligentes es el primer paso. El siguiente es asegurarte de que ChatGPT, Claude, Perplexity y Gemini recomienden tu marca cuando tus clientes los consulten. De eso se encarga <strong style="color:var(--white)">Insignia Impact</strong>.
-      </p>
-      <div class="bridge-logo-mark">Una iniciativa de Juan Pablo Matiz · Atiemppo Lab</div>
+      <h2 class="bridge-title">Tu operación actúa.<br/>Pero ¿las IAs te conocen?</h2>
+      <p class="bridge-body">Tener agentes inteligentes es el primer paso. El siguiente es que ChatGPT, Claude, Perplexity y Gemini recomienden tu marca cuando tus clientes los consulten.</p>
+      <div class="bridge-ctas">
+        <a href="https://insigniaimpact.com" class="btn-primary" target="_blank" rel="noopener">Audita tu visibilidad en IA &#8599;</a>
+      </div>
+      <p class="bridge-attr">Una iniciativa de Juan Pablo Matiz · Atiemppo Lab</p>
     </div>
-    <a href="https://insigniaimpact.com" target="_blank" class="bridge-cta reveal">
-      Audita tu visibilidad en IA ↗
-    </a>
   </div>
 </div>
 
-<!-- ══ CONTACTO ══ -->
+<!-- CONTACTO -->
 <section class="contact-bg" id="contacto">
-  <div class="container">
-    <div class="contact-inner">
-      <div class="contact-left reveal">
-        <div class="tag">Inicia un Experimento</div>
-        <h2 class="s-title">Hablemos de tu <span>próximo agente.</span></h2>
-        <p class="s-body">
-          Agenda <strong style="color:var(--white)">30 minutos gratis</strong>. Escuchamos tu contexto y te mostramos cómo un agente puede actuar ya en tu negocio.
-        </p>
-
-        <div class="contact-links">
-          <a href="/cdn-cgi/l/email-protection#ed87988c83808c998497ad8c998488809d9d82c38e82" class="contact-link">
-            <span class="contact-link-icon">✉️</span>
-            <span class="__cf_email__" data-cfemail="5a302f3b34373b2e33201a3b2e333f372a2a35743935">[email&#160;protected]</span>
-          </a>
-          <a href="https://wa.me/573107687010" target="_blank" class="contact-link">
-            <span class="contact-link-icon">💬</span>
-            WhatsApp — 310 768 7010
-          </a>
-          <a href="https://linkedin.com/in/juanmatizg" target="_blank" class="contact-link">
-            <span class="contact-link-icon">🔗</span>
-            LinkedIn — @juanmatizg
-          </a>
+  <div class="container contact-grid">
+    <div class="contact-info reveal">
+      <div class="tag">Hablemos</div>
+      <h2 class="s-title">{{ page.contacto.headline }}</h2>
+      <p class="s-body">{{ page.contacto.subhead }}</p>
+      <ul class="contact-list">
+        <li><span class="contact-ico">✉</span><a href="mailto:{{ page.contacto.email }}">{{ page.contacto.email }}</a></li>
+        <li><span class="contact-ico">📱</span><a href="https://wa.me/573107687010">{{ page.contacto.whatsapp }}</a></li>
+        <li><span class="contact-ico">📍</span><span>{{ page.contacto.direccion }}</span></li>
+        <li><span class="contact-ico">🕐</span><span>{{ page.contacto.horario }}</span></li>
+      </ul>
+      <a href="{{ page.contacto.dashboards_url }}" class="dash-link" target="_blank" rel="noopener">Ver dashboards en vivo &#8594;</a>
+    </div>
+    <div class="contact-form reveal">
+      <form id="contactForm">
+        <div class="form-row">
+          <div class="form-group"><label>Nombre</label><input type="text" name="nombre" placeholder="Tu nombre" required/></div>
+          <div class="form-group"><label>Empresa</label><input type="text" name="empresa" placeholder="Tu empresa" required/></div>
         </div>
-
-        <p style="font-size:.85rem;color:var(--muted);margin-bottom:.6rem">Explora ejemplos vivos:</p>
-        <a href="https://dashboards.atiemppo.co" target="_blank" class="dashboards-link">
-          dashboards.atiemppo.co ↗
-        </a>
-      </div>
-
-      <div class="reveal">
-        <div class="contact-form">
-          <div class="form-title">Agenda tu experimento</div>
-          <div class="form-row">
-            <div class="form-group">
-              <label class="form-label">Nombre</label>
-              <input type="text" class="form-input" placeholder="Tu nombre"/>
-            </div>
-            <div class="form-group">
-              <label class="form-label">Empresa</label>
-              <input type="text" class="form-input" placeholder="Tu empresa"/>
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Correo electrónico</label>
-            <input type="email" class="form-input" placeholder="tu@empresa.com"/>
-          </div>
-          <div class="form-group">
-            <label class="form-label">¿Qué quieres resolver?</label>
-            <input type="text" class="form-input" placeholder="Resumen del reto"/>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Contexto de tu negocio</label>
-            <textarea class="form-textarea" placeholder="Cuéntanos tu operación, sector e industria…"></textarea>
-          </div>
-          <button class="form-submit">Iniciar experimento →</button>
-        </div>
-      </div>
+        <div class="form-group"><label>Email</label><input type="email" name="email" placeholder="tu@empresa.com" required/></div>
+        <div class="form-group"><label>¿Qué quieres automatizar?</label><textarea name="mensaje" rows="4" placeholder="Describe brevemente el proceso o reto operativo..."></textarea></div>
+        <button type="submit" class="btn-primary btn-full">Solicitar diagnóstico gratuito &#8594;</button>
+      </form>
     </div>
   </div>
 </section>
 
-<!-- ══ FOOTER ══ -->
-<footer>
-  <a href="#" class="footer-logo">
-    <div class="footer-logo-dot"></div>
-    ATIEMPPO
-  </a>
-  <ul class="footer-nav">
-    <li><a href="#cada">C.A.D.A.</a></li>
-    <li><a href="#nosotros">Nosotros</a></li>
-    <li><a href="#casos">Casos</a></li>
-    <li><a href="#labs">Labs</a></li>
-    <li><a href="#blog">Blog</a></li>
-    <li><a href="#contacto">Contacto</a></li>
-    <li><a href="https://insigniaimpact.com" target="_blank" style="color:var(--cyan)">Insignia Impact ↗</a></li>
-  </ul>
-  <p class="footer-copy">© 2026 Atiemppo Lab · Agencia de Agentes &amp; Soluciones de Contexto · Bogotá, Colombia</p>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner container">
+    <div class="footer-brand">
+      <a href="/" class="nav-logo footer-logo-link">
+        <span class="logo-dot"></span>
+        <span class="logo-text">ATIEMPPO</span>
+      </a>
+      <p class="footer-desc">Agencia de Agentes Inteligentes &amp; Soluciones de Contexto para empresas en Colombia y Latinoamérica.</p>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-col-h">Navegación</h4>
+      <ul>
+        <li><a href="#cada">Método C.A.D.A.</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#casos">Casos</a></li>
+        <li><a href="#labs">Labs</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-col-h">Ecosistema</h4>
+      <ul>
+        <li><a href="#labs">SICETAC-LAB</a></li>
+        <li><a href="#labs">ATICA</a></li>
+        <li><a href="https://insigniaimpact.com" target="_blank" class="f-cyan">Insignia Impact &#8599;</a></li>
+        <li><a href="https://dashboards.atiemppo.co" target="_blank">Dashboards &#8599;</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-col-h">Contacto</h4>
+      <ul>
+        <li><a href="mailto:juanmatiz@atiemppo.co">juanmatiz@atiemppo.co</a></li>
+        <li><a href="https://wa.me/573107687010">+57 310 768 7010</a></li>
+        <li>Bogotá, Colombia</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <p>© 2026 Atiemppo Lab · Bogotá, Colombia</p>
+    <a href="/llms.txt" class="llms-badge">llms.txt</a>
+  </div>
 </footer>
 
-<!-- ══ JS: Canvas graph + reveal ══ -->
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
+
 /* ── Animated graph canvas ── */
 (function(){
   const canvas = document.getElementById('bg');
@@ -1475,4 +1238,7 @@ footer{
 (function(){
   const items = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver(entries=>{
-    entries.fo
+    entries.f
+</script>
+</body>
+</html>
