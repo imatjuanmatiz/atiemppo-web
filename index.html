@@ -265,6 +265,12 @@ footer{background:var(--bg);border-top:1px solid var(--border2);padding:2.5rem 3
   .form-row{grid-template-columns:1fr}
   .hero-stats{flex-direction:column;align-items:center}
 }
+
+/* FLOATING WHATSAPP CTA */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:250;background:#25D366;color:#001b0d;border-radius:999px;padding:.7rem 1rem;display:inline-flex;align-items:center;gap:.5rem;font-size:.85rem;font-weight:700;box-shadow:0 10px 24px rgba(0,0,0,.35);border:1px solid rgba(0,0,0,.15)}
+.wa-float:hover{filter:brightness(1.05)}
+.wa-float .wa-ico{font-size:1rem}
+@media(max-width:900px){.wa-float{bottom:14px;right:14px;padding:.65rem .9rem}}
 </style>
 </head>
 <body>
@@ -469,12 +475,12 @@ footer{background:var(--bg);border-top:1px solid var(--border2);padding:2.5rem 3
           <div class="blog-read-more">Leer artículo →</div>
         </div>
       </a>
-      <a href="/blog/" class="blog-card reveal">
+      <a href="/blog/2026/02/aeo-visibilidad-ia-insignia-impact/" class="blog-card reveal">
         <div class="blog-card-img" style="font-size:2.2rem">🌐<div class="blog-img-line"></div></div>
         <div class="blog-card-body">
           <div class="blog-meta"><span class="blog-lab-tag">Insignia Impact</span><span class="blog-date">Feb 2026</span></div>
-          <div class="blog-card-title">AEO: Por qué el próximo SEO lo indexan las IAs, no Google</div>
-          <p class="blog-card-excerpt">ChatGPT, Claude y Perplexity ya recomiendan marcas a millones de usuarios. Si no estás optimizado, perdiste la venta antes de empezar.</p>
+          <div class="blog-card-title">AEO: por qué la visibilidad en IA ya es una ventaja competitiva</div>
+          <p class="blog-card-excerpt">Qué cambia cuando tus clientes preguntan primero a ChatGPT, Claude o Perplexity, y cómo preparar tu marca para aparecer y ser recomendada.</p>
           <div class="blog-read-more">Leer artículo →</div>
         </div>
       </a>
@@ -647,5 +653,8 @@ footer{background:var(--bg);border-top:1px solid var(--border2);padding:2.5rem 3
   }
 })();
 </script>
+<a class="wa-float" href="https://wa.me/573107687010?text=Hola%20Juan%2C%20quiero%20agendar%20el%20diagn%C3%B3stico%20de%2030%20min" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <span class="wa-ico">💬</span> WhatsApp
+</a>
 </body>
 </html>
