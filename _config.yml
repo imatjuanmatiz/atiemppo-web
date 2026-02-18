@@ -1,13 +1,18 @@
 # Configuración del sitio
 title: Atiemppo
-description: Optimización de visibilidad en inteligencia artificial para marcas y equipos de América Latina
+tagline: Agencia de Agentes Inteligentes & Soluciones de Contexto
+description: Orquestamos agentes inteligentes que comprenden el contexto real de tu negocio y actúan de inmediato. Metodología C.A.D.A. — Bogotá, Colombia.
 url: "https://atiemppo.com"
 baseurl: ""
 
-# SEO
-author: Juan Pablo Matiz - Atiemppo
+# SEO & AEO
+author: Juan Pablo Matiz — Atiemppo
 twitter_username: atiemppo
 github_username: imatjuanmatiz
+lang: es-CO
+
+# LLMs.txt autodiscovery
+llms_txt: /llms.txt
 
 # Build settings
 markdown: kramdown
@@ -17,10 +22,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Configuración de permalinks
+# Permalinks
 permalink: /blog/:year/:month/:day/:title/
 
-# Configuración de colecciones
+# Colecciones
 collections:
   posts:
     output: true
@@ -44,6 +49,7 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+  - index.md
 
 # Timezone
 timezone: America/Bogota

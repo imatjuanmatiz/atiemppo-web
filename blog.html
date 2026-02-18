@@ -1,46 +1,145 @@
 ---
 layout: default
-title: Blog
+title: Blog — Laboratorio en Vivo
 permalink: /blog/
+description: Avances, experimentos y aprendizajes de los laboratorios de Atiemppo. SICETAC-LAB, ATICA, Insignia Impact y más.
 ---
 
-<section style="padding: 4rem 2rem; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white;">
-  <div class="container">
-    <h1 style="margin-bottom: 0.5rem;">Blog</h1>
-    <p style="color: #cbd5e1; font-size: 1.1rem;">Investigación y aprendizajes sobre optimización de visibilidad en IA</p>
-  </div>
-</section>
+<style>
+  body { background: #060810; color: #eef2f7; font-family: 'Outfit', sans-serif; }
+  .blog-hero {
+    background: linear-gradient(135deg, #0d1117 0%, #060810 100%);
+    padding: 6rem 2rem 4rem;
+    border-bottom: 1px solid rgba(0,200,255,0.12);
+  }
+  .blog-hero-inner { max-width: 1100px; margin: 0 auto; }
+  .blog-tag {
+    display: inline-flex; align-items: center; gap: .5rem;
+    font-size: .7rem; font-weight: 600; letter-spacing: .18em;
+    text-transform: uppercase; color: #00c8ff; margin-bottom: 1.2rem;
+  }
+  .blog-tag::before { content:''; display:block; width:1.2rem; height:1px; background:#00c8ff; }
+  .blog-hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    letter-spacing: .04em; line-height: 1;
+    margin-bottom: 1rem; color: #eef2f7;
+  }
+  .blog-hero p { font-size: 1.05rem; color: rgba(238,242,247,.6); max-width: 520px; }
+  .blog-main { max-width: 1100px; margin: 0 auto; padding: 5rem 2rem; }
+  .blog-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 1rem; }
+  .blog-card {
+    background: #0d1117; border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 6px; overflow: hidden; text-decoration: none;
+    color: #eef2f7; display: flex; flex-direction: column;
+    transition: border-color .25s, transform .25s;
+  }
+  .blog-card:hover { border-color: rgba(0,200,255,.3); transform: translateY(-3px); }
+  .blog-card-img {
+    width: 100%; aspect-ratio: 16/9; background: #131a24;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 3rem; position: relative; overflow: hidden;
+  }
+  .blog-card--featured .blog-card-img { aspect-ratio: 16/8; font-size: 4rem; }
+  .blog-card:hover .blog-card-img::after {
+    content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+    height: 2px; background: linear-gradient(90deg, transparent, #00c8ff, transparent);
+  }
+  .blog-card-body { padding: 1.5rem; display: flex; flex-direction: column; flex: 1; gap: .6rem; }
+  .blog-card--featured .blog-card-body { padding: 2rem; }
+  .blog-meta { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
+  .blog-lab-tag {
+    font-size: .65rem; font-weight: 700; letter-spacing: .14em;
+    text-transform: uppercase; padding: .2rem .6rem; border-radius: 100px;
+    border: 1px solid rgba(0,200,255,.2); color: #00c8ff;
+    background: rgba(0,200,255,.08);
+  }
+  .blog-date { font-size: .72rem; color: #6b7a90; }
+  .blog-card-title {
+    font-family: 'Bebas Neue', sans-serif; letter-spacing: .03em;
+    line-height: 1.15; font-size: 1.1rem;
+  }
+  .blog-card--featured .blog-card-title { font-size: 1.5rem; }
+  .blog-card-excerpt { font-size: .85rem; color: #6b7a90; line-height: 1.6; flex: 1; }
+  .blog-card--featured .blog-card-excerpt { font-size: .92rem; }
+  .blog-read-more {
+    font-size: .8rem; font-weight: 600; color: #00c8ff;
+    margin-top: .5rem;
+  }
+  .blog-empty {
+    grid-column: 1/-1; text-align: center;
+    padding: 4rem; color: #6b7a90;
+    border: 1px dashed rgba(255,255,255,0.1); border-radius: 6px;
+  }
+  .blog-empty p { margin-bottom: 1.5rem; font-size: 1rem; }
+  .btn-back {
+    display: inline-flex; align-items: center; gap: .5rem;
+    background: #00c8ff; color: #000; padding: .75rem 1.5rem;
+    border-radius: 6px; font-weight: 600; font-size: .9rem;
+    text-decoration: none;
+  }
+  @media(max-width: 900px) {
+    .blog-grid { grid-template-columns: 1fr; }
+  }
+</style>
 
-<section style="padding: 4rem 2rem; background: white;">
-  <div class="container" style="max-width: 800px;">
-    {% if site.posts.size > 0 %}
-      <div style="display: grid; gap: 2rem;">
-        {% for post in site.posts %}
-          <article style="border-bottom: 1px solid #e2e8f0; padding-bottom: 2rem;">
-            <h2 style="margin-bottom: 0.5rem;">
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </h2>
-            <p style="color: #64748b; font-size: 0.95rem; margin-bottom: 1rem;">
-              {{ post.date | date: "%d de %B de %Y" }}
-              {% if post.author %} • {{ post.author }}{% endif %}
-            </p>
-            <p style="color: #475569; margin-bottom: 1rem;">
-              {% if post.excerpt %}
-                {{ post.excerpt }}
-              {% else %}
-                {{ post.content | strip_html | truncatewords: 30 }}
-              {% endif %}
-            </p>
-            <a href="{{ post.url }}" style="color: #14b8a6; font-weight: 600;">
-              Leer más →
-            </a>
-          </article>
-        {% endfor %}
-      </div>
-    {% else %}
-      <p style="text-align: center; color: #64748b; padding: 3rem 0;">
-        Próximamente: investigaciones y artículos sobre AEO/GEO.
-      </p>
-    {% endif %}
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"/>
+
+<div class="blog-hero">
+  <div class="blog-hero-inner">
+    <div class="blog-tag">Laboratorio en Vivo</div>
+    <h1>Avances, experimentos<br/>y aprendizajes.</h1>
+    <p>Lo que construimos, lo que aprendemos y lo que viene. SICETAC-LAB, ATICA, Insignia Impact y más.</p>
   </div>
-</section>
+</div>
+
+<div class="blog-main">
+  {% if site.posts.size > 0 %}
+    <div class="blog-grid">
+      {% for post in site.posts %}
+        {% if forloop.first %}
+          <a href="{{ post.url }}" class="blog-card blog-card--featured">
+            <div class="blog-card-img">{{ post.emoji | default: '⚡' }}</div>
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span class="blog-lab-tag">{{ post.lab | default: 'Lab' }}</span>
+                <span class="blog-date">{{ post.date | date: "%b %Y" }}</span>
+              </div>
+              <div class="blog-card-title">{{ post.title }}</div>
+              <p class="blog-card-excerpt">
+                {% if post.excerpt %}{{ post.excerpt | strip_html | truncatewords: 40 }}
+                {% else %}{{ post.content | strip_html | truncatewords: 40 }}{% endif %}
+              </p>
+              <div class="blog-read-more">Leer artículo →</div>
+            </div>
+          </a>
+        {% else %}
+          <a href="{{ post.url }}" class="blog-card">
+            <div class="blog-card-img" style="font-size:2.5rem">{{ post.emoji | default: '🔬' }}</div>
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span class="blog-lab-tag">{{ post.lab | default: 'Lab' }}</span>
+                <span class="blog-date">{{ post.date | date: "%b %Y" }}</span>
+              </div>
+              <div class="blog-card-title">{{ post.title }}</div>
+              <p class="blog-card-excerpt">
+                {% if post.excerpt %}{{ post.excerpt | strip_html | truncatewords: 25 }}
+                {% else %}{{ post.content | strip_html | truncatewords: 25 }}{% endif %}
+              </p>
+              <div class="blog-read-more">Leer →</div>
+            </div>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+  {% else %}
+    <div class="blog-grid">
+      <div class="blog-empty">
+        <p>Los primeros artículos del laboratorio están en camino.<br/>
+        SICETAC-LAB, ATICA y Insignia Impact tienen mucho que contar.</p>
+        <a href="/" class="btn-back">← Volver al inicio</a>
+      </div>
+    </div>
+  {% endif %}
+</div>
