@@ -128,6 +128,18 @@ section{padding:7rem 3rem}
 .adv:hover{border-color:var(--border);background:var(--cyan-glow)}
 .adv-arrow{color:var(--cyan);flex-shrink:0;margin-top:1px}
 
+/* TRAJECTORY */
+.trajectory-bg{background:var(--surface);border-top:1px solid var(--border2);border-bottom:1px solid var(--border2)}
+.trajectory-head{text-align:center;margin-bottom:2rem}
+.trajectory-head .s-body{margin:0 auto}
+.trajectory-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.trajectory-card{background:var(--bg);border:1px solid var(--border2);border-radius:var(--r);padding:1.7rem;transition:border-color .2s,transform .2s}
+.trajectory-card:hover{border-color:var(--border);transform:translateY(-3px)}
+.trajectory-period{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);margin-bottom:.5rem}
+.trajectory-title{font-family:var(--display);font-size:1.15rem;letter-spacing:.03em;margin-bottom:.7rem}
+.trajectory-list{margin:0;padding-left:1rem;color:var(--muted);font-size:.9rem;line-height:1.6}
+.trajectory-list li{margin:.35rem 0}
+
 /* CASES */
 .cases-bg{background:var(--surface);border-top:1px solid var(--border2);border-bottom:1px solid var(--border2)}
 .cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:3.5rem}
@@ -255,6 +267,7 @@ footer{background:var(--bg);border-top:1px solid var(--border2);padding:2.5rem 3
   .cases-grid{grid-template-columns:1fr}
   .labs-grid{grid-template-columns:1fr}
   .blog-grid{grid-template-columns:1fr}
+  .trajectory-grid{grid-template-columns:1fr}
   .contact-inner{grid-template-columns:1fr;gap:3rem}
   .bridge-inner{grid-template-columns:1fr;gap:2rem}
   footer{flex-direction:column;align-items:flex-start;padding:2rem 1.5rem}
@@ -282,6 +295,7 @@ footer{background:var(--bg);border-top:1px solid var(--border2);padding:2.5rem 3
   <ul class="nav-links" id="navLinks">
     <li><a href="#cada">Método C.A.D.A.</a></li>
     <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#trayectoria">Trayectoria</a></li>
     <li><a href="#casos">Casos</a></li>
     <li><a href="#labs">Labs</a></li>
     <li><a href="/blog/">Blog</a></li>
@@ -358,16 +372,56 @@ footer{background:var(--bg);border-top:1px solid var(--border2);padding:2.5rem 3
         <div class="about-img-ph"><div class="about-img-icon">👤</div><div class="about-img-txt">Juan Pablo Matiz<br/>Fundador &amp; CEO</div></div>
       </div>
       <div class="about-text reveal">
-        <div class="tag">Quiénes Somos</div>
-        <h2 class="s-title">Expertos en convertir complejidad en acción inteligente.</h2>
-        <p class="s-body" style="margin-bottom:1rem">Con más de <strong style="color:var(--white)">25 años</strong> como estrategas en mercadeo, procesos y transporte, sabemos que un dato sin contexto es ruido.</p>
-        <p class="s-body">Bajo el liderazgo de <strong style="color:var(--white)">Juan Pablo Matiz</strong>, en Atiemppo diseñamos agentes y soluciones inteligentes que tratan cada cliente, ruta o proceso como un entorno vivo y dinámico.</p>
+        <div class="tag">Sobre el Fundador</div>
+        <h2 class="s-title">Juan Pablo Matiz — Fundador &amp; Visionary Leader</h2>
+        <p class="s-body" style="margin-bottom:1rem">De capturar datos en campo en 2013 a orquestar <strong style="color:var(--white)">agentes inteligentes</strong> en 2026. Más de 12 años convirtiendo complejidad operativa en acción real.</p>
+        <p class="s-body">Hoy, Atiemppo evoluciona con la metodología <strong style="color:var(--white)">C.A.D.A.</strong> (Contexto → Acción → Datos → Auditable) para pasar de reportes estáticos a operaciones que actúan en tiempo real.</p>
         <div class="advs" style="margin-top:2.5rem">
-          <div class="adv"><span class="adv-arrow">→</span>Experiencia profunda en punto de venta, logística regional y operaciones complejas</div>
-          <div class="adv"><span class="adv-arrow">→</span>Enfoque obsesivo en contexto antes que en datos aislados</div>
-          <div class="adv"><span class="adv-arrow">→</span>Prototipado rápido con IA aplicada y motor interno EUREKA</div>
-          <div class="adv"><span class="adv-arrow">→</span>Del análisis estático a respuestas accionables que generan resultados reales</div>
+          <div class="adv"><span class="adv-arrow">→</span>2013: 1er lugar Apps.co (Ideación y Prototipado, MinTIC)</div>
+          <div class="adv"><span class="adv-arrow">→</span>2014: Magic Magnet para Coca-Cola (reconocimiento Demand Driven)</div>
+          <div class="adv"><span class="adv-arrow">→</span>Plataformas para DNP, BID, AJE, Haleon, Galderma y salud</div>
+          <div class="adv"><span class="adv-arrow">→</span>Resultados actuales: +1.400 usuarios ATICA, +88.000 activos, +15.000 cirugías y +$1.500M COP auditables</div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAYECTORIA -->
+<section class="trajectory-bg" id="trayectoria">
+  <div class="container">
+    <div class="trajectory-head reveal">
+      <div class="tag">Nuestra Trayectoria</div>
+      <h2 class="s-title">De captura de datos a agentes autónomos</h2>
+      <p class="s-body">Un puente claro entre legado operativo y evolución a IA agéntica aplicada al negocio real.</p>
+    </div>
+    <div class="trajectory-grid">
+      <div class="trajectory-card reveal">
+        <div class="trajectory-period">2013–2014 · Origen</div>
+        <div class="trajectory-title">Captura en campo y prototipado rápido</div>
+        <ul class="trajectory-list">
+          <li>1er lugar Apps.co (MinTIC)</li>
+          <li>Magic Magnet (Coca-Cola)</li>
+          <li>Base metodológica para decisiones con datos reales</li>
+        </ul>
+      </div>
+      <div class="trajectory-card reveal">
+        <div class="trajectory-period">2015–2023 · Escalamiento</div>
+        <div class="trajectory-title">Plataformas especializadas por sector</div>
+        <ul class="trajectory-list">
+          <li>“Colombia es Logística” (DNP)</li>
+          <li>Soluciones para AJE, Haleon y Galderma</li>
+          <li>BID 2023: Plan Vías Resilientes (Chontales)</li>
+        </ul>
+      </div>
+      <div class="trajectory-card reveal">
+        <div class="trajectory-period">2024–2026 · Evolución IA</div>
+        <div class="trajectory-title">Orquestación de agentes con C.A.D.A.</div>
+        <ul class="trajectory-list">
+          <li>ATICA en producción (+1.400 usuarios)</li>
+          <li>SICETAC-LAB y EUREKA</li>
+          <li>Insignia Impact para AEO/GEO</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -541,6 +595,7 @@ footer{background:var(--bg);border-top:1px solid var(--border2);padding:2.5rem 3
   <ul class="footer-nav">
     <li><a href="#cada">C.A.D.A.</a></li>
     <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#trayectoria">Trayectoria</a></li>
     <li><a href="#casos">Casos</a></li>
     <li><a href="#labs">Labs</a></li>
     <li><a href="/blog/">Blog</a></li>
