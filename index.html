@@ -1,715 +1,1105 @@
----
-layout: none
-permalink: /
-render_with_liquid: false
----
+
+Atiemppo rediseno · HTML
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Atiemppo — Agencia de Agentes Inteligentes & Soluciones de Contexto</title>
-<meta name="description" content="Orquestamos agentes inteligentes que entienden el contexto real de tu negocio y actúan de inmediato. Metodología C.A.D.A. — Bogotá, Colombia."/>
-<meta name="ai-content-declaration" content="human-authored"/>
-<meta name="llms-txt" content="https://atiemppo.com/llms.txt"/>
-<link rel="alternate" type="text/plain" title="LLMs.txt" href="/llms.txt"/>
-<meta property="og:title" content="Atiemppo — Agencia de Agentes Inteligentes"/>
-<meta property="og:description" content="Orquestamos agentes que entienden el contexto real de tu negocio y actúan de inmediato. Metodología C.A.D.A. Bogotá, Colombia."/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="https://atiemppo.com"/>
-<meta property="og:locale" content="es_CO"/>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"Atiemppo","alternateName":"Atiemppo Lab","description":"Agencia de Agentes Inteligentes y Soluciones de Contexto para empresas en Colombia y Latinoamérica. Metodología C.A.D.A.","url":"https://atiemppo.com","foundingDate":"2013","address":{"@type":"PostalAddress","streetAddress":"Calle 146 #7-64, oficina 401","addressLocality":"Bogotá","addressCountry":"CO"},"contactPoint":{"@type":"ContactPoint","telephone":"+57-310-768-7010","email":"juanmatiz@atiemppo.co"},"founder":{"@type":"Person","name":"Juan Pablo Matiz","jobTitle":"Fundador & CEO","email":"juanmatiz@atiemppo.co"},"knowsAbout":["Agentes inteligentes","SICETAC","Transporte Colombia","AEO","Transformación digital"],"areaServed":["Colombia","América Latina"],"sameAs":["https://dashboards.atiemppo.co","https://insigniaimpact.com"]}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es Atiemppo?","acceptedAnswer":{"@type":"Answer","text":"Atiemppo es una agencia colombiana que orquesta agentes inteligentes y soluciones de contexto para empresas en Colombia y Latinoamérica. Diseñamos agentes que comprenden el entorno real del negocio y actúan de forma inmediata, medible y auditable."}},{"@type":"Question","name":"¿Qué es la metodología C.A.D.A.?","acceptedAnswer":{"@type":"Answer","text":"C.A.D.A. es la metodología propia de Atiemppo: Contexto, Acción, Datos, Auditable. Invierte el análisis tradicional priorizando el entorno operativo real antes que los datos aislados."}},{"@type":"Question","name":"¿Qué es ATICA?","acceptedAnswer":{"@type":"Answer","text":"ATICA es el primer agente especializado en el mercado colombiano del transporte. Responde, analiza y entiende la complejidad regulatoria y tarifaria del transporte en Colombia en tiempo real."}},{"@type":"Question","name":"¿Qué es SICETAC-LAB?","acceptedAnswer":{"@type":"Answer","text":"SICETAC-LAB es el primer sistema dinámico sobre el SICETAC colombiano. Permite cálculo instantáneo de costos y optimización de rutas de transporte en Colombia y Latinoamérica."}},{"@type":"Question","name":"¿Cómo contactar a Atiemppo?","acceptedAnswer":{"@type":"Answer","text":"Email: juanmatiz@atiemppo.co. WhatsApp: +57 310 768 7010. Diagnóstico gratuito de 30 minutos en https://atiemppo.com. Sede en Bogotá, Colombia."}}]}
-</script>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-<style>
-:root{
-  --bg:#060810;--surface:#0d1117;--surface2:#131a24;
-  --border:rgba(0,200,255,0.12);--border2:rgba(255,255,255,0.07);
-  --cyan:#00c8ff;--cyan-glow:rgba(0,200,255,0.08);
-  --white:#eef2f7;--muted:#6b7a90;
-  --display:'Bebas Neue',sans-serif;--body:'Outfit',sans-serif;--r:6px;
-}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--white);font-family:var(--body);font-weight:300;line-height:1.65;overflow-x:hidden}
-::selection{background:var(--cyan);color:#000}
-::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--cyan);border-radius:2px}
-a{color:var(--cyan);text-decoration:none}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atiemppo — Agencia de Agentes Inteligentes &amp; Soluciones de Contexto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:1.1rem 3rem;background:rgba(6,8,16,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:background .3s}
-nav.scrolled{background:rgba(6,8,16,0.98);box-shadow:0 4px 30px rgba(0,0,0,.5)}
-.nav-logo{font-family:var(--display);font-size:1.6rem;letter-spacing:.06em;color:var(--white);text-decoration:none;display:flex;align-items:center;gap:.5rem}
-.nav-dot{width:8px;height:8px;background:var(--cyan);border-radius:50%;box-shadow:0 0 10px var(--cyan);animation:pulse 2s ease-in-out infinite;flex-shrink:0}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.7)}}
-.nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
-.nav-links a{color:rgba(238,242,247,.55);font-size:.85rem;font-weight:400;letter-spacing:.03em;transition:color .2s;text-decoration:none}
-.nav-links a:hover{color:var(--cyan)}
-.nav-cta{background:var(--cyan)!important;color:#000!important;padding:.5rem 1.2rem!important;border-radius:var(--r)!important;font-weight:600!important;transition:box-shadow .2s,opacity .2s!important}
-.nav-cta:hover{box-shadow:0 0 20px rgba(0,200,255,.4)!important;opacity:.9!important}
-.nav-burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.4rem}
-.nav-burger span{width:22px;height:2px;background:var(--white);border-radius:2px;transition:.25s;display:block}
-.nav-burger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
-.nav-burger.open span:nth-child(2){opacity:0}
-.nav-burger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+  <style>
+    /* ─────────────────────────────────────────
+       DESIGN TOKENS  —  White / Black / Blue
+    ───────────────────────────────────────── */
+    :root {
+      --bg:          #FFFFFF;
+      --surface:     #F8FAFC;
+      --surface2:    #F1F5F9;
+      --border:      #E2E8F0;
+      --border-blue: rgba(37,99,235,.18);
 
-/* HERO */
-.hero{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:8rem 2rem 5rem;overflow:hidden}
-canvas#bg{position:absolute;inset:0;width:100%;height:100%;opacity:.6;pointer-events:none}
-.hero-glow{position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);width:600px;height:400px;background:radial-gradient(ellipse,rgba(0,200,255,.1) 0%,transparent 70%);pointer-events:none}
-.hero-inner{position:relative;z-index:2;max-width:900px}
-.hero-badge{display:inline-flex;align-items:center;gap:.6rem;border:1px solid var(--border);padding:.45rem 1rem;border-radius:100px;font-size:.75rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);margin-bottom:2rem;background:var(--cyan-glow)}
-.hero-bdot{width:6px;height:6px;border-radius:50%;background:var(--cyan);box-shadow:0 0 6px var(--cyan);animation:pulse 1.5s ease-in-out infinite}
-.hero-h1{font-family:var(--display);font-size:clamp(3.5rem,9vw,9rem);letter-spacing:.04em;line-height:.95;margin-bottom:1.5rem}
-.hero-h1 em{font-style:normal;color:var(--cyan);text-shadow:0 0 40px rgba(0,200,255,.4)}
-.hero-sub{font-size:clamp(1rem,2vw,1.2rem);color:rgba(238,242,247,.65);max-width:600px;margin:0 auto 1rem;line-height:1.75}
-.hero-method{font-size:.85rem;font-weight:500;color:var(--cyan);letter-spacing:.1em;margin-bottom:2.5rem}
-.hero-ctas{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:4rem}
-.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 2rem;border-radius:var(--r);font-family:var(--body);font-size:.9rem;font-weight:600;text-decoration:none;cursor:pointer;transition:all .2s;border:none}
-.btn-primary{background:var(--cyan);color:#000}
-.btn-primary:hover{box-shadow:0 0 30px rgba(0,200,255,.5);transform:translateY(-2px)}
-.btn-ghost{background:transparent;color:var(--white);border:1px solid var(--border2)}
-.btn-ghost:hover{border-color:var(--cyan);color:var(--cyan)}
-.hero-stats{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center}
-.hero-stat{background:var(--surface);border:1px solid var(--border2);border-radius:var(--r);padding:.9rem 1.5rem;text-align:center;min-width:160px;transition:border-color .2s,background .2s}
-.hero-stat:hover{border-color:var(--border);background:var(--surface2)}
-.stat-num{font-family:var(--display);font-size:1.8rem;letter-spacing:.04em;color:var(--cyan);display:block;line-height:1;margin-bottom:.3rem}
-.stat-lbl{font-size:.75rem;color:var(--muted);line-height:1.4}
+      --blue:        #1D4ED8;   /* primary */
+      --blue-mid:    #2563EB;   /* hover / accent */
+      --blue-light:  #3B82F6;   /* softer accent */
+      --blue-pale:   #EFF6FF;   /* section fills */
+      --blue-pale2:  #DBEAFE;   /* pill/badge fills */
 
-/* SECTION BASE */
-section{padding:7rem 3rem}
-.container{max-width:1100px;margin:0 auto}
-.tag{display:inline-flex;align-items:center;gap:.5rem;font-size:.7rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);margin-bottom:1.2rem}
-.tag::before{content:'';display:block;width:1.2rem;height:1px;background:var(--cyan)}
-.s-title{font-family:var(--display);font-size:clamp(2.4rem,5vw,4.5rem);letter-spacing:.04em;line-height:1;margin-bottom:1.25rem}
-.s-body{font-size:1.05rem;color:rgba(238,242,247,.65);line-height:1.75;max-width:560px}
+      --text:        #0F172A;   /* near-black */
+      --text-muted:  #64748B;   /* gray-blue */
+      --text-light:  #94A3B8;
 
-/* MARQUEE */
-.marquee{overflow:hidden;border-top:1px solid var(--border2);border-bottom:1px solid var(--border2);padding:.85rem 0;background:var(--surface)}
-.marquee-track{display:flex;animation:slide 28s linear infinite;width:max-content}
-.marquee-item{font-family:var(--display);font-size:.85rem;letter-spacing:.15em;color:var(--muted);white-space:nowrap;padding:0 2.5rem;border-right:1px solid var(--border2);display:flex;align-items:center;gap:1rem}
-.marquee-item span{color:var(--cyan)}
-@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+      --radius:      8px;
+      --transition:  0.25s ease;
 
-/* CADA */
-.cada-bg{background:var(--surface);border-top:1px solid var(--border2);border-bottom:1px solid var(--border2)}
-.cada-header{text-align:center;margin-bottom:5rem}
-.cada-header .s-body{margin:0 auto}
-.cada-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--border2);border-radius:var(--r);overflow:hidden}
-.cada-card{padding:3rem 2rem;border-right:1px solid var(--border2);position:relative;transition:background .3s;cursor:default}
-.cada-card:last-child{border-right:none}
-.cada-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--cyan);transform:scaleX(0);transition:transform .4s ease;transform-origin:left}
-.cada-card:hover::after{transform:scaleX(1)}
-.cada-card:hover{background:rgba(0,200,255,.04)}
-.cada-letter{font-family:var(--display);font-size:5rem;letter-spacing:.02em;line-height:1;color:var(--cyan);opacity:.15;margin-bottom:1rem;transition:opacity .3s}
-.cada-card:hover .cada-letter{opacity:.9}
-.cada-title{font-family:var(--display);font-size:1.4rem;letter-spacing:.04em;margin-bottom:.6rem}
-.cada-sub{font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);margin-bottom:.75rem}
-.cada-desc{font-size:.88rem;color:var(--muted);line-height:1.6}
+      --font-display: 'Bebas Neue', sans-serif;
+      --font-body:    'Outfit', sans-serif;
+    }
 
-/* ABOUT */
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
-.about-img{position:relative;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;border:1px solid var(--border)}
-.about-img-ph{width:100%;height:100%;background:linear-gradient(135deg,var(--surface2) 0%,var(--surface) 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;color:var(--muted)}
-.about-img-icon{font-size:3rem;opacity:.3}
-.about-img-txt{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;opacity:.5;text-align:center}
-.about-img::before,.about-img::after{content:'';position:absolute;width:20px;height:20px;border-color:var(--cyan);border-style:solid;z-index:2}
-.about-img::before{top:12px;left:12px;border-width:1px 0 0 1px}
-.about-img::after{bottom:12px;right:12px;border-width:0 1px 1px 0}
-.about-text .s-body{margin-bottom:2.5rem}
-.advs{display:flex;flex-direction:column;gap:.75rem}
-.adv{display:flex;align-items:flex-start;gap:1rem;padding:1rem 1.25rem;border:1px solid var(--border2);border-radius:var(--r);font-size:.9rem;color:rgba(238,242,247,.75);transition:border-color .2s,background .2s}
-.adv:hover{border-color:var(--border);background:var(--cyan-glow)}
-.adv-arrow{color:var(--cyan);flex-shrink:0;margin-top:1px}
+    /* ─── RESET ─────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
 
-/* TRAJECTORY */
-.trajectory-bg{background:var(--surface);border-top:1px solid var(--border2);border-bottom:1px solid var(--border2)}
-.trajectory-head{text-align:center;margin-bottom:2rem}
-.trajectory-head .s-body{margin:0 auto}
-.trajectory-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-.trajectory-card{background:var(--bg);border:1px solid var(--border2);border-radius:var(--r);padding:1.7rem;transition:border-color .2s,transform .2s}
-.trajectory-card:hover{border-color:var(--border);transform:translateY(-3px)}
-.trajectory-period{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);margin-bottom:.5rem}
-.trajectory-title{font-family:var(--display);font-size:1.15rem;letter-spacing:.03em;margin-bottom:.7rem}
-.trajectory-list{margin:0;padding-left:1rem;color:var(--muted);font-size:.9rem;line-height:1.6}
-.trajectory-list li{margin:.35rem 0}
+    /* ─── TYPOGRAPHY ────────────────────────── */
+    h1,h2,h3,h4 { font-family: var(--font-display); letter-spacing: .03em; line-height: 1.1; color: var(--text); }
+    .section-label {
+      display: inline-block;
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--blue);
+      background: var(--blue-pale2);
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+    }
 
-/* CASES */
-.cases-bg{background:var(--surface);border-top:1px solid var(--border2);border-bottom:1px solid var(--border2)}
-.cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:3.5rem}
-.case-card{background:var(--bg);border:1px solid var(--border2);border-radius:var(--r);padding:2.5rem 2rem;position:relative;overflow:hidden;transition:border-color .25s,transform .25s}
-.case-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:0;transition:opacity .3s}
-.case-card:hover::before{opacity:1}
-.case-card:hover{border-color:var(--border);transform:translateY(-4px)}
-.case-client{font-size:.7rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--cyan);margin-bottom:1rem}
-.case-title{font-family:var(--display);font-size:1.3rem;letter-spacing:.04em;line-height:1.1;margin-bottom:.75rem}
-.case-desc{font-size:.88rem;color:var(--muted);line-height:1.6;margin-bottom:1.5rem}
-.case-stats{display:flex;flex-direction:column;gap:.5rem;border-top:1px solid var(--border2);padding-top:1.25rem}
-.case-stat{display:flex;align-items:center;gap:.75rem;font-size:.83rem;color:rgba(238,242,247,.7)}
-.case-stat-dot{width:5px;height:5px;border-radius:50%;background:var(--cyan);flex-shrink:0}
+    /* ─── LAYOUT UTILITIES ──────────────────── */
+    .container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 96px 0; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; }
 
-/* LABS */
-.labs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:3.5rem}
-.lab-card{background:var(--surface);border:1px solid var(--border2);border-radius:var(--r);padding:2rem;display:flex;flex-direction:column;gap:1rem;position:relative;transition:border-color .25s,transform .25s}
-.lab-card:hover{border-color:var(--border);transform:translateY(-3px)}
-.lab-top{display:flex;align-items:center;justify-content:space-between}
-.lab-icon{font-size:2rem}
-.lab-badge{font-size:.65rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:.2rem .65rem;border-radius:100px;border:1px solid var(--border2);color:var(--muted)}
-.lab-badge.active{border-color:rgba(0,200,255,.3);color:var(--cyan);background:var(--cyan-glow)}
-.lab-title{font-family:var(--display);font-size:1.3rem;letter-spacing:.04em}
-.lab-desc{font-size:.88rem;color:var(--muted);line-height:1.6;flex:1}
-.lab-link{display:inline-flex;align-items:center;gap:.4rem;font-size:.82rem;font-weight:600;color:var(--cyan);text-decoration:none;border-bottom:1px solid rgba(0,200,255,.3);padding-bottom:2px;transition:border-color .2s;margin-top:.5rem}
-.lab-link:hover{border-color:var(--cyan)}
-.lab-card--featured{grid-column:1/-1;border-color:var(--border);background:linear-gradient(135deg,rgba(0,200,255,.07) 0%,var(--surface2) 60%)}
-.lab-card--featured::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--cyan),transparent)}
-.lab-card--featured .lab-icon{font-size:2.5rem}
-.lab-card--featured .lab-title{font-size:1.6rem}
-.lab-card--featured .lab-desc{font-size:.95rem;max-width:600px}
+    /* ─── BUTTONS ───────────────────────────── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 28px; border-radius: var(--radius);
+      font-family: var(--font-body); font-size: .95rem; font-weight: 600;
+      cursor: pointer; transition: all var(--transition); border: 2px solid transparent;
+    }
+    .btn-primary {
+      background: var(--blue); color: #fff;
+    }
+    .btn-primary:hover {
+      background: var(--blue-mid);
+      box-shadow: 0 4px 24px rgba(37,99,235,.35);
+      transform: translateY(-1px);
+    }
+    .btn-outline {
+      background: transparent; color: var(--blue); border-color: var(--blue);
+    }
+    .btn-outline:hover {
+      background: var(--blue-pale); transform: translateY(-1px);
+    }
 
-/* BLOG */
-.blog-bg{background:var(--surface);border-top:1px solid var(--border2);border-bottom:1px solid var(--border2)}
-.blog-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:3.5rem;flex-wrap:wrap;gap:1.5rem}
-.blog-ver-todos{display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;font-weight:600;color:var(--cyan);text-decoration:none;border-bottom:1px solid rgba(0,200,255,.3);padding-bottom:2px;transition:gap .2s,border-color .2s}
-.blog-ver-todos:hover{gap:.7rem;border-color:var(--cyan)}
-.blog-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:1rem}
-.blog-card{background:var(--bg);border:1px solid var(--border2);border-radius:var(--r);overflow:hidden;text-decoration:none;color:var(--white);display:flex;flex-direction:column;transition:border-color .25s,transform .25s}
-.blog-card:hover{border-color:var(--border);transform:translateY(-3px)}
-.blog-card-img{width:100%;aspect-ratio:16/9;background:var(--surface2);display:flex;align-items:center;justify-content:center;font-size:3rem;position:relative;overflow:hidden}
-.blog-card--featured .blog-card-img{aspect-ratio:16/8}
-.blog-img-line{position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:0;transition:opacity .3s}
-.blog-card:hover .blog-img-line{opacity:1}
-.blog-card-body{padding:1.5rem;display:flex;flex-direction:column;flex:1;gap:.6rem}
-.blog-card--featured .blog-card-body{padding:2rem}
-.blog-meta{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
-.blog-lab-tag{font-size:.65rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:.2rem .6rem;border-radius:100px;border:1px solid var(--border);color:var(--cyan);background:var(--cyan-glow)}
-.blog-date{font-size:.72rem;color:var(--muted)}
-.blog-card-title{font-family:var(--display);letter-spacing:.03em;line-height:1.15;font-size:1.1rem}
-.blog-card--featured .blog-card-title{font-size:1.5rem}
-.blog-card-excerpt{font-size:.85rem;color:var(--muted);line-height:1.6;flex:1}
-.blog-card--featured .blog-card-excerpt{font-size:.92rem}
-.blog-read-more{font-size:.8rem;font-weight:600;color:var(--cyan);display:flex;align-items:center;gap:.35rem;margin-top:.5rem;transition:gap .2s}
-.blog-card:hover .blog-read-more{gap:.6rem}
+    /* ─── CARDS ─────────────────────────────── */
+    .card {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      transition: all var(--transition);
+    }
+    .card:hover {
+      border-color: var(--blue);
+      box-shadow: 0 8px 32px rgba(29,78,216,.10);
+      transform: translateY(-3px);
+    }
+    .card-featured {
+      background: var(--blue);
+      color: #fff;
+      border-color: var(--blue);
+    }
+    .card-featured h3, .card-featured p, .card-featured .card-meta { color: #fff; }
+    .card-featured .card-icon { color: rgba(255,255,255,.8); }
 
-/* BRIDGE */
-.bridge{background:linear-gradient(135deg,#0a1628 0%,#060d1a 100%);border-top:1px solid rgba(0,200,255,.15);border-bottom:1px solid rgba(0,200,255,.15);padding:4rem 3rem}
-.bridge-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center}
-.bridge-eyebrow{font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(0,200,255,.6);margin-bottom:.75rem}
-.bridge-title{font-family:var(--display);font-size:clamp(1.6rem,3vw,2.4rem);letter-spacing:.04em;line-height:1.1;margin-bottom:.75rem}
-.bridge-title em{font-style:normal;color:var(--cyan)}
-.bridge-desc{font-size:.95rem;color:rgba(238,242,247,.6);max-width:520px;line-height:1.7}
-.bridge-cta{display:inline-flex;align-items:center;gap:.6rem;background:transparent;border:1px solid var(--cyan);color:var(--cyan);padding:1rem 2rem;border-radius:var(--r);font-family:var(--body);font-size:.9rem;font-weight:600;text-decoration:none;white-space:nowrap;transition:background .2s,box-shadow .2s,color .2s;flex-shrink:0}
-.bridge-cta:hover{background:var(--cyan);color:#000;box-shadow:0 0 25px rgba(0,200,255,.35)}
-.bridge-attr{font-family:var(--display);font-size:.85rem;letter-spacing:.12em;color:rgba(0,200,255,.4);margin-top:.5rem;display:flex;align-items:center;gap:.5rem}
-.bridge-attr::before{content:'';display:block;width:1rem;height:1px;background:rgba(0,200,255,.3)}
+    /* ─── NAV ───────────────────────────────── */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(255,255,255,.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1.5px solid var(--border);
+      transition: all var(--transition);
+    }
+    .nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.08); }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 68px; max-width: 1160px; margin: 0 auto; padding: 0 24px;
+    }
+    /* ─── LOGO PLACEHOLDER ─────────────────────
+       👉 REEMPLAZA este bloque por tu <img> real:
+          <img src="/assets/img/logo-atiemppo.svg" alt="Atiemppo" height="36" />
+    ─────────────────────────────────────────── */
+    .logo-placeholder {
+      display: flex; align-items: center; gap: 10px;
+      font-family: var(--font-display); font-size: 1.6rem; color: var(--text);
+      letter-spacing: .04em;
+    }
+    .logo-dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--blue); animation: pulse-dot 2s infinite;
+    }
+    @keyframes pulse-dot {
+      0%,100% { transform: scale(1); opacity: 1; }
+      50%      { transform: scale(1.35); opacity: .7; }
+    }
+    .nav-links { display: flex; gap: 32px; align-items: center; }
+    .nav-links a {
+      font-size: .9rem; font-weight: 500; color: var(--text-muted);
+      transition: color var(--transition);
+    }
+    .nav-links a:hover { color: var(--blue); }
+    .nav-cta { margin-left: 16px; }
+    .burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .burger span { display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px; }
 
-/* CONTACT */
-.contact-bg{background:linear-gradient(135deg,var(--surface) 0%,var(--bg) 100%);border-top:1px solid var(--border2)}
-.contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
-.contact-links{display:flex;flex-direction:column;gap:1rem;margin:2.5rem 0}
-.contact-link{display:flex;align-items:center;gap:1rem;padding:1rem 1.25rem;border:1px solid var(--border2);border-radius:var(--r);text-decoration:none;color:rgba(238,242,247,.75);font-size:.9rem;transition:all .2s}
-.contact-link:hover{border-color:var(--border);color:var(--cyan);background:var(--cyan-glow)}
-.contact-ico{font-size:1.1rem;width:20px;text-align:center}
-.dash-link{display:inline-flex;align-items:center;gap:.5rem;font-size:.85rem;color:var(--cyan);text-decoration:none;border-bottom:1px solid rgba(0,200,255,.3);padding-bottom:2px;transition:border-color .2s}
-.dash-link:hover{border-color:var(--cyan)}
-.contact-form{background:var(--surface);border:1px solid var(--border2);border-radius:var(--r);padding:2.5rem}
-.form-title{font-family:var(--display);font-size:1.5rem;letter-spacing:.06em;margin-bottom:1.75rem}
-.form-group{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1rem}
-.form-label{font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.form-input,.form-textarea{background:var(--bg);border:1px solid var(--border2);border-radius:4px;padding:.8rem 1rem;color:var(--white);font-family:var(--body);font-size:.92rem;font-weight:300;outline:none;transition:border-color .2s,box-shadow .2s}
-.form-input:focus,.form-textarea:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(0,200,255,.08)}
-.form-textarea{resize:vertical;min-height:120px}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.form-submit{width:100%;background:var(--cyan);color:#000;border:none;cursor:pointer;padding:.9rem;border-radius:var(--r);font-family:var(--body);font-size:.95rem;font-weight:700;transition:box-shadow .2s,opacity .2s;margin-top:.5rem}
-.form-submit:hover{box-shadow:0 0 25px rgba(0,200,255,.4);opacity:.9}
+    /* ─── HERO ──────────────────────────────── */
+    .hero {
+      min-height: 100vh;
+      display: flex; align-items: center;
+      padding-top: 68px;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #fff 60%, var(--blue-pale) 100%);
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 800px 600px at 80% 50%, rgba(29,78,216,.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
+      max-width: 1160px; margin: 0 auto; padding: 0 24px;
+      position: relative; z-index: 1;
+    }
+    .hero-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: .78rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--blue); margin-bottom: 20px;
+    }
+    .hero-label span { background: var(--blue-pale2); padding: 3px 10px; border-radius: 20px; }
+    .hero h1 {
+      font-size: clamp(3rem, 6vw, 5.5rem);
+      color: var(--text);
+      line-height: 1.0;
+      margin-bottom: 24px;
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--blue);
+    }
+    .hero p {
+      font-size: 1.1rem; color: var(--text-muted);
+      max-width: 480px; margin-bottom: 36px; line-height: 1.75;
+    }
+    .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+    .hero-visual {
+      position: relative; display: flex; align-items: center; justify-content: center;
+    }
+    .hero-canvas-wrap {
+      width: 100%; aspect-ratio: 1;
+      border-radius: 16px;
+      background: linear-gradient(145deg, var(--surface), var(--blue-pale));
+      border: 1.5px solid var(--border);
+      overflow: hidden; position: relative;
+    }
+    #heroCanvas { width: 100%; height: 100%; }
 
-/* FOOTER */
-footer{background:var(--bg);border-top:1px solid var(--border2);padding:2.5rem 3rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem}
-.footer-logo{font-family:var(--display);font-size:1.4rem;letter-spacing:.06em;color:var(--white);text-decoration:none;display:flex;align-items:center;gap:.5rem}
-.footer-dot{width:6px;height:6px;border-radius:50%;background:var(--cyan);box-shadow:0 0 8px var(--cyan)}
-.footer-nav{display:flex;gap:2rem;list-style:none;flex-wrap:wrap}
-.footer-nav a{color:var(--muted);text-decoration:none;font-size:.85rem;transition:color .2s}
-.footer-nav a:hover{color:var(--cyan)}
-.footer-copy{font-size:.78rem;color:var(--muted)}
+    /* ─── STATS STRIP ───────────────────────── */
+    .stats-strip {
+      padding: 32px 0; background: var(--blue);
+    }
+    .stats-inner {
+      display: flex; justify-content: space-around; align-items: center;
+      max-width: 1160px; margin: 0 auto; padding: 0 24px;
+      flex-wrap: wrap; gap: 24px;
+    }
+    .stat-item { text-align: center; }
+    .stat-num {
+      font-family: var(--font-display); font-size: 2.4rem; color: #fff; line-height: 1;
+    }
+    .stat-lbl { font-size: .83rem; color: rgba(255,255,255,.75); margin-top: 4px; }
 
-/* HERO ANIMATIONS — CSS only, no JS dependency */
-@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-.hero-badge{animation:fadeUp .5s .05s both}
-.hero-h1{animation:fadeUp .6s .15s both}
-.hero-sub{animation:fadeUp .6s .25s both}
-.hero-method{animation:fadeUp .6s .3s both}
-.hero-ctas{animation:fadeUp .6s .35s both}
-.hero-stats{animation:fadeUp .6s .45s both}
+    /* ─── MARQUEE ───────────────────────────── */
+    .marquee-section { padding: 24px 0; border-top: 1.5px solid var(--border); border-bottom: 1.5px solid var(--border); overflow: hidden; }
+    .marquee-track { display: flex; width: max-content; animation: marquee-move 28s linear infinite; }
+    .marquee-item {
+      white-space: nowrap; padding: 0 40px;
+      font-size: .85rem; font-weight: 500; letter-spacing: .04em;
+      color: var(--text-muted);
+      display: flex; align-items: center; gap: 12px;
+    }
+    .marquee-item::before {
+      content: '●'; color: var(--blue); font-size: .5rem;
+    }
+    @keyframes marquee-move {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
 
-/* REVEAL — Progressive Enhancement
-   By default everything is visible.
-   Only when JS adds .js-ready to <html>, elements animate */
-.reveal{transition:opacity .7s ease,transform .7s ease}
-.js-ready .reveal{opacity:0;transform:translateY(24px)}
-.js-ready .reveal.visible{opacity:1;transform:none}
+    /* ─── CADA METHOD ───────────────────────── */
+    .cada-grid { grid-template-columns: repeat(4,1fr); }
+    .cada-num {
+      font-family: var(--font-display); font-size: 3rem; color: var(--blue-pale2);
+      line-height: 1; margin-bottom: 4px;
+    }
+    .cada-letter {
+      font-family: var(--font-display); font-size: 2.2rem; color: var(--blue);
+      margin-bottom: 8px; display: block;
+    }
 
-/* RESPONSIVE */
-@media(max-width:900px){
-  nav{padding:1rem 1.5rem}
-  .nav-links{display:none;position:absolute;top:72px;left:0;right:0;flex-direction:column;align-items:flex-start;background:rgba(6,8,16,.98);border-bottom:1px solid var(--border);padding:1.5rem;gap:1.25rem}
-  .nav-links.open{display:flex}
-  .nav-burger{display:flex}
-  section{padding:4rem 1.5rem}
-  .cada-grid{grid-template-columns:1fr 1fr}
-  .cada-card{border-bottom:1px solid var(--border2)}
-  .about-grid{grid-template-columns:1fr}
-  .about-img{display:none}
-  .cases-grid{grid-template-columns:1fr}
-  .labs-grid{grid-template-columns:1fr}
-  .blog-grid{grid-template-columns:1fr}
-  .trajectory-grid{grid-template-columns:1fr}
-  .contact-inner{grid-template-columns:1fr;gap:3rem}
-  .bridge-inner{grid-template-columns:1fr;gap:2rem}
-  footer{flex-direction:column;align-items:flex-start;padding:2rem 1.5rem}
-  .bridge{padding:3rem 1.5rem}
-}
-@media(max-width:580px){
-  .cada-grid{grid-template-columns:1fr}
-  .form-row{grid-template-columns:1fr}
-  .hero-stats{flex-direction:column;align-items:center}
-}
+    /* ─── ABOUT ─────────────────────────────── */
+    .about-img-wrap {
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--surface2);
+      border: 1.5px solid var(--border);
+      aspect-ratio: 4/5;
+      display: flex; align-items: center; justify-content: center;
+      position: relative;
+    }
+    /* ─── FOTO PLACEHOLDER ─────────────────────
+       👉 REEMPLAZA por: <img src="/assets/img/juan-pablo.jpg" alt="Juan Pablo Matiz" />
+       La imagen debe ser aprox 600×750px
+    ─────────────────────────────────────────── */
+    .photo-placeholder {
+      text-align: center; color: var(--text-light);
+    }
+    .photo-placeholder svg { width: 80px; height: 80px; margin: 0 auto 12px; }
+    .photo-placeholder p { font-size: .85rem; }
+    .about-text h2 { font-size: clamp(2.2rem, 4vw, 3.5rem); margin-bottom: 20px; }
+    .about-text p { color: var(--text-muted); margin-bottom: 16px; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+    .tag {
+      font-size: .78rem; font-weight: 500;
+      background: var(--blue-pale2); color: var(--blue);
+      padding: 4px 12px; border-radius: 20px;
+    }
 
-/* FLOATING WHATSAPP CTA */
-.wa-float{position:fixed;right:18px;bottom:18px;z-index:250;background:#25D366;color:#001b0d;border-radius:999px;padding:.7rem 1rem;display:inline-flex;align-items:center;gap:.5rem;font-size:.85rem;font-weight:700;box-shadow:0 10px 24px rgba(0,0,0,.35);border:1px solid rgba(0,0,0,.15)}
-.wa-float:hover{filter:brightness(1.05)}
-.wa-float .wa-ico{font-size:1rem}
-@media(max-width:900px){.wa-float{bottom:14px;right:14px;padding:.65rem .9rem}}
-</style>
+    /* ─── TIMELINE ──────────────────────────── */
+    .timeline-grid { grid-template-columns: repeat(3,1fr); }
+    .timeline-year {
+      font-family: var(--font-display); font-size: 1.5rem; color: var(--blue); margin-bottom: 8px;
+    }
+
+    /* ─── CASE STUDIES ──────────────────────── */
+    /* ─── LOGOS CLIENTES ───────────────────────
+       👉 En cada .case-logo-wrap, reemplaza el .logo-text-placeholder
+          por: <img src="/assets/img/logos/EMPRESA.svg" alt="EMPRESA" height="36" />
+          Logos sugeridos: SVG en blanco/negro, altura 36-44px
+    ─────────────────────────────────────────── */
+    .case-logo-wrap {
+      height: 52px; display: flex; align-items: center;
+      margin-bottom: 16px;
+    }
+    .logo-text-placeholder {
+      font-family: var(--font-display); font-size: 1.4rem; letter-spacing: .06em;
+      color: var(--text-muted); opacity: .5;
+      border: 1.5px dashed var(--border); border-radius: 6px; padding: 6px 16px;
+    }
+    .case-tag {
+      font-size: .73rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+      color: var(--blue); background: var(--blue-pale2);
+      padding: 3px 10px; border-radius: 12px; margin-bottom: 12px; display: inline-block;
+    }
+
+    /* ─── LABS ──────────────────────────────── */
+    .labs-grid { grid-template-columns: repeat(4,1fr); }
+    .lab-icon {
+      width: 44px; height: 44px; border-radius: 10px;
+      background: var(--blue-pale2); display: flex; align-items: center; justify-content: center;
+      margin-bottom: 16px; font-size: 1.3rem;
+    }
+    .card-featured .lab-icon { background: rgba(255,255,255,.2); }
+
+    /* ─── BLOG ──────────────────────────────── */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 24px;
+    }
+    .blog-posts-col { display: flex; flex-direction: column; gap: 16px; }
+    .blog-card-small {
+      display: flex; gap: 16px; align-items: flex-start;
+      padding: 20px; background: var(--surface); border: 1.5px solid var(--border);
+      border-radius: var(--radius); transition: all var(--transition);
+    }
+    .blog-card-small:hover { border-color: var(--blue); transform: translateX(4px); }
+    .blog-tag {
+      font-size: .7rem; font-weight: 600; letter-spacing: .07em; text-transform: uppercase;
+      color: var(--blue); background: var(--blue-pale2);
+      padding: 2px 8px; border-radius: 8px; white-space: nowrap;
+    }
+    .blog-featured-card {
+      background: var(--blue);
+      color: #fff; border-radius: var(--radius); padding: 32px;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      min-height: 320px;
+    }
+    .blog-featured-card .blog-tag { background: rgba(255,255,255,.2); color: #fff; }
+    .blog-featured-card h3 { color: #fff; font-size: 1.5rem; margin: 12px 0 8px; }
+    .blog-featured-card p { color: rgba(255,255,255,.75); font-size: .9rem; }
+
+    /* ─── BRIDGE ────────────────────────────── */
+    .bridge {
+      background: linear-gradient(135deg, var(--blue) 0%, #1E3A8A 100%);
+      color: #fff;
+    }
+    .bridge h2 { color: #fff; font-size: clamp(2rem, 4vw, 3.5rem); }
+    .bridge p { color: rgba(255,255,255,.8); font-size: 1.1rem; }
+    .btn-white {
+      background: #fff; color: var(--blue);
+    }
+    .btn-white:hover { background: var(--blue-pale); box-shadow: 0 4px 20px rgba(0,0,0,.15); }
+
+    /* ─── CONTACT ───────────────────────────── */
+    .contact-grid { grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+    .form-field { margin-bottom: 20px; }
+    .form-field label { display: block; font-size: .88rem; font-weight: 500; margin-bottom: 6px; color: var(--text); }
+    .form-field input,
+    .form-field textarea,
+    .form-field select {
+      width: 100%; padding: 12px 16px;
+      border: 1.5px solid var(--border); border-radius: var(--radius);
+      font-family: var(--font-body); font-size: .95rem; color: var(--text);
+      background: var(--surface); transition: border-color var(--transition);
+      outline: none;
+    }
+    .form-field input:focus,
+    .form-field textarea:focus { border-color: var(--blue); }
+    .form-field textarea { resize: vertical; min-height: 120px; }
+    .contact-info-item {
+      display: flex; gap: 14px; align-items: flex-start; margin-bottom: 24px;
+    }
+    .contact-icon {
+      width: 42px; height: 42px; min-width: 42px;
+      background: var(--blue-pale2); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--blue); font-size: 1.1rem;
+    }
+
+    /* ─── FOOTER ────────────────────────────── */
+    footer {
+      background: var(--text); color: rgba(255,255,255,.75);
+      padding: 56px 0 32px;
+    }
+    .footer-inner {
+      max-width: 1160px; margin: 0 auto; padding: 0 24px;
+    }
+    .footer-top {
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-logo {
+      font-family: var(--font-display); font-size: 1.8rem; color: #fff; margin-bottom: 12px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .footer-logo-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--blue-light); }
+    /* 👉 REEMPLAZA .footer-logo por: <img src="/assets/img/logo-atiemppo-white.svg" alt="Atiemppo" height="32" /> */
+    footer p { font-size: .88rem; line-height: 1.7; }
+    .footer-col h4 { color: #fff; font-family: var(--font-body); font-size: .85rem; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; margin-bottom: 16px; }
+    .footer-col ul li { margin-bottom: 10px; }
+    .footer-col ul li a { font-size: .88rem; color: rgba(255,255,255,.6); transition: color var(--transition); }
+    .footer-col ul li a:hover { color: var(--blue-light); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 24px; display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 12px;
+    }
+    .footer-bottom p { font-size: .8rem; }
+
+    /* ─── WHATSAPP FLOAT ────────────────────── */
+    .wa-float {
+      position: fixed; bottom: 28px; right: 28px; z-index: 200;
+      width: 52px; height: 52px; border-radius: 50%;
+      background: #25D366; color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,.4);
+      transition: transform var(--transition);
+    }
+    .wa-float:hover { transform: scale(1.1); }
+    .wa-float svg { width: 26px; height: 26px; fill: #fff; }
+
+    /* ─── SCROLL REVEAL ─────────────────────── */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ─── RESPONSIVE ────────────────────────── */
+    @media(max-width: 960px) {
+      .hero-inner, .grid-2, .contact-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 3.2rem; }
+      .hero p { max-width: 100%; }
+      .grid-3, .grid-4, .cada-grid, .timeline-grid, .labs-grid { grid-template-columns: 1fr 1fr; }
+      .blog-grid { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+      .nav-links { display: none; }
+      .burger { display: flex; }
+    }
+    @media(max-width: 560px) {
+      .grid-3, .grid-4, .cada-grid, .timeline-grid, .labs-grid { grid-template-columns: 1fr; }
+      .stats-inner { gap: 16px; }
+      .footer-top { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
 
-<!-- NAV -->
-<nav id="nav">
-  <a href="#" class="nav-logo"><div class="nav-dot"></div>ATIEMPPO</a>
-  <button class="nav-burger" id="burger" aria-label="Menú"><span></span><span></span><span></span></button>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#cada">Método C.A.D.A.</a></li>
-    <li><a href="#nosotros">Nosotros</a></li>
-    <li><a href="#trayectoria">Trayectoria</a></li>
-    <li><a href="#casos">Casos</a></li>
-    <li><a href="#labs">Labs</a></li>
-    <li><a href="/blog/">Blog</a></li>
-    <li><a href="#contacto" class="nav-cta">Iniciar experimento</a></li>
-  </ul>
+<!-- ══════════════════════════════════════════
+     NAVEGACIÓN
+══════════════════════════════════════════ -->
+<nav class="nav" id="mainNav">
+  <div class="nav-inner">
+
+    <!-- ╔══════════════════════════════════════
+         LOGO — reemplaza con tu <img> real
+         Ejemplo:
+         <img src="/assets/img/logo-atiemppo.svg" alt="Atiemppo" height="36" />
+    ══════════════════════════════════════╝ -->
+    <div class="logo-placeholder">
+      <div class="logo-dot"></div>
+      ATIEMPPO
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#metodo">Método C.A.D.A.</a></li>
+      <li><a href="#casos">Casos</a></li>
+      <li><a href="#labs">Labs</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contacto" class="btn btn-primary nav-cta" style="padding:10px 22px">Hablemos →</a></li>
+    </ul>
+    <div class="burger" id="burger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
 </nav>
 
-<!-- HERO -->
-<section class="hero">
-  <canvas id="bg"></canvas>
-  <div class="hero-glow"></div>
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section class="hero" id="hero">
   <div class="hero-inner">
-    <div class="hero-badge"><div class="hero-bdot"></div>Agencia de Agentes &amp; Soluciones de Contexto</div>
-    <h1 class="hero-h1">¿TU OPERACIÓN<br/>YA <em>ACTÚA</em> SOLA?</h1>
-    <p class="hero-sub">La mayoría de empresas tienen datos. Pocas tienen agentes que actúen con ellos.<br/><strong style="color:var(--white);font-weight:500">Orquestamos agentes inteligentes</strong> que entienden el contexto real de tu negocio y actúan de inmediato.</p>
-    <p class="hero-method">Metodología C.A.D.A. · Contexto → Acción → Datos → Auditable</p>
-    <div class="hero-ctas">
-      <a href="#contacto" class="btn btn-primary">Inicia un experimento — Diagnóstico 30 min gratis →</a>
-      <a href="#cada" class="btn btn-ghost">Ver el método</a>
-    </div>
-    <div class="hero-stats">
-      <div class="hero-stat"><span class="stat-num">+18K</span><span class="stat-lbl">evaluaciones de visibilidad<br/>procesadas</span></div>
-      <div class="hero-stat"><span class="stat-num">+88K</span><span class="stat-lbl">activos controlados<br/>en tiempo real</span></div>
-      <div class="hero-stat"><span class="stat-num">$1.5B</span><span class="stat-lbl">COP pagados<br/>digitalmente</span></div>
-      <div class="hero-stat"><span class="stat-num">+15K</span><span class="stat-lbl">cirugías seguidas<br/>multipaís</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- MARQUEE -->
-<div class="marquee"><div class="marquee-track">
-  <div class="marquee-item"><span>◆</span> Orquestación de Agentes</div>
-  <div class="marquee-item"><span>◆</span> Metodología C.A.D.A.</div>
-  <div class="marquee-item"><span>◆</span> SICETAC-LAB Activo</div>
-  <div class="marquee-item"><span>◆</span> ATICA — Transporte Colombia</div>
-  <div class="marquee-item"><span>◆</span> Contexto antes que Datos</div>
-  <div class="marquee-item"><span>◆</span> Acción Inmediata</div>
-  <div class="marquee-item"><span>◆</span> Auditable 100%</div>
-  <div class="marquee-item"><span>◆</span> Plataforma EUREKA</div>
-  <div class="marquee-item"><span>◆</span> Insignia Impact</div>
-  <div class="marquee-item"><span>◆</span> Orquestación de Agentes</div>
-  <div class="marquee-item"><span>◆</span> Metodología C.A.D.A.</div>
-  <div class="marquee-item"><span>◆</span> SICETAC-LAB Activo</div>
-  <div class="marquee-item"><span>◆</span> ATICA — Transporte Colombia</div>
-  <div class="marquee-item"><span>◆</span> Contexto antes que Datos</div>
-  <div class="marquee-item"><span>◆</span> Acción Inmediata</div>
-  <div class="marquee-item"><span>◆</span> Auditable 100%</div>
-  <div class="marquee-item"><span>◆</span> Plataforma EUREKA</div>
-  <div class="marquee-item"><span>◆</span> Insignia Impact</div>
-</div></div>
-
-<!-- CADA -->
-<section class="cada-bg" id="cada">
-  <div class="container">
-    <div class="cada-header reveal">
-      <div class="tag">Nuestro Método</div>
-      <h2 class="s-title">Le damos la vuelta<br/>al análisis tradicional.</h2>
-      <p class="s-body">Primero el <strong style="color:var(--white)">contexto</strong>, luego la <strong style="color:var(--white)">acción</strong>.<br/>Así la IA no informa… resuelve en el mundo real.</p>
-    </div>
-    <div class="cada-grid reveal">
-      <div class="cada-card"><div class="cada-letter">C</div><div class="cada-title">Contexto</div><div class="cada-sub">El entorno</div><p class="cada-desc">Antes del dato, capturamos tu realidad: mercado, regulaciones, clientes, variables locales y comportamientos dinámicos. Nuestros agentes "ven" tu negocio como tú lo vives.</p></div>
-      <div class="cada-card"><div class="cada-letter">A</div><div class="cada-title">Acción</div><div class="cada-sub">La respuesta</div><p class="cada-desc">El agente actúa ya: ejecuta decisiones, ajusta procesos, resuelve problemas en tiempo real. No reportes estáticos; impacto operativo inmediato.</p></div>
-      <div class="cada-card"><div class="cada-letter">D</div><div class="cada-title">Datos</div><div class="cada-sub">La evidencia</div><p class="cada-desc">Datos dinámicos de múltiples fuentes alimentan al agente para precisión y aprendizaje continuo. El sistema mejora en cada ciclo.</p></div>
-      <div class="cada-card"><div class="cada-letter">A</div><div class="cada-title">Auditable</div><div class="cada-sub">La transparencia</div><p class="cada-desc">Cada paso es trazable, seguro y verificable. Confianza absoluta en la automatización inteligente. Nada ocurre en caja negra.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- NOSOTROS -->
-<section id="nosotros">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-img reveal">
-        <div class="about-img-ph"><div class="about-img-icon">👤</div><div class="about-img-txt">Juan Pablo Matiz<br/>Fundador &amp; CEO</div></div>
+    <div class="hero-content">
+      <div class="hero-label">
+        <span>🤖 Agentes Inteligentes · Contexto · Acción</span>
       </div>
-      <div class="about-text reveal">
-        <div class="tag">Sobre el Fundador</div>
-        <h2 class="s-title">Juan Pablo Matiz — Fundador &amp; Visionary Leader</h2>
-        <p class="s-body" style="margin-bottom:1rem">De capturar datos en campo en 2013 a orquestar <strong style="color:var(--white)">agentes inteligentes</strong> en 2026. Más de 12 años convirtiendo complejidad operativa en acción real.</p>
-        <p class="s-body">Hoy, Atiemppo evoluciona con la metodología <strong style="color:var(--white)">C.A.D.A.</strong> (Contexto → Acción → Datos → Auditable) para pasar de reportes estáticos a operaciones que actúan en tiempo real.</p>
-        <div class="advs" style="margin-top:2.5rem">
-          <div class="adv"><span class="adv-arrow">→</span>2013: 1er lugar Apps.co (Ideación y Prototipado, MinTIC)</div>
-          <div class="adv"><span class="adv-arrow">→</span>2014: Magic Magnet para Coca-Cola (reconocimiento Demand Driven)</div>
-          <div class="adv"><span class="adv-arrow">→</span>Plataformas para DNP, BID, AJE, Haleon, Galderma y salud</div>
-          <div class="adv"><span class="adv-arrow">→</span>Resultados actuales: +1.400 usuarios ATICA, +88.000 activos, +15.000 cirugías y +$1.500M COP auditables</div>
-        </div>
+      <h1>
+        DECISIONES<br/>
+        <em>MÁS</em><br/>
+        RÁPIDAS.
+      </h1>
+      <p>
+        Construimos agentes de IA y soluciones de contexto para que tu empresa
+        actúe más rápido, con más datos y menos fricción.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contacto" class="btn btn-primary">Quiero resultados →</a>
+        <a href="#metodo" class="btn btn-outline">Ver el método C.A.D.A.</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-canvas-wrap">
+        <canvas id="heroCanvas"></canvas>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TRAYECTORIA -->
-<section class="trajectory-bg" id="trayectoria">
-  <div class="container">
-    <div class="trajectory-head reveal">
-      <div class="tag">Nuestra Trayectoria</div>
-      <h2 class="s-title">De captura de datos a agentes autónomos</h2>
-      <p class="s-body">Un puente claro entre legado operativo y evolución a IA agéntica aplicada al negocio real.</p>
-    </div>
-    <div class="trajectory-grid">
-      <div class="trajectory-card reveal">
-        <div class="trajectory-period">2013–2014 · Origen</div>
-        <div class="trajectory-title">Captura en campo y prototipado rápido</div>
-        <ul class="trajectory-list">
-          <li>1er lugar Apps.co (MinTIC)</li>
-          <li>Magic Magnet (Coca-Cola)</li>
-          <li>Base metodológica para decisiones con datos reales</li>
-        </ul>
-      </div>
-      <div class="trajectory-card reveal">
-        <div class="trajectory-period">2015–2023 · Escalamiento</div>
-        <div class="trajectory-title">Plataformas especializadas por sector</div>
-        <ul class="trajectory-list">
-          <li>“Colombia es Logística” (DNP)</li>
-          <li>Soluciones para AJE, Haleon y Galderma</li>
-          <li>BID 2023: Plan Vías Resilientes (Chontales)</li>
-        </ul>
-      </div>
-      <div class="trajectory-card reveal">
-        <div class="trajectory-period">2024–2026 · Evolución IA</div>
-        <div class="trajectory-title">Orquestación de agentes con C.A.D.A.</div>
-        <ul class="trajectory-list">
-          <li>ATICA en producción (+1.400 usuarios)</li>
-          <li>SICETAC-LAB y EUREKA</li>
-          <li>Insignia Impact para AEO/GEO</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- CASOS -->
-<section class="cases-bg" id="casos">
-  <div class="container">
-    <div class="reveal">
-      <div class="tag">Agentes en Acción</div>
-      <h2 class="s-title">Nuestras soluciones ya resuelven<br/>problemas críticos en el mundo real.</h2>
+<!-- ══════════════════════════════════════════
+     STATS STRIP
+══════════════════════════════════════════ -->
+<div class="stats-strip">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="stat-num">+12</div>
+      <div class="stat-lbl">Años de trayectoria</div>
     </div>
-    <div class="cases-grid">
-      <div class="case-card reveal">
-        <div class="case-client">Haleon</div>
-        <div class="case-title">Toma de información, validación &amp; dispersión</div>
-        <p class="case-desc">Entiende el contexto de mayoristas en Colombia, valida evaluaciones de visibilidad en punto de venta y procesa la dispersión de fondos de forma segura y auditable.</p>
-        <div class="case-stats">
-          <div class="case-stat"><div class="case-stat-dot"></div>+18.000 evaluaciones de visibilidad validadas</div>
-          <div class="case-stat"><div class="case-stat-dot"></div>+$1.500M COP procesados anualmente</div>
-          <div class="case-stat"><div class="case-stat-dot"></div>Dispersión 100% auditable</div>
-        </div>
-      </div>
-      <div class="case-card reveal">
-        <div class="case-client">Ifurniture</div>
-        <div class="case-title">Control de activos con contexto físico</div>
-        <p class="case-desc">Gestiona registros inmobiliarios con contexto físico completo: ubicación, fotos, novedades y alertas en tiempo real para equipos de campo y dirección.</p>
-        <div class="case-stats">
-          <div class="case-stat"><div class="case-stat-dot"></div>+88.000 activos controlados</div>
-          <div class="case-stat"><div class="case-stat-dot"></div>Alertas en tiempo real</div>
-          <div class="case-stat"><div class="case-stat-dot"></div>Visibilidad total campo–oficina</div>
-        </div>
-      </div>
-      <div class="case-card reveal">
-        <div class="case-client">Johnson &amp; Johnson</div>
-        <div class="case-title">Seguimiento en salud multipaís</div>
-        <p class="case-desc">Navega entornos médicos complejos para el seguimiento de cirugías en múltiples países, con dashboards dinámicos y reportes automáticos para equipos clínicos.</p>
-        <div class="case-stats">
-          <div class="case-stat"><div class="case-stat-dot"></div>+15.000 cirugías seguidas</div>
-          <div class="case-stat"><div class="case-stat-dot"></div>Cobertura multipaís</div>
-          <div class="case-stat"><div class="case-stat-dot"></div>Dashboards + reportes automáticos</div>
-        </div>
-      </div>
+    <div class="stat-item">
+      <div class="stat-num">3</div>
+      <div class="stat-lbl">Casos internacionales</div>
     </div>
-  </div>
-</section>
-
-<!-- LABS -->
-<section id="labs">
-  <div class="container">
-    <div class="reveal">
-      <div class="tag">Pipeline &amp; Laboratorios</div>
-      <h2 class="s-title">Próximos agentes<br/>en desarrollo.</h2>
-      <p class="s-body">Siempre experimentando. Siempre adaptándonos a lo que tu negocio necesita.</p>
+    <div class="stat-item">
+      <div class="stat-num">C.A.D.A.</div>
+      <div class="stat-lbl">Método propio</div>
     </div>
-    <div class="labs-grid">
-      <div class="lab-card reveal">
-        <div class="lab-top"><div class="lab-icon">⚡</div><span class="lab-badge active">Ya activo</span></div>
-        <div class="lab-title">SICETAC-LAB</div>
-        <p class="lab-desc">Agentes para cálculo instantáneo de costos y optimización de rutas en transporte Colombia / LatAm. El primer sistema dinámico sobre el SICETAC colombiano.</p>
-      </div>
-      <div class="lab-card reveal">
-        <div class="lab-top"><div class="lab-icon">🤖</div><span class="lab-badge active">Ya activo</span></div>
-        <div class="lab-title">ATICA</div>
-        <p class="lab-desc">El primer agente especializado de transporte en Colombia. Responde, analiza y entiende la complejidad del mercado colombiano del transporte en tiempo real.</p>
-      </div>
-      <div class="lab-card reveal">
-        <div class="lab-top"><div class="lab-icon">🛒</div><span class="lab-badge">Próximamente</span></div>
-        <div class="lab-title">Retail-Context Lab</div>
-        <p class="lab-desc">Agentes que capturan sell-out, detectan tendencias en punto de venta y reaccionan en tiempo real. Contexto completo del canal moderno y tradicional.</p>
-      </div>
-      <div class="lab-card lab-card--featured reveal">
-        <div class="lab-top"><div class="lab-icon">🌐</div><span class="lab-badge active">Ya activo</span></div>
-        <div class="lab-title">Insignia Impact</div>
-        <p class="lab-desc">Proceso dedicado para que empresas y marcas sean entendidas y recomendadas por las IAs. AEO (AI Engine Optimization) para visibilidad en los motores de inteligencia artificial.</p>
-        <a href="https://insigniaimpact.com" target="_blank" rel="noopener" class="lab-link">Conocer Insignia Impact ↗</a>
-      </div>
+    <div class="stat-item">
+      <div class="stat-num">100%</div>
+      <div class="stat-lbl">Resultados auditables</div>
     </div>
-  </div>
-</section>
-
-<!-- BLOG -->
-<section class="blog-bg" id="blog">
-  <div class="container">
-    <div class="blog-header reveal">
-      <div><div class="tag">Laboratorio en Vivo</div><h2 class="s-title">Avances, experimentos<br/>y aprendizajes.</h2></div>
-      <a href="/blog/" class="blog-ver-todos">Ver todos los artículos →</a>
-    </div>
-    <div class="blog-grid">
-      <a href="/blog/2026/02/atica-carta-del-fundador-7-meses-despues/" class="blog-card blog-card--featured reveal">
-        <div class="blog-card-img">🚛<div class="blog-img-line"></div></div>
-        <div class="blog-card-body">
-          <div class="blog-meta"><span class="blog-lab-tag">ATICA</span><span class="blog-date">Feb 2026</span></div>
-          <div class="blog-card-title">Carta del Fundador: ATICA, 7 meses después</div>
-          <p class="blog-card-excerpt">Lo que aprendimos tras 7 meses de ATICA, más de 1.400 usuarios únicos y la evolución hacia agentes que pasan del dato a la acción.</p>
-          <div class="blog-read-more">Leer artículo →</div>
-        </div>
-      </a>
-      <a href="/blog/2026/02/appsco-vuelta-colombia-origen-atiemppo/" class="blog-card reveal">
-        <div class="blog-card-img" style="font-size:2.2rem">🏁<div class="blog-img-line"></div></div>
-        <div class="blog-card-body">
-          <div class="blog-meta"><span class="blog-lab-tag">Atiemppo Lab</span><span class="blog-date">Feb 2026</span></div>
-          <div class="blog-card-title">El día que ganamos Apps.co siguiendo la Vuelta a Colombia</div>
-          <p class="blog-card-excerpt">La historia de origen de Atiemppo: de una idea que no cerraba a un MVP en tres semanas que terminó marcando el camino de la compañía.</p>
-          <div class="blog-read-more">Leer artículo →</div>
-        </div>
-      </a>
-      <a href="/blog/2026/02/aeo-visibilidad-ia-insignia-impact/" class="blog-card reveal">
-        <div class="blog-card-img" style="font-size:2.2rem">🌐<div class="blog-img-line"></div></div>
-        <div class="blog-card-body">
-          <div class="blog-meta"><span class="blog-lab-tag">Insignia Impact</span><span class="blog-date">Feb 2026</span></div>
-          <div class="blog-card-title">AEO: por qué la visibilidad en IA ya es una ventaja competitiva</div>
-          <p class="blog-card-excerpt">Qué cambia cuando tus clientes preguntan primero a ChatGPT, Claude o Perplexity, y cómo preparar tu marca para aparecer y ser recomendada.</p>
-          <div class="blog-read-more">Leer artículo →</div>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- BRIDGE -->
-<div class="bridge">
-  <div class="bridge-inner">
-    <div class="reveal">
-      <div class="bridge-eyebrow">Del ecosistema Atiemppo</div>
-      <h2 class="bridge-title">Tu operación actúa.<br/>Pero <em>¿las IAs te conocen?</em></h2>
-      <p class="bridge-desc">Tener agentes inteligentes es el primer paso. El siguiente es asegurarte de que ChatGPT, Claude, Perplexity y Gemini recomienden tu marca cuando tus clientes los consulten. De eso se encarga <strong style="color:var(--white)">Insignia Impact</strong>.</p>
-      <div class="bridge-attr">Una iniciativa de Juan Pablo Matiz · Atiemppo Lab</div>
-    </div>
-    <a href="https://insigniaimpact.com" target="_blank" rel="noopener" class="bridge-cta reveal">Audita tu visibilidad en IA ↗</a>
   </div>
 </div>
 
-<!-- CONTACTO -->
-<section class="contact-bg" id="contacto">
+
+<!-- ══════════════════════════════════════════
+     MARQUEE
+══════════════════════════════════════════ -->
+<div class="marquee-section">
+  <div class="marquee-track">
+    <!-- items duplicados para loop infinito -->
+    <span class="marquee-item">Agentes de IA</span>
+    <span class="marquee-item">Gestión de Contexto</span>
+    <span class="marquee-item">Automatización Inteligente</span>
+    <span class="marquee-item">Análisis de Datos</span>
+    <span class="marquee-item">Decisiones Auditables</span>
+    <span class="marquee-item">Integración API</span>
+    <span class="marquee-item">Transformación Digital</span>
+    <span class="marquee-item">Insignia Impact</span>
+    <span class="marquee-item">Metodología C.A.D.A.</span>
+    <span class="marquee-item">Agentes de IA</span>
+    <span class="marquee-item">Gestión de Contexto</span>
+    <span class="marquee-item">Automatización Inteligente</span>
+    <span class="marquee-item">Análisis de Datos</span>
+    <span class="marquee-item">Decisiones Auditables</span>
+    <span class="marquee-item">Integración API</span>
+    <span class="marquee-item">Transformación Digital</span>
+    <span class="marquee-item">Insignia Impact</span>
+    <span class="marquee-item">Metodología C.A.D.A.</span>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     MÉTODO C.A.D.A.
+══════════════════════════════════════════ -->
+<section id="metodo">
   <div class="container">
-    <div class="contact-inner">
-      <div class="contact-left reveal">
-        <div class="tag">Inicia un Experimento</div>
-        <h2 class="s-title">Hablemos de tu <span style="color:var(--cyan)">próximo agente.</span></h2>
-        <p class="s-body">Agenda <strong style="color:var(--white)">30 minutos gratis</strong>. Escuchamos tu contexto y te mostramos cómo un agente puede actuar ya en tu negocio.</p>
-        <div class="contact-links">
-          <a href="mailto:juanmatiz@atiemppo.co" class="contact-link"><span class="contact-ico">✉️</span>juanmatiz@atiemppo.com</a>
-          <a href="https://wa.me/573107687010" target="_blank" rel="noopener" class="contact-link"><span class="contact-ico">💬</span>WhatsApp — +57 310 768 7010</a>
-          <a href="https://linkedin.com/in/juanmatizg" target="_blank" rel="noopener" class="contact-link"><span class="contact-ico">🔗</span>LinkedIn — @juanmatizg</a>
-          <a href="https://maps.google.com/?q=Calle+146+%237-64+oficina+401+Bogota" target="_blank" rel="noopener" class="contact-link"><span class="contact-ico">📍</span>Calle 146 #7-64 of. 401, Bogotá</a>
-        </div>
-        <p style="font-size:.85rem;color:var(--muted);margin-bottom:.6rem">Explora ejemplos vivos:</p>
-        <a href="https://dashboards.atiemppo.co" target="_blank" rel="noopener" class="dash-link">dashboards.atiemppo.co ↗</a>
+    <div style="text-align:center;margin-bottom:56px;" class="reveal">
+      <span class="section-label">Nuestra metodología</span>
+      <h2 style="font-size:clamp(2.4rem,5vw,4rem);">EL MÉTODO C.A.D.A.</h2>
+      <p style="color:var(--text-muted);max-width:540px;margin:12px auto 0;font-size:1.05rem;">
+        Cuatro pilares que convierten datos en decisiones concretas y auditables.
+      </p>
+    </div>
+    <div class="grid-4 cada-grid reveal">
+      <div class="card">
+        <div class="cada-num">01</div>
+        <span class="cada-letter">C</span>
+        <h3 style="font-size:1.15rem;margin-bottom:8px;">Contexto</h3>
+        <p style="color:var(--text-muted);font-size:.9rem;">
+          Entendemos el entorno, los datos disponibles y los objetivos de tu empresa antes de proponer soluciones.
+        </p>
       </div>
-      <div class="reveal">
-        <div class="contact-form">
-          <div class="form-title">Agenda tu experimento</div>
-          <div class="form-row">
-            <div class="form-group"><label class="form-label">Nombre</label><input type="text" class="form-input" placeholder="Tu nombre"/></div>
-            <div class="form-group"><label class="form-label">Empresa</label><input type="text" class="form-input" placeholder="Tu empresa"/></div>
+      <div class="card">
+        <div class="cada-num">02</div>
+        <span class="cada-letter">A</span>
+        <h3 style="font-size:1.15rem;margin-bottom:8px;">Acción</h3>
+        <p style="color:var(--text-muted);font-size:.9rem;">
+          Diseñamos agentes y flujos de trabajo que actúan sobre los datos en tiempo real, sin fricción manual.
+        </p>
+      </div>
+      <div class="card">
+        <div class="cada-num">03</div>
+        <span class="cada-letter">D</span>
+        <h3 style="font-size:1.15rem;margin-bottom:8px;">Datos</h3>
+        <p style="color:var(--text-muted);font-size:.9rem;">
+          Toda decisión está respaldada por datos limpios, estructurados y accesibles para tu equipo.
+        </p>
+      </div>
+      <div class="card card-featured">
+        <div class="cada-num" style="color:rgba(255,255,255,.25)">04</div>
+        <span class="cada-letter" style="color:#fff;">A</span>
+        <h3 style="font-size:1.15rem;margin-bottom:8px;">Auditable</h3>
+        <p style="font-size:.9rem;">
+          Cada resultado es trazable, verificable y reportable. Sin cajas negras.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     SOBRE EL FUNDADOR
+══════════════════════════════════════════ -->
+<section style="background:var(--surface);">
+  <div class="container">
+    <div class="grid-2" style="align-items:center;gap:64px;">
+
+      <div class="about-img-wrap reveal">
+        <!-- ╔════════════════════════════════════
+             FOTO — reemplaza con:
+             <img src="/assets/img/juan-pablo.jpg"
+                  alt="Juan Pablo Matiz" />
+        ════════════════════════════════════╝ -->
+        <div class="photo-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+          </svg>
+          <p>Foto de Juan Pablo Matiz<br/><small>(~600×750px recomendado)</small></p>
+        </div>
+      </div>
+
+      <div class="about-text reveal">
+        <span class="section-label">Fundador</span>
+        <h2>JUAN PABLO MATIZ</h2>
+        <p>
+          Más de 12 años construyendo puentes entre datos, tecnología y decisiones de negocio en empresas globales.
+          Especialista en inteligencia artificial aplicada al contexto empresarial colombiano e internacional.
+        </p>
+        <p>
+          Creador de la metodología <strong>C.A.D.A.</strong> y fundador de <strong>Atiemppo</strong>,
+          la agencia de agentes inteligentes enfocada en resultados auditables.
+        </p>
+        <div class="tag-list">
+          <span class="tag">IA Aplicada</span>
+          <span class="tag">Estrategia Digital</span>
+          <span class="tag">Data Science</span>
+          <span class="tag">Automatización</span>
+          <span class="tag">Haleon</span>
+          <span class="tag">J&amp;J</span>
+        </div>
+        <a href="#contacto" class="btn btn-primary" style="margin-top:28px">Conectar →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     TRAYECTORIA
+══════════════════════════════════════════ -->
+<section>
+  <div class="container">
+    <div style="text-align:center;margin-bottom:56px;" class="reveal">
+      <span class="section-label">Historia</span>
+      <h2 style="font-size:clamp(2.4rem,5vw,4rem);">TRAYECTORIA</h2>
+    </div>
+    <div class="grid-3 timeline-grid reveal">
+      <div class="card">
+        <div class="timeline-year">2013 — 2018</div>
+        <h3 style="font-size:1.1rem;margin-bottom:8px;">Fundamentos en datos</h3>
+        <p style="color:var(--text-muted);font-size:.9rem;">
+          Primeros años trabajando con inteligencia de mercado y análisis de datos en grandes corporaciones del sector salud y consumo masivo.
+        </p>
+      </div>
+      <div class="card">
+        <div class="timeline-year">2018 — 2022</div>
+        <h3 style="font-size:1.1rem;margin-bottom:8px;">Proyectos internacionales</h3>
+        <p style="color:var(--text-muted);font-size:.9rem;">
+          Liderazgo en proyectos de transformación digital para Haleon, Johnson &amp; Johnson e iFurniture, implementando soluciones de IA a escala.
+        </p>
+      </div>
+      <div class="card card-featured">
+        <div class="timeline-year" style="color:rgba(255,255,255,.6);">2022 — Hoy</div>
+        <h3 style="font-size:1.1rem;margin-bottom:8px;">Atiemppo</h3>
+        <p style="font-size:.9rem;">
+          Nace la agencia con la misión de llevar agentes inteligentes y metodología C.A.D.A. a empresas que necesitan actuar más rápido.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     CASOS DE ÉXITO
+     👉 LOGOS: en cada .case-logo-wrap coloca
+        <img src="/assets/img/logos/NOMBRE.svg" alt="NOMBRE" height="36" />
+        Quita el .logo-text-placeholder
+══════════════════════════════════════════ -->
+<section id="casos" style="background:var(--surface);">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:56px;" class="reveal">
+      <span class="section-label">Clientes</span>
+      <h2 style="font-size:clamp(2.4rem,5vw,4rem);">CASOS DE ÉXITO</h2>
+      <p style="color:var(--text-muted);max-width:480px;margin:12px auto 0;">
+        Resultados reales en empresas reales.
+      </p>
+    </div>
+    <div class="grid-3 reveal">
+
+      <div class="card">
+        <div class="case-logo-wrap">
+          <!-- 👉 REEMPLAZA por: <img src="/assets/img/logos/haleon.svg" alt="Haleon" height="36" /> -->
+          <div class="logo-text-placeholder">HALEON</div>
+        </div>
+        <span class="case-tag">Salud del consumidor</span>
+        <h3 style="font-size:1.1rem;margin-bottom:8px;">Automatización de reportes de ventas</h3>
+        <p style="color:var(--text-muted);font-size:.9rem;">
+          Reducción del 70 % del tiempo en generación de informes semanales mediante agentes de IA conectados a fuentes de datos en tiempo real.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="case-logo-wrap">
+          <!-- 👉 REEMPLAZA por: <img src="/assets/img/logos/ifurniture.svg" alt="iFurniture" height="36" /> -->
+          <div class="logo-text-placeholder">iFURNITURE</div>
+        </div>
+        <span class="case-tag">Retail</span>
+        <h3 style="font-size:1.1rem;margin-bottom:8px;">Sistema de contexto para e-commerce</h3>
+        <p style="color:var(--text-muted);font-size:.9rem;">
+          Implementación de capa de contexto que personalizó recomendaciones y aumentó la conversión en un 35 %.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="case-logo-wrap">
+          <!-- 👉 REEMPLAZA por: <img src="/assets/img/logos/jnj.svg" alt="Johnson & Johnson" height="36" /> -->
+          <div class="logo-text-placeholder">J&amp;J</div>
+        </div>
+        <span class="case-tag">Farmacéutico</span>
+        <h3 style="font-size:1.1rem;margin-bottom:8px;">Agente de análisis de mercado</h3>
+        <p style="color:var(--text-muted);font-size:.9rem;">
+          Agente inteligente para monitoreo competitivo que entrega insights accionables cada 24 horas sin intervención manual.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     LABS / PRODUCTOS
+══════════════════════════════════════════ -->
+<section id="labs">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:56px;" class="reveal">
+      <span class="section-label">Productos</span>
+      <h2 style="font-size:clamp(2.4rem,5vw,4rem);">ATIEMPPO LABS</h2>
+      <p style="color:var(--text-muted);max-width:480px;margin:12px auto 0;">
+        Herramientas propias construidas sobre el método C.A.D.A.
+      </p>
+    </div>
+    <div class="grid-4 labs-grid reveal">
+
+      <div class="card">
+        <div class="lab-icon">🔍</div>
+        <h3 style="font-size:1.05rem;margin-bottom:8px;">Context Engine</h3>
+        <p style="color:var(--text-muted);font-size:.88rem;">
+          Motor de enriquecimiento de contexto empresarial en tiempo real para potenciar decisiones con IA.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="lab-icon">⚡</div>
+        <h3 style="font-size:1.05rem;margin-bottom:8px;">AgentFlow</h3>
+        <p style="color:var(--text-muted);font-size:.88rem;">
+          Plataforma de orquestación de agentes inteligentes con trazabilidad completa de cada acción.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="lab-icon">📊</div>
+        <h3 style="font-size:1.05rem;margin-bottom:8px;">DataBridge</h3>
+        <p style="color:var(--text-muted);font-size:.88rem;">
+          Conectores inteligentes para unificar fuentes de datos dispersas en una sola capa de contexto.
+        </p>
+      </div>
+
+      <div class="card card-featured">
+        <!-- ╔════════════════════════════════════
+             LOGO INSIGNIA IMPACT — reemplaza por:
+             <img src="/assets/img/logos/insignia-impact.svg"
+                  alt="Insignia Impact" height="32"
+                  style="filter:brightness(0) invert(1);margin-bottom:16px" />
+        ════════════════════════════════════╝ -->
+        <div class="lab-icon">🏆</div>
+        <h3 style="font-size:1.05rem;margin-bottom:8px;">Insignia Impact</h3>
+        <p style="font-size:.88rem;margin-bottom:16px;">
+          Producto estrella: plataforma completa de inteligencia de impacto para medir resultados reales de tus iniciativas.
+        </p>
+        <a href="#contacto" class="btn btn-white" style="font-size:.85rem;padding:8px 18px;">Conocer más →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     BLOG
+══════════════════════════════════════════ -->
+<section id="blog" style="background:var(--surface);">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:48px;" class="reveal">
+      <div>
+        <span class="section-label">Contenido</span>
+        <h2 style="font-size:clamp(2rem,4vw,3.2rem);">ÚLTIMOS ARTÍCULOS</h2>
+      </div>
+      <a href="/blog" class="btn btn-outline" style="white-space:nowrap;">Ver todos →</a>
+    </div>
+    <div class="blog-grid reveal">
+      <div class="blog-posts-col">
+        <a href="#" class="blog-card-small">
+          <div style="flex:1">
+            <span class="blog-tag">IA Aplicada</span>
+            <h4 style="font-size:.95rem;margin:8px 0 4px;">Cómo los agentes inteligentes están cambiando la toma de decisiones en empresas B2B</h4>
+            <p style="color:var(--text-muted);font-size:.83rem;">Febrero 2026 · 6 min lectura</p>
           </div>
-          <div class="form-group"><label class="form-label">Correo electrónico</label><input type="email" class="form-input" placeholder="tu@empresa.com"/></div>
-          <div class="form-group"><label class="form-label">¿Qué quieres resolver?</label><input type="text" class="form-input" placeholder="Resumen del reto"/></div>
-          <div class="form-group"><label class="form-label">Contexto de tu negocio</label><textarea class="form-textarea" placeholder="Cuéntanos tu operación, sector e industria…"></textarea></div>
-          <button class="form-submit">Iniciar experimento →</button>
+          <span style="color:var(--blue);font-size:1.2rem;">→</span>
+        </a>
+        <a href="#" class="blog-card-small">
+          <div style="flex:1">
+            <span class="blog-tag">Metodología</span>
+            <h4 style="font-size:.95rem;margin:8px 0 4px;">El método C.A.D.A. explicado paso a paso: de los datos a la acción en 4 etapas</h4>
+            <p style="color:var(--text-muted);font-size:.83rem;">Enero 2026 · 8 min lectura</p>
+          </div>
+          <span style="color:var(--blue);font-size:1.2rem;">→</span>
+        </a>
+        <a href="#" class="blog-card-small">
+          <div style="flex:1">
+            <span class="blog-tag">Casos</span>
+            <h4 style="font-size:.95rem;margin:8px 0 4px;">Lo que aprendimos implementando IA en empresas farmacéuticas: 5 lecciones clave</h4>
+            <p style="color:var(--text-muted);font-size:.83rem;">Diciembre 2025 · 5 min lectura</p>
+          </div>
+          <span style="color:var(--blue);font-size:1.2rem;">→</span>
+        </a>
+      </div>
+      <div class="blog-featured-card">
+        <span class="blog-tag">Destacado</span>
+        <h3>Insignia Impact: Midiendo el ROI de la Inteligencia Artificial</h3>
+        <p>Una mirada profunda a cómo las empresas pueden cuantificar el impacto real de sus iniciativas de IA.</p>
+        <a href="#" style="color:#fff;font-weight:600;margin-top:16px;display:inline-block;">Leer artículo →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     BRIDGE / CTA INSIGNIA IMPACT
+══════════════════════════════════════════ -->
+<section class="bridge" style="padding:80px 0;">
+  <div class="container" style="text-align:center;">
+    <div class="reveal">
+      <span class="section-label" style="background:rgba(255,255,255,.15);color:#fff;">Producto destacado</span>
+      <h2 style="margin:16px 0;">
+        CONOCE<br/>INSIGNIA IMPACT
+      </h2>
+      <p style="max-width:520px;margin:0 auto 36px;">
+        La plataforma que convierte tus iniciativas de IA en resultados medibles, auditables y presentables a tu directiva.
+      </p>
+      <a href="#contacto" class="btn btn-white">Quiero una demo →</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     CONTACTO
+══════════════════════════════════════════ -->
+<section id="contacto">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:56px;" class="reveal">
+      <span class="section-label">Contacto</span>
+      <h2 style="font-size:clamp(2.4rem,5vw,4rem);">HABLEMOS</h2>
+      <p style="color:var(--text-muted);max-width:480px;margin:12px auto 0;">
+        ¿Listo para tomar decisiones más rápidas? Cuéntanos tu reto.
+      </p>
+    </div>
+    <div class="grid-2 contact-grid reveal">
+      <form>
+        <div class="form-field">
+          <label>Nombre completo</label>
+          <input type="text" placeholder="Tu nombre" />
+        </div>
+        <div class="form-field">
+          <label>Correo electrónico</label>
+          <input type="email" placeholder="tu@empresa.com" />
+        </div>
+        <div class="form-field">
+          <label>Empresa</label>
+          <input type="text" placeholder="Nombre de tu empresa" />
+        </div>
+        <div class="form-field">
+          <label>¿En qué te podemos ayudar?</label>
+          <textarea placeholder="Cuéntanos tu reto o necesidad..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+          Enviar mensaje →
+        </button>
+      </form>
+      <div>
+        <div class="contact-info-item">
+          <div class="contact-icon">📧</div>
+          <div>
+            <strong>Email</strong>
+            <p style="color:var(--text-muted);font-size:.9rem;margin-top:2px;">juanmatiz@atiemppo.co</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">🌐</div>
+          <div>
+            <strong>Web</strong>
+            <p style="color:var(--text-muted);font-size:.9rem;margin-top:2px;">atiemppo.com</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <strong>Ubicación</strong>
+            <p style="color:var(--text-muted);font-size:.9rem;margin-top:2px;">Colombia · Bogotá</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">💬</div>
+          <div>
+            <strong>WhatsApp</strong>
+            <p style="color:var(--text-muted);font-size:.9rem;margin-top:2px;">Respuesta en menos de 24 horas</p>
+          </div>
+        </div>
+        <div style="margin-top:32px;padding:24px;background:var(--blue-pale);border-radius:var(--radius);border:1.5px solid var(--blue-pale2);">
+          <p style="font-size:.9rem;color:var(--text-muted);">
+            También puedes agendar una llamada directamente en el calendario →
+          </p>
+          <a href="#" class="btn btn-outline" style="margin-top:16px;font-size:.88rem;padding:10px 20px;">
+            Agendar llamada →
+          </a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
 <footer>
-  <a href="#" class="footer-logo"><div class="footer-dot"></div>ATIEMPPO</a>
-  <ul class="footer-nav">
-    <li><a href="#cada">C.A.D.A.</a></li>
-    <li><a href="#nosotros">Nosotros</a></li>
-    <li><a href="#trayectoria">Trayectoria</a></li>
-    <li><a href="#casos">Casos</a></li>
-    <li><a href="#labs">Labs</a></li>
-    <li><a href="/blog/">Blog</a></li>
-    <li><a href="#contacto">Contacto</a></li>
-    <li><a href="https://insigniaimpact.com" target="_blank" style="color:var(--cyan)">Insignia Impact ↗</a></li>
-    <li><a href="/llms.txt" style="color:var(--muted);font-size:.78rem">llms.txt</a></li>
-  </ul>
-  <p class="footer-copy">© 2026 Atiemppo Lab · Agencia de Agentes &amp; Soluciones de Contexto · Bogotá, Colombia</p>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <!-- 👉 REEMPLAZA por: <img src="/assets/img/logo-atiemppo-white.svg" alt="Atiemppo" height="32" /> -->
+        <div class="footer-logo"><div class="footer-logo-dot"></div> ATIEMPPO</div>
+        <p style="max-width:280px;">
+          Agencia de Agentes Inteligentes &amp; Soluciones de Contexto.
+          Tomamos decisiones más rápidas juntos.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#metodo">Método C.A.D.A.</a></li>
+          <li><a href="#labs">Atiemppo Labs</a></li>
+          <li><a href="#casos">Casos de Éxito</a></li>
+          <li><a href="#contacto">Consultoría</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#">Sobre Juan Pablo</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#">Insignia Impact</a></li>
+          <li><a href="#">LLMs.txt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/politicaprivacidad">Política de Privacidad</a></li>
+          <li><a href="#">Términos de Uso</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Atiemppo · juanmatiz@atiemppo.co</p>
+      <p>Bogotá, Colombia · Hecho con IA &amp; datos reales</p>
+    </div>
+  </div>
 </footer>
 
+
+<!-- ══════════════════════════════════════════
+     WHATSAPP FLOAT
+══════════════════════════════════════════ -->
+<a href="https://wa.me/57XXXXXXXXXX" class="wa-float" target="_blank" rel="noopener" title="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+
+<!-- ══════════════════════════════════════════
+     JS — CANVAS HERO + SCROLL EFFECTS
+══════════════════════════════════════════ -->
 <script>
-(function(){
-  /* Step 1: Enable animations via progressive enhancement */
-  document.documentElement.classList.add('js-ready');
-
-  /* Step 2: Nav scroll effect */
-  var nav = document.getElementById('nav');
-  window.addEventListener('scroll', function(){
-    nav.classList.toggle('scrolled', window.scrollY > 50);
-  }, {passive:true});
-
-  /* Step 3: Mobile burger menu */
-  var burger = document.getElementById('burger');
-  var links = document.getElementById('navLinks');
-  burger.addEventListener('click', function(){
-    burger.classList.toggle('open');
-    links.classList.toggle('open');
+  /* Nav scroll */
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
   });
 
-  /* Step 4: Smooth scroll for anchor links */
-  document.querySelectorAll('a[href^="#"]').forEach(function(a){
-    a.addEventListener('click', function(e){
-      var target = document.querySelector(this.getAttribute('href'));
-      if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth'}); }
-    });
+  /* Mobile burger */
+  const burger = document.getElementById('burger');
+  burger.addEventListener('click', () => {
+    const links = document.querySelector('.nav-links');
+    const open = links.style.display === 'flex';
+    links.style.cssText = open
+      ? ''
+      : 'display:flex;flex-direction:column;position:absolute;top:68px;left:0;right:0;background:rgba(255,255,255,.97);padding:24px;border-bottom:1.5px solid #E2E8F0;gap:16px;z-index:99;';
   });
 
-  /* Step 5: Canvas animated graph */
-  var canvas = document.getElementById('bg');
-  if(canvas){
-    var ctx = canvas.getContext('2d');
-    var W, H, nodes;
-    var COUNT = 55;
-    var CYAN = 'rgba(0,200,255,';
+  /* Scroll reveal */
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    function resize(){
-      W = canvas.width = canvas.offsetWidth;
-      H = canvas.height = canvas.offsetHeight;
+  /* Hero canvas — network graph in blue tones */
+  (function() {
+    const canvas = document.getElementById('heroCanvas');
+    const ctx    = canvas.getContext('2d');
+    let W, H, nodes;
+
+    function resize() {
+      const rect = canvas.parentElement.getBoundingClientRect();
+      W = canvas.width  = rect.width;
+      H = canvas.height = rect.height || rect.width;
     }
-    function initNodes(){
-      nodes = [];
-      for(var i=0;i<COUNT;i++){
-        nodes.push({
-          x:Math.random()*W, y:Math.random()*H,
-          vx:(Math.random()-.5)*.35, vy:(Math.random()-.5)*.35,
-          r:Math.random()*2+1.5, pulse:Math.random()*Math.PI*2
-        });
-      }
+
+    function initNodes(n=28) {
+      nodes = Array.from({length:n}, () => ({
+        x: Math.random()*W, y: Math.random()*H,
+        vx: (Math.random()-.5)*.6, vy: (Math.random()-.5)*.6,
+        r: Math.random()*3+2
+      }));
     }
-    function draw(){
+
+    function draw() {
       ctx.clearRect(0,0,W,H);
-      for(var i=0;i<COUNT;i++){
-        for(var j=i+1;j<COUNT;j++){
-          var dx=nodes[i].x-nodes[j].x, dy=nodes[i].y-nodes[j].y;
-          var d=Math.sqrt(dx*dx+dy*dy);
-          if(d<130){
+      /* edges */
+      for(let i=0;i<nodes.length;i++){
+        for(let j=i+1;j<nodes.length;j++){
+          const dx=nodes[i].x-nodes[j].x, dy=nodes[i].y-nodes[j].y;
+          const d=Math.sqrt(dx*dx+dy*dy);
+          if(d<110){
             ctx.beginPath();
-            ctx.strokeStyle=CYAN+(1-d/130)*0.35+')';
-            ctx.lineWidth=0.6;
-            ctx.moveTo(nodes[i].x,nodes[i].y);
-            ctx.lineTo(nodes[j].x,nodes[j].y);
+            ctx.moveTo(nodes[i].x, nodes[i].y);
+            ctx.lineTo(nodes[j].x, nodes[j].y);
+            ctx.strokeStyle=`rgba(29,78,216,${.18*(1-d/110)})`;
+            ctx.lineWidth=1;
             ctx.stroke();
           }
         }
       }
-      nodes.forEach(function(n){
-        n.pulse+=.015;
-        var f=0.5+0.5*Math.sin(n.pulse);
-        var g=ctx.createRadialGradient(n.x,n.y,0,n.x,n.y,n.r*6);
-        g.addColorStop(0,CYAN+(0.25*f)+')');
-        g.addColorStop(1,CYAN+'0)');
-        ctx.beginPath(); ctx.fillStyle=g;
-        ctx.arc(n.x,n.y,n.r*6,0,Math.PI*2); ctx.fill();
-        ctx.beginPath(); ctx.fillStyle=CYAN+(0.7*f)+')';
-        ctx.arc(n.x,n.y,n.r,0,Math.PI*2); ctx.fill();
+      /* nodes */
+      nodes.forEach(n=>{
+        ctx.beginPath();
+        ctx.arc(n.x,n.y,n.r,0,Math.PI*2);
+        ctx.fillStyle='rgba(37,99,235,.55)';
+        ctx.fill();
         n.x+=n.vx; n.y+=n.vy;
         if(n.x<0||n.x>W) n.vx*=-1;
         if(n.y<0||n.y>H) n.vy*=-1;
       });
       requestAnimationFrame(draw);
     }
-    resize(); initNodes(); draw();
-    window.addEventListener('resize', function(){ resize(); initNodes(); }, {passive:true});
-  }
 
-  /* Step 6: Reveal on scroll */
-  var items = document.querySelectorAll('.reveal');
-  if('IntersectionObserver' in window){
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(e, i){
-        if(e.isIntersecting){
-          (function(el){ setTimeout(function(){ el.classList.add('visible'); }, i*80); })(e.target);
-          io.unobserve(e.target);
-        }
-      });
-    }, {threshold:0.1});
-    items.forEach(function(el){ io.observe(el); });
-  } else {
-    items.forEach(function(el){ el.classList.add('visible'); });
-  }
-})();
+    resize();
+    initNodes();
+    draw();
+    window.addEventListener('resize', ()=>{ resize(); initNodes(); });
+  })();
 </script>
-<a class="wa-float" href="https://wa.me/573107687010?text=Hola%20Juan%2C%20quiero%20agendar%20el%20diagn%C3%B3stico%20de%2030%20min" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
-  <span class="wa-ico">💬</span> WhatsApp
-</a>
+
 </body>
 </html>
