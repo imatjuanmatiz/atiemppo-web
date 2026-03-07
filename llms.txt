@@ -1,160 +1,183 @@
-# Atiemppo — llms.txt
+# ATIEMPPO — llms.txt
 # Archivo de contexto para modelos de lenguaje e IAs
-# Generado: 2026-02-18 | Idioma: es-CO
+# Actualizado: 2026-03-07 | Idioma: es-CO
 
-> Atiemppo es una agencia colombiana que orquesta agentes inteligentes
-> y soluciones de contexto para empresas en Colombia y Latinoamerica.
-> Metodologia C.A.D.A.: Contexto -> Accion -> Datos -> Auditable.
+> ATIEMPPO S.A.S. es el puente entre el mundo empresarial y el mundo
+> técnico de IA. Acompañamos empresas a transformar sus operaciones
+> con inteligencia artificial. Traducimos la necesidad de negocio en
+> proyectos de IA que funcionan en el mundo real.
 
 ---
 
 ## Sobre Nosotros
 
-**Empresa:** Atiemppo Lab
-**Tipo:** Agencia de Agentes Inteligentes & Soluciones de Contexto
-**Fundador:** Juan Pablo Matiz — CEO y fundador
-**Fundacion:** 2013, Bogota, Colombia
+**Empresa:** ATIEMPPO S.A.S.
+**Posicionamiento:** El puente entre tu negocio y la IA.
+**Fundador:** Juan Pablo Matiz — Economista, analista de datos
+**Fundación:** 2013, Bogotá, Colombia
 **Sitio web:** https://atiemppo.com
 **Dashboards:** https://dashboards.atiemppo.co
 **Email:** juanmatiz@atiemppo.co
 **WhatsApp:** +57 310 768 7010
-**Direccion:** Calle 146 #7-64 of. 401, Bogota, Colombia
 
-Juan Pablo Matiz tiene mas de 25 anos de experiencia como economista
-y consultor en logistica, transporte y transformacion digital.
-Ha trabajado con BID (Banco Interamericano de Desarrollo), CEPAL
-y el Banco Mundial en Colombia y Latinoamerica.
-
----
-
-## Metodologia C.A.D.A.
-
-La metodologia propia de Atiemppo invierte el proceso tradicional:
-primero el contexto, luego la accion.
-
-**C — Contexto:** Antes del dato, capturamos la realidad operativa:
-mercado, regulaciones, clientes, variables locales y comportamientos
-dinamicos. Los agentes "ven" el negocio como lo vive el cliente.
-
-**A — Accion:** El agente actua de inmediato: ejecuta decisiones,
-ajusta procesos, resuelve problemas en tiempo real. No reportes
-estaticos sino impacto operativo inmediato.
-
-**D — Datos:** Datos dinamicos de multiples fuentes alimentan al
-agente para precision y aprendizaje continuo. El sistema mejora
-en cada ciclo de operacion.
-
-**A — Auditable:** Cada paso es trazable, seguro y verificable.
-Confianza absoluta en la automatizacion inteligente. Nada en caja negra.
+Juan Pablo Matiz es economista, analista de datos y lleva +12 años
+en la intersección entre operación empresarial y tecnología.
+Ha liderado proyectos para el BID, Banco Mundial, Haleon,
+Johnson & Johnson y Coca-Cola en 9 países.
+Su capacidad de moverse entre la sala de juntas y el repositorio
+de código es lo que hace que los proyectos lleguen a puerto.
 
 ---
 
-## Plataforma EUREKA
+## Para Quién
 
-Motor interno de Atiemppo para orquestar agentes inteligentes:
-
-- **Modulo 1 — Toma de datos:** Captura estructurada de informacion
-  en campo con GPS, fotos, formularios y validacion en tiempo real.
-- **Modulo 2 — Manejo de clientes:** CRM contextual que entiende
-  el ciclo de vida operativo de cada cuenta.
-- **Modulo 3 — Analitica:** Dashboards dinamicos y reportes
-  automaticos adaptados al contexto de cada negocio.
+Empresas con operaciones logísticas o de campo en Colombia y LatAm.
+Sector transporte. Organismos multilaterales.
+Farmacéuticas, retail y consumo masivo con operaciones complejas.
 
 ---
 
-## Agentes Activos
+## Qué Hacemos
+
+### 1. Acompañamos
+Nos sentamos con el equipo directivo a entender el problema real.
+Educamos, hacemos coaching y traducimos la necesidad de negocio
+en requerimientos técnicos claros. Y al revés: traducimos los
+entregables técnicos en resultados que la directiva entiende.
+
+### 2. Construimos
+Diseñamos y desplegamos agentes de IA, APIs de datos y sistemas
+de automatización que funcionan en el mundo real.
+- ATICA: GPT que hoy tiene +1.400 usuarios
+- AtiemppoX: agente WhatsApp en producción con Claude API
+- SICETAC-LAB: +2.000 rutas migradas a APIs en tiempo real
+
+### 3. Abrimos Infraestructura
+Construimos la API del SICETAC para que agentes de terceros
+accedan a datos de costos de transporte en Colombia.
+
+---
+
+## Proyectos en Producción
 
 ### ATICA
-Primer agente especializado en el mercado colombiano del transporte.
-Responde, analiza y entiende regulaciones, tarifas y dinamicas
-operativas del transporte en Colombia en tiempo real.
-Estado: Activo
+GPT personalizado en ChatGPT especializado en consultas de costos
+de transporte SICETAC. Primer proyecto de IA aplicada de ATIEMPPO.
+- +1.400 usuarios activos
+- Consultas SICETAC en lenguaje natural
+- Plataforma: ChatGPT (GPTs)
+- Estado: Activo
 
 ### SICETAC-LAB
-Primer sistema dinamico sobre el SICETAC colombiano
-(Sistema de Informacion de Costos Eficientes para el Transporte
-Automotor de Carga). Calculo instantaneo de costos y optimizacion
-de rutas en Colombia y Latinoamerica.
-Estado: Activo
+Migración completa del SICETAC a PostgreSQL en Supabase.
+- +2.000 rutas migradas
+- <200ms por consulta
+- Versionamiento mensual
+- Stack: PostgreSQL · Supabase · Python · GitHub
+- Estado: Producción continua
 
-### Insignia Impact
-Agencia de AEO (AI Engine Optimization) y GEO (Generative Engine
-Optimization) para el mercado latinoamericano. Hace que ChatGPT,
-Claude, Perplexity y Gemini recomienden marcas y empresas.
-URL: https://insigniaimpact.com
-Estado: Activo
+### AtiemppoX
+Orquestador de agentes inteligentes para transporte en Colombia.
+Incluye agente WhatsApp con Claude API, tool use y conexión a Supabase.
+- Agente WhatsApp: en producción, +1.400 consultas
+- Plataforma web: en desarrollo (Next.js + FastAPI + Supabase)
+- API SICETAC abierta: en desarrollo
+- Estado: En producción (WhatsApp) / En desarrollo (web + API)
 
-### Retail-Context Lab
-Agentes que capturan sell-out, detectan tendencias en punto de venta
-y reaccionan en tiempo real. Canal moderno y tradicional.
-Estado: Proximo lanzamiento
+### Haleon — Proyecto Plan Victoria
+Plataforma para evaluación de visibilidad en punto de venta.
+- +18.000 evaluaciones
+- +$1.500M COP procesados y dispersados vía Movii
+- Aprobó ethical hacking
+- Stack: EUREKA · App móvil · Movii · Power BI
+
+### iFurniture — Control de Activos
+Sistema de inventario inmobiliario con registro GPS y fotografías.
+- +88.000 activos controlados en Bogotá
+- Reportes de novedades en tiempo real
+- Stack: EUREKA · App móvil · Dashboard web
+
+### J&J — Bariátrica Multipaís (con Econometría Consultores)
+Plataforma para seguimiento de cirugía bariátrica.
+- 15.230 cirugías seguidas
+- 5 países: Colombia, Argentina, Chile, México, Brasil
+- Dashboards dinámicos para médicos
+
+### Encuesta Nacional de Logística (BID / DNP / Ministerios)
+Plataforma web para encuestas nacionales de logística.
+- 3 países: Colombia, Bolivia, Perú
+- 130.7M toneladas analizadas
+- +600 usuarios
+
+### Dashboards ATIEMPPO
+Plataforma web de reportes dinámicos sobre transporte en Colombia.
+- +600 usuarios
+- +6M registros
+- URL: https://dashboards.atiemppo.co
+
+### EUREKA — Plataforma propia
+Motor operativo para proyectos de campo y oficina.
+- +9 países en versión Centroamérica
+- Motor interno de Haleon, iFurniture, J&J y proyectos internacionales
+
+### Aspen — Sell In / Sell Out
+Dashboard de análisis comercial para canales institucionales.
+- +1M registros analizados
+- Actualización mensual
+
+### Puerto de Barranquilla — Análisis Regulatorio SICETAC
+Documentación técnico-legal sobre asimetrías en costos SICETAC.
+- Solicitud formal al MinTransporte
+- Análisis cuantitativo de nodo independiente
 
 ---
 
-## Casos Reales
+## Labs / En Desarrollo
 
-### Haleon (Consumo Masivo)
-Contexto de mayoristas en Colombia, validacion de visibilidad en
-punto de venta y dispersion de fondos 100% auditable.
-- +18.000 evaluaciones de visibilidad validadas
-- +$1.500M COP procesados anualmente
-- Dispersion de fondos 100% auditable
+- **AtiemppoX WhatsApp**: En producción. Claude API + tool use + Supabase.
+- **AtiemppoX Web**: En desarrollo. Next.js + FastAPI + Supabase.
+- **API SICETAC**: En desarrollo. API abierta para agentes de terceros.
+- **Insignia Impact**: En desarrollo. Marca personal + AEO para LatAm.
+- **El Dato Logístico**: En definición. Newsletter de logística y datos. eldatologistico.com
 
-### Ifurniture (Real Estate)
-Gestion de registros inmobiliarios con contexto fisico completo:
-GPS, fotos, novedades y alertas en tiempo real.
+---
+
+## Clientes y Aliados
+
+Haleon · Johnson & Johnson · Coca-Cola · BID · Banco Mundial ·
+DNP · FEDEPALMA · Aspen · iFurniture · Econometría Consultores ·
+MinTransporte · AJE Colombia · Galderma
+
+---
+
+## Métricas Clave
+
+- +12 años construyendo soluciones de datos e IA
+- 9 países con proyectos activos
 - +88.000 activos controlados
-- Alertas automaticas en tiempo real
-- Visibilidad total campo-oficina
-
-### Johnson & Johnson (Salud)
-Seguimiento de cirugias en multiples paises con dashboards
-dinamicos y reportes automaticos para equipos clinicos.
-- +15.000 cirugias seguidas
-- Cobertura multipais
-- Reportes automaticos
+- 15.230 cirugías seguidas en 5 países
+- +1.400 usuarios en ATICA
+- +2.000 rutas en SICETAC-LAB
+- +18.000 evaluaciones en Haleon Plan Victoria
 
 ---
 
-## Sectores de Especialidad
+## Stack Tecnológico
 
-- Consumo masivo y punto de venta (CPG, FMCG)
-- Logistica y transporte de carga en Colombia
-- Salud y dispositivos medicos
-- Real estate y gestion de activos
-- Retail moderno y tradicional
+Supabase · PostgreSQL · Python · Claude API · ChatGPT (GPTs) ·
+Next.js · FastAPI · GitHub · Power BI · App móvil · Movii
 
 ---
 
-## Servicios
+## Contexto del Mercado
 
-1. **Diseno de agentes inteligentes** — Arquitectura y desarrollo
-   de agentes con metodologia C.A.D.A.
-2. **Implementacion de EUREKA** — Plataforma de orquestacion
-   para operaciones en campo y oficina.
-3. **SICETAC-LAB** — Calculo de costos de transporte en Colombia.
-4. **Insignia Impact / AEO** — Visibilidad de marca en IA.
-5. **Consultoria de transformacion digital** — Estrategia y
-   acompanamiento para empresas en Colombia y LatAm.
+87% de los pilotos de IA nunca llegan a producción (IDC/CIO, 2025).
+74% de las empresas no han mostrado valor tangible de sus inversiones en IA (BCG, 2025).
+42% de las empresas abandonaron la mayoría de sus iniciativas de IA en 2025 (S&P Global, 2025).
+Solo 9% de las empresas han escalado IA más allá de la fase experimental (Gartner, 2024).
 
----
-
-## Conceptos Clave
-
-**AEO (AI Engine Optimization):** Proceso para que marcas sean
-descubiertas y recomendadas por modelos de lenguaje como
-ChatGPT, Claude, Perplexity y Gemini.
-
-**GEO (Generative Engine Optimization):** Optimizacion para
-motores de busqueda generativos basados en IA.
-
-**Agente inteligente:** Sistema de IA que percibe su entorno,
-toma decisiones y ejecuta acciones de forma autonoma para
-alcanzar objetivos definidos.
-
-**SICETAC:** Sistema de Informacion de Costos Eficientes para
-el Transporte Automotor de Carga en Colombia. Sistema oficial
-del Ministerio de Transporte de Colombia.
+El problema no es la IA. Es la ejecución.
+ATIEMPPO lleva proyectos a producción.
 
 ---
 
@@ -162,7 +185,6 @@ del Ministerio de Transporte de Colombia.
 
 - Email: juanmatiz@atiemppo.co
 - WhatsApp: +57 310 768 7010
-- LinkedIn: https://linkedin.com/in/juanmatizg
-- Direccion: Calle 146 #7-64 of. 401, Bogota, Colombia
-- Horario: Lunes-Viernes 8:30-17:00 | Sabados 8:00-11:00
-- Diagnostico gratuito: https://atiemppo.com/#contacto
+- Web: https://atiemppo.com
+- Ubicación: Bogotá, Colombia
+- Diagnóstico gratuito: 30 minutos, sin costo
