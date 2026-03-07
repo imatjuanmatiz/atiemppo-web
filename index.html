@@ -19,7 +19,126 @@ render_with_liquid: false
 <meta property="og:url" content="https://atiemppo.com"/>
 <meta property="og:locale" content="es_CO"/>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"ATIEMPPO S.A.S.","description":"El puente entre el mundo empresarial y el mundo técnico de IA.","url":"https://atiemppo.com","foundingDate":"2013","address":{"@type":"PostalAddress","addressLocality":"Bogotá","addressCountry":"CO"},"contactPoint":{"@type":"ContactPoint","telephone":"+57-310-768-7010","email":"juanmatiz@atiemppo.co"},"founder":{"@type":"Person","name":"Juan Pablo Matiz"},"areaServed":["Colombia","América Latina"]}
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://atiemppo.com/#organization",
+      "name": "ATIEMPPO S.A.S.",
+      "description": "El puente entre el mundo empresarial y el mundo técnico de IA.",
+      "url": "https://atiemppo.com",
+      "foundingDate": "2013",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bogotá",
+        "addressCountry": "CO"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+57-310-768-7010",
+        "email": "juanmatiz@atiemppo.co"
+      },
+      "founder": {
+        "@id": "https://atiemppo.com/#juan-pablo-matiz"
+      },
+      "areaServed": ["Colombia", "América Latina"]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://atiemppo.com/#juan-pablo-matiz",
+      "name": "Juan Pablo Matiz",
+      "jobTitle": "Fundador",
+      "worksFor": {
+        "@id": "https://atiemppo.com/#organization"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://atiemppo.com/#service-acompanamiento-ia",
+      "name": "Acompañamiento IA",
+      "provider": {
+        "@id": "https://atiemppo.com/#organization"
+      },
+      "areaServed": ["Colombia", "América Latina"],
+      "serviceType": "Consultoría y acompañamiento para implementación de IA"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://atiemppo.com/#service-construccion-agentes",
+      "name": "Construcción de agentes y automatización",
+      "provider": {
+        "@id": "https://atiemppo.com/#organization"
+      },
+      "areaServed": ["Colombia", "América Latina"],
+      "serviceType": "Diseño y despliegue de agentes de IA, APIs y automatización"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://atiemppo.com/#service-infraestructura-datos",
+      "name": "Infraestructura de datos",
+      "provider": {
+        "@id": "https://atiemppo.com/#organization"
+      },
+      "areaServed": ["Colombia", "América Latina"],
+      "serviceType": "Arquitectura y migración de datos para operación con IA"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://atiemppo.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué hace ATIEMPPO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Acompañamos a empresas a implementar proyectos de IA. Traducimos la necesidad del negocio en requerimientos técnicos, construimos la solución y dirigimos el resultado hasta que sea lo que el empresario necesita."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué es ATICA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ATICA es un GPT personalizado en ChatGPT especializado en consultas de costos de transporte SICETAC. Fue nuestro primer proyecto de IA aplicada y hoy suma más de 1.400 usuarios."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué es AtiemppoX?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AtiemppoX es nuestro orquestador de agentes inteligentes para transporte en Colombia, incluyendo un agente de WhatsApp en producción."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿En cuánto tiempo se ven resultados?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un agente básico puede estar en 2 a 4 semanas. Una migración de datos puede tomar 1 a 3 meses. El diagnóstico inicial toma 30 minutos y no tiene costo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué tipo de empresas atienden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Empresas con operaciones logísticas o de campo en Colombia y LatAm, organismos multilaterales y compañías de sectores como farmacéutico, retail y consumo masivo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Necesito equipo técnico propio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Podemos construir la solución completa o trabajar con tu equipo existente."
+          }
+        }
+      ]
+    }
+  ]
+}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -250,6 +369,16 @@ footer{background:var(--surface)!important;border-top:1px solid var(--border2);p
 .footer-nav a{font-size:.78rem;color:rgba(107,122,138,.6);transition:color .2s}
 .footer-nav a:hover{color:var(--teal)}
 
+
+/* FAQ */
+.faq-bg{background:var(--surface);border-top:1px solid var(--border2);border-bottom:1px solid var(--border2)}
+.faq-head{text-align:center;margin-bottom:3rem}
+.faq-head .s-body{margin:0 auto}
+.faq-list{display:grid;grid-template-columns:1fr;gap:1rem;max-width:920px;margin:0 auto}
+.faq-item{background:var(--bg);border:1px solid var(--border2);border-radius:var(--r);padding:1.5rem}
+.faq-item h3{font-family:var(--display);font-size:1.05rem;letter-spacing:.04em;margin-bottom:.55rem;color:var(--white)}
+.faq-item p{font-size:.9rem;color:var(--muted);line-height:1.65}
+
 /* RESPONSIVE */
 @media(max-width:900px){
   nav#nav{padding:1rem 1.5rem}
@@ -439,7 +568,7 @@ footer{background:var(--surface)!important;border-top:1px solid var(--border2);p
     <p class="tag">Innovación</p>
     <h2 class="s-title">LO QUE VIENE</h2>
     <div class="labs-grid">
-      <div class="lab-card lab-card--feat"><div class="lab-top"><span class="lab-icon">🤖</span><span class="lab-badge lb-prod">En producción</span></div><h3 class="lab-title">ATIEMPPOX</h3><p class="lab-desc">El orquestador de agentes inteligentes para transporte en Colombia. La evolución de ATICA. Agentes que consultan costos SICETAC por WhatsApp con Claude API, monitorean regulaciones, optimizan rutas y actúan sobre datos logísticos en tiempo real — conectados a una API abierta para que cualquier empresa integre inteligencia de transporte.<br><br><strong style="color:var(--white)">El agente WhatsApp ya está en producción con +1.400 consultas.</strong></p></div>
+      <div class="lab-card lab-card--feat"><div class="lab-top"><span class="lab-icon">🤖</span><span class="lab-badge lb-prod">En producción</span></div><h3 class="lab-title">ATIEMPPOX</h3><p class="lab-desc">El orquestador de agentes inteligentes para transporte en Colombia. La evolución de ATICA. Agentes que consultan costos SICETAC por WhatsApp con Claude API, monitorean regulaciones, optimizan rutas y actúan sobre datos logísticos en tiempo real — conectados para que cualquier empresa integre inteligencia de transporte.<br><br><strong style="color:var(--white)">El agente WhatsApp ya está en producción con +1.400 consultas.</strong></p></div>
       <div class="lab-card"><div class="lab-top"><span class="lab-icon">💬</span><span class="lab-badge lb-prod">Activo</span></div><h3 class="lab-title">ATICA</h3><p class="lab-desc">El GPT que empezó todo. Consultas SICETAC en lenguaje natural dentro de ChatGPT. +1.400 usuarios activos.</p></div>
       <div class="lab-card"><div class="lab-top"><span class="lab-icon">🗄️</span><span class="lab-badge lb-prod">Producción</span></div><h3 class="lab-title">SICETAC-LAB</h3><p class="lab-desc">+2.000 rutas en Supabase. API abierta en desarrollo para que agentes de terceros accedan a datos de costos de transporte en Colombia.</p></div>
       <div class="lab-card"><div class="lab-top"><span class="lab-icon">🌐</span><span class="lab-badge lb-dev">En desarrollo</span></div><h3 class="lab-title">ATIEMPPOX WEB</h3><p class="lab-desc">Plataforma web con consulta visual de rutas, comparador de períodos y dashboard de costos. Next.js + FastAPI + Supabase.</p></div>
@@ -456,7 +585,26 @@ footer{background:var(--surface)!important;border-top:1px solid var(--border2);p
       <div class="tl-item"><div class="tl-period"><span class="tl-period-lbl">2013–2014</span></div><div class="tl-line"><div class="tl-dot"></div><div class="tl-conn"></div></div><div class="tl-content"><div class="tl-title">Orígenes</div><div class="tl-sub">Captura de datos en campo y prototipado rápido</div><ul class="tl-list"><li><span class="award">🏆 1er lugar Apps.co — MinTIC</span></li><li><span class="award">🏆 Premio Demand Driven — Magic Magnet / Coca-Cola</span></li></ul></div></div>
       <div class="tl-item"><div class="tl-period"><span class="tl-period-lbl">2015–2018</span></div><div class="tl-line"><div class="tl-dot"></div><div class="tl-conn"></div></div><div class="tl-content"><div class="tl-title">Plataformas</div><div class="tl-sub">Soluciones a medida para logística, retail y salud</div><ul class="tl-list"><li>"Colombia es Logística" (DNP)</li><li>AJE Colombia — Transporte y distribución</li><li>Galderma — Marketing y econometría médica</li><li>Primeros proyectos Haleon</li></ul></div></div>
       <div class="tl-item"><div class="tl-period"><span class="tl-period-lbl">2019–2023</span></div><div class="tl-line"><div class="tl-dot"></div><div class="tl-conn"></div></div><div class="tl-content"><div class="tl-title">Escala Internacional</div><div class="tl-sub">Consultoría de transporte y operaciones complejas</div><ul class="tl-list"><li>Haleon Plan Victoria — +18.000 evaluaciones, +$1.500M COP</li><li>iFurniture — +88.000 activos controlados</li><li>J&amp;J Bariátrica — 15.230 cirugías en 5 países</li><li>BID — Plan Vías Resilientes Chontales</li><li>EUREKA — Nace como plataforma propia</li><li>Encuestas logísticas en Colombia, Bolivia, Perú</li></ul></div></div>
-      <div class="tl-item"><div class="tl-period"><span class="tl-period-lbl">2024–2026</span></div><div class="tl-line"><div class="tl-dot"></div><div class="tl-conn"></div></div><div class="tl-content"><div class="tl-title">IA y Agentes</div><div class="tl-sub">El puente entre negocio y tecnología</div><ul class="tl-list"><li>ATICA — Un GPT que nos enseñó a construir con IA. +1.400 usuarios.</li><li>AtiemppoX — Agente WhatsApp en producción con Claude API</li><li>SICETAC-LAB — +2.000 rutas migradas a Supabase</li><li>Puerto de Barranquilla — Documento al MinTransporte</li><li>API SICETAC abierta (en desarrollo)</li></ul></div></div>
+      <div class="tl-item"><div class="tl-period"><span class="tl-period-lbl">2024–2026</span></div><div class="tl-line"><div class="tl-dot"></div><div class="tl-conn"></div></div><div class="tl-content"><div class="tl-title">IA y Agentes</div><div class="tl-sub">El puente entre negocio y tecnología</div><ul class="tl-list"><li>ATICA — Un GPT que nos enseñó a construir con IA. +1.400 usuarios.</li><li>AtiemppoX — Agente WhatsApp en producción con Claude API</li><li>SICETAC-LAB — +2.000 rutas migradas a Supabase</li></ul></div></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="faq-bg" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <p class="tag">FAQ</p>
+      <h2 class="s-title">PREGUNTAS<br>FRECUENTES</h2>
+      <p class="s-body">Respuestas directas para resolver las dudas más comunes antes de arrancar un proyecto.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item"><h3>¿Qué hace ATIEMPPO?</h3><p>Acompañamos a empresas a implementar proyectos de IA. Traducimos la necesidad del negocio en requerimientos técnicos, construimos la solución y dirigimos el resultado hasta que sea lo que el empresario necesita.</p></div>
+      <div class="faq-item"><h3>¿Qué es ATICA?</h3><p>ATICA es un GPT personalizado en ChatGPT especializado en consultas de costos de transporte SICETAC. Fue nuestro primer proyecto de IA aplicada y hoy suma más de 1.400 usuarios.</p></div>
+      <div class="faq-item"><h3>¿Qué es AtiemppoX?</h3><p>Es nuestro orquestador de agentes inteligentes para transporte en Colombia, incluyendo un agente de WhatsApp en producción.</p></div>
+      <div class="faq-item"><h3>¿En cuánto tiempo se ven resultados?</h3><p>Un agente básico puede estar en 2 a 4 semanas. Una migración de datos puede tomar 1 a 3 meses. El diagnóstico inicial toma 30 minutos y no tiene costo.</p></div>
+      <div class="faq-item"><h3>¿Qué tipo de empresas atienden?</h3><p>Empresas con operaciones logísticas o de campo en Colombia y LatAm, organismos multilaterales y compañías de sectores como farmacéutico, retail y consumo masivo.</p></div>
+      <div class="faq-item"><h3>¿Necesito equipo técnico propio?</h3><p>No. Podemos construir la solución completa o trabajar con tu equipo existente.</p></div>
     </div>
   </div>
 </section>
