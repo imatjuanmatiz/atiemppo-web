@@ -142,7 +142,7 @@ render_with_liquid: false
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <style>
 /* FORCE LIGHT BACKGROUND — overrides any external CSS */
 html { background-color: #ffffff !important; }
@@ -343,6 +343,8 @@ section{padding:7rem 3rem}
 .contact-link{display:flex;align-items:center;gap:1rem;padding:.9rem 1.25rem;border:1px solid var(--border2);border-radius:var(--r);text-decoration:none;color:rgba(238,242,247,.7)!important;font-size:.9rem;transition:all .2s}
 .contact-link:hover{border-color:var(--border);background:var(--teal2);color:var(--white)!important}
 .clink-icon{font-size:1.1rem;width:24px;text-align:center;flex-shrink:0}
+.contact-actions{display:flex;gap:.9rem;flex-wrap:wrap}
+.contact-meta{margin-top:1rem;font-size:.82rem;color:rgba(10,22,40,.5);line-height:1.6}
 .contact-form{background:var(--surface);border:1px solid var(--border2);border-radius:var(--r);padding:2.5rem;position:relative}
 .contact-form::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--teal),var(--blue))}
 .fg{margin-bottom:1.25rem}
@@ -350,6 +352,13 @@ section{padding:7rem 3rem}
 .fg input,.fg textarea{width:100%;background:var(--bg);border:1px solid var(--border2);border-radius:var(--r);padding:.85rem 1rem;font-family:var(--body);font-size:.9rem;color:var(--white)!important;outline:none;transition:border-color .2s}
 .fg input:focus,.fg textarea:focus{border-color:var(--teal)}
 .fg textarea{resize:vertical;min-height:100px}
+.hp-field{position:absolute !important;left:-9999px !important;opacity:0 !important;pointer-events:none !important}
+.form-note{margin-top:1rem;font-size:.8rem;color:rgba(10,22,40,.5);line-height:1.6}
+
+/* WHATSAPP FLOAT */
+.wa-float{position:fixed;right:1.25rem;bottom:1.25rem;z-index:220;display:inline-flex;align-items:center;gap:.7rem;padding:.9rem 1.1rem;border-radius:999px;background:#25d366;color:#ffffff!important;font-weight:700;font-size:.88rem;box-shadow:0 18px 40px rgba(37,211,102,.28);border:1px solid rgba(255,255,255,.22);transition:transform .2s,box-shadow .2s}
+.wa-float:hover{transform:translateY(-2px);box-shadow:0 22px 46px rgba(37,211,102,.34)}
+.wa-float-icon{display:inline-flex;align-items:center;justify-content:center;width:1.9rem;height:1.9rem;border-radius:50%;background:rgba(255,255,255,.18);font-size:1rem;flex-shrink:0}
 
 /* FOOTER */
 footer{background:var(--surface)!important;border-top:1px solid var(--border2);padding:4rem 3rem 2rem}
@@ -405,6 +414,7 @@ footer{background:var(--surface)!important;border-top:1px solid var(--border2);p
   .footer-bottom{flex-direction:column;align-items:flex-start}
   .tl-item{grid-template-columns:80px 24px 1fr}
   .hero-badges{flex-direction:column;align-items:center}
+  .wa-float{right:1rem;left:1rem;bottom:1rem;justify-content:center}
 }
 </style>
 </head>
@@ -618,24 +628,49 @@ footer{background:var(--surface)!important;border-top:1px solid var(--border2);p
         <p class="contact-intro">No necesitas tener todo claro. Escuchamos tu contexto, te ayudamos a definir el proyecto y te mostramos cómo un agente puede actuar ya en tu negocio. 30 minutos, sin costo.</p>
         <div class="contact-links">
           <a href="mailto:juanmatiz@atiemppo.co" class="contact-link"><span class="clink-icon">📧</span><span>juanmatiz@atiemppo.co</span></a>
-          <a href="https://wa.me/573107687010" target="_blank" rel="noopener" class="contact-link"><span class="clink-icon">💬</span><span>WhatsApp: 310 768 7010</span></a>
+          <a href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20hablar%20sobre%20un%20proyecto%20de%20IA." target="_blank" rel="noopener" class="contact-link"><span class="clink-icon">💬</span><span>WhatsApp: 310 768 7010</span></a>
+          <a href="tel:+573107687010" class="contact-link"><span class="clink-icon">📞</span><span>Llamar: +57 310 768 7010</span></a>
           <a href="https://atiemppo.com" class="contact-link"><span class="clink-icon">🌐</span><span>atiemppo.com</span></a>
           <div class="contact-link" style="cursor:default"><span class="clink-icon">📍</span><span>Bogotá, Colombia</span></div>
         </div>
-        <a href="#contacto" class="btn btn-primary">Agendar diagnóstico 30 min →</a>
+        <div class="contact-actions">
+          <a href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20agendar%20un%20diagn%C3%B3stico%20de%2030%20minutos." target="_blank" rel="noopener" class="btn btn-primary">Agendar por WhatsApp →</a>
+          <a href="mailto:juanmatiz@atiemppo.co?subject=Diagn%C3%B3stico%20ATIEMPPO&amp;body=Hola%2C%20quiero%20agendar%20un%20diagn%C3%B3stico%20de%2030%20minutos%20para%20hablar%20de%20un%20proyecto%20de%20IA." class="btn btn-ghost">Escribir por correo</a>
+        </div>
+        <p class="contact-meta">Si prefieren, pueden dejar el formulario y la solicitud llega directo al correo de ATIEMPPO.</p>
       </div>
       <div class="contact-form">
-        <form name="contacto" method="POST" data-netlify="true" action="/gracias">
+        <form
+          id="contactForm"
+          name="contacto"
+          method="POST"
+          action="https://formsubmit.co/juanmatiz@atiemppo.co"
+          data-google-script-url="https://script.google.com/a/macros/atiemppo.co/s/AKfycbyNHCVUttnrND5PWHBFA4ag6x4LXI-zKxlnzBLlnGYJZAICFZDZHki1IAxmowqAUqIDaQ/exec"
+        >
+          <input type="hidden" name="_subject" value="Nuevo contacto desde atiemppo.com"/>
+          <input type="hidden" name="_next" value="https://atiemppo.com/gracias/"/>
+          <input type="hidden" name="success_redirect" value="https://atiemppo.com/gracias/"/>
+          <input type="hidden" name="_template" value="table"/>
+          <input type="hidden" name="origen" value="atiemppo.com"/>
+          <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off"/>
+          <input type="hidden" name="user_agent" value=""/>
           <div class="fg"><label>Nombre completo</label><input type="text" name="nombre" placeholder="Tu nombre" required/></div>
           <div class="fg"><label>Correo electrónico</label><input type="email" name="email" placeholder="tu@empresa.com" required/></div>
           <div class="fg"><label>Empresa</label><input type="text" name="empresa" placeholder="Nombre de tu empresa"/></div>
+          <div class="fg"><label>Teléfono o WhatsApp</label><input type="text" name="telefono" placeholder="+57 300 000 0000"/></div>
           <div class="fg"><label>¿En qué te podemos ayudar?</label><textarea name="mensaje" placeholder="Cuéntanos sobre tu proyecto o necesidad..." required></textarea></div>
           <button type="submit" class="btn btn-primary" style="width:100%;margin-top:.5rem">Enviar mensaje →</button>
+          <p class="form-note">Al enviarlo, verás una página de confirmación y ATIEMPPO recibirá tu mensaje por correo. La primera vez, FormSubmit puede pedir confirmación del correo receptor para activar el formulario.</p>
         </form>
       </div>
     </div>
   </div>
 </section>
+
+<a href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20hablar%20sobre%20un%20proyecto%20de%20IA." class="wa-float" target="_blank" rel="noopener" aria-label="Abrir WhatsApp de ATIEMPPO">
+  <span class="wa-float-icon">💬</span>
+  <span>WhatsApp</span>
+</a>
 
 <footer>
   <div class="footer-inner">
@@ -670,6 +705,30 @@ function initDots(){dots=[];const n=Math.floor((canvas.width*canvas.height)/1400
 function drawDots(){ctx.clearRect(0,0,canvas.width,canvas.height);dots.forEach(d=>{d.x+=d.vx;d.y+=d.vy;if(d.x<0||d.x>canvas.width)d.vx*=-1;if(d.y<0||d.y>canvas.height)d.vy*=-1;ctx.beginPath();ctx.arc(d.x,d.y,d.r,0,Math.PI*2);ctx.fillStyle="rgba(0,85,204,.5)";ctx.fill();});for(let i=0;i<dots.length;i++){for(let j=i+1;j<dots.length;j++){const dx=dots[i].x-dots[j].x,dy=dots[i].y-dots[j].y;const dist=Math.sqrt(dx*dx+dy*dy);if(dist<120){ctx.beginPath();ctx.moveTo(dots[i].x,dots[i].y);ctx.lineTo(dots[j].x,dots[j].y);ctx.strokeStyle=`rgba(0,85,204,${.12*(1-dist/120)})`;ctx.lineWidth=.5;ctx.stroke();}}}requestAnimationFrame(drawDots);}
 window.addEventListener("resize",()=>{resizeCanvas();initDots();});
 resizeCanvas();initDots();drawDots();
+
+const contactForm=document.getElementById("contactForm");
+
+if(contactForm){
+  const endpoint=contactForm.dataset.googleScriptUrl;
+  const userAgentField=contactForm.querySelector('input[name="user_agent"]');
+  const submitButton=contactForm.querySelector('button[type="submit"]');
+
+  if(userAgentField){
+    userAgentField.value=navigator.userAgent||"";
+  }
+
+  if(endpoint){
+    contactForm.action=endpoint;
+    contactForm.removeAttribute("data-success-redirect");
+  }
+
+  contactForm.addEventListener("submit",()=>{
+    if(submitButton){
+      submitButton.disabled=true;
+      submitButton.textContent="Enviando...";
+    }
+  });
+}
 </script>
 </body>
 </html>

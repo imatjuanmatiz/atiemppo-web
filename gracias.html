@@ -1,0 +1,53 @@
+---
+layout: none
+permalink: /gracias/
+render_with_liquid: false
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Gracias | ATIEMPPO</title>
+<meta name="robots" content="noindex"/>
+<style>
+:root{
+  --bg:#ffffff;--surface:#f0f6ff;--border:rgba(0,80,200,.14);--teal:#008f5d;--blue:#0055cc;
+  --white:#0a1628;--muted:#5a7080;--display:'Bebas Neue',sans-serif;--body:'Outfit',sans-serif;--r:6px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:2rem;background:linear-gradient(180deg,#ffffff 0%,#eef5ff 100%);color:var(--white);font-family:var(--body);line-height:1.65}
+.card{max-width:680px;width:100%;background:rgba(255,255,255,.92);border:1px solid var(--border);border-radius:18px;padding:3rem;box-shadow:0 30px 70px rgba(0,85,204,.08)}
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem;margin-bottom:1rem;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--teal)}
+.eyebrow::before{content:'';width:1.25rem;height:1px;background:var(--teal)}
+h1{font-family:var(--display);font-size:clamp(2.6rem,7vw,5rem);line-height:.95;letter-spacing:.04em;margin-bottom:1rem}
+p{font-size:1rem;color:var(--muted);margin-bottom:1rem}
+.actions{display:flex;gap:.9rem;flex-wrap:wrap;margin-top:1.5rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.9rem 1.4rem;border-radius:999px;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.btn-primary{background:var(--teal);color:#fff}
+.btn-secondary{background:#fff;color:var(--white);border:1px solid var(--border)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 32px rgba(0,85,204,.10)}
+.mini{margin-top:1.25rem;font-size:.82rem;color:rgba(10,22,40,.52)}
+@media(max-width:640px){
+  .card{padding:2rem}
+  .actions{flex-direction:column}
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <main class="card">
+    <div class="eyebrow">Mensaje recibido</div>
+    <h1>GRACIAS POR<br/>ESCRIBIRNOS</h1>
+    <p>Tu mensaje ya fue enviado. Si el formulario quedó bien activado, ATIEMPPO lo recibirá en el correo y podrá responderte directamente.</p>
+    <p>Si quieres acelerar la conversación, también puedes escribir por WhatsApp ahora mismo.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20acabo%20de%20enviar%20el%20formulario%20de%20la%20web%20y%20quiero%20continuar%20la%20conversaci%C3%B3n." target="_blank" rel="noopener">Seguir por WhatsApp</a>
+      <a class="btn btn-secondary" href="/">Volver al inicio</a>
+    </div>
+    <p class="mini">Si esta es la primera vez que usas FormSubmit con este correo receptor, revisa el buzón de confirmación para activar definitivamente el formulario.</p>
+  </main>
+</body>
+</html>
