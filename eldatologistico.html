@@ -1,0 +1,263 @@
+---
+layout: none
+permalink: /eldatologistico/
+render_with_liquid: false
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>El Dato Logístico | Newsletter de logística, transporte y datos</title>
+<meta name="description" content="El Dato Logístico convierte #OjoAlDato en una newsletter y comunidad para quienes toman decisiones en logística, transporte, datos e IA aplicada."/>
+<meta property="og:title" content="El Dato Logístico"/>
+<meta property="og:description" content="Newsletter sobre logística, transporte, datos e iniciativas abiertas."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://atiemppo.com/eldatologistico/"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Instrument+Serif:ital@0;1&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#f7f1e6;
+  --paper:#fffaf0;
+  --ink:#1f1b16;
+  --muted:#6d6256;
+  --line:rgba(31,27,22,.12);
+  --accent:#0b6b5f;
+  --accent-2:#c7682d;
+  --display:'Bebas Neue',sans-serif;
+  --serif:'Instrument Serif',serif;
+  --body:'Manrope',sans-serif;
+  --r:10px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:radial-gradient(circle at top,#fffdf7 0%,var(--bg) 48%,#efe6d4 100%);color:var(--ink);line-height:1.65}
+a{color:inherit;text-decoration:none}
+section{padding:5.5rem 1.5rem}
+.container{max-width:1120px;margin:0 auto}
+.eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:1.1rem}
+.eyebrow::before{content:'';width:1.4rem;height:1px;background:currentColor}
+.display{font-family:var(--display);letter-spacing:.04em;line-height:.94}
+.hero{padding:2rem 1.5rem 4rem}
+.hero-shell{max-width:1240px;margin:0 auto;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:linear-gradient(135deg,rgba(255,250,240,.96) 0%,rgba(245,235,214,.96) 100%);box-shadow:0 30px 90px rgba(71,52,28,.08)}
+.hero-top{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.2rem 1.4rem;border-bottom:1px solid var(--line);font-size:.82rem;color:var(--muted)}
+.brand{font-family:var(--display);font-size:1.5rem;letter-spacing:.08em}
+.hero-main{display:grid;grid-template-columns:1.25fr .85fr;gap:2rem;padding:3rem}
+.hero-title{font-size:clamp(3.2rem,8vw,7.4rem);max-width:720px}
+.hero-title em{font-family:var(--serif);font-style:italic;color:var(--accent)}
+.hero-copy{max-width:620px;font-size:1.04rem;color:var(--muted);margin:1.3rem 0 1.8rem}
+.hero-actions{display:flex;gap:.9rem;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:.9rem 1.4rem;border-radius:999px;border:1px solid var(--line);font-weight:800;font-size:.9rem;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 32px rgba(53,37,16,.08)}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn-secondary{background:rgba(255,255,255,.55)}
+.hero-notes{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin-top:2rem}
+.hero-note{background:rgba(255,255,255,.62);border:1px solid var(--line);border-radius:14px;padding:1rem}
+.hero-note strong{display:block;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.5rem}
+.hero-note span{font-size:.9rem;color:var(--muted)}
+.hero-panel{background:#1e1a14;color:#f5ead6;border-radius:22px;padding:2rem;position:relative;overflow:hidden}
+.hero-panel::before{content:'';position:absolute;inset:auto -10% -25% auto;width:220px;height:220px;border-radius:50%;background:rgba(199,104,45,.18);filter:blur(10px)}
+.panel-kicker{font-size:.74rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#d7c3a0;margin-bottom:1rem}
+.panel-title{font-family:var(--serif);font-size:2.3rem;line-height:1.02;margin-bottom:1rem}
+.panel-list{list-style:none;display:flex;flex-direction:column;gap:.9rem}
+.panel-list li{padding-bottom:.9rem;border-bottom:1px solid rgba(255,255,255,.08);color:#e5d7bc}
+.panel-list li:last-child{border-bottom:none;padding-bottom:0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.card{background:rgba(255,255,255,.72);border:1px solid var(--line);border-radius:18px;padding:1.7rem}
+.card h3{font-family:var(--display);font-size:1.6rem;letter-spacing:.05em;margin-bottom:.8rem}
+.card p{color:var(--muted)}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}
+.mini-card{background:rgba(255,255,255,.72);border:1px solid var(--line);border-radius:16px;padding:1.3rem}
+.mini-card strong{display:block;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-2);margin-bottom:.6rem}
+.mini-card p{font-size:.92rem;color:var(--muted)}
+.open-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}
+.open-card{display:flex;flex-direction:column;justify-content:space-between;gap:1rem;background:#fffdf8;border:1px solid var(--line);border-radius:18px;padding:1.4rem;min-height:240px}
+.open-card h3{font-family:var(--display);font-size:1.45rem;letter-spacing:.05em}
+.open-card p{color:var(--muted);font-size:.92rem}
+.open-link{font-size:.82rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.quote-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:1rem}
+.quote-card{background:#1f1b16;color:#f7efdf;border-radius:18px;padding:2rem}
+.quote-card p{font-family:var(--serif);font-size:2rem;line-height:1.06}
+.quote-card span{display:block;margin-top:1rem;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:#d7c3a0}
+.subscribe{background:linear-gradient(160deg,#fffaf0 0%,#f1e7d4 100%)}
+.subscribe-shell{display:grid;grid-template-columns:1fr .95fr;gap:1rem;align-items:start}
+.subscribe-copy p{max-width:560px;color:var(--muted);font-size:1rem}
+.subscribe-form{background:#fffefb;border:1px solid var(--line);border-radius:20px;padding:1.8rem}
+.fg{margin-bottom:1rem}
+.fg label{display:block;font-size:.78rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:.45rem}
+.fg input,.fg select{width:100%;padding:.9rem 1rem;border:1px solid rgba(31,27,22,.14);border-radius:12px;background:#fff;font:inherit;color:var(--ink)}
+.form-help{font-size:.82rem;color:var(--muted);line-height:1.6;margin-top:.9rem}
+.foot{padding:2rem 1.5rem 3rem}
+.foot-inner{max-width:1120px;margin:0 auto;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:1.5rem;color:var(--muted);font-size:.84rem}
+@media(max-width:980px){
+  .hero-main,.split,.quote-wrap,.subscribe-shell,.open-grid,.grid-3{grid-template-columns:1fr}
+  .hero-notes{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .hero-main{padding:2rem 1.25rem}
+  .hero-title{font-size:3.3rem}
+  section{padding:4.5rem 1rem}
+  .hero{padding:1rem 1rem 3rem}
+}
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-shell">
+      <div class="hero-top">
+        <div class="brand">EL DATO LOGISTICO</div>
+        <div>#OjoAlDato, sin humo y sin relleno, para quienes viven la operación logística de verdad.</div>
+      </div>
+      <div class="hero-main">
+        <div>
+          <div class="eyebrow">#OjoAlDato</div>
+          <h1 class="display hero-title">Datos que <em>mueven</em> el mundo.</h1>
+          <p class="hero-copy">El Dato Logístico convierte la reputación de `#OjoAlDato` en una newsletter y una comunidad para gerentes, coordinadores, analistas y operadores que necesitan criterio, contexto y herramientas para decidir mejor en transporte, costos, datos e IA aplicada.</p>
+          <div class="hero-actions">
+            <a href="#suscribirse" class="btn btn-primary">Suscribirme gratis</a>
+            <a href="#abierto" class="btn btn-secondary">Ver qué incluye</a>
+          </div>
+          <div class="hero-notes">
+            <div class="hero-note"><strong>#OjoAlDato</strong><span>El dato logístico real de la semana, con interpretación y contexto, no solo el número.</span></div>
+            <div class="hero-note"><strong>Aprende a calcularlo</strong><span>Plantillas, pasos claros, casos y herramientas para no depender siempre de terceros.</span></div>
+            <div class="hero-note"><strong>Ahorra tiempo</strong><span>Flujos, automatizaciones y criterios que te devuelven horas operativas cada semana.</span></div>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <div class="panel-kicker">Lo que estamos construyendo</div>
+          <div class="panel-title">Newsletter hoy. Comunidad mañana.</div>
+          <ul class="panel-list">
+            <li>Una edición semanal que deje una decisión concreta para operar mejor esta semana.</li>
+            <li>Un puente entre LinkedIn, newsletter y una futura comunidad paga con más profundidad.</li>
+            <li>Acceso a plantillas, casos reales, herramientas y experimentos que sí se usan en operación.</li>
+            <li>Beta inicial con primer mes a $0 para los primeros perfiles que entren y den feedback.</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container split">
+      <div class="card">
+        <div class="eyebrow">Qué hacemos</div>
+        <h3>UN NEWSLETTER PARA QUIEN DECIDE</h3>
+        <p>No queremos solo reenviar noticias. Queremos bajar a tierra lo que importa en costos, rutas, operación, mercado, automatización e IA aplicada para que alguien pueda tomar una mejor decisión esta misma semana.</p>
+      </div>
+      <div class="card">
+        <div class="eyebrow">Cómo funciona</div>
+        <h3>DE LINKEDIN A COMUNIDAD</h3>
+        <p>La entrada es `#OjoAlDato`, el desarrollo ocurre en la newsletter y la profundidad terminará viviendo en una comunidad paga con plantillas, casos, grupo de dudas y sesiones para quienes quieran ir más allá.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="eyebrow">Qué vas a recibir</div>
+      <h2 class="display" style="font-size:clamp(2.6rem,6vw,5.4rem)">SEÑALES, CASOS Y<br/>PUNTOS DE VISTA</h2>
+      <div class="grid-3">
+        <div class="mini-card"><strong>Dato de la semana</strong><p>Insight numérico + contexto + implicación operativa, con formato `#OjoAlDato`.</p></div>
+        <div class="mini-card"><strong>Caso o guía</strong><p>Problema, decisión y resultado transferible; o un paso a paso corto para aplicar rápido.</p></div>
+        <div class="mini-card"><strong>Radar e IA</strong><p>Riesgos del mercado, herramientas útiles y automatizaciones que sí valen la pena probar.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="abierto">
+    <div class="container">
+      <div class="eyebrow">Iniciativas abiertas</div>
+      <h2 class="display" style="font-size:clamp(2.6rem,6vw,5.2rem)">LO QUE YA ESTAMOS<br/>MOVIENDO</h2>
+      <div class="open-grid">
+        <article class="open-card">
+          <div>
+            <h3>#OJOALDATO</h3>
+            <p>La pieza semanal de entrada: un dato duro, contexto y una lectura que se pueda llevar a una decisión real.</p>
+          </div>
+          <a class="open-link" href="#suscribirse">Entrar a la lista</a>
+        </article>
+        <article class="open-card">
+          <div>
+            <h3>COMUNIDAD EL DATO LOGISTICO</h3>
+            <p>La siguiente capa: plantillas, casos reales, sesiones y soporte para quienes quieran ahorrar horas de análisis.</p>
+          </div>
+          <a class="open-link" href="#suscribirse">Aplicar a beta</a>
+        </article>
+        <article class="open-card">
+          <div>
+            <h3>INICIATIVAS ABIERTAS</h3>
+            <p>Productos, agentes y herramientas que ATIEMPPO ya viene construyendo y que alimentan el contenido editorial.</p>
+          </div>
+          <a class="open-link" href="https://dashboards.atiemppo.co" target="_blank" rel="noopener">Ver un ejemplo</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container quote-wrap">
+      <div class="quote-card">
+        <p>“Cada edición debe dejar una decisión concreta para operar mejor esta semana.”</p>
+        <span>ATIEMPPO Editorial</span>
+      </div>
+      <div class="card">
+        <div class="eyebrow">Tono editorial</div>
+        <h3>SIN HUMO. SIN RELLENO.</h3>
+        <p>El tono es directo, basado en datos reales y sin postureo. No queremos parecer un medio genérico, sino una voz útil para personas que ya están metidas en la operación y no tienen tiempo para descifrarlo todo solas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="subscribe" id="suscribirse">
+    <div class="container subscribe-shell">
+      <div class="subscribe-copy">
+        <div class="eyebrow">Suscripción</div>
+        <h2 class="display" style="font-size:clamp(2.7rem,6vw,5.5rem)">ENTRA A LA BETA</h2>
+        <p>Déjanos tu correo para recibir las primeras ediciones de `#OjoAlDato` y para considerar tu entrada a la beta inicial con primer mes a $0 cuando abramos la comunidad.</p>
+      </div>
+      <div class="subscribe-form">
+        <form method="POST" action="https://script.google.com/macros/s/AKfycbyNHCVUttnrND5PWHBFA4ag6x4LXI-zKxlnzBLlnGYJZAICFZDZHki1IAxmowqAUqIDaQ/exec">
+          <input type="hidden" name="form_type" value="newsletter"/>
+          <input type="hidden" name="origen" value="eldatologistico"/>
+          <input type="hidden" name="success_redirect" value="https://atiemppo.com/eldatologistico/gracias/"/>
+          <input type="hidden" name="user_agent" id="newsletterUserAgent" value=""/>
+          <input type="text" name="_honey" style="position:absolute;left:-9999px;opacity:0;pointer-events:none" tabindex="-1" autocomplete="off"/>
+          <div class="fg"><label>Nombre</label><input type="text" name="nombre" placeholder="Tu nombre"/></div>
+          <div class="fg"><label>Correo</label><input type="email" name="email" placeholder="tu@empresa.com" required/></div>
+          <div class="fg"><label>Empresa</label><input type="text" name="empresa" placeholder="Empresa u organización"/></div>
+          <div class="fg"><label>Rol</label><input type="text" name="rol" placeholder="Ej. gerente logístico, analista, consultor"/></div>
+          <div class="fg">
+            <label>Interés principal</label>
+            <select name="interes">
+              <option value="">Selecciona una opción</option>
+              <option value="mercado-transporte">Mercado y costos de transporte</option>
+              <option value="datos-operacion">Datos y operación</option>
+              <option value="ia-automatizacion">IA y automatización</option>
+              <option value="comunidad-beta">Quiero entrar a la beta de comunidad</option>
+              <option value="contenido-general">Quiero recibir de todo un poco</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" type="submit" style="width:100%">Suscribirme gratis</button>
+          <p class="form-help">Guardamos tu suscripción en Google Sheets y te contactaremos cuando salgan las primeras ediciones, recursos o invitaciones a la beta.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="foot-inner">
+      <div>El Dato Logístico · una iniciativa editorial de <a href="/">ATIEMPPO</a></div>
+      <div><a href="/politicaprivacidad">Privacidad</a> · <a href="mailto:juanmatiz@atiemppo.co">juanmatiz@atiemppo.co</a></div>
+    </div>
+  </footer>
+
+  <script>
+  const newsletterUserAgent=document.getElementById("newsletterUserAgent");
+  if(newsletterUserAgent){
+    newsletterUserAgent.value=navigator.userAgent||"";
+  }
+  </script>
+</body>
+</html>
