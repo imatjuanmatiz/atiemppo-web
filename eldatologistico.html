@@ -43,7 +43,8 @@ section{padding:5.5rem 1.5rem}
 .hero{padding:2rem 1.5rem 4rem}
 .hero-shell{max-width:1240px;margin:0 auto;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:linear-gradient(135deg,rgba(255,250,240,.96) 0%,rgba(245,235,214,.96) 100%);box-shadow:0 30px 90px rgba(71,52,28,.08)}
 .hero-top{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.2rem 1.4rem;border-bottom:1px solid var(--line);font-size:.82rem;color:var(--muted)}
-.brand{font-family:var(--display);font-size:1.5rem;letter-spacing:.08em}
+.brand{display:flex;align-items:center}
+.brand img{display:block;height:48px;width:auto;max-width:min(100%,360px);object-fit:contain}
 .hero-main{display:grid;grid-template-columns:1.25fr .85fr;gap:2rem;padding:3rem}
 .hero-title{font-size:clamp(3.2rem,8vw,7.4rem);max-width:720px}
 .hero-title em{font-family:var(--serif);font-style:italic;color:var(--accent)}
@@ -107,7 +108,9 @@ section{padding:5.5rem 1.5rem}
   <header class="hero">
     <div class="hero-shell">
       <div class="hero-top">
-        <div class="brand">EL DATO LOGISTICO</div>
+        <div class="brand">
+          <img src="/assets/images/eldatologistico/logo-el-dato-logistico.png" alt="El Dato Logístico"/>
+        </div>
         <div>#OjoAlDato, sin humo y sin relleno, para quienes viven la operación logística de verdad.</div>
       </div>
       <div class="hero-main">
