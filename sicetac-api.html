@@ -1,0 +1,166 @@
+---
+layout: none
+permalink: /sicetac-api/
+render_with_liquid: false
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>API SICETAC | ATIEMPPO</title>
+<meta name="description" content="Conecta tus sistemas y agentes al valor de referencia del SICETAC con una API moderna pensada para áreas comerciales, operativas y financieras."/>
+<meta property="og:title" content="API SICETAC | ATIEMPPO"/>
+<meta property="og:description" content="Una capa moderna para conectar sistemas, agentes y equipos internos al valor del SICETAC."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://atiemppo.com/sicetac-api/"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#f4f8ff;
+  --surface:#ffffff;
+  --surface2:#eaf2ff;
+  --ink:#0f1a2b;
+  --muted:#5e6f83;
+  --line:rgba(15,26,43,.12);
+  --accent:#0055cc;
+  --accent2:#008f5d;
+  --display:'Bebas Neue',sans-serif;
+  --body:'Outfit',sans-serif;
+  --r:20px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--body);background:radial-gradient(circle at top,#ffffff 0%,#f4f8ff 55%,#e8f0ff 100%);color:var(--ink);line-height:1.65;padding:1.25rem}
+a{text-decoration:none;color:inherit}
+.shell{max-width:1180px;margin:0 auto}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:1rem;align-items:stretch}
+.card{background:rgba(255,255,255,.84);border:1px solid var(--line);border-radius:28px;padding:2rem;box-shadow:0 28px 70px rgba(15,26,43,.08)}
+.eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-size:.75rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent2);margin-bottom:1rem}
+.eyebrow::before{content:'';width:1.3rem;height:1px;background:currentColor}
+.title{font-family:var(--display);font-size:clamp(3.2rem,8vw,6.6rem);line-height:.92;letter-spacing:.04em}
+.title em{font-style:normal;color:var(--accent2)}
+.copy{max-width:60ch;color:var(--muted);font-size:1.03rem;margin:1.1rem 0 1.6rem}
+.actions{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.92rem 1.28rem;border-radius:999px;border:1px solid var(--line);font-weight:700;font-size:.9rem}
+.btn-primary{background:var(--accent2);border-color:var(--accent2);color:#fff}
+.btn-secondary{background:rgba(255,255,255,.68)}
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin-top:2rem}
+.stat{background:var(--surface2);border:1px solid var(--line);border-radius:18px;padding:1rem}
+.stat strong{display:block;font-family:var(--display);font-size:1.5rem;letter-spacing:.04em;color:var(--accent);margin-bottom:.3rem}
+.stat span{font-size:.9rem;color:var(--muted)}
+.panel{background:#10233d;color:#eaf2ff;position:relative;overflow:hidden}
+.panel::before{content:'';position:absolute;inset:auto -10% -25% auto;width:240px;height:240px;border-radius:50%;background:rgba(0,143,93,.18);filter:blur(12px)}
+.panel h2{font-family:var(--display);font-size:2rem;letter-spacing:.05em;margin-bottom:1rem}
+.panel ul{list-style:none;display:grid;gap:.9rem;position:relative}
+.panel li{padding-bottom:.9rem;border-bottom:1px solid rgba(255,255,255,.1);color:#d7e4f7}
+.panel li:last-child{border-bottom:none;padding-bottom:0}
+.section{margin-top:1rem}
+.section-card{background:rgba(255,255,255,.8);border:1px solid var(--line);border-radius:24px;padding:2rem}
+.section-card h2{font-family:var(--display);font-size:2.1rem;letter-spacing:.05em;margin-bottom:1rem}
+.section-card p{color:var(--muted);margin-bottom:1rem}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.mini{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:1.3rem}
+.mini strong{display:block;font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent2);margin-bottom:.55rem}
+.mini p{font-size:.93rem;color:var(--muted)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.list{list-style:none;display:grid;gap:.85rem}
+.list li{padding:.95rem 0;border-bottom:1px solid var(--line);color:var(--muted)}
+.list li:last-child{border-bottom:none}
+.cta{background:linear-gradient(135deg,#0f223b 0%,#13335d 100%);color:#eaf2ff}
+.cta p{color:#c9d8ed}
+.foot{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:var(--muted);font-size:.86rem;margin-top:1rem}
+@media(max-width:980px){
+  .hero,.grid,.split,.stat-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+  <div class="shell">
+    <section class="hero">
+      <div class="card">
+        <div class="eyebrow">Producto B2B</div>
+        <h1 class="title">API <em>SICETAC</em></h1>
+        <p class="copy">Una capa moderna para conectar tus sistemas, tus agentes y tus equipos internos al valor de referencia del SICETAC. Pensada para empresas de transporte que necesitan velocidad, consistencia y trazabilidad en comercial, operación y finanzas.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/#contacto">Hablar con ATIEMPPO ↗</a>
+          <a class="btn btn-secondary" href="/blog/2026/03/api-sicetac-empresas-transporte/">Leer artículo ↗</a>
+          <a class="btn btn-secondary" href="/">Volver a ATIEMPPO ↗</a>
+        </div>
+        <div class="stat-grid">
+          <div class="stat"><strong>API</strong><span>Integración directa para TMS, CRM, ERP y herramientas internas.</span></div>
+          <div class="stat"><strong>Agentes</strong><span>Backend para asistentes y flujos conversacionales conectados a datos reales.</span></div>
+          <div class="stat"><strong>Actualización</strong><span>Preparada para mantener vigencia frente a cambios del Ministerio.</span></div>
+        </div>
+      </div>
+      <aside class="card panel">
+        <h2>QUÉ RESUELVE</h2>
+        <ul>
+          <li>Evita que cada área consulte rutas con lógicas distintas o procesos manuales.</li>
+          <li>Lleva costos de referencia a procesos comerciales, operativos y financieros en tiempo útil.</li>
+          <li>Convierte la consulta SICETAC en una capacidad integrada y no en un dato aislado.</li>
+          <li>Abre la puerta a agentes internos que respondan preguntas de rutas en lenguaje natural.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section">
+      <div class="section-card">
+        <h2>PARA QUIÉN HACE SENTIDO</h2>
+        <div class="grid">
+          <article class="mini">
+            <strong>Comercial</strong>
+            <p>Para equipos que necesitan reaccionar más rápido frente a clientes, licitaciones y cotizaciones con una referencia consistente.</p>
+          </article>
+          <article class="mini">
+            <strong>Operación</strong>
+            <p>Para áreas que quieren contrastar rápido rutas, viajes y referencias de costo sin depender de consultas manuales.</p>
+          </article>
+          <article class="mini">
+            <strong>Finanzas</strong>
+            <p>Para equipos que buscan una base más clara para seguimiento de costos, presupuestos, control y conversaciones de margen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div class="section-card">
+        <h2>QUÉ PUEDES CONECTAR</h2>
+        <ul class="list">
+          <li>TMS, CRM, ERP o herramientas internas.</li>
+          <li>Dashboards y capas de seguimiento de rentabilidad.</li>
+          <li>Agentes internos para consulta por lenguaje natural.</li>
+          <li>Automatizaciones para cotización, validación y seguimiento.</li>
+        </ul>
+      </div>
+      <div class="section-card">
+        <h2>QUÉ NOS IMPORTA DEL PRODUCTO</h2>
+        <ul class="list">
+          <li>Que sea útil para negocio, no solo para desarrolladores.</li>
+          <li>Que funcione como infraestructura para sistemas y agentes.</li>
+          <li>Que reduzca fricción entre consulta, decisión y ejecución.</li>
+          <li>Que sea una base confiable para crecer a otros servicios SICETAC.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-card cta">
+        <h2>SI QUIERES EXPLORARLO, HABLEMOS</h2>
+        <p>Este producto está pensado para empresas que quieren dejar atrás la consulta manual y convertir el SICETAC en una capacidad conectada a sus sistemas y a sus agentes.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/#contacto">Agendar conversación ↗</a>
+          <a class="btn btn-secondary" href="https://wa.me/573107687010" target="_blank" rel="noopener">Escribir por WhatsApp ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="foot">
+      <div>API SICETAC · un producto de ATIEMPPO</div>
+      <div><a href="/base-completa-sicetac/">Ver Base Completa SICETAC ↗</a></div>
+    </div>
+  </div>
+</body>
+</html>
