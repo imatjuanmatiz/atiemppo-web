@@ -78,6 +78,12 @@ section{padding:5.5rem 1.5rem}
 .open-card h3{font-family:var(--display);font-size:1.45rem;letter-spacing:.05em}
 .open-card p{color:var(--muted);font-size:.92rem}
 .open-link{font-size:.82rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.story-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}
+.story-card{background:rgba(255,255,255,.72);border:1px solid var(--line);border-radius:18px;padding:1.4rem}
+.story-card strong{display:block;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-2);margin-bottom:.65rem}
+.story-card h3{font-family:var(--display);font-size:1.35rem;letter-spacing:.05em;margin-bottom:.65rem}
+.story-card p{font-size:.92rem;color:var(--muted);margin-bottom:1rem}
+.story-card a{font-size:.82rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
 .quote-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:1rem}
 .quote-card{background:#1f1b16;color:#f7efdf;border-radius:18px;padding:2rem}
 .quote-card p{font-family:var(--serif);font-size:2rem;line-height:1.06}
@@ -93,7 +99,7 @@ section{padding:5.5rem 1.5rem}
 .foot{padding:2rem 1.5rem 3rem}
 .foot-inner{max-width:1120px;margin:0 auto;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:1.5rem;color:var(--muted);font-size:.84rem}
 @media(max-width:980px){
-  .hero-main,.split,.quote-wrap,.subscribe-shell,.open-grid,.grid-3{grid-template-columns:1fr}
+  .hero-main,.split,.quote-wrap,.subscribe-shell,.open-grid,.grid-3,.story-strip{grid-template-columns:1fr}
   .hero-notes{grid-template-columns:1fr}
 }
 @media(max-width:640px){
@@ -210,6 +216,33 @@ section{padding:5.5rem 1.5rem}
             <p>Consulta desde tu teléfono escribiendo así: <strong>origen a destino</strong>. No olvides poner la <strong>a</strong>.</p>
           </div>
           <a class="open-link" href="https://wa.me/57313450394?text=Hola%2C%20quiero%20consultar%20SICETAC%20al%20Instante%20por%20WhatsApp.%20Escribe%20asi%3A%20origen%20a%20destino" target="_blank" rel="noopener">Abrir WhatsApp ↗</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="eyebrow">Desde el newsletter</div>
+      <h2 class="display" style="font-size:clamp(2.6rem,6vw,5rem)">PIEZAS QUE EXPLICAN<br/>EL ECOSISTEMA</h2>
+      <div class="story-strip">
+        <article class="story-card">
+          <strong>Newsletter</strong>
+          <h3>EL DATO LOGÍSTICO</h3>
+          <p>La nota que explica por qué esta capa editorial no vive aislada, sino conectada con producto, comunidad y conversación.</p>
+          <a href="/blog/2026/03/el-dato-logistico-newsletter/">Leer artículo ↗</a>
+        </article>
+        <article class="story-card">
+          <strong>ChatGPT</strong>
+          <h3>GPT EL DATO LOGÍSTICO</h3>
+          <p>Una pieza corta para entender el rol del asistente especializado dentro del trabajo editorial y analítico de ATIEMPPO.</p>
+          <a href="/blog/2026/03/gpt-el-dato-logistico/">Leer artículo ↗</a>
+        </article>
+        <article class="story-card">
+          <strong>Comunidad</strong>
+          <h3>LA COMUNIDAD</h3>
+          <p>El puente entre contenido abierto y profundidad aplicada: qué esperamos que pase ahí y por qué existe esa capa.</p>
+          <a href="/blog/2026/03/la-comunidad-skool/">Leer artículo ↗</a>
         </article>
       </div>
     </div>
