@@ -33,5 +33,5 @@ No es solo un canal más. Es una manera de reducir fricción entre la pregunta y
 
 ## Probarlo
 
-- [Abrir SICETAC al Instante en WhatsApp](https://wa.me/57313450394?text=Hola%2C%20quiero%20consultar%20SICETAC%20al%20Instante%20por%20WhatsApp.%20Escribe%20asi%3A%20origen%20a%20destino)
+- [Abrir SICETAC al Instante en WhatsApp](https://wa.me/573134503694?text=Hola%2C%20quiero%20consultar%20SICETAC%20al%20Instante%20por%20WhatsApp.%20Escribe%20asi%3A%20origen%20a%20destino)
 - [Ver la home de ATIEMPPO](https://atiemppo.com/)
