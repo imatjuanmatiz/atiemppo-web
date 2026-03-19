@@ -1,0 +1,97 @@
+---
+layout: none
+permalink: /lacomunidad/
+render_with_liquid: false
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>La Comunidad | El Dato Logístico</title>
+<meta name="description" content="La Comunidad es el espacio de El Dato Logístico en Skool para profundizar en logística, transporte, datos e IA aplicada."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#f5efe4;
+  --paper:#fffaf2;
+  --ink:#201a14;
+  --muted:#695f55;
+  --line:rgba(32,26,20,.12);
+  --accent:#0b6b5f;
+  --accent-2:#c7682d;
+  --display:'Bebas Neue',sans-serif;
+  --serif:'Instrument Serif',serif;
+  --body:'Manrope',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--body);background:radial-gradient(circle at top,#fffdf7 0%,var(--bg) 54%,#efe5d5 100%);color:var(--ink);line-height:1.65;padding:1.25rem}
+a{text-decoration:none;color:inherit}
+.shell{max-width:1120px;margin:0 auto}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:1rem;align-items:stretch}
+.card{background:rgba(255,250,242,.82);border:1px solid var(--line);border-radius:24px;padding:2rem;box-shadow:0 26px 70px rgba(63,46,24,.08)}
+.eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-size:.76rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.eyebrow::before{content:'';width:1.2rem;height:1px;background:currentColor}
+.title{font-family:var(--display);font-size:clamp(3rem,8vw,6.2rem);line-height:.92;letter-spacing:.04em}
+.title em{font-family:var(--serif);font-style:italic;color:var(--accent)}
+.copy{max-width:58ch;color:var(--muted);font-size:1rem;margin:1rem 0 1.6rem}
+.actions{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.9rem 1.25rem;border-radius:999px;border:1px solid var(--line);font-weight:800;font-size:.88rem}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn-secondary{background:rgba(255,255,255,.6)}
+.logo-space{display:grid;place-items:center;min-height:280px;border:1.5px dashed rgba(11,107,95,.35);border-radius:22px;background:linear-gradient(135deg,rgba(11,107,95,.06) 0%,rgba(199,104,45,.06) 100%);text-align:center;padding:1.5rem}
+.logo-space strong{display:block;font-size:.86rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:.7rem}
+.logo-space span{color:var(--muted);max-width:28ch}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
+.mini{background:rgba(255,255,255,.7);border:1px solid var(--line);border-radius:18px;padding:1.25rem}
+.mini strong{display:block;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-2);margin-bottom:.55rem}
+.mini p{color:var(--muted);font-size:.94rem}
+.foot{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:var(--muted);font-size:.86rem;margin-top:1rem}
+@media(max-width:980px){.hero,.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+  <div class="shell">
+    <section class="hero">
+      <div class="card">
+        <div class="eyebrow">El Dato Logístico</div>
+        <h1 class="title">LA <em>COMUNIDAD</em></h1>
+        <p class="copy">Este es el espacio de comunidad de El Dato Logístico en Skool. Aquí vive la capa más profunda del proyecto: conversaciones, casos, plantillas, dudas, aprendizaje colectivo y seguimiento para quienes quieren ir más allá del contenido abierto.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://www.skool.com/el-dato-logistico-4642" target="_blank" rel="noopener">Entrar a Skool ↗</a>
+          <a class="btn btn-secondary" href="/eldatologistico/">Volver al newsletter ↗</a>
+          <a class="btn btn-secondary" href="/">Volver a ATIEMPPO ↗</a>
+        </div>
+      </div>
+      <div class="card logo-space">
+        <div>
+          <strong>Espacio reservado para logo</strong>
+          <span>Aquí puede entrar el logo nuevo de La Comunidad cuando lo tengas definido.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="mini">
+        <strong>Qué encontrarás</strong>
+        <p>Casos reales, criterio aplicado, conversaciones guiadas y recursos para operadores, analistas, líderes logísticos y perfiles que trabajan con datos.</p>
+      </article>
+      <article class="mini">
+        <strong>Rol dentro del ecosistema</strong>
+        <p>Newsletter para atraer, GPT para conversar, Skool para profundizar. Cada capa cumple una función distinta dentro del proyecto editorial y de producto.</p>
+      </article>
+      <article class="mini">
+        <strong>Estado actual</strong>
+        <p>Activo como comunidad en construcción. Este espacio irá madurando junto con El Dato Logístico y los productos vivos de ATIEMPPO.</p>
+      </article>
+    </section>
+
+    <div class="foot">
+      <div>La Comunidad · un proyecto de El Dato Logístico</div>
+      <div><a href="https://www.skool.com/el-dato-logistico-4642" target="_blank" rel="noopener">Abrir Skool ↗</a></div>
+    </div>
+  </div>
+</body>
+</html>
