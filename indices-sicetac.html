@@ -1,0 +1,436 @@
+---
+layout: none
+permalink: /indices-sicetac/
+render_with_liquid: false
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Indices SICETAC 2025-2026 | ATIEMPPO</title>
+<meta name="description" content="Bases listas para analisis con indices SICETAC por ruta, configuracion y ciudad capital. Series base 202501=100 y 202512=100 construidas por ATIEMPPO."/>
+<meta property="og:title" content="Indices SICETAC 2025-2026 | ATIEMPPO"/>
+<meta property="og:description" content="Una landing para descargar, entender y usar bases SICETAC listas para analisis por ruta, configuracion y capital."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://atiemppo.com/indices-sicetac/"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#f6fbf7;
+  --surface:#ffffff;
+  --surface2:#edf8f1;
+  --surface3:#ebf2ff;
+  --ink:#102017;
+  --muted:#5d7264;
+  --line:rgba(16,32,23,.12);
+  --accent:#008f5d;
+  --accent2:#0055cc;
+  --display:'Bebas Neue',sans-serif;
+  --body:'Outfit',sans-serif;
+  --r:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:var(--body);
+  background:
+    radial-gradient(circle at top left,rgba(0,143,93,.08),transparent 28%),
+    radial-gradient(circle at bottom right,rgba(0,85,204,.08),transparent 24%),
+    linear-gradient(180deg,#ffffff 0%,#f4fbf6 48%,#e8f5ee 100%);
+  color:var(--ink);
+  line-height:1.65;
+  padding:1.25rem;
+}
+a{text-decoration:none;color:inherit}
+.shell{max-width:1180px;margin:0 auto}
+.hero{display:grid;grid-template-columns:1.08fr .92fr;gap:1rem}
+.card{
+  background:rgba(255,255,255,.86);
+  border:1px solid var(--line);
+  border-radius:28px;
+  padding:2rem;
+  box-shadow:0 28px 70px rgba(16,32,23,.08);
+}
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:.6rem;
+  font-size:.75rem;
+  font-weight:700;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:1rem;
+}
+.eyebrow::before{content:'';width:1.3rem;height:1px;background:currentColor}
+.title{
+  font-family:var(--display);
+  font-size:clamp(3.2rem,8vw,6.5rem);
+  line-height:.92;
+  letter-spacing:.04em;
+}
+.title em{font-style:normal;color:var(--accent2)}
+.copy{
+  max-width:64ch;
+  color:var(--muted);
+  font-size:1.04rem;
+  margin:1.1rem 0 1.6rem;
+}
+.actions{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:.95rem 1.28rem;
+  border-radius:999px;
+  border:1px solid var(--line);
+  font-weight:700;
+  font-size:.9rem;
+}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn-secondary{background:rgba(255,255,255,.72)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin-top:2rem}
+.mini{
+  background:var(--surface2);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:1rem;
+}
+.mini strong{
+  display:block;
+  font-family:var(--display);
+  font-size:1.45rem;
+  letter-spacing:.04em;
+  color:var(--accent2);
+  margin-bottom:.25rem;
+}
+.mini span{font-size:.9rem;color:var(--muted)}
+.panel{
+  background:linear-gradient(160deg,#123120 0%,#163d2a 100%);
+  color:#e8f5ee;
+  position:relative;
+  overflow:hidden;
+}
+.panel::before{
+  content:'';
+  position:absolute;
+  inset:auto -10% -25% auto;
+  width:240px;
+  height:240px;
+  border-radius:50%;
+  background:rgba(0,85,204,.14);
+  filter:blur(12px);
+}
+.panel h2{
+  font-family:var(--display);
+  font-size:2rem;
+  letter-spacing:.05em;
+  margin-bottom:1rem;
+  position:relative;
+}
+.panel ul{list-style:none;display:grid;gap:.9rem;position:relative}
+.panel li{
+  padding-bottom:.9rem;
+  border-bottom:1px solid rgba(255,255,255,.1);
+  color:#d4ebdd;
+}
+.panel li:last-child{border-bottom:none;padding-bottom:0}
+.section{margin-top:1rem}
+.section-card{
+  background:rgba(255,255,255,.82);
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:2rem;
+}
+.section-card h2{
+  font-family:var(--display);
+  font-size:2.15rem;
+  letter-spacing:.05em;
+  margin-bottom:1rem;
+}
+.section-card p{color:var(--muted);margin-bottom:1rem}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.list{list-style:none;display:grid;gap:.85rem}
+.list li{
+  padding:.95rem 0;
+  border-bottom:1px solid var(--line);
+  color:var(--muted);
+}
+.list li:last-child{border-bottom:none}
+.story-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:1rem}
+.callouts{display:grid;gap:1rem}
+.callout{
+  background:var(--surface3);
+  border:1px solid rgba(0,85,204,.12);
+  border-radius:18px;
+  padding:1.15rem;
+}
+.callout strong{
+  display:block;
+  font-size:.82rem;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:var(--accent2);
+  margin-bottom:.45rem;
+}
+.callout p{margin:0;color:#50647a;font-size:.94rem}
+.download-box{
+  background:#f7fcf8;
+  border:1px dashed rgba(16,32,23,.18);
+  border-radius:18px;
+  padding:1.1rem;
+  margin-top:1.25rem;
+}
+.download-box p{margin:0;color:var(--muted)}
+.cta{background:linear-gradient(135deg,#102017 0%,#15462c 100%);color:#e8f5ee}
+.cta p{color:#c5e3d1}
+.foot{
+  display:flex;
+  justify-content:space-between;
+  gap:1rem;
+  flex-wrap:wrap;
+  color:var(--muted);
+  font-size:.86rem;
+  margin-top:1rem;
+}
+.contact-shell{display:grid;grid-template-columns:.95fr 1.05fr;gap:1rem}
+.contact-panel{
+  background:linear-gradient(160deg,#123120 0%,#173f2b 100%);
+  color:#e8f5ee;
+  border:1px solid rgba(255,255,255,.06);
+}
+.contact-panel p{color:#c5e3d1}
+.contact-links{display:grid;gap:.7rem;margin:1.2rem 0 1.4rem}
+.contact-link{
+  display:flex;
+  align-items:center;
+  gap:.75rem;
+  padding:.9rem 1rem;
+  border-radius:16px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.08);
+  color:#e8f5ee;
+}
+.clink-icon{
+  width:2rem;
+  height:2rem;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:999px;
+  background:rgba(255,255,255,.1);
+  flex-shrink:0;
+}
+.contact-form-wrap{
+  background:rgba(255,255,255,.92);
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:2rem;
+}
+.fg{margin-bottom:1rem}
+.fg label{
+  display:block;
+  font-size:.76rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-bottom:.45rem;
+}
+.fg input,.fg textarea{
+  width:100%;
+  padding:.95rem 1rem;
+  border:1px solid rgba(16,32,23,.14);
+  border-radius:14px;
+  background:#fff;
+  font:inherit;
+  color:var(--ink);
+}
+.fg textarea{min-height:140px;resize:vertical}
+.form-note{font-size:.82rem;color:var(--muted);line-height:1.6;margin-top:1rem}
+.hp-field{position:absolute;left:-9999px;opacity:0;pointer-events:none}
+@media(max-width:980px){
+  .hero,.grid,.split,.story-grid,.contact-shell{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+  <div class="shell">
+    <section class="hero">
+      <div class="card">
+        <div class="eyebrow">Activo Editorial + Datos</div>
+        <h1 class="title">INDICES <em>SICETAC</em><br/>LISTOS PARA ANALISIS</h1>
+        <p class="copy">Una base trabajada por ATIEMPPO para convertir archivos mensuales de SICETAC en series comparables por ruta, configuracion y capital. No es un crudo para guardar: es una capa lista para explorar, descargar y usar en informes reales.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#solicitar">Solicitar acceso a las bases ↗</a>
+          <a class="btn btn-secondary" href="https://wa.me/573107687010" target="_blank" rel="noopener">Escribir por WhatsApp ↗</a>
+          <a class="btn btn-secondary" href="/eldatologistico/">Ver El Dato Logistico ↗</a>
+        </div>
+        <div class="grid">
+          <div class="mini"><strong>25,6M</strong><span>Registros consolidados y organizados para trabajo analitico.</span></div>
+          <div class="mini"><strong>9.621</strong><span>Rutas listas para seguimiento por identificador y ciudad.</span></div>
+          <div class="mini"><strong>2025-2026</strong><span>Series base 100 construidas para lectura estructural y coyuntural.</span></div>
+        </div>
+      </div>
+      <aside class="card panel">
+        <h2>QUE INCLUYE</h2>
+        <ul>
+          <li>Bases por ruta y configuracion con origen, destino y nombre de ciudad.</li>
+          <li>Serie base <strong>202501 = 100</strong> para seguimiento 2025 y arranque 2026.</li>
+          <li>Serie base <strong>202512 = 100</strong> para lectura coyuntural de 2026.</li>
+          <li>Metodologia documentada y trazabilidad por corte mensual.</li>
+          <li>Activos listos para analisis interno, reportes o contenidos editoriales.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section story-grid">
+      <div class="section-card">
+        <h2>DE ARCHIVOS SUELTOS A UNA BASE UTIL</h2>
+        <p>Tomamos los archivos mensuales de SICETAC, unificamos hojas, normalizamos variables y aplicamos una sola regla de consistencia temporal: cuando un periodo tenia varios cortes, se conservo el mas reciente. A partir de ahi construimos un universo comparable y una capa de trabajo lista para negocio, analisis y publicacion.</p>
+        <p>El universo de referencia se mantiene estable: carga <strong>General</strong>, unidad <strong>Estacas</strong>, condicion <strong>Cargado</strong>. Sobre esa estructura se pueden analizar configuraciones vehiculares, capitales de origen e indices por ruta sin rehacer el proceso cada vez.</p>
+        <div class="download-box">
+          <p><strong>Formato del activo:</strong> bases Excel, tablas consolidadas en DuckDB y documentos metodologicos listos para descarga o uso en proyectos a medida.</p>
+        </div>
+      </div>
+      <div class="callouts">
+        <article class="callout">
+          <strong>Cobertura</strong>
+          <p>10 configuraciones, 28 capitales y miles de combinaciones listas para cruces por periodo, ruta y ciudad.</p>
+        </article>
+        <article class="callout">
+          <strong>Lectura 2025</strong>
+          <p>Serie base 202501 = 100 para ver trayectorias largas y comparar el comportamiento acumulado de los valores.</p>
+        </article>
+        <article class="callout">
+          <strong>Lectura 2026</strong>
+          <p>Serie base 202512 = 100 para leer mejor el pulso reciente del mercado y evitar una base demasiado lejana.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div class="section-card">
+        <h2>QUE PUEDES HACER CON ESTA BASE</h2>
+        <ul class="list">
+          <li>Construir reportes por ruta, configuracion o ciudad capital de origen.</li>
+          <li>Seguir la variacion de VALORMOVILIZA con series comparables.</li>
+          <li>Preparar dashboards o documentos editoriales sin empezar desde cero.</li>
+          <li>Contrastar configuraciones con el mismo criterio metodologico.</li>
+          <li>Usar una misma fuente para negocio, contenido y analitica.</li>
+        </ul>
+      </div>
+      <div class="section-card">
+        <h2>POR QUE VA EN ATIEMPPO</h2>
+        <ul class="list">
+          <li>Porque aqui la descarga no es un archivo perdido: es un activo de inteligencia.</li>
+          <li>Porque ATIEMPPO convierte datos del sector en productos utilizables.</li>
+          <li>Porque El Dato Logistico cuenta la historia y ATIEMPPO entrega la capacidad de trabajo.</li>
+          <li>Porque cuando una base esta bien hecha, acelera informes, proyectos y decisiones.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-card">
+        <h2>QUE CONTIENE LA DESCARGA</h2>
+        <div class="split">
+          <ul class="list">
+            <li>Base por `RUTASID + configuracion` con origen, destino y nombre de ciudad.</li>
+            <li>Indices base 100 para 2025 y 2026.</li>
+            <li>Versiones listas para capitales y para configuraciones.</li>
+          </ul>
+          <ul class="list">
+            <li>Documentacion metodologica para anexos o reportes.</li>
+            <li>Archivos pensados para analisis rapido en Excel o modelos internos.</li>
+            <li>Posibilidad de extenderlo a vistas dinamicas o proyectos a medida.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-card cta">
+        <h2>SI QUIERES LA BASE, LA CONVERSACION SIGUE AQUI</h2>
+        <p>Este activo esta pensado para equipos que no quieren quedarse en la consulta puntual del SICETAC, sino trabajar con una base ordenada, interpretable y publicable. Si quieres descargarla, usarla en tus reportes o convertirla en un producto dinamico, hablemos.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#solicitar">Solicitar las bases ↗</a>
+          <a class="btn btn-secondary" href="https://wa.me/573107687010" target="_blank" rel="noopener">Hablar por WhatsApp ↗</a>
+          <a class="btn btn-secondary" href="/base-completa-sicetac/">Ver Base Completa SICETAC ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="solicitar">
+      <div class="contact-shell">
+        <div class="section-card contact-panel">
+          <h2>SOLICITA LA BASE O CONVIERTELA EN PROYECTO</h2>
+          <p>Si quieres descargar las bases, revisar la metodologia o explorar una version dinamica en tu empresa, puedes escribirnos por WhatsApp o dejar el formulario. La solicitud llega directo a ATIEMPPO.</p>
+          <div class="contact-links">
+            <a href="mailto:juanmatiz@atiemppo.co" class="contact-link"><span class="clink-icon">📧</span><span>juanmatiz@atiemppo.co</span></a>
+            <a href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20hablar%20sobre%20las%20bases%20e%20indices%20SICETAC." target="_blank" rel="noopener" class="contact-link"><span class="clink-icon">💬</span><span>WhatsApp: 310 768 7010</span></a>
+            <a href="tel:+573107687010" class="contact-link"><span class="clink-icon">📞</span><span>Llamar: +57 310 768 7010</span></a>
+            <div class="contact-link" style="cursor:default"><span class="clink-icon">📍</span><span>Bogotá, Colombia</span></div>
+          </div>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20hablar%20sobre%20las%20bases%20e%20indices%20SICETAC." target="_blank" rel="noopener">Hablar por WhatsApp ↗</a>
+            <a class="btn btn-secondary" href="/eldatologistico/">Ver El Dato Logistico ↗</a>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <h2 style="font-family:var(--display);font-size:2.05rem;letter-spacing:.05em;margin-bottom:1rem">DEJA TU SOLICITUD</h2>
+          <form
+            id="contactForm"
+            name="contacto-indices-sicetac"
+            method="POST"
+            action="https://formsubmit.co/juanmatiz@atiemppo.co"
+            data-google-script-url="https://script.google.com/macros/s/AKfycbyNHCVUttnrND5PWHBFA4ag6x4LXI-zKxlnzBLlnGYJZAICFZDZHki1IAxmowqAUqIDaQ/exec"
+          >
+            <input type="hidden" name="_subject" value="Nuevo lead desde indices-sicetac"/>
+            <input type="hidden" name="_next" value="https://atiemppo.com/gracias/"/>
+            <input type="hidden" name="success_redirect" value="https://atiemppo.com/gracias/"/>
+            <input type="hidden" name="_template" value="table"/>
+            <input type="hidden" name="origen" value="atiemppo.com/indices-sicetac"/>
+            <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off"/>
+            <input type="hidden" name="user_agent" value=""/>
+            <div class="fg"><label>Nombre completo</label><input type="text" name="nombre" placeholder="Tu nombre" required/></div>
+            <div class="fg"><label>Correo electronico</label><input type="email" name="email" placeholder="tu@empresa.com" required/></div>
+            <div class="fg"><label>Empresa</label><input type="text" name="empresa" placeholder="Nombre de tu empresa"/></div>
+            <div class="fg"><label>Telefono o WhatsApp</label><input type="text" name="telefono" placeholder="+57 300 000 0000"/></div>
+            <div class="fg"><label>Que necesitas</label><textarea name="mensaje" placeholder="Cuéntanos si quieres la base, el reporte, una versión dinámica o un análisis a medida..." required></textarea></div>
+            <button type="submit" class="btn btn-primary" style="width:100%;margin-top:.5rem">Enviar solicitud ↗</button>
+            <p class="form-note">Al enviarlo, ATIEMPPO recibe la solicitud por correo. Si es la primera vez que usas FormSubmit con este correo receptor, puede llegar un correo de activación para confirmar el formulario.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="foot">
+      <div>Indices SICETAC 2025-2026 · un activo de ATIEMPPO</div>
+      <div><a href="/sicetac-api/">Ver API SICETAC ↗</a></div>
+    </div>
+  </div>
+<script>
+const contactForm=document.getElementById("contactForm");
+if(contactForm){
+  const endpoint=contactForm.dataset.googleScriptUrl;
+  const userAgentField=contactForm.querySelector('input[name="user_agent"]');
+  const submitButton=contactForm.querySelector('button[type="submit"]');
+  if(userAgentField){
+    userAgentField.value=navigator.userAgent||"";
+  }
+  if(endpoint){
+    contactForm.action=endpoint;
+  }
+  contactForm.addEventListener("submit",()=>{
+    if(submitButton){
+      submitButton.disabled=true;
+      submitButton.textContent="Enviando...";
+    }
+  });
+}
+</script>
+</body>
+</html>
