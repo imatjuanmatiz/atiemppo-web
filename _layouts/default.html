@@ -21,7 +21,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}"/>
 </head>
-<body>
+<body class="{% if page.layout == 'post' %}page-post{% endif %}{% if page.url == '/blog/' %} page-blog{% endif %}">
 {% include header.html %}
 <main class="site-main">{{ content }}</main>
 {% include footer.html %}
