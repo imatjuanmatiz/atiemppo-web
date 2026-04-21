@@ -1,0 +1,642 @@
+---
+layout: none
+permalink: /servicios/
+render_with_liquid: false
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Portafolio de Servicios | ATIEMPPO</title>
+<meta name="description" content="Portafolio de servicios de ATIEMPPO para empresas que necesitan datos, criterio y ejecucion en logistica, transporte e IA aplicada."/>
+<meta property="og:title" content="Portafolio de Servicios | ATIEMPPO"/>
+<meta property="og:description" content="Cuatro lineas de trabajo para empresas que necesitan datos, criterio y ejecucion en logistica, transporte y transformacion digital."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://atiemppo.com/servicios/"/>
+<meta property="og:locale" content="es_CO"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="ai-content-declaration" content="human-authored"/>
+<link rel="canonical" href="https://atiemppo.com/servicios/"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://atiemppo.com/#organization",
+      "name": "ATIEMPPO S.A.S.",
+      "url": "https://atiemppo.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bogota",
+        "addressCountry": "CO"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "name": "Portafolio de servicios ATIEMPPO",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Captura y Campo" },
+        { "@type": "ListItem", "position": 2, "name": "Logistics Blueprint" },
+        { "@type": "ListItem", "position": 3, "name": "IA y Transformacion" },
+        { "@type": "ListItem", "position": 4, "name": "Logistics Therapy" }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --ink:#1d1d1b;
+  --muted:#5e625f;
+  --paper:#fafaf8;
+  --surface:#ffffff;
+  --line:rgba(29,29,27,.08);
+  --line-strong:rgba(29,29,27,.16);
+  --nav:#16314d;
+  --nav-strong:#0e243a;
+  --blue:#2e75b6;
+  --blue-soft:#d5e8f0;
+  --green:#1a8c64;
+  --green-soft:#d4f0e3;
+  --berry:#9b3a7a;
+  --berry-soft:#f0d5e8;
+  --gold:#b67a2e;
+  --gold-soft:#f0e4d5;
+  --shadow:0 20px 50px rgba(0,0,0,.08);
+  --r:14px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Instrument Sans',system-ui,sans-serif;
+  line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+button{font:inherit}
+.container{max-width:1120px;margin:0 auto;padding:0 24px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:11px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;
+}
+.eyebrow::before{content:'';width:22px;height:1px;background:currentColor}
+
+.topbar{
+  position:sticky;top:0;z-index:30;
+  background:rgba(22,49,77,.94);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.topbar-inner{
+  max-width:1180px;margin:0 auto;padding:16px 24px;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+}
+.brand{display:flex;align-items:center}
+.brand img{height:42px;width:auto}
+.topnav{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.topnav a{font-size:14px;color:rgba(255,255,255,.74);transition:color .2s}
+.topnav a:hover,.topnav a.active{color:#fff}
+.topnav .cta-link{
+  padding:10px 16px;border-radius:999px;
+  background:#2e75b6;color:#fff;font-weight:600;
+}
+
+.hero{
+  background:linear-gradient(180deg,var(--nav) 0%,var(--nav-strong) 100%);
+  color:#fff;padding:74px 0 54px;position:relative;overflow:hidden;
+}
+.hero::before,
+.hero::after{
+  content:'';position:absolute;border-radius:999px;filter:blur(10px);pointer-events:none;
+}
+.hero::before{
+  width:480px;height:480px;left:-120px;bottom:-220px;
+  background:radial-gradient(circle,rgba(46,117,182,.24) 0%,transparent 68%);
+}
+.hero::after{
+  width:420px;height:420px;right:-120px;top:-180px;
+  background:radial-gradient(circle,rgba(108,180,232,.16) 0%,transparent 68%);
+}
+.hero-inner{position:relative;z-index:1;max-width:850px}
+.hero .eyebrow{color:rgba(255,255,255,.62);margin-bottom:18px}
+.hero h1{
+  font-family:'DM Serif Display',Georgia,serif;
+  font-size:clamp(2.6rem,7vw,4.6rem);
+  line-height:1.02;font-weight:400;letter-spacing:-.03em;
+  margin-bottom:18px;
+}
+.hero h1 em{font-style:italic;color:#8ec6ef}
+.hero p{
+  font-size:18px;color:rgba(255,255,255,.76);
+  max-width:660px;margin-bottom:28px;
+}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:13px 22px;border-radius:999px;font-size:14px;font-weight:600;
+  transition:transform .2s,background .2s,border-color .2s,color .2s;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:#2e75b6;color:#fff}
+.btn-secondary{border:1px solid rgba(255,255,255,.18);color:#fff;background:rgba(255,255,255,.06)}
+
+.proofbar{
+  background:#2e75b6;color:#fff;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.12);
+}
+.proofbar .container{
+  display:flex;justify-content:center;align-items:center;text-align:center;
+  font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+}
+
+.portfolio{padding:56px 0 18px}
+.portfolio-head{
+  display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:end;margin-bottom:28px;
+}
+.portfolio-title{
+  font-family:'DM Serif Display',Georgia,serif;
+  font-size:clamp(2rem,4vw,3.2rem);font-weight:400;line-height:1.05;
+}
+.portfolio-copy{color:var(--muted);max-width:440px}
+
+.services-grid{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:26px;
+}
+.service-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:24px 22px 22px;position:relative;overflow:hidden;cursor:pointer;
+  transition:transform .22s,border-color .22s,box-shadow .22s;
+  text-align:left;
+}
+.service-card::after{
+  content:'';position:absolute;left:0;right:0;bottom:0;height:4px;
+  transform:scaleX(0);transform-origin:left;transition:transform .25s ease;
+  background:var(--accent,#2e75b6);
+}
+.service-card:hover,.service-card.is-active{
+  transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--line-strong);
+}
+.service-card:hover::after,.service-card.is-active::after{transform:scaleX(1)}
+.service-number{
+  position:absolute;top:10px;right:16px;font-size:40px;font-weight:700;
+  font-family:'DM Serif Display',Georgia,serif;opacity:.09;color:var(--accent,#2e75b6);
+}
+.service-icon{font-size:28px;display:block;margin-bottom:12px}
+.service-title{font-size:18px;font-weight:700;letter-spacing:-.02em;margin-bottom:8px}
+.service-tagline{font-size:13px;color:var(--muted);min-height:62px}
+.service-arrow{margin-top:18px;font-size:13px;font-weight:700;color:var(--accent,#2e75b6)}
+
+.details-wrap{padding-bottom:64px}
+.service-detail{
+  background:var(--surface);border:1px solid var(--line);border-radius:18px;
+  box-shadow:var(--shadow);overflow:hidden;
+}
+.service-detail[hidden]{display:none}
+.detail-top{
+  padding:32px;border-left:4px solid var(--accent,#2e75b6);
+  border-bottom:1px solid var(--line);
+}
+.detail-top-row{
+  display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:14px;
+}
+.detail-title-group{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.detail-number{
+  font-size:14px;font-weight:700;color:rgba(29,29,27,.35);
+  font-family:'DM Serif Display',Georgia,serif;
+}
+.detail-icon{font-size:24px}
+.detail-title{
+  font-family:'DM Serif Display',Georgia,serif;
+  font-size:30px;font-weight:400;line-height:1.05;
+}
+.detail-close{
+  border:1px solid var(--line-strong);background:#fff;color:#555;
+  padding:8px 14px;border-radius:999px;cursor:pointer;
+}
+.detail-close:hover{background:#f4f4f2}
+.detail-desc{max-width:760px;color:#494c49;font-size:15px}
+.detail-body{padding:30px 32px 34px}
+.section-label{
+  font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  color:rgba(29,29,27,.42);margin-bottom:18px;
+}
+.capabilities-grid{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-bottom:32px;
+}
+.capability{
+  padding:18px;border:1px solid var(--line);border-left:4px solid var(--accent-soft,#d5e8f0);
+  border-radius:12px;background:#fff;
+}
+.capability h3{font-size:15px;margin-bottom:6px}
+.capability p{font-size:13px;color:#5b5e5b}
+.detail-bottom{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.detail-list{list-style:none}
+.detail-list li{
+  padding:9px 0;border-bottom:1px solid var(--line);font-size:14px;color:#444846;
+}
+.detail-list.cases li::before{content:'→ ';color:var(--accent,#2e75b6);font-weight:700}
+.detail-list.deliverables li::before{content:'✓ ';color:var(--accent,#2e75b6);font-weight:700}
+
+.why-section{
+  padding:0 0 70px;
+}
+.why-panel{
+  background:linear-gradient(135deg,#fff 0%,#f6f5f1 100%);
+  border:1px solid var(--line);border-radius:18px;padding:30px;
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;
+}
+.why-card{
+  padding:18px;border-radius:14px;background:#fff;border:1px solid var(--line);
+}
+.why-card h3{font-size:15px;margin-bottom:8px}
+.why-card p{font-size:13px;color:var(--muted)}
+
+.cta{
+  padding:54px 0;background:#16314d;color:#fff;
+}
+.cta-box{
+  display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;
+}
+.cta-copy h2{
+  font-family:'DM Serif Display',Georgia,serif;
+  font-size:clamp(2rem,4vw,3rem);font-weight:400;line-height:1.04;margin-bottom:10px;
+}
+.cta-copy p{max-width:600px;color:rgba(255,255,255,.72)}
+.cta-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+
+.page-footer{
+  background:#0f243a;color:#c4cdd5;padding:20px 0 26px;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+.page-footer .container{
+  display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap;
+}
+.page-footer small{font-size:12px}
+.page-footer-nav{display:flex;gap:18px;flex-wrap:wrap}
+.page-footer-nav a{font-size:12px;color:#dce4ea}
+
+@media(max-width:1080px){
+  .services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:900px){
+  .topbar-inner{flex-direction:column;align-items:flex-start}
+  .topnav{gap:14px}
+  .portfolio-head,.cta-box,.why-panel,.detail-bottom{grid-template-columns:1fr}
+  .cta-actions{justify-content:flex-start}
+}
+@media(max-width:680px){
+  .hero{padding-top:52px}
+  .services-grid,.capabilities-grid{grid-template-columns:1fr}
+  .detail-top,.detail-body,.why-panel{padding:22px}
+  .detail-top-row{align-items:flex-start;flex-direction:column}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="/" class="brand" aria-label="ATIEMPPO">
+      <img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO"/>
+    </a>
+    <nav class="topnav" aria-label="Navegacion principal">
+      <a href="/">Inicio</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#labs">Proyectos</a>
+      <a href="/servicios/" class="active">Servicios</a>
+      <a href="/#contacto" class="cta-link">Hablemos</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="eyebrow">ATIEMPPO S.A.S.</div>
+      <h1>Portafolio de <em>servicios</em> para empresas que necesitan criterio y ejecucion.</h1>
+      <p>Cuatro lineas de trabajo para equipos que necesitan resolver operacion, transporte, datos e inteligencia artificial aplicada sin humo y sin consultoria decorativa.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20hablar%20sobre%20el%20portafolio%20de%20servicios." target="_blank" rel="noopener">Abrir WhatsApp</a>
+        <a class="btn btn-secondary" href="#lineas">Explorar lineas</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="proofbar">
+  <div class="container">Hablamos los dos idiomas: negocio y tecnologia.</div>
+</div>
+
+<section class="portfolio" id="lineas">
+  <div class="container">
+    <div class="portfolio-head">
+      <div>
+        <div class="eyebrow" style="color:#5e625f;margin-bottom:16px">Portafolio ATIEMPPO</div>
+        <h2 class="portfolio-title">No vendemos tecnologia por vender. Empaquetamos lo que ya sabemos ejecutar.</h2>
+      </div>
+      <p class="portfolio-copy">Cada linea responde a un tipo distinto de necesidad. Puedes abrir la que mas se parezca a tu contexto y ver capacidades, casos de referencia y entregables tipicos.</p>
+    </div>
+
+    <div class="services-grid" role="tablist" aria-label="Lineas de servicio">
+      <button class="service-card is-active" type="button" data-target="campo" data-accent="#2E75B6" data-soft="#D5E8F0" aria-expanded="true">
+        <span class="service-number">01</span>
+        <span class="service-icon">📲</span>
+        <div class="service-title" style="color:#1B3A5C">Captura &amp; Campo</div>
+        <div class="service-tagline">Datos donde nacen: en la calle, en la tienda, en el terreno.</div>
+        <div class="service-arrow">Explorar linea →</div>
+      </button>
+      <button class="service-card" type="button" data-target="blueprint" data-accent="#1A8C64" data-soft="#D4F0E3" aria-expanded="false">
+        <span class="service-number">02</span>
+        <span class="service-icon">🗺️</span>
+        <div class="service-title" style="color:#0D5C3F">Logistics Blueprint</div>
+        <div class="service-tagline">El mapa completo de tu operacion logistica.</div>
+        <div class="service-arrow">Explorar linea →</div>
+      </button>
+      <button class="service-card" type="button" data-target="ia" data-accent="#9B3A7A" data-soft="#F0D5E8" aria-expanded="false">
+        <span class="service-number">03</span>
+        <span class="service-icon">🤖</span>
+        <div class="service-title" style="color:#5C1B4A">IA &amp; Transformacion</div>
+        <div class="service-tagline">Tu empresa, potenciada con inteligencia artificial aplicada.</div>
+        <div class="service-arrow">Explorar linea →</div>
+      </button>
+      <button class="service-card" type="button" data-target="therapy" data-accent="#B67A2E" data-soft="#F0E4D5" aria-expanded="false">
+        <span class="service-number">04</span>
+        <span class="service-icon">🛋️</span>
+        <div class="service-title" style="color:#5C3A1B">Logistics Therapy</div>
+        <div class="service-tagline">No ejecutamos. Damos linea, vision y direccion.</div>
+        <div class="service-arrow">Explorar linea →</div>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="details-wrap">
+  <div class="container">
+    <article class="service-detail" data-detail="campo" style="--accent:#2E75B6;--accent-soft:#D5E8F0">
+      <div class="detail-top">
+        <div class="detail-top-row">
+          <div class="detail-title-group">
+            <span class="detail-number">01</span>
+            <span class="detail-icon">📲</span>
+            <h2 class="detail-title" style="color:#1B3A5C">Captura &amp; Campo</h2>
+          </div>
+          <button class="detail-close" type="button" data-close-detail>Cerrar</button>
+        </div>
+        <p class="detail-desc">Disenamos, implementamos y operamos procesos de captura de informacion en campo con tecnologia propia. Desde la evaluacion de punto de venta hasta la dispersion de pagos, pasando por actividades de mercadeo, inventarios y auditorias operativas.</p>
+      </div>
+      <div class="detail-body">
+        <div class="section-label">Que hacemos</div>
+        <div class="capabilities-grid">
+          <div class="capability"><h3 style="color:#1B3A5C">Captura de datos en campo</h3><p>Formularios dinamicos en app movil con validacion en tiempo real, georreferenciacion, fotografias y firmas digitales. Diseno a la medida de cada operacion.</p></div>
+          <div class="capability"><h3 style="color:#1B3A5C">Dispersion de pagos</h3><p>Integracion con plataformas como Movii para dispersion masiva de incentivos, pagos a fuerza de venta o compensaciones en campo. Trazabilidad completa.</p></div>
+          <div class="capability"><h3 style="color:#1B3A5C">Operaciones de mercadeo</h3><p>Evaluacion de visibilidad, planogramas, activaciones de marca y seguimiento de ejecucion en punto de venta con scoring automatizado.</p></div>
+          <div class="capability"><h3 style="color:#1B3A5C">Inventarios y control de activos</h3><p>Registro GPS, certificaciones fotograficas, reportes de novedades y dashboards de estado para activos fisicos o inmobiliarios.</p></div>
+        </div>
+        <div class="detail-bottom">
+          <div>
+            <div class="section-label">Casos de referencia</div>
+            <ul class="detail-list cases">
+              <li>Plan Victoria (Haleon) - +18.000 evaluaciones, +$1.500M COP dispersados</li>
+              <li>iFurniture - +88.000 activos inmobiliarios controlados</li>
+              <li>Apps.co MinTIC - 1er lugar en innovacion</li>
+            </ul>
+          </div>
+          <div>
+            <div class="section-label">Entregables tipicos</div>
+            <ul class="detail-list deliverables">
+              <li>App movil de captura configurada</li>
+              <li>Dashboard de seguimiento en tiempo real</li>
+              <li>Dispersion de pagos integrada</li>
+              <li>Reportes y alertas automatizadas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="service-detail" data-detail="blueprint" style="--accent:#1A8C64;--accent-soft:#D4F0E3" hidden>
+      <div class="detail-top">
+        <div class="detail-top-row">
+          <div class="detail-title-group">
+            <span class="detail-number">02</span>
+            <span class="detail-icon">🗺️</span>
+            <h2 class="detail-title" style="color:#0D5C3F">Logistics Blueprint</h2>
+          </div>
+          <button class="detail-close" type="button" data-close-detail>Cerrar</button>
+        </div>
+        <p class="detail-desc">Analizamos, diagnosticamos y modelamos tu red logistica y de transporte. Combinamos datos propios del SICETAC, analisis de red, inteligencia de costos y contexto regulatorio para darte una lectura profunda y accionable de tu operacion.</p>
+      </div>
+      <div class="detail-body">
+        <div class="section-label">Que hacemos</div>
+        <div class="capabilities-grid">
+          <div class="capability"><h3 style="color:#0D5C3F">Analisis de red logistica</h3><p>Modelamos tu red de distribucion: origenes, destinos, rutas, frecuencias y costos. Identificamos ineficiencias, oportunidades de consolidacion y puntos criticos.</p></div>
+          <div class="capability"><h3 style="color:#0D5C3F">Indices SICETAC para tu red</h3><p>Cruzamos tu base de rutas con el SICETAC para medir como se han movido tus costos de referencia por ruta, vehiculo y corredor. Analisis mensual o puntual.</p></div>
+          <div class="capability"><h3 style="color:#0D5C3F">API SICETAC para empresas</h3><p>Capa moderna de integracion para conectar tus sistemas, ERPs o agentes internos al valor de referencia SICETAC. Velocidad, consistencia y trazabilidad.</p></div>
+          <div class="capability"><h3 style="color:#0D5C3F">Inteligencia regulatoria</h3><p>Analisis de impacto de cambios regulatorios sobre tu estructura de costos. Simulaciones y escenarios para tu red especifica.</p></div>
+        </div>
+        <div class="detail-bottom">
+          <div>
+            <div class="section-label">Casos de referencia</div>
+            <ul class="detail-list cases">
+              <li>Encuestas Nacionales de Logistica - Colombia, Bolivia, Peru (BID / DNP)</li>
+              <li>SICETAC-LAB - +2.000 rutas migradas y en API</li>
+              <li>Analisis de impacto Decreto 1017/2025 - 85.743 combinaciones ruta-vehiculo</li>
+            </ul>
+          </div>
+          <div>
+            <div class="section-label">Entregables tipicos</div>
+            <ul class="detail-list deliverables">
+              <li>Diagnostico de red logistica</li>
+              <li>Reporte de indices SICETAC personalizado</li>
+              <li>Acceso API con documentacion</li>
+              <li>Simulaciones de impacto regulatorio</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="service-detail" data-detail="ia" style="--accent:#9B3A7A;--accent-soft:#F0D5E8" hidden>
+      <div class="detail-top">
+        <div class="detail-top-row">
+          <div class="detail-title-group">
+            <span class="detail-number">03</span>
+            <span class="detail-icon">🤖</span>
+            <h2 class="detail-title" style="color:#5C1B4A">IA &amp; Transformacion</h2>
+          </div>
+          <button class="detail-close" type="button" data-close-detail>Cerrar</button>
+        </div>
+        <p class="detail-desc">Acompanamos el proceso de adopcion de IA en tu empresa: desde la identificacion de oportunidades hasta la construccion de agentes, automatizaciones y herramientas que se integran con tu operacion real.</p>
+      </div>
+      <div class="detail-body">
+        <div class="section-label">Que hacemos</div>
+        <div class="capabilities-grid">
+          <div class="capability"><h3 style="color:#5C1B4A">Diseno de agentes conversacionales</h3><p>GPTs, agentes WhatsApp y chatbots especializados. Disenamos la logica, el tono, las herramientas y la integracion con tus datos y sistemas.</p></div>
+          <div class="capability"><h3 style="color:#5C1B4A">Automatizacion de procesos</h3><p>Identificamos tareas repetitivas y construimos flujos automatizados con IA: reportes, alertas, clasificacion de datos y extraccion de documentos.</p></div>
+          <div class="capability"><h3 style="color:#5C1B4A">Infraestructura de datos para IA</h3><p>Migracion, estructuracion y exposicion de datos en Supabase, APIs y pipelines listos para alimentar agentes y modelos. Sin datos limpios no hay IA util.</p></div>
+          <div class="capability"><h3 style="color:#5C1B4A">Coaching y acompanamiento tecnico</h3><p>Sesiones de trabajo con tu equipo para definir que proyectos de IA tienen sentido, cuales no y como priorizarlos. Traducimos entre negocio y tecnologia.</p></div>
+        </div>
+        <div class="detail-bottom">
+          <div>
+            <div class="section-label">Casos de referencia</div>
+            <ul class="detail-list cases">
+              <li>ATICA - GPT con +1.400 usuarios en produccion</li>
+              <li>AtiemppoX - Agente WhatsApp con Claude API</li>
+              <li>GPT El Dato Logistico - Asistente editorial especializado</li>
+            </ul>
+          </div>
+          <div>
+            <div class="section-label">Entregables tipicos</div>
+            <ul class="detail-list deliverables">
+              <li>Roadmap de IA para tu empresa</li>
+              <li>Agente o automatizacion en produccion</li>
+              <li>Infraestructura de datos lista</li>
+              <li>Capacitacion a tu equipo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="service-detail" data-detail="therapy" style="--accent:#B67A2E;--accent-soft:#F0E4D5" hidden>
+      <div class="detail-top">
+        <div class="detail-top-row">
+          <div class="detail-title-group">
+            <span class="detail-number">04</span>
+            <span class="detail-icon">🛋️</span>
+            <h2 class="detail-title" style="color:#5C3A1B">Logistics Therapy</h2>
+          </div>
+          <button class="detail-close" type="button" data-close-detail>Cerrar</button>
+        </div>
+        <p class="detail-desc">La evolucion de la consultoria tradicional. Sesiones dirigidas con expertos que no necesitan hacer procesos consultivos largos porque tu empresa ya tiene equipo para ejecutar. Lo que necesitas es un espacio de pensamiento estrategico.</p>
+      </div>
+      <div class="detail-body">
+        <div class="section-label">Que hacemos</div>
+        <div class="capabilities-grid">
+          <div class="capability"><h3 style="color:#5C3A1B">Sesiones de diagnostico dirigido</h3><p>Espacios estructurados de 60-90 minutos para desarmar un reto especifico, aterrizarlo con datos y salir con una linea de accion clara.</p></div>
+          <div class="capability"><h3 style="color:#5C3A1B">Mentoria para equipos logisticos</h3><p>Acompanamiento recurrente a tu equipo de logistica, supply chain o transporte. No hacemos el trabajo: fortalecemos la capacidad para hacerlo mejor.</p></div>
+          <div class="capability"><h3 style="color:#5C3A1B">Segunda opinion experta</h3><p>Leemos propuestas, estudios o decisiones importantes con una mirada independiente, tecnica y con contexto de mercado.</p></div>
+          <div class="capability"><h3 style="color:#5C3A1B">Preparacion para directivos</h3><p>Sesiones para preparar presentaciones a junta, negociaciones con proveedores o decisiones estrategicas que requieren dominio del contexto logistico y de transporte.</p></div>
+        </div>
+        <div class="detail-bottom">
+          <div>
+            <div class="section-label">Casos de referencia</div>
+            <ul class="detail-list cases">
+              <li>Sesiones de contexto regulatorio para areas de transporte</li>
+              <li>Acompanamiento estrategico en decisiones de red</li>
+              <li>Preparacion de equipos para negociacion con operadores</li>
+            </ul>
+          </div>
+          <div>
+            <div class="section-label">Entregables tipicos</div>
+            <ul class="detail-list deliverables">
+              <li>Sesion grabada con resumen ejecutivo</li>
+              <li>Linea de accion documentada</li>
+              <li>Acceso a datos y contexto de soporte</li>
+              <li>Seguimiento post-sesion</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="why-section">
+  <div class="container">
+    <div class="why-panel">
+      <div class="why-card">
+        <div class="section-label">Por que ATIEMPPO</div>
+        <h3>Contexto real de operacion</h3>
+        <p>No hablamos desde teoria. Venimos de proyectos vivos en transporte, campo, salud, retail y analitica aplicada.</p>
+      </div>
+      <div class="why-card">
+        <div class="section-label">Ventaja</div>
+        <h3>Negocio y tecnologia en la misma mesa</h3>
+        <p>Traducimos preguntas directivas a decisiones tecnicas y resultados tecnicos a lenguaje ejecutivo.</p>
+      </div>
+      <div class="why-card">
+        <div class="section-label">Formato</div>
+        <h3>Servicios que se pueden vender y explicar facil</h3>
+        <p>Quedo pensado para que te sirva tanto en una presentacion comercial como en trafico web de gente que llega fria.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <div class="cta-box">
+      <div class="cta-copy">
+        <h2>Cual de estas lineas necesita hoy tu empresa?</h2>
+        <p>Treinta minutos, sin costo. Escuchamos tu contexto, identificamos la linea que aplica y te proponemos un camino claro para avanzar.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20hablar%20sobre%20el%20portafolio%20de%20servicios." target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-secondary" href="mailto:juanmatiz@atiemppo.co?subject=Portafolio%20de%20Servicios%20ATIEMPPO">Correo</a>
+        <a class="btn btn-secondary" href="/#contacto">Formulario</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="page-footer">
+  <div class="container">
+    <small>&copy; 2026 ATIEMPPO S.A.S. · Bogota, Colombia · atiemppo.com</small>
+    <nav class="page-footer-nav" aria-label="Enlaces del pie">
+      <a href="/">Inicio</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#labs">Proyectos</a>
+      <a href="/llms.txt">llms.txt</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.service-card'));
+  var details = Array.prototype.slice.call(document.querySelectorAll('.service-detail'));
+  var defaultTarget = 'campo';
+
+  function showDetail(target) {
+    cards.forEach(function(card){
+      var isActive = card.getAttribute('data-target') === target;
+      card.classList.toggle('is-active', isActive);
+      card.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+    });
+
+    details.forEach(function(detail){
+      detail.hidden = detail.getAttribute('data-detail') !== target;
+    });
+  }
+
+  cards.forEach(function(card){
+    card.addEventListener('click', function(){
+      showDetail(card.getAttribute('data-target'));
+      var detail = document.querySelector('[data-detail="' + card.getAttribute('data-target') + '"]');
+      if (detail) {
+        detail.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  Array.prototype.slice.call(document.querySelectorAll('[data-close-detail]')).forEach(function(btn){
+    btn.addEventListener('click', function(){
+      showDetail(null);
+      var portfolio = document.getElementById('lineas');
+      if (portfolio) {
+        portfolio.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  showDetail(defaultTarget);
+})();
+</script>
+</body>
+</html>
