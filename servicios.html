@@ -10,13 +10,22 @@ render_with_liquid: false
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Portafolio de Servicios | ATIEMPPO</title>
 <meta name="description" content="Portafolio de servicios de ATIEMPPO para empresas que necesitan datos, criterio y ejecucion en logistica, transporte e IA aplicada."/>
+<meta name="ai-content-declaration" content="human-authored"/>
+<meta name="llms-txt" content="https://atiemppo.com/llms.txt"/>
+<link rel="alternate" type="text/plain" title="LLMs.txt" href="/llms.txt"/>
 <meta property="og:title" content="Portafolio de Servicios | ATIEMPPO"/>
 <meta property="og:description" content="Cuatro lineas de trabajo para empresas que necesitan datos, criterio y ejecucion en logistica, transporte y transformacion digital."/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://atiemppo.com/servicios/"/>
 <meta property="og:locale" content="es_CO"/>
+<meta property="og:site_name" content="ATIEMPPO"/>
+<meta property="og:image" content="https://atiemppo.com/assets/images/logo-atiemppo.png"/>
+<meta property="og:image:alt" content="Logo ATIEMPPO"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="ai-content-declaration" content="human-authored"/>
+<meta name="twitter:site" content="@atiemppo"/>
+<meta name="twitter:title" content="Portafolio de Servicios | ATIEMPPO"/>
+<meta name="twitter:description" content="Cuatro lineas de trabajo para empresas que necesitan datos, criterio y ejecucion en logistica, transporte y transformacion digital."/>
+<meta name="twitter:image" content="https://atiemppo.com/assets/images/logo-atiemppo.png"/>
 <link rel="canonical" href="https://atiemppo.com/servicios/"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -30,21 +39,96 @@ render_with_liquid: false
       "@id": "https://atiemppo.com/#organization",
       "name": "ATIEMPPO S.A.S.",
       "url": "https://atiemppo.com",
+      "logo": "https://atiemppo.com/assets/images/logo-atiemppo.png",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Bogota",
         "addressCountry": "CO"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+57-310-768-7010",
+        "email": "juanmatiz@atiemppo.co"
       }
     },
     {
+      "@type": "CollectionPage",
+      "@id": "https://atiemppo.com/servicios/#webpage",
+      "url": "https://atiemppo.com/servicios/",
+      "name": "Portafolio de Servicios | ATIEMPPO",
+      "description": "Portafolio de servicios de ATIEMPPO para empresas que necesitan datos, criterio y ejecucion en logistica, transporte e IA aplicada.",
+      "isPartOf": {
+        "@id": "https://atiemppo.com/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://atiemppo.com/servicios/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://atiemppo.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Portafolio de servicios",
+          "item": "https://atiemppo.com/servicios/"
+        }
+      ]
+    },
+    {
       "@type": "ItemList",
+      "@id": "https://atiemppo.com/servicios/#itemlist",
       "name": "Portafolio de servicios ATIEMPPO",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Captura y Campo" },
-        { "@type": "ListItem", "position": 2, "name": "Logistics Blueprint" },
-        { "@type": "ListItem", "position": 3, "name": "IA y Transformacion" },
-        { "@type": "ListItem", "position": 4, "name": "Logistics Therapy" }
+        { "@type": "ListItem", "position": 1, "name": "Captura y Campo", "url": "https://atiemppo.com/servicios/#captura-campo" },
+        { "@type": "ListItem", "position": 2, "name": "Logistics Blueprint", "url": "https://atiemppo.com/servicios/#logistics-blueprint" },
+        { "@type": "ListItem", "position": 3, "name": "IA y Transformacion", "url": "https://atiemppo.com/servicios/#ia-transformacion" },
+        { "@type": "ListItem", "position": 4, "name": "Logistics Therapy", "url": "https://atiemppo.com/servicios/#logistics-therapy" }
       ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://atiemppo.com/servicios/#captura-campo-service",
+      "name": "Captura y Campo",
+      "provider": { "@id": "https://atiemppo.com/#organization" },
+      "areaServed": ["Colombia", "America Latina"],
+      "url": "https://atiemppo.com/servicios/#captura-campo",
+      "serviceType": "Captura de informacion en campo, auditorias operativas, inventarios y dispersion de pagos",
+      "description": "Diseno, implementacion y operacion de procesos de captura de informacion en campo con tecnologia propia."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://atiemppo.com/servicios/#logistics-blueprint-service",
+      "name": "Logistics Blueprint",
+      "provider": { "@id": "https://atiemppo.com/#organization" },
+      "areaServed": ["Colombia", "America Latina"],
+      "url": "https://atiemppo.com/servicios/#logistics-blueprint",
+      "serviceType": "Analisis de red logistica, indices SICETAC, API SICETAC e inteligencia regulatoria",
+      "description": "Analisis, diagnostico y modelado de redes logisticas y de transporte."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://atiemppo.com/servicios/#ia-transformacion-service",
+      "name": "IA y Transformacion",
+      "provider": { "@id": "https://atiemppo.com/#organization" },
+      "areaServed": ["Colombia", "America Latina"],
+      "url": "https://atiemppo.com/servicios/#ia-transformacion",
+      "serviceType": "Agentes, automatizaciones e infraestructura de datos para IA aplicada",
+      "description": "Acompanamiento para la adopcion de IA en la empresa, desde oportunidades hasta agentes y automatizaciones."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://atiemppo.com/servicios/#logistics-therapy-service",
+      "name": "Logistics Therapy",
+      "provider": { "@id": "https://atiemppo.com/#organization" },
+      "areaServed": ["Colombia", "America Latina"],
+      "url": "https://atiemppo.com/servicios/#logistics-therapy",
+      "serviceType": "Mentoria, segunda opinion experta y direccion estrategica en logistica y transporte",
+      "description": "Espacios dirigidos para equipos que necesitan criterio, segunda opinion y direccion estrategica sin un proceso consultivo largo."
     }
   ]
 }
@@ -377,7 +461,7 @@ button{font:inherit}
 
 <section class="details-wrap">
   <div class="container">
-    <article class="service-detail" data-detail="campo" style="--accent:#2E75B6;--accent-soft:#D5E8F0">
+    <article class="service-detail" id="captura-campo" data-detail="campo" style="--accent:#2E75B6;--accent-soft:#D5E8F0">
       <div class="detail-top">
         <div class="detail-top-row">
           <div class="detail-title-group">
@@ -419,7 +503,7 @@ button{font:inherit}
       </div>
     </article>
 
-    <article class="service-detail" data-detail="blueprint" style="--accent:#1A8C64;--accent-soft:#D4F0E3" hidden>
+    <article class="service-detail" id="logistics-blueprint" data-detail="blueprint" style="--accent:#1A8C64;--accent-soft:#D4F0E3" hidden>
       <div class="detail-top">
         <div class="detail-top-row">
           <div class="detail-title-group">
@@ -461,7 +545,7 @@ button{font:inherit}
       </div>
     </article>
 
-    <article class="service-detail" data-detail="ia" style="--accent:#9B3A7A;--accent-soft:#F0D5E8" hidden>
+    <article class="service-detail" id="ia-transformacion" data-detail="ia" style="--accent:#9B3A7A;--accent-soft:#F0D5E8" hidden>
       <div class="detail-top">
         <div class="detail-top-row">
           <div class="detail-title-group">
@@ -503,7 +587,7 @@ button{font:inherit}
       </div>
     </article>
 
-    <article class="service-detail" data-detail="therapy" style="--accent:#B67A2E;--accent-soft:#F0E4D5" hidden>
+    <article class="service-detail" id="logistics-therapy" data-detail="therapy" style="--accent:#B67A2E;--accent-soft:#F0E4D5" hidden>
       <div class="detail-top">
         <div class="detail-top-row">
           <div class="detail-title-group">
@@ -602,8 +686,21 @@ button{font:inherit}
   var cards = Array.prototype.slice.call(document.querySelectorAll('.service-card'));
   var details = Array.prototype.slice.call(document.querySelectorAll('.service-detail'));
   var defaultTarget = 'campo';
+  var hashToTarget = {
+    '#captura-campo': 'campo',
+    '#logistics-blueprint': 'blueprint',
+    '#ia-transformacion': 'ia',
+    '#logistics-therapy': 'therapy'
+  };
+  var targetToHash = {
+    'campo': '#captura-campo',
+    'blueprint': '#logistics-blueprint',
+    'ia': '#ia-transformacion',
+    'therapy': '#logistics-therapy'
+  };
 
-  function showDetail(target) {
+  function showDetail(target, options) {
+    options = options || {};
     cards.forEach(function(card){
       var isActive = card.getAttribute('data-target') === target;
       card.classList.toggle('is-active', isActive);
@@ -613,6 +710,14 @@ button{font:inherit}
     details.forEach(function(detail){
       detail.hidden = detail.getAttribute('data-detail') !== target;
     });
+
+    if (options.updateHash !== false) {
+      if (target && targetToHash[target]) {
+        history.replaceState(null, '', targetToHash[target]);
+      } else if (!target) {
+        history.replaceState(null, '', '#lineas');
+      }
+    }
   }
 
   cards.forEach(function(card){
@@ -635,7 +740,7 @@ button{font:inherit}
     });
   });
 
-  showDetail(defaultTarget);
+  showDetail(hashToTarget[window.location.hash] || defaultTarget, { updateHash: false });
 })();
 </script>
 </body>

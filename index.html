@@ -18,6 +18,13 @@ render_with_liquid: false
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://atiemppo.com"/>
 <meta property="og:locale" content="es_CO"/>
+<meta property="og:site_name" content="ATIEMPPO"/>
+<meta property="og:image" content="https://atiemppo.com/assets/images/logo-atiemppo.png"/>
+<meta property="og:image:alt" content="Logo ATIEMPPO"/>
+<meta name="twitter:site" content="@atiemppo"/>
+<meta name="twitter:title" content="ATIEMPPO — El puente entre tu negocio y la IA"/>
+<meta name="twitter:description" content="Datos, criterio e IA aplicada para convertir problemas operativos en decisiones claras y soluciones utiles."/>
+<meta name="twitter:image" content="https://atiemppo.com/assets/images/logo-atiemppo.png"/>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -26,9 +33,10 @@ render_with_liquid: false
       "@type": "Organization",
       "@id": "https://atiemppo.com/#organization",
       "name": "ATIEMPPO S.A.S.",
-      "description": "El puente entre el mundo empresarial y el mundo técnico de IA.",
+      "description": "Datos, criterio e IA aplicada para convertir problemas operativos en decisiones, automatizaciones, APIs y productos utiles.",
       "url": "https://atiemppo.com",
       "foundingDate": "2013",
+      "logo": "https://atiemppo.com/assets/images/logo-atiemppo.png",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Bogotá",
@@ -55,33 +63,43 @@ render_with_liquid: false
     },
     {
       "@type": "Service",
-      "@id": "https://atiemppo.com/#service-acompanamiento-ia",
-      "name": "Acompañamiento IA",
+      "@id": "https://atiemppo.com/servicios/#captura-campo",
+      "name": "Captura y Campo",
       "provider": {
         "@id": "https://atiemppo.com/#organization"
       },
       "areaServed": ["Colombia", "América Latina"],
-      "serviceType": "Consultoría y acompañamiento para implementación de IA"
+      "serviceType": "Captura de informacion en campo, auditorias operativas e inventarios"
     },
     {
       "@type": "Service",
-      "@id": "https://atiemppo.com/#service-construccion-agentes",
-      "name": "Construcción de agentes y automatización",
+      "@id": "https://atiemppo.com/servicios/#logistics-blueprint",
+      "name": "Logistics Blueprint",
       "provider": {
         "@id": "https://atiemppo.com/#organization"
       },
       "areaServed": ["Colombia", "América Latina"],
-      "serviceType": "Diseño y despliegue de agentes de IA, APIs y automatización"
+      "serviceType": "Analisis de red logistica, indices SICETAC, API SICETAC e inteligencia regulatoria"
     },
     {
       "@type": "Service",
-      "@id": "https://atiemppo.com/#service-infraestructura-datos",
-      "name": "Infraestructura de datos",
+      "@id": "https://atiemppo.com/servicios/#ia-transformacion",
+      "name": "IA y Transformacion",
       "provider": {
         "@id": "https://atiemppo.com/#organization"
       },
       "areaServed": ["Colombia", "América Latina"],
-      "serviceType": "Arquitectura y migración de datos para operación con IA"
+      "serviceType": "Diseno de agentes, automatizaciones e infraestructura de datos para IA"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://atiemppo.com/servicios/#logistics-therapy",
+      "name": "Logistics Therapy",
+      "provider": {
+        "@id": "https://atiemppo.com/#organization"
+      },
+      "areaServed": ["Colombia", "América Latina"],
+      "serviceType": "Mentoria, segunda opinion experta y direccion estrategica en logistica y transporte"
     },
     {
       "@type": "FAQPage",
@@ -277,7 +295,6 @@ section{padding:7rem 3rem}
 .service-arrow-home{margin-top:.9rem;font-size:.8rem;font-weight:700;color:var(--svc-accent)}
 .service-detail-home{margin-top:1.25rem;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.06);border:1px solid var(--border2)}
 .service-detail-home[hidden]{display:none}
-.service-detail-home.is-empty{display:none}
 .service-detail-head{padding:2rem;border-left:4px solid var(--svc-accent);border-bottom:1px solid var(--border2)}
 .service-detail-top{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:.9rem}
 .service-detail-title-group{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
@@ -327,9 +344,7 @@ section{padding:7rem 3rem}
 .purg-remate p{font-size:1rem;color:rgba(10,22,40,.6);line-height:1.7;max-width:560px;margin:0 auto}
 
 /* PROYECTOS */
-.cases-bg{background:var(--surface);border-top:1px solid var(--border2);border-bottom:1px solid var(--border2)}
 .cases-intro{font-size:1rem;color:var(--muted);margin-bottom:3.5rem;max-width:520px;line-height:1.7}
-.cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
 .case-card{background:var(--bg);border:1px solid var(--border2);border-radius:var(--r);padding:2rem;position:relative;overflow:hidden;transition:border-color .25s,transform .25s}
 .case-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--teal),transparent);opacity:0;transition:opacity .3s}
 .case-card:hover::before{opacity:1}
@@ -348,12 +363,6 @@ section{padding:7rem 3rem}
 .case-actions{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:1.2rem;padding-top:1rem;border-top:1px solid var(--border2)}
 .case-url{display:inline-flex;align-items:center;gap:.45rem;font-size:.78rem;font-weight:700;letter-spacing:.04em;color:var(--teal);text-decoration:none}
 .case-url:hover{opacity:.85}
-
-/* CLIENTS */
-.clients-bg{background:var(--surface);border-top:1px solid var(--border2);border-bottom:1px solid var(--border2)}
-.clients-head{text-align:center;margin-bottom:2rem}
-.clients-head .s-body{margin:0 auto}
-.clients-wrap{margin-top:1rem}
 
 /* LABS */
 .labs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:3rem}
@@ -388,26 +397,6 @@ section{padding:7rem 3rem}
 .needs-list strong{color:var(--white);font-weight:600}
 .needs-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:1.5rem}
 .needs-note{margin-top:1.1rem;font-size:.82rem;color:rgba(10,22,40,.52);line-height:1.65}
-
-/* TRAYECTORIA */
-.traj-bg{background:var(--bg);border-top:1px solid var(--border2)}
-.traj-head{text-align:center;margin-bottom:4rem}
-.traj-head .s-body{margin:0 auto}
-.timeline{display:flex;flex-direction:column}
-.tl-item{display:grid;grid-template-columns:140px 36px 1fr;min-height:80px}
-.tl-period{text-align:right;padding:1.75rem 1.5rem 1.5rem 0;display:flex;align-items:flex-start;justify-content:flex-end}
-.tl-period-lbl{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--teal)}
-.tl-line{display:flex;flex-direction:column;align-items:center}
-.tl-dot{width:10px;height:10px;border-radius:50%;background:var(--teal);border:2px solid var(--bg);margin-top:1.85rem;flex-shrink:0;box-shadow:0 0 8px rgba(0,85,204,.5)}
-.tl-conn{flex:1;width:1px;background:var(--border2)}
-.tl-item:last-child .tl-conn{background:transparent}
-.tl-content{padding:1.5rem 0 2rem 2rem}
-.tl-title{font-family:var(--display);font-size:1.15rem;letter-spacing:.04em;margin-bottom:.3rem;color:var(--white)}
-.tl-sub{font-size:.75rem;color:var(--teal);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.75rem}
-.tl-list{list-style:none;padding:0}
-.tl-list li{font-size:.88rem;color:var(--muted);line-height:1.6;padding:.2rem 0;display:flex;align-items:flex-start;gap:.6rem}
-.tl-list li::before{content:"—";color:var(--teal);flex-shrink:0}
-.award{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:600;color:#ffd166;background:rgba(255,209,102,.08);border:1px solid rgba(255,209,102,.2);padding:.2rem .6rem;border-radius:4px;margin:.2rem .2rem 0 0}
 
 /* CONTACTO */
 .contact-bg{background:linear-gradient(135deg,var(--surface) 0%,var(--bg) 100%);border-top:1px solid var(--border2)}
@@ -471,24 +460,20 @@ footer{background:var(--surface)!important;border-top:1px solid var(--border2);p
   section{padding:5rem 1.5rem}
   .hero{padding:6rem 1.5rem 4rem}
   .about-grid,.services-head,.hacemos-grid,.services-portfolio-grid,.labs-grid,.needs-shell,.service-capabilities-grid,.service-detail-bottom{grid-template-columns:1fr}
-  .cases-grid{grid-template-columns:1fr 1fr}
   .case-card--wide{grid-column:span 2}
   .contact-inner{grid-template-columns:1fr;gap:3rem}
   .purg-stats{grid-template-columns:repeat(2,1fr)}
   .contrast-wrap{grid-template-columns:1fr}
   .footer-top{grid-template-columns:1fr 1fr;gap:2rem}
-  .tl-item{grid-template-columns:100px 30px 1fr}
   .about-proof-grid{grid-template-columns:1fr}
   footer{padding:3rem 1.5rem 2rem}
 }
 @media(max-width:640px){
   .hero-h1{font-size:3rem}
-  .cases-grid{grid-template-columns:1fr}
   .case-card--wide{grid-column:span 1}
   .purg-stats{grid-template-columns:1fr 1fr}
   .footer-top{grid-template-columns:1fr}
   .footer-bottom{flex-direction:column;align-items:flex-start}
-  .tl-item{grid-template-columns:80px 24px 1fr}
   .hero-badges{flex-direction:column;align-items:center}
   .service-detail-head,.service-detail-body{padding:1.3rem}
   .service-detail-top{flex-direction:column;align-items:flex-start}
