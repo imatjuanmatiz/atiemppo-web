@@ -1,26 +1,60 @@
 User-agent: *
 Allow: /
 
-# AI Engine Optimization — LLMs and AI crawlers welcome
+# GEO / AEO strategy for public discovery
+# Updated: 2026-04-21
+# Goal: keep ATIEMPPO accessible to search, AI search, and user-directed fetchers.
+
+# OpenAI
+# OAI-SearchBot controls appearance in ChatGPT Search.
+User-agent: OAI-SearchBot
+Allow: /
+
+# ChatGPT-User supports user-directed visits from ChatGPT.
+# OpenAI notes these are user-initiated fetches, so robots.txt may not
+# always apply in the same way as automatic crawling.
+User-agent: ChatGPT-User
+Allow: /
+
+# GPTBot may be used for model improvement / training-related crawling.
+# Left allowed for now. If ATIEMPPO later wants training opt-out,
+# change this group to Disallow: /
 User-agent: GPTBot
 Allow: /
 
-User-agent: Claude-Web
+# Anthropic
+# Claude-SearchBot supports search visibility in Claude search experiences.
+User-agent: Claude-SearchBot
 Allow: /
 
-User-agent: PerplexityBot
+# Claude-User supports user-directed retrieval.
+User-agent: Claude-User
 Allow: /
 
+# ClaudeBot may be used for model training-related crawling.
+# Left allowed for now. If ATIEMPPO later wants training opt-out,
+# change this group to Disallow: /
+User-agent: ClaudeBot
+Allow: /
+
+# Google AI controls
+# Google-Extended is a control token for Gemini training / grounding preferences.
 User-agent: Google-Extended
+Allow: /
+
+# Additional AI-adjacent crawlers currently allowed.
+User-agent: PerplexityBot
 Allow: /
 
 User-agent: CCBot
 Allow: /
 
-User-agent: anthropic-ai
-Allow: /
+# xAI / Grok note:
+# As of 2026-04-21, no first-party crawler token for open-web control was
+# documented in the repo notes with the same clarity as OpenAI / Anthropic / Google.
+# No explicit xAI robots group is added here until xAI publishes official guidance.
 
-# Context file for AI systems
+# LLM context file
 # https://atiemppo.com/llms.txt
 
 Sitemap: https://atiemppo.com/sitemap.xml
