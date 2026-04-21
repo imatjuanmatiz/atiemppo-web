@@ -9,12 +9,12 @@ render_with_liquid: false
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>ATIEMPPO — El puente entre tu negocio y la IA | Bogotá, Colombia</title>
-<meta name="description" content="Acompañamos empresas a transformar sus operaciones con IA. Creadores de ATICA (+1.400 usuarios), SICETAC-LAB (+2.000 rutas) y AtiemppoX. +12 años, 9 países."/>
+<meta name="description" content="ATIEMPPO ayuda a empresas a leer mejor su operacion y convertir esa lectura en agentes, automatizaciones, productos de datos e IA aplicada."/>
 <meta name="ai-content-declaration" content="human-authored"/>
 <meta name="llms-txt" content="https://atiemppo.com/llms.txt"/>
 <link rel="alternate" type="text/plain" title="LLMs.txt" href="/llms.txt"/>
 <meta property="og:title" content="ATIEMPPO — El puente entre tu negocio y la IA"/>
-<meta property="og:description" content="Acompañamos empresas a transformar sus operaciones con IA. +12 años, 9 países."/>
+<meta property="og:description" content="Datos, criterio e IA aplicada para convertir problemas operativos en decisiones claras y soluciones utiles."/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://atiemppo.com"/>
 <meta property="og:locale" content="es_CO"/>
@@ -236,13 +236,13 @@ section{padding:7rem 3rem}
 .about-proof-hero{background:linear-gradient(145deg,#eef4ff 0%,#f7fbff 100%);border:1px solid rgba(0,80,200,.14);border-radius:var(--r);padding:2rem;position:relative;overflow:hidden}
 .about-proof-hero::before{content:'';position:absolute;inset:auto -10% -55% auto;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(0,85,204,.09) 0%,transparent 70%)}
 .about-proof-kicker{font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);margin-bottom:.8rem}
-.about-proof-title{font-family:var(--display);font-size:2rem;letter-spacing:.04em;line-height:1;margin-bottom:.8rem;color:#0a1628}
+.about-proof-title{font-family:var(--display);font-size:clamp(1.8rem,3vw,2.45rem);letter-spacing:.04em;line-height:1;margin-bottom:.8rem;color:#0a1628}
 .about-proof-copy{font-size:.95rem;color:var(--muted);line-height:1.75;max-width:38ch}
 .about-proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
 .about-proof-card{background:#fff;border:1px solid var(--border2);border-radius:var(--r);padding:1.25rem}
 .about-proof-card h3{font-family:var(--display);font-size:1rem;letter-spacing:.05em;margin-bottom:.45rem;color:#0a1628}
 .about-proof-card p{font-size:.84rem;color:var(--muted);line-height:1.65}
-.about-client-bar{display:flex;flex-wrap:wrap;gap:.6rem}
+.about-client-bar{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.1rem}
 .about-client-pill{padding:.55rem .85rem;border-radius:999px;background:#fff;border:1px solid var(--border2);font-size:.74rem;font-weight:700;letter-spacing:.06em;color:#456}
 
 /* LOGOS */
@@ -277,6 +277,7 @@ section{padding:7rem 3rem}
 .service-arrow-home{margin-top:.9rem;font-size:.8rem;font-weight:700;color:var(--svc-accent)}
 .service-detail-home{margin-top:1.25rem;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.06);border:1px solid var(--border2)}
 .service-detail-home[hidden]{display:none}
+.service-detail-home.is-empty{display:none}
 .service-detail-head{padding:2rem;border-left:4px solid var(--svc-accent);border-bottom:1px solid var(--border2)}
 .service-detail-top{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:.9rem}
 .service-detail-title-group{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
@@ -386,6 +387,7 @@ section{padding:7rem 3rem}
 .needs-num{flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;width:2rem;height:2rem;border-radius:999px;background:var(--teal2);border:1px solid var(--border);font-family:var(--display);font-size:1rem;letter-spacing:.05em;color:var(--teal)}
 .needs-list strong{color:var(--white);font-weight:600}
 .needs-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:1.5rem}
+.needs-note{margin-top:1.1rem;font-size:.82rem;color:rgba(10,22,40,.52);line-height:1.65}
 
 /* TRAYECTORIA */
 .traj-bg{background:var(--bg);border-top:1px solid var(--border2)}
@@ -506,7 +508,7 @@ footer{background:var(--surface)!important;border-top:1px solid var(--border2);p
     <li><a href="/servicios/">Portafolio</a></li>
     <li><a href="#cuando-nos-necesitas">Por qué escogernos</a></li>
     <li><a href="#labs">Proyectos</a></li>
-    <li><a href="#labs">Labs</a></li>
+    <li><a href="#contacto">Contacto</a></li>
     <li><a href="/blog/">Blog</a></li>
     <li><a href="#contacto" class="nav-cta">Hablemos →</a></li>
   </ul>
@@ -518,7 +520,7 @@ footer{background:var(--surface)!important;border-top:1px solid var(--border2);p
   <a href="/servicios/" onclick="closeMenu()">Portafolio</a>
   <a href="#cuando-nos-necesitas" onclick="closeMenu()">Por qué escogernos</a>
   <a href="#labs" onclick="closeMenu()">Proyectos</a>
-  <a href="#labs" onclick="closeMenu()">Labs</a>
+  <a href="#contacto" onclick="closeMenu()">Contacto</a>
   <a href="/blog/" onclick="closeMenu()">Blog</a>
   <a href="#contacto" onclick="closeMenu()" style="color:var(--teal)">Hablemos →</a>
 </nav>
@@ -528,21 +530,21 @@ footer{background:var(--surface)!important;border-top:1px solid var(--border2);p
   <div class="hero-glow"></div>
   <div class="hero-inner">
     <div class="hero-badges">
-      <span class="hero-badge"><span class="badge-dot"></span>ATICA — +1.400 usuarios</span>
-      <span class="hero-badge"><span class="badge-dot"></span>AtiemppoX — Agente WhatsApp en producción</span>
-      <span class="hero-badge"><span class="badge-dot"></span>SICETAC-LAB — +2.000 rutas en API</span>
+      <span class="hero-badge"><span class="badge-dot"></span>Operación real</span>
+      <span class="hero-badge"><span class="badge-dot"></span>Transporte y logística</span>
+      <span class="hero-badge"><span class="badge-dot"></span>IA aplicada</span>
     </div>
     <h1 class="hero-h1">DATOS, CRITERIO<br>E <em>IA APLICADA.</em></h1>
-    <p class="hero-sub">Acompañamos a empresas a transformar sus operaciones con análisis de datos, proyectos de IA y acompañamiento experto para potenciar la toma de decisiones empresariales.</p>
+    <p class="hero-sub">Ayudamos a empresas a leer mejor su operación, decidir con más claridad y convertir esa lectura en agentes, herramientas, automatizaciones o productos de datos que sí se usan.</p>
     <div class="hero-ctas">
       <a href="#contacto" class="btn btn-primary">Hablemos de tu proyecto →</a>
       <a href="/servicios/" class="btn btn-ghost">Ver portafolio</a>
     </div>
     <div class="hero-stats">
-      <div class="hero-stat"><span class="stat-num">+12</span><span class="stat-lbl">Años construyendo<br>soluciones</span></div>
-      <div class="hero-stat"><span class="stat-num">9</span><span class="stat-lbl">Países con<br>proyectos activos</span></div>
-      <div class="hero-stat"><span class="stat-num">+88K</span><span class="stat-lbl">Activos<br>controlados</span></div>
-      <div class="hero-stat"><span class="stat-num">+15K</span><span class="stat-lbl">Cirugías seguidas<br>multipaís</span></div>
+      <div class="hero-stat"><span class="stat-num">+1.4K</span><span class="stat-lbl">Usuarios de<br>ATICA</span></div>
+      <div class="hero-stat"><span class="stat-num">+2K</span><span class="stat-lbl">Rutas en<br>SICETAC-LAB</span></div>
+      <div class="hero-stat"><span class="stat-num">+18K</span><span class="stat-lbl">Evaluaciones en<br>campo</span></div>
+      <div class="hero-stat"><span class="stat-num">9</span><span class="stat-lbl">Países con<br>proyectos</span></div>
     </div>
   </div>
 </section>
@@ -555,19 +557,19 @@ footer{background:var(--surface)!important;border-top:1px solid var(--border2);p
       <div class="about-text">
         <p class="tag">Quiénes Somos</p>
         <h2 class="s-title">HABLAMOS<br>LOS DOS<br>IDIOMAS</h2>
-        <p class="about-lead">El de los datos y el de la estrategia. Ayudamos a aterrizar necesidades, conectar capacidades y convertir preguntas de negocio en decisiones, herramientas y proyectos concretos.</p>
-        <p>ATIEMPPO trabaja justo en el punto donde una empresa necesita leer mejor su operación, entender mejor sus números y tomar decisiones con más claridad. Ahí es donde entramos: ordenamos, traducimos y empujamos.</p>
+        <p class="about-lead">El de los datos y el de la estrategia. Traducimos preguntas de negocio en decisiones, herramientas y proyectos concretos sin perder el contexto operativo en el camino.</p>
+        <p>ATIEMPPO entra cuando una empresa necesita entender mejor lo que está pasando, priorizar bien y pasar de la conversación a la ejecución sin fricción innecesaria entre directivos, operación y tecnología.</p>
         <div class="about-points">
           <div class="about-point"><span class="about-point-num">01</span><p>Traducimos necesidades directivas en requerimientos técnicos claros, priorizados y desarrollables.</p></div>
-          <div class="about-point"><span class="about-point-num">02</span><p>Leemos operaciones, datos y contexto regulatorio con criterio de negocio, no solo con lenguaje técnico.</p></div>
-          <div class="about-point"><span class="about-point-num">03</span><p>Construimos lo necesario para que la idea no se quede en piloto: agentes, APIs, automatizaciones o productos de datos.</p></div>
+          <div class="about-point"><span class="about-point-num">02</span><p>Leemos operación, datos y contexto regulatorio con criterio de negocio, no solo con lenguaje técnico.</p></div>
+          <div class="about-point"><span class="about-point-num">03</span><p>Empujamos hasta que la idea tome forma: agente, API, automatización, producto o línea de acción concreta.</p></div>
         </div>
       </div>
       <div class="about-proof">
         <div class="about-proof-hero">
           <div class="about-proof-kicker">Posicionamiento</div>
           <div class="about-proof-title">No vendemos solo tecnología.</div>
-          <p class="about-proof-copy">Combinamos datos, criterio y ejecución para que una necesidad operativa termine convertida en una decisión clara o una solución útil.</p>
+          <p class="about-proof-copy">Combinamos datos, criterio y ejecución para que una necesidad operativa termine convertida en una decisión clara, una herramienta útil o una capacidad nueva dentro de tu empresa.</p>
         </div>
         <div class="about-proof-grid">
           <div class="about-proof-card"><h3>Datos</h3><p>Leemos operación, bases y contexto con profundidad técnica y criterio aplicado.</p></div>
@@ -575,11 +577,11 @@ footer{background:var(--surface)!important;border-top:1px solid var(--border2);p
           <div class="about-proof-card"><h3>Ejecución</h3><p>Llevamos las ideas a productos, automatizaciones, infraestructura y herramientas reales.</p></div>
         </div>
         <div class="about-client-bar">
-          <span class="about-client-pill">Haleon</span>
-          <span class="about-client-pill">BID</span>
-          <span class="about-client-pill">J&amp;J</span>
-          <span class="about-client-pill">Banco Mundial</span>
-          <span class="about-client-pill">Coca-Cola</span>
+          <span class="about-client-pill">Negocio</span>
+          <span class="about-client-pill">Operación</span>
+          <span class="about-client-pill">Datos</span>
+          <span class="about-client-pill">Logística</span>
+          <span class="about-client-pill">IA</span>
         </div>
       </div>
     </div>
@@ -593,7 +595,7 @@ footer{background:var(--surface)!important;border-top:1px solid var(--border2);p
         <p class="tag">Servicios</p>
         <h2 class="s-title">LO QUE HACEMOS<br>SE VE ASÍ</h2>
       </div>
-      <p class="services-head-copy">Estas tres capacidades explican cómo trabajamos. Debajo están empaquetadas en cuatro líneas de servicio más claras para alguien que llega al home, entiende rápido y puede reconocer en cuál encaja su necesidad.</p>
+      <p class="services-head-copy">Estas tres capacidades explican cómo trabajamos. Abajo están aterrizadas en cuatro líneas de servicio para que alguien que llega al home pueda reconocerse rápido, entender el alcance y seguir a conversación o portafolio.</p>
     </div>
     <div class="hacemos-grid">
       <div class="hacemos-card"><div class="hacemos-num">01</div><h3 class="hacemos-title">ACOMPAÑAMOS</h3><p class="hacemos-desc">Nos sentamos con tu equipo a entender el problema real, ordenar prioridades y traducir lo que el negocio necesita a una ruta de trabajo clara.</p></div>
@@ -749,7 +751,7 @@ footer{background:var(--surface)!important;border-top:1px solid var(--border2);p
   <div class="container">
     <p class="tag">Proyectos activos</p>
     <h2 class="s-title">NUESTROS<br>PROYECTOS EN<br>PRODUCCIÓN</h2>
-    <p class="cases-intro">Esto es lo que ya está vivo hoy: productos, agentes, GPTs, WhatsApp y capas editoriales conectadas entre sí.</p>
+    <p class="cases-intro">Esto ya está vivo hoy: productos, agentes, GPTs, WhatsApp y capas de datos que muestran cómo se ve ATIEMPPO cuando pasa de idea a ejecución.</p>
     <div class="labs-grid">
       <div class="lab-card lab-card--feat"><div class="lab-top"><span class="lab-icon">📲</span><span class="lab-badge lb-prod">En producción</span></div><h3 class="lab-title">SICETAC AL INSTANTE EN WHATSAPP</h3><p class="lab-desc">Consulta valores SICETAC desde tu teléfono con una instrucción simple y clara. Ya está operativo como acceso rápido para resolver rutas sin entrar a una interfaz técnica.<br><br><strong style="color:var(--white)">Escribe así: origen a destino.</strong><br><span style="color:rgba(255,255,255,.78)">No olvides poner la a.</span></p><div class="lab-actions"><a href="https://wa.me/573134503694?text=Hola%2C%20quiero%20consultar%20SICETAC%20al%20Instante%20por%20WhatsApp.%20Escribe%20asi%3A%20origen%20a%20destino" target="_blank" rel="noopener" class="lab-link">Abrir WhatsApp ↗</a><a href="https://sicealinstante.vercel.app/" target="_blank" rel="noopener" class="lab-link">Abrir versión web ↗</a><a href="/blog/2026/03/sicetac-al-instante-whatsapp/" class="lab-link">Leer nota ↗</a></div></div>
       <div class="lab-card"><div class="lab-top"><span class="lab-icon">📈</span><span class="lab-badge lb-prod">B2B</span></div><h3 class="lab-title">INDICE SICETAC PARA TU RED</h3><p class="lab-desc">Un producto de análisis para empresas que quieren subir su base de rutas, hacer matching con SICETAC y entender cuánto se ha movido su red de transporte por ruta, configuración y total agregado.</p><div class="lab-actions"><a href="/indices-sicetac/" class="lab-link">Ver producto ↗</a><a href="#contacto" class="lab-link">Hablar con ATIEMPPO ↗</a></div></div>
@@ -768,22 +770,23 @@ footer{background:var(--surface)!important;border-top:1px solid var(--border2);p
   <div class="container needs-shell">
     <div class="needs-card">
       <p class="tag">Cuándo necesitas de ATIEMPPO</p>
-      <h2 class="s-title">CUANDO NECESITAS<br>ATERRIZAR,<br>PENSAR Y<br>EJECUTAR</h2>
-      <p class="needs-copy">Aquí es donde ATIEMPPO entra de verdad: cuando ya intuyes que hay una oportunidad con IA, datos o logística, pero necesitas orden, criterio y alguien que te ayude a convertir esa idea en algo concreto.</p>
+      <h2 class="s-title">CUANDO NECESITAS<br>ORDEN,<br>CRITERIO Y<br>EMPUJE</h2>
+      <p class="needs-copy">Aquí es donde ATIEMPPO entra mejor: cuando ya intuyes que hay una oportunidad en IA, datos o logística, pero necesitas ordenar el problema, leerlo bien y moverlo hacia una solución real.</p>
       <div class="needs-actions">
         <a href="#contacto" class="btn btn-primary">Contáctanos</a>
         <a href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20hablar%20sobre%20una%20idea%20de%20IA%20o%20datos." target="_blank" rel="noopener" class="btn btn-ghost">Hablar por WhatsApp</a>
       </div>
+      <p class="needs-note">No necesitas llegar con la solución definida. Basta con tener un problema real, una hipótesis o una decisión que quieras pensar mejor.</p>
     </div>
     <div class="needs-card">
       <ul class="needs-list">
-        <li><span class="needs-num">01</span><span>Si quieres que <strong>exploremos juntos ideas de proyectos de IA</strong> para tu empresa o para ti.</span></li>
-        <li><span class="needs-num">02</span><span>Si necesitas ayuda para poner en <strong>blanco y negro tus ideas de proyectos de IA</strong> y volverlas desarrollables.</span></li>
-        <li><span class="needs-num">03</span><span>Si necesitas <strong>analizar datos, entender mejor el mercado y leer tus propias bases</strong> con criterio de negocio.</span></li>
-        <li><span class="needs-num">04</span><span>Si necesitas <strong>analizar tu red operativa o construir modelos de red</strong> para tomar mejores decisiones logísticas y comerciales.</span></li>
-        <li><span class="needs-num">05</span><span>Si necesitas una <strong>presentación de alto nivel sobre la realidad logística de Colombia y Latinoamérica</strong> para directivos, equipos o clientes.</span></li>
-        <li><span class="needs-num">06</span><span>Si quieres que tus equipos <strong>fortalezcan sus capacidades de análisis de datos</strong> y de lectura operativa.</span></li>
-        <li><span class="needs-num">07</span><span>Si quieres hacer <strong>terapia logística</strong>. Pregúntame por esto.</span></li>
+        <li><span class="needs-num">01</span><span>Si quieres <strong>aterrizar una idea de IA</strong> y volverla una línea de trabajo clara.</span></li>
+        <li><span class="needs-num">02</span><span>Si necesitas <strong>leer mejor tus datos, tu mercado o tu operación</strong> antes de decidir.</span></li>
+        <li><span class="needs-num">03</span><span>Si necesitas <strong>entender tu red logística o tu estructura de costos</strong> con más profundidad.</span></li>
+        <li><span class="needs-num">04</span><span>Si quieres <strong>conectar sistemas, equipos o agentes</strong> con una capa de datos útil y trazable.</span></li>
+        <li><span class="needs-num">05</span><span>Si necesitas una <strong>segunda opinión experta</strong> para una decisión delicada o una propuesta importante.</span></li>
+        <li><span class="needs-num">06</span><span>Si quieres que tu equipo <strong>piense mejor, priorice mejor y ejecute mejor</strong>.</span></li>
+        <li><span class="needs-num">07</span><span>Si sientes que hay una oportunidad, pero todavía no sabes <strong>qué servicio es el correcto</strong>.</span></li>
       </ul>
     </div>
   </div>
@@ -813,7 +816,7 @@ footer{background:var(--surface)!important;border-top:1px solid var(--border2);p
       <div>
         <p class="tag">Empecemos</p>
         <h2 class="s-title">¿TIENES UNA<br>IDEA DE IA?<br>HABLEMOS.</h2>
-        <p class="contact-intro">No necesitas tener todo claro. Escuchamos tu contexto, te ayudamos a definir el proyecto y te mostramos cómo un agente puede actuar ya en tu negocio. 30 minutos, sin costo.</p>
+        <p class="contact-intro">No necesitas llegar con todo claro. Escuchamos tu contexto, identificamos por dónde conviene empezar y te proponemos un siguiente paso concreto. 30 minutos, sin costo.</p>
         <div class="contact-links">
           <a href="mailto:juanmatiz@atiemppo.co" class="contact-link"><span class="clink-icon">📧</span><span>juanmatiz@atiemppo.co</span></a>
           <a href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20hablar%20sobre%20un%20proyecto%20de%20IA." target="_blank" rel="noopener" class="contact-link"><span class="clink-icon">💬</span><span>WhatsApp: 310 768 7010</span></a>
