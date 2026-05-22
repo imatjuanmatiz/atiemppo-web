@@ -17,10 +17,10 @@ reportes/
     index.html
     2026-05/
       index.html
-  sicetac-horas/
+  seguimiento-acpm-sicetac/
     index.html
-    2026-05/
-      index.html
+  impacto-horas-sicetac/
+    index.html
   perfil-rutas-sicetac/
     index.html
     2026-04/
@@ -32,15 +32,15 @@ reportes/
 Estas rutas muestran siempre la version mas actualizada:
 
 - `/reportes/indice-sicetac-capitales/`
-- `/reportes/sicetac-horas/`
+- `/reportes/seguimiento-acpm-sicetac/`
 - `/reportes/perfil-rutas-sicetac/`
+- `/reportes/impacto-horas-sicetac/`
 
 ## Snapshots historicos
 
-Estas rutas preservan cortes publicados:
+Estas rutas preservan cortes publicados cuando sea necesario:
 
 - `/reportes/indice-sicetac-capitales/2026-05/`
-- `/reportes/sicetac-horas/2026-05/`
 - `/reportes/perfil-rutas-sicetac/2026-04/`
 
 ## Como actualizar un reporte
