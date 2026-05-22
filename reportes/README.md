@@ -25,6 +25,9 @@ reportes/
     index.html
     2026-04/
       index.html
+  newsletter/
+    slug-del-reporte-no-listado/
+      index.html
 ```
 
 ## Rutas vivas
@@ -42,6 +45,38 @@ Estas rutas preservan cortes publicados cuando sea necesario:
 
 - `/reportes/indice-sicetac-capitales/2026-05/`
 - `/reportes/perfil-rutas-sicetac/2026-04/`
+
+## Reportes no listados para newsletter
+
+Los reportes que deben existir en la pagina pero no aparecer en la biblioteca publica viven en:
+
+```text
+reportes/newsletter/
+```
+
+Ejemplo:
+
+```text
+reportes/newsletter/sicetac-corte-junio-2026/index.html
+```
+
+URL publica directa:
+
+```text
+https://atiemppo.com/reportes/newsletter/sicetac-corte-junio-2026/
+```
+
+Reglas:
+
+1. No agregues estos reportes a `_data/reportes.yml` mientras no deban aparecer en `/reportes/`.
+2. Registra su metadata en `_data/reportes_no_listados.yml` para seguimiento editorial interno.
+3. Si el reporte no debe aparecer en buscadores, agrega en su `<head>`:
+
+```html
+<meta name="robots" content="noindex, nofollow">
+```
+
+4. Cuando el reporte se vuelva publico, copialo o muevelo a `/reportes/slug-publico/` y agregalo a `_data/reportes.yml`.
 
 ## Como actualizar un reporte
 

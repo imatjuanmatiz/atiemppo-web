@@ -1,0 +1,21 @@
+# Reportes no listados
+#
+# Usa este archivo como memoria editorial de reportes compartidos por newsletter
+# que existen en el sitio pero no aparecen en /reportes/.
+#
+# Flujo recomendado:
+# - Publicar el HTML autocontenido en /reportes/newsletter/slug-del-reporte/index.html
+# - Agregar aqui su metadata para seguimiento interno.
+# - Incluir <meta name="robots" content="noindex, nofollow"> en el HTML si no debe indexarse.
+# - Cuando el reporte se vuelva publico, moverlo o copiarlo a /reportes/slug-del-reporte/
+#   y agregarlo a _data/reportes.yml.
+#
+# Ejemplo:
+# - title: "Reporte de prueba"
+#   description: "Resumen breve para memoria interna."
+#   url: "/reportes/newsletter/reporte-de-prueba/"
+#   updated_at: "2026-05-22"
+#   category: "SICETAC"
+#   status: "No listado"
+#   source: "Newsletter"
+#   visible_in_library: false
