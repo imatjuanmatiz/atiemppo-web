@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Simulación SICETAC por horas | Reportes ATIEMPPO</title>
+<meta name="description" content="Reporte vivo de simulación de escenarios SICETAC para 238, 288 y 420 horas."/>
+<style>
+:root{--blue:#1F4E79;--ink:#172033;--muted:#657386;--line:#dbe4ed;--soft:#f5f8fb;--green:#079763;--radius:8px}
+*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.6}a{color:inherit}.wrap{width:min(1120px,100%);margin:0 auto;padding:32px}.top{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:18px 32px;border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0}.brand{display:flex;align-items:center;text-decoration:none}.brand img{height:38px;width:auto;display:block}.badge{display:inline-flex;padding:6px 10px;border-radius:999px;background:#eef5fb;color:var(--blue);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.hero{padding:56px 0 28px}.kicker{color:var(--green);font-size:12px;font-weight:850;letter-spacing:.16em;text-transform:uppercase}.hero h1{max-width:860px;margin:14px 0 14px;color:var(--blue);font-size:clamp(38px,6vw,72px);line-height:1;letter-spacing:-.04em}.lead{max-width:780px;margin:0;color:var(--muted);font-size:18px}.scenario-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:30px 0}.scenario{border:1px solid var(--line);border-radius:var(--radius);padding:20px;background:#fff}.scenario strong{display:block;color:var(--blue);font-size:32px}.scenario span{color:var(--muted);font-size:14px}.bars{display:grid;gap:14px;margin-top:20px}.row{display:grid;grid-template-columns:90px 1fr;gap:14px;align-items:center;color:var(--muted)}.bar{height:16px;background:#e8eef5;border-radius:999px;overflow:hidden}.bar i{display:block;height:100%;background:var(--blue)}.note{padding:16px;border-left:4px solid var(--blue);background:var(--soft);color:var(--muted)}.foot{margin-top:42px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}@media(max-width:760px){.scenario-grid{grid-template-columns:1fr}.top{padding:16px 18px}.wrap{padding:24px 18px}.row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<!-- Reemplazar este archivo completo por el HTML autocontenido generado desde scripts cuando el reporte final esté listo. -->
+<header class="top">
+  <a class="brand" href="/reportes/" aria-label="Reportes ATIEMPPO"><img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO"/></a>
+  <span class="badge">Reporte vivo</span>
+</header>
+<main class="wrap">
+  <section class="hero">
+    <div class="kicker">Datos sin carreta · Escenarios SICETAC</div>
+    <h1>Simulación SICETAC por horas</h1>
+    <p class="lead">Reporte vivo para comparar escenarios de 238, 288 y 420 horas y entender sensibilidad operativa frente a cambios en parámetros de cálculo.</p>
+  </section>
+  <section class="scenario-grid">
+    <article class="scenario"><strong>238 h</strong><span>Escenario operativo reducido.</span></article>
+    <article class="scenario"><strong>288 h</strong><span>Escenario medio de comparación.</span></article>
+    <article class="scenario"><strong>420 h</strong><span>Escenario extendido.</span></article>
+  </section>
+  <section class="bars" aria-label="Vista preliminar de escenarios">
+    <div class="row"><strong>238 h</strong><div class="bar"><i style="width:58%"></i></div></div>
+    <div class="row"><strong>288 h</strong><div class="bar"><i style="width:72%"></i></div></div>
+    <div class="row"><strong>420 h</strong><div class="bar"><i style="width:100%"></i></div></div>
+  </section>
+  <section style="margin-top:28px">
+    <div class="note">Esta ruta muestra siempre la versión más actualizada. El snapshot de mayo 2026 vive en <a href="/reportes/sicetac-horas/2026-05/">/2026-05/</a>.</div>
+  </section>
+  <footer class="foot">ATIEMPPO · El Dato Logístico · HTML principal, PDF solo como respaldo.</footer>
+</main>
+</body>
+</html>
