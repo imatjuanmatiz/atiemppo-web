@@ -17,6 +17,8 @@ reportes/
     index.html
     2026-05/
       index.html
+  mapa-variacion-junio-sicetac/
+    index.html
   seguimiento-acpm-sicetac/
     index.html
   impacto-horas-sicetac/
@@ -35,6 +37,7 @@ reportes/
 Estas rutas muestran siempre la version mas actualizada:
 
 - `/reportes/indice-sicetac-capitales/`
+- `/reportes/mapa-variacion-junio-sicetac/`
 - `/reportes/seguimiento-acpm-sicetac/`
 - `/reportes/perfil-rutas-sicetac/`
 - `/reportes/impacto-horas-sicetac/`
