@@ -42,6 +42,7 @@
     .metric { border: 1px solid var(--line); border-radius: 8px; padding: 9px; min-width: 0; }
     .metric b { display: block; font-size: 18px; line-height: 1; margin-bottom: 5px; }
     .metric span { display: block; color: var(--muted); font-size: 11px; line-height: 1.2; }
+    .notice { padding: 10px 18px; border-bottom: 1px solid var(--line); background: #fbfcf8; color: #40566d; font-size: 12px; line-height: 1.35; }
     .controls { display: grid; gap: 10px; padding: 14px 18px; border-bottom: 1px solid var(--line); }
     input, select { width: 100%; box-sizing: border-box; border: 1px solid var(--line); border-radius: 8px; padding: 10px 11px; font-size: 14px; color: var(--ink); background: #fff; }
     input:focus, select:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12); }
@@ -101,18 +102,19 @@
     </nav>
     <div class="top-meta">Reporte vivo · Junio 2026</div>
   </header>
-  <div class="source-strip"><b>ATIEMPPO · El Dato Logístico.</b> Fuente: Mintransporte, Cálculos Atiemppo 2026. Cobertura: banco GeoJSON SICETAC local, comparación junio 2026 vs mayo 2026.</div>
+  <div class="source-strip"><b>ATIEMPPO · El Dato Logístico.</b> Fuente: Mintransporte, Cálculos Atiemppo 2026. Cobertura: banco GeoJSON SICETAC local depurado, comparación junio 2026 vs mayo 2026. Se excluyen geometrías con distancia GraphHopper inconsistente frente a SICETAC.</div>
   <main class="app">
     <aside>
       <header>
         <h1>Variación junio SICETAC con 2 horas logísticas</h1>
-        <p class="sub">Base de análisis de Atiemppo y su Agente de IA Bruno, de las rutas del SICETAC con la simulación de 2 horas logísticas en mayo vs junio.</p>
+        <p class="sub">Base de análisis de Atiemppo y su Agente de IA Bruno, de las rutas del SICETAC con la simulación de 2 horas logísticas en mayo vs junio. Mapa depurado para conservar rutas con geometría relevante.</p>
       </header>
       <section class="metrics">
         <div class="metric"><b id="mTotal">0</b><span>rutas con geometría</span></div>
         <div class="metric"><b id="mShown">0</b><span>visibles</span></div>
         <div class="metric"><b id="mData">0</b><span>con dato</span></div>
       </section>
+      <section class="notice" id="qualityNotice"></section>
       <section class="controls">
         <select id="vehicle"></select>
         <select id="origin"></select>
@@ -135,7 +137,7 @@
     <section id="map"></section>
   </main>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-  <script src="./sicetac_rutas_variacion_junio_data.js?v=63d042b17652"></script>
+  <script src="./sicetac_rutas_variacion_junio_data.js?v=792e36d396b2"></script>
   <script>
     const DATA = window.SICETAC_VARIACION_DATA;
     const COLORS = {
@@ -185,6 +187,7 @@
       mTotal: document.getElementById("mTotal"),
       mShown: document.getElementById("mShown"),
       mData: document.getElementById("mData"),
+      qualityNotice: document.getElementById("qualityNotice"),
       fitBtn: document.getElementById("fitBtn"),
       clearBtn: document.getElementById("clearBtn")
     };
@@ -397,9 +400,17 @@
       };
       legend.addTo(map);
     }
+    function renderQualityNotice() {
+      const distanceExcluded = DATA.metadata.excluidas_distancia_absurda || 0;
+      const manualExcluded = DATA.metadata.excluidas_manuales || 0;
+      const inverseExcluded = DATA.metadata.excluidas_por_par_inverso || 0;
+      const criteria = DATA.metadata.criterio_exclusion_distancia_absurda || "distancia GraphHopper inconsistente frente a SICETAC";
+      els.qualityNotice.textContent = `Base depurada: ${distanceExcluded.toLocaleString("es-CO")} rutas excluidas por ${criteria}; ${manualExcluded.toLocaleString("es-CO")} exclusión manual en revisión; ${inverseExcluded.toLocaleString("es-CO")} inversas excluidas para conservar simetría.`;
+    }
     buildVehicleOptions();
     buildOriginOptions();
     buildRangeFilters();
+    renderQualityNotice();
     els.mTotal.textContent = allFeatures.length.toLocaleString("es-CO");
     els.vehicle.addEventListener("change", () => { selectedId = null; refreshRangeCounts(); applyFilters(); fitFiltered(); });
     els.origin.addEventListener("change", () => { selectedId = null; applyFilters(); fitFiltered(); });
