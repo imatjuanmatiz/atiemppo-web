@@ -43,6 +43,23 @@
     .metric b { display: block; font-size: 18px; line-height: 1; margin-bottom: 5px; }
     .metric span { display: block; color: var(--muted); font-size: 11px; line-height: 1.2; }
     .notice { padding: 10px 18px; border-bottom: 1px solid var(--line); background: #fbfcf8; color: #40566d; font-size: 12px; line-height: 1.35; }
+    .impact-panel { border-bottom: 1px solid var(--line); padding: 12px 18px 14px; display: grid; gap: 10px; background: #fff; }
+    .impact-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 10px; }
+    .impact-head h2 { margin: 0; font-size: 15px; line-height: 1.15; color: var(--deep); }
+    .impact-head span { color: var(--muted); font-size: 11px; line-height: 1.2; text-align: right; }
+    .vehicle-bars { display: grid; gap: 6px; }
+    .vehicle-bar-row { display: grid; grid-template-columns: 42px 1fr 58px; gap: 8px; align-items: center; border: 1px solid transparent; border-radius: 8px; padding: 5px 6px; cursor: pointer; }
+    .vehicle-bar-row:hover, .vehicle-bar-row.active { background: #f4f8f4; border-color: var(--line); }
+    .vehicle-code { font-size: 12px; font-weight: 850; color: var(--deep); }
+    .vehicle-track { height: 14px; background: #edf2f7; border-radius: 999px; overflow: hidden; }
+    .vehicle-fill { height: 100%; border-radius: 999px; min-width: 2px; background: linear-gradient(90deg, #2563eb, #dc2626); }
+    .vehicle-value { font-size: 11px; text-align: right; color: var(--ink); font-weight: 750; white-space: nowrap; }
+    .matrix-wrap { max-height: 190px; overflow: auto; border: 1px solid var(--line); border-radius: 8px; }
+    .impact-matrix { width: 100%; border-collapse: collapse; font-size: 11px; background: #fff; }
+    .impact-matrix th, .impact-matrix td { padding: 7px 8px; border-bottom: 1px solid #edf2f7; text-align: right; white-space: nowrap; }
+    .impact-matrix th:first-child, .impact-matrix td:first-child { text-align: left; font-weight: 800; color: var(--deep); position: sticky; left: 0; background: #fff; }
+    .impact-matrix th { color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: 0; background: #f8fafc; position: sticky; top: 0; z-index: 1; }
+    .impact-matrix tr.active td { background: #f4f8f4; }
     .controls { display: grid; gap: 10px; padding: 14px 18px; border-bottom: 1px solid var(--line); }
     input, select { width: 100%; box-sizing: border-box; border: 1px solid var(--line); border-radius: 8px; padding: 10px 11px; font-size: 14px; color: var(--ink); background: #fff; }
     input:focus, select:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12); }
@@ -115,6 +132,19 @@
         <div class="metric"><b id="mData">0</b><span>con dato</span></div>
       </section>
       <section class="notice" id="qualityNotice"></section>
+      <section class="impact-panel">
+        <div class="impact-head">
+          <h2>Impacto por tipo de vehículo</h2>
+          <span>promedio de rutas con dato · mayo a junio</span>
+        </div>
+        <div id="vehicleBars" class="vehicle-bars"></div>
+        <div class="matrix-wrap">
+          <table class="impact-matrix">
+            <thead><tr><th>Veh.</th><th>Rutas</th><th>Prom.</th><th>Med.</th><th>Máx.</th><th>&gt;4%</th></tr></thead>
+            <tbody id="vehicleMatrix"></tbody>
+          </table>
+        </div>
+      </section>
       <section class="controls">
         <select id="vehicle"></select>
         <select id="origin"></select>
@@ -137,7 +167,7 @@
     <section id="map"></section>
   </main>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-  <script src="./sicetac_rutas_variacion_junio_data.js?v=792e36d396b2"></script>
+  <script src="./sicetac_rutas_variacion_junio_data.js?v=8620fe594537"></script>
   <script>
     const DATA = window.SICETAC_VARIACION_DATA;
     const COLORS = {
@@ -188,6 +218,8 @@
       mShown: document.getElementById("mShown"),
       mData: document.getElementById("mData"),
       qualityNotice: document.getElementById("qualityNotice"),
+      vehicleBars: document.getElementById("vehicleBars"),
+      vehicleMatrix: document.getElementById("vehicleMatrix"),
       fitBtn: document.getElementById("fitBtn"),
       clearBtn: document.getElementById("clearBtn")
     };
@@ -197,12 +229,18 @@
       return feature.properties.metricas[els.vehicle.value] || {};
     }
     function colorFor(feature) { return COLORS[metric(feature).rango || "sin_dato"] || COLORS.sin_dato; }
+    function weightFor(feature) {
+      const m = metric(feature);
+      if (m.variacion_pct == null) return 1.6;
+      return 2 + Math.min(Math.max(Number(m.variacion_pct), 0), 8) * 0.42;
+    }
     function featureStyle(feature) {
       const isSelected = selectedId && feature.properties.rutasid === selectedId;
-      return { color: isSelected ? SELECTED_COLOR : colorFor(feature), weight: isSelected ? 5 : 2.3, opacity: isSelected ? 0.95 : 0.58, lineCap: "round", lineJoin: "round" };
+      return { color: isSelected ? SELECTED_COLOR : colorFor(feature), weight: isSelected ? 6 : weightFor(feature), opacity: isSelected ? 0.95 : 0.62, lineCap: "round", lineJoin: "round" };
     }
     function fmtMoney(value) { return value == null ? "" : Number(value).toLocaleString("es-CO", { maximumFractionDigits: 0 }); }
     function fmtPct(value) { return value == null ? "sin dato" : `${Number(value).toLocaleString("es-CO", { maximumFractionDigits: 2 })}%`; }
+    function fmtPctShort(value) { return value == null ? "n.d." : `${Number(value).toLocaleString("es-CO", { maximumFractionDigits: 1 })}%`; }
     function routeTitle(p) { return p.nombre || p.ruta_od || `Ruta ${p.rutasid}`; }
     function searchableText(feature) {
       const p = feature.properties;
@@ -257,6 +295,62 @@
           applyFilters();
         });
       });
+    }
+    function vehicleStats() {
+      return DATA.metadata.configs.map(cfg => {
+        const values = [];
+        const absValues = [];
+        allFeatures.forEach(feature => {
+          const m = feature.properties.metricas[cfg] || {};
+          if (m.variacion_pct == null) return;
+          values.push(Number(m.variacion_pct));
+          if (m.valor_202605 != null && m.valor_202606 != null) absValues.push(Number(m.valor_202606) - Number(m.valor_202605));
+        });
+        values.sort((a, b) => a - b);
+        const n = values.length;
+        const avg = n ? values.reduce((a, b) => a + b, 0) / n : null;
+        const med = n ? (values[Math.floor((n - 1) / 2)] + values[Math.ceil((n - 1) / 2)]) / 2 : null;
+        const max = n ? values[n - 1] : null;
+        const over4 = values.filter(v => v >= 4).length;
+        const avgAbs = absValues.length ? absValues.reduce((a, b) => a + b, 0) / absValues.length : null;
+        return { cfg, n, avg, med, max, over4, avgAbs };
+      }).sort((a, b) => (b.avg ?? -999) - (a.avg ?? -999));
+    }
+    function renderVehicleImpact() {
+      const stats = vehicleStats();
+      const maxAvg = Math.max(...stats.map(s => s.avg || 0), 1);
+      els.vehicleBars.innerHTML = stats.map(row => {
+        const width = row.avg == null ? 0 : Math.max(2, (row.avg / maxAvg) * 100);
+        return `<div class="vehicle-bar-row ${els.vehicle.value === row.cfg ? "active" : ""}" data-vehicle="${row.cfg}">
+          <div class="vehicle-code">${row.cfg}</div>
+          <div class="vehicle-track"><div class="vehicle-fill" style="width:${width}%"></div></div>
+          <div class="vehicle-value">${fmtPctShort(row.avg)}</div>
+        </div>`;
+      }).join("");
+      els.vehicleMatrix.innerHTML = stats.map(row => `<tr class="${els.vehicle.value === row.cfg ? "active" : ""}" data-vehicle="${row.cfg}">
+        <td>${row.cfg}</td>
+        <td>${row.n.toLocaleString("es-CO")}</td>
+        <td>${fmtPctShort(row.avg)}</td>
+        <td>${fmtPctShort(row.med)}</td>
+        <td>${fmtPctShort(row.max)}</td>
+        <td>${row.over4.toLocaleString("es-CO")}</td>
+      </tr>`).join("");
+      els.vehicleBars.querySelectorAll("[data-vehicle]").forEach(row => row.addEventListener("click", () => {
+        els.vehicle.value = row.dataset.vehicle;
+        selectedId = null;
+        refreshRangeCounts();
+        renderVehicleImpact();
+        applyFilters();
+        fitFiltered();
+      }));
+      els.vehicleMatrix.querySelectorAll("[data-vehicle]").forEach(row => row.addEventListener("click", () => {
+        els.vehicle.value = row.dataset.vehicle;
+        selectedId = null;
+        refreshRangeCounts();
+        renderVehicleImpact();
+        applyFilters();
+        fitFiltered();
+      }));
     }
     function countRanges() {
       return allFeatures.reduce((acc, f) => {
@@ -349,6 +443,10 @@
         return activeRanges.has(bucket)
           && (origin === "all" || feature.properties.origen_codigo === origin)
           && (!q || searchableText(feature).includes(q));
+      }).sort((a, b) => {
+        const av = metric(a).variacion_pct;
+        const bv = metric(b).variacion_pct;
+        return (bv ?? -999) - (av ?? -999);
       });
       selectedId = filteredFeatures.some(f => f.properties.rutasid === selectedId) ? selectedId : null;
       renderMap();
@@ -410,9 +508,10 @@
     buildVehicleOptions();
     buildOriginOptions();
     buildRangeFilters();
+    renderVehicleImpact();
     renderQualityNotice();
     els.mTotal.textContent = allFeatures.length.toLocaleString("es-CO");
-    els.vehicle.addEventListener("change", () => { selectedId = null; refreshRangeCounts(); applyFilters(); fitFiltered(); });
+    els.vehicle.addEventListener("change", () => { selectedId = null; refreshRangeCounts(); renderVehicleImpact(); applyFilters(); fitFiltered(); });
     els.origin.addEventListener("change", () => { selectedId = null; applyFilters(); fitFiltered(); });
     els.search.addEventListener("input", applyFilters);
     els.fitBtn.addEventListener("click", fitFiltered);
