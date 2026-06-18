@@ -65,12 +65,15 @@
     input:focus, select:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12); }
     .buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
     button { border: 1px solid var(--line); background: #fbfcf8; color: var(--ink); border-radius: 8px; padding: 9px 10px; font-weight: 650; cursor: pointer; }
-    .chips { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; }
-    .chip { display: flex; align-items: center; justify-content: space-between; gap: 8px; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font-size: 12px; cursor: pointer; }
+    .chips { display: grid; gap: 8px; }
+    .chip { display: grid; grid-template-columns: minmax(92px, 118px) 1fr minmax(82px, auto); align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font-size: 12px; cursor: pointer; background: #fff; }
+    .chip:hover { background: #f8fafc; border-color: #cbd5e1; }
     .chip input { width: auto; margin: 0; accent-color: var(--accent); }
     .chip .left { display: flex; align-items: center; gap: 7px; min-width: 0; }
     .swatch { width: 11px; height: 11px; border-radius: 50%; flex: 0 0 auto; }
-    .count { color: var(--muted); white-space: nowrap; }
+    .count { color: var(--muted); white-space: nowrap; text-align: right; font-variant-numeric: tabular-nums; }
+    .chip-track { height: 11px; border-radius: 999px; background: #edf2f7; overflow: hidden; }
+    .chip-fill { height: 100%; min-width: 2px; border-radius: 999px; }
     .origin-chart { border-bottom: 1px solid var(--line); padding: 12px 10px 10px; }
     .origin-chart-head { display: flex; justify-content: space-between; gap: 10px; padding: 0 8px 8px; color: var(--muted); font-size: 12px; }
     .origin-bars { display: grid; gap: 6px; max-height: 220px; overflow: auto; padding: 0 2px; }
@@ -140,7 +143,7 @@
         <div id="vehicleBars" class="vehicle-bars"></div>
         <div class="matrix-wrap">
           <table class="impact-matrix">
-            <thead><tr><th>Veh.</th><th>Rutas</th><th>Prom.</th><th>Med.</th><th>Máx.</th><th>&gt;15%</th></tr></thead>
+            <thead><tr><th>Veh.</th><th>Rutas</th><th>Prom.</th><th>Med.</th><th>Máx.</th><th>&gt;20%</th></tr></thead>
             <tbody id="vehicleMatrix"></tbody>
           </table>
         </div>
@@ -167,31 +170,27 @@
     <section id="map"></section>
   </main>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-  <script src="./sicetac_rutas_variacion_dic25_junio_data.js?v=9286b990849c"></script>
+  <script src="./sicetac_rutas_variacion_dic25_junio_data.js?v=31c5859397bd"></script>
   <script>
     const DATA = window.SICETAC_VARIACION_DATA;
     const COLORS = {
       menor_0: "#64748b",
       "0_5": "#22c55e",
       "5_10": "#84cc16",
-      "10_15": "#eab308",
-      "15_20": "#2563eb",
-      "20_25": "#f97316",
-      mas_25: "#dc2626",
+      "10_20": "#2563eb",
+      mas_20: "#dc2626",
       sin_dato: "#cbd5e1"
     };
     const LABELS = {
       menor_0: "< 0%",
       "0_5": "0% a 5%",
       "5_10": "5% a 10%",
-      "10_15": "10% a 15%",
-      "15_20": "15% a 20%",
-      "20_25": "20% a 25%",
-      mas_25: "> 25%",
+      "10_20": "10% a 20%",
+      mas_20: "> 20%",
       sin_dato: "Sin dato"
     };
-    const ORDER = ["menor_0", "0_5", "5_10", "10_15", "15_20", "20_25", "mas_25", "sin_dato"];
-    const DISTRIBUTION_ORDER = ["10_15", "15_20", "20_25", "mas_25"];
+    const ORDER = ["menor_0", "0_5", "5_10", "10_20", "mas_20", "sin_dato"];
+    const DISTRIBUTION_ORDER = ["0_5", "5_10", "10_20", "mas_20"];
     const SELECTED_COLOR = "#0f172a";
     const map = L.map("map", { preferCanvas: true }).setView([4.6, -74.1], 6);
     L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", { maxZoom: 19, attribution: '&copy; OpenStreetMap &copy; CARTO' }).addTo(map);
@@ -282,11 +281,17 @@
     }
     function buildRangeFilters() {
       const counts = countRanges();
-      els.filters.innerHTML = ORDER.map(key => `
+      const total = allFeatures.length || 1;
+      els.filters.innerHTML = ORDER.map(key => {
+        const n = counts[key] || 0;
+        const pct = (n / total) * 100;
+        return `
         <label class="chip">
           <span class="left"><input type="checkbox" value="${key}" checked /><span class="swatch" style="background:${COLORS[key]}"></span><span>${LABELS[key]}</span></span>
-          <span class="count">${(counts[key] || 0).toLocaleString("es-CO")}</span>
-        </label>`).join("");
+          <span class="chip-track"><span class="chip-fill" style="width:${Math.max(1, pct)}%;background:${COLORS[key]}"></span></span>
+          <span class="count">${n.toLocaleString("es-CO")} · ${pct.toLocaleString("es-CO", { maximumFractionDigits: 1 })}%</span>
+        </label>`;
+      }).join("");
       els.filters.querySelectorAll("input").forEach(input => {
         input.addEventListener("change", () => {
           if (input.checked) activeRanges.add(input.value); else activeRanges.delete(input.value);
@@ -309,9 +314,9 @@
         const avg = n ? values.reduce((a, b) => a + b, 0) / n : null;
         const med = n ? (values[Math.floor((n - 1) / 2)] + values[Math.ceil((n - 1) / 2)]) / 2 : null;
         const max = n ? values[n - 1] : null;
-        const over15 = values.filter(v => v >= 15).length;
+        const over20 = values.filter(v => v >= 20).length;
         const avgAbs = absValues.length ? absValues.reduce((a, b) => a + b, 0) / absValues.length : null;
-        return { cfg, n, avg, med, max, over15, avgAbs };
+        return { cfg, n, avg, med, max, over20, avgAbs };
       }).sort((a, b) => (b.avg ?? -999) - (a.avg ?? -999));
     }
     function renderVehicleImpact() {
@@ -331,7 +336,7 @@
         <td>${fmtPctShort(row.avg)}</td>
         <td>${fmtPctShort(row.med)}</td>
         <td>${fmtPctShort(row.max)}</td>
-        <td>${row.over15.toLocaleString("es-CO")}</td>
+        <td>${row.over20.toLocaleString("es-CO")}</td>
       </tr>`).join("");
       els.vehicleBars.querySelectorAll("[data-vehicle]").forEach(row => row.addEventListener("click", () => {
         els.vehicle.value = row.dataset.vehicle;
@@ -359,9 +364,14 @@
     }
     function refreshRangeCounts() {
       const counts = countRanges();
+      const total = allFeatures.length || 1;
       els.filters.querySelectorAll(".chip").forEach(chip => {
         const input = chip.querySelector("input");
-        chip.querySelector(".count").textContent = (counts[input.value] || 0).toLocaleString("es-CO");
+        const n = counts[input.value] || 0;
+        const pct = (n / total) * 100;
+        chip.querySelector(".count").textContent = `${n.toLocaleString("es-CO")} · ${pct.toLocaleString("es-CO", { maximumFractionDigits: 1 })}%`;
+        const fill = chip.querySelector(".chip-fill");
+        if (fill) fill.style.width = `${Math.max(1, pct)}%`;
       });
     }
     function getOriginLabel(feature) {
