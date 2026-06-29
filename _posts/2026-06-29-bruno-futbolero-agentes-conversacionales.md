@@ -6,6 +6,7 @@ date: 2026-06-29 09:50:00 -0500
 author: "Juan Pablo Matiz"
 lab: "ATIEMPPO Lab"
 emoji: "⚽"
+image: /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-ruta-colombia.png
 tags: [agentes, conversaciones, bruno, mundialero, inteligencia-artificial]
 permalink: /laboratorio/bruno-futbolero-agentes-conversacionales/
 ---
@@ -41,6 +42,11 @@ Mundialero y Bruno Futbolero están pensados para operar justamente ahí: en gru
 El agente no debe contestar todo. Debe saber cuándo intervenir, cuándo esperar, cuándo verificar y cuándo quedarse quieto.
 
 Esa diferencia es clave.
+
+<figure>
+  <img src="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-ruta-colombia.png" alt="Captura de WhatsApp donde Bruno explica posibles cruces y ruta de Colombia hacia la final en una dinámica mundialista">
+  <figcaption>La conversación futbolera obliga al agente a entender contexto, tabla, posición del grupo y escenarios posibles sin perder el tono del grupo.</figcaption>
+</figure>
 
 ## Qué hace Mundialero
 
@@ -128,6 +134,11 @@ En el caso futbolero, Bruno puede apoyarse en fuentes deportivas, calendarios, t
 
 Eso permite que la respuesta no dependa de memoria suelta ni de una ocurrencia del modelo.
 
+<figure>
+  <img src="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-estadisticas-anonimizado.png" alt="Captura anonimizada de WhatsApp donde Bruno entrega datos previos de partidos, lectura de probabilidad y registro de quiniela">
+  <figcaption>Otro ejemplo: el agente convierte una pregunta amplia en una respuesta con estadísticas previas, lectura futbolera y registro de una dinámica de quiniela.</figcaption>
+</figure>
+
 Cuando alguien pregunta por un partido, el agente puede buscar el horario correcto.  
 Cuando alguien pide una tabla, puede diferenciar qué tabla necesita.  
 Cuando hay cierre de partido, puede revisar marcador y estadísticas.  
@@ -136,6 +147,11 @@ Cuando alguien quiere bloquear un partido en agenda, puede convertir una convers
 La conversación se vuelve interfaz.
 
 Y esa idea es poderosa para empresas: muchas tareas no empiezan con un formulario perfecto, sino con alguien escribiendo en un chat.
+
+<figure>
+  <img src="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-pronostico-anonimizado.png" alt="Captura anonimizada de WhatsApp donde Bruno responde una pregunta de pronóstico futbolero con porcentajes y marcador probable">
+  <figcaption>La misma lógica sirve para probar intervención, tono y datos vivos: alguien pregunta en lenguaje natural y el agente responde con criterio, fuentes y contexto.</figcaption>
+</figure>
 
 ## Tono: una parte central del producto
 
@@ -278,5 +294,5 @@ Que entiendan el contexto, usen herramientas y ayuden a que las cosas pasen.
   <p class="label">Serie ATIEMPPO Lab</p>
   <h4>Este artículo hace parte de la serie Agentes de IA que trabajan sobre procesos reales.</h4>
   <p class="sub">Empieza por la pieza madre para ver cómo conectamos visión, agentes, datos, contenido y casos aplicados.</p>
-  <a class="btn" href="/ia-aplicada/">Ver la serie completa</a>
+  <a class="btn" href="/ia-aplicada/cuatro-proyectos-atiemppo-lab/">Ver la serie completa</a>
 </div>

@@ -6,11 +6,17 @@ date: 2026-06-29 09:50:00 -0500
 author: "Juan Pablo Matiz"
 lab: "ATIEMPPO Lab"
 emoji: "🧩"
+image: /assets/images/blog/mesa-trabajo-ia/tokens-130-dias-juan-pablo-matiz.png
 tags: [inteligencia-artificial, agentes, atiemppo-lab, bruno, openclaw]
 permalink: /ia-aplicada/cuatro-proyectos-atiemppo-lab/
 ---
 
 # Cuatro proyectos para mostrar cómo estamos construyendo IA aplicada
+
+<figure>
+  <img src="/assets/images/blog/mesa-trabajo-ia/tokens-130-dias-juan-pablo-matiz.png" alt="Panel de actividad de Juan Pablo Matiz con consumo acumulado de tokens, racha de 130 días y complementos usados en su mesa de trabajo con IA">
+  <figcaption>La historia no empezó con una promesa de IA, sino con 130 días de uso continuo, pruebas, errores, aprendizajes y construcción de una mesa real de trabajo.</figcaption>
+</figure>
 
 En los últimos 130 días he consumido más de 7.000 millones de tokens.
 
@@ -82,6 +88,11 @@ Porque muchas organizaciones ya tienen información, documentos, procesos y herr
 
 Bruno y OpenClaw muestran esa posibilidad: IA como infraestructura de trabajo, no solo como ventana de chat.
 
+<figure>
+  <img src="/assets/images/blog/bruno-openclaw/bruno-whatsapp-explica-quien-es.png" alt="Captura de WhatsApp donde Bruno explica su rol como agente principal y orquestador dentro de OpenClaw">
+  <figcaption>Bruno no se presenta como un bot suelto: funciona como orquestador, con memoria operativa, criterio y capacidad de coordinar trabajo entre herramientas y agentes.</figcaption>
+</figure>
+
 [Leer el caso Bruno y OpenClaw](/ia-que-ejecuta-bruno-openclaw/)
 
 ## 2. Novedades en Vías: monitoreo logístico con agentes especializados
@@ -106,6 +117,21 @@ Qué todavía no se puede afirmar.
 
 Este caso muestra algo muy concreto: los agentes de IA pueden ayudar a operaciones logísticas a convertir información dispersa en inteligencia operativa.
 
+<figure>
+  <img src="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia.png" alt="Captura de WhatsApp con un reporte de Bruno sobre novedades en vías para corredores logísticos en Colombia">
+  <figcaption>Novedades en Vías convierte señales dispersas en cortes útiles para operación: qué cambió, qué corredor mirar y qué fuente respalda la lectura.</figcaption>
+</figure>
+
+<div class="edl-cta">
+  <p class="label">Novedades en Vías</p>
+  <h4>Únete al grupo de WhatsApp para recibir alertas y cortes operativos.</h4>
+  <p class="sub">Escanea el QR o entra desde el enlace para seguir las novedades viales que pueden afectar decisiones logísticas.</p>
+  <figure class="qr-figure">
+    <img src="/assets/images/blog/novedades-en-vias/qr-grupo-whatsapp.png" alt="Código QR para unirse al grupo de WhatsApp Novedades en Vías de Atiemppo">
+  </figure>
+  <a class="btn" href="https://chat.whatsapp.com/DC2nQ5FjQ04KmiWdOKU0XH?mode=gi_t">Unirme al grupo</a>
+</div>
+
 [Leer el caso Novedades en Vías](/casos/agentes-ia-monitoreo-logistico-vias/)
 
 ## 3. El Dato Logístico: un sistema editorial vivo
@@ -126,6 +152,11 @@ Un hallazgo puede convertirse en artículo.
 Un artículo puede alimentar un mapa temático.  
 Un mapa puede convertirse en reporte vivo.  
 Un reporte vivo puede actualizarse cuando aparece nueva evidencia.
+
+<figure>
+  <img src="/assets/images/blog/el-dato-logistico/home-radar-logistico-semanal.png" alt="Página de inicio de El Dato Logístico con radar logístico semanal y suscripción">
+  <figcaption>El Dato Logístico funciona como sistema editorial vivo: no solo publica textos, también organiza señales, audiencias, reportes y temas recurrentes.</figcaption>
+</figure>
 
 <figure>
   <img src="/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png" alt="Mapa interactivo de un reporte vivo sobre variación SICETAC de junio con dos horas logísticas">
@@ -164,6 +195,11 @@ Un ejercicio con documentos puede mostrar la necesidad de una base de conocimien
 Una clase sobre reportes puede convertirse en un flujo automatizado.
 
 Aprender IA, bien hecho, también es descubrir oportunidades.
+
+<figure>
+  <img src="/assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia.png" alt="Diagrama de una mesa de trabajo con IA que conecta mensajes, proyectos, memoria y artefactos vivos">
+  <figcaption>Profe Bruno nace de esta práctica: enseñar a construir una mesa de trabajo propia, con fuentes, memoria, agentes y entregables que se puedan revisar.</figcaption>
+</figure>
 
 [Leer el caso Profe Bruno](/formacion/profe-bruno-ia-aplicada/)
 
