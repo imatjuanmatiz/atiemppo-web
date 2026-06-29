@@ -174,6 +174,9 @@ body.page-post {
 }
 .post-body pre code{background:none;border:none;padding:0;font-size:.9rem;color:#e1e4e8}
 .post-body img{max-width:100%;border-radius:var(--r);border:1px solid #dde3ee;margin:1.5rem 0}
+.post-body figure{margin:2rem 0}
+.post-body figure img{margin-bottom:.6rem}
+.post-body figcaption{font-size:.9rem;line-height:1.5;color:#5a7080;text-align:center;margin:0 auto 1.5rem;max-width:640px}
 .post-body hr{border:none;border-top:1px solid #dde3ee;margin:3rem 0}
 .post-body strong{color:#0a1628;font-weight:600}
 
@@ -201,6 +204,7 @@ body.page-post {
 .edl-cta h4{font-family:Georgia,serif;font-size:20px;font-weight:700;color:#0a1628;margin-bottom:10px}
 .edl-cta p.sub{font-size:14px;color:#3a4a5a;margin-bottom:14px}
 .edl-cta a.btn{display:inline-block;background:#008f5d;color:#fff;text-decoration:none;padding:10px 24px;font-family:monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase}
+.edl-cta a.btn + a.btn{margin-left:8px}
 .edl-cta a.btn:hover{background:#006b45}
 
 /* ── POST FOOTER ── */
