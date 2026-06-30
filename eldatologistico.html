@@ -66,24 +66,33 @@ section{padding:5.5rem 1.5rem}
 .panel-list li{padding-bottom:.9rem;border-bottom:1px solid rgba(255,255,255,.08);color:#e5d7bc}
 .panel-list li:last-child{border-bottom:none;padding-bottom:0}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.card{background:rgba(255,255,255,.72);border:1px solid var(--line);border-radius:18px;padding:1.7rem}
+.card{background:rgba(255,255,255,.72);border:1px solid var(--line);border-radius:18px;padding:1.7rem;transition:transform .2s,box-shadow .2s,background .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 20px 50px rgba(71,52,28,.1);background:rgba(255,255,255,.92)}
 .card h3{font-family:var(--display);font-size:1.6rem;letter-spacing:.05em;margin-bottom:.8rem}
 .card p{color:var(--muted)}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}
-.mini-card{background:rgba(255,255,255,.72);border:1px solid var(--line);border-radius:16px;padding:1.3rem}
+.mini-card{background:rgba(255,255,255,.72);border:1px solid var(--line);border-radius:16px;padding:1.3rem;transition:transform .2s,box-shadow .2s}
+.mini-card:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(71,52,28,.1)}
 .mini-card strong{display:block;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-2);margin-bottom:.6rem}
 .mini-card p{font-size:.92rem;color:var(--muted)}
 .open-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}
-.open-card{display:flex;flex-direction:column;justify-content:space-between;gap:1rem;background:#fffdf8;border:1px solid var(--line);border-radius:18px;padding:1.4rem;min-height:240px}
+.open-card{display:flex;flex-direction:column;justify-content:space-between;gap:1rem;background:#fffdf8;border:1px solid var(--line);border-radius:18px;padding:1.4rem;min-height:240px;transition:transform .2s,box-shadow .2s,border-color .2s}
+.open-card:hover{transform:translateY(-3px);box-shadow:0 20px 50px rgba(71,52,28,.1);border-color:var(--accent)}
 .open-card h3{font-family:var(--display);font-size:1.45rem;letter-spacing:.05em}
 .open-card p{color:var(--muted);font-size:.92rem}
-.open-link{font-size:.82rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.open-link{font-size:.82rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);transition:color .15s}
+.open-link:hover{color:var(--accent-2)}
 .story-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}
-.story-card{background:rgba(255,255,255,.72);border:1px solid var(--line);border-radius:18px;padding:1.4rem}
+.story-card{background:rgba(255,255,255,.72);border:1px solid var(--line);border-radius:18px;padding:1.4rem;transition:transform .2s,box-shadow .2s}
+.story-card:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(71,52,28,.1)}
 .story-card strong{display:block;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-2);margin-bottom:.65rem}
 .story-card h3{font-family:var(--display);font-size:1.35rem;letter-spacing:.05em;margin-bottom:.65rem}
 .story-card p{font-size:.92rem;color:var(--muted);margin-bottom:1rem}
 .story-card a{font-size:.82rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.media-frame{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fffefb;box-shadow:0 24px 60px rgba(71,52,28,.1)}
+.media-frame img{width:100%;height:100%;object-fit:cover;display:block;min-height:260px}
+.media-cap{padding:1.1rem 1.4rem;border-top:1px solid var(--line);color:var(--muted);font-size:.86rem;line-height:1.5}
+.media-cap strong{color:var(--ink)}
 .quote-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:1rem}
 .quote-card{background:#1f1b16;color:#f7efdf;border-radius:18px;padding:2rem}
 .quote-card p{font-family:var(--serif);font-size:2rem;line-height:1.06}
@@ -157,11 +166,10 @@ section{padding:5.5rem 1.5rem}
         <h3>UN NEWSLETTER PARA QUIEN DECIDE</h3>
         <p>No queremos solo reenviar noticias. Queremos bajar a tierra lo que importa en costos, rutas, operación, mercado, automatización e IA aplicada para que alguien pueda tomar una mejor decisión esta misma semana.</p>
       </div>
-      <div class="card">
-        <div class="eyebrow">Cómo funciona</div>
-        <h3>DE LINKEDIN A COMUNIDAD</h3>
-        <p>La entrada es `#OjoAlDato`, el desarrollo ocurre en la newsletter y la profundidad terminará viviendo en una comunidad paga con plantillas, casos, grupo de dudas y sesiones para quienes quieran ir más allá.</p>
-      </div>
+      <figure class="media-frame">
+        <img src="/assets/images/blog/el-dato-logistico/home-radar-logistico-semanal.png" alt="Radar logístico semanal de El Dato Logístico"/>
+        <figcaption class="media-cap"><strong>Así se ve el radar.</strong> Una lectura semanal real de la operación logística, no una promesa abstracta.</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -169,10 +177,16 @@ section{padding:5.5rem 1.5rem}
     <div class="container">
       <div class="eyebrow">Qué vas a recibir</div>
       <h2 class="display" style="font-size:clamp(2.6rem,6vw,5.4rem)">SEÑALES, CASOS Y<br/>PUNTOS DE VISTA</h2>
-      <div class="grid-3">
-        <div class="mini-card"><strong>Dato de la semana</strong><p>Insight numérico + contexto + implicación operativa, con formato `#OjoAlDato`.</p></div>
-        <div class="mini-card"><strong>Caso o guía</strong><p>Problema, decisión y resultado transferible; o un paso a paso corto para aplicar rápido.</p></div>
-        <div class="mini-card"><strong>Radar e IA</strong><p>Riesgos del mercado, herramientas útiles y automatizaciones que sí valen la pena probar.</p></div>
+      <div class="split" style="margin-top:2rem;align-items:stretch">
+        <div class="grid-3" style="grid-template-columns:1fr;margin-top:0">
+          <div class="mini-card"><strong>Dato de la semana</strong><p>Insight numérico + contexto + implicación operativa, con formato `#OjoAlDato`.</p></div>
+          <div class="mini-card"><strong>Caso o guía</strong><p>Problema, decisión y resultado transferible; o un paso a paso corto para aplicar rápido.</p></div>
+          <div class="mini-card"><strong>Radar e IA</strong><p>Riesgos del mercado, herramientas útiles y automatizaciones que sí valen la pena probar.</p></div>
+        </div>
+        <figure class="media-frame">
+          <img src="/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png" alt="Reporte de variación SICETAC con interpretación logística"/>
+          <figcaption class="media-cap"><strong>Reportes vivos.</strong> Variaciones SICETAC con lectura operativa, listas para compartir con tu equipo.</figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -254,11 +268,10 @@ section{padding:5.5rem 1.5rem}
         <p>“Cada edición debe dejar una decisión concreta para operar mejor esta semana.”</p>
         <span>ATIEMPPO Editorial</span>
       </div>
-      <div class="card">
-        <div class="eyebrow">Tono editorial</div>
-        <h3>SIN HUMO. SIN RELLENO.</h3>
-        <p>El tono es directo, basado en datos reales y sin postureo. No queremos parecer un medio genérico, sino una voz útil para personas que ya están metidas en la operación y no tienen tiempo para descifrarlo todo solas.</p>
-      </div>
+      <figure class="media-frame">
+        <img src="/assets/images/blog/bruno-openclaw/bruno-whatsapp-explica-quien-es.png" alt="Bruno, el agente de ATIEMPPO, explicando quién es por WhatsApp"/>
+        <figcaption class="media-cap"><strong>El tono se nota hasta en el agente.</strong> Bruno, nuestro agente de IA, habla directo y sin postureo — igual que el newsletter.</figcaption>
+      </figure>
     </div>
   </section>
 

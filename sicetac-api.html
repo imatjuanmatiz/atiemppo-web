@@ -46,6 +46,8 @@ a{text-decoration:none;color:inherit}
 .btn{display:inline-flex;align-items:center;justify-content:center;padding:.92rem 1.28rem;border-radius:999px;border:1px solid var(--line);font-weight:700;font-size:.9rem}
 .btn-primary{background:var(--accent2);border-color:var(--accent2);color:#fff}
 .btn-secondary{background:rgba(255,255,255,.68)}
+.btn{transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(0,143,93,.16)}
 .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin-top:2rem}
 .stat{background:var(--surface2);border:1px solid var(--line);border-radius:18px;padding:1rem}
 .stat strong{display:block;font-family:var(--display);font-size:1.5rem;letter-spacing:.04em;color:var(--accent);margin-bottom:.3rem}
@@ -61,7 +63,8 @@ a{text-decoration:none;color:inherit}
 .section-card h2{font-family:var(--display);font-size:2.1rem;letter-spacing:.05em;margin-bottom:1rem}
 .section-card p{color:var(--muted);margin-bottom:1rem}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-.mini{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:1.3rem}
+.mini{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:1.3rem;transition:transform .2s,box-shadow .2s,border-color .2s}
+.mini:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(15,26,43,.1);border-color:rgba(15,26,43,.2)}
 .mini strong{display:block;font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent2);margin-bottom:.55rem}
 .mini p{font-size:.93rem;color:var(--muted)}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:1rem}

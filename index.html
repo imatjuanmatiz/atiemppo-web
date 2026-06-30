@@ -188,7 +188,9 @@ button,input,textarea{font:inherit}
   border:1px solid var(--line);
   border-radius:var(--radius);
   background:#fff;
+  transition:transform .2s,box-shadow .2s,border-color .2s;
 }
+.flow-step:hover{transform:translateY(-3px);box-shadow:0 20px 50px rgba(18,63,140,.08);border-color:var(--line-strong)}
 .flow-step::after{
   content:"";
   position:absolute;right:-14px;top:50%;width:14px;height:1px;background:var(--line-strong);
@@ -211,22 +213,30 @@ button,input,textarea{font:inherit}
 .cap-item{
   display:grid;grid-template-columns:44px 1fr;gap:16px;
   align-items:start;padding:18px 0;border-bottom:1px solid var(--line);
+  transition:padding-left .18s;
 }
 .cap-item:last-child{border-bottom:0}
+.cap-item:hover{padding-left:6px}
 .cap-icon{
   width:44px;height:44px;border-radius:7px;background:var(--green-2);
   border:1px solid rgba(7,151,99,.18);
   display:flex;align-items:center;justify-content:center;color:var(--green);font-weight:900;
+  transition:background .18s,color .18s;
 }
+.cap-item:hover .cap-icon{background:var(--green);color:#fff}
 .cap-item h3{margin:0 0 5px;font-size:18px}
 .cap-item p{margin:0;color:var(--muted);font-size:15px}
 
 .needs{background:linear-gradient(135deg,#f5f9fd 0%,#ffffff 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.needs-shell{display:grid;grid-template-columns:.92fr 1.08fr;gap:18px;align-items:start}
+.needs-shell{display:grid;grid-template-columns:.85fr 1fr .75fr;gap:18px;align-items:start}
 .needs-card{
   background:#fff;border:1px solid var(--line);border-radius:var(--radius);
   padding:34px;box-shadow:0 24px 70px rgba(18,63,140,.06)
 }
+.needs-media{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.needs-media img{width:100%;height:220px;object-fit:cover;display:block}
+.needs-media-cap{padding:18px 26px 22px;color:var(--muted);font-size:13px;line-height:1.5;border-top:1px solid var(--line)}
+.needs-media-cap strong{color:var(--ink-2)}
 .needs-copy{margin:0;color:var(--muted);font-size:17px;line-height:1.75}
 .needs-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 .needs-list{list-style:none;margin:0;padding:0;display:grid;gap:0}
@@ -262,10 +272,13 @@ button,input,textarea{font:inherit}
 .product-row{display:flex;justify-content:space-between;gap:18px;padding:18px;border-bottom:1px solid rgba(255,255,255,.1)}
 .product-row:last-child{border-bottom:0}
 .product-copy{display:flex;align-items:flex-start;gap:13px}
-.product-icon{width:44px;height:44px;border-radius:10px;object-fit:contain;flex-shrink:0;background:#fff;border:1px solid rgba(255,255,255,.22);padding:5px}
+.product-icon{width:44px;height:44px;border-radius:10px;object-fit:cover;object-position:top;flex-shrink:0;background:#fff;border:1px solid rgba(255,255,255,.22)}
 .product-row strong{display:block;margin-bottom:5px;color:#fff}
 .product-row span{color:#a9bbcc;font-size:14px}
-.product-row a{color:#7de1b6;font-weight:700;white-space:nowrap}
+.product-row a{color:#7de1b6;font-weight:700;white-space:nowrap;transition:color .15s,transform .15s;display:inline-block}
+.product-row{transition:background .18s}
+.product-row:hover{background:rgba(255,255,255,.035)}
+.product-row a:hover{color:#9bf0cb;transform:translateX(2px)}
 
 .contact{background:linear-gradient(135deg,var(--blue-2),#07172f);color:#fff}
 .contact .section-copy{color:#c5d5e6}
@@ -284,19 +297,21 @@ button,input,textarea{font:inherit}
 .form-note{margin:13px 0 0;color:var(--muted);font-size:13px}
 
 .client-strip{
-  padding:46px 48px;
-  background:#fff;
+  padding:56px 48px;
+  background:var(--soft);
   border-top:1px solid var(--line);
 }
-.client-strip .container{display:grid;gap:18px}
-.client-strip h2{margin:0;font-size:18px;color:var(--ink);letter-spacing:-.01em}
-.logo-wall{display:flex;flex-wrap:wrap;gap:10px}
+.client-strip .container{display:grid;gap:24px}
+.client-strip h2{margin:0;font-size:13px;font-weight:820;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.logo-wall{display:flex;flex-wrap:wrap;gap:12px}
 .logo-chip{
   display:inline-flex;align-items:center;justify-content:center;
-  min-height:42px;padding:0 16px;border-radius:6px;
+  min-height:46px;padding:0 20px;border-radius:6px;
   background:#fff;border:1px solid var(--line);
-  color:#496178;font-size:13px;font-weight:760;letter-spacing:.02em;
+  color:var(--ink-2);font-family:var(--display);font-size:14px;font-weight:600;letter-spacing:.01em;
+  transition:border-color .18s,color .18s,transform .18s,box-shadow .18s;
 }
+.logo-chip:hover{border-color:var(--green);color:var(--green);transform:translateY(-2px);box-shadow:0 10px 24px rgba(7,151,99,.12)}
 
 .wa-float{
   position:fixed;right:24px;bottom:24px;z-index:120;
@@ -473,6 +488,10 @@ footer{padding:52px 48px;background:#061225;color:#c1cede}
           <li><span class="needs-num">07</span><span>Si necesitas un <strong>espacio con expertos para entender tu problema</strong> y direccionar a tu equipo con modelos ágiles, pregunta por <strong>terapia logística</strong>.</span></li>
         </ul>
       </div>
+      <figure class="needs-card needs-media">
+        <img src="assets/images/blog/mesa-trabajo-ia/tokens-130-dias-juan-pablo-matiz.png" alt="Mesa de trabajo con IA: seguimiento real de uso de agentes en ATIEMPPO"/>
+        <figcaption class="needs-media-cap"><strong>Así trabajamos.</strong> Seguimiento real de uso de IA y agentes en proyectos de ATIEMPPO, no una promesa abstracta.</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -494,12 +513,12 @@ footer{padding:52px 48px;background:#061225;color:#c1cede}
           </div>
         </article>
         <div class="product-list">
-          <div class="product-row"><div class="product-copy"><img class="product-icon" src="assets/images/icons/openclaw.svg" alt="OpenClaw"/><div><strong>Bruno / OpenClaw</strong><span>Nuestra agente que hace cosas: permite conversaciones reales con datos y clientes, crea procesos y acompaña nuestros proyectos.</span></div></div><a href="#capacidades">Ver</a></div>
+          <div class="product-row"><div class="product-copy"><img class="product-icon" src="assets/images/blog/bruno-openclaw/bruno-whatsapp-explica-quien-es.png" alt="Bruno explicando quién es por WhatsApp"/><div><strong>Bruno / OpenClaw</strong><span>Nuestra agente que hace cosas: permite conversaciones reales con datos y clientes, crea procesos y acompaña nuestros proyectos.</span></div></div><a href="#capacidades">Ver</a></div>
           <div class="product-row"><div><strong>SICETAC al Instante</strong><span>Consulta rápida por WhatsApp y web.</span></div><a href="https://wa.me/573134503694?text=Hola%2C%20quiero%20consultar%20SICETAC%20al%20Instante%20por%20WhatsApp.%20Escribe%20asi%3A%20origen%20a%20destino" target="_blank" rel="noopener">Abrir</a></div>
-          <div class="product-row"><div><strong>Reportes de ATIEMPPO</strong><span>Accede a los reportes de Datos sin Carreta, con los principales análisis que hacemos de logística en LATAM.</span></div><a href="/reportes/">Ver</a></div>
+          <div class="product-row"><div class="product-copy"><img class="product-icon" src="assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png" alt="Reportes de ATIEMPPO"/><div><strong>Reportes de ATIEMPPO</strong><span>Accede a los reportes de Datos sin Carreta, con los principales análisis que hacemos de logística en LATAM.</span></div></div><a href="/reportes/">Ver</a></div>
           <div class="product-row"><div><strong>Base completa SICETAC</strong><span>Acceso a rutas, configuraciones y referencias para análisis.</span></div><a href="/base-completa-sicetac/">Ver</a></div>
-          <div class="product-row"><div><strong>El Dato Logístico</strong><span>Contenido, comunidad y lectura del mercado.</span></div><a href="https://www.eldatologistico.com" target="_blank" rel="noopener">Ver</a></div>
-          <div class="product-row"><div><strong>La Comunidad</strong><span>Comunidad de novedades en vías: Bruno, nuestro agente, reporta todos los días su seguimiento.</span></div><a href="https://chat.whatsapp.com/DC2nQ5FjQ04KmiWdOKU0XH?mode=gi_t" target="_blank" rel="noopener">Unirse</a></div>
+          <div class="product-row"><div class="product-copy"><img class="product-icon" src="assets/images/eldatologistico/logo-el-dato-logistico.png" alt="El Dato Logístico"/><div><strong>El Dato Logístico</strong><span>Contenido, comunidad y lectura del mercado.</span></div></div><a href="https://www.eldatologistico.com" target="_blank" rel="noopener">Ver</a></div>
+          <div class="product-row"><div class="product-copy"><img class="product-icon" src="assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia.png" alt="La Comunidad"/><div><strong>La Comunidad</strong><span>Comunidad de novedades en vías: Bruno, nuestro agente, reporta todos los días su seguimiento.</span></div></div><a href="https://chat.whatsapp.com/DC2nQ5FjQ04KmiWdOKU0XH?mode=gi_t" target="_blank" rel="noopener">Unirse</a></div>
           <div class="product-row"><div><strong>Insignia Impact</strong><span>Proyecto sobre responsabilidad social en logística y supply chain.</span></div><a href="/insignia-impact/">Ver</a></div>
         </div>
       </div>

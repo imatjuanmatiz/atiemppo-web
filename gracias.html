@@ -28,6 +28,13 @@ p{font-size:1rem;color:var(--muted);margin-bottom:1rem}
 .btn-secondary{background:#fff;color:var(--white);border:1px solid var(--border)}
 .btn:hover{transform:translateY(-2px);box-shadow:0 16px 32px rgba(0,85,204,.10)}
 .mini{margin-top:1.25rem;font-size:.82rem;color:rgba(10,22,40,.52)}
+.check{
+  width:56px;height:56px;border-radius:50%;margin-bottom:1.1rem;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,var(--teal) 0%,var(--blue) 100%);
+  box-shadow:0 14px 30px rgba(0,85,204,.2);
+}
+.check svg{width:26px;height:26px}
 @media(max-width:640px){
   .card{padding:2rem}
   .actions{flex-direction:column}
@@ -39,6 +46,7 @@ p{font-size:1rem;color:var(--muted);margin-bottom:1rem}
 </head>
 <body>
   <main class="card">
+    <div class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6"/></svg></div>
     <div class="eyebrow">Mensaje recibido</div>
     <h1>GRACIAS POR<br/>ESCRIBIRNOS</h1>
     <p>Tu mensaje ya fue enviado. Si el formulario quedó bien activado, ATIEMPPO lo recibirá en el correo y podrá responderte directamente.</p>

@@ -194,7 +194,7 @@ button{font:inherit}
 
 .hero{
   background:linear-gradient(180deg,var(--nav) 0%,var(--nav-strong) 100%);
-  color:#fff;padding:74px 0 54px;position:relative;overflow:hidden;
+  color:#fff;padding:74px 0 0;position:relative;overflow:hidden;
 }
 .hero::before,
 .hero::after{
@@ -208,7 +208,22 @@ button{font:inherit}
   width:420px;height:420px;right:-120px;top:-180px;
   background:radial-gradient(circle,rgba(108,180,232,.16) 0%,transparent 68%);
 }
-.hero-inner{position:relative;z-index:1;max-width:850px}
+.hero .container{
+  display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end;
+  position:relative;z-index:1;padding-bottom:0;
+}
+.hero-inner{position:relative;z-index:1;max-width:560px}
+.hero-media{
+  position:relative;align-self:end;
+  border-radius:16px 16px 0 0;overflow:hidden;
+  border:1px solid rgba(255,255,255,.14);border-bottom:0;
+  box-shadow:0 -24px 60px rgba(0,0,0,.24);
+}
+.hero-media img{width:100%;height:280px;object-fit:cover;display:block;filter:saturate(1.05)}
+.hero-media::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(22,49,77,0) 50%,rgba(22,49,77,.5) 100%);
+}
 .hero .eyebrow{color:rgba(255,255,255,.62);margin-bottom:18px}
 .hero h1{
   font-family:'DM Serif Display',Georgia,serif;
@@ -337,7 +352,9 @@ button{font:inherit}
 }
 .why-card{
   padding:18px;border-radius:14px;background:#fff;border:1px solid var(--line);
+  transition:transform .2s,box-shadow .2s,border-color .2s;
 }
+.why-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--line-strong)}
 .why-card h3{font-size:15px;margin-bottom:8px}
 .why-card p{font-size:13px;color:var(--muted)}
 
@@ -374,8 +391,13 @@ button{font:inherit}
   .portfolio-head,.cta-box,.why-panel,.detail-bottom{grid-template-columns:1fr}
   .cta-actions{justify-content:flex-start}
 }
+@media(max-width:900px){
+  .hero .container{grid-template-columns:1fr}
+  .hero-media{margin-top:24px;border-radius:16px;border-bottom:1px solid rgba(255,255,255,.14)}
+}
 @media(max-width:680px){
   .hero{padding-top:52px}
+  .hero-media img{height:200px}
   .services-grid,.capabilities-grid{grid-template-columns:1fr}
   .detail-top,.detail-body,.why-panel{padding:22px}
   .detail-top-row{align-items:flex-start;flex-direction:column}
@@ -409,6 +431,9 @@ button{font:inherit}
         <a class="btn btn-secondary" href="#lineas">Explorar lineas</a>
       </div>
     </div>
+    <figure class="hero-media">
+      <img src="/assets/images/generated/atiemppo-capa-agentica-bruno.png" alt="Bruno, agente de IA de ATIEMPPO, como capa de trabajo en proyectos de servicios"/>
+    </figure>
   </div>
 </section>
 
