@@ -130,6 +130,13 @@ Este caso muestra algo dificil de explicar en abstracto: agentes que entienden c
 Caso recomendado:
 [Leer el caso Bruno Futbolero](/laboratorio/bruno-futbolero-agentes-conversacionales/)
 
+### X MCP y agentes conectados a fuentes vivas
+
+Este caso muestra una oportunidad nueva: agentes capaces de conectarse a fuentes vivas como la conversacion publica de X y su documentacion oficial para monitorear senales, tendencias, noticias y temas con evidencia.
+
+Caso recomendado:
+[Leer el caso X MCP y agentes conectados a fuentes vivas](/laboratorio/x-mcp-agentes-fuentes-vivas/)
+
 Tambien hay otros caminos posibles, como bases de conocimiento logistico o consultas rapidas sobre informacion tecnica. Lo importante es que todos apuntan a una misma direccion: convertir informacion, herramientas y criterio en sistemas que trabajan.
 
 ## Una mesa interactiva de trabajo

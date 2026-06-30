@@ -244,6 +244,7 @@ Cómo se conversa con bases de datos.
 Cómo se automatizan reportes vivos.  
 Cómo se construyen memorias persistentes.  
 Cómo se conectan agentes con correo, WhatsApp, documentos y datos.  
+Cómo se conectan agentes con fuentes vivas como conversaciones públicas, tendencias, documentación oficial y APIs.  
 Cómo se revisa la calidad de lo que produce una IA.  
 Cómo se forman equipos para que no dependan de una sola persona.  
 Cómo se convierte una idea en un flujo verificable.
@@ -253,6 +254,10 @@ Esa es la exploración que queremos compartir.
 Y también es la oferta que queremos construir desde Atiemppo:
 
 ayudar a empresas, equipos y personas a pasar de probar IA a construir capacidades reales.
+
+El siguiente artículo de la serie profundiza en una de esas oportunidades: agentes conectados a fuentes vivas mediante MCP, capaces de monitorear conversación pública, señales y documentación oficial con trazabilidad.
+
+[Leer el artículo sobre X MCP y agentes conectados a fuentes vivas](/laboratorio/x-mcp-agentes-fuentes-vivas/)
 
 ## Una invitación
 
