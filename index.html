@@ -19,75 +19,70 @@ render_with_liquid: false
 <meta property="og:url" content="https://atiemppo.com"/>
 <meta property="og:locale" content="es_CO"/>
 <meta property="og:image" content="https://atiemppo.com/assets/images/generated/atiemppo-industria-tiempo-hero.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@atiemppo"/>
+<link rel="canonical" href="https://atiemppo.com/"/>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": ["Organization","ProfessionalService"],
       "@id": "https://atiemppo.com/#organization",
       "name": "ATIEMPPO S.A.S.",
-      "description": "Empresa colombiana que conecta negocio, datos e IA para ayudar a personas y empresas a recuperar tiempo operativo.",
+      "description": "Empresa colombiana que conecta negocio, datos e IA para ayudar a personas y empresas a recuperar tiempo operativo, con foco en logística y supply chain en Colombia y América Latina.",
       "url": "https://atiemppo.com",
       "foundingDate": "2013",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bogotá",
-        "addressCountry": "CO"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+57-310-768-7010",
-        "email": "juanmatiz@atiemppo.co"
-      },
-      "founder": {
-        "@id": "https://atiemppo.com/#juan-pablo-matiz"
-      },
-      "areaServed": ["Colombia", "América Latina"]
+      "logo": "https://atiemppo.com/assets/images/logo-atiemppo.png",
+      "address": { "@type": "PostalAddress", "streetAddress": "Calle 146 #7-64 of. 401", "addressLocality": "Bogotá", "addressCountry": "CO" },
+      "contactPoint": { "@type": "ContactPoint", "telephone": "+57-310-768-7010", "email": "juanmatiz@atiemppo.co", "contactType": "sales", "areaServed": "CO", "availableLanguage": "es" },
+      "founder": { "@id": "https://atiemppo.com/#juan-pablo-matiz" },
+      "areaServed": ["Colombia", "América Latina"],
+      "sameAs": ["https://www.eldatologistico.com", "https://linkedin.com/in/juanmatizg", "https://github.com/imatjuanmatiz"],
+      "knowsAbout": ["Logística", "Supply chain", "SICETAC", "Costos de transporte en Colombia", "Inteligencia artificial aplicada", "Agentes de IA", "Análisis de datos", "Automatización de procesos"]
     },
     {
       "@type": "Person",
       "@id": "https://atiemppo.com/#juan-pablo-matiz",
       "name": "Juan Pablo Matiz",
       "jobTitle": "Fundador",
-      "worksFor": {
-        "@id": "https://atiemppo.com/#organization"
-      }
+      "worksFor": { "@id": "https://atiemppo.com/#organization" }
     },
     {
       "@type": "Service",
       "@id": "https://atiemppo.com/#service-industria-tiempo",
       "name": "Negocio, datos e IA para recuperar tiempo operativo",
-      "provider": {
-        "@id": "https://atiemppo.com/#organization"
-      },
+      "provider": { "@id": "https://atiemppo.com/#organization" },
       "areaServed": ["Colombia", "América Latina"],
-      "serviceType": "Datos, agentes de IA, automatización y acompañamiento operativo"
+      "serviceType": "Datos, agentes de IA, automatización y acompañamiento operativo",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Productos y proyectos vivos",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bruno / OpenClaw — agente de IA que conversa con datos y ejecuta procesos" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SICETAC al Instante — consulta de fletes por WhatsApp y web" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Datos sin Carreta — reportes de logística LATAM" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Base completa SICETAC" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Insignia Impact — responsabilidad social en logística y supply chain" } }
+        ]
+      }
     }
   ]
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
 <style>
 :root{
-  --bg:#ffffff;
-  --ink:#07172f;
-  --ink-2:#12345a;
-  --muted:#5b6f85;
-  --line:#d9e3ee;
-  --line-strong:#b8c9da;
-  --soft:#f4f8fc;
-  --soft-2:#eaf3fb;
-  --blue:#123f8c;
-  --blue-2:#0b2f72;
-  --green:#079763;
-  --green-2:#e7f7f0;
-  --gold:#b7791f;
-  --radius:8px;
-  --font:'Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-  --display:'Outfit',system-ui,sans-serif;
+  --bg:#F4F6F2; --ink:#0B1220; --navy:#0E2C4D; --navy-d:#0a2138;
+  --green:#00B86B; --green-d:#00925a; --green-l:#7bf3bf; --sky:#7fd0ff;
+  --muted:#3a4456; --muted-2:#566071; --muted-3:#6a7384;
+  --line:rgba(11,18,32,.08); --line-2:rgba(11,18,32,.16);
+  --display:'Space Grotesk',system-ui,sans-serif;
+  --font:'IBM Plex Sans',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --maxw:1200px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;background:var(--bg)}
@@ -96,457 +91,447 @@ body.nav-open{overflow:hidden}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 button,input,textarea{font:inherit}
-::selection{background:var(--green);color:#fff}
+::selection{background:var(--green);color:#062a1c}
+section[id]{scroll-margin-top:86px}
 
-.site-nav{
-  position:fixed;inset:0 0 auto;z-index:100;
-  display:flex;align-items:center;justify-content:space-between;
-  height:76px;padding:0 48px;
-  background:rgba(255,255,255,.88);
-  border-bottom:1px solid rgba(18,63,140,.12);
-  backdrop-filter:blur(18px);
+@keyframes pulseDot{0%,100%{opacity:.25}50%{opacity:1}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes drift{0%{transform:translate(0,0)}50%{transform:translate(12px,-16px)}100%{transform:translate(0,0)}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes sweep{0%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
+@keyframes revealIn{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@supports (animation-timeline:view()){
+  @media (prefers-reduced-motion:no-preference){
+    [data-reveal]{animation:revealIn .8s cubic-bezier(.16,.84,.44,1) both;animation-timeline:view();animation-range:entry 0% cover 32%}
+  }
 }
-.nav-logo{display:flex;align-items:center;gap:12px}
-.nav-logo img{height:42px;width:auto}
+
+/* NAV */
+.site-nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px;padding:0 28px;max-width:var(--maxw);margin:0 auto;background:transparent}
+.nav-wrap{position:sticky;top:0;z-index:100;background:rgba(244,246,242,.82);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--line)}
+.nav-logo img{height:30px;width:auto}
 .nav-links{display:flex;align-items:center;gap:28px}
-.nav-links a{font-size:14px;font-weight:650;color:var(--ink-2)}
-.nav-links a:hover{color:var(--green)}
-.nav-cta{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:7px;background:var(--green);color:#fff!important;font-weight:750;box-shadow:0 10px 24px rgba(7,151,99,.16)}
-.nav-burger{display:none;width:44px;height:44px;border:0;background:transparent;align-items:center;justify-content:center;gap:5px;flex-direction:column;cursor:pointer}
-.nav-burger span{width:24px;height:2px;background:var(--blue-2);border-radius:999px;transition:.2s}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--muted)}
+.nav-links a:hover{color:var(--navy)}
+.nav-cta{display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:#fff!important;padding:11px 18px;border-radius:10px;font-size:14px;font-weight:600;transition:background .2s,transform .2s}
+.nav-cta:hover{background:var(--green);color:#062a1c!important;transform:translateY(-1px)}
+.nav-cta .dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulseDot 1.8s infinite}
+.nav-cta:hover .dot{background:#062a1c}
+.nav-burger{display:none;width:44px;height:44px;border:0;background:transparent;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer}
+.nav-burger span{width:24px;height:2px;background:var(--navy);border-radius:9px;transition:.2s}
 .nav-burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .nav-burger.open span:nth-child(2){opacity:0}
 .nav-burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 .mobile-nav{display:none}
 
-.hero{
-  min-height:100svh;
-  position:relative;
-  padding:128px 48px 48px;
-  display:flex;align-items:center;
-  overflow:hidden;
-  border-bottom:1px solid var(--line);
-}
-.hero::before{
-  content:"";
-  position:absolute;inset:0;
-  background:
-    linear-gradient(90deg,rgba(255,255,255,.98) 0%,rgba(255,255,255,.92) 36%,rgba(255,255,255,.62) 63%,rgba(255,255,255,.24) 100%),
-    linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.96) 94%);
-  z-index:1;
-}
-.hero-media{position:absolute;inset:76px 0 0 0;z-index:0}
-.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center}
-.hero-inner{position:relative;z-index:2;width:min(1180px,100%);margin:0 auto}
-.hero-content{max-width:760px}
-.hero h1{
-  margin:0 0 26px;
-  font-family:var(--display);
-  font-size:clamp(48px,7.6vw,108px);
-  line-height:.92;
-  letter-spacing:-.055em;
-  color:var(--ink);
-}
-.hero h1 span{color:var(--green)}
-.hero-sub{
-  max-width:650px;
-  margin:0 0 32px;
-  font-size:clamp(18px,1.65vw,24px);
-  line-height:1.45;
-  color:#38536d;
-  font-weight:500;
-}
-.hero-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:42px}
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:9px;
-  min-height:50px;padding:0 22px;border-radius:7px;
-  font-size:15px;font-weight:760;border:1px solid transparent;
-  transition:transform .18s,box-shadow .18s,border-color .18s,background .18s;
-}
-.btn:hover{transform:translateY(-2px)}
-.btn-primary{background:var(--green);color:#fff;box-shadow:0 18px 38px rgba(7,151,99,.2)}
-.btn-secondary{background:rgba(255,255,255,.78);border-color:var(--line-strong);color:var(--ink)}
-.section{padding:96px 48px}
-.container{width:min(1180px,100%);margin:0 auto}
-.section-head{max-width:760px;margin-bottom:42px}
-.section-title{
-  margin:0 0 16px;
-  font-family:var(--display);
-  font-size:clamp(36px,5vw,68px);
-  line-height:1;
-  letter-spacing:-.045em;
-}
-.section-copy{margin:0;color:var(--muted);font-size:18px;line-height:1.7}
-.section-kicker{margin:0 0 14px;color:var(--green);font-size:13px;font-weight:820;letter-spacing:.14em;text-transform:uppercase}
+/* LAYOUT */
+.container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 28px}
+.section{padding:90px 0}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:var(--green-d);margin:0 0 14px}
+.kicker.on-dark{color:var(--green-l)}
+.h2{font-family:var(--display);font-weight:700;font-size:clamp(28px,3.6vw,44px);line-height:1.08;letter-spacing:-1.4px;margin:0}
+.lead{color:var(--muted);font-size:17px;line-height:1.62;margin:0}
+.btn{display:inline-flex;align-items:center;gap:9px;border-radius:12px;font-size:15px;font-weight:700;padding:14px 22px;border:1px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.btn-primary{background:var(--green);color:#062a1c;box-shadow:0 12px 30px -12px rgba(0,184,107,.6)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 18px 38px -12px rgba(0,184,107,.7)}
+.btn-ghost{background:transparent;color:var(--navy);border-color:var(--line-2)}
+.btn-ghost:hover{background:rgba(14,44,77,.05)}
+.btn-dark{background:var(--navy);color:#fff}
+.btn-dark:hover{background:var(--green);color:#062a1c}
 
-.time-system{background:var(--soft)}
-.flow-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
-.flow-step{
-  position:relative;
-  min-height:220px;
-  padding:28px 24px;
-  border:1px solid var(--line);
-  border-radius:var(--radius);
-  background:#fff;
-  transition:transform .2s,box-shadow .2s,border-color .2s;
-}
-.flow-step:hover{transform:translateY(-3px);box-shadow:0 20px 50px rgba(18,63,140,.08);border-color:var(--line-strong)}
-.flow-step::after{
-  content:"";
-  position:absolute;right:-14px;top:50%;width:14px;height:1px;background:var(--line-strong);
-}
-.flow-step:last-child::after{display:none}
-.flow-num{font-family:var(--display);font-size:44px;line-height:1;color:rgba(7,151,99,.22);font-weight:800;margin-bottom:28px}
-.flow-step h3{margin:0 0 12px;font-size:20px;line-height:1.18;color:var(--ink)}
-.flow-step p{margin:0;color:var(--muted);font-size:15px}
+/* HERO */
+.hero{position:relative;max-width:var(--maxw);margin:0 auto;padding:72px 28px 64px;overflow:hidden}
+.hero-grid-bg{position:absolute;inset:0;pointer-events:none;opacity:.5;background-image:radial-gradient(circle at 1px 1px,rgba(14,44,77,.16) 1px,transparent 0);background-size:30px 30px;-webkit-mask-image:radial-gradient(ellipse 70% 60% at 75% 35%,#000 0%,transparent 75%);mask-image:radial-gradient(ellipse 70% 60% at 75% 35%,#000 0%,transparent 75%)}
+.hero-inner{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:9px;padding:7px 13px;border:1px solid var(--line-2);border-radius:100px;background:rgba(255,255,255,.6);font-family:var(--mono);font-size:11.5px;letter-spacing:.5px;text-transform:uppercase;color:var(--navy)}
+.badge .dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulseDot 1.8s infinite}
+.hero h1{font-family:var(--display);font-weight:700;font-size:clamp(40px,5.4vw,68px);line-height:1.02;letter-spacing:-2px;margin:22px 0 0}
+.hero h1 .ul{position:relative;white-space:nowrap}
+.hero h1 .ul::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:11px;background:var(--green);opacity:.35;z-index:-1;border-radius:3px}
+.hero-sub{max-width:520px;margin:24px 0 0;font-size:18px;line-height:1.6;color:var(--muted)}
+.hero-sub strong{color:var(--navy)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.stats{display:flex;gap:30px;margin-top:44px;flex-wrap:wrap}
+.stat .n{font-family:var(--display);font-weight:700;font-size:30px;color:var(--navy);letter-spacing:-1px}
+.stat .l{font-family:var(--mono);font-size:11.5px;color:var(--muted-3);text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
+.stat-div{width:1px;background:var(--line-2)}
+.hero-visual{position:relative;height:440px}
+.hero-panel{position:absolute;inset:0;background:linear-gradient(160deg,var(--navy),var(--navy-d));border-radius:24px;overflow:hidden;box-shadow:0 40px 80px -30px rgba(14,44,77,.55)}
+.hero-panel .dots{position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,.07) 1px,transparent 0);background-size:24px 24px}
+.sweep{position:absolute;left:-40%;width:60%;height:2px}
+.sweep.a{top:30%;background:linear-gradient(90deg,transparent,var(--green),transparent);animation:sweep 4s ease-in-out infinite}
+.sweep.b{top:62%;background:linear-gradient(90deg,transparent,#3a86ff,transparent);animation:sweep 5.2s ease-in-out infinite .8s}
+.chip{position:absolute;width:188px;backdrop-filter:blur(4px);border-radius:13px;padding:14px 16px}
+.chip.biz{top:46px;left:34px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);animation:floaty 5s ease-in-out infinite}
+.chip.tech{bottom:46px;right:34px;background:rgba(0,184,107,.12);border:1px solid rgba(0,184,107,.4);animation:floaty 6s ease-in-out infinite 1s}
+.chip .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.6px;text-transform:uppercase;margin-bottom:7px}
+.chip.biz .tag{color:var(--sky)}
+.chip.tech .tag{color:var(--green-l);text-align:right}
+.chip .t1{color:#fff;font-weight:600;font-size:14px;margin-bottom:5px}
+.chip.tech .t1{font-family:var(--mono);font-size:12px;margin-bottom:6px}
+.chip .t2{font-size:12px;line-height:1.45}
+.chip.biz .t2{color:#9fb0c4}
+.chip.tech .t2{color:#9fe7c6}
+.node{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:120px;height:120px;border-radius:50%;border:1px dashed rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center}
+.node .core{width:74px;height:74px;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--green),#06915a);display:flex;align-items:center;justify-content:center;box-shadow:0 0 50px -6px rgba(0,184,107,.7);animation:drift 7s ease-in-out infinite;font-family:var(--display);font-weight:700;color:#04241a;font-size:24px}
+.float-badge{position:absolute;bottom:-18px;left:-18px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px 16px;box-shadow:0 18px 40px -16px rgba(11,18,32,.25);display:flex;align-items:center;gap:11px}
+.float-badge .dot{width:9px;height:9px;border-radius:50%;background:var(--green);animation:pulseDot 1.6s infinite}
+.float-badge .b1{font-size:12.5px;font-weight:700;color:var(--ink)}
+.float-badge .b2{font-family:var(--mono);font-size:10.5px;color:var(--muted-3)}
 
-.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:58px;align-items:center}
-.image-frame{
-  border:1px solid var(--line);
-  border-radius:var(--radius);
-  overflow:hidden;
-  background:#fff;
-  box-shadow:0 24px 80px rgba(18,63,140,.08);
-}
-.image-frame img{width:100%;height:auto}
-.cap-list{display:grid;gap:14px;margin-top:26px}
-.cap-item{
-  display:grid;grid-template-columns:44px 1fr;gap:16px;
-  align-items:start;padding:18px 0;border-bottom:1px solid var(--line);
-  transition:padding-left .18s;
-}
-.cap-item:last-child{border-bottom:0}
-.cap-item:hover{padding-left:6px}
-.cap-icon{
-  width:44px;height:44px;border-radius:7px;background:var(--green-2);
-  border:1px solid rgba(7,151,99,.18);
-  display:flex;align-items:center;justify-content:center;color:var(--green);font-weight:900;
-  transition:background .18s,color .18s;
-}
-.cap-item:hover .cap-icon{background:var(--green);color:#fff}
-.cap-item h3{margin:0 0 5px;font-size:18px}
-.cap-item p{margin:0;color:var(--muted);font-size:15px}
+/* PUENTE */
+.puente-head{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;flex-wrap:wrap;margin-bottom:48px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.step{position:relative;background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 22px 28px;overflow:hidden;transition:transform .3s,box-shadow .3s}
+.step:hover{transform:translateY(-6px);box-shadow:0 26px 50px -28px rgba(14,44,77,.45)}
+.step .num{font-family:var(--display);font-weight:700;font-size:46px;color:rgba(14,44,77,.1);letter-spacing:-2px;line-height:1}
+.step h3{font-family:var(--display);font-weight:600;font-size:19px;letter-spacing:-.4px;margin:14px 0 10px}
+.step p{margin:0;color:var(--muted-2);font-size:14px;line-height:1.55}
+.step .bar{position:absolute;left:0;bottom:0;height:3px;width:100%;background:linear-gradient(90deg,var(--green),transparent)}
 
-.needs{background:linear-gradient(135deg,#f5f9fd 0%,#ffffff 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.needs-shell{display:grid;grid-template-columns:.85fr 1fr .75fr;gap:18px;align-items:start}
-.needs-card{
-  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
-  padding:34px;box-shadow:0 24px 70px rgba(18,63,140,.06)
-}
-.needs-media{padding:0;overflow:hidden;display:flex;flex-direction:column}
-.needs-media img{width:100%;height:220px;object-fit:cover;display:block}
-.needs-media-cap{padding:18px 26px 22px;color:var(--muted);font-size:13px;line-height:1.5;border-top:1px solid var(--line)}
-.needs-media-cap strong{color:var(--ink-2)}
-.needs-copy{margin:0;color:var(--muted);font-size:17px;line-height:1.75}
-.needs-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.needs-list{list-style:none;margin:0;padding:0;display:grid;gap:0}
-.needs-list li{
-  display:grid;grid-template-columns:38px 1fr;gap:16px;
-  padding:18px 0;border-bottom:1px solid var(--line);
-  color:#3f5871;font-size:15px;line-height:1.65
-}
-.needs-list li:first-child{padding-top:0}
-.needs-list li:last-child{border-bottom:0;padding-bottom:0}
-.needs-num{
-  width:38px;height:38px;border-radius:999px;
-  display:flex;align-items:center;justify-content:center;
-  background:var(--green-2);border:1px solid rgba(7,151,99,.18);
-  color:var(--green);font-weight:850;font-size:14px
-}
-.needs-list strong{color:var(--ink);font-weight:760}
+/* CAPA AGENTICA */
+.dark{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.dark .dots{position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,.05) 1px,transparent 0);background-size:30px 30px}
+.split{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.cap-list{display:flex;flex-direction:column;gap:14px;margin-top:6px}
+.cap-item{display:flex;gap:16px;align-items:flex-start;padding:16px 18px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);transition:background .25s}
+.cap-item:hover{background:rgba(0,184,107,.1)}
+.cap-item .n{flex:none;width:30px;height:30px;border-radius:9px;background:rgba(0,184,107,.18);color:var(--green-l);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:14px}
+.cap-item h3{font-weight:600;font-size:16px;margin:0 0 4px}
+.cap-item p{color:#9fb0c4;font-size:14px;line-height:1.5;margin:0}
+.dark .lead{color:#a8b8cc}
+.window{border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.14);box-shadow:0 40px 80px -34px rgba(0,0,0,.6);background:#fff}
+.window-bar{display:flex;align-items:center;gap:7px;padding:11px 14px;background:#f3f4f2;border-bottom:1px solid var(--line)}
+.window-bar i{width:11px;height:11px;border-radius:50%;display:block}
+.window-bar .label{margin-left:10px;font-family:var(--mono);font-size:11px;color:var(--muted-3)}
+.window img{width:100%;height:auto;display:block}
+.win-wrap{position:relative}
+.win-wrap .float-badge{right:-12px;left:auto}
 
-.products{background:var(--ink);color:#fff}
-.products .section-copy{color:#b9c7d7}
-.product-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:16px}
-.product-feature,.product-list{
-  border:1px solid rgba(255,255,255,.14);
-  border-radius:var(--radius);
-  background:rgba(255,255,255,.045);
-}
-.product-feature{padding:34px;min-height:360px;display:flex;flex-direction:column;justify-content:space-between}
-.product-feature h3{margin:0 0 12px;font-size:32px;letter-spacing:-.03em}
-.product-feature p{margin:0;color:#c3d2e2;font-size:17px;max-width:680px}
-.product-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
-.product-tags span{padding:7px 10px;border:1px solid rgba(255,255,255,.14);border-radius:999px;color:#dfe9f3;font-size:13px;background:rgba(255,255,255,.04)}
-.product-list{padding:14px}
-.product-row{display:flex;justify-content:space-between;gap:18px;padding:18px;border-bottom:1px solid rgba(255,255,255,.1)}
-.product-row:last-child{border-bottom:0}
-.product-copy{display:flex;align-items:flex-start;gap:13px}
-.product-icon{width:44px;height:44px;border-radius:10px;object-fit:cover;object-position:top;flex-shrink:0;background:#fff;border:1px solid rgba(255,255,255,.22)}
-.product-row strong{display:block;margin-bottom:5px;color:#fff}
-.product-row span{color:#a9bbcc;font-size:14px}
-.product-row a{color:#7de1b6;font-weight:700;white-space:nowrap;transition:color .15s,transform .15s;display:inline-block}
-.product-row{transition:background .18s}
-.product-row:hover{background:rgba(255,255,255,.035)}
-.product-row a:hover{color:#9bf0cb;transform:translateX(2px)}
+/* CUANDO */
+.cuando{display:grid;grid-template-columns:.85fr 1.15fr;gap:54px;align-items:start}
+.cuando-sticky{position:sticky;top:96px}
+.scn-list{display:flex;flex-direction:column;gap:12px}
+.scn{display:flex;gap:18px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 22px;transition:transform .25s,border-color .25s}
+.scn:hover{transform:translateX(6px);border-color:rgba(0,184,107,.55)}
+.scn .n{flex:none;font-family:var(--mono);font-size:14px;font-weight:600;color:var(--green-d)}
+.scn p{margin:0;font-size:15.5px;line-height:1.5;color:#1c2533}
+.scn strong{color:var(--navy)}
 
-.contact{background:linear-gradient(135deg,var(--blue-2),#07172f);color:#fff}
-.contact .section-copy{color:#c5d5e6}
-.contact-inner{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
-.contact-card{padding:30px;border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);background:rgba(255,255,255,.055)}
-.contact-links{display:grid;gap:10px;margin-top:28px}
-.contact-link{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1);color:#dfe9f3}
-.contact-link:last-child{border-bottom:0}
-.contact-form{background:#fff;color:var(--ink);border-radius:var(--radius);padding:30px;box-shadow:0 24px 70px rgba(0,0,0,.22)}
-.fg{margin-bottom:16px}
-.fg label{display:block;margin-bottom:7px;font-size:12px;font-weight:820;letter-spacing:.08em;text-transform:uppercase;color:#496178}
-.fg input,.fg textarea{width:100%;border:1px solid var(--line);border-radius:7px;padding:13px 14px;color:var(--ink);background:#fff;outline:none}
-.fg input:focus,.fg textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(7,151,99,.12)}
-.fg textarea{min-height:120px;resize:vertical}
+/* PRODUCTOS */
+.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.prod{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .3s,box-shadow .3s,border-color .3s}
+.prod:hover{transform:translateY(-6px);box-shadow:0 30px 56px -30px rgba(14,44,77,.5);border-color:rgba(0,184,107,.5)}
+.prod-media{height:118px;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.prod-media img{width:100%;height:100%;object-fit:cover;display:block}
+.prod-media.logo{background:#fff;display:flex;align-items:center;justify-content:center;padding:16px}
+.prod-media.logo img{width:auto;max-width:80%;max-height:78px;object-fit:contain}
+.prod-media .tag{position:absolute;top:12px;left:12px;font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.6px;padding:5px 10px;border-radius:7px;background:rgba(14,44,77,.9);color:#fff}
+.prod-body{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.prod-body h3{font-family:var(--display);font-weight:600;font-size:19px;letter-spacing:-.4px;margin:0 0 9px}
+.prod-body p{margin:0 0 18px;color:var(--muted-2);font-size:14px;line-height:1.55;flex:1}
+.prod-cta{display:inline-flex;align-items:center;gap:7px;font-weight:600;font-size:14px;color:var(--green-d)}
+.prod:hover .prod-cta .arw{transform:translateX(3px)}
+.prod-cta .arw{transition:transform .2s}
+
+/* NOVEDADES */
+.nov{position:relative;overflow:hidden;border-radius:22px;background:linear-gradient(150deg,var(--navy),var(--navy-d));color:#fff;padding:42px 44px;display:grid;grid-template-columns:1.3fr auto;gap:46px;align-items:center}
+.nov .dots{position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,.05) 1px,transparent 0);background-size:26px 26px}
+.nov-in{position:relative}
+.nov .pill{display:inline-flex;align-items:center;gap:9px;padding:6px 13px;border-radius:100px;background:rgba(0,184,107,.15);border:1px solid rgba(0,184,107,.4);font-family:var(--mono);font-size:11px;letter-spacing:.6px;text-transform:uppercase;color:var(--green-l)}
+.nov .pill .dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulseDot 1.8s infinite}
+.nov h3{font-family:var(--display);font-weight:700;font-size:clamp(26px,3vw,38px);line-height:1.1;letter-spacing:-1.2px;margin:18px 0 12px}
+.nov p{color:#a8b8cc;font-size:16.5px;line-height:1.6;margin:0 0 26px;max-width:440px}
+.nov p strong{color:#fff}
+.nov-actions{display:flex;flex-wrap:wrap;gap:13px;align-items:center}
+.nov-actions .hint{font-size:13.5px;color:#8295ab}
+.qr{position:relative;display:flex;flex-direction:column;align-items:center;gap:12px}
+.qr a{display:block;background:#fff;padding:14px;border-radius:18px;box-shadow:0 24px 50px -20px rgba(0,0,0,.6);transition:transform .25s}
+.qr a:hover{transform:scale(1.03)}
+.qr img{width:186px;height:186px;display:block}
+.qr .cap{font-family:var(--mono);font-size:11px;letter-spacing:.5px;color:#8295ab;text-align:center}
+
+/* CLIENTES */
+.clients{padding:46px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+.clients .lbl{font-family:var(--mono);font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted-3);max-width:var(--maxw);margin:0 auto 26px;padding:0 28px}
+.marquee-mask{position:relative;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee{display:flex;gap:14px;width:max-content;animation:marquee 34s linear infinite}
+.client-chip{flex:none;padding:14px 26px;border:1px solid rgba(11,18,32,.1);border-radius:100px;font-family:var(--display);font-weight:600;font-size:16px;color:var(--muted);white-space:nowrap;background:#F8FAF6}
+
+/* CONTACTO */
+.contact-inner{position:relative;display:grid;grid-template-columns:1fr 1.05fr;gap:60px;align-items:start}
+.contact-links{display:flex;flex-direction:column;gap:14px;margin-top:8px}
+.c-link{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:13px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);transition:background .2s}
+.c-link:hover{background:rgba(0,184,107,.12)}
+.c-link .ic{flex:none;width:38px;height:38px;border-radius:10px;background:rgba(0,184,107,.18);display:flex;align-items:center;justify-content:center;color:var(--green-l);font-family:var(--mono);font-weight:600}
+.c-link .v{color:#fff;font-weight:600;font-size:15px}
+.c-link .k{color:#8295ab;font-size:12.5px;font-family:var(--mono)}
+.contact-form{background:#fff;color:var(--ink);border-radius:20px;padding:32px;box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fg{margin-bottom:16px;display:flex;flex-direction:column;gap:7px}
+.fg label{font-size:12.5px;font-weight:600;color:#384152}
+.fg input,.fg textarea{width:100%;border:1px solid var(--line-2);border-radius:10px;padding:12px 13px;font-size:14.5px;color:var(--ink);background:#fff;outline:none;transition:border-color .15s,box-shadow .15s}
+.fg input:focus,.fg textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(0,184,107,.12)}
+.fg textarea{min-height:108px;resize:vertical}
 .hp-field{position:absolute!important;left:-9999px!important;opacity:0!important;pointer-events:none!important}
-.form-note{margin:13px 0 0;color:var(--muted);font-size:13px}
+.form-note{margin:10px 0 0;color:#8a93a3;font-size:12px;line-height:1.5}
 
-.client-strip{
-  padding:56px 48px;
-  background:var(--soft);
-  border-top:1px solid var(--line);
-}
-.client-strip .container{display:grid;gap:24px}
-.client-strip h2{margin:0;font-size:13px;font-weight:820;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-.logo-wall{display:flex;flex-wrap:wrap;gap:12px}
-.logo-chip{
-  display:inline-flex;align-items:center;justify-content:center;
-  min-height:46px;padding:0 20px;border-radius:6px;
-  background:#fff;border:1px solid var(--line);
-  color:var(--ink-2);font-family:var(--display);font-size:14px;font-weight:600;letter-spacing:.01em;
-  transition:border-color .18s,color .18s,transform .18s,box-shadow .18s;
-}
-.logo-chip:hover{border-color:var(--green);color:var(--green);transform:translateY(-2px);box-shadow:0 10px 24px rgba(7,151,99,.12)}
+/* WA FLOAT */
+.wa-float{position:fixed;right:24px;bottom:24px;z-index:120;display:inline-flex;align-items:center;gap:10px;padding:13px 18px;border-radius:999px;background:#25d366;color:#fff;font-size:14px;font-weight:800;box-shadow:0 18px 40px rgba(37,211,102,.28)}
 
-.wa-float{
-  position:fixed;right:24px;bottom:24px;z-index:120;
-  display:inline-flex;align-items:center;gap:10px;
-  padding:13px 18px;border-radius:999px;background:#25d366;color:#fff;
-  font-size:14px;font-weight:850;box-shadow:0 18px 40px rgba(37,211,102,.28);
-}
-
-footer{padding:52px 48px;background:#061225;color:#c1cede}
-.footer-inner{width:min(1180px,100%);margin:0 auto;display:grid;grid-template-columns:1.2fr repeat(3,1fr);gap:36px}
-.footer-brand img{height:42px;width:auto;filter:brightness(0) invert(1)}
-.footer-brand p{margin:16px 0 0;max-width:280px;color:#8fa2b8;font-size:14px}
-.footer-col h4{margin:0 0 14px;color:#fff;font-size:13px;text-transform:uppercase;letter-spacing:.1em}
-.footer-col ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
-.footer-col a{color:#9fb2c7;font-size:14px}
-.footer-bottom{width:min(1180px,100%);margin:34px auto 0;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;color:#8fa2b8;font-size:13px}
+/* FOOTER */
+footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
+.footer-inner{max-width:var(--maxw);margin:0 auto}
+.footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.1)}
+.footer-brand img{height:30px;filter:brightness(0) invert(1);opacity:.92}
+.footer-brand p{font-size:14px;line-height:1.6;color:#90a1b6;max-width:280px;margin:16px 0 0}
+.footer-col h4{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spacing:1px;color:var(--green-l);margin:0 0 16px}
+.footer-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px}
+.footer-col a{color:#cdd8e6;font-size:14px}
+.footer-col a:hover{color:#fff}
+.footer-bottom{padding-top:26px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px;color:#7e90a6}
+.footer-bottom .mono{font-family:var(--mono)}
 
 @media(max-width:980px){
-  .site-nav{height:72px;padding:0 22px}
   .nav-links{display:none}
   .nav-burger{display:flex}
-  .mobile-nav{
-    position:fixed;inset:72px 0 0;z-index:99;
-    display:none;flex-direction:column;gap:22px;
-    padding:34px 26px;background:rgba(255,255,255,.98);
-    border-top:1px solid var(--line);
-  }
+  .mobile-nav{position:fixed;inset:72px 0 0;z-index:99;display:none;flex-direction:column;gap:20px;padding:34px 26px;background:rgba(244,246,242,.98);border-top:1px solid var(--line)}
   .mobile-nav.open{display:flex}
-  .mobile-nav a{font-size:24px;font-weight:780;color:var(--ink)}
-  .hero{padding:88px 24px 34px;align-items:flex-start}
-  .hero::before{background:linear-gradient(180deg,rgba(255,255,255,.92) 0%,rgba(255,255,255,.82) 42%,rgba(255,255,255,.98) 88%)}
-  .hero-media{inset:72px 0 auto 0;height:36svh}
-  .hero-media img{object-position:center top}
-  .hero-content{padding-top:24svh}
-  .hero h1{font-size:clamp(42px,13vw,66px)}
-  .hero-sub{font-size:18px}
-  .hero-actions{margin-bottom:24px}
-  .section{padding:72px 24px}
-  .flow-grid,.split,.needs-shell,.product-grid,.contact-inner,.footer-inner{grid-template-columns:1fr}
-  .flow-step{min-height:auto}
-  .flow-step::after{display:none}
-  .product-feature{min-height:auto}
-  footer{padding:42px 24px}
-  .wa-float{
-    right:16px;left:auto;bottom:16px;
-    width:58px;height:58px;padding:0;border-radius:50%;
-    justify-content:center;font-size:0;
-  }
-  .wa-float::after{content:"WA";font-size:13px;letter-spacing:.02em}
-  body{padding-bottom:0}
+  .mobile-nav a{font-size:22px;font-weight:700;color:var(--ink)}
+  .hero-inner,.split,.cuando,.contact-inner,.nov{grid-template-columns:1fr}
+  .hero-visual{height:380px;margin-top:8px}
+  .steps{grid-template-columns:1fr 1fr}
+  .prod-grid{grid-template-columns:1fr 1fr}
+  .cuando-sticky{position:static}
+  .nov{padding:34px 26px}
+  .qr{flex-direction:row;justify-content:flex-start}
+  .footer-top{grid-template-columns:1fr 1fr}
 }
-@media(max-width:520px){
-  .site-nav{padding:0 16px}
-  .nav-logo img{height:35px}
-  .hero{padding-left:18px;padding-right:18px}
-  .hero-actions .btn{width:100%}
-  .section{padding-left:18px;padding-right:18px}
-  .section-title{font-size:38px}
-  .contact-card,.contact-form{padding:22px}
-  .client-strip{padding-left:18px;padding-right:18px}
+@media(max-width:600px){
+  .container,.hero{padding-left:18px;padding-right:18px}
+  .site-nav{padding:0 18px}
+  .section{padding:64px 0}
+  .steps,.prod-grid,.frow,.footer-top{grid-template-columns:1fr}
+  .stats{gap:20px}
+  .stat-div{display:none}
+  .hero-actions .btn{width:100%;justify-content:center}
+  .wa-float{right:16px;bottom:16px;width:56px;height:56px;padding:0;justify-content:center;font-size:0}
+  .wa-float::after{content:"WA";font-size:13px}
 }
 </style>
 </head>
 <body>
-<nav class="site-nav">
-  <a href="/" class="nav-logo" aria-label="ATIEMPPO">
-    <img src="assets/images/logo-atiemppo.png" alt="ATIEMPPO"/>
-  </a>
-  <div class="nav-links">
-    <a href="#contacto">Dos idiomas</a>
-    <a href="#capacidades">Capacidades</a>
-    <a href="#productos">Productos</a>
-    <a href="/reportes/">Reportes</a>
-    <a href="https://atiemppo.com/blog/">Blog</a>
-    <a href="#contacto" class="nav-cta">Hablemos</a>
-  </div>
-  <button class="nav-burger" id="burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
-</nav>
+
+<div class="nav-wrap">
+  <nav class="site-nav">
+    <a href="/" class="nav-logo" aria-label="ATIEMPPO"><img src="assets/images/logo-atiemppo.png" alt="ATIEMPPO"/></a>
+    <div class="nav-links">
+      <a href="#puente">El puente</a>
+      <a href="#capacidades">Capa agéntica</a>
+      <a href="#productos">Productos</a>
+      <a href="/reportes/">Reportes</a>
+      <a href="/blog/">Blog</a>
+      <a href="#contacto" class="nav-cta">Hablemos <span class="dot"></span></a>
+    </div>
+    <button class="nav-burger" id="burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  </nav>
+</div>
 <div class="mobile-nav" id="mobileNav">
-  <a href="#contacto" onclick="closeMenu()">Dos idiomas</a>
-  <a href="#capacidades" onclick="closeMenu()">Capacidades</a>
+  <a href="#puente" onclick="closeMenu()">El puente</a>
+  <a href="#capacidades" onclick="closeMenu()">Capa agéntica</a>
   <a href="#productos" onclick="closeMenu()">Productos</a>
   <a href="/reportes/" onclick="closeMenu()">Reportes</a>
-  <a href="https://atiemppo.com/blog/" onclick="closeMenu()">Blog</a>
+  <a href="/blog/" onclick="closeMenu()">Blog</a>
   <a href="#contacto" onclick="closeMenu()">Hablemos</a>
 </div>
 
 <main>
+  <!-- HERO -->
   <section class="hero" id="inicio">
-    <div class="hero-media" aria-hidden="true">
-      <img src="assets/images/generated/atiemppo-industria-tiempo-hero.png" alt=""/>
-    </div>
+    <div class="hero-grid-bg" aria-hidden="true"></div>
     <div class="hero-inner">
-      <div class="hero-content">
-        <h1>Hablamos los dos idiomas para recuperar <span>tiempo.</span></h1>
-        <p class="hero-sub">En ATIEMPPO definimos 2026 como la industria del tiempo: una filosofía para ayudar a personas y empresas a generar, recuperar y ahorrar tiempo en su día a día. Hablamos el idioma del negocio y el de la tecnología para entender tus problemas, tus datos y tu operación; desde ahí usamos criterio, IA, agentes y conocimiento ATIEMPPO para mejorar productividad.</p>
+      <div>
+        <div class="badge"><span class="dot"></span> 2026 · La industria del tiempo</div>
+        <h1>Hablamos los <span class="ul">dos idiomas</span><br/>para recuperar tiempo.</h1>
+        <p class="hero-sub">Traducimos entre el <strong>idioma del negocio</strong> y el de la <strong>tecnología</strong> para entender tus problemas, tus datos y tu operación. Desde ahí usamos criterio, IA y agentes para que tu equipo recupere tiempo.</p>
         <div class="hero-actions">
-          <a href="#contacto" class="btn btn-primary">Hablemos de tu operación</a>
-          <a href="#capacidades" class="btn btn-secondary">Ver capacidades</a>
+          <a href="#contacto" class="btn btn-primary">Hablemos de tu operación →</a>
+          <a href="#puente" class="btn btn-ghost">Ver cómo trabajamos</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="n">+13</div><div class="l">marcas y aliados</div></div>
+          <div class="stat-div"></div>
+          <div class="stat"><div class="n">130+</div><div class="l">días de agentes en operación</div></div>
+          <div class="stat-div"></div>
+          <div class="stat"><div class="n">LATAM</div><div class="l">foco logístico</div></div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="section time-system" id="tiempo">
-    <div class="container">
-      <div class="section-head">
-        <p class="section-kicker">El puente ATIEMPPO</p>
-        <h2 class="section-title">Del problema operativo a una forma mejor de trabajar.</h2>
-        <p class="section-copy">El tiempo se pierde cuando negocio y tecnología no hablan claro, cuando la información está dispersa y cuando cada decisión vuelve a empezar desde cero. ATIEMPPO traduce entre esos mundos para que el equipo avance con más criterio y menos fricción.</p>
-      </div>
-      <div class="flow-grid">
-        <article class="flow-step">
-          <div class="flow-num">01</div>
-          <h3>Entender el problema</h3>
-          <p>Escuchamos cómo trabaja el equipo, dónde se repite trabajo y qué decisiones consumen más tiempo del necesario.</p>
-        </article>
-        <article class="flow-step">
-          <div class="flow-num">02</div>
-          <h3>Traducir los dos idiomas</h3>
-          <p>Conectamos la necesidad del negocio con datos, criterios técnicos, fuentes confiables y posibilidades reales de IA.</p>
-        </article>
-        <article class="flow-step">
-          <div class="flow-num">03</div>
-          <h3>Construir con contexto</h3>
-          <p>Usamos IA, agentes, analítica y herramientas propias para ordenar información y sostener continuidad.</p>
-        </article>
-        <article class="flow-step">
-          <div class="flow-num">04</div>
-          <h3>Recuperar tiempo</h3>
-          <p>Menos reprocesos y tareas repetitivas. Más tiempo para decidir, vender, atender clientes y mover la operación.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="capacidades">
-    <div class="container split">
-      <div>
-        <p class="section-kicker">Capa agéntica por cliente</p>
-        <h2 class="section-title">La entrega no termina en un documento.</h2>
-        <p class="section-copy">Cada proyecto puede dejar una memoria viva: una forma de conversar con la información, los criterios, los acuerdos y los siguientes pasos.</p>
-        <div class="cap-list">
-          <div class="cap-item"><div class="cap-icon">1</div><div><h3>Memoria del trabajo</h3><p>Organiza minutas, documentos, fuentes, decisiones y pendientes sin mezclar información entre clientes.</p></div></div>
-          <div class="cap-item"><div class="cap-icon">2</div><div><h3>Recomendación con contexto</h3><p>Ayuda a priorizar qué validar, qué construir, qué automatizar y qué evitar.</p></div></div>
-          <div class="cap-item"><div class="cap-icon">3</div><div><h3>Transferencia al equipo</h3><p>Convierte sesiones en materiales reutilizables para que la empresa gane autonomía.</p></div></div>
-        </div>
-      </div>
-      <figure class="image-frame">
-        <img src="assets/images/generated/atiemppo-capa-agentica-bruno-openclaw.png" alt="Visual de Bruno y OpenClaw como capa agéntica de trabajo"/>
-      </figure>
-    </div>
-  </section>
-
-  <section class="section needs" id="cuando-nos-necesitas">
-    <div class="container needs-shell">
-      <div class="needs-card">
-        <p class="section-kicker">Cuándo necesitas de ATIEMPPO</p>
-        <h2 class="section-title">Cuando necesitas aterrizar, pensar y ejecutar.</h2>
-        <p class="needs-copy">Aquí es donde ATIEMPPO entra de verdad: cuando ya intuyes que hay una oportunidad con IA, datos o logística, pero necesitas orden, criterio y alguien que te ayude a convertir esa idea en algo concreto.</p>
-        <div class="needs-actions">
-          <a href="#contacto" class="btn btn-primary">Ir al formulario</a>
-          <a href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20hablar%20sobre%20una%20idea%20de%20IA%20o%20datos." target="_blank" rel="noopener" class="btn btn-secondary">Hablar por WhatsApp</a>
-        </div>
-      </div>
-      <div class="needs-card">
-        <ul class="needs-list">
-          <li><span class="needs-num">01</span><span>Si quieres que tus <strong>procesos actuales puedan mejorar y ahorrar tiempo</strong>, explorando juntos ideas de proyectos con IA para tu empresa o para ti.</span></li>
-          <li><span class="needs-num">02</span><span>Si necesitas ayuda para poner en <strong>blanco y negro tus ideas de proyectos de IA</strong>, volverlas desarrollables y encontrar dónde pueden generar productividad y tiempo ahorrado.</span></li>
-          <li><span class="needs-num">03</span><span>Si necesitas <strong>analizar datos, entender mejor el mercado y leer tus propias bases</strong> con criterio de negocio.</span></li>
-          <li><span class="needs-num">04</span><span>Si necesitas <strong>analizar tu red operativa o construir modelos de red</strong> para tomar mejores decisiones logísticas y comerciales.</span></li>
-          <li><span class="needs-num">05</span><span>Si necesitas una <strong>presentación de alto nivel sobre la realidad logística de Colombia y Latinoamérica</strong> para directivos, equipos o clientes.</span></li>
-          <li><span class="needs-num">06</span><span>Si quieres que tus equipos <strong>fortalezcan sus capacidades de análisis de datos</strong>, lectura operativa y experimenten lo que puede ser una capa agéntica de trabajo.</span></li>
-          <li><span class="needs-num">07</span><span>Si necesitas un <strong>espacio con expertos para entender tu problema</strong> y direccionar a tu equipo con modelos ágiles, pregunta por <strong>terapia logística</strong>.</span></li>
-        </ul>
-      </div>
-      <figure class="needs-card needs-media">
-        <img src="assets/images/blog/mesa-trabajo-ia/tokens-130-dias-juan-pablo-matiz.png" alt="Mesa de trabajo con IA: seguimiento real de uso de agentes en ATIEMPPO"/>
-        <figcaption class="needs-media-cap"><strong>Así trabajamos.</strong> Seguimiento real de uso de IA y agentes en proyectos de ATIEMPPO, no una promesa abstracta.</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section class="section products" id="productos">
-    <div class="container">
-      <div class="section-head">
-        <p class="section-kicker">Productos y proyectos vivos</p>
-        <h2 class="section-title">Lo que proponemos nace de sistemas que ya estamos construyendo.</h2>
-        <p class="section-copy">ATIEMPPO combina trayectoria logística, datos, productos propios y agentes en operación real.</p>
-      </div>
-      <div class="product-grid">
-        <article class="product-feature">
-          <div>
-            <h3>Inteligencia operativa para recuperar tiempo</h3>
-            <p>Una oferta para empresas que necesitan entender mejor sus problemas, ordenar información crítica y convertir datos, IA y conocimiento en productividad real.</p>
+      <div class="hero-visual">
+        <div class="hero-panel">
+          <div class="dots"></div>
+          <div class="sweep a"></div>
+          <div class="sweep b"></div>
+          <div class="chip biz">
+            <div class="tag">// negocio</div>
+            <div class="t1">"Perdemos tiempo en reprocesos."</div>
+            <div class="t2">decisiones, clientes, operación</div>
           </div>
-          <div class="product-tags">
-            <span>SICETAC</span><span>Valores de mercado</span><span>Analítica</span><span>Bruno</span><span>Bolsa de horas</span>
+          <div class="chip tech">
+            <div class="tag">tecnología //</div>
+            <div class="t1">agent.run(context)</div>
+            <div class="t2">datos · IA · agentes · criterio</div>
           </div>
-        </article>
-        <div class="product-list">
-          <div class="product-row"><div class="product-copy"><img class="product-icon" src="assets/images/blog/bruno-openclaw/bruno-whatsapp-explica-quien-es.png" alt="Bruno explicando quién es por WhatsApp"/><div><strong>Bruno / OpenClaw</strong><span>Nuestra agente que hace cosas: permite conversaciones reales con datos y clientes, crea procesos y acompaña nuestros proyectos.</span></div></div><a href="#capacidades">Ver</a></div>
-          <div class="product-row"><div><strong>SICETAC al Instante</strong><span>Consulta rápida por WhatsApp y web.</span></div><a href="https://wa.me/573134503694?text=Hola%2C%20quiero%20consultar%20SICETAC%20al%20Instante%20por%20WhatsApp.%20Escribe%20asi%3A%20origen%20a%20destino" target="_blank" rel="noopener">Abrir</a></div>
-          <div class="product-row"><div class="product-copy"><img class="product-icon" src="assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png" alt="Reportes de ATIEMPPO"/><div><strong>Reportes de ATIEMPPO</strong><span>Accede a los reportes de Datos sin Carreta, con los principales análisis que hacemos de logística en LATAM.</span></div></div><a href="/reportes/">Ver</a></div>
-          <div class="product-row"><div><strong>Base completa SICETAC</strong><span>Acceso a rutas, configuraciones y referencias para análisis.</span></div><a href="/base-completa-sicetac/">Ver</a></div>
-          <div class="product-row"><div class="product-copy"><img class="product-icon" src="assets/images/eldatologistico/logo-el-dato-logistico.png" alt="El Dato Logístico"/><div><strong>El Dato Logístico</strong><span>Contenido, comunidad y lectura del mercado.</span></div></div><a href="https://www.eldatologistico.com" target="_blank" rel="noopener">Ver</a></div>
-          <div class="product-row"><div class="product-copy"><img class="product-icon" src="assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia.png" alt="La Comunidad"/><div><strong>La Comunidad</strong><span>Comunidad de novedades en vías: Bruno, nuestro agente, reporta todos los días su seguimiento.</span></div></div><a href="https://chat.whatsapp.com/DC2nQ5FjQ04KmiWdOKU0XH?mode=gi_t" target="_blank" rel="noopener">Unirse</a></div>
-          <div class="product-row"><div><strong>Insignia Impact</strong><span>Proyecto sobre responsabilidad social en logística y supply chain.</span></div><a href="/insignia-impact/">Ver</a></div>
+          <div class="node"><div class="core">A</div></div>
+        </div>
+        <div class="float-badge">
+          <span class="dot"></span>
+          <div><div class="b1">Bruno está reportando</div><div class="b2">seguimiento en vías · hoy</div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section contact" id="contacto">
+  <!-- PUENTE -->
+  <section class="section" id="puente">
+    <div class="container">
+      <div class="puente-head" data-reveal>
+        <div style="max-width:680px">
+          <p class="kicker">El puente ATIEMPPO</p>
+          <h2 class="h2">Del problema operativo a una forma mejor de trabajar.</h2>
+        </div>
+        <p class="lead" style="max-width:380px">El tiempo se pierde cuando negocio y tecnología no hablan claro, cuando la información está dispersa y cada decisión vuelve a empezar de cero. ATIEMPPO traduce entre esos mundos.</p>
+      </div>
+      <div class="steps">
+        <article class="step" data-reveal><div class="num">01</div><h3>Entender el problema</h3><p>Escuchamos cómo trabaja el equipo, dónde se repite trabajo y qué decisiones consumen más tiempo del necesario.</p><div class="bar"></div></article>
+        <article class="step" data-reveal><div class="num">02</div><h3>Traducir los dos idiomas</h3><p>Conectamos la necesidad del negocio con datos, criterios técnicos, fuentes confiables y posibilidades reales de IA.</p><div class="bar"></div></article>
+        <article class="step" data-reveal><div class="num">03</div><h3>Construir con contexto</h3><p>Usamos IA, agentes, analítica y herramientas propias para ordenar información y sostener continuidad.</p><div class="bar"></div></article>
+        <article class="step" data-reveal><div class="num">04</div><h3>Recuperar tiempo</h3><p>Menos reprocesos y tareas repetitivas. Más tiempo para decidir, vender, atender clientes y mover la operación.</p><div class="bar"></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPA AGENTICA -->
+  <section class="section dark" id="capacidades">
+    <div class="dots" aria-hidden="true"></div>
+    <div class="container">
+      <div class="split">
+        <div data-reveal>
+          <p class="kicker on-dark">Capa agéntica por cliente</p>
+          <h2 class="h2">La entrega no termina en un documento.</h2>
+          <p class="lead" style="margin:18px 0 28px;max-width:480px">Cada proyecto puede dejar una memoria viva: una forma de conversar con la información, los criterios, los acuerdos y los siguientes pasos.</p>
+          <div class="cap-list">
+            <div class="cap-item"><span class="n">1</span><div><h3>Memoria del trabajo</h3><p>Organiza minutas, documentos, fuentes, decisiones y pendientes sin mezclar información entre clientes.</p></div></div>
+            <div class="cap-item"><span class="n">2</span><div><h3>Recomendación con contexto</h3><p>Ayuda a priorizar qué validar, qué construir, qué automatizar y qué evitar.</p></div></div>
+            <div class="cap-item"><span class="n">3</span><div><h3>Transferencia al equipo</h3><p>Convierte sesiones en materiales reutilizables para que la empresa gane autonomía.</p></div></div>
+          </div>
+        </div>
+        <div class="win-wrap" data-reveal>
+          <div class="window">
+            <div class="window-bar"><i style="background:#ef5f57"></i><i style="background:#f6bd3b"></i><i style="background:#5fc454"></i><span class="label">OpenClaw · Bruno</span></div>
+            <img src="assets/images/atiemppo/bruno-openclaw.png" alt="Bruno reportando la operación del día en OpenClaw"/>
+          </div>
+          <div class="float-badge"><span class="dot"></span><div><div class="b1">Así trabajamos</div><div class="b2">uso real de IA, no una promesa</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUANDO -->
+  <section class="section" id="cuando">
+    <div class="container cuando">
+      <div class="cuando-sticky" data-reveal>
+        <p class="kicker">Cuándo necesitas de ATIEMPPO</p>
+        <h2 class="h2">Cuando necesitas aterrizar, pensar y ejecutar.</h2>
+        <p class="lead" style="margin:18px 0 28px">Aquí es donde ATIEMPPO entra de verdad: cuando intuyes una oportunidad con IA, datos o logística, pero necesitas orden, criterio y alguien que te ayude a convertir esa idea en algo concreto.</p>
+        <div class="hero-actions" style="margin-top:0">
+          <a href="#contacto" class="btn btn-dark">Ir al formulario</a>
+          <a href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20hablar%20sobre%20una%20idea%20de%20IA%20o%20datos." target="_blank" rel="noopener" class="btn btn-ghost">Hablar por WhatsApp</a>
+        </div>
+      </div>
+      <div class="scn-list">
+        <div class="scn" data-reveal><span class="n">01</span><p>Si quieres que tus <strong>procesos actuales mejoren y ahorren tiempo</strong>, explorando juntos ideas de proyectos con IA para tu empresa o para ti.</p></div>
+        <div class="scn" data-reveal><span class="n">02</span><p>Si necesitas poner en <strong>blanco y negro tus ideas de proyectos de IA</strong>, volverlas desarrollables y encontrar dónde generan productividad.</p></div>
+        <div class="scn" data-reveal><span class="n">03</span><p>Si necesitas <strong>analizar datos, entender el mercado y leer tus propias bases</strong> con criterio de negocio.</p></div>
+        <div class="scn" data-reveal><span class="n">04</span><p>Si necesitas <strong>analizar tu red operativa o construir modelos de red</strong> para mejores decisiones logísticas y comerciales.</p></div>
+        <div class="scn" data-reveal><span class="n">05</span><p>Si necesitas una <strong>presentación de alto nivel sobre la realidad logística de Colombia y Latinoamérica</strong> para directivos o clientes.</p></div>
+        <div class="scn" data-reveal><span class="n">06</span><p>Si quieres que tus equipos <strong>fortalezcan su análisis de datos</strong>, lectura operativa y experimenten una capa agéntica de trabajo.</p></div>
+        <div class="scn" data-reveal><span class="n">07</span><p>Si necesitas un <strong>espacio con expertos para entender tu problema</strong> y direccionar a tu equipo: pregunta por <strong>terapia logística</strong>.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section class="section" id="productos">
+    <div class="container">
+      <div class="section-head" data-reveal style="max-width:760px;margin-bottom:46px">
+        <p class="kicker">Productos y proyectos vivos</p>
+        <h2 class="h2">Lo que proponemos nace de sistemas que ya estamos construyendo.</h2>
+        <p class="lead" style="margin-top:14px">ATIEMPPO combina trayectoria logística, datos, productos propios y agentes en operación real.</p>
+      </div>
+      <div class="prod-grid">
+        <a class="prod" data-reveal href="#capacidades">
+          <div class="prod-media"><img src="assets/images/atiemppo/bruno-openclaw.png" alt="Bruno / OpenClaw" style="object-position:top left"/><span class="tag">Agente</span></div>
+          <div class="prod-body"><h3>Bruno / OpenClaw</h3><p>Nuestra agente que hace cosas: conversaciones reales con datos y clientes, crea procesos y acompaña proyectos.</p><span class="prod-cta">Ver <span class="arw">→</span></span></div>
+        </a>
+        <a class="prod" data-reveal href="https://wa.me/573134503694?text=Hola%20ATIEMPPO%2C%20quiero%20consultar%20SICETAC%20al%20Instante.%20Mi%20ruta%20es%3A%20origen%20a%20destino" target="_blank" rel="noopener">
+          <div class="prod-media"><img src="assets/images/atiemppo/cover-sicetac.png" alt="SICETAC al Instante"/><span class="tag">Consulta</span></div>
+          <div class="prod-body"><h3>SICETAC al Instante</h3><p>Consulta rápida de fletes por WhatsApp. Escríbenos al +57 313 450 3694 con tu origen y destino.</p><span class="prod-cta">Escribir por WhatsApp <span class="arw">→</span></span></div>
+        </a>
+        <a class="prod" data-reveal href="/reportes/">
+          <div class="prod-media"><img src="assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png" alt="Datos sin Carreta"/><span class="tag">Reportes</span></div>
+          <div class="prod-body"><h3>Datos sin Carreta</h3><p>Los principales análisis que hacemos de logística en LATAM, en reportes vivos.</p><span class="prod-cta">Ver <span class="arw">→</span></span></div>
+        </a>
+        <a class="prod" data-reveal href="/base-completa-sicetac/">
+          <div class="prod-media"><img src="assets/images/atiemppo/cover-base.png" alt="Base completa SICETAC"/><span class="tag">Base</span></div>
+          <div class="prod-body"><h3>Base completa SICETAC</h3><p>Acceso a rutas, configuraciones y referencias para análisis.</p><span class="prod-cta">Ver <span class="arw">→</span></span></div>
+        </a>
+        <a class="prod" data-reveal href="https://www.eldatologistico.com" target="_blank" rel="noopener">
+          <div class="prod-media logo"><img src="assets/images/eldatologistico/logo-el-dato-logistico.png" alt="El Dato Logístico"/><span class="tag">Medio</span></div>
+          <div class="prod-body"><h3>El Dato Logístico</h3><p>Contenido, comunidad y lectura del mercado logístico.</p><span class="prod-cta">Ir a El Dato Logístico <span class="arw">→</span></span></div>
+        </a>
+        <a class="prod" data-reveal href="/insignia-impact/">
+          <div class="prod-media"><img src="assets/images/atiemppo/cover-insignia.png" alt="Insignia Impact"/><span class="tag">Impacto</span></div>
+          <div class="prod-body"><h3>Insignia Impact</h3><p>Responsabilidad social en logística y supply chain.</p><span class="prod-cta">Ver <span class="arw">→</span></span></div>
+        </a>
+      </div>
+
+      <!-- NOVEDADES EN VIAS -->
+      <div class="nov" data-reveal style="margin-top:40px">
+        <div class="dots" aria-hidden="true"></div>
+        <div class="nov-in">
+          <div class="pill"><span class="dot"></span> Comunidad gratuita</div>
+          <h3>Únete a Novedades en Vías</h3>
+          <p>La comunidad de WhatsApp donde <strong>Bruno, nuestro agente, reporta todos los días</strong> el estado de las vías de Colombia. Información operativa real, directo a tu chat.</p>
+          <div class="nov-actions">
+            <a href="https://chat.whatsapp.com/DC2nQ5FjQ04KmiWdOKU0XH?mode=gi_t" target="_blank" rel="noopener" class="btn btn-primary">Unirme al grupo de WhatsApp →</a>
+            <span class="hint">o escanea el código QR →</span>
+          </div>
+        </div>
+        <div class="qr">
+          <a href="https://chat.whatsapp.com/DC2nQ5FjQ04KmiWdOKU0XH?mode=gi_t" target="_blank" rel="noopener"><img src="assets/images/atiemppo/novedades-qr.png" alt="Código QR para unirse a Novedades en Vías por WhatsApp"/></a>
+          <div class="cap">Novedades en vías · ATIEMPPO</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section dark" id="contacto">
+    <div class="dots" aria-hidden="true"></div>
     <div class="container contact-inner">
-      <div>
-        <p class="section-kicker">Empecemos</p>
-        <h2 class="section-title">Hablemos del tiempo que tu operación puede recuperar.</h2>
-        <p class="section-copy">No necesitas tener todo claro. Podemos empezar por entender el ruido, las fuentes, los procesos repetitivos y las decisiones que hoy consumen más tiempo del necesario.</p>
-        <div class="contact-card">
-          <div class="contact-links">
-            <a href="mailto:juanmatiz@atiemppo.co" class="contact-link"><span>juanmatiz@atiemppo.co</span><strong>Correo</strong></a>
-            <a href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20hablar%20sobre%20un%20proyecto%20para%20recuperar%20tiempo%20operativo." target="_blank" rel="noopener" class="contact-link"><span>+57 310 768 7010</span><strong>WhatsApp</strong></a>
-            <span class="contact-link"><span>Bogotá, Colombia</span><strong>Base</strong></span>
-          </div>
+      <div data-reveal>
+        <p class="kicker on-dark">Empecemos</p>
+        <h2 class="h2">Hablemos del tiempo que tu operación puede recuperar.</h2>
+        <p class="lead" style="margin:18px 0 32px;max-width:460px">No necesitas tener todo claro. Podemos empezar por entender el ruido, las fuentes, los procesos repetitivos y las decisiones que hoy consumen más tiempo del necesario.</p>
+        <div class="contact-links">
+          <a href="mailto:juanmatiz@atiemppo.co" class="c-link"><span class="ic">@</span><div><div class="v">juanmatiz@atiemppo.co</div><div class="k">Correo</div></div></a>
+          <a href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20hablar%20sobre%20un%20proyecto%20para%20recuperar%20tiempo%20operativo." target="_blank" rel="noopener" class="c-link"><span class="ic">↗</span><div><div class="v">+57 310 768 7010</div><div class="k">WhatsApp · Bogotá, Colombia</div></div></a>
         </div>
       </div>
-      <div class="contact-form">
-        <form
-          id="contactForm"
-          name="contacto"
-          method="POST"
+      <div class="contact-form" data-reveal>
+        <form id="contactForm" name="contacto" method="POST"
           action="https://formsubmit.co/juanmatiz@atiemppo.co"
-          data-google-script-url="https://script.google.com/macros/s/AKfycbyNHCVUttnrND5PWHBFA4ag6x4LXI-zKxlnzBLlnGYJZAICFZDZHki1IAxmowqAUqIDaQ/exec"
-        >
+          data-google-script-url="https://script.google.com/macros/s/AKfycbyNHCVUttnrND5PWHBFA4ag6x4LXI-zKxlnzBLlnGYJZAICFZDZHki1IAxmowqAUqIDaQ/exec">
           <input type="hidden" name="_subject" value="Nuevo contacto desde atiemppo.com"/>
           <input type="hidden" name="_next" value="https://atiemppo.com/gracias/"/>
           <input type="hidden" name="success_redirect" value="https://atiemppo.com/gracias/"/>
@@ -554,35 +539,29 @@ footer{padding:52px 48px;background:#061225;color:#c1cede}
           <input type="hidden" name="origen" value="atiemppo.com"/>
           <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off"/>
           <input type="hidden" name="user_agent" value=""/>
-          <div class="fg"><label>Nombre completo</label><input type="text" name="nombre" placeholder="Tu nombre" required/></div>
-          <div class="fg"><label>Correo electrónico</label><input type="email" name="email" placeholder="tu@empresa.com" required/></div>
-          <div class="fg"><label>Empresa</label><input type="text" name="empresa" placeholder="Nombre de tu empresa"/></div>
-          <div class="fg"><label>Teléfono o WhatsApp</label><input type="text" name="telefono" placeholder="+57 300 000 0000"/></div>
+          <div class="frow">
+            <div class="fg"><label>Nombre completo</label><input type="text" name="nombre" placeholder="Tu nombre" required/></div>
+            <div class="fg"><label>Correo electrónico</label><input type="email" name="email" placeholder="tu@empresa.com" required/></div>
+          </div>
+          <div class="frow">
+            <div class="fg"><label>Empresa</label><input type="text" name="empresa" placeholder="Nombre de tu empresa"/></div>
+            <div class="fg"><label>Teléfono o WhatsApp</label><input type="text" name="telefono" placeholder="+57 300 000 0000"/></div>
+          </div>
           <div class="fg"><label>¿Qué tiempo quieres recuperar?</label><textarea name="mensaje" placeholder="Cuéntanos qué proceso, sistema o decisión consume demasiado tiempo..." required></textarea></div>
-          <button type="submit" class="btn btn-primary" style="width:100%;margin-top:4px">Enviar mensaje</button>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:4px">Enviar mensaje →</button>
           <p class="form-note">ATIEMPPO recibirá tu mensaje por correo y responderá para coordinar el siguiente paso.</p>
         </form>
       </div>
     </div>
   </section>
 
-  <section class="client-strip" id="clientes">
-    <div class="container">
-      <h2>Clientes, aliados y proyectos relacionados</h2>
-      <div class="logo-wall" aria-label="Clientes, aliados y proyectos relacionados">
-        <span class="logo-chip">Haleon</span>
-        <span class="logo-chip">Johnson &amp; Johnson</span>
-        <span class="logo-chip">Coca-Cola</span>
-        <span class="logo-chip">BID</span>
-        <span class="logo-chip">Banco Mundial</span>
-        <span class="logo-chip">DNP</span>
-        <span class="logo-chip">FEDEPALMA</span>
-        <span class="logo-chip">Aspen</span>
-        <span class="logo-chip">iFurniture</span>
-        <span class="logo-chip">Econometría</span>
-        <span class="logo-chip">MinTransporte</span>
-        <span class="logo-chip">AJE Colombia</span>
-        <span class="logo-chip">Galderma</span>
+  <!-- CLIENTES -->
+  <section class="clients" id="clientes">
+    <div class="lbl">Clientes, aliados y proyectos relacionados</div>
+    <div class="marquee-mask">
+      <div class="marquee">
+        <span class="client-chip">Haleon</span><span class="client-chip">Johnson &amp; Johnson</span><span class="client-chip">Coca-Cola</span><span class="client-chip">BID</span><span class="client-chip">Banco Mundial</span><span class="client-chip">DNP</span><span class="client-chip">FEDEPALMA</span><span class="client-chip">Aspen</span><span class="client-chip">iFurniture</span><span class="client-chip">Econometría</span><span class="client-chip">MinTransporte</span><span class="client-chip">AJE Colombia</span><span class="client-chip">Galderma</span>
+        <span class="client-chip">Haleon</span><span class="client-chip">Johnson &amp; Johnson</span><span class="client-chip">Coca-Cola</span><span class="client-chip">BID</span><span class="client-chip">Banco Mundial</span><span class="client-chip">DNP</span><span class="client-chip">FEDEPALMA</span><span class="client-chip">Aspen</span><span class="client-chip">iFurniture</span><span class="client-chip">Econometría</span><span class="client-chip">MinTransporte</span><span class="client-chip">AJE Colombia</span><span class="client-chip">Galderma</span>
       </div>
     </div>
   </section>
@@ -592,26 +571,19 @@ footer{padding:52px 48px;background:#061225;color:#c1cede}
 
 <footer>
   <div class="footer-inner">
-    <div class="footer-brand">
-      <img src="assets/images/logo-atiemppo.png" alt="ATIEMPPO"/>
-      <p>Datos, agentes y sistemas operativos para recuperar tiempo en las empresas.</p>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/images/logo-atiemppo.png" alt="ATIEMPPO"/>
+        <p>Datos, agentes y sistemas operativos para recuperar tiempo en las empresas.</p>
+      </div>
+      <div class="footer-col"><h4>Qué hacemos</h4><ul><li><a href="#puente">El puente</a></li><li><a href="#cuando">Cuándo nos necesitas</a></li><li><a href="#capacidades">Capa agéntica</a></li><li><a href="/reportes/">Reportes</a></li><li><a href="/blog/">Blog</a></li></ul></div>
+      <div class="footer-col"><h4>Productos</h4><ul><li><a href="https://sicealinstante.vercel.app/" target="_blank" rel="noopener">SICETAC al Instante</a></li><li><a href="/sicetac-api/">API SICETAC</a></li><li><a href="/base-completa-sicetac/">Base SICETAC</a></li><li><a href="https://www.eldatologistico.com" target="_blank" rel="noopener">El Dato Logístico</a></li><li><a href="https://chat.whatsapp.com/DC2nQ5FjQ04KmiWdOKU0XH?mode=gi_t" target="_blank" rel="noopener">La Comunidad</a></li><li><a href="/insignia-impact/">Insignia Impact</a></li></ul></div>
+      <div class="footer-col"><h4>Contacto</h4><ul><li><a href="mailto:juanmatiz@atiemppo.co">juanmatiz@atiemppo.co</a></li><li><a href="/politicaprivacidad">Privacidad</a></li><li><a href="/llms.txt">llms.txt</a></li></ul></div>
     </div>
-    <div class="footer-col">
-      <h4>Qué hacemos</h4>
-      <ul><li><a href="#tiempo">Dos idiomas</a></li><li><a href="#cuando-nos-necesitas">Cuándo necesitas de ATIEMPPO</a></li><li><a href="#capacidades">Capa agéntica</a></li><li><a href="/reportes/">Reportes ATIEMPPO</a></li><li><a href="https://atiemppo.com/blog/">Blog</a></li></ul>
+    <div class="footer-bottom">
+      <span>© 2026 ATIEMPPO S.A.S. · Bogotá, Colombia</span>
+      <span class="mono">Negocio, datos e IA para recuperar tiempo</span>
     </div>
-    <div class="footer-col">
-      <h4>Productos</h4>
-      <ul><li><a href="https://sicealinstante.vercel.app/" target="_blank" rel="noopener">SICETAC al Instante</a></li><li><a href="/sicetac-api/">API SICETAC</a></li><li><a href="/base-completa-sicetac/">Base SICETAC</a></li><li><a href="https://www.eldatologistico.com" target="_blank" rel="noopener">El Dato Logístico</a></li><li><a href="https://chat.whatsapp.com/DC2nQ5FjQ04KmiWdOKU0XH?mode=gi_t" target="_blank" rel="noopener">La Comunidad</a></li><li><a href="/insignia-impact/">Insignia Impact</a></li></ul>
-    </div>
-    <div class="footer-col">
-      <h4>Contacto</h4>
-      <ul><li><a href="mailto:juanmatiz@atiemppo.co">juanmatiz@atiemppo.co</a></li><li><a href="/politicaprivacidad">Privacidad</a></li><li><a href="/llms.txt">llms.txt</a></li></ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>© 2026 ATIEMPPO S.A.S. · Bogotá, Colombia</span>
-    <span>Negocio, datos e IA para recuperar tiempo</span>
   </div>
 </footer>
 
@@ -628,7 +600,6 @@ function closeMenu(){
   mobileNav.classList.remove("open");
   document.body.classList.remove("nav-open");
 }
-
 const contactForm=document.getElementById("contactForm");
 if(contactForm){
   const endpoint=contactForm.dataset.googleScriptUrl;
@@ -637,10 +608,7 @@ if(contactForm){
   if(userAgentField){userAgentField.value=navigator.userAgent||"";}
   if(endpoint){contactForm.action=endpoint;}
   contactForm.addEventListener("submit",()=>{
-    if(submitButton){
-      submitButton.disabled=true;
-      submitButton.textContent="Enviando...";
-    }
+    if(submitButton){submitButton.disabled=true;submitButton.textContent="Enviando...";}
   });
 }
 </script>
