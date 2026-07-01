@@ -88,6 +88,11 @@ img{max-width:100%;display:block}
 .mode h3{font-size:1.1rem;margin-bottom:.55rem}
 .mode p{color:var(--muted);font-size:.96rem}
 .mode .sample{margin-top:1rem;border-left:3px solid var(--green);padding:.78rem;background:#f5fbf7;border-radius:0 10px 10px 0;color:#324154;font-weight:700;font-size:.92rem}
+.model-strip{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.72rem}
+.model-step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.05rem;box-shadow:0 18px 42px rgba(16,27,43,.055)}
+.model-step span{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:999px;background:#e8f7ef;color:var(--green);font-weight:900;margin-bottom:.7rem}
+.model-step h3{font-size:1rem;margin-bottom:.45rem}
+.model-step p{color:var(--muted);font-size:.91rem}
 .compare{background:var(--deep);color:#eef7ff}
 .compare h2{color:#fff}
 .compare .section-head p{color:#c6d4e8}
@@ -123,7 +128,7 @@ img{max-width:100%;display:block}
 .site-foot{border-top:1px solid var(--line);padding:1.3rem 0;color:var(--muted);font-size:.88rem}
 .site-foot .container{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 @media(max-width:980px){
-  .hero-grid,.mode-grid,.detail-wrap,.config-grid,.cta-box{grid-template-columns:1fr}
+  .hero-grid,.mode-grid,.model-strip,.detail-wrap,.config-grid,.cta-box{grid-template-columns:1fr}
   .hero{padding-top:2.6rem}
   .hero-grid{gap:1.3rem}
   .proof-row{grid-template-columns:1fr}
@@ -163,6 +168,7 @@ img{max-width:100%;display:block}
       </a>
       <nav class="nav-links" aria-label="Navegacion principal">
         <a href="/">Inicio</a>
+        <a href="#modelo">Modelo</a>
         <a href="#modos">Modos</a>
         <a href="#peajes">Peajes</a>
         <a href="/sicetac-api/">API</a>
@@ -220,6 +226,42 @@ img{max-width:100%;display:block}
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="modelo">
+      <div class="container">
+        <div class="section-head">
+          <h2>Qué hace el modelo</h2>
+          <p>El valor no sale de una respuesta genérica. El modelo organiza la consulta, encuentra la ruta correcta y usa la base SICETAC para entregar una respuesta comparable y explicable.</p>
+        </div>
+        <div class="model-strip">
+          <article class="model-step">
+            <span>1</span>
+            <h3>Entiende el mensaje</h3>
+            <p>Lee frases como “Cartagena a Bogotá C3S3”, “modo plus H8” o “detalle peajes” aunque vengan escritas de forma natural.</p>
+          </article>
+          <article class="model-step">
+            <span>2</span>
+            <h3>Identifica la ruta</h3>
+            <p>Normaliza origen y destino, busca coincidencias en la base y selecciona la ruta principal cuando hay más de una opción disponible.</p>
+          </article>
+          <article class="model-step">
+            <span>3</span>
+            <h3>Aplica configuración</h3>
+            <p>Usa la configuración vehicular solicitada o compara varias cuando se activa modo plus.</p>
+          </article>
+          <article class="model-step">
+            <span>4</span>
+            <h3>Calcula escenarios</h3>
+            <p>Entrega valores por horas logísticas, normalmente H2, H4 y H8, y acepta una hora explícita cuando el usuario la pide.</p>
+          </article>
+          <article class="model-step">
+            <span>5</span>
+            <h3>Explica peajes</h3>
+            <p>Incluye el total de peajes y puede abrir el detalle peaje a peaje con la categoría y el valor usado para la configuración.</p>
+          </article>
         </div>
       </div>
     </section>
