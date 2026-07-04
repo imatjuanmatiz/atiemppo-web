@@ -1,26 +1,26 @@
 ---
 layout: none
-permalink: /blog/
-title: Blog — Laboratorio en Vivo
-description: Notas, avances y piezas editoriales de los proyectos vivos de ATIEMPPO. SICETAC, El Dato Logístico, La Comunidad, Insignia Impact y más.
+permalink: /en/blog/
+title: Blog — Live Lab
+description: Notes, updates and editorial pieces from ATIEMPPO's live projects. SICETAC, El Dato Logístico, La Comunidad, Insignia Impact and more.
 ---
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Blog — Laboratorio en Vivo · ATIEMPPO</title>
-<meta name="description" content="Notas, avances y piezas editoriales de los proyectos vivos de ATIEMPPO. SICETAC, El Dato Logístico, La Comunidad, Insignia Impact y más."/>
+<title>Blog — Live Lab · ATIEMPPO</title>
+<meta name="description" content="Notes, updates and editorial pieces from ATIEMPPO's live projects. SICETAC, El Dato Logístico, La Comunidad, Insignia Impact and more."/>
 <meta name="ai-content-declaration" content="human-authored"/>
 <meta name="llms-txt" content="https://atiemppo.com/llms.txt"/>
 <link rel="alternate" type="text/plain" title="LLMs.txt" href="/llms.txt"/>
-<meta property="og:title" content="Blog — Laboratorio en Vivo · ATIEMPPO"/>
-<meta property="og:description" content="Avances, experimentos y aprendizajes de IA aplicada, logística y datos."/>
+<meta property="og:title" content="Blog — Live Lab · ATIEMPPO"/>
+<meta property="og:description" content="Updates, experiments and lessons on applied AI, logistics and data."/>
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="https://atiemppo.com/blog/"/>
+<meta property="og:url" content="https://atiemppo.com/en/blog/"/>
 <meta property="og:locale" content="es_CO"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<link rel="canonical" href="https://atiemppo.com/blog/"/>
+<link rel="canonical" href="https://atiemppo.com/en/blog/"/>
 <link rel="alternate" hreflang="es" href="https://atiemppo.com/blog/"/>
 <link rel="alternate" hreflang="en" href="https://atiemppo.com/en/blog/"/>
 <link rel="alternate" hreflang="x-default" href="https://atiemppo.com/blog/"/>
@@ -29,7 +29,7 @@ description: Notas, avances y piezas editoriales de los proyectos vivos de ATIEM
   "@context":"https://schema.org",
   "@type":"Blog",
   "@id":"https://atiemppo.com/blog/#blog",
-  "name":"Laboratorio en Vivo — ATIEMPPO",
+  "name":"Live Lab — ATIEMPPO",
   "description":"Avances, experimentos y aprendizajes de IA aplicada, logística y datos.",
   "url":"https://atiemppo.com/blog/",
   "publisher":{"@type":"Organization","name":"ATIEMPPO S.A.S.","logo":"https://atiemppo.com/assets/images/logo-atiemppo.png"}
@@ -153,46 +153,46 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:56px 28px 34px;margin-top:
 
 <div class="nav-wrap">
   <nav class="site-nav">
-    <a href="/" class="nav-logo" aria-label="ATIEMPPO"><img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO"/></a>
+    <a href="/en/" class="nav-logo" aria-label="ATIEMPPO"><img src="../assets/images/logo-atiemppo.png" alt="ATIEMPPO"/></a>
     <div class="nav-links">
-      <a href="/#puente">El puente</a>
-      <a href="/#productos">Productos</a>
-      <a href="/reportes/">Reportes</a>
-      <a href="/blog/" class="active">Blog</a>
-      <a href="/en/blog/" class="lang-switch" aria-label="View in English">EN</a>
-      <a href="/#contacto" class="nav-cta">Hablemos <span class="dot"></span></a>
+      <a href="/en/#puente">The bridge</a>
+      <a href="/en/#productos">Products</a>
+      <a href="/reportes/">Reports</a>
+      <a href="/en/blog/" class="active">Blog</a>
+      <a href="/" class="lang-switch" aria-label="Ver en español">ES</a>
+      <a href="/en/#contacto" class="nav-cta">Let's talk <span class="dot"></span></a>
     </div>
-    <button class="nav-burger" id="burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    <button class="nav-burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
   </nav>
 </div>
 <div class="mobile-nav" id="mobileNav">
-  <a href="/#puente" onclick="closeMenu()">El puente</a>
-  <a href="/#productos" onclick="closeMenu()">Productos</a>
-  <a href="/reportes/" onclick="closeMenu()">Reportes</a>
+  <a href="/en/#puente" onclick="closeMenu()">The bridge</a>
+  <a href="/en/#productos" onclick="closeMenu()">Products</a>
+  <a href="/reportes/" onclick="closeMenu()">Reports</a>
   <a href="/blog/" onclick="closeMenu()">Blog</a>
-  <a href="/en/blog/" onclick="closeMenu()">English</a>
-  <a href="/#contacto" onclick="closeMenu()">Hablemos</a>
+  <a href="/" onclick="closeMenu()">Español</a>
+  <a href="/en/#contacto" onclick="closeMenu()">Let's talk</a>
 </div>
 
 <main>
   <section class="blog-hero">
     <div class="grid-bg" aria-hidden="true"></div>
-    <div class="badge"><span class="dot"></span> Laboratorio en Vivo</div>
-    <h1>Avances, experimentos y aprendizajes.</h1>
-    <p>Piezas cortas que dan contexto a cada proyecto vivo de ATIEMPPO: SICETAC, El Dato Logístico, La Comunidad, Insignia Impact y más.</p>
+    <div class="badge"><span class="dot"></span> Live Lab</div>
+    <h1>Updates, experiments and lessons.</h1>
+    <p>Short pieces that give context to each of ATIEMPPO's live projects: SICETAC, El Dato Logístico, La Comunidad, Insignia Impact and more.</p>
   </section>
 
   <div class="blog-main">
-    {% assign posts_l = site.posts | where_exp: "p","p.lang != 'en'" %}
+    {% assign posts_l = site.posts | where: "lang","en" %}
     {% if posts_l.size > 0 %}
       {% assign f = posts_l.first %}
       <a class="blog-featured" data-reveal data-cat="{{ f.lab | default:'Lab' | downcase }}" href="{{ f.url }}">
         <div class="img"><img src="{% if f.image %}{{ f.image }}{% else %}/assets/images/atiemppo/cover-blog.png{% endif %}" alt="{{ f.title }}" loading="lazy"/></div>
         <div class="body">
-          <div class="meta"><span class="lab">{{ f.lab | default:'Lab' }}</span><span class="date">{{ f.date | date:"%b %Y" }} · Destacado</span></div>
+          <div class="meta"><span class="lab">{{ f.lab | default:'Lab' }}</span><span class="date">{{ f.date | date:"%b %Y" }} · Featured</span></div>
           <h2>{{ f.title }}</h2>
           <p class="ex">{{ f.description | default: f.excerpt | strip_html | truncatewords: 34 }}</p>
-          <span class="read">Leer artículo →</span>
+          <span class="read">Read article →</span>
         </div>
       </a>
 
@@ -205,13 +205,13 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:56px 28px 34px;margin-top:
             <div class="blc-body">
               <h3>{{ post.title }}</h3>
               <p>{{ post.description | default: post.excerpt | strip_html | truncatewords: 22 }}</p>
-              <span class="blc-read">Leer →</span>
+              <span class="blc-read">Read →</span>
             </div>
           </a>
         {% endfor %}
       </div>
     {% else %}
-      <div class="blog-empty"><p>Los primeros artículos del laboratorio están en camino.</p><a href="/" class="chip">← Volver al inicio</a></div>
+      <div class="blog-empty"><p>The first lab articles are on the way.</p><a href="/en/" class="chip">← Back to home</a></div>
     {% endif %}
   </div>
 </main>
@@ -219,17 +219,17 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:56px 28px 34px;margin-top:
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
-      <a href="/" aria-label="ATIEMPPO"><img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO"/></a>
+      <a href="/en/" aria-label="ATIEMPPO"><img src="../assets/images/logo-atiemppo.png" alt="ATIEMPPO"/></a>
       <div class="footer-nav">
-        <a href="/#productos">Productos</a>
-        <a href="/reportes/">Reportes</a>
-        <a href="/blog/">Blog</a>
-        <a href="/#contacto">Hablemos</a>
+        <a href="/en/#productos">Products</a>
+        <a href="/reportes/">Reports</a>
+        <a href="/en/blog/">Blog</a>
+        <a href="/en/#contacto">Let's talk</a>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 ATIEMPPO S.A.S. · Bogotá, Colombia</span>
-      <span class="mono">Laboratorio en Vivo</span>
+      <span class="mono">Live Lab</span>
     </div>
   </div>
 </footer>
@@ -278,7 +278,7 @@ function catColor(c){return CATC[(c||'').trim()]||['rgba(14,44,77,.1)','#0E2C4D'
     cats.forEach(k=>{
       const b=document.createElement('button');
       b.className='chip'+(k===active?' active':'');
-      b.textContent = k==='todos' ? 'Todos' : seen.get(k);
+      b.textContent = k==='todos' ? 'All' : seen.get(k);
       b.onclick=()=>{active=k;apply();};
       bar.appendChild(b);
     });
