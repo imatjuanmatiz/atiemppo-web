@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <title>Novedades en Vías | ATIEMPPO</title>
+  <meta name="description" content="Estado operativo de novedades viales en Colombia por cortes AM, MD y PM.">
+  <link rel="canonical" href="https://atiemppo.com/novedades-en-vias/">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <div class="atiemppo-nav-wrap">
+    <nav class="atiemppo-nav" aria-label="Navegación principal ATIEMPPO">
+      <a href="/" class="atiemppo-logo" aria-label="ATIEMPPO, inicio">
+        <img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO">
+      </a>
+      <div class="atiemppo-links">
+        <a href="/">Inicio</a>
+        <a href="/servicios/">Servicios</a>
+        <a href="/novedades-en-vias/" class="active" aria-current="page">Novedades en Vías</a>
+        <a href="/reportes/">Reportes</a>
+        <a href="/blog/">Blog</a>
+      </div>
+    </nav>
+  </div>
+
+  <header class="site-header">
+    <div class="header-grid">
+      <div>
+        <p class="eyebrow">Operación vial · Colombia</p>
+        <h1>Novedades en Vías</h1>
+        <p class="lede">Lectura viva por cortes AM, MD y PM, organizada por corredores y con evidencia trazable.</p>
+      </div>
+      <dl class="cut-card" aria-label="Corte cargado">
+        <div><dt>Corte</dt><dd id="cut-id">Cargando…</dd></div>
+        <div><dt>Fecha</dt><dd id="cut-date">—</dd></div>
+        <div><dt>Ventana</dt><dd id="cut-window">—</dd></div>
+        <div><dt>Hora</dt><dd id="cut-time">—</dd></div>
+      </dl>
+    </div>
+  </header>
+
+  <div id="load-status" class="load-status" role="status" aria-live="polite">Cargando estado vial…</div>
+
+  <main id="contenido">
+    <section id="alerta-inmediata" class="section section-alert" aria-labelledby="alert-title">
+      <div class="section-heading">
+        <p class="section-number">01</p>
+        <div>
+          <p class="eyebrow">Prioridad operativa</p>
+          <h2 id="alert-title">Alerta inmediata</h2>
+        </div>
+      </div>
+      <div id="alert-list" class="alert-list"></div>
+    </section>
+
+    <section id="tablero-salud" class="section" aria-labelledby="health-title">
+      <div class="section-heading">
+        <p class="section-number">02</p>
+        <div>
+          <p class="eyebrow">Cobertura del corte</p>
+          <h2 id="health-title">Tablero de salud</h2>
+        </div>
+      </div>
+      <div id="health-kpis" class="kpi-grid"></div>
+      <div id="source-health" class="health-grid"></div>
+    </section>
+
+    <section id="acciones-sugeridas" class="section" aria-labelledby="actions-title">
+      <div class="section-heading">
+        <p class="section-number">03</p>
+        <div>
+          <p class="eyebrow">Siguiente decisión</p>
+          <h2 id="actions-title">Acciones sugeridas</h2>
+        </div>
+      </div>
+      <ol id="action-list" class="action-list"></ol>
+    </section>
+
+    <section id="corredores-en-foco" class="section section-corridors" aria-labelledby="corridors-title">
+      <div class="section-heading">
+        <p class="section-number">04</p>
+        <div>
+          <p class="eyebrow">Lectura rápida del territorio</p>
+          <h2 id="corridors-title">Corredores en foco</h2>
+        </div>
+      </div>
+      <p class="corridor-intro">Vista operativa sin mapa: cada tarjeta resume estado, tramo y tipo de novedad. La ubicación exacta se incorporará solo cuando exista un proceso de validación geográfica.</p>
+      <div id="corridor-list" class="corridor-grid"></div>
+    </section>
+
+    <section id="detalle-corredor" class="section" aria-labelledby="detail-title">
+      <div class="section-heading">
+        <p class="section-number">05</p>
+        <div>
+          <p class="eyebrow">Confirmado y en vigilancia</p>
+          <h2 id="detail-title">Detalle por corredor</h2>
+        </div>
+      </div>
+      <div class="corridor-explorer-controls">
+        <label for="corridor-select">Seleccionar corredor</label>
+        <select id="corridor-select"></select>
+      </div>
+      <div id="corridor-analysis" class="corridor-analysis"></div>
+      <div id="corridor-week" class="corridor-week" aria-label="Actividad diaria del corredor durante los últimos siete días"></div>
+      <div class="corridor-history-grid">
+        <div>
+          <p class="eyebrow">Evolución diaria</p>
+          <ol id="corridor-history-list" class="corridor-history-list"></ol>
+        </div>
+        <div>
+          <p class="eyebrow">Último corte</p>
+          <div id="event-list" class="event-grid event-grid-selected"></div>
+        </div>
+      </div>
+      <p id="corridor-method" class="corridor-method"></p>
+    </section>
+
+    <section id="historial-cambios" class="section" aria-labelledby="history-title">
+      <div class="section-heading">
+        <p class="section-number">06</p>
+        <div>
+          <p class="eyebrow">Secuencia AM · MD · PM</p>
+          <h2 id="history-title">Historial de cambios del día</h2>
+        </div>
+      </div>
+      <ol id="change-list" class="timeline"></ol>
+    </section>
+
+    <section id="fuentes-trazabilidad" class="section" aria-labelledby="sources-title">
+      <div class="section-heading">
+        <p class="section-number">07</p>
+        <div>
+          <p class="eyebrow">Evidencia del corte</p>
+          <h2 id="sources-title">Fuentes y trazabilidad</h2>
+        </div>
+      </div>
+      <div id="trace-summary" class="trace-summary"></div>
+      <div id="source-list" class="source-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Reporte informativo ATIEMPPO. La ausencia de una novedad no confirma apertura ni normalización; valide siempre con la fuente vial correspondiente.</p>
+  </footer>
+</body>
+</html>
