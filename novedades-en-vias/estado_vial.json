@@ -2,44 +2,55 @@
   "schema_version": "1.1",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-07-16-am",
+  "cut_id": "2026-07-16-md",
   "fecha": "2026-07-16",
-  "ventana": "AM",
-  "hora": "07:00",
-  "generado_en": "2026-07-16T07:00:00",
-  "artefacto_fuente": "2026-07-16-editor-eldato-version-vias-colombia-am.md",
+  "ventana": "MD",
+  "hora": "12:00",
+  "generado_en": "2026-07-16T12:00:00",
+  "artefacto_fuente": "2026-07-16-editor-eldato-version-vias-colombia-md.md",
   "alertas_inmediatas": [
     {
-      "id": "alert-evt-f721392d26c38325c6c3",
+      "id": "alert-evt-8ea41fc6275ed431ec14",
       "nivel": "critical",
-      "titulo": "cierre total · Belén–Sácama, Boyacá",
-      "mensaje": "reportado con cierre total dentro de la emergencia departamental por lluvias; se requiere confirmación de hora y punto exactos antes de movilizar carga.",
-      "event_id": "evt-f721392d26c38325c6c3",
-      "corredor": "Belén–Sácama, Boyacá",
+      "titulo": "cierre total · La Lejía–Saravena, Norte de Santander (PR 22+000–PR 26+000)",
+      "mensaje": "cierre total visible en Policía.",
+      "event_id": "evt-8ea41fc6275ed431ec14",
+      "corredor": "La Lejía–Saravena, Norte de Santander (PR 22+000–PR 26+000)",
       "fuente_ids": [
-        "src-69d4eb17a43467f379aa226b"
+        "src-de54704ef59cb6b2bffbe54b"
       ]
     },
     {
-      "id": "alert-evt-c4a2a51176c6e72ff0e8",
+      "id": "alert-evt-5dd672c34e125971bfeb",
       "nivel": "critical",
-      "titulo": "cierre total · La Lejía–Saravena, Arauca",
-      "mensaje": "sin evidencia nueva que confirme apertura del cierre total previamente publicado.",
-      "event_id": "evt-c4a2a51176c6e72ff0e8",
-      "corredor": "La Lejía–Saravena, Arauca",
+      "titulo": "cierre total · Samanga–La Esperanza–El Canelo, Cauca (PR 3+300–PR 3+400)",
+      "mensaje": "cierre total visible en Policía.",
+      "event_id": "evt-5dd672c34e125971bfeb",
+      "corredor": "Samanga–La Esperanza–El Canelo, Cauca (PR 3+300–PR 3+400)",
       "fuente_ids": [
-        "src-435e683ddc5b52485f0c6f85"
+        "src-5b47e2cf9c19c27a1dde356a"
       ]
     },
     {
-      "id": "alert-evt-53f02108200a039c26cd",
+      "id": "alert-evt-00a2f7f817b45459a3e7",
       "nivel": "critical",
-      "titulo": "cierre total · Transversal del Sisga",
-      "mensaje": "ANI mantiene publicado cierre total en el sector Marrano Loco, PR 51+800, Santa María.",
-      "event_id": "evt-53f02108200a039c26cd",
-      "corredor": "Transversal del Sisga",
+      "titulo": "cierre total · Transversal Las Ánimas–Bogotá, Cundinamarca (PR 66+480–PR 67+000)",
+      "mensaje": "cierre total visible en Policía hasta el 7 de septiembre de 2026, salvo actualización de la autoridad.",
+      "event_id": "evt-00a2f7f817b45459a3e7",
+      "corredor": "Transversal Las Ánimas–Bogotá, Cundinamarca (PR 66+480–PR 67+000)",
       "fuente_ids": [
-        "src-d03fc521d1113735d5c4bd1f"
+        "src-6d4fa43949a45a9fd4d6eb3a"
+      ]
+    },
+    {
+      "id": "alert-evt-88962f6180ccdf6198e5",
+      "nivel": "high",
+      "titulo": "cierre parcial · Paso Nacional por Tolú, Sucre (PR 45+846–PR 46+928)",
+      "mensaje": "cierre parcial visible en el tablero de Policía.",
+      "event_id": "evt-88962f6180ccdf6198e5",
+      "corredor": "Paso Nacional por Tolú, Sucre (PR 45+846–PR 46+928)",
+      "fuente_ids": [
+        "src-69855de6863a0d9614f018f1"
       ]
     }
   ],
@@ -51,87 +62,74 @@
       "PM"
     ],
     "ventanas_recibidas": [
-      "AM"
+      "AM",
+      "MD"
     ],
     "eventos_confirmados": 4,
     "eventos_vigilancia": 2,
     "pendientes_georreferencia": 6,
     "fuentes": [
       {
-        "id": "src-e92caed453755261a3a84218",
-        "nombre": "Fuente directa: https://www.vanguardia.com/colombia/2026/07/10/alerta-roja-en-arauca-fuertes-lluvias-derriban-puentes-y-dejan-incomunicado-al-departamento/",
-        "estado": "consultada",
-        "ultima_consulta": "2026-07-16T07:00:00",
-        "nota": "Aporta evidencia a 1 evento(s) del corte."
-      },
-      {
-        "id": "src-f80c41ac9660dac9bf5089eb",
-        "nombre": "Fuente directa: https://www.ani.gov.co/node/42789",
-        "estado": "consultada",
-        "ultima_consulta": "2026-07-16T07:00:00",
-        "nota": "Aporta evidencia a 1 evento(s) del corte."
-      },
-      {
-        "id": "src-d03fc521d1113735d5c4bd1f",
-        "nombre": "Fuente directa: https://www.ani.gov.co/continua-el-cierre-total-de-la-transversal-del-sisga-se-han-removido-aproximadamente-1000-m3-de",
-        "estado": "consultada",
-        "ultima_consulta": "2026-07-16T07:00:00",
-        "nota": "Aporta evidencia a 1 evento(s) del corte."
-      },
-      {
-        "id": "src-5b9ab4bad35351f50ee7c603",
-        "nombre": "Fuente directa: https://www.boyaca.gov.co/gobernacion-de-boyaca-mantiene-desplegada-toda-su-capacidad-institucional-para-atender-emergencia-por-lluvias-en-27-municipios/",
-        "estado": "consultada",
-        "ultima_consulta": "2026-07-16T07:00:00",
-        "nota": "Aporta evidencia a 2 evento(s) del corte."
-      },
-      {
-        "id": "src-435e683ddc5b52485f0c6f85",
+        "id": "src-6d4fa43949a45a9fd4d6eb3a",
         "nombre": "Fuente directa: https://www.policia.gov.co/estado-de-las-vias",
         "estado": "consultada",
-        "ultima_consulta": "2026-07-16T07:00:00",
+        "ultima_consulta": "2026-07-16T12:00:00",
+        "nota": "Aporta evidencia a 4 evento(s) del corte."
+      },
+      {
+        "id": "src-6b1051c76888c94c1d403502",
+        "nombre": "Fuente directa: https://x.com/VConcesionadas/status/2077427716622602670",
+        "estado": "consultada",
+        "ultima_consulta": "2026-07-16T12:00:00",
+        "nota": "Aporta evidencia a 1 evento(s) del corte."
+      },
+      {
+        "id": "src-f06109777f219d1a56391683",
+        "nombre": "Fuente directa: https://www.ani.gov.co/se-habilita-la-circulacion-de-vehiculos-de-hasta-30-toneladas-de-forma-controlada-en-la-transversal",
+        "estado": "consultada",
+        "ultima_consulta": "2026-07-16T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       }
     ]
   },
   "acciones_sugeridas": [
     {
-      "id": "action-evt-f721392d26c38325c6c3",
+      "id": "action-evt-8ea41fc6275ed431ec14",
       "prioridad": "critical",
-      "corredor": "Belén–Sácama, Boyacá",
-      "accion": "alto para la conectividad regional del norte de Boyacá y sus enlaces hacia Casanare.",
-      "event_id": "evt-f721392d26c38325c6c3",
-      "fundamento": "reportado con cierre total dentro de la emergencia departamental por lluvias; se requiere confirmación de hora y punto exactos antes de movilizar carga."
+      "corredor": "La Lejía–Saravena, Norte de Santander (PR 22+000–PR 26+000)",
+      "accion": "afectación alta para la conectividad hacia Saravena y Arauca; revisar la alternativa por Labateca–Toledo indicada en el tablero.",
+      "event_id": "evt-8ea41fc6275ed431ec14",
+      "fundamento": "cierre total visible en Policía."
     },
     {
-      "id": "action-evt-c4a2a51176c6e72ff0e8",
+      "id": "action-evt-5dd672c34e125971bfeb",
       "prioridad": "critical",
-      "corredor": "La Lejía–Saravena, Arauca",
-      "accion": "alto para flujos regionales hacia Saravena y Arauca.",
-      "event_id": "evt-c4a2a51176c6e72ff0e8",
-      "fundamento": "sin evidencia nueva que confirme apertura del cierre total previamente publicado."
+      "corredor": "Samanga–La Esperanza–El Canelo, Cauca (PR 3+300–PR 3+400)",
+      "accion": "interrupción del tramo y desvío por las alternativas listadas por la autoridad, sujeto a capacidad y confirmación operativa.",
+      "event_id": "evt-5dd672c34e125971bfeb",
+      "fundamento": "cierre total visible en Policía."
     },
     {
-      "id": "action-evt-53f02108200a039c26cd",
+      "id": "action-evt-00a2f7f817b45459a3e7",
       "prioridad": "critical",
-      "corredor": "Transversal del Sisga",
-      "accion": "crítico para flujos entre Bogotá, Boyacá, Casanare y Arauca; no programar el cruce como disponible.",
-      "event_id": "evt-53f02108200a039c26cd",
-      "fundamento": "ANI mantiene publicado cierre total en el sector Marrano Loco, PR 51+800, Santa María."
+      "corredor": "Transversal Las Ánimas–Bogotá, Cundinamarca (PR 66+480–PR 67+000)",
+      "accion": "no planear el sector como paso disponible; anticipar desvío y tiempo adicional.",
+      "event_id": "evt-00a2f7f817b45459a3e7",
+      "fundamento": "cierre total visible en Policía hasta el 7 de septiembre de 2026, salvo actualización de la autoridad."
     },
     {
-      "id": "action-evt-3f31f2fca3f51a214cee",
-      "prioridad": "medium",
-      "corredor": "Pacífico 1 - Areneras",
-      "accion": "posible interrupción diurna; confirmar ventana y excepciones antes del cruce.",
-      "event_id": "evt-3f31f2fca3f51a214cee",
-      "fundamento": "no hay evidencia nueva de cambio frente al cierre programado reportado en el PM anterior."
+      "id": "action-evt-88962f6180ccdf6198e5",
+      "prioridad": "high",
+      "corredor": "Paso Nacional por Tolú, Sucre (PR 45+846–PR 46+928)",
+      "accion": "posible demora y control de paso en el acceso portuario/turístico de Tolú.",
+      "event_id": "evt-88962f6180ccdf6198e5",
+      "fundamento": "cierre parcial visible en el tablero de Policía."
     }
   ],
   "eventos_confirmados": [
     {
-      "id": "evt-f721392d26c38325c6c3",
-      "corredor": "Belén–Sácama, Boyacá",
+      "id": "evt-8ea41fc6275ed431ec14",
+      "corredor": "La Lejía–Saravena, Norte de Santander (PR 22+000–PR 26+000)",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -140,43 +138,10 @@
       "tipo": "cierre_total",
       "severidad": "critical",
       "estado": "active",
-      "resumen": "reportado con cierre total dentro de la emergencia departamental por lluvias; se requiere confirmación de hora y punto exactos antes de movilizar carga.",
-      "impacto_operativo": "alto para la conectividad regional del norte de Boyacá y sus enlaces hacia Casanare.",
-      "confianza": 0.65,
-      "actualizado_en": "2026-07-16T07:00:00",
-      "georreferencia": {
-        "estado": "sin_georreferencia",
-        "lat": null,
-        "lon": null,
-        "etiqueta": "Sin coordenadas; marcador oculto"
-      },
-      "fuentes": [
-        {
-          "id": "src-69d4eb17a43467f379aa226b",
-          "nombre": "Fuente directa: https://www.boyaca.gov.co/gobernacion-de-boyaca-mantiene-desplegada-toda-su-capacidad-institucional-para-atender-emergencia-por-lluvias-en-27-municipios/",
-          "url": "https://www.boyaca.gov.co/gobernacion-de-boyaca-mantiene-desplegada-toda-su-capacidad-institucional-para-atender-emergencia-por-lluvias-en-27-municipios/",
-          "fortaleza": "media",
-          "publicada_en": null,
-          "consultada_en": "2026-07-16T07:00:00",
-          "evidencia": "reportado con cierre total dentro de la emergencia departamental por lluvias; se requiere confirmación de hora y punto exactos antes de movilizar carga."
-        }
-      ]
-    },
-    {
-      "id": "evt-c4a2a51176c6e72ff0e8",
-      "corredor": "La Lejía–Saravena, Arauca",
-      "tramo": "Tramo por precisar",
-      "departamento": null,
-      "municipio": null,
-      "via": null,
-      "km": null,
-      "tipo": "cierre_total",
-      "severidad": "critical",
-      "estado": "active",
-      "resumen": "sin evidencia nueva que confirme apertura del cierre total previamente publicado.",
-      "impacto_operativo": "alto para flujos regionales hacia Saravena y Arauca.",
+      "resumen": "cierre total visible en Policía.",
+      "impacto_operativo": "afectación alta para la conectividad hacia Saravena y Arauca; revisar la alternativa por Labateca–Toledo indicada en el tablero.",
       "confianza": 0.9,
-      "actualizado_en": "2026-07-16T07:00:00",
+      "actualizado_en": "2026-07-16T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -185,20 +150,20 @@
       },
       "fuentes": [
         {
-          "id": "src-435e683ddc5b52485f0c6f85",
+          "id": "src-de54704ef59cb6b2bffbe54b",
           "nombre": "Fuente directa: https://www.policia.gov.co/estado-de-las-vias",
           "url": "https://www.policia.gov.co/estado-de-las-vias",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-07-16T07:00:00",
-          "evidencia": "sin evidencia nueva que confirme apertura del cierre total previamente publicado."
+          "consultada_en": "2026-07-16T12:00:00",
+          "evidencia": "cierre total visible en Policía."
         }
       ]
     },
     {
-      "id": "evt-53f02108200a039c26cd",
-      "corredor": "Transversal del Sisga",
-      "tramo": "Marrano Loco, Santa María, Boyacá",
+      "id": "evt-5dd672c34e125971bfeb",
+      "corredor": "Samanga–La Esperanza–El Canelo, Cauca (PR 3+300–PR 3+400)",
+      "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
       "via": null,
@@ -206,10 +171,10 @@
       "tipo": "cierre_total",
       "severidad": "critical",
       "estado": "active",
-      "resumen": "ANI mantiene publicado cierre total en el sector Marrano Loco, PR 51+800, Santa María.",
-      "impacto_operativo": "crítico para flujos entre Bogotá, Boyacá, Casanare y Arauca; no programar el cruce como disponible.",
+      "resumen": "cierre total visible en Policía.",
+      "impacto_operativo": "interrupción del tramo y desvío por las alternativas listadas por la autoridad, sujeto a capacidad y confirmación operativa.",
       "confianza": 0.9,
-      "actualizado_en": "2026-07-16T07:00:00",
+      "actualizado_en": "2026-07-16T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -218,31 +183,31 @@
       },
       "fuentes": [
         {
-          "id": "src-d03fc521d1113735d5c4bd1f",
-          "nombre": "Fuente directa: https://www.ani.gov.co/continua-el-cierre-total-de-la-transversal-del-sisga-se-han-removido-aproximadamente-1000-m3-de",
-          "url": "https://www.ani.gov.co/continua-el-cierre-total-de-la-transversal-del-sisga-se-han-removido-aproximadamente-1000-m3-de",
+          "id": "src-5b47e2cf9c19c27a1dde356a",
+          "nombre": "Fuente directa: https://www.policia.gov.co/estado-de-las-vias",
+          "url": "https://www.policia.gov.co/estado-de-las-vias",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-07-16T07:00:00",
-          "evidencia": "ANI mantiene publicado cierre total en el sector Marrano Loco, PR 51+800, Santa María."
+          "consultada_en": "2026-07-16T12:00:00",
+          "evidencia": "cierre total visible en Policía."
         }
       ]
     },
     {
-      "id": "evt-3f31f2fca3f51a214cee",
-      "corredor": "Pacífico 1 - Areneras",
-      "tramo": "Peñalisa–Primavera, sector Areneras",
+      "id": "evt-00a2f7f817b45459a3e7",
+      "corredor": "Transversal Las Ánimas–Bogotá, Cundinamarca (PR 66+480–PR 67+000)",
+      "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
       "via": null,
       "km": null,
-      "tipo": "obras",
-      "severidad": "medium",
+      "tipo": "cierre_total",
+      "severidad": "critical",
       "estado": "active",
-      "resumen": "no hay evidencia nueva de cambio frente al cierre programado reportado en el PM anterior.",
-      "impacto_operativo": "posible interrupción diurna; confirmar ventana y excepciones antes del cruce.",
+      "resumen": "cierre total visible en Policía hasta el 7 de septiembre de 2026, salvo actualización de la autoridad.",
+      "impacto_operativo": "no planear el sector como paso disponible; anticipar desvío y tiempo adicional.",
       "confianza": 0.9,
-      "actualizado_en": "2026-07-16T07:00:00",
+      "actualizado_en": "2026-07-16T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -251,33 +216,66 @@
       },
       "fuentes": [
         {
-          "id": "src-f80c41ac9660dac9bf5089eb",
-          "nombre": "Fuente directa: https://www.ani.gov.co/node/42789",
-          "url": "https://www.ani.gov.co/node/42789",
+          "id": "src-6d4fa43949a45a9fd4d6eb3a",
+          "nombre": "Fuente directa: https://www.policia.gov.co/estado-de-las-vias",
+          "url": "https://www.policia.gov.co/estado-de-las-vias",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-07-16T07:00:00",
-          "evidencia": "no hay evidencia nueva de cambio frente al cierre programado reportado en el PM anterior."
+          "consultada_en": "2026-07-16T12:00:00",
+          "evidencia": "cierre total visible en Policía hasta el 7 de septiembre de 2026, salvo actualización de la autoridad."
+        }
+      ]
+    },
+    {
+      "id": "evt-88962f6180ccdf6198e5",
+      "corredor": "Paso Nacional por Tolú, Sucre (PR 45+846–PR 46+928)",
+      "tramo": "Tramo por precisar",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
+      "tipo": "cierre_parcial",
+      "severidad": "high",
+      "estado": "active",
+      "resumen": "cierre parcial visible en el tablero de Policía.",
+      "impacto_operativo": "posible demora y control de paso en el acceso portuario/turístico de Tolú.",
+      "confianza": 0.9,
+      "actualizado_en": "2026-07-16T12:00:00",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
+      "fuentes": [
+        {
+          "id": "src-69855de6863a0d9614f018f1",
+          "nombre": "Fuente directa: https://www.policia.gov.co/estado-de-las-vias",
+          "url": "https://www.policia.gov.co/estado-de-las-vias",
+          "fortaleza": "official",
+          "publicada_en": null,
+          "consultada_en": "2026-07-16T12:00:00",
+          "evidencia": "cierre parcial visible en el tablero de Policía."
         }
       ]
     }
   ],
   "eventos_vigilancia": [
     {
-      "id": "evt-b0f1cde40aa777b2ecf4",
-      "corredor": "Macanal–Santa María y corredores afectados de Boyacá",
+      "id": "evt-366c6931300a24197fa4",
+      "corredor": "San Rafael de Lebrija, Rionegro, Santander (RN 4513, PR 62+200)",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
       "via": null,
       "km": null,
-      "tipo": "movimiento_en_masa",
+      "tipo": "bloqueo",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "hay reporte de pasos restringidos o afectaciones por lluvias en Macanal–Santa María, Otanche–Chiquinquirá, Tunja–Páez y Duitama–La Palmera; el estado puntual de cada PR no fue confirmado en el parte nacional consultado.",
-      "impacto_operativo": "demoras y necesidad de verificar capacidad, paso controlado o desvío antes de cargar rutas por el departamento.",
-      "confianza": 0.35,
-      "actualizado_en": "2026-07-16T07:00:00",
+      "resumen": "señal externa de cierre por bloqueo comunitario del 15 de julio; no confirmada por autoridad o concesión al MD.",
+      "impacto_operativo": "riesgo de interrupción local si la señal sigue vigente; no redireccionar carga solo con este dato.",
+      "confianza": 0.5,
+      "actualizado_en": "2026-07-16T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -286,20 +284,20 @@
       },
       "fuentes": [
         {
-          "id": "src-5b9ab4bad35351f50ee7c603",
-          "nombre": "Fuente directa: https://www.boyaca.gov.co/gobernacion-de-boyaca-mantiene-desplegada-toda-su-capacidad-institucional-para-atender-emergencia-por-lluvias-en-27-municipios/",
-          "url": "https://www.boyaca.gov.co/gobernacion-de-boyaca-mantiene-desplegada-toda-su-capacidad-institucional-para-atender-emergencia-por-lluvias-en-27-municipios/",
-          "fortaleza": "media",
+          "id": "src-6b1051c76888c94c1d403502",
+          "nombre": "Fuente directa: https://x.com/VConcesionadas/status/2077427716622602670",
+          "url": "https://x.com/VConcesionadas/status/2077427716622602670",
+          "fortaleza": "social",
           "publicada_en": null,
-          "consultada_en": "2026-07-16T07:00:00",
-          "evidencia": "hay reporte de pasos restringidos o afectaciones por lluvias en Macanal–Santa María, Otanche–Chiquinquirá, Tunja–Páez y Duitama–La Palmera; el estado puntual de cada PR no fue confirmado en el parte nacional consultado."
+          "consultada_en": "2026-07-16T12:00:00",
+          "evidencia": "señal externa de cierre por bloqueo comunitario del 15 de julio; no confirmada por autoridad o concesión al MD."
         }
       ]
     },
     {
-      "id": "evt-31d5a49aeefbdadc6597",
-      "corredor": "Ruta de la Soberanía",
-      "tramo": "Cubará–Saravena, Arauca–Norte de Santander",
+      "id": "evt-b59b8b09dc143a4dc422",
+      "corredor": "Transversal del Sisga, Boyacá",
+      "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
       "via": null,
@@ -307,10 +305,10 @@
       "tipo": "otro",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "señal externa reporta daños de puentes y pérdida de banca; no hay validación oficial directa obtenida para declarar el estado actual del corredor.",
-      "impacto_operativo": "riesgo de aislamiento y desvíos para la conexión hacia Saravena; no redireccionar únicamente con esta señal.",
-      "confianza": 0.35,
-      "actualizado_en": "2026-07-16T07:00:00",
+      "resumen": "condición por reconfirmar antes de despacho; ANI tiene publicada habilitación controlada para vehículos de hasta 30 toneladas, sin parte horario posterior encontrado al MD.",
+      "impacto_operativo": "no programar vehículos superiores a 30 toneladas ni asumir continuidad sin validar con ANI/concesión; puede afectar los flujos Bogotá–Casanare–Arauca.",
+      "confianza": 0.65,
+      "actualizado_en": "2026-07-16T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -319,13 +317,13 @@
       },
       "fuentes": [
         {
-          "id": "src-e92caed453755261a3a84218",
-          "nombre": "Fuente directa: https://www.vanguardia.com/colombia/2026/07/10/alerta-roja-en-arauca-fuertes-lluvias-derriban-puentes-y-dejan-incomunicado-al-departamento/",
-          "url": "https://www.vanguardia.com/colombia/2026/07/10/alerta-roja-en-arauca-fuertes-lluvias-derriban-puentes-y-dejan-incomunicado-al-departamento/",
-          "fortaleza": "media",
+          "id": "src-f06109777f219d1a56391683",
+          "nombre": "Fuente directa: https://www.ani.gov.co/se-habilita-la-circulacion-de-vehiculos-de-hasta-30-toneladas-de-forma-controlada-en-la-transversal",
+          "url": "https://www.ani.gov.co/se-habilita-la-circulacion-de-vehiculos-de-hasta-30-toneladas-de-forma-controlada-en-la-transversal",
+          "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-07-16T07:00:00",
-          "evidencia": "señal externa reporta daños de puentes y pérdida de banca; no hay validación oficial directa obtenida para declarar el estado actual del corredor."
+          "consultada_en": "2026-07-16T12:00:00",
+          "evidencia": "condición por reconfirmar antes de despacho; ANI tiene publicada habilitación controlada para vehículos de hasta 30 toneladas, sin parte horario posterior encontrado al MD."
         }
       ]
     }
@@ -1478,6 +1476,219 @@
         ]
       },
       {
+        "corredor": "Transversal Las Ánimas–Bogotá, Cundinamarca (PR 66+480–PR 67+000)",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "critical",
+        "ultima_observacion": "2026-07-16T12:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-07-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-12",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-13",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-14",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-15",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-16",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "cierre total visible en Policía hasta el 7 de septiembre de 2026, salvo actualización de la autoridad."
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "Samanga–La Esperanza–El Canelo, Cauca (PR 3+300–PR 3+400)",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "critical",
+        "ultima_observacion": "2026-07-16T12:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-07-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-12",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-13",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-14",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-15",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-16",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "cierre total visible en Policía."
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "La Lejía–Saravena, Norte de Santander (PR 22+000–PR 26+000)",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "critical",
+        "ultima_observacion": "2026-07-16T12:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-07-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-12",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-13",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-14",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-15",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-16",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "cierre total visible en Policía."
+            ]
+          }
+        ]
+      },
+      {
         "corredor": "La Lejía–Saravena, Arauca",
         "dias_confirmados": 1,
         "dias_vigilancia": 0,
@@ -1615,6 +1826,77 @@
             "severidad_maxima": "critical",
             "resumenes": [
               "reportado con cierre total dentro de la emergencia departamental por lluvias; se requiere confirmación de hora y punto exactos antes de movilizar carga."
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "Paso Nacional por Tolú, Sucre (PR 45+846–PR 46+928)",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "high",
+        "ultima_observacion": "2026-07-16T12:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-07-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-12",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-13",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-14",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-15",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-16",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "high",
+            "resumenes": [
+              "cierre parcial visible en el tablero de Policía."
             ]
           }
         ]
@@ -3160,6 +3442,77 @@
         ]
       },
       {
+        "corredor": "Transversal del Sisga, Boyacá",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-07-16T12:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-07-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-12",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-13",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-14",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-15",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-16",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "condición por reconfirmar antes de despacho; ANI tiene publicada habilitación controlada para vehículos de hasta 30 toneladas, sin parte horario posterior encontrado al MD."
+            ]
+          }
+        ]
+      },
+      {
         "corredor": "Transversal del Cusiana",
         "dias_confirmados": 0,
         "dias_vigilancia": 1,
@@ -3227,6 +3580,77 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          }
+        ]
+      },
+      {
+        "corredor": "San Rafael de Lebrija, Rionegro, Santander (RN 4513, PR 62+200)",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-07-16T12:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-07-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-12",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-13",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-14",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-15",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-16",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "señal externa de cierre por bloqueo comunitario del 15 de julio; no confirmada por autoridad o concesión al MD."
+            ]
           }
         ]
       },
@@ -3387,58 +3811,53 @@
         "resueltos": 0,
         "por_verificar": 2
       }
+    },
+    {
+      "cut_id": "2026-07-16-md",
+      "hora": "12:00",
+      "ventana": "MD",
+      "tipo": "corte_final",
+      "descripcion": "4 nuevas; 0 persistentes; 0 resueltas; 2 por verificar.",
+      "conteos": {
+        "nuevos": 4,
+        "persistentes": 0,
+        "resueltos": 0,
+        "por_verificar": 2
+      }
     }
   ],
   "fuentes": [
     {
-      "id": "src-e92caed453755261a3a84218",
-      "nombre": "Fuente directa: https://www.vanguardia.com/colombia/2026/07/10/alerta-roja-en-arauca-fuertes-lluvias-derriban-puentes-y-dejan-incomunicado-al-departamento/",
-      "url": "https://www.vanguardia.com/colombia/2026/07/10/alerta-roja-en-arauca-fuertes-lluvias-derriban-puentes-y-dejan-incomunicado-al-departamento/",
-      "fortaleza": "media",
-      "consultada_en": "2026-07-16T07:00:00",
-      "eventos": [
-        "evt-31d5a49aeefbdadc6597"
-      ]
-    },
-    {
-      "id": "src-f80c41ac9660dac9bf5089eb",
-      "nombre": "Fuente directa: https://www.ani.gov.co/node/42789",
-      "url": "https://www.ani.gov.co/node/42789",
-      "fortaleza": "official",
-      "consultada_en": "2026-07-16T07:00:00",
-      "eventos": [
-        "evt-3f31f2fca3f51a214cee"
-      ]
-    },
-    {
-      "id": "src-d03fc521d1113735d5c4bd1f",
-      "nombre": "Fuente directa: https://www.ani.gov.co/continua-el-cierre-total-de-la-transversal-del-sisga-se-han-removido-aproximadamente-1000-m3-de",
-      "url": "https://www.ani.gov.co/continua-el-cierre-total-de-la-transversal-del-sisga-se-han-removido-aproximadamente-1000-m3-de",
-      "fortaleza": "official",
-      "consultada_en": "2026-07-16T07:00:00",
-      "eventos": [
-        "evt-53f02108200a039c26cd"
-      ]
-    },
-    {
-      "id": "src-5b9ab4bad35351f50ee7c603",
-      "nombre": "Fuente directa: https://www.boyaca.gov.co/gobernacion-de-boyaca-mantiene-desplegada-toda-su-capacidad-institucional-para-atender-emergencia-por-lluvias-en-27-municipios/",
-      "url": "https://www.boyaca.gov.co/gobernacion-de-boyaca-mantiene-desplegada-toda-su-capacidad-institucional-para-atender-emergencia-por-lluvias-en-27-municipios/",
-      "fortaleza": "media",
-      "consultada_en": "2026-07-16T07:00:00",
-      "eventos": [
-        "evt-b0f1cde40aa777b2ecf4",
-        "evt-f721392d26c38325c6c3"
-      ]
-    },
-    {
-      "id": "src-435e683ddc5b52485f0c6f85",
+      "id": "src-6d4fa43949a45a9fd4d6eb3a",
       "nombre": "Fuente directa: https://www.policia.gov.co/estado-de-las-vias",
       "url": "https://www.policia.gov.co/estado-de-las-vias",
       "fortaleza": "official",
-      "consultada_en": "2026-07-16T07:00:00",
+      "consultada_en": "2026-07-16T12:00:00",
       "eventos": [
-        "evt-c4a2a51176c6e72ff0e8"
+        "evt-00a2f7f817b45459a3e7",
+        "evt-5dd672c34e125971bfeb",
+        "evt-88962f6180ccdf6198e5",
+        "evt-8ea41fc6275ed431ec14"
+      ]
+    },
+    {
+      "id": "src-6b1051c76888c94c1d403502",
+      "nombre": "Fuente directa: https://x.com/VConcesionadas/status/2077427716622602670",
+      "url": "https://x.com/VConcesionadas/status/2077427716622602670",
+      "fortaleza": "social",
+      "consultada_en": "2026-07-16T12:00:00",
+      "eventos": [
+        "evt-366c6931300a24197fa4"
+      ]
+    },
+    {
+      "id": "src-f06109777f219d1a56391683",
+      "nombre": "Fuente directa: https://www.ani.gov.co/se-habilita-la-circulacion-de-vehiculos-de-hasta-30-toneladas-de-forma-controlada-en-la-transversal",
+      "url": "https://www.ani.gov.co/se-habilita-la-circulacion-de-vehiculos-de-hasta-30-toneladas-de-forma-controlada-en-la-transversal",
+      "fortaleza": "official",
+      "consultada_en": "2026-07-16T12:00:00",
+      "eventos": [
+        "evt-b59b8b09dc143a4dc422"
       ]
     }
   ]
