@@ -2,55 +2,55 @@
   "schema_version": "1.1",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-07-16-pm",
-  "fecha": "2026-07-16",
-  "ventana": "PM",
-  "hora": "17:00",
-  "generado_en": "2026-07-16T17:00:00",
-  "artefacto_fuente": "2026-07-16-editor-eldato-version-vias-colombia-pm.md",
+  "cut_id": "2026-07-17-am",
+  "fecha": "2026-07-17",
+  "ventana": "AM",
+  "hora": "07:00",
+  "generado_en": "2026-07-17T07:00:00",
+  "artefacto_fuente": "2026-07-17-editor-eldato-version-vias-colombia-am.md",
   "alertas_inmediatas": [
-    {
-      "id": "alert-evt-8ea41fc6275ed431ec14",
-      "nivel": "critical",
-      "titulo": "cierre total · La Lejía–Saravena, Norte de Santander (PR 22+000–PR 26+000)",
-      "mensaje": "cierre total visible en Policía.",
-      "event_id": "evt-8ea41fc6275ed431ec14",
-      "corredor": "La Lejía–Saravena, Norte de Santander (PR 22+000–PR 26+000)",
-      "fuente_ids": [
-        "src-2f6ce8ba695f3a5a43cf8d83"
-      ]
-    },
-    {
-      "id": "alert-evt-5dd672c34e125971bfeb",
-      "nivel": "critical",
-      "titulo": "cierre total · Samanga–La Esperanza–El Canelo, Cauca (PR 3+300–PR 3+400)",
-      "mensaje": "cierre total visible en Policía.",
-      "event_id": "evt-5dd672c34e125971bfeb",
-      "corredor": "Samanga–La Esperanza–El Canelo, Cauca (PR 3+300–PR 3+400)",
-      "fuente_ids": [
-        "src-a07f78e2a0842fa1ebfd215d"
-      ]
-    },
     {
       "id": "alert-evt-00a2f7f817b45459a3e7",
       "nivel": "critical",
       "titulo": "cierre total · Transversal Las Ánimas–Bogotá, Cundinamarca (PR 66+480–PR 67+000)",
-      "mensaje": "cierre total visible en Policía, con vigencia indicada hasta el 7 de septiembre de 2026 salvo actualización oficial.",
+      "mensaje": "cierre total visible en Policía; el tablero señala vigencia hasta el 7 de septiembre de 2026, salvo actualización oficial.",
       "event_id": "evt-00a2f7f817b45459a3e7",
       "corredor": "Transversal Las Ánimas–Bogotá, Cundinamarca (PR 66+480–PR 67+000)",
       "fuente_ids": [
-        "src-b70e5ea593b020060912506f"
+        "src-2f601c76561f2c8ed34f7325"
       ]
     },
     {
-      "id": "alert-evt-88962f6180ccdf6198e5",
-      "nivel": "high",
-      "titulo": "cierre parcial · Paso Nacional por Tolú, Sucre (PR 45+846–PR 46+928)",
-      "mensaje": "cierre parcial visible en el tablero de Policía.",
-      "event_id": "evt-88962f6180ccdf6198e5",
-      "corredor": "Paso Nacional por Tolú, Sucre (PR 45+846–PR 46+928)",
+      "id": "alert-evt-cec6108f6ddd72f5a65f",
+      "nivel": "critical",
+      "titulo": "cierre total · Transversal Tribugá–Arauca — La Lejía–Saravena, Norte de Santander (PR 22+000–PR 26+000)",
+      "mensaje": "cierre total visible en Policía.",
+      "event_id": "evt-cec6108f6ddd72f5a65f",
+      "corredor": "Transversal Tribugá–Arauca — La Lejía–Saravena, Norte de Santander (PR 22+000–PR 26+000)",
       "fuente_ids": [
-        "src-c830ccf370b781a42e3e6da9"
+        "src-6b34d697aba70ad27926c869"
+      ]
+    },
+    {
+      "id": "alert-evt-60d0b5bbfd9af97c731e",
+      "nivel": "critical",
+      "titulo": "cierre total · Vía terciaria 16200 — Samanga–La Esperanza–El Canelo, Cauca (PR 3+300–PR 3+400)",
+      "mensaje": "cierre total visible en Policía.",
+      "event_id": "evt-60d0b5bbfd9af97c731e",
+      "corredor": "Vía terciaria 16200 — Samanga–La Esperanza–El Canelo, Cauca (PR 3+300–PR 3+400)",
+      "fuente_ids": [
+        "src-76622b7aa732bb284278494c"
+      ]
+    },
+    {
+      "id": "alert-evt-8d3c56e0f6fc2c7a37de",
+      "nivel": "high",
+      "titulo": "cierre parcial · Ruta Transversal del Caribe — Paso Nacional por Tolú, Sucre (PR 45+846–PR 46+928)",
+      "mensaje": "cierre parcial visible en el tablero de Policía.",
+      "event_id": "evt-8d3c56e0f6fc2c7a37de",
+      "corredor": "Ruta Transversal del Caribe — Paso Nacional por Tolú, Sucre (PR 45+846–PR 46+928)",
+      "fuente_ids": [
+        "src-d456879b93ce9738d18ff369"
       ]
     }
   ],
@@ -62,138 +62,70 @@
       "PM"
     ],
     "ventanas_recibidas": [
-      "AM",
-      "MD",
-      "PM"
+      "AM"
     ],
     "eventos_confirmados": 4,
     "eventos_vigilancia": 2,
     "pendientes_georreferencia": 6,
     "fuentes": [
       {
-        "id": "src-b70e5ea593b020060912506f",
+        "id": "src-2f601c76561f2c8ed34f7325",
         "nombre": "Fuente directa: https://www.policia.gov.co/estado-de-las-vias",
         "estado": "consultada",
-        "ultima_consulta": "2026-07-16T17:00:00",
+        "ultima_consulta": "2026-07-17T07:00:00",
         "nota": "Aporta evidencia a 4 evento(s) del corte."
       },
       {
-        "id": "src-047aeda3b197c84ff940f720",
+        "id": "src-40070a660a566d8f9ea66308",
         "nombre": "Fuente directa: https://x.com/VConcesionadas/status/2077427716622602670",
         "estado": "consultada",
-        "ultima_consulta": "2026-07-16T17:00:00",
+        "ultima_consulta": "2026-07-17T07:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-3a96bd5c25ebcf59afa2d276",
+        "id": "src-cba03481c542f05940b3e5b3",
         "nombre": "Fuente directa: https://www.ani.gov.co/se-habilita-la-circulacion-de-vehiculos-de-hasta-30-toneladas-de-forma-controlada-en-la-transversal",
         "estado": "consultada",
-        "ultima_consulta": "2026-07-16T17:00:00",
+        "ultima_consulta": "2026-07-17T07:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       }
     ]
   },
   "acciones_sugeridas": [
     {
-      "id": "action-evt-8ea41fc6275ed431ec14",
-      "prioridad": "critical",
-      "corredor": "La Lejía–Saravena, Norte de Santander (PR 22+000–PR 26+000)",
-      "accion": "afectación alta a la conectividad hacia Saravena y Arauca; revisar la alternativa por Labateca–Toledo indicada por la autoridad.",
-      "event_id": "evt-8ea41fc6275ed431ec14",
-      "fundamento": "cierre total visible en Policía."
-    },
-    {
-      "id": "action-evt-5dd672c34e125971bfeb",
-      "prioridad": "critical",
-      "corredor": "Samanga–La Esperanza–El Canelo, Cauca (PR 3+300–PR 3+400)",
-      "accion": "interrupción del tramo; las alternativas requieren validar capacidad y condición antes de programarlas.",
-      "event_id": "evt-5dd672c34e125971bfeb",
-      "fundamento": "cierre total visible en Policía."
-    },
-    {
       "id": "action-evt-00a2f7f817b45459a3e7",
       "prioridad": "critical",
       "corredor": "Transversal Las Ánimas–Bogotá, Cundinamarca (PR 66+480–PR 67+000)",
       "accion": "no planear el sector como paso disponible; anticipar desvío y tiempo adicional.",
       "event_id": "evt-00a2f7f817b45459a3e7",
-      "fundamento": "cierre total visible en Policía, con vigencia indicada hasta el 7 de septiembre de 2026 salvo actualización oficial."
+      "fundamento": "cierre total visible en Policía; el tablero señala vigencia hasta el 7 de septiembre de 2026, salvo actualización oficial."
     },
     {
-      "id": "action-evt-88962f6180ccdf6198e5",
+      "id": "action-evt-cec6108f6ddd72f5a65f",
+      "prioridad": "critical",
+      "corredor": "Transversal Tribugá–Arauca — La Lejía–Saravena, Norte de Santander (PR 22+000–PR 26+000)",
+      "accion": "afectación alta a la conectividad hacia Saravena y Arauca; la autoridad reporta alternativa por Labateca–Toledo, con retorno a la nacional en Mónoga.",
+      "event_id": "evt-cec6108f6ddd72f5a65f",
+      "fundamento": "cierre total visible en Policía."
+    },
+    {
+      "id": "action-evt-60d0b5bbfd9af97c731e",
+      "prioridad": "critical",
+      "corredor": "Vía terciaria 16200 — Samanga–La Esperanza–El Canelo, Cauca (PR 3+300–PR 3+400)",
+      "accion": "interrupción del tramo; las alternativas requieren validar capacidad y condición antes de asignar equipo.",
+      "event_id": "evt-60d0b5bbfd9af97c731e",
+      "fundamento": "cierre total visible en Policía."
+    },
+    {
+      "id": "action-evt-8d3c56e0f6fc2c7a37de",
       "prioridad": "high",
-      "corredor": "Paso Nacional por Tolú, Sucre (PR 45+846–PR 46+928)",
+      "corredor": "Ruta Transversal del Caribe — Paso Nacional por Tolú, Sucre (PR 45+846–PR 46+928)",
       "accion": "posibles demoras y control de paso en el acceso de Tolú.",
-      "event_id": "evt-88962f6180ccdf6198e5",
+      "event_id": "evt-8d3c56e0f6fc2c7a37de",
       "fundamento": "cierre parcial visible en el tablero de Policía."
     }
   ],
   "eventos_confirmados": [
-    {
-      "id": "evt-8ea41fc6275ed431ec14",
-      "corredor": "La Lejía–Saravena, Norte de Santander (PR 22+000–PR 26+000)",
-      "tramo": "Tramo por precisar",
-      "departamento": null,
-      "municipio": null,
-      "via": null,
-      "km": null,
-      "tipo": "cierre_total",
-      "severidad": "critical",
-      "estado": "active",
-      "resumen": "cierre total visible en Policía.",
-      "impacto_operativo": "afectación alta a la conectividad hacia Saravena y Arauca; revisar la alternativa por Labateca–Toledo indicada por la autoridad.",
-      "confianza": 0.9,
-      "actualizado_en": "2026-07-16T17:00:00",
-      "georreferencia": {
-        "estado": "sin_georreferencia",
-        "lat": null,
-        "lon": null,
-        "etiqueta": "Sin coordenadas; marcador oculto"
-      },
-      "fuentes": [
-        {
-          "id": "src-2f6ce8ba695f3a5a43cf8d83",
-          "nombre": "Fuente directa: https://www.policia.gov.co/estado-de-las-vias",
-          "url": "https://www.policia.gov.co/estado-de-las-vias",
-          "fortaleza": "official",
-          "publicada_en": null,
-          "consultada_en": "2026-07-16T17:00:00",
-          "evidencia": "cierre total visible en Policía."
-        }
-      ]
-    },
-    {
-      "id": "evt-5dd672c34e125971bfeb",
-      "corredor": "Samanga–La Esperanza–El Canelo, Cauca (PR 3+300–PR 3+400)",
-      "tramo": "Tramo por precisar",
-      "departamento": null,
-      "municipio": null,
-      "via": null,
-      "km": null,
-      "tipo": "cierre_total",
-      "severidad": "critical",
-      "estado": "active",
-      "resumen": "cierre total visible en Policía.",
-      "impacto_operativo": "interrupción del tramo; las alternativas requieren validar capacidad y condición antes de programarlas.",
-      "confianza": 0.9,
-      "actualizado_en": "2026-07-16T17:00:00",
-      "georreferencia": {
-        "estado": "sin_georreferencia",
-        "lat": null,
-        "lon": null,
-        "etiqueta": "Sin coordenadas; marcador oculto"
-      },
-      "fuentes": [
-        {
-          "id": "src-a07f78e2a0842fa1ebfd215d",
-          "nombre": "Fuente directa: https://www.policia.gov.co/estado-de-las-vias",
-          "url": "https://www.policia.gov.co/estado-de-las-vias",
-          "fortaleza": "official",
-          "publicada_en": null,
-          "consultada_en": "2026-07-16T17:00:00",
-          "evidencia": "cierre total visible en Policía."
-        }
-      ]
-    },
     {
       "id": "evt-00a2f7f817b45459a3e7",
       "corredor": "Transversal Las Ánimas–Bogotá, Cundinamarca (PR 66+480–PR 67+000)",
@@ -205,10 +137,10 @@
       "tipo": "cierre_total",
       "severidad": "critical",
       "estado": "active",
-      "resumen": "cierre total visible en Policía, con vigencia indicada hasta el 7 de septiembre de 2026 salvo actualización oficial.",
+      "resumen": "cierre total visible en Policía; el tablero señala vigencia hasta el 7 de septiembre de 2026, salvo actualización oficial.",
       "impacto_operativo": "no planear el sector como paso disponible; anticipar desvío y tiempo adicional.",
       "confianza": 0.9,
-      "actualizado_en": "2026-07-16T17:00:00",
+      "actualizado_en": "2026-07-17T07:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -217,19 +149,85 @@
       },
       "fuentes": [
         {
-          "id": "src-b70e5ea593b020060912506f",
+          "id": "src-2f601c76561f2c8ed34f7325",
           "nombre": "Fuente directa: https://www.policia.gov.co/estado-de-las-vias",
           "url": "https://www.policia.gov.co/estado-de-las-vias",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-07-16T17:00:00",
-          "evidencia": "cierre total visible en Policía, con vigencia indicada hasta el 7 de septiembre de 2026 salvo actualización oficial."
+          "consultada_en": "2026-07-17T07:00:00",
+          "evidencia": "cierre total visible en Policía; el tablero señala vigencia hasta el 7 de septiembre de 2026, salvo actualización oficial."
         }
       ]
     },
     {
-      "id": "evt-88962f6180ccdf6198e5",
-      "corredor": "Paso Nacional por Tolú, Sucre (PR 45+846–PR 46+928)",
+      "id": "evt-cec6108f6ddd72f5a65f",
+      "corredor": "Transversal Tribugá–Arauca — La Lejía–Saravena, Norte de Santander (PR 22+000–PR 26+000)",
+      "tramo": "Tramo por precisar",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
+      "tipo": "cierre_total",
+      "severidad": "critical",
+      "estado": "active",
+      "resumen": "cierre total visible en Policía.",
+      "impacto_operativo": "afectación alta a la conectividad hacia Saravena y Arauca; la autoridad reporta alternativa por Labateca–Toledo, con retorno a la nacional en Mónoga.",
+      "confianza": 0.9,
+      "actualizado_en": "2026-07-17T07:00:00",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
+      "fuentes": [
+        {
+          "id": "src-6b34d697aba70ad27926c869",
+          "nombre": "Fuente directa: https://www.policia.gov.co/estado-de-las-vias",
+          "url": "https://www.policia.gov.co/estado-de-las-vias",
+          "fortaleza": "official",
+          "publicada_en": null,
+          "consultada_en": "2026-07-17T07:00:00",
+          "evidencia": "cierre total visible en Policía."
+        }
+      ]
+    },
+    {
+      "id": "evt-60d0b5bbfd9af97c731e",
+      "corredor": "Vía terciaria 16200 — Samanga–La Esperanza–El Canelo, Cauca (PR 3+300–PR 3+400)",
+      "tramo": "Tramo por precisar",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
+      "tipo": "cierre_total",
+      "severidad": "critical",
+      "estado": "active",
+      "resumen": "cierre total visible en Policía.",
+      "impacto_operativo": "interrupción del tramo; las alternativas requieren validar capacidad y condición antes de asignar equipo.",
+      "confianza": 0.9,
+      "actualizado_en": "2026-07-17T07:00:00",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
+      "fuentes": [
+        {
+          "id": "src-76622b7aa732bb284278494c",
+          "nombre": "Fuente directa: https://www.policia.gov.co/estado-de-las-vias",
+          "url": "https://www.policia.gov.co/estado-de-las-vias",
+          "fortaleza": "official",
+          "publicada_en": null,
+          "consultada_en": "2026-07-17T07:00:00",
+          "evidencia": "cierre total visible en Policía."
+        }
+      ]
+    },
+    {
+      "id": "evt-8d3c56e0f6fc2c7a37de",
+      "corredor": "Ruta Transversal del Caribe — Paso Nacional por Tolú, Sucre (PR 45+846–PR 46+928)",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -241,7 +239,7 @@
       "resumen": "cierre parcial visible en el tablero de Policía.",
       "impacto_operativo": "posibles demoras y control de paso en el acceso de Tolú.",
       "confianza": 0.9,
-      "actualizado_en": "2026-07-16T17:00:00",
+      "actualizado_en": "2026-07-17T07:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -250,12 +248,12 @@
       },
       "fuentes": [
         {
-          "id": "src-c830ccf370b781a42e3e6da9",
+          "id": "src-d456879b93ce9738d18ff369",
           "nombre": "Fuente directa: https://www.policia.gov.co/estado-de-las-vias",
           "url": "https://www.policia.gov.co/estado-de-las-vias",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-07-16T17:00:00",
+          "consultada_en": "2026-07-17T07:00:00",
           "evidencia": "cierre parcial visible en el tablero de Policía."
         }
       ]
@@ -273,10 +271,10 @@
       "tipo": "bloqueo",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "señal externa del 15 de julio sobre cierre por bloqueo comunitario; sin confirmación directa de vigencia al PM.",
-      "impacto_operativo": "riesgo de interrupción local por verificar; no redireccionar carga únicamente con esta señal.",
+      "resumen": "señal externa del 15 de julio sobre posible bloqueo comunitario; no confirmada para este corte.",
+      "impacto_operativo": "riesgo local por verificar; no redireccionar carga únicamente con esta señal.",
       "confianza": 0.5,
-      "actualizado_en": "2026-07-16T17:00:00",
+      "actualizado_en": "2026-07-17T07:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -285,13 +283,13 @@
       },
       "fuentes": [
         {
-          "id": "src-047aeda3b197c84ff940f720",
+          "id": "src-40070a660a566d8f9ea66308",
           "nombre": "Fuente directa: https://x.com/VConcesionadas/status/2077427716622602670",
           "url": "https://x.com/VConcesionadas/status/2077427716622602670",
           "fortaleza": "social",
           "publicada_en": null,
-          "consultada_en": "2026-07-16T17:00:00",
-          "evidencia": "señal externa del 15 de julio sobre cierre por bloqueo comunitario; sin confirmación directa de vigencia al PM."
+          "consultada_en": "2026-07-17T07:00:00",
+          "evidencia": "señal externa del 15 de julio sobre posible bloqueo comunitario; no confirmada para este corte."
         }
       ]
     },
@@ -306,10 +304,10 @@
       "tipo": "otro",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "la última publicación disponible de ANI mantiene habilitación controlada, de 5:00 a. m. a 7:00 p. m., para carga de hasta 30 toneladas; no se obtuvo parte PM posterior.",
-      "impacto_operativo": "no asignar vehículos superiores a 30 toneladas ni asumir continuidad fuera de la franja sin validación directa; puede afectar flujos Bogotá–Casanare–Arauca.",
+      "resumen": "la última publicación disponible de ANI mantiene habilitación controlada de 5:00 a. m. a 7:00 p. m. para carga de hasta 30 toneladas; no se obtuvo un parte nuevo para este corte.",
+      "impacto_operativo": "no asignar vehículos superiores a 30 toneladas ni asumir continuidad fuera de la franja sin validación directa; puede condicionar flujos Bogotá–Casanare–Arauca.",
       "confianza": 0.65,
-      "actualizado_en": "2026-07-16T17:00:00",
+      "actualizado_en": "2026-07-17T07:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -318,47 +316,31 @@
       },
       "fuentes": [
         {
-          "id": "src-3a96bd5c25ebcf59afa2d276",
+          "id": "src-cba03481c542f05940b3e5b3",
           "nombre": "Fuente directa: https://www.ani.gov.co/se-habilita-la-circulacion-de-vehiculos-de-hasta-30-toneladas-de-forma-controlada-en-la-transversal",
           "url": "https://www.ani.gov.co/se-habilita-la-circulacion-de-vehiculos-de-hasta-30-toneladas-de-forma-controlada-en-la-transversal",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-07-16T17:00:00",
-          "evidencia": "la última publicación disponible de ANI mantiene habilitación controlada, de 5:00 a. m. a 7:00 p. m., para carga de hasta 30 toneladas; no se obtuvo parte PM posterior."
+          "consultada_en": "2026-07-17T07:00:00",
+          "evidencia": "la última publicación disponible de ANI mantiene habilitación controlada de 5:00 a. m. a 7:00 p. m. para carga de hasta 30 toneladas; no se obtuvo un parte nuevo para este corte."
         }
       ]
     }
   ],
   "historial_corredores": {
-    "periodo_inicio": "2026-07-10",
-    "periodo_fin": "2026-07-16",
+    "periodo_inicio": "2026-07-11",
+    "periodo_fin": "2026-07-17",
     "metodologia": "Días distintos por corredor; confirmado exige estado activo y confianza mínima de 0,65.",
     "corredores": [
       {
         "corredor": "Ruta Transversal del Caribe - Paso Nacional por Tolú",
-        "dias_confirmados": 6,
+        "dias_confirmados": 5,
         "dias_vigilancia": 0,
-        "cortes_con_observacion": 18,
+        "cortes_con_observacion": 15,
         "severidad_maxima": "high",
         "ultima_observacion": "2026-07-15T17:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 1,
-            "severidad_maxima": "high",
-            "resumenes": [
-              "restricción heredada del PM anterior, sin fuente nueva que confirme levantamiento.",
-              "cierre parcial vigente en la tabla pública de Policía entre PR45+0846 y PR46+0928.",
-              "cierre parcial vigente en la tabla publica de Policia entre PR45+0846 y PR46+0928."
-            ]
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [
@@ -443,33 +425,26 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
         "corredor": "Transversal Las Ánimas - Bogotá",
-        "dias_confirmados": 5,
+        "dias_confirmados": 4,
         "dias_vigilancia": 0,
-        "cortes_con_observacion": 14,
+        "cortes_con_observacion": 11,
         "severidad_maxima": "critical",
         "ultima_observacion": "2026-07-14T17:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "cierre total programado heredado entre PR66+0480 y PR67+0000, sin novedad AM.",
-              "cierre total programado vigente entre PR66+0480 y PR67+0000."
-            ]
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [
@@ -542,34 +517,26 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
         "corredor": "Samanga - El Canelo",
-        "dias_confirmados": 5,
+        "dias_confirmados": 4,
         "dias_vigilancia": 0,
-        "cortes_con_observacion": 14,
+        "cortes_con_observacion": 11,
         "severidad_maxima": "critical",
         "ultima_observacion": "2026-07-14T17:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "cierre total heredado en vía terciaria código 16200, sin actualización nueva.",
-              "cierre total vigente en vía terciaria código 16200 entre PR3+0300 y PR3+0400.",
-              "cierre total vigente en via terciaria codigo 16200 entre PR3+0300 y PR3+0400."
-            ]
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [
@@ -642,20 +609,56 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
-        "corredor": "Ibagué - Espinal",
-        "dias_confirmados": 5,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 18,
-        "severidad_maxima": "high",
-        "ultima_observacion": "2026-07-15T17:00:00",
+        "corredor": "Transversal del Sisga",
+        "dias_confirmados": 4,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 8,
+        "severidad_maxima": "critical",
+        "ultima_observacion": "2026-07-16T07:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
           {
-            "fecha": "2026-07-10",
+            "fecha": "2026-07-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-12",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-13",
+            "ventanas": [
+              "PM"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "medium",
+            "resumenes": [
+              "paso controlado habilitado para vehiculos particulares y carga hasta 10 toneladas."
+            ]
+          },
+          {
+            "fecha": "2026-07-14",
             "ventanas": [
               "AM",
               "MD",
@@ -663,13 +666,59 @@
             ],
             "confirmados": 1,
             "vigilancia": 1,
-            "severidad_maxima": "high",
+            "severidad_maxima": "medium",
             "resumenes": [
-              "restricción heredada por obras entre PR25+430 y PR28+450, sin evidencia nueva de levantamiento.",
-              "restricción vigente por obras entre PR25+430 y PR28+450, con cierre indefinido según tabla de Policía.",
-              "restriccion vigente por obras entre PR25+430 y PR28+450, con cierre indefinido segun tabla de Policia."
+              "paso controlado para particulares y carga de hasta 10 toneladas.",
+              "circulación controlada para vehículos de hasta 30 toneladas."
             ]
           },
+          {
+            "fecha": "2026-07-15",
+            "ventanas": [
+              "AM",
+              "MD",
+              "PM"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "medium",
+            "resumenes": [
+              "la referencia ANI disponible mantiene paso controlado a un carril para vehículos de hasta 30 toneladas.",
+              "se mantiene la referencia ANI de paso controlado a un carril para vehículos de hasta 30 toneladas; no hay cambio confirmado en este corte.",
+              "se mantiene la referencia ANI de paso controlado a un carril para vehículos de hasta 30 toneladas; no hay cambio confirmado en el PM."
+            ]
+          },
+          {
+            "fecha": "2026-07-16",
+            "ventanas": [
+              "AM"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "ANI mantiene publicado cierre total en el sector Marrano Loco, PR 51+800, Santa María."
+            ]
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          }
+        ]
+      },
+      {
+        "corredor": "Ibagué - Espinal",
+        "dias_confirmados": 4,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 15,
+        "severidad_maxima": "high",
+        "ultima_observacion": "2026-07-15T17:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
           {
             "fecha": "2026-07-11",
             "ventanas": [
@@ -753,34 +802,26 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
         "corredor": "La Lejía - Saravena",
-        "dias_confirmados": 4,
+        "dias_confirmados": 3,
         "dias_vigilancia": 2,
-        "cortes_con_observacion": 18,
+        "cortes_con_observacion": 15,
         "severidad_maxima": "critical",
         "ultima_observacion": "2026-07-15T17:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 1,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "restricción heredada con cierre total nocturno entre PR13+0000 y PR98+0000, de 18:00 a 6:00.",
-              "restricción heredada del AM y del PM anterior, sin nueva fuente MD que la levante.",
-              "restriccion heredada del MD y de cortes previos, sin nueva fuente PM que la levante."
-            ]
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [
@@ -866,191 +907,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Acceso a Florencia",
-        "dias_confirmados": 4,
-        "dias_vigilancia": 0,
-        "cortes_con_observacion": 10,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-07-13T07:00:00",
-        "ultimo_estado": "confirmed",
-        "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "cierre total heredado entre PR20+0060 y PR20+0270.",
-              "cierre total heredado del AM y del PM anterior, sin nueva fuente MD que lo levante.",
-              "cierre total heredado del MD y de cortes previos, sin nueva fuente PM que lo levante."
-            ]
           },
           {
-            "fecha": "2026-07-11",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "cierre total heredado, sin nueva fuente AM que lo levante.",
-              "cierre total heredado, sin nueva fuente md que lo levante.",
-              "cierre total heredado, sin nueva fuente PM que lo levante."
-            ]
-          },
-          {
-            "fecha": "2026-07-12",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "cierre total heredado, sin fuente AM que lo levante.",
-              "cierre total heredado, sin fuente MD que lo levante.",
-              "cierre total heredado, sin fuente PM que lo levante."
-            ]
-          },
-          {
-            "fecha": "2026-07-13",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "cierre total heredado, sin fuente AM que lo levante."
-            ]
-          },
-          {
-            "fecha": "2026-07-14",
+            "fecha": "2026-07-17",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
-          },
-          {
-            "fecha": "2026-07-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Transversal del Sisga",
-        "dias_confirmados": 4,
-        "dias_vigilancia": 0,
-        "cortes_con_observacion": 8,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-07-16T07:00:00",
-        "ultimo_estado": "confirmed",
-        "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-11",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-12",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-13",
-            "ventanas": [
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "paso controlado habilitado para vehiculos particulares y carga hasta 10 toneladas."
-            ]
-          },
-          {
-            "fecha": "2026-07-14",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 1,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "paso controlado para particulares y carga de hasta 10 toneladas.",
-              "circulación controlada para vehículos de hasta 30 toneladas."
-            ]
-          },
-          {
-            "fecha": "2026-07-15",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "la referencia ANI disponible mantiene paso controlado a un carril para vehículos de hasta 30 toneladas.",
-              "se mantiene la referencia ANI de paso controlado a un carril para vehículos de hasta 30 toneladas; no hay cambio confirmado en este corte.",
-              "se mantiene la referencia ANI de paso controlado a un carril para vehículos de hasta 30 toneladas; no hay cambio confirmado en el PM."
-            ]
-          },
-          {
-            "fecha": "2026-07-16",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "ANI mantiene publicado cierre total en el sector Marrano Loco, PR 51+800, Santa María."
-            ]
           }
         ]
       },
@@ -1063,14 +927,6 @@
         "ultima_observacion": "2026-07-16T07:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [],
@@ -1139,34 +995,190 @@
             "resumenes": [
               "no hay evidencia nueva de cambio frente al cierre programado reportado en el PM anterior."
             ]
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
-        "corredor": "Bogotá - Villavicencio",
-        "dias_confirmados": 2,
-        "dias_vigilancia": 4,
-        "cortes_con_observacion": 18,
+        "corredor": "Acceso a Florencia",
+        "dias_confirmados": 3,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 7,
         "severidad_maxima": "critical",
-        "ultima_observacion": "2026-07-15T17:00:00",
-        "ultimo_estado": "watch",
+        "ultima_observacion": "2026-07-13T07:00:00",
+        "ultimo_estado": "confirmed",
         "dias": [
           {
-            "fecha": "2026-07-10",
+            "fecha": "2026-07-11",
             "ventanas": [
               "AM",
               "MD",
               "PM"
             ],
             "confirmados": 1,
-            "vigilancia": 1,
+            "vigilancia": 0,
             "severidad_maxima": "critical",
             "resumenes": [
-              "última fuente directa disponible reporta continuidad de cierre en K54+000, sector La Santandereana, después de habilitación de tráfico en K62+000.",
-              "alerta prioritaria heredada del AM. La última fuente directa disponible reportó continuidad del cierre en K54+000, sector La Santandereana, después de habilitar tráfico en K62+000.",
-              "alerta prioritaria heredada del MD. La ultima fuente directa disponible reportaba continuidad del cierre en K54+000, sector La Santandereana, despues de habilitar trafico en K62+000."
+              "cierre total heredado, sin nueva fuente AM que lo levante.",
+              "cierre total heredado, sin nueva fuente md que lo levante.",
+              "cierre total heredado, sin nueva fuente PM que lo levante."
             ]
           },
+          {
+            "fecha": "2026-07-12",
+            "ventanas": [
+              "AM",
+              "MD",
+              "PM"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "cierre total heredado, sin fuente AM que lo levante.",
+              "cierre total heredado, sin fuente MD que lo levante.",
+              "cierre total heredado, sin fuente PM que lo levante."
+            ]
+          },
+          {
+            "fecha": "2026-07-13",
+            "ventanas": [
+              "AM"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "cierre total heredado, sin fuente AM que lo levante."
+            ]
+          },
+          {
+            "fecha": "2026-07-14",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-15",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-16",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          }
+        ]
+      },
+      {
+        "corredor": "Transversal Las Ánimas–Bogotá, Cundinamarca (PR 66+480–PR 67+000)",
+        "dias_confirmados": 2,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 3,
+        "severidad_maxima": "critical",
+        "ultima_observacion": "2026-07-17T07:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-07-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-12",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-13",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-14",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-15",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-16",
+            "ventanas": [
+              "MD",
+              "PM"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "cierre total visible en Policía hasta el 7 de septiembre de 2026, salvo actualización de la autoridad.",
+              "cierre total visible en Policía, con vigencia indicada hasta el 7 de septiembre de 2026 salvo actualización oficial."
+            ]
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [
+              "AM"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "cierre total visible en Policía; el tablero señala vigencia hasta el 7 de septiembre de 2026, salvo actualización oficial."
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "Bogotá - Villavicencio",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 4,
+        "cortes_con_observacion": 15,
+        "severidad_maxima": "critical",
+        "ultima_observacion": "2026-07-15T17:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
           {
             "fecha": "2026-07-11",
             "ventanas": [
@@ -1252,6 +1264,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -1264,14 +1284,6 @@
         "ultima_observacion": "2026-07-15T17:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [],
@@ -1326,6 +1338,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -1338,14 +1358,6 @@
         "ultima_observacion": "2026-07-15T17:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [],
@@ -1400,79 +1412,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Transversal Las Ánimas–Bogotá, Cundinamarca (PR 66+480–PR 67+000)",
-        "dias_confirmados": 1,
-        "dias_vigilancia": 0,
-        "cortes_con_observacion": 2,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-07-16T17:00:00",
-        "ultimo_estado": "confirmed",
-        "dias": [
+          },
           {
-            "fecha": "2026-07-10",
+            "fecha": "2026-07-17",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
-          },
-          {
-            "fecha": "2026-07-11",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-12",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-16",
-            "ventanas": [
-              "MD",
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "cierre total visible en Policía hasta el 7 de septiembre de 2026, salvo actualización de la autoridad.",
-              "cierre total visible en Policía, con vigencia indicada hasta el 7 de septiembre de 2026 salvo actualización oficial."
-            ]
           }
         ]
       },
@@ -1486,14 +1433,6 @@
         "ultimo_estado": "confirmed",
         "dias": [
           {
-            "fecha": "2026-07-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
             "fecha": "2026-07-11",
             "ventanas": [],
             "confirmados": 0,
@@ -1545,6 +1484,14 @@
             "resumenes": [
               "cierre total visible en Policía."
             ]
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -1558,14 +1505,6 @@
         "ultimo_estado": "confirmed",
         "dias": [
           {
-            "fecha": "2026-07-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
             "fecha": "2026-07-11",
             "ventanas": [],
             "confirmados": 0,
@@ -1617,32 +1556,26 @@
             "resumenes": [
               "cierre total visible en Policía."
             ]
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
-        "corredor": "Bogotá - La Calera",
+        "corredor": "Vía terciaria 16200 — Samanga–La Esperanza–El Canelo, Cauca (PR 3+300–PR 3+400)",
         "dias_confirmados": 1,
         "dias_vigilancia": 0,
-        "cortes_con_observacion": 2,
+        "cortes_con_observacion": 1,
         "severidad_maxima": "critical",
-        "ultima_observacion": "2026-07-10T12:00:00",
-        "ultimo_estado": "watch",
+        "ultima_observacion": "2026-07-17T07:00:00",
+        "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [
-              "AM",
-              "MD"
-            ],
-            "confirmados": 1,
-            "vigilancia": 1,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "señal externa de cierre total por volcamiento de tractocamión el 9 de julio; no confirmada por búsqueda web independiente para el corte AM.",
-              "señal externa heredada del AM por volcamiento de tractocamión el 9 de julio; sin confirmación web independiente ni fuente oficial directa en MD."
-            ]
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [],
@@ -1690,6 +1623,89 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [
+              "AM"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "cierre total visible en Policía."
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "Transversal Tribugá–Arauca — La Lejía–Saravena, Norte de Santander (PR 22+000–PR 26+000)",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "critical",
+        "ultima_observacion": "2026-07-17T07:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-07-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-12",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-13",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-14",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-15",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-16",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [
+              "AM"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "cierre total visible en Policía."
+            ]
           }
         ]
       },
@@ -1702,14 +1718,6 @@
         "ultima_observacion": "2026-07-16T07:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [],
@@ -1761,6 +1769,14 @@
             "resumenes": [
               "sin evidencia nueva que confirme apertura del cierre total previamente publicado."
             ]
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -1773,14 +1789,6 @@
         "ultima_observacion": "2026-07-16T07:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [],
@@ -1832,6 +1840,14 @@
             "resumenes": [
               "reportado con cierre total dentro de la emergencia departamental por lluvias; se requiere confirmación de hora y punto exactos antes de movilizar carga."
             ]
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -1844,14 +1860,6 @@
         "ultima_observacion": "2026-07-16T17:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [],
@@ -1904,34 +1912,97 @@
             "resumenes": [
               "cierre parcial visible en el tablero de Policía."
             ]
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          }
+        ]
+      },
+      {
+        "corredor": "Ruta Transversal del Caribe — Paso Nacional por Tolú, Sucre (PR 45+846–PR 46+928)",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "high",
+        "ultima_observacion": "2026-07-17T07:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-07-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-12",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-13",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-14",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-15",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-16",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [
+              "AM"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "high",
+            "resumenes": [
+              "cierre parcial visible en el tablero de Policía."
+            ]
           }
         ]
       },
       {
         "corredor": "Buga - Buenaventura",
         "dias_confirmados": 0,
-        "dias_vigilancia": 5,
-        "cortes_con_observacion": 15,
+        "dias_vigilancia": 4,
+        "cortes_con_observacion": 12,
         "severidad_maxima": "low",
         "ultima_observacion": "2026-07-14T17:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "sin cierre portuario nuevo confirmado en el corte AM.",
-              "sin cierre portuario nuevo confirmado en MD.",
-              "sin cierre portuario nuevo confirmado en PM."
-            ]
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [
@@ -2011,34 +2082,26 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
         "corredor": "Ruta del Sol",
         "dias_confirmados": 0,
-        "dias_vigilancia": 4,
-        "cortes_con_observacion": 12,
+        "dias_vigilancia": 3,
+        "cortes_con_observacion": 9,
         "severidad_maxima": "low",
         "ultima_observacion": "2026-07-13T17:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "sin alerta nacional nueva confirmada en el corte AM.",
-              "sin alerta nacional nueva confirmada en MD.",
-              "sin alerta nacional nueva confirmada en PM."
-            ]
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [
@@ -2110,96 +2173,9 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Buenaventura",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 4,
-        "cortes_con_observacion": 10,
-        "severidad_maxima": "low",
-        "ultima_observacion": "2026-07-13T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "señal regional de protesta de trabajadores con cierre del acceso al centro asistencial; no hay evidencia de afectación directa al corredor Buga - Buenaventura ni al acceso portuario.",
-              "señal regional heredada del AM sobre protesta con cierre de acceso al centro asistencial; no hay evidencia de afectación directa al corredor Buga - Buenaventura ni al acceso portuario.",
-              "senal regional heredada sobre protesta con cierre de acceso al centro asistencial; no hay evidencia de afectacion directa al corredor Buga - Buenaventura ni al acceso portuario."
-            ]
           },
           {
-            "fecha": "2026-07-11",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "senal regional heredada sobre protesta con cierre de acceso al centro asistencial; no hay evidencia AM de afectacion directa al corredor Buga - Buenaventura ni al acceso portuario.",
-              "senal regional heredada sobre protesta con cierre de acceso al centro asistencial; sin evidencia md de afectacion directa al corredor Buga - Buenaventura ni al acceso portuario.",
-              "senal regional heredada sobre protesta con cierre de acceso al centro asistencial; sin evidencia PM de afectacion directa al corredor Buga - Buenaventura ni al acceso portuario."
-            ]
-          },
-          {
-            "fecha": "2026-07-12",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "senal regional heredada sobre protesta con cierre de acceso al centro asistencial; sin evidencia AM de afectacion directa al corredor Buga - Buenaventura ni al acceso portuario.",
-              "senal regional heredada sobre protesta con cierre de acceso al centro asistencial; sin evidencia MD de afectacion directa al corredor Buga - Buenaventura ni al acceso portuario.",
-              "senal regional heredada sobre protesta con cierre de acceso al centro asistencial; sin evidencia PM de afectacion directa al corredor Buga - Buenaventura ni al acceso portuario."
-            ]
-          },
-          {
-            "fecha": "2026-07-13",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "senal heredada de protesta urbana; sin evidencia AM de afectacion directa al acceso portuario."
-            ]
-          },
-          {
-            "fecha": "2026-07-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-16",
+            "fecha": "2026-07-17",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
@@ -2217,14 +2193,6 @@
         "ultima_observacion": "2026-07-13T17:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [
@@ -2296,92 +2264,9 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Panamericana",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 3,
-        "cortes_con_observacion": 9,
-        "severidad_maxima": "low",
-        "ultima_observacion": "2026-07-12T17:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "señal regional de manifestación ciudadana con afectación entre Cali y Popayán en zona rural de Santander de Quilichao; no confirmada por fuente oficial directa en este corte.",
-              "señal regional heredada del AM de manifestación con posible afectación entre Cali y Popayán; sin confirmación oficial directa en MD.",
-              "senal regional heredada del MD de manifestacion con posible afectacion entre Cali y Popayan; sin confirmacion oficial directa en PM."
-            ]
           },
           {
-            "fecha": "2026-07-11",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "senal regional heredada de manifestacion con posible afectacion entre Cali y Popayan; sin confirmacion oficial directa AM.",
-              "senal regional heredada sobre manifestacion con posible afectacion entre Cali y Popayan; sin confirmacion oficial md de cierre vigente.",
-              "senal regional heredada sobre manifestacion con posible afectacion entre Cali y Popayan; sin confirmacion oficial PM de cierre vigente."
-            ]
-          },
-          {
-            "fecha": "2026-07-12",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "senal regional heredada sobre posible manifestacion; sin confirmacion AM de cierre vigente.",
-              "senal regional heredada sobre posible manifestacion; sin confirmacion MD de cierre vigente.",
-              "senal regional heredada sobre posible manifestacion; sin confirmacion PM de cierre vigente."
-            ]
-          },
-          {
-            "fecha": "2026-07-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-16",
+            "fecha": "2026-07-17",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
@@ -2393,24 +2278,12 @@
       {
         "corredor": "Necocli - Puerto Rey",
         "dias_confirmados": 0,
-        "dias_vigilancia": 4,
-        "cortes_con_observacion": 8,
+        "dias_vigilancia": 3,
+        "cortes_con_observacion": 7,
         "severidad_maxima": "low",
         "ultima_observacion": "2026-07-13T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "cierres totales heredados del MD y de cortes previos, sin nueva fuente PM que los levante."
-            ]
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [
@@ -2478,30 +2351,26 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
         "corredor": "Landazuri - Barbosa",
         "dias_confirmados": 0,
-        "dias_vigilancia": 4,
-        "cortes_con_observacion": 8,
+        "dias_vigilancia": 3,
+        "cortes_con_observacion": 7,
         "severidad_maxima": "low",
         "ultima_observacion": "2026-07-13T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "restriccion heredada del MD y de cortes previos para vehiculos categoria C3 y superiores, sin nueva fuente PM que la levante."
-            ]
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [
@@ -2569,30 +2438,26 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
         "corredor": "La Linea",
         "dias_confirmados": 0,
-        "dias_vigilancia": 4,
-        "cortes_con_observacion": 8,
+        "dias_vigilancia": 3,
+        "cortes_con_observacion": 7,
         "severidad_maxima": "low",
         "ultima_observacion": "2026-07-13T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "sin cierre vial nuevo confirmado en PM."
-            ]
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [
@@ -2660,30 +2525,26 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
-        "corredor": "Bogota - La Calera",
+        "corredor": "Buenaventura",
         "dias_confirmados": 0,
         "dias_vigilancia": 3,
         "cortes_con_observacion": 7,
         "severidad_maxima": "low",
-        "ultima_observacion": "2026-07-12T17:00:00",
+        "ultima_observacion": "2026-07-13T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "senal externa heredada por volcamiento de tractocamion el 9 de julio; sin confirmacion web independiente ni fuente oficial directa en PM."
-            ]
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [
@@ -2695,9 +2556,9 @@
             "vigilancia": 1,
             "severidad_maxima": "low",
             "resumenes": [
-              "senal externa heredada por volcamiento de tractocamion el 9 de julio; sin confirmacion web independiente ni fuente oficial directa AM de continuidad.",
-              "senal externa heredada por volcamiento de tractocamion el 9 de julio; sin confirmacion web independiente ni fuente oficial directa md de continuidad.",
-              "senal externa heredada por volcamiento de tractocamion el 9 de julio; sin confirmacion web independiente ni fuente oficial directa PM de continuidad."
+              "senal regional heredada sobre protesta con cierre de acceso al centro asistencial; no hay evidencia AM de afectacion directa al corredor Buga - Buenaventura ni al acceso portuario.",
+              "senal regional heredada sobre protesta con cierre de acceso al centro asistencial; sin evidencia md de afectacion directa al corredor Buga - Buenaventura ni al acceso portuario.",
+              "senal regional heredada sobre protesta con cierre de acceso al centro asistencial; sin evidencia PM de afectacion directa al corredor Buga - Buenaventura ni al acceso portuario."
             ]
           },
           {
@@ -2711,18 +2572,22 @@
             "vigilancia": 1,
             "severidad_maxima": "low",
             "resumenes": [
-              "senal externa heredada por volcamiento de tractocamion el 9 de julio; sin confirmacion AM de continuidad.",
-              "senal externa heredada por volcamiento de tractocamion el 9 de julio; sin confirmacion MD de continuidad.",
-              "senal externa heredada por volcamiento de tractocamion el 9 de julio; sin confirmacion PM de continuidad."
+              "senal regional heredada sobre protesta con cierre de acceso al centro asistencial; sin evidencia AM de afectacion directa al corredor Buga - Buenaventura ni al acceso portuario.",
+              "senal regional heredada sobre protesta con cierre de acceso al centro asistencial; sin evidencia MD de afectacion directa al corredor Buga - Buenaventura ni al acceso portuario.",
+              "senal regional heredada sobre protesta con cierre de acceso al centro asistencial; sin evidencia PM de afectacion directa al corredor Buga - Buenaventura ni al acceso portuario."
             ]
           },
           {
             "fecha": "2026-07-13",
-            "ventanas": [],
+            "ventanas": [
+              "AM"
+            ],
             "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "senal heredada de protesta urbana; sin evidencia AM de afectacion directa al acceso portuario."
+            ]
           },
           {
             "fecha": "2026-07-14",
@@ -2747,6 +2612,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -2759,14 +2632,6 @@
         "ultima_observacion": "2026-07-12T17:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [
@@ -2830,6 +2695,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -2842,14 +2715,6 @@
         "ultima_observacion": "2026-07-12T17:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [
@@ -2913,6 +2778,180 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          }
+        ]
+      },
+      {
+        "corredor": "Panamericana",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 2,
+        "cortes_con_observacion": 6,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-07-12T17:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-07-11",
+            "ventanas": [
+              "AM",
+              "MD",
+              "PM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "senal regional heredada de manifestacion con posible afectacion entre Cali y Popayan; sin confirmacion oficial directa AM.",
+              "senal regional heredada sobre manifestacion con posible afectacion entre Cali y Popayan; sin confirmacion oficial md de cierre vigente.",
+              "senal regional heredada sobre manifestacion con posible afectacion entre Cali y Popayan; sin confirmacion oficial PM de cierre vigente."
+            ]
+          },
+          {
+            "fecha": "2026-07-12",
+            "ventanas": [
+              "AM",
+              "MD",
+              "PM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "senal regional heredada sobre posible manifestacion; sin confirmacion AM de cierre vigente.",
+              "senal regional heredada sobre posible manifestacion; sin confirmacion MD de cierre vigente.",
+              "senal regional heredada sobre posible manifestacion; sin confirmacion PM de cierre vigente."
+            ]
+          },
+          {
+            "fecha": "2026-07-13",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-14",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-15",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-16",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          }
+        ]
+      },
+      {
+        "corredor": "Bogota - La Calera",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 2,
+        "cortes_con_observacion": 6,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-07-12T17:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-07-11",
+            "ventanas": [
+              "AM",
+              "MD",
+              "PM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "senal externa heredada por volcamiento de tractocamion el 9 de julio; sin confirmacion web independiente ni fuente oficial directa AM de continuidad.",
+              "senal externa heredada por volcamiento de tractocamion el 9 de julio; sin confirmacion web independiente ni fuente oficial directa md de continuidad.",
+              "senal externa heredada por volcamiento de tractocamion el 9 de julio; sin confirmacion web independiente ni fuente oficial directa PM de continuidad."
+            ]
+          },
+          {
+            "fecha": "2026-07-12",
+            "ventanas": [
+              "AM",
+              "MD",
+              "PM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "senal externa heredada por volcamiento de tractocamion el 9 de julio; sin confirmacion AM de continuidad.",
+              "senal externa heredada por volcamiento de tractocamion el 9 de julio; sin confirmacion MD de continuidad.",
+              "senal externa heredada por volcamiento de tractocamion el 9 de julio; sin confirmacion PM de continuidad."
+            ]
+          },
+          {
+            "fecha": "2026-07-13",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-14",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-15",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-16",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -2925,14 +2964,6 @@
         "ultima_observacion": "2026-07-12T17:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [
@@ -2996,6 +3027,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -3008,14 +3047,6 @@
         "ultima_observacion": "2026-07-12T17:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [
@@ -3077,6 +3108,168 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          }
+        ]
+      },
+      {
+        "corredor": "Transversal del Sisga, Boyacá",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 2,
+        "cortes_con_observacion": 3,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-07-17T07:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-07-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-12",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-13",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-14",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-15",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-16",
+            "ventanas": [
+              "MD",
+              "PM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "condición por reconfirmar antes de despacho; ANI tiene publicada habilitación controlada para vehículos de hasta 30 toneladas, sin parte horario posterior encontrado al MD.",
+              "la última publicación disponible de ANI mantiene habilitación controlada, de 5:00 a. m. a 7:00 p. m., para carga de hasta 30 toneladas; no se obtuvo parte PM posterior."
+            ]
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [
+              "AM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "la última publicación disponible de ANI mantiene habilitación controlada de 5:00 a. m. a 7:00 p. m. para carga de hasta 30 toneladas; no se obtuvo un parte nuevo para este corte."
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "San Rafael de Lebrija, Rionegro, Santander (RN 4513, PR 62+200)",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 2,
+        "cortes_con_observacion": 3,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-07-17T07:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-07-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-12",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-13",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-14",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-15",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-16",
+            "ventanas": [
+              "MD",
+              "PM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "señal externa de cierre por bloqueo comunitario del 15 de julio; no confirmada por autoridad o concesión al MD.",
+              "señal externa del 15 de julio sobre cierre por bloqueo comunitario; sin confirmación directa de vigencia al PM."
+            ]
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [
+              "AM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "señal externa del 15 de julio sobre posible bloqueo comunitario; no confirmada para este corte."
+            ]
           }
         ]
       },
@@ -3089,14 +3282,6 @@
         "ultima_observacion": "2026-07-15T17:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [],
@@ -3150,6 +3335,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -3162,14 +3355,6 @@
         "ultima_observacion": "2026-07-13T17:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [],
@@ -3225,366 +3410,9 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Transversal del Sisga, Boyacá",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 2,
-        "severidad_maxima": "low",
-        "ultima_observacion": "2026-07-16T17:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
           },
           {
-            "fecha": "2026-07-11",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-12",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-16",
-            "ventanas": [
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "condición por reconfirmar antes de despacho; ANI tiene publicada habilitación controlada para vehículos de hasta 30 toneladas, sin parte horario posterior encontrado al MD.",
-              "la última publicación disponible de ANI mantiene habilitación controlada, de 5:00 a. m. a 7:00 p. m., para carga de hasta 30 toneladas; no se obtuvo parte PM posterior."
-            ]
-          }
-        ]
-      },
-      {
-        "corredor": "San Rafael de Lebrija, Rionegro, Santander (RN 4513, PR 62+200)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 2,
-        "severidad_maxima": "low",
-        "ultima_observacion": "2026-07-16T17:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-11",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-12",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-16",
-            "ventanas": [
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "señal externa de cierre por bloqueo comunitario del 15 de julio; no confirmada por autoridad o concesión al MD.",
-              "señal externa del 15 de julio sobre cierre por bloqueo comunitario; sin confirmación directa de vigencia al PM."
-            ]
-          }
-        ]
-      },
-      {
-        "corredor": "Necoclí - Puerto Rey",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 2,
-        "severidad_maxima": "low",
-        "ultima_observacion": "2026-07-10T12:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [
-              "AM",
-              "MD"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "cierres totales heredados en PR16+0300 a PR16+0700 y PR62+0850 a PR63+0250.",
-              "cierres totales heredados del AM y del PM anterior, sin nueva fuente MD que los levante."
-            ]
-          },
-          {
-            "fecha": "2026-07-11",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-12",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Landázuri - Barbosa",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 2,
-        "severidad_maxima": "low",
-        "ultima_observacion": "2026-07-10T12:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [
-              "AM",
-              "MD"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "restricción heredada para vehículos categoría C3 y superiores entre PR26+0000 y PR31+0000.",
-              "restricción heredada del AM y del PM anterior para vehículos categoría C3 y superiores, sin nueva fuente MD que la levante."
-            ]
-          },
-          {
-            "fecha": "2026-07-11",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-12",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "La Línea",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 2,
-        "severidad_maxima": "low",
-        "ultima_observacion": "2026-07-10T12:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [
-              "AM",
-              "MD"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "sin cierre vial nuevo confirmado en el corte AM.",
-              "sin cierre vial nuevo confirmado en MD."
-            ]
-          },
-          {
-            "fecha": "2026-07-11",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-12",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-16",
+            "fecha": "2026-07-17",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
@@ -3602,14 +3430,6 @@
         "ultima_observacion": "2026-07-15T17:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [],
@@ -3661,6 +3481,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -3673,14 +3501,6 @@
         "ultima_observacion": "2026-07-16T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [],
@@ -3732,6 +3552,14 @@
             "resumenes": [
               "señal externa reporta daños de puentes y pérdida de banca; no hay validación oficial directa obtenida para declarar el estado actual del corredor."
             ]
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -3744,14 +3572,6 @@
         "ultima_observacion": "2026-07-16T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-07-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-07-11",
             "ventanas": [],
@@ -3803,6 +3623,14 @@
             "resumenes": [
               "hay reporte de pasos restringidos o afectaciones por lluvias en Macanal–Santa María, Otanche–Chiquinquirá, Tunja–Páez y Duitama–La Palmera; el estado puntual de cada PR no fue confirmado en el parte nacional consultado."
             ]
+          },
+          {
+            "fecha": "2026-07-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       }
@@ -3810,40 +3638,14 @@
   },
   "cambios_dia": [
     {
-      "cut_id": "2026-07-16-am",
+      "cut_id": "2026-07-17-am",
       "hora": "07:00",
       "ventana": "AM",
       "tipo": "corte_final",
-      "descripcion": "2 nuevas; 2 persistentes; 0 resueltas; 2 por verificar.",
+      "descripcion": "3 nuevas; 1 persistentes; 0 resueltas; 2 por verificar.",
       "conteos": {
-        "nuevos": 2,
-        "persistentes": 2,
-        "resueltos": 0,
-        "por_verificar": 2
-      }
-    },
-    {
-      "cut_id": "2026-07-16-md",
-      "hora": "12:00",
-      "ventana": "MD",
-      "tipo": "corte_final",
-      "descripcion": "4 nuevas; 0 persistentes; 0 resueltas; 2 por verificar.",
-      "conteos": {
-        "nuevos": 4,
-        "persistentes": 0,
-        "resueltos": 0,
-        "por_verificar": 2
-      }
-    },
-    {
-      "cut_id": "2026-07-16-pm",
-      "hora": "17:00",
-      "ventana": "PM",
-      "tipo": "corte_final",
-      "descripcion": "0 nuevas; 4 persistentes; 0 resueltas; 2 por verificar.",
-      "conteos": {
-        "nuevos": 0,
-        "persistentes": 4,
+        "nuevos": 3,
+        "persistentes": 1,
         "resueltos": 0,
         "por_verificar": 2
       }
@@ -3851,34 +3653,34 @@
   ],
   "fuentes": [
     {
-      "id": "src-b70e5ea593b020060912506f",
+      "id": "src-2f601c76561f2c8ed34f7325",
       "nombre": "Fuente directa: https://www.policia.gov.co/estado-de-las-vias",
       "url": "https://www.policia.gov.co/estado-de-las-vias",
       "fortaleza": "official",
-      "consultada_en": "2026-07-16T17:00:00",
+      "consultada_en": "2026-07-17T07:00:00",
       "eventos": [
         "evt-00a2f7f817b45459a3e7",
-        "evt-5dd672c34e125971bfeb",
-        "evt-88962f6180ccdf6198e5",
-        "evt-8ea41fc6275ed431ec14"
+        "evt-60d0b5bbfd9af97c731e",
+        "evt-8d3c56e0f6fc2c7a37de",
+        "evt-cec6108f6ddd72f5a65f"
       ]
     },
     {
-      "id": "src-047aeda3b197c84ff940f720",
+      "id": "src-40070a660a566d8f9ea66308",
       "nombre": "Fuente directa: https://x.com/VConcesionadas/status/2077427716622602670",
       "url": "https://x.com/VConcesionadas/status/2077427716622602670",
       "fortaleza": "social",
-      "consultada_en": "2026-07-16T17:00:00",
+      "consultada_en": "2026-07-17T07:00:00",
       "eventos": [
         "evt-366c6931300a24197fa4"
       ]
     },
     {
-      "id": "src-3a96bd5c25ebcf59afa2d276",
+      "id": "src-cba03481c542f05940b3e5b3",
       "nombre": "Fuente directa: https://www.ani.gov.co/se-habilita-la-circulacion-de-vehiculos-de-hasta-30-toneladas-de-forma-controlada-en-la-transversal",
       "url": "https://www.ani.gov.co/se-habilita-la-circulacion-de-vehiculos-de-hasta-30-toneladas-de-forma-controlada-en-la-transversal",
       "fortaleza": "official",
-      "consultada_en": "2026-07-16T17:00:00",
+      "consultada_en": "2026-07-17T07:00:00",
       "eventos": [
         "evt-b59b8b09dc143a4dc422"
       ]
