@@ -9,7 +9,7 @@ render_with_liquid: false
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>ATIEMPPO — Business, data & AI to win back time</title>
-<meta name="description" content="ATIEMPPO speaks the language of business and of technology to help people and companies understand their problems, work better with their data and win back operational time."/>
+<meta name="description" content="Seven ATIEMPPO solutions to understand transport costs, build agents, train teams, turn data into knowledge, accelerate studies, support decisions and operate field projects."/>
 <meta name="ai-content-declaration" content="human-authored"/>
 <meta name="llms-txt" content="https://atiemppo.com/llms.txt"/>
 <link rel="alternate" type="text/plain" title="LLMs.txt" href="/llms.txt"/>
@@ -60,13 +60,15 @@ render_with_liquid: false
       "serviceType": "Data, AI agents, automation and operational support",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Products and live projects",
+        "name": "Seven solutions to win back time",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bruno / OpenClaw — an AI agent that talks to data and executes processes" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SICETAC al Instante — freight rate lookups via WhatsApp and web" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Datos sin Carreta — LATAM logistics reports" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Base completa SICETAC" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Insignia Impact — social responsibility in logistics and supply chain" } }
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Transport cost analysis and comparison using SICETAC, RNDC and a Network Index", "url": "https://atiemppo.com/indices-sicetac/" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Design of agents for real business processes" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Profe Bruno — training to build agents, automate tasks and organize knowledge bases" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Living reports, analyses, knowledge models and memories", "url": "https://atiemppo.com/reportes/" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI-accelerated studies with verifiable sources and expert judgment" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Specialized consulting for companies, cities and governments", "url": "https://atiemppo.com/servicios/" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Field data capture, quality, data models, evaluation and disbursement", "url": "https://atiemppo.com/servicios/#captura-campo" } }
         ]
       }
     }
@@ -217,11 +219,15 @@ section[id]{scroll-margin-top:86px}
 .cuando{display:grid;grid-template-columns:.85fr 1.15fr;gap:54px;align-items:start}
 .cuando-sticky{position:sticky;top:96px}
 .scn-list{display:flex;flex-direction:column;gap:12px}
-.scn{display:flex;gap:18px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 22px;transition:transform .25s,border-color .25s}
+.scn{display:flex;gap:18px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;transition:transform .25s,border-color .25s,box-shadow .25s}
 .scn:hover{transform:translateX(6px);border-color:rgba(0,184,107,.55)}
 .scn .n{flex:none;font-family:var(--mono);font-size:14px;font-weight:600;color:var(--green-d)}
-.scn p{margin:0;font-size:15.5px;line-height:1.5;color:#1c2533}
+.scn .copy{min-width:0}
+.scn h3{font-family:var(--display);font-weight:600;font-size:18px;letter-spacing:-.35px;margin:0 0 7px;color:var(--navy)}
+.scn p{margin:0;font-size:14.5px;line-height:1.55;color:#465064}
 .scn strong{color:var(--navy)}
+.scn .proof{display:block;margin-top:9px;font-family:var(--mono);font-size:10.5px;line-height:1.45;text-transform:uppercase;letter-spacing:.45px;color:var(--green-d)}
+.solution-note{margin-top:18px;padding:16px 18px;border-left:3px solid var(--green);background:rgba(0,184,107,.07);border-radius:0 12px 12px 0;color:var(--muted-2);font-size:13.5px;line-height:1.55}
 
 /* PRODUCTOS */
 .prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -332,19 +338,19 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
     <a href="/en/" class="nav-logo" aria-label="ATIEMPPO"><img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO"/></a>
     <div class="nav-links">
       <a href="#puente">The bridge</a>
-      <a href="#capacidades">Agentic layer</a>
+      <a href="#soluciones">Solutions</a>
       <a href="#productos">Products</a>
       <a href="/reportes/">Reports</a>
       <a href="/en/blog/">Blog</a>
       <a href="/" class="lang-switch" aria-label="Ver en español">ES</a>
       <a href="#contacto" class="nav-cta">Let's talk <span class="dot"></span></a>
     </div>
-    <button class="nav-burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <button class="nav-burger" id="burger" aria-label="Open menu" aria-controls="mobileNav" aria-expanded="false"><span></span><span></span><span></span></button>
   </nav>
 </div>
 <div class="mobile-nav" id="mobileNav">
   <a href="#puente" onclick="closeMenu()">The bridge</a>
-  <a href="#capacidades" onclick="closeMenu()">Agentic layer</a>
+  <a href="#soluciones" onclick="closeMenu()">Solutions</a>
   <a href="#productos" onclick="closeMenu()">Products</a>
   <a href="/reportes/" onclick="closeMenu()">Reports</a>
   <a href="/en/blog/" onclick="closeMenu()">Blog</a>
@@ -417,52 +423,27 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
     </div>
   </section>
 
-  <!-- CAPA AGENTICA -->
-  <section class="section dark" id="capacidades">
-    <div class="dots" aria-hidden="true"></div>
-    <div class="container">
-      <div class="split">
-        <div data-reveal>
-          <p class="kicker on-dark" style="display:flex;align-items:center;gap:12px"><img src="/assets/images/atiemppo/openclaw-logo.png" alt="OpenClaw" style="width:38px;height:38px;object-fit:contain;filter:drop-shadow(0 4px 10px rgba(0,0,0,.3))"/><span>Agentic layer · Bruno / OpenClaw</span></p>
-          <h2 class="h2">The deliverable doesn't end in a document.</h2>
-          <p class="lead" style="margin:18px 0 28px;max-width:480px">Every project can leave a living memory: a way to converse with the information, the criteria, the agreements and the next steps.</p>
-          <div class="cap-list">
-            <div class="cap-item"><span class="n">1</span><div><h3>Memory of the work</h3><p>Organizes minutes, documents, sources, decisions and to-dos without mixing information between clients.</p></div></div>
-            <div class="cap-item"><span class="n">2</span><div><h3>Context-aware recommendation</h3><p>Helps prioritize what to validate, what to build, what to automate and what to avoid.</p></div></div>
-            <div class="cap-item"><span class="n">3</span><div><h3>Handover to the team</h3><p>Turns sessions into reusable materials so the company gains autonomy.</p></div></div>
-          </div>
-        </div>
-        <div class="win-wrap" data-reveal>
-          <div class="window">
-            <div class="window-bar"><i style="background:#ef5f57"></i><i style="background:#f6bd3b"></i><i style="background:#5fc454"></i><span class="label" style="display:inline-flex;align-items:center;gap:7px"><img src="/assets/images/atiemppo/openclaw-logo.png" alt="" style="width:16px;height:16px;object-fit:contain"/>Bruno / OpenClaw · workbench</span></div>
-            <img src="/assets/images/atiemppo/mesa-trabajo-ia.png" alt="Diagram of ATIEMPPO's AI workbench: Bruno/OpenClaw listens, remembers and routes inputs into outputs such as reports, analysis and briefings"/>
-          </div>
-          <div class="float-badge"><span class="dot"></span><div><div class="b1">AI workbench</div><div class="b2">Bruno coordinates · Codex operates · Obsidian remembers</div></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CUANDO -->
-  <section class="section" id="cuando">
+  <!-- SEVEN SOLUTIONS -->
+  <section class="section" id="soluciones">
     <div class="container cuando">
       <div class="cuando-sticky" data-reveal>
-        <p class="kicker">When you need ATIEMPPO</p>
-        <h2 class="h2">When you need to ground it, think and execute.</h2>
-        <p class="lead" style="margin:18px 0 28px">This is where ATIEMPPO really comes in: when you sense an opportunity with AI, data or logistics, but you need structure, judgment and someone to help you turn that idea into something concrete.</p>
+        <p class="kicker">Seven ways to move forward</p>
+        <h2 class="h2">Start with the question taking the most time from your team today.</h2>
+        <p class="lead" style="margin:18px 0 28px">You do not need to know our products or arrive with a defined project. One concrete question is enough to start.</p>
         <div class="hero-actions" style="margin-top:0">
-          <a href="#contacto" class="btn btn-dark">Go to the form</a>
-          <a href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20hablar%20sobre%20una%20idea%20de%20IA%20o%20datos." target="_blank" rel="noopener" class="btn btn-ghost">Talk on WhatsApp</a>
+          <a href="#contacto" class="btn btn-dark">Move forward with us</a>
+          <a href="#productos" class="btn btn-ghost">See the proof</a>
         </div>
+        <p class="solution-note">We work with authorized sources, clear boundaries and human review. The solution is designed around the decision, not around a tool.</p>
       </div>
       <div class="scn-list">
-        <div class="scn" data-reveal><span class="n">01</span><p>If you want your <strong>current processes to improve and save time</strong>, exploring AI project ideas together for your company or for you.</p></div>
-        <div class="scn" data-reveal><span class="n">02</span><p>If you need to put your <strong>AI project ideas in black and white</strong>, make them buildable and find where they create productivity.</p></div>
-        <div class="scn" data-reveal><span class="n">03</span><p>If you need to <strong>analyze data, understand the market and read your own databases</strong> with business judgment.</p></div>
-        <div class="scn" data-reveal><span class="n">04</span><p>If you need to <strong>analyze your operational network or build network models</strong> for better logistics and commercial decisions.</p></div>
-        <div class="scn" data-reveal><span class="n">05</span><p>If you need a <strong>high-level briefing on the logistics reality of Colombia and Latin America</strong> for executives or clients.</p></div>
-        <div class="scn" data-reveal><span class="n">06</span><p>If you want your teams to <strong>strengthen their data analysis</strong>, operational reading and experience an agentic layer of work.</p></div>
-        <div class="scn" data-reveal><span class="n">07</span><p>If you need a <strong>space with experts to understand your problem</strong> and steer your team: ask about <strong>logistics therapy</strong>.</p></div>
+        <a class="scn" data-reveal href="/indices-sicetac/"><span class="n">01</span><span class="copy"><h3>Understand and compare transport costs</h3><p>We organize your network and compare it with SICETAC, RNDC and a Network Index to support route, rate, budget and negotiation decisions.</p><span class="proof">SICETAC · RNDC · Network Index</span></span></a>
+        <a class="scn" data-reveal href="#productos"><span class="n">02</span><span class="copy"><h3>Build agents for real business processes</h3><p>We design tasks, sources, memory, boundaries and human review so the agent produces useful results inside the company.</p><span class="proof">Bruno / OpenClaw · process agents</span></span></a>
+        <a class="scn" data-reveal href="/en/blog/profe-bruno-ia-aplicada/"><span class="n">03</span><span class="copy"><h3>Learn to build and operate agents</h3><p>Profe Bruno helps people and teams automate tasks, create their own agents, organize a knowledge base and build their own second brain.</p><span class="proof">Profe Bruno · applied training</span></span></a>
+        <a class="scn" data-reveal href="/reportes/"><span class="n">04</span><span class="copy"><h3>Turn data and documents into living knowledge</h3><p>We transform scattered files into living reports, analyses, knowledge models and memories that can be queried and updated.</p><span class="proof">Living Reports · knowledge models</span></span></a>
+        <a class="scn" data-reveal href="/reportes/"><span class="n">05</span><span class="copy"><h3>Accelerate studies with verifiable sources</h3><p>AI helps search, organize and analyze; our team validates sources, states limits and turns findings into an executive answer.</p><span class="proof">Market studies · sector analysis</span></span></a>
+        <a class="scn" data-reveal href="/servicios/"><span class="n">06</span><span class="copy"><h3>Support decisions that require expert judgment</h3><p>We advise companies, cities and governments through market research, current-affairs analysis, node and cost mapping, professional sessions, workshops and talks.</p><span class="proof">Specialized consulting · work sessions</span></span></a>
+        <a class="scn" data-reveal href="/servicios/#captura-campo"><span class="n">07</span><span class="copy"><h3>Design reliable field operations</h3><p>We build data capture, quality rules, data models, evaluation and traceability for payments or incentives.</p><span class="proof">Eureka · capture · quality · disbursement</span></span></a>
       </div>
     </div>
   </section>
@@ -471,39 +452,74 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
   <section class="section" id="productos">
     <div class="container">
       <div class="section-head" data-reveal style="max-width:760px;margin-bottom:46px">
-        <p class="kicker">Products & live projects</p>
-        <h2 class="h2">What we propose comes from systems we're already building.</h2>
-        <p class="lead" style="margin-top:14px">ATIEMPPO combines logistics track record, data, in-house products and agents in real operation.</p>
+        <p class="kicker">Products, projects and methods behind the work</p>
+        <h2 class="h2">The solutions are backed by assets that already exist.</h2>
+        <p class="lead" style="margin-top:14px">These names are evidence of what we know how to build and operate. We start with your problem and choose the right asset afterwards.</p>
       </div>
       <div class="prod-grid">
-        <a class="prod" data-reveal href="#capacidades">
-          <div class="prod-media"><img src="/assets/images/atiemppo/bruno-openclaw.png" alt="Bruno / OpenClaw" style="object-position:top left"/><img src="/assets/images/atiemppo/openclaw-logo.png" alt="OpenClaw" style="position:absolute;bottom:10px;right:10px;width:42px;height:42px;object-fit:contain;filter:drop-shadow(0 4px 10px rgba(0,0,0,.4))"/><span class="tag">Agent</span></div>
-          <div class="prod-body"><h3>Bruno / OpenClaw</h3><p>Our agent that gets things done: real conversations with data and clients, builds processes and supports projects.</p><span class="prod-cta">View <span class="arw">→</span></span></div>
-        </a>
         <a class="prod" data-reveal href="/sicetac-al-instante/">
           <div class="prod-media"><img src="/assets/images/atiemppo/cover-sicetac.png" alt="SICETAC al Instante"/><span class="tag">Lookup</span></div>
-          <div class="prod-body"><h3>SICETAC al Instante</h3><p>Fast freight-rate lookups over WhatsApp. Message us at +57 313 450 3694 with your origin and destination.</p><span class="prod-cta">View product <span class="arw">→</span></span></div>
+          <div class="prod-body"><h3>SICETAC al Instante</h3><p>Look up and explain a SICETAC reference for a specific route from WhatsApp or the web.</p><span class="prod-cta">View product <span class="arw">→</span></span></div>
+        </a>
+        <a class="prod" data-reveal href="/indices-sicetac/">
+          <div class="prod-media"><img src="/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png" alt="SICETAC index applied to a company network"/><span class="tag">Service</span></div>
+          <div class="prod-body"><h3>Network Index</h3><p>Turn your company's routes into a tailored, updatable reference for budgeting and negotiation.</p><span class="prod-cta">Understand the model <span class="arw">→</span></span></div>
+        </a>
+        <a class="prod" data-reveal href="/ia-que-ejecuta-bruno-openclaw/">
+          <div class="prod-media"><img src="/assets/images/atiemppo/bruno-openclaw.png" alt="Bruno / OpenClaw" style="object-position:top left"/><img src="/assets/images/atiemppo/openclaw-logo.png" alt="" style="position:absolute;bottom:10px;right:10px;width:42px;height:42px;object-fit:contain;filter:drop-shadow(0 4px 10px rgba(0,0,0,.4))"/><span class="tag">Agent</span></div>
+          <div class="prod-body"><h3>Bruno / OpenClaw</h3><p>Shows how an agent can coordinate sources, memory, tasks, boundaries and next actions.</p><span class="prod-cta">Explore the case <span class="arw">→</span></span></div>
+        </a>
+        <a class="prod" data-reveal href="/en/blog/profe-bruno-ia-aplicada/">
+          <div class="prod-media"><img src="/assets/images/atiemppo/mesa-trabajo-ia.png" alt="Profe Bruno workbench"/><span class="tag">Training</span></div>
+          <div class="prod-body"><h3>Profe Bruno</h3><p>Learn by doing: a tested agent, an organized knowledge base and a method to sustain both.</p><span class="prod-cta">See the approach <span class="arw">→</span></span></div>
         </a>
         <a class="prod" data-reveal href="/reportes/">
-          <div class="prod-media"><img src="/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png" alt="Datos sin Carreta"/><span class="tag">Reports</span></div>
-          <div class="prod-body"><h3>Datos sin Carreta</h3><p>Our main LATAM logistics analyses, as living reports.</p><span class="prod-cta">View <span class="arw">→</span></span></div>
-        </a>
-        <a class="prod" data-reveal href="/base-completa-sicetac/">
-          <div class="prod-media"><img src="/assets/images/atiemppo/cover-base.png" alt="Base completa SICETAC"/><span class="tag">Database</span></div>
-          <div class="prod-body"><h3>Base completa SICETAC</h3><p>Access to routes, configurations and references for analysis.</p><span class="prod-cta">View <span class="arw">→</span></span></div>
+          <div class="prod-media"><img src="/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png" alt="Living Reports library"/><span class="tag">Living knowledge</span></div>
+          <div class="prod-body"><h3>Living Reports</h3><p>Browsable data, maps and analyses that can be queried again and updated.</p><span class="prod-cta">Open the library <span class="arw">→</span></span></div>
         </a>
         <a class="prod" data-reveal href="https://www.eldatologistico.com" target="_blank" rel="noopener">
           <div class="prod-media logo"><img src="/assets/images/eldatologistico/logo-el-dato-logistico.png" alt="El Dato Logístico"/><span class="tag">Media</span></div>
-          <div class="prod-body"><h3>El Dato Logístico</h3><p>Content, community and a read on the logistics market.</p><span class="prod-cta">Go to El Dato Logístico <span class="arw">→</span></span></div>
+          <div class="prod-body"><h3>El Dato Logístico</h3><p>Analysis, current affairs and sector conversation that turn signals into better questions.</p><span class="prod-cta">Go to the publication <span class="arw">→</span></span></div>
         </a>
         <a class="prod" data-reveal href="/insignia-impact/">
           <div class="prod-media"><img src="/assets/images/atiemppo/cover-insignia.png" alt="Insignia Impact"/><span class="tag">Impact</span></div>
-          <div class="prod-body"><h3>Insignia Impact</h3><p>Social responsibility in logistics and supply chain.</p><span class="prod-cta">View <span class="arw">→</span></span></div>
+          <div class="prod-body"><h3>Insignia Impact</h3><p>A project in development connecting operations, impact and responsibility in logistics and supply chain.</p><span class="prod-cta">Explore the project <span class="arw">→</span></span></div>
         </a>
+        <a class="prod" data-reveal href="/servicios/#captura-campo">
+          <div class="prod-media"><img src="/assets/images/generated/atiemppo-industria-tiempo-hero.png" alt="Field data capture operation"/><span class="tag">Fieldwork</span></div>
+          <div class="prod-body"><h3>Eureka</h3><p>Applied experience designing capture, quality, evaluation and traceability from the field.</p><span class="prod-cta">See the capability <span class="arw">→</span></span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE WORK -->
+  <section class="section dark" id="capacidades">
+    <div class="dots" aria-hidden="true"></div>
+    <div class="container">
+      <div class="split">
+        <div data-reveal>
+          <p class="kicker on-dark">How we work</p>
+          <h2 class="h2">One concrete question is enough to start.</h2>
+          <p class="lead" style="margin:18px 0 28px;max-width:480px">We turn it into a clear scope, a deliverable that can be tested and a way to continue without starting from zero.</p>
+          <div class="cap-list">
+            <div class="cap-item"><span class="n">1</span><div><h3>Listen</h3><p>We understand the decision, the process and the time currently being lost.</p></div></div>
+            <div class="cap-item"><span class="n">2</span><div><h3>Scope</h3><p>We agree on sources, boundaries, owners and review criteria.</p></div></div>
+            <div class="cap-item"><span class="n">3</span><div><h3>Build</h3><p>We deliver something living that the team can use, review and improve.</p></div></div>
+            <div class="cap-item"><span class="n">4</span><div><h3>Continue</h3><p>We leave memory, method and a clear next step.</p></div></div>
+          </div>
+        </div>
+        <div class="win-wrap" data-reveal>
+          <div class="window">
+            <div class="window-bar"><i style="background:#ef5f57"></i><i style="background:#f6bd3b"></i><i style="background:#5fc454"></i><span class="label" style="display:inline-flex;align-items:center;gap:7px"><img src="/assets/images/atiemppo/openclaw-logo.png" alt="" style="width:16px;height:16px;object-fit:contain"/>AI workbench</span></div>
+            <img src="/assets/images/atiemppo/mesa-trabajo-ia.png" alt="ATIEMPPO AI workbench: one question enters, sources and memory are organized, and the team receives reports, analysis and next steps"/>
+          </div>
+          <div class="float-badge"><span class="dot"></span><div><div class="b1">Move forward with us</div><div class="b2">question · scope · living deliverable · continuity</div></div></div>
+        </div>
       </div>
 
       <!-- NOVEDADES EN VIAS -->
-      <div class="nov" data-reveal style="margin-top:40px">
+      <div class="nov" data-reveal style="margin-top:56px">
         <div class="dots" aria-hidden="true"></div>
         <div class="nov-in">
           <div class="pill"><span class="dot"></span> Free community</div>
@@ -527,9 +543,9 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
     <div class="dots" aria-hidden="true"></div>
     <div class="container contact-inner">
       <div data-reveal>
-        <p class="kicker on-dark">Let's start</p>
-        <h2 class="h2">Let's talk about the time your operation can win back.</h2>
-        <p class="lead" style="margin:18px 0 32px;max-width:460px">You don't need to have it all figured out. We can start by understanding the noise, the sources, the repetitive processes and the decisions that today consume more time than they should.</p>
+        <p class="kicker on-dark">Next step</p>
+        <h2 class="h2">Move forward with us today.</h2>
+        <p class="lead" style="margin:18px 0 32px;max-width:460px">One concrete question is enough to start. Tell us what you need to understand, streamline, build or decide.</p>
         <div class="contact-links">
           <a href="mailto:juanmatiz@atiemppo.co" class="c-link"><span class="ic">@</span><div><div class="v">juanmatiz@atiemppo.co</div><div class="k">Email</div></div></a>
           <a href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20hablar%20sobre%20un%20proyecto%20para%20recuperar%20tiempo%20operativo." target="_blank" rel="noopener" class="c-link"><span class="ic">↗</span><div><div class="v">+57 310 768 7010</div><div class="k">WhatsApp · Bogotá, Colombia</div></div></a>
@@ -583,7 +599,7 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
         <img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO"/>
         <p>Data, agents and operating systems to win back time inside companies.</p>
       </div>
-      <div class="footer-col"><h4>What we do</h4><ul><li><a href="#puente">The bridge</a></li><li><a href="#cuando">When you need us</a></li><li><a href="#capacidades">Agentic layer</a></li><li><a href="/reportes/">Reports</a></li><li><a href="/en/blog/">Blog</a></li></ul></div>
+      <div class="footer-col"><h4>What we do</h4><ul><li><a href="#puente">The bridge</a></li><li><a href="#soluciones">Seven solutions</a></li><li><a href="#capacidades">How we work</a></li><li><a href="/reportes/">Reports</a></li><li><a href="/en/blog/">Blog</a></li></ul></div>
       <div class="footer-col"><h4>Products</h4><ul><li><a href="/sicetac-al-instante/">SICETAC al Instante</a></li><li><a href="/sicetac-api/">API SICETAC</a></li><li><a href="/base-completa-sicetac/">Base SICETAC</a></li><li><a href="https://www.eldatologistico.com" target="_blank" rel="noopener">El Dato Logístico</a></li><li><a href="https://chat.whatsapp.com/DC2nQ5FjQ04KmiWdOKU0XH?mode=gi_t" target="_blank" rel="noopener">La Comunidad</a></li><li><a href="/insignia-impact/">Insignia Impact</a></li></ul></div>
       <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:juanmatiz@atiemppo.co">juanmatiz@atiemppo.co</a></li><li><a href="/politicaprivacidad">Privacy</a></li><li><a href="/llms.txt">llms.txt</a></li></ul></div>
     </div>
@@ -600,11 +616,13 @@ const mobileNav=document.getElementById("mobileNav");
 burgerBtn.addEventListener("click",()=>{
   burgerBtn.classList.toggle("open");
   mobileNav.classList.toggle("open");
+  burgerBtn.setAttribute("aria-expanded",String(mobileNav.classList.contains("open")));
   document.body.classList.toggle("nav-open",mobileNav.classList.contains("open"));
 });
 function closeMenu(){
   burgerBtn.classList.remove("open");
   mobileNav.classList.remove("open");
+  burgerBtn.setAttribute("aria-expanded","false");
   document.body.classList.remove("nav-open");
 }
 const contactForm=document.getElementById("contactForm");
