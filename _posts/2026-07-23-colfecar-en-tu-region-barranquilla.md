@@ -2,7 +2,7 @@
 layout: post
 title: "COLFECAR en tu Región: conversaciones que conectan al transporte desde Barranquilla"
 description: "Juan Pablo Matiz participa en COLFECAR en tu Región, en Barranquilla, un espacio de conocimiento, conversación y networking para el sector transporte."
-date: 2026-07-23 10:18:00 -0500
+date: 2026-07-23 10:10:00 -0500
 author: "Juan Pablo Matiz"
 lab: "ATIEMPPO"
 emoji: "🚚"
