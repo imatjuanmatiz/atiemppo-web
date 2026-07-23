@@ -2,7 +2,7 @@
 layout: post
 title: "De la logística a la inteligencia artificial aplicada: una trayectoria construida para resolver problemas reales"
 description: "Juan Pablo Matiz recorre más de 25 años de trabajo en logística, política pública, datos y tecnología, y explica cómo esa experiencia converge hoy en Atiemppo."
-date: 2026-07-23 09:05:00 -0500
+date: 2026-07-23 08:40:00 -0500
 author: "Juan Pablo Matiz"
 lab: "ATIEMPPO"
 emoji: "🧭"
