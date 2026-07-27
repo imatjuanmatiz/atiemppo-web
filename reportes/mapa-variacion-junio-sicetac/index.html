@@ -124,7 +124,7 @@
     <aside>
       <header>
         <h1>Variación julio SICETAC con 2 horas logísticas</h1>
-        <p class="sub">Base de análisis de Atiemppo y su Agente de IA Bruno, de las rutas del SICETAC con la simulación de 2 horas logísticas en mayo vs junio. Mapa depurado para conservar rutas con geometría relevante.</p>
+        <p class="sub">Base de análisis de Atiemppo y su Agente de IA Bruno, de las rutas del SICETAC con la simulación de 2 horas logísticas en junio vs julio. Mapa depurado para conservar rutas con geometría relevante.</p>
       </header>
       <section class="metrics">
         <div class="metric"><b id="mTotal">0</b><span>rutas con geometría</span></div>
@@ -135,7 +135,7 @@
       <section class="impact-panel">
         <div class="impact-head">
           <h2>Impacto por tipo de vehículo</h2>
-          <span>promedio de rutas con dato · mayo a junio</span>
+          <span>promedio de rutas con dato · junio a julio</span>
         </div>
         <div id="vehicleBars" class="vehicle-bars"></div>
         <div class="matrix-wrap">
@@ -156,7 +156,7 @@
         </div>
       </section>
       <section class="origin-chart">
-        <div class="origin-chart-head"><span id="distributionTitle">Número y porcentaje de rutas según el aumento analizado de mayo a junio</span><span id="distributionTotal">0 rutas</span></div>
+        <div class="origin-chart-head"><span id="distributionTitle">Número y porcentaje de rutas según el aumento analizado de junio a julio</span><span id="distributionTotal">0 rutas</span></div>
         <div id="rangeDistribution" class="distribution"></div>
         <div class="origin-chart-head"><span>Orígenes por rango</span><span>top 30</span></div>
         <div id="originBars" class="origin-bars"></div>
@@ -167,7 +167,7 @@
     <section id="map"></section>
   </main>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-  <script src="./sicetac_rutas_variacion_junio_data.js?v=e2deb5621a45"></script>
+  <script src="./sicetac_rutas_variacion_junio_data.js?v=6edf5ee65434"></script>
   <script>
     const DATA = window.SICETAC_VARIACION_DATA;
     const COLORS = {
@@ -262,7 +262,7 @@
           <tr><td>variación</td><td>${fmtPct(m.variacion_pct)}</td></tr>
           <tr><td>junio 2026</td><td>${fmtMoney(m.valor_202605)}</td></tr>
           <tr><td>julio 2026</td><td>${fmtMoney(m.valor_202606)}</td></tr>
-          <tr><td>valor hora mayo</td><td>${fmtMoney(m.valorhora_202605)}</td></tr>
+          <tr><td>valor hora junio</td><td>${fmtMoney(m.valorhora_202605)}</td></tr>
           <tr><td>valor hora julio</td><td>${fmtMoney(m.valorhora_202606)}</td></tr>
           <tr><td>horas logísticas</td><td>2</td></tr>
           <tr><td>fuente geometría</td><td>${p.fuente_geojson || ""}</td></tr>
@@ -421,7 +421,7 @@
       }, {});
       const selectedOriginText = els.origin.options[els.origin.selectedIndex]?.text || "Todos los orígenes";
       els.distributionTitle.textContent = origin === "all"
-        ? "Número y porcentaje de rutas según el aumento analizado de mayo a junio"
+        ? "Número y porcentaje de rutas según el aumento analizado de junio a julio"
         : `Número y porcentaje de rutas desde ${selectedOriginText.split(" · ")[0]}`;
       els.distributionTotal.textContent = `${total.toLocaleString("es-CO")} rutas`;
       els.rangeDistribution.innerHTML = DISTRIBUTION_ORDER.map(key => {
