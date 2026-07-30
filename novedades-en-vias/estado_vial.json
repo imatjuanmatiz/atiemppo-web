@@ -2,12 +2,12 @@
   "schema_version": "1.1",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-07-30-am",
+  "cut_id": "2026-07-30-md",
   "fecha": "2026-07-30",
-  "ventana": "AM",
-  "hora": "07:00",
-  "generado_en": "2026-07-30T07:00:00",
-  "artefacto_fuente": "2026-07-30-editor-eldato-version-vias-colombia-am.md",
+  "ventana": "MD",
+  "hora": "12:00",
+  "generado_en": "2026-07-30T12:00:00",
+  "artefacto_fuente": "2026-07-30-editor-eldato-version-vias-colombia-md.md",
   "alertas_inmediatas": [],
   "salud_fuentes": {
     "estado_general": "degradada",
@@ -17,66 +17,67 @@
       "PM"
     ],
     "ventanas_recibidas": [
-      "AM"
+      "AM",
+      "MD"
     ],
-    "eventos_confirmados": 2,
-    "eventos_vigilancia": 3,
+    "eventos_confirmados": 1,
+    "eventos_vigilancia": 4,
     "pendientes_georreferencia": 5,
     "fuentes": [
       {
-        "id": "src-55e7957f3494f309cd8ad4ec",
+        "id": "src-687567fe8a5214cfe1e78472",
         "nombre": "Fuente directa: https://x.com/ANI_Colombia/status/2082097422637932871",
         "estado": "consultada",
-        "ultima_consulta": "2026-07-30T07:00:00",
+        "ultima_consulta": "2026-07-30T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-92d1a9a154c0cc669799b27f",
-        "nombre": "Fuente directa: https://x.com/cviallanos/status/2082117695911211082",
+        "id": "src-1c0ccfe3095cf0fb69b81c82",
+        "nombre": "Consulta operativa: https://www.policia.gov.co/estado-de-las-vias",
         "estado": "consultada",
-        "ultima_consulta": "2026-07-30T07:00:00",
+        "ultima_consulta": "2026-07-30T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-f680403be0f073f838056672",
-        "nombre": "Fuente directa: https://x.com/cviallanos/status/2082138366229852669",
+        "id": "src-cdf9cd1d3fd82c964f716e37",
+        "nombre": "Fuente directa de la señal: https://x.com/7NNoticias/status/2082798493643493735",
         "estado": "consultada",
-        "ultima_consulta": "2026-07-30T07:00:00",
+        "ultima_consulta": "2026-07-30T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-59aeaa3a0b0aeaa27a930786",
+        "id": "src-bd29f84591aa0d4a86122a7a",
         "nombre": "Fuente directa: https://www.invias.gov.co/publicaciones/9656/invias-desmiente-informacion-falsa-sobre-supuesto-cierre-indefinido-del-corredor-vial-calarca-alto-de-la-linea-cajamarca/",
         "estado": "consultada",
-        "ultima_consulta": "2026-07-30T07:00:00",
+        "ultima_consulta": "2026-07-30T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-33736b9853a2e708fd617a20",
-        "nombre": "Señal X verificable: https://x.com/InviasOficial/status/2082229777444765717",
+        "id": "src-f45936c8a9a7edc0036af63a",
+        "nombre": "Señal externa: https://x.com/Elolfato/status/2082870813871534565",
         "estado": "consultada",
-        "ultima_consulta": "2026-07-30T07:00:00",
+        "ultima_consulta": "2026-07-30T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-831e93ae60abc0a6c5aa2a24",
+        "id": "src-9f2c7f71f3ed2d5e9893f262",
         "nombre": "Fuente directa: https://x.com/InviasOficial/status/2081040249627484238",
         "estado": "consultada",
-        "ultima_consulta": "2026-07-30T07:00:00",
+        "ultima_consulta": "2026-07-30T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-512ded452e269d602a87fb44",
-        "nombre": "Fuente de contexto: https://rionoticias.co/volcamiento-de-camion-con-gas-provoca-cierre-total-en-la-via-bogota-girardot/",
+        "id": "src-8abf8a90fd6e0e9bf009bfc4",
+        "nombre": "Consulta operativa: https://hermes.invias.gov.co/viajeroseguro/",
         "estado": "consultada",
-        "ultima_consulta": "2026-07-30T07:00:00",
+        "ultima_consulta": "2026-07-30T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-6cb05edfed262bef9c439430",
-        "nombre": "Fuente directa de la señal: https://x.com/RioNoticiasCo/status/2082576189604913335",
+        "id": "src-f7434dbe9fad4bdc6c98002c",
+        "nombre": "Fuente directa de la señal: https://x.com/RadioGuatapuri/status/2082787374681968803",
         "estado": "consultada",
-        "ultima_consulta": "2026-07-30T07:00:00",
+        "ultima_consulta": "2026-07-30T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       }
     ]
@@ -88,15 +89,7 @@
       "corredor": "Calarcá–Alto de La Línea–Cajamarca: km 47+420",
       "accion": "capacidad reducida en el eje Quindío–Tolima; no planear el cruce como operación sin restricción.",
       "event_id": "evt-99ba63f4f4baf51cda1c",
-      "fundamento": "último estado institucional verificable: paso controlado a un carril; no existe soporte para afirmar cierre total ni reapertura plena."
-    },
-    {
-      "id": "action-evt-523c957256f8fbebcdb2",
-      "prioridad": "medium",
-      "corredor": "Villavicencio–Puerto López: peaje La Libertad y Halliburton",
-      "accion": "punto de verificación previa para ventanas de paso hacia los Llanos.",
-      "event_id": "evt-523c957256f8fbebcdb2",
-      "fundamento": "sin actualización institucional posterior localizada; los últimos avisos indicaban paso a un carril por mantenimiento, sin evidencia suficiente para declararlo vigente o levantado hoy."
+      "fundamento": "último estado institucional verificable: paso controlado a un carril; no hay soporte para afirmar cierre total ni reapertura plena."
     }
   ],
   "eventos_confirmados": [
@@ -111,10 +104,10 @@
       "tipo": "paso_controlado",
       "severidad": "medium",
       "estado": "active",
-      "resumen": "último estado institucional verificable: paso controlado a un carril; no existe soporte para afirmar cierre total ni reapertura plena.",
+      "resumen": "último estado institucional verificable: paso controlado a un carril; no hay soporte para afirmar cierre total ni reapertura plena.",
       "impacto_operativo": "capacidad reducida en el eje Quindío–Tolima; no planear el cruce como operación sin restricción.",
       "confianza": 0.78,
-      "actualizado_en": "2026-07-30T07:00:00",
+      "actualizado_en": "2026-07-30T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -123,111 +116,27 @@
       },
       "fuentes": [
         {
-          "id": "src-59aeaa3a0b0aeaa27a930786",
+          "id": "src-bd29f84591aa0d4a86122a7a",
           "nombre": "Fuente directa: https://www.invias.gov.co/publicaciones/9656/invias-desmiente-informacion-falsa-sobre-supuesto-cierre-indefinido-del-corredor-vial-calarca-alto-de-la-linea-cajamarca/",
           "url": "https://www.invias.gov.co/publicaciones/9656/invias-desmiente-informacion-falsa-sobre-supuesto-cierre-indefinido-del-corredor-vial-calarca-alto-de-la-linea-cajamarca/",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-07-30T07:00:00",
-          "evidencia": "último estado institucional verificable: paso controlado a un carril; no existe soporte para afirmar cierre total ni reapertura plena."
+          "consultada_en": "2026-07-30T12:00:00",
+          "evidencia": "último estado institucional verificable: paso controlado a un carril; no hay soporte para afirmar cierre total ni reapertura plena."
         },
         {
-          "id": "src-33736b9853a2e708fd617a20",
-          "nombre": "Señal X verificable: https://x.com/InviasOficial/status/2082229777444765717",
-          "url": "https://x.com/InviasOficial/status/2082229777444765717",
-          "fortaleza": "official",
+          "id": "src-f45936c8a9a7edc0036af63a",
+          "nombre": "Señal externa: https://x.com/Elolfato/status/2082870813871534565",
+          "url": "https://x.com/Elolfato/status/2082870813871534565",
+          "fortaleza": "social",
           "publicada_en": null,
-          "consultada_en": "2026-07-30T07:00:00",
-          "evidencia": "último estado institucional verificable: paso controlado a un carril; no existe soporte para afirmar cierre total ni reapertura plena."
-        }
-      ]
-    },
-    {
-      "id": "evt-523c957256f8fbebcdb2",
-      "corredor": "Villavicencio–Puerto López: peaje La Libertad y Halliburton",
-      "tramo": "Tramo por precisar",
-      "departamento": null,
-      "municipio": null,
-      "via": null,
-      "km": null,
-      "tipo": "paso_controlado",
-      "severidad": "medium",
-      "estado": "active",
-      "resumen": "sin actualización institucional posterior localizada; los últimos avisos indicaban paso a un carril por mantenimiento, sin evidencia suficiente para declararlo vigente o levantado hoy.",
-      "impacto_operativo": "punto de verificación previa para ventanas de paso hacia los Llanos.",
-      "confianza": 0.9,
-      "actualizado_en": "2026-07-30T07:00:00",
-      "georreferencia": {
-        "estado": "sin_georreferencia",
-        "lat": null,
-        "lon": null,
-        "etiqueta": "Sin coordenadas; marcador oculto"
-      },
-      "fuentes": [
-        {
-          "id": "src-92d1a9a154c0cc669799b27f",
-          "nombre": "Fuente directa: https://x.com/cviallanos/status/2082117695911211082",
-          "url": "https://x.com/cviallanos/status/2082117695911211082",
-          "fortaleza": "official",
-          "publicada_en": null,
-          "consultada_en": "2026-07-30T07:00:00",
-          "evidencia": "sin actualización institucional posterior localizada; los últimos avisos indicaban paso a un carril por mantenimiento, sin evidencia suficiente para declararlo vigente o levantado hoy."
-        },
-        {
-          "id": "src-f680403be0f073f838056672",
-          "nombre": "Fuente directa: https://x.com/cviallanos/status/2082138366229852669",
-          "url": "https://x.com/cviallanos/status/2082138366229852669",
-          "fortaleza": "official",
-          "publicada_en": null,
-          "consultada_en": "2026-07-30T07:00:00",
-          "evidencia": "sin actualización institucional posterior localizada; los últimos avisos indicaban paso a un carril por mantenimiento, sin evidencia suficiente para declararlo vigente o levantado hoy."
+          "consultada_en": "2026-07-30T12:00:00",
+          "evidencia": "último estado institucional verificable: paso controlado a un carril; no hay soporte para afirmar cierre total ni reapertura plena."
         }
       ]
     }
   ],
   "eventos_vigilancia": [
-    {
-      "id": "evt-d2135cf124f8458d4876",
-      "corredor": "Bogotá–Girardot: Nariz del Diablo",
-      "tramo": "km 37",
-      "departamento": null,
-      "municipio": null,
-      "via": null,
-      "km": null,
-      "tipo": "cierre_total",
-      "severidad": "low",
-      "estado": "uncertain",
-      "resumen": "no confirmado en el corte AM. El PM registró señal externa de cierre total por volcamiento de un tractocamión con gas; esta revisión no localizó parte posterior de concesión, Policía o autoridad que confirme estado vigente o levantamiento.",
-      "impacto_operativo": "riesgo de interrupción y desvíos mientras se verifica; no tratarlo como cierre confirmado ni como vía normalizada.",
-      "confianza": 0.5,
-      "actualizado_en": "2026-07-30T07:00:00",
-      "georreferencia": {
-        "estado": "sin_georreferencia",
-        "lat": null,
-        "lon": null,
-        "etiqueta": "Sin coordenadas; marcador oculto"
-      },
-      "fuentes": [
-        {
-          "id": "src-512ded452e269d602a87fb44",
-          "nombre": "Fuente de contexto: https://rionoticias.co/volcamiento-de-camion-con-gas-provoca-cierre-total-en-la-via-bogota-girardot/",
-          "url": "https://rionoticias.co/volcamiento-de-camion-con-gas-provoca-cierre-total-en-la-via-bogota-girardot/",
-          "fortaleza": "media",
-          "publicada_en": null,
-          "consultada_en": "2026-07-30T07:00:00",
-          "evidencia": "no confirmado en el corte AM. El PM registró señal externa de cierre total por volcamiento de un tractocamión con gas; esta revisión no localizó parte posterior de concesión, Policía o autoridad que confirme estado vigente o levantamiento."
-        },
-        {
-          "id": "src-6cb05edfed262bef9c439430",
-          "nombre": "Fuente directa de la señal: https://x.com/RioNoticiasCo/status/2082576189604913335",
-          "url": "https://x.com/RioNoticiasCo/status/2082576189604913335",
-          "fortaleza": "social",
-          "publicada_en": null,
-          "consultada_en": "2026-07-30T07:00:00",
-          "evidencia": "no confirmado en el corte AM. El PM registró señal externa de cierre total por volcamiento de un tractocamión con gas; esta revisión no localizó parte posterior de concesión, Policía o autoridad que confirme estado vigente o levantamiento."
-        }
-      ]
-    },
     {
       "id": "evt-4160d650e1258f9edcc9",
       "corredor": "Bogotá–Villavicencio: túnel Renacer",
@@ -239,10 +148,10 @@
       "tipo": "otro",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "último aviso institucional disponible mantiene paso normalizado después de la atención del incidente; no se localizó contradicción posterior.",
-      "impacto_operativo": "no hay restricción vigente confirmada en este corte, pero la ausencia de parte nuevo no equivale a garantía operacional.",
+      "resumen": "se mantiene el último aviso institucional disponible de paso normalizado; no se localizó señal posterior que lo contradiga.",
+      "impacto_operativo": "sin restricción vigente confirmada en este corte; validar antes del tránsito, pues ausencia de parte nuevo no garantiza operación.",
       "confianza": 0.65,
-      "actualizado_en": "2026-07-30T07:00:00",
+      "actualizado_en": "2026-07-30T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -251,13 +160,13 @@
       },
       "fuentes": [
         {
-          "id": "src-55e7957f3494f309cd8ad4ec",
+          "id": "src-687567fe8a5214cfe1e78472",
           "nombre": "Fuente directa: https://x.com/ANI_Colombia/status/2082097422637932871",
           "url": "https://x.com/ANI_Colombia/status/2082097422637932871",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-07-30T07:00:00",
-          "evidencia": "último aviso institucional disponible mantiene paso normalizado después de la atención del incidente; no se localizó contradicción posterior."
+          "consultada_en": "2026-07-30T12:00:00",
+          "evidencia": "se mantiene el último aviso institucional disponible de paso normalizado; no se localizó señal posterior que lo contradiga."
         }
       ]
     },
@@ -272,10 +181,10 @@
       "tipo": "restriccion",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "sin actualización institucional posterior localizada; antecedente verificable de restricción a un carril.",
-      "impacto_operativo": "posible reducción de capacidad; verificar antes de fijar itinerarios o desvíos.",
+      "resumen": "sin actualización institucional posterior localizada; el antecedente verificable es restricción a un carril.",
+      "impacto_operativo": "posible reducción de capacidad; validar condición antes de itinerarios y desvíos.",
       "confianza": 0.65,
-      "actualizado_en": "2026-07-30T07:00:00",
+      "actualizado_en": "2026-07-30T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -284,13 +193,97 @@
       },
       "fuentes": [
         {
-          "id": "src-831e93ae60abc0a6c5aa2a24",
+          "id": "src-9f2c7f71f3ed2d5e9893f262",
           "nombre": "Fuente directa: https://x.com/InviasOficial/status/2081040249627484238",
           "url": "https://x.com/InviasOficial/status/2081040249627484238",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-07-30T07:00:00",
-          "evidencia": "sin actualización institucional posterior localizada; antecedente verificable de restricción a un carril."
+          "consultada_en": "2026-07-30T12:00:00",
+          "evidencia": "sin actualización institucional posterior localizada; el antecedente verificable es restricción a un carril."
+        }
+      ]
+    },
+    {
+      "id": "evt-81f25cd2cfcdb307c696",
+      "corredor": "Nobsa–Duitama: Punta Larga",
+      "tramo": "Tramo por precisar",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
+      "tipo": "bloqueo",
+      "severidad": "low",
+      "estado": "uncertain",
+      "resumen": "señal externa de bloqueo pacífico comunitario desde la mañana; no confirmado por una fuente operativa directa en el corte MD.",
+      "impacto_operativo": "riesgo de interrupción en la conexión local; confirmar antes de despachar o fijar desvío.",
+      "confianza": 0.65,
+      "actualizado_en": "2026-07-30T12:00:00",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
+      "fuentes": [
+        {
+          "id": "src-1c0ccfe3095cf0fb69b81c82",
+          "nombre": "Consulta operativa: https://www.policia.gov.co/estado-de-las-vias",
+          "url": "https://www.policia.gov.co/estado-de-las-vias",
+          "fortaleza": "official",
+          "publicada_en": null,
+          "consultada_en": "2026-07-30T12:00:00",
+          "evidencia": "señal externa de bloqueo pacífico comunitario desde la mañana; no confirmado por una fuente operativa directa en el corte MD."
+        },
+        {
+          "id": "src-cdf9cd1d3fd82c964f716e37",
+          "nombre": "Fuente directa de la señal: https://x.com/7NNoticias/status/2082798493643493735",
+          "url": "https://x.com/7NNoticias/status/2082798493643493735",
+          "fortaleza": "social",
+          "publicada_en": null,
+          "consultada_en": "2026-07-30T12:00:00",
+          "evidencia": "señal externa de bloqueo pacífico comunitario desde la mañana; no confirmado por una fuente operativa directa en el corte MD."
+        }
+      ]
+    },
+    {
+      "id": "evt-e9c9acc90db666b0cceb",
+      "corredor": "San Roque–Curumaní: puente San Pedro",
+      "tramo": "Tramo por precisar",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
+      "tipo": "siniestro_vial",
+      "severidad": "low",
+      "estado": "uncertain",
+      "resumen": "señal externa de cierre tras un triple siniestro vial nocturno; sin confirmación posterior de autoridad sobre vigencia, atención o reapertura.",
+      "impacto_operativo": "posible interrupción en el corredor Cesar–Magdalena Medio; no asumir tránsito libre ni cierre vigente sin confirmación.",
+      "confianza": 0.65,
+      "actualizado_en": "2026-07-30T12:00:00",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
+      "fuentes": [
+        {
+          "id": "src-8abf8a90fd6e0e9bf009bfc4",
+          "nombre": "Consulta operativa: https://hermes.invias.gov.co/viajeroseguro/",
+          "url": "https://hermes.invias.gov.co/viajeroseguro/",
+          "fortaleza": "official",
+          "publicada_en": null,
+          "consultada_en": "2026-07-30T12:00:00",
+          "evidencia": "señal externa de cierre tras un triple siniestro vial nocturno; sin confirmación posterior de autoridad sobre vigencia, atención o reapertura."
+        },
+        {
+          "id": "src-f7434dbe9fad4bdc6c98002c",
+          "nombre": "Fuente directa de la señal: https://x.com/RadioGuatapuri/status/2082787374681968803",
+          "url": "https://x.com/RadioGuatapuri/status/2082787374681968803",
+          "fortaleza": "social",
+          "publicada_en": null,
+          "consultada_en": "2026-07-30T12:00:00",
+          "evidencia": "señal externa de cierre tras un triple siniestro vial nocturno; sin confirmación posterior de autoridad sobre vigencia, atención o reapertura."
         }
       ]
     }
@@ -300,6 +293,87 @@
     "periodo_fin": "2026-07-30",
     "metodologia": "Días distintos por corredor; confirmado exige estado activo y confianza mínima de 0,65.",
     "corredores": [
+      {
+        "corredor": "Calarcá–Alto de La Línea–Cajamarca: km 47+420",
+        "dias_confirmados": 2,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 5,
+        "severidad_maxima": "medium",
+        "ultima_observacion": "2026-07-30T12:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-07-24",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-25",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-26",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-27",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-28",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-29",
+            "ventanas": [
+              "AM",
+              "MD",
+              "PM"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "medium",
+            "resumenes": [
+              "operación con paso controlado a un carril, según el último comunicado de INVÍAS localizado.",
+              "el último estado institucional disponible es paso controlado a un carril; en el corte MD no apareció una actualización oficial que lo modifique.",
+              "último estado institucional disponible: paso controlado a un carril; no se localizó actualización PM que lo modifique."
+            ]
+          },
+          {
+            "fecha": "2026-07-30",
+            "ventanas": [
+              "AM",
+              "MD"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "medium",
+            "resumenes": [
+              "último estado institucional verificable: paso controlado a un carril; no existe soporte para afirmar cierre total ni reapertura plena.",
+              "último estado institucional verificable: paso controlado a un carril; no hay soporte para afirmar cierre total ni reapertura plena."
+            ]
+          }
+        ]
+      },
       {
         "corredor": "Villavicencio–Puerto López: peaje La Libertad y Halliburton",
         "dias_confirmados": 2,
@@ -375,85 +449,6 @@
             "severidad_maxima": "medium",
             "resumenes": [
               "sin actualización institucional posterior localizada; los últimos avisos indicaban paso a un carril por mantenimiento, sin evidencia suficiente para declararlo vigente o levantado hoy."
-            ]
-          }
-        ]
-      },
-      {
-        "corredor": "Calarcá–Alto de La Línea–Cajamarca: km 47+420",
-        "dias_confirmados": 2,
-        "dias_vigilancia": 0,
-        "cortes_con_observacion": 4,
-        "severidad_maxima": "medium",
-        "ultima_observacion": "2026-07-30T07:00:00",
-        "ultimo_estado": "confirmed",
-        "dias": [
-          {
-            "fecha": "2026-07-24",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-25",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-26",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-27",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-28",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-29",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "operación con paso controlado a un carril, según el último comunicado de INVÍAS localizado.",
-              "el último estado institucional disponible es paso controlado a un carril; en el corte MD no apareció una actualización oficial que lo modifique.",
-              "último estado institucional disponible: paso controlado a un carril; no se localizó actualización PM que lo modifique."
-            ]
-          },
-          {
-            "fecha": "2026-07-30",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "último estado institucional verificable: paso controlado a un carril; no existe soporte para afirmar cierre total ni reapertura plena."
             ]
           }
         ]
@@ -1835,6 +1830,87 @@
         ]
       },
       {
+        "corredor": "Bogotá–Villavicencio: túnel Renacer",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 2,
+        "cortes_con_observacion": 5,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-07-30T12:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-07-24",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-25",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-26",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-27",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-28",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-29",
+            "ventanas": [
+              "AM",
+              "MD",
+              "PM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "paso vehicular normalizado, de acuerdo con el último aviso institucional localizado de ANI.",
+              "el último aviso institucional recuperado informa paso normalizado; no se encontró señal posterior que lo cambie en este corte.",
+              "el último aviso institucional recuperado mantiene paso normalizado; no apareció señal posterior que lo contradiga."
+            ]
+          },
+          {
+            "fecha": "2026-07-30",
+            "ventanas": [
+              "AM",
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "último aviso institucional disponible mantiene paso normalizado después de la atención del incidente; no se localizó contradicción posterior.",
+              "se mantiene el último aviso institucional disponible de paso normalizado; no se localizó señal posterior que lo contradiga."
+            ]
+          }
+        ]
+      },
+      {
         "corredor": "La Lejía–Saravena — km 139, puente Caño Negro",
         "dias_confirmados": 0,
         "dias_vigilancia": 2,
@@ -1910,85 +1986,6 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Bogotá–Villavicencio: túnel Renacer",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 2,
-        "cortes_con_observacion": 4,
-        "severidad_maxima": "low",
-        "ultima_observacion": "2026-07-30T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-07-24",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-25",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-26",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-27",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-28",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-29",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "paso vehicular normalizado, de acuerdo con el último aviso institucional localizado de ANI.",
-              "el último aviso institucional recuperado informa paso normalizado; no se encontró señal posterior que lo cambie en este corte.",
-              "el último aviso institucional recuperado mantiene paso normalizado; no apareció señal posterior que lo contradiga."
-            ]
-          },
-          {
-            "fecha": "2026-07-30",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "último aviso institucional disponible mantiene paso normalizado después de la atención del incidente; no se localizó contradicción posterior."
-            ]
           }
         ]
       },
@@ -2438,6 +2435,79 @@
         ]
       },
       {
+        "corredor": "Bucaramanga–San Gil: Pescadero, km 53",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 2,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-07-30T12:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-07-24",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-25",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-26",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-27",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-28",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-29",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-30",
+            "ventanas": [
+              "AM",
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "sin actualización institucional posterior localizada; antecedente verificable de restricción a un carril.",
+              "sin actualización institucional posterior localizada; el antecedente verificable es restricción a un carril."
+            ]
+          }
+        ]
+      },
+      {
         "corredor": "Bogotá–Girardot: Nariz del Diablo",
         "dias_confirmados": 0,
         "dias_vigilancia": 2,
@@ -2586,6 +2656,77 @@
         ]
       },
       {
+        "corredor": "San Roque–Curumaní: puente San Pedro",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-07-30T12:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-07-24",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-25",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-26",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-27",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-28",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-29",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-30",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "señal externa de cierre tras un triple siniestro vial nocturno; sin confirmación posterior de autoridad sobre vigencia, atención o reapertura."
+            ]
+          }
+        ]
+      },
+      {
         "corredor": "Rionegro–Medellín — doble calzada Las Palmas, km 11+000",
         "dias_confirmados": 0,
         "dias_vigilancia": 1,
@@ -2653,6 +2794,77 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          }
+        ]
+      },
+      {
+        "corredor": "Nobsa–Duitama: Punta Larga",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-07-30T12:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-07-24",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-25",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-26",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-27",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-28",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-29",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-07-30",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "señal externa de bloqueo pacífico comunitario desde la mañana; no confirmado por una fuente operativa directa en el corte MD."
+            ]
           }
         ]
       },
@@ -2941,77 +3153,6 @@
         ]
       },
       {
-        "corredor": "Bucaramanga–San Gil: Pescadero, km 53",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "low",
-        "ultima_observacion": "2026-07-30T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-07-24",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-25",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-26",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-27",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-28",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-29",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-07-30",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "sin actualización institucional posterior localizada; antecedente verificable de restricción a un carril."
-            ]
-          }
-        ]
-      },
-      {
         "corredor": "Bucaramanga–San Gil — km 53, sector Pescadero (Santander)",
         "dias_confirmados": 0,
         "dias_vigilancia": 1,
@@ -3239,87 +3380,100 @@
         "resueltos": 0,
         "por_verificar": 3
       }
+    },
+    {
+      "cut_id": "2026-07-30-md",
+      "hora": "12:00",
+      "ventana": "MD",
+      "tipo": "corte_final",
+      "descripcion": "0 nuevas; 1 persistentes; 0 resueltas; 4 por verificar.",
+      "conteos": {
+        "nuevos": 0,
+        "persistentes": 1,
+        "resueltos": 0,
+        "por_verificar": 4
+      }
     }
   ],
   "fuentes": [
     {
-      "id": "src-55e7957f3494f309cd8ad4ec",
+      "id": "src-687567fe8a5214cfe1e78472",
       "nombre": "Fuente directa: https://x.com/ANI_Colombia/status/2082097422637932871",
       "url": "https://x.com/ANI_Colombia/status/2082097422637932871",
       "fortaleza": "official",
-      "consultada_en": "2026-07-30T07:00:00",
+      "consultada_en": "2026-07-30T12:00:00",
       "eventos": [
         "evt-4160d650e1258f9edcc9"
       ]
     },
     {
-      "id": "src-92d1a9a154c0cc669799b27f",
-      "nombre": "Fuente directa: https://x.com/cviallanos/status/2082117695911211082",
-      "url": "https://x.com/cviallanos/status/2082117695911211082",
+      "id": "src-1c0ccfe3095cf0fb69b81c82",
+      "nombre": "Consulta operativa: https://www.policia.gov.co/estado-de-las-vias",
+      "url": "https://www.policia.gov.co/estado-de-las-vias",
       "fortaleza": "official",
-      "consultada_en": "2026-07-30T07:00:00",
+      "consultada_en": "2026-07-30T12:00:00",
       "eventos": [
-        "evt-523c957256f8fbebcdb2"
+        "evt-81f25cd2cfcdb307c696"
       ]
     },
     {
-      "id": "src-f680403be0f073f838056672",
-      "nombre": "Fuente directa: https://x.com/cviallanos/status/2082138366229852669",
-      "url": "https://x.com/cviallanos/status/2082138366229852669",
-      "fortaleza": "official",
-      "consultada_en": "2026-07-30T07:00:00",
+      "id": "src-cdf9cd1d3fd82c964f716e37",
+      "nombre": "Fuente directa de la señal: https://x.com/7NNoticias/status/2082798493643493735",
+      "url": "https://x.com/7NNoticias/status/2082798493643493735",
+      "fortaleza": "social",
+      "consultada_en": "2026-07-30T12:00:00",
       "eventos": [
-        "evt-523c957256f8fbebcdb2"
+        "evt-81f25cd2cfcdb307c696"
       ]
     },
     {
-      "id": "src-59aeaa3a0b0aeaa27a930786",
+      "id": "src-bd29f84591aa0d4a86122a7a",
       "nombre": "Fuente directa: https://www.invias.gov.co/publicaciones/9656/invias-desmiente-informacion-falsa-sobre-supuesto-cierre-indefinido-del-corredor-vial-calarca-alto-de-la-linea-cajamarca/",
       "url": "https://www.invias.gov.co/publicaciones/9656/invias-desmiente-informacion-falsa-sobre-supuesto-cierre-indefinido-del-corredor-vial-calarca-alto-de-la-linea-cajamarca/",
       "fortaleza": "official",
-      "consultada_en": "2026-07-30T07:00:00",
+      "consultada_en": "2026-07-30T12:00:00",
       "eventos": [
         "evt-99ba63f4f4baf51cda1c"
       ]
     },
     {
-      "id": "src-33736b9853a2e708fd617a20",
-      "nombre": "Señal X verificable: https://x.com/InviasOficial/status/2082229777444765717",
-      "url": "https://x.com/InviasOficial/status/2082229777444765717",
-      "fortaleza": "official",
-      "consultada_en": "2026-07-30T07:00:00",
+      "id": "src-f45936c8a9a7edc0036af63a",
+      "nombre": "Señal externa: https://x.com/Elolfato/status/2082870813871534565",
+      "url": "https://x.com/Elolfato/status/2082870813871534565",
+      "fortaleza": "social",
+      "consultada_en": "2026-07-30T12:00:00",
       "eventos": [
         "evt-99ba63f4f4baf51cda1c"
       ]
     },
     {
-      "id": "src-831e93ae60abc0a6c5aa2a24",
+      "id": "src-9f2c7f71f3ed2d5e9893f262",
       "nombre": "Fuente directa: https://x.com/InviasOficial/status/2081040249627484238",
       "url": "https://x.com/InviasOficial/status/2081040249627484238",
       "fortaleza": "official",
-      "consultada_en": "2026-07-30T07:00:00",
+      "consultada_en": "2026-07-30T12:00:00",
       "eventos": [
         "evt-ab9aecedad8c326a0fde"
       ]
     },
     {
-      "id": "src-512ded452e269d602a87fb44",
-      "nombre": "Fuente de contexto: https://rionoticias.co/volcamiento-de-camion-con-gas-provoca-cierre-total-en-la-via-bogota-girardot/",
-      "url": "https://rionoticias.co/volcamiento-de-camion-con-gas-provoca-cierre-total-en-la-via-bogota-girardot/",
-      "fortaleza": "media",
-      "consultada_en": "2026-07-30T07:00:00",
+      "id": "src-8abf8a90fd6e0e9bf009bfc4",
+      "nombre": "Consulta operativa: https://hermes.invias.gov.co/viajeroseguro/",
+      "url": "https://hermes.invias.gov.co/viajeroseguro/",
+      "fortaleza": "official",
+      "consultada_en": "2026-07-30T12:00:00",
       "eventos": [
-        "evt-d2135cf124f8458d4876"
+        "evt-e9c9acc90db666b0cceb"
       ]
     },
     {
-      "id": "src-6cb05edfed262bef9c439430",
-      "nombre": "Fuente directa de la señal: https://x.com/RioNoticiasCo/status/2082576189604913335",
-      "url": "https://x.com/RioNoticiasCo/status/2082576189604913335",
+      "id": "src-f7434dbe9fad4bdc6c98002c",
+      "nombre": "Fuente directa de la señal: https://x.com/RadioGuatapuri/status/2082787374681968803",
+      "url": "https://x.com/RadioGuatapuri/status/2082787374681968803",
       "fortaleza": "social",
-      "consultada_en": "2026-07-30T07:00:00",
+      "consultada_en": "2026-07-30T12:00:00",
       "eventos": [
-        "evt-d2135cf124f8458d4876"
+        "evt-e9c9acc90db666b0cceb"
       ]
     }
   ]
