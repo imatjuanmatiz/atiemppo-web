@@ -13,10 +13,11 @@ section[id]{scroll-margin-top:88px}
 .site-nav-wrap{position:sticky;top:0;z-index:20;background:rgba(244,246,242,.9);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--line)}
 .site-nav{height:72px;max-width:var(--maxw);margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .nav-logo img{height:30px;width:auto}
-.nav-links{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.nav-links{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
 .nav-links a{font-size:14px;color:var(--muted)}
 .nav-links a:hover{color:var(--navy)}
 .nav-links .active{color:var(--navy);font-weight:700}
+.lang-switch{display:inline-flex!important;align-items:center;font:600 11px var(--mono)!important;color:var(--muted)!important;border:1px solid var(--line-2);border-radius:8px;padding:8px 10px}
 .nav-cta{padding:10px 16px;border-radius:10px;background:var(--navy);color:#fff!important;font-weight:700!important}
 .page-main{max-width:var(--maxw);margin:0 auto}
 .container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 28px}
