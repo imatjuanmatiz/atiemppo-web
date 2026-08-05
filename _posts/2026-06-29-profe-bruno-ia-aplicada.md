@@ -20,6 +20,14 @@ Ese es el espacio de **Profe Bruno**, una iniciativa de Atiemppo para enseñar I
 
 Profe Bruno no nace para vender una clase de moda. Nace para resolver un problema más profundo: muchas personas y equipos saben que tienen que aprender IA, pero no saben por dónde empezar, qué herramientas usar, cómo evaluar resultados ni cómo convertir el entusiasmo inicial en una capacidad real.
 
+<section id="sesion-abierta" class="profe-session-callout">
+  <p class="kicker">Sesiones abiertas · Profe Bruno</p>
+  <h2>De chatear a crear agentes</h2>
+  <p>Una sesión práctica para personas que ya usan ChatGPT, Claude u otra IA y quieren empezar a construir algo que trabaje con ellas.</p>
+  <p><strong>Todos los miércoles · 7:00 p. m. · hora Colombia.</strong></p>
+  <p><a href="/#contacto">Reserva tu lugar →</a></p>
+</section>
+
 ## El problema: todos hablan de IA, pocos saben usarla con método
 
 Hoy cualquier persona puede abrir ChatGPT, Claude, Gemini, Copilot o alguna otra herramienta y pedirle que redacte un texto, resuma un documento o proponga ideas.

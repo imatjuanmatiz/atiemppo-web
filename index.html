@@ -186,6 +186,21 @@ section[id]{scroll-margin-top:86px}
 .float-badge .b1{font-size:12.5px;font-weight:700;color:var(--ink)}
 .float-badge .b2{font-family:var(--mono);font-size:10.5px;color:var(--muted-3)}
 
+/* SESIÓN ABIERTA · PRIMERA PUERTA DE ENTRADA */
+.session-feature{position:relative;background:var(--navy);color:#fff;overflow:hidden}
+.session-feature::before{content:"";position:absolute;inset:0;opacity:.4;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,.08) 1px,transparent 0);background-size:26px 26px;pointer-events:none}
+.session-feature-inner{position:relative;display:grid;grid-template-columns:1.35fr .65fr;gap:60px;align-items:center;padding-top:58px;padding-bottom:58px}
+.session-feature-copy h2{max-width:760px;font-family:var(--display);font-size:clamp(30px,4vw,48px);line-height:1.08;letter-spacing:-1.4px;margin:0}
+.session-feature-copy>p:last-child{max-width:650px;color:#b8c8d9;font-size:17px;line-height:1.6;margin:20px 0 0}
+.session-feature-side{display:flex;flex-direction:column;gap:24px;padding-left:28px;border-left:1px solid rgba(255,255,255,.18)}
+.session-feature-meta span{display:block;color:var(--green-l);font-family:var(--mono);font-size:11px;letter-spacing:1.2px}
+.session-feature-meta strong{display:block;color:#fff;font-family:var(--display);font-size:35px;line-height:1;margin:8px 0}
+.session-feature-meta small{color:#b8c8d9;font-size:13px}
+.session-feature-actions{display:flex;align-items:flex-start;flex-direction:column;gap:12px}
+.session-text-link{color:var(--green-l);font-size:13px;font-weight:700}
+.session-text-link:hover{color:#fff}
+.nov-sicetac{background:linear-gradient(150deg,#0e2c4d,#082b3d)}
+
 /* PUENTE */
 .puente-head{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;flex-wrap:wrap;margin-bottom:48px}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
@@ -310,6 +325,8 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
   .mobile-nav.open{display:flex}
   .mobile-nav a{font-size:22px;font-weight:700;color:var(--ink)}
   .hero-inner,.split,.cuando,.contact-inner,.nov{grid-template-columns:1fr}
+  .session-feature-inner{grid-template-columns:1fr;gap:28px}
+  .session-feature-side{padding-left:0;border-left:0;border-top:1px solid rgba(255,255,255,.18);padding-top:24px;flex-direction:row;align-items:center;justify-content:space-between}
   .hero-visual{height:380px;margin-top:8px}
   .steps{grid-template-columns:1fr 1fr}
   .prod-grid{grid-template-columns:1fr 1fr}
@@ -326,6 +343,10 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
   .stats{gap:20px}
   .stat-div{display:none}
   .hero-actions .btn{width:100%;justify-content:center}
+  .session-feature-inner{padding-top:42px;padding-bottom:42px}
+  .session-feature-side{align-items:flex-start;flex-direction:column;gap:20px}
+  .session-feature-actions{width:100%}
+  .session-feature-actions .btn{width:100%;justify-content:center}
   .wa-float{right:16px;bottom:16px;width:56px;height:56px;padding:0;justify-content:center;font-size:0}
   .wa-float::after{content:"WA";font-size:13px}
 }
@@ -339,6 +360,7 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
     <div class="nav-links">
       <a href="#puente">El puente</a>
       <a href="#soluciones">Soluciones</a>
+      <a href="#sesion-abierta">Sesión abierta</a>
       <a href="#productos">Productos</a>
       <a href="/novedades-en-vias/">Novedades en Vías</a>
       <a href="/reportes/">Reportes</a>
@@ -352,6 +374,7 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
 <div class="mobile-nav" id="mobileNav">
   <a href="#puente" onclick="closeMenu()">El puente</a>
   <a href="#soluciones" onclick="closeMenu()">Soluciones</a>
+  <a href="#sesion-abierta" onclick="closeMenu()">Sesión abierta</a>
   <a href="#productos" onclick="closeMenu()">Productos</a>
   <a href="/novedades-en-vias/" onclick="closeMenu()">Novedades en Vías</a>
   <a href="/reportes/" onclick="closeMenu()">Reportes</a>
@@ -402,6 +425,21 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
           <img src="assets/images/atiemppo/openclaw-logo.png" alt="OpenClaw" style="width:26px;height:26px;object-fit:contain;flex:none"/>
           <div><div class="b1">Bruno está reportando</div><div class="b2">seguimiento en vías · hoy</div></div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SESIÓN ABIERTA · PRIMERA PUERTA DE ENTRADA -->
+  <section class="session-feature" id="sesion-abierta">
+    <div class="container session-feature-inner" data-reveal>
+      <div class="session-feature-copy">
+        <p class="kicker on-dark">Profe Bruno · sesión abierta</p>
+        <h2>¿Ya usas ChatGPT, Claude, Gemini u otra IA para chatear y copiar respuestas, pero quieres aprender a construir agentes que trabajen contigo?</h2>
+        <p>Ven a una primera sesión práctica para entender el paso del chat a los agentes, trabajar con contexto y salir con una tarea real que puedas empezar a dirigir.</p>
+      </div>
+      <div class="session-feature-side">
+        <div class="session-feature-meta"><span>MIÉRCOLES</span><strong>7:00 p. m.</strong><small>Hora Colombia · sesión inicial</small></div>
+        <div class="session-feature-actions"><a class="btn btn-primary" href="/formacion/profe-bruno-ia-aplicada/#sesion-abierta">Ver la sesión →</a><a class="session-text-link" href="#contacto">Reservar mi lugar</a></div>
       </div>
     </div>
   </section>
@@ -535,6 +573,24 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
         <div class="qr">
           <a href="https://chat.whatsapp.com/DC2nQ5FjQ04KmiWdOKU0XH?mode=gi_t" target="_blank" rel="noopener"><img src="assets/images/atiemppo/novedades-qr.png" alt="Código QR para unirse a Novedades en Vías por WhatsApp"/></a>
           <div class="cap">Novedades en vías · ATIEMPPO</div>
+        </div>
+      </div>
+
+      <!-- SICETAC AL INSTANTE -->
+      <div class="nov nov-sicetac" data-reveal style="margin-top:18px">
+        <div class="dots" aria-hidden="true"></div>
+        <div class="nov-in">
+          <div class="pill"><span class="dot"></span> Acceso directo · SICETAC</div>
+          <h3>SICETAC al Instante, directo en WhatsApp</h3>
+          <p>Consulta referencias de costos de transporte con una ruta real, desde el canal que tu equipo ya usa. Empieza con una pregunta y prueba el servicio en segundos.</p>
+          <div class="nov-actions">
+            <a href="/sicetac-al-instante/" class="btn btn-primary">Conocer SICETAC al Instante →</a>
+            <a href="https://wa.me/573134503694?text=Hola%2C%20quiero%20consultar%20SICETAC%20al%20Instante." target="_blank" rel="noopener" class="session-text-link">Abrir WhatsApp directo ↗</a>
+          </div>
+        </div>
+        <div class="qr">
+          <a href="https://wa.me/573134503694?text=Hola%2C%20quiero%20consultar%20SICETAC%20al%20Instante." target="_blank" rel="noopener"><img src="assets/images/atiemppo/sicetac-instant-qr.png" alt="Código QR para consultar SICETAC al Instante por WhatsApp"/></a>
+          <div class="cap">SICETAC al Instante · WhatsApp</div>
         </div>
       </div>
     </div>
