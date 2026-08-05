@@ -24,7 +24,7 @@ Profe Bruno no nace para vender una clase de moda. Nace para resolver un problem
   <p class="kicker">Sesiones abiertas · Profe Bruno</p>
   <h2>De chatear a crear agentes</h2>
   <p>Una sesión práctica para personas que ya usan ChatGPT, Claude u otra IA y quieren empezar a construir algo que trabaje con ellas.</p>
-  <p><strong>Todos los miércoles · 7:00 p. m. · hora Colombia.</strong></p>
+  <p><strong>A partir del 12 de agosto · todos los miércoles · 7:00 p. m. · hora Colombia.</strong></p>
   <p><a href="/#contacto">Reserva tu lugar →</a></p>
 </section>
 
