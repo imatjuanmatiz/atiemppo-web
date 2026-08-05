@@ -46,7 +46,7 @@ Profe Bruno no nace para vender una clase de moda. Nace para resolver un problem
     <div>
       <p class="mini-label">LECTURAS Y DOCUMENTOS OPCIONALES</p>
       <div class="profe-session-links">
-        <a href="https://atiemppo-agentes.juanmatiz.chatgpt.site/sesiones" target="_blank" rel="noreferrer"><strong>Guía de la sesión</strong><small>Qué veremos y cómo prepararte ↗</small></a>
+        <a href="/sesiones/"><strong>Guía de la sesión</strong><small>Qué veremos y cómo prepararte ↗</small></a>
         <a href="https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex" target="_blank" rel="noreferrer"><strong>ChatGPT Work y Codex</strong><small>Referencia oficial de OpenAI ↗</small></a>
         <a href="https://docs.openclaw.ai/" target="_blank" rel="noreferrer"><strong>OpenClaw</strong><small>Gateway, runtime y agentes conectados ↗</small></a>
       </div>
@@ -54,8 +54,8 @@ Profe Bruno no nace para vender una clase de moda. Nace para resolver un problem
   </div>
 
   <div class="profe-session-actions">
-    <a class="primary" href="https://atiemppo-agentes.juanmatiz.chatgpt.site/sesiones/registro">Quiero participar →</a>
-    <a href="https://atiemppo-agentes.juanmatiz.chatgpt.site/sesiones">Ver la sesión completa ↗</a>
+    <a class="primary" href="/sesiones/registro/">Quiero participar →</a>
+    <a href="/sesiones/">Ver la sesión completa ↗</a>
   </div>
 </section>
 
