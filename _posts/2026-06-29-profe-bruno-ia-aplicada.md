@@ -23,9 +23,40 @@ Profe Bruno no nace para vender una clase de moda. Nace para resolver un problem
 <section id="sesion-abierta" class="profe-session-callout">
   <p class="kicker">Sesiones abiertas · Profe Bruno</p>
   <h2>De chatear a crear agentes</h2>
-  <p>Una sesión práctica para personas que ya usan ChatGPT, Claude u otra IA y quieren empezar a construir algo que trabaje con ellas.</p>
-  <p><strong>A partir del 12 de agosto · todos los miércoles · 7:00 p. m. · hora Colombia.</strong></p>
-  <p><a href="/#contacto">Reserva tu lugar →</a></p>
+  <p class="session-lead">Una sesión práctica para personas que ya usan ChatGPT, Claude, Gemini u otra IA y quieren pasar de pedir respuestas a construir un encargo que puedan revisar, repetir y mejorar.</p>
+  <p class="session-date"><strong>A partir del 12 de agosto · todos los miércoles · 7:00 p. m. · hora Colombia · 60 minutos.</strong></p>
+
+  <div class="profe-session-route" aria-label="Ruta de aprendizaje de la sesión">
+    <div><span>01</span><strong>Chatear</strong><small>Partimos de una pregunta o tarea real.</small></div>
+    <div><span>02</span><strong>Dar contexto</strong><small>Sumamos archivos, reglas, ejemplos y propósito.</small></div>
+    <div><span>03</span><strong>Crear un agente</strong><small>Convertimos el trabajo en un encargo reusable.</small></div>
+    <div><span>04</span><strong>Coordinar</strong><small>Conectamos herramientas, memoria y revisión humana.</small></div>
+  </div>
+
+  <div class="profe-session-detail">
+    <div>
+      <p class="mini-label">QUÉ HARÁS EN LA SESIÓN</p>
+      <ul>
+        <li>Entender la diferencia entre conversar y delegar trabajo.</li>
+        <li>Ver una demostración con contexto, archivos y resultado.</li>
+        <li>Construir tu primer encargo reusable sobre un caso propio.</li>
+        <li>Identificar límites, criterios de revisión y siguiente paso.</li>
+      </ul>
+    </div>
+    <div>
+      <p class="mini-label">LECTURAS Y DOCUMENTOS OPCIONALES</p>
+      <div class="profe-session-links">
+        <a href="https://atiemppo-agentes.juanmatiz.chatgpt.site/sesiones" target="_blank" rel="noreferrer"><strong>Guía de la sesión</strong><small>Qué veremos y cómo prepararte ↗</small></a>
+        <a href="https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex" target="_blank" rel="noreferrer"><strong>ChatGPT Work y Codex</strong><small>Referencia oficial de OpenAI ↗</small></a>
+        <a href="https://docs.openclaw.ai/" target="_blank" rel="noreferrer"><strong>OpenClaw</strong><small>Gateway, runtime y agentes conectados ↗</small></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="profe-session-actions">
+    <a class="primary" href="https://atiemppo-agentes.juanmatiz.chatgpt.site/sesiones/registro">Quiero participar →</a>
+    <a href="https://atiemppo-agentes.juanmatiz.chatgpt.site/sesiones">Ver la sesión completa ↗</a>
+  </div>
 </section>
 
 ## El problema: todos hablan de IA, pocos saben usarla con método
