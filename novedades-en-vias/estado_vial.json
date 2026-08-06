@@ -2,55 +2,55 @@
   "schema_version": "1.1",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-08-06-am",
+  "cut_id": "2026-08-06-md",
   "fecha": "2026-08-06",
-  "ventana": "AM",
-  "hora": "07:00",
-  "generado_en": "2026-08-06T07:00:00",
-  "artefacto_fuente": "2026-08-06-editor-eldato-version-vias-colombia-am.md",
+  "ventana": "MD",
+  "hora": "12:00",
+  "generado_en": "2026-08-06T12:00:00",
+  "artefacto_fuente": "2026-08-06-editor-eldato-version-vias-colombia-md.md",
   "alertas_inmediatas": [
     {
       "id": "alert-evt-04263e0094902be75e1d",
       "nivel": "critical",
-      "titulo": "cierre total · La Lejía–Saravena: PR22+0000–PR26+0000",
-      "mensaje": "cierre total en la tabla oficial de Estado de las vías.",
+      "titulo": "cierre total · La Lejía–Saravena, PR22+0000–PR26+0000",
+      "mensaje": "cierre total en la tabla oficial.",
       "event_id": "evt-04263e0094902be75e1d",
-      "corredor": "La Lejía–Saravena: PR22+0000–PR26+0000",
+      "corredor": "La Lejía–Saravena, PR22+0000–PR26+0000",
       "fuente_ids": [
-        "src-6cdc0a25bc86d747c816dee9"
+        "src-5c01e2626ce495e8f91b3750"
       ]
     },
     {
       "id": "alert-evt-68025aad0ab9fc922f8d",
       "nivel": "critical",
-      "titulo": "cierre total · Las Ánimas–Bogotá: PR66+0480–PR67+0000",
-      "mensaje": "cierre total temporal; el registro publica como fin el 7 de septiembre de 2026.",
+      "titulo": "cierre total · Las Ánimas–Bogotá, PR66+0480–PR67+0000",
+      "mensaje": "cierre total temporal, con fin publicado el 7 de septiembre de 2026.",
       "event_id": "evt-68025aad0ab9fc922f8d",
-      "corredor": "Las Ánimas–Bogotá: PR66+0480–PR67+0000",
+      "corredor": "Las Ánimas–Bogotá, PR66+0480–PR67+0000",
       "fuente_ids": [
-        "src-e1c8396e248a5e8e07d89a95"
+        "src-a40cfded8bd0bf8df39de476"
       ]
     },
     {
       "id": "alert-evt-8121a95b628d945aa623",
       "nivel": "critical",
-      "titulo": "cierre total · Samanga–La Esperanza–El Canelo: PR3+0300–PR3+0400",
-      "mensaje": "cierre total en el registro oficial.",
+      "titulo": "cierre total · Samanga–La Esperanza–El Canelo, PR3+0300–PR3+0400",
+      "mensaje": "cierre total por pérdida total de banca.",
       "event_id": "evt-8121a95b628d945aa623",
-      "corredor": "Samanga–La Esperanza–El Canelo: PR3+0300–PR3+0400",
+      "corredor": "Samanga–La Esperanza–El Canelo, PR3+0300–PR3+0400",
       "fuente_ids": [
-        "src-b246efd4858da5579784f6ff"
+        "src-dae1b4a45180ca4ba276427b"
       ]
     },
     {
       "id": "alert-evt-7c3f2e754da00d31a237",
       "nivel": "high",
-      "titulo": "cierre parcial · Paso Nacional por Tolú: PR45+0846–PR46+0928",
-      "mensaje": "cierre parcial por obras; el registro publica como fin el 1 de octubre de 2027.",
+      "titulo": "cierre parcial · Paso Nacional por Tolú, PR45+0846–PR46+0928",
+      "mensaje": "cierre parcial por obras, según la tabla oficial vigente.",
       "event_id": "evt-7c3f2e754da00d31a237",
-      "corredor": "Paso Nacional por Tolú: PR45+0846–PR46+0928",
+      "corredor": "Paso Nacional por Tolú, PR45+0846–PR46+0928",
       "fuente_ids": [
-        "src-7ad7952fe239ae3ca1a17ee9"
+        "src-f4e24b5d884b32a284ccfc62"
       ]
     }
   ],
@@ -62,94 +62,88 @@
       "PM"
     ],
     "ventanas_recibidas": [
-      "AM"
+      "AM",
+      "MD"
     ],
-    "eventos_confirmados": 11,
-    "eventos_vigilancia": 6,
+    "eventos_confirmados": 9,
+    "eventos_vigilancia": 8,
     "pendientes_georreferencia": 17,
     "fuentes": [
       {
-        "id": "src-6cdc0a25bc86d747c816dee9",
+        "id": "src-5c01e2626ce495e8f91b3750",
         "nombre": "Fuente directa: https://www.policia.gov.co/index.php/estado-de-las-vias",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-06T07:00:00",
+        "ultima_consulta": "2026-08-06T12:00:00",
         "nota": "Aporta evidencia a 5 evento(s) del corte."
       },
       {
-        "id": "src-92de2e68650f61bc69674dcf",
-        "nombre": "Fuente directa: https://x.com/cviallanos/status/2085290296024150207",
+        "id": "src-5b7b78ab180d021cd3eabeb3",
+        "nombre": "Fuente directa: https://x.com/cviallanos/status/2085365876149067943",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-06T07:00:00",
-        "nota": "Aporta evidencia a 1 evento(s) del corte."
-      },
-      {
-        "id": "src-346abf76ad8eae3ee9f6400a",
-        "nombre": "Fuente directa de la señal X: https://x.com/i/web/status/2085331393865781548",
-        "estado": "consultada",
-        "ultima_consulta": "2026-08-06T07:00:00",
-        "nota": "Aporta evidencia a 1 evento(s) del corte."
-      },
-      {
-        "id": "src-5c47682ba63b948f30fb0188",
-        "nombre": "Fuente directa: https://x.com/cviallanos/status/2085290294786904098",
-        "estado": "consultada",
-        "ultima_consulta": "2026-08-06T07:00:00",
-        "nota": "Aporta evidencia a 1 evento(s) del corte."
-      },
-      {
-        "id": "src-be469f4066a13ad04caa720b",
-        "nombre": "Fuente directa: https://www.invias.gov.co/publicaciones/9663/invias-pone-en-marcha-obras-para-estabilizar-la-via-armenia-la-linea-a-la-altura-de-cajamarca/; señal X",
-        "estado": "consultada",
-        "ultima_consulta": "2026-08-06T07:00:00",
-        "nota": "Aporta evidencia a 1 evento(s) del corte."
-      },
-      {
-        "id": "src-8a3f6daa1b54a87650a45e89",
-        "nombre": "Fuente directa de la señal X: https://x.com/i/web/status/2085332886417277208",
-        "estado": "consultada",
-        "ultima_consulta": "2026-08-06T07:00:00",
-        "nota": "Aporta evidencia a 1 evento(s) del corte."
-      },
-      {
-        "id": "src-b2467082106d05fed1ce3e74",
-        "nombre": "Fuente directa: https://x.com/CoviandinaSAS/status/2085311056495124773",
-        "estado": "consultada",
-        "ultima_consulta": "2026-08-06T07:00:00",
+        "ultima_consulta": "2026-08-06T12:00:00",
         "nota": "Aporta evidencia a 2 evento(s) del corte."
       },
       {
-        "id": "src-77f28ba28968ea4981736136",
-        "nombre": "Fuente directa: https://www.invias.gov.co/publicaciones/9672/invias-avanza-en-las-obras-de-contencion-de-la-emergencia-en-pescadero-via-san-gil-bucaramanga/; señal X",
+        "id": "src-0c949741f05b7abf9060aa91",
+        "nombre": "Fuente directa: https://x.com/Elolfato/status/2085403318361207194; https://www.invias.gov.co/publicaciones/9663/invias-pone-en-marcha-obras-para-estabilizar-la-via-armenia-la-linea-a-la-altura-de-cajamarca/; https://elcronista.co/actualidad/invias-desmiente-cierre-total-de-la-via-en-cajamarca",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-06T07:00:00",
+        "ultima_consulta": "2026-08-06T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-e83684b653ac16f936687970",
-        "nombre": "Fuente directa: https://x.com/cviallanos/status/2085108586275905712; último parte AM sin el punto",
+        "id": "src-95945ffd3984fd0bdad045d2",
+        "nombre": "Fuente directa: https://x.com/CoviandinaSAS/status/2085367121182134617",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-06T07:00:00",
+        "ultima_consulta": "2026-08-06T12:00:00",
+        "nota": "Aporta evidencia a 2 evento(s) del corte."
+      },
+      {
+        "id": "src-5944042407b27264549f9caa",
+        "nombre": "Fuente directa: https://www.invias.gov.co/publicaciones/9672/invias-avanza-en-las-obras-de-contencion-de-la-emergencia-en-pescadero-via-san-gil-bucaramanga/; https://x.com/InviasOficial/status/2085030596535828946",
+        "estado": "consultada",
+        "ultima_consulta": "2026-08-06T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-9050b26923248eb0290a0404",
+        "id": "src-0e51497a9f8e8d6f80d7763d",
+        "nombre": "Fuente directa de la señal: https://x.com/i/web/status/2085332886417277208",
+        "estado": "consultada",
+        "ultima_consulta": "2026-08-06T12:00:00",
+        "nota": "Aporta evidencia a 1 evento(s) del corte."
+      },
+      {
+        "id": "src-56020f2b92c550963855fbc5",
         "nombre": "Fuente directa: https://www.ani.gov.co/w/entraron-en-funcionamiento-47-98-km-de-v%C3%ADa-rehabilitada-en-el-proyecto-5g-buga-buenaventura",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-06T07:00:00",
+        "ultima_consulta": "2026-08-06T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-397764b30fcc8579778493f8",
-        "nombre": "Fuente directa: https://x.com/CoviandinaSAS/status/2085218042615628088",
+        "id": "src-729a0366555f9e3af10c28a3",
+        "nombre": "Fuente directa: https://x.com/cviallanos/status/2085386813703618650",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-06T07:00:00",
+        "ultima_consulta": "2026-08-06T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-b43e39c2c074e894fee6af61",
-        "nombre": "Fuente directa: https://x.com/cviallanos/status/2085290297286590579",
+        "id": "src-7bc2d8b2c33adf28b26b86c8",
+        "nombre": "Fuente directa: https://x.com/ConcesionTAO/status/2085410758184100070; https://tuneloriente.com/",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-06T07:00:00",
+        "ultima_consulta": "2026-08-06T12:00:00",
+        "nota": "Aporta evidencia a 1 evento(s) del corte."
+      },
+      {
+        "id": "src-526b7ea9693888891009a460",
+        "nombre": "Fuente directa: https://x.com/cviallanos/status/2085290297286590579; https://x.com/cviallanos/status/2085307135705936248",
+        "estado": "consultada",
+        "ultima_consulta": "2026-08-06T12:00:00",
+        "nota": "Aporta evidencia a 1 evento(s) del corte."
+      },
+      {
+        "id": "src-da8c71b967b7c9b472bc142b",
+        "nombre": "Fuente directa: https://x.com/ConcesionTAO/status/2085397921634140618; https://x.com/ConcesionTAO/status/2085400801728397414; https://www.minuto60.com/colombia/choque-tunel-oriente-dejo-ocho-heridos-un-lesionado-grave/13094",
+        "estado": "consultada",
+        "ultima_consulta": "2026-08-06T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       }
     ]
@@ -158,96 +152,80 @@
     {
       "id": "action-evt-04263e0094902be75e1d",
       "prioridad": "critical",
-      "corredor": "La Lejía–Saravena: PR22+0000–PR26+0000",
-      "accion": "interrupción del tramo; la alternativa por Labateca–Toledo–Mónoga debe validarse según el vehículo.",
+      "corredor": "La Lejía–Saravena, PR22+0000–PR26+0000",
+      "accion": "interrupción del tramo; la alternativa por Labateca–Toledo–Mónoga requiere validación según el vehículo.",
       "event_id": "evt-04263e0094902be75e1d",
-      "fundamento": "cierre total en la tabla oficial de Estado de las vías."
+      "fundamento": "cierre total en la tabla oficial."
     },
     {
       "id": "action-evt-68025aad0ab9fc922f8d",
       "prioridad": "critical",
-      "corredor": "Las Ánimas–Bogotá: PR66+0480–PR67+0000",
+      "corredor": "Las Ánimas–Bogotá, PR66+0480–PR67+0000",
       "accion": "interrupción del tramo y necesidad de alternativa autorizada.",
       "event_id": "evt-68025aad0ab9fc922f8d",
-      "fundamento": "cierre total temporal; el registro publica como fin el 7 de septiembre de 2026."
+      "fundamento": "cierre total temporal, con fin publicado el 7 de septiembre de 2026."
     },
     {
       "id": "action-evt-8121a95b628d945aa623",
       "prioridad": "critical",
-      "corredor": "Samanga–La Esperanza–El Canelo: PR3+0300–PR3+0400",
-      "accion": "tramo no transitable según el registro; las alternativas publicadas deben validarse antes del despacho.",
+      "corredor": "Samanga–La Esperanza–El Canelo, PR3+0300–PR3+0400",
+      "accion": "tramo no transitable según el registro; se deben validar alternativas.",
       "event_id": "evt-8121a95b628d945aa623",
-      "fundamento": "cierre total en el registro oficial."
+      "fundamento": "cierre total por pérdida total de banca."
     },
     {
       "id": "action-evt-7c3f2e754da00d31a237",
       "prioridad": "high",
-      "corredor": "Paso Nacional por Tolú: PR45+0846–PR46+0928",
+      "corredor": "Paso Nacional por Tolú, PR45+0846–PR46+0928",
       "accion": "capacidad reducida en el acceso a Tolú; no hay demora cuantificada.",
       "event_id": "evt-7c3f2e754da00d31a237",
-      "fundamento": "cierre parcial por obras; el registro publica como fin el 1 de octubre de 2027."
-    },
-    {
-      "id": "action-evt-2aaddfe0a78bc5b0f19f",
-      "prioridad": "medium",
-      "corredor": "Armenia–La Línea–Cajamarca: km 47+420",
-      "accion": "capacidad reducida y necesidad de programar el viaje; no se presenta una espera concreta como dato AM.",
-      "event_id": "evt-2aaddfe0a78bc5b0f19f",
-      "fundamento": "último comunicado oficial disponible: paso controlado a un carril. No existe en esta corrida una medición AM que permita declarar apertura completa."
+      "fundamento": "cierre parcial por obras, según la tabla oficial vigente."
     },
     {
       "id": "action-evt-dd26c5836207883e0eba",
       "prioridad": "medium",
-      "corredor": "Bogotá–Villavicencio: túnel Buenavista I, túnel Quebradablanca, K36+500 y K69+350",
-      "accion": "capacidad reducida en varios puntos de un mismo corredor; no se publica tiempo de cola.",
+      "corredor": "Bogotá–Villavicencio, túnel Buenavista I, túnel Quebradablanca, K36+500 y K69+350",
+      "accion": "varias reducciones en el mismo corredor, con riesgo de demoras acumuladas.",
       "event_id": "evt-dd26c5836207883e0eba",
-      "fundamento": "reducción de carril en Buenavista I durante 24 horas; paso a un carril en Quebradablanca y K69+350; cierre de carril en K36+500."
+      "fundamento": "reducción en Buenavista I; paso a un carril en Quebradablanca y K69+350; cierre de carril en K36+500."
     },
     {
-      "id": "action-evt-09b2ff79736e8a4a0116",
+      "id": "action-evt-844bb1e48a3787e4e7d9",
       "prioridad": "medium",
-      "corredor": "Ibagué–Espinal: PR25+430 y PR28+450",
-      "accion": "la alternativa Pitiguao–Tubuga está limitada a vehículos con configuración máxima C2; no usarla para carga pesada sin validar.",
-      "event_id": "evt-09b2ff79736e8a4a0116",
-      "fundamento": "obras en el corredor y cierre indefinido en el registro oficial."
+      "corredor": "Ibagué (Puente Blanco)–Espinal, PR25+430 y PR28+450",
+      "accion": "la alternativa publicada no sirve para carga pesada sin validación de configuración.",
+      "event_id": "evt-844bb1e48a3787e4e7d9",
+      "fundamento": "obras en el corredor y cierre indefinido en el registro oficial; la vía alterna Pitiguao–Tubuga está limitada a vehículos con configuración máxima C2."
     },
     {
       "id": "action-evt-13c0c408c009ad5419e1",
       "prioridad": "medium",
-      "corredor": "Puerto López–Puerto Gaitán: PR03+400, sector Río Metica",
-      "accion": "capacidad reducida y posible espera sin duración publicada.",
+      "corredor": "Puerto López–Puerto Gaitán, PR03+400, sector Río Metica",
+      "accion": "menor capacidad de paso y posible espera no cuantificada.",
       "event_id": "evt-13c0c408c009ad5419e1",
-      "fundamento": "paso a un carril por labores de mantenimiento."
+      "fundamento": "paso a un carril por mantenimiento; condición persistente frente al corte AM."
     },
     {
-      "id": "action-evt-9544f4bfd8294061c419",
+      "id": "action-evt-a7f90ecd8a6bffa43ad9",
       "prioridad": "medium",
-      "corredor": "Puerto López–Puerto Gaitán: PR63+000, sector Finca La Fortuna",
-      "accion": "no es válido declarar normalidad AM ni cierre; se conserva la última condición confirmada y se marca el cambio como pendiente.",
-      "event_id": "evt-9544f4bfd8294061c419",
-      "fundamento": "el PM del 5 de agosto lo reportó habilitado y operando con normalidad; el parte AM del 6 de agosto no menciona el punto."
+      "corredor": "Puerto López–Puerto Gaitán, PR64+300, sector Parador El Kiosco",
+      "accion": "capacidad reducida y potencial espera puntual; no se publica duración.",
+      "event_id": "evt-a7f90ecd8a6bffa43ad9",
+      "fundamento": "paso a un carril reportado a las 10:25 por labores de mantenimiento."
     },
     {
-      "id": "action-evt-cc5f5ceba1f025e58ae2",
+      "id": "action-evt-919200d277e792040338",
       "prioridad": "medium",
-      "corredor": "Puerto López–Puerto Gaitán: PR99+200, peaje Yucao",
-      "accion": "menor capacidad de paso y potencial espera puntual; no hay demora cuantificada.",
-      "event_id": "evt-cc5f5ceba1f025e58ae2",
-      "fundamento": "paso a un carril por labores de mantenimiento, reportado a las 4:01 a. m.; es un nodo nuevo frente al PM anterior."
-    },
-    {
-      "id": "action-evt-1c5930ec7c80e8dfcf28",
-      "prioridad": "medium",
-      "corredor": "Villavicencio–Granada: PR54+650, peaje Ocoa",
-      "accion": "menor capacidad de paso y posible espera puntual; no hay tiempo de cola publicado.",
-      "event_id": "evt-1c5930ec7c80e8dfcf28",
-      "fundamento": "paso a un carril por labores de mantenimiento en el parte de las 4:01 a. m."
+      "corredor": "San Gil–Bucaramanga, km 53, sector Pescadero",
+      "accion": "limitación de capacidad y posible necesidad de ruta alterna para vehículos restringidos.",
+      "event_id": "evt-919200d277e792040338",
+      "fundamento": "paso a un carril y restricción para carga pesada; condición persistente."
     }
   ],
   "eventos_confirmados": [
     {
       "id": "evt-04263e0094902be75e1d",
-      "corredor": "La Lejía–Saravena: PR22+0000–PR26+0000",
+      "corredor": "La Lejía–Saravena, PR22+0000–PR26+0000",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -256,10 +234,10 @@
       "tipo": "cierre_total",
       "severidad": "critical",
       "estado": "active",
-      "resumen": "cierre total en la tabla oficial de Estado de las vías.",
-      "impacto_operativo": "interrupción del tramo; la alternativa por Labateca–Toledo–Mónoga debe validarse según el vehículo.",
+      "resumen": "cierre total en la tabla oficial.",
+      "impacto_operativo": "interrupción del tramo; la alternativa por Labateca–Toledo–Mónoga requiere validación según el vehículo.",
       "confianza": 0.9,
-      "actualizado_en": "2026-08-06T07:00:00",
+      "actualizado_en": "2026-08-06T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -268,19 +246,19 @@
       },
       "fuentes": [
         {
-          "id": "src-6cdc0a25bc86d747c816dee9",
+          "id": "src-5c01e2626ce495e8f91b3750",
           "nombre": "Fuente directa: https://www.policia.gov.co/index.php/estado-de-las-vias",
           "url": "https://www.policia.gov.co/index.php/estado-de-las-vias",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-08-06T07:00:00",
-          "evidencia": "cierre total en la tabla oficial de Estado de las vías."
+          "consultada_en": "2026-08-06T12:00:00",
+          "evidencia": "cierre total en la tabla oficial."
         }
       ]
     },
     {
       "id": "evt-68025aad0ab9fc922f8d",
-      "corredor": "Las Ánimas–Bogotá: PR66+0480–PR67+0000",
+      "corredor": "Las Ánimas–Bogotá, PR66+0480–PR67+0000",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -289,10 +267,10 @@
       "tipo": "cierre_total",
       "severidad": "critical",
       "estado": "active",
-      "resumen": "cierre total temporal; el registro publica como fin el 7 de septiembre de 2026.",
+      "resumen": "cierre total temporal, con fin publicado el 7 de septiembre de 2026.",
       "impacto_operativo": "interrupción del tramo y necesidad de alternativa autorizada.",
       "confianza": 0.9,
-      "actualizado_en": "2026-08-06T07:00:00",
+      "actualizado_en": "2026-08-06T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -301,19 +279,19 @@
       },
       "fuentes": [
         {
-          "id": "src-e1c8396e248a5e8e07d89a95",
+          "id": "src-a40cfded8bd0bf8df39de476",
           "nombre": "Fuente directa: https://www.policia.gov.co/index.php/estado-de-las-vias",
           "url": "https://www.policia.gov.co/index.php/estado-de-las-vias",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-08-06T07:00:00",
-          "evidencia": "cierre total temporal; el registro publica como fin el 7 de septiembre de 2026."
+          "consultada_en": "2026-08-06T12:00:00",
+          "evidencia": "cierre total temporal, con fin publicado el 7 de septiembre de 2026."
         }
       ]
     },
     {
       "id": "evt-8121a95b628d945aa623",
-      "corredor": "Samanga–La Esperanza–El Canelo: PR3+0300–PR3+0400",
+      "corredor": "Samanga–La Esperanza–El Canelo, PR3+0300–PR3+0400",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -322,10 +300,10 @@
       "tipo": "cierre_total",
       "severidad": "critical",
       "estado": "active",
-      "resumen": "cierre total en el registro oficial.",
-      "impacto_operativo": "tramo no transitable según el registro; las alternativas publicadas deben validarse antes del despacho.",
+      "resumen": "cierre total por pérdida total de banca.",
+      "impacto_operativo": "tramo no transitable según el registro; se deben validar alternativas.",
       "confianza": 0.9,
-      "actualizado_en": "2026-08-06T07:00:00",
+      "actualizado_en": "2026-08-06T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -334,19 +312,19 @@
       },
       "fuentes": [
         {
-          "id": "src-b246efd4858da5579784f6ff",
+          "id": "src-dae1b4a45180ca4ba276427b",
           "nombre": "Fuente directa: https://www.policia.gov.co/index.php/estado-de-las-vias",
           "url": "https://www.policia.gov.co/index.php/estado-de-las-vias",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-08-06T07:00:00",
-          "evidencia": "cierre total en el registro oficial."
+          "consultada_en": "2026-08-06T12:00:00",
+          "evidencia": "cierre total por pérdida total de banca."
         }
       ]
     },
     {
       "id": "evt-7c3f2e754da00d31a237",
-      "corredor": "Paso Nacional por Tolú: PR45+0846–PR46+0928",
+      "corredor": "Paso Nacional por Tolú, PR45+0846–PR46+0928",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -355,10 +333,10 @@
       "tipo": "cierre_parcial",
       "severidad": "high",
       "estado": "active",
-      "resumen": "cierre parcial por obras; el registro publica como fin el 1 de octubre de 2027.",
+      "resumen": "cierre parcial por obras, según la tabla oficial vigente.",
       "impacto_operativo": "capacidad reducida en el acceso a Tolú; no hay demora cuantificada.",
       "confianza": 0.9,
-      "actualizado_en": "2026-08-06T07:00:00",
+      "actualizado_en": "2026-08-06T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -367,52 +345,19 @@
       },
       "fuentes": [
         {
-          "id": "src-7ad7952fe239ae3ca1a17ee9",
+          "id": "src-f4e24b5d884b32a284ccfc62",
           "nombre": "Fuente directa: https://www.policia.gov.co/index.php/estado-de-las-vias",
           "url": "https://www.policia.gov.co/index.php/estado-de-las-vias",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-08-06T07:00:00",
-          "evidencia": "cierre parcial por obras; el registro publica como fin el 1 de octubre de 2027."
-        }
-      ]
-    },
-    {
-      "id": "evt-2aaddfe0a78bc5b0f19f",
-      "corredor": "Armenia–La Línea–Cajamarca: km 47+420",
-      "tramo": "Tramo por precisar",
-      "departamento": null,
-      "municipio": null,
-      "via": null,
-      "km": null,
-      "tipo": "paso_controlado",
-      "severidad": "medium",
-      "estado": "active",
-      "resumen": "último comunicado oficial disponible: paso controlado a un carril. No existe en esta corrida una medición AM que permita declarar apertura completa.",
-      "impacto_operativo": "capacidad reducida y necesidad de programar el viaje; no se presenta una espera concreta como dato AM.",
-      "confianza": 0.9,
-      "actualizado_en": "2026-08-06T07:00:00",
-      "georreferencia": {
-        "estado": "sin_georreferencia",
-        "lat": null,
-        "lon": null,
-        "etiqueta": "Sin coordenadas; marcador oculto"
-      },
-      "fuentes": [
-        {
-          "id": "src-be469f4066a13ad04caa720b",
-          "nombre": "Fuente directa: https://www.invias.gov.co/publicaciones/9663/invias-pone-en-marcha-obras-para-estabilizar-la-via-armenia-la-linea-a-la-altura-de-cajamarca/; señal X",
-          "url": "https://www.invias.gov.co/publicaciones/9663/invias-pone-en-marcha-obras-para-estabilizar-la-via-armenia-la-linea-a-la-altura-de-cajamarca/",
-          "fortaleza": "official",
-          "publicada_en": null,
-          "consultada_en": "2026-08-06T07:00:00",
-          "evidencia": "último comunicado oficial disponible: paso controlado a un carril. No existe en esta corrida una medición AM que permita declarar apertura completa."
+          "consultada_en": "2026-08-06T12:00:00",
+          "evidencia": "cierre parcial por obras, según la tabla oficial vigente."
         }
       ]
     },
     {
       "id": "evt-dd26c5836207883e0eba",
-      "corredor": "Bogotá–Villavicencio: túnel Buenavista I, túnel Quebradablanca, K36+500 y K69+350",
+      "corredor": "Bogotá–Villavicencio, túnel Buenavista I, túnel Quebradablanca, K36+500 y K69+350",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -421,10 +366,10 @@
       "tipo": "paso_controlado",
       "severidad": "medium",
       "estado": "active",
-      "resumen": "reducción de carril en Buenavista I durante 24 horas; paso a un carril en Quebradablanca y K69+350; cierre de carril en K36+500.",
-      "impacto_operativo": "capacidad reducida en varios puntos de un mismo corredor; no se publica tiempo de cola.",
+      "resumen": "reducción en Buenavista I; paso a un carril en Quebradablanca y K69+350; cierre de carril en K36+500.",
+      "impacto_operativo": "varias reducciones en el mismo corredor, con riesgo de demoras acumuladas.",
       "confianza": 0.5,
-      "actualizado_en": "2026-08-06T07:00:00",
+      "actualizado_en": "2026-08-06T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -433,19 +378,19 @@
       },
       "fuentes": [
         {
-          "id": "src-b6c235fc3c69cb950e621838",
-          "nombre": "Fuente directa: https://x.com/CoviandinaSAS/status/2085311056495124773",
-          "url": "https://x.com/CoviandinaSAS/status/2085311056495124773",
+          "id": "src-06302399f7f5cb94f4f4dd5d",
+          "nombre": "Fuente directa: https://x.com/CoviandinaSAS/status/2085367121182134617",
+          "url": "https://x.com/CoviandinaSAS/status/2085367121182134617",
           "fortaleza": "social",
           "publicada_en": null,
-          "consultada_en": "2026-08-06T07:00:00",
-          "evidencia": "reducción de carril en Buenavista I durante 24 horas; paso a un carril en Quebradablanca y K69+350; cierre de carril en K36+500."
+          "consultada_en": "2026-08-06T12:00:00",
+          "evidencia": "reducción en Buenavista I; paso a un carril en Quebradablanca y K69+350; cierre de carril en K36+500."
         }
       ]
     },
     {
-      "id": "evt-09b2ff79736e8a4a0116",
-      "corredor": "Ibagué–Espinal: PR25+430 y PR28+450",
+      "id": "evt-844bb1e48a3787e4e7d9",
+      "corredor": "Ibagué (Puente Blanco)–Espinal, PR25+430 y PR28+450",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -454,10 +399,10 @@
       "tipo": "obras",
       "severidad": "medium",
       "estado": "active",
-      "resumen": "obras en el corredor y cierre indefinido en el registro oficial.",
-      "impacto_operativo": "la alternativa Pitiguao–Tubuga está limitada a vehículos con configuración máxima C2; no usarla para carga pesada sin validar.",
+      "resumen": "obras en el corredor y cierre indefinido en el registro oficial; la vía alterna Pitiguao–Tubuga está limitada a vehículos con configuración máxima C2.",
+      "impacto_operativo": "la alternativa publicada no sirve para carga pesada sin validación de configuración.",
       "confianza": 0.9,
-      "actualizado_en": "2026-08-06T07:00:00",
+      "actualizado_en": "2026-08-06T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -466,19 +411,19 @@
       },
       "fuentes": [
         {
-          "id": "src-c6fdb36cad83e59cd7aeace6",
+          "id": "src-4249709a2d7b5a1050dd4806",
           "nombre": "Fuente directa: https://www.policia.gov.co/index.php/estado-de-las-vias",
           "url": "https://www.policia.gov.co/index.php/estado-de-las-vias",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-08-06T07:00:00",
-          "evidencia": "obras en el corredor y cierre indefinido en el registro oficial."
+          "consultada_en": "2026-08-06T12:00:00",
+          "evidencia": "obras en el corredor y cierre indefinido en el registro oficial; la vía alterna Pitiguao–Tubuga está limitada a vehículos con configuración máxima C2."
         }
       ]
     },
     {
       "id": "evt-13c0c408c009ad5419e1",
-      "corredor": "Puerto López–Puerto Gaitán: PR03+400, sector Río Metica",
+      "corredor": "Puerto López–Puerto Gaitán, PR03+400, sector Río Metica",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -487,10 +432,10 @@
       "tipo": "paso_controlado",
       "severidad": "medium",
       "estado": "active",
-      "resumen": "paso a un carril por labores de mantenimiento.",
-      "impacto_operativo": "capacidad reducida y posible espera sin duración publicada.",
+      "resumen": "paso a un carril por mantenimiento; condición persistente frente al corte AM.",
+      "impacto_operativo": "menor capacidad de paso y posible espera no cuantificada.",
       "confianza": 0.9,
-      "actualizado_en": "2026-08-06T07:00:00",
+      "actualizado_en": "2026-08-06T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -499,19 +444,19 @@
       },
       "fuentes": [
         {
-          "id": "src-92de2e68650f61bc69674dcf",
-          "nombre": "Fuente directa: https://x.com/cviallanos/status/2085290296024150207",
-          "url": "https://x.com/cviallanos/status/2085290296024150207",
+          "id": "src-5b7b78ab180d021cd3eabeb3",
+          "nombre": "Fuente directa: https://x.com/cviallanos/status/2085365876149067943",
+          "url": "https://x.com/cviallanos/status/2085365876149067943",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-08-06T07:00:00",
-          "evidencia": "paso a un carril por labores de mantenimiento."
+          "consultada_en": "2026-08-06T12:00:00",
+          "evidencia": "paso a un carril por mantenimiento; condición persistente frente al corte AM."
         }
       ]
     },
     {
-      "id": "evt-9544f4bfd8294061c419",
-      "corredor": "Puerto López–Puerto Gaitán: PR63+000, sector Finca La Fortuna",
+      "id": "evt-a7f90ecd8a6bffa43ad9",
+      "corredor": "Puerto López–Puerto Gaitán, PR64+300, sector Parador El Kiosco",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -520,10 +465,10 @@
       "tipo": "paso_controlado",
       "severidad": "medium",
       "estado": "active",
-      "resumen": "el PM del 5 de agosto lo reportó habilitado y operando con normalidad; el parte AM del 6 de agosto no menciona el punto.",
-      "impacto_operativo": "no es válido declarar normalidad AM ni cierre; se conserva la última condición confirmada y se marca el cambio como pendiente.",
+      "resumen": "paso a un carril reportado a las 10:25 por labores de mantenimiento.",
+      "impacto_operativo": "capacidad reducida y potencial espera puntual; no se publica duración.",
       "confianza": 0.9,
-      "actualizado_en": "2026-08-06T07:00:00",
+      "actualizado_en": "2026-08-06T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -532,19 +477,19 @@
       },
       "fuentes": [
         {
-          "id": "src-e83684b653ac16f936687970",
-          "nombre": "Fuente directa: https://x.com/cviallanos/status/2085108586275905712; último parte AM sin el punto",
-          "url": "https://x.com/cviallanos/status/2085108586275905712",
+          "id": "src-729a0366555f9e3af10c28a3",
+          "nombre": "Fuente directa: https://x.com/cviallanos/status/2085386813703618650",
+          "url": "https://x.com/cviallanos/status/2085386813703618650",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-08-06T07:00:00",
-          "evidencia": "el PM del 5 de agosto lo reportó habilitado y operando con normalidad; el parte AM del 6 de agosto no menciona el punto."
+          "consultada_en": "2026-08-06T12:00:00",
+          "evidencia": "paso a un carril reportado a las 10:25 por labores de mantenimiento."
         }
       ]
     },
     {
-      "id": "evt-cc5f5ceba1f025e58ae2",
-      "corredor": "Puerto López–Puerto Gaitán: PR99+200, peaje Yucao",
+      "id": "evt-919200d277e792040338",
+      "corredor": "San Gil–Bucaramanga, km 53, sector Pescadero",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -553,10 +498,10 @@
       "tipo": "paso_controlado",
       "severidad": "medium",
       "estado": "active",
-      "resumen": "paso a un carril por labores de mantenimiento, reportado a las 4:01 a. m.; es un nodo nuevo frente al PM anterior.",
-      "impacto_operativo": "menor capacidad de paso y potencial espera puntual; no hay demora cuantificada.",
+      "resumen": "paso a un carril y restricción para carga pesada; condición persistente.",
+      "impacto_operativo": "limitación de capacidad y posible necesidad de ruta alterna para vehículos restringidos.",
       "confianza": 0.9,
-      "actualizado_en": "2026-08-06T07:00:00",
+      "actualizado_en": "2026-08-06T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -565,66 +510,33 @@
       },
       "fuentes": [
         {
-          "id": "src-b43e39c2c074e894fee6af61",
-          "nombre": "Fuente directa: https://x.com/cviallanos/status/2085290297286590579",
-          "url": "https://x.com/cviallanos/status/2085290297286590579",
+          "id": "src-5944042407b27264549f9caa",
+          "nombre": "Fuente directa: https://www.invias.gov.co/publicaciones/9672/invias-avanza-en-las-obras-de-contencion-de-la-emergencia-en-pescadero-via-san-gil-bucaramanga/; https://x.com/InviasOficial/status/2085030596535828946",
+          "url": "https://www.invias.gov.co/publicaciones/9672/invias-avanza-en-las-obras-de-contencion-de-la-emergencia-en-pescadero-via-san-gil-bucaramanga/",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-08-06T07:00:00",
-          "evidencia": "paso a un carril por labores de mantenimiento, reportado a las 4:01 a. m.; es un nodo nuevo frente al PM anterior."
-        }
-      ]
-    },
-    {
-      "id": "evt-1c5930ec7c80e8dfcf28",
-      "corredor": "Villavicencio–Granada: PR54+650, peaje Ocoa",
-      "tramo": "Tramo por precisar",
-      "departamento": null,
-      "municipio": null,
-      "via": null,
-      "km": null,
-      "tipo": "paso_controlado",
-      "severidad": "medium",
-      "estado": "active",
-      "resumen": "paso a un carril por labores de mantenimiento en el parte de las 4:01 a. m.",
-      "impacto_operativo": "menor capacidad de paso y posible espera puntual; no hay tiempo de cola publicado.",
-      "confianza": 0.9,
-      "actualizado_en": "2026-08-06T07:00:00",
-      "georreferencia": {
-        "estado": "sin_georreferencia",
-        "lat": null,
-        "lon": null,
-        "etiqueta": "Sin coordenadas; marcador oculto"
-      },
-      "fuentes": [
-        {
-          "id": "src-5c47682ba63b948f30fb0188",
-          "nombre": "Fuente directa: https://x.com/cviallanos/status/2085290294786904098",
-          "url": "https://x.com/cviallanos/status/2085290294786904098",
-          "fortaleza": "official",
-          "publicada_en": null,
-          "consultada_en": "2026-08-06T07:00:00",
-          "evidencia": "paso a un carril por labores de mantenimiento en el parte de las 4:01 a. m."
+          "consultada_en": "2026-08-06T12:00:00",
+          "evidencia": "paso a un carril y restricción para carga pesada; condición persistente."
         }
       ]
     }
   ],
   "eventos_vigilancia": [
     {
-      "id": "evt-9091d149a2a417cc7206",
-      "corredor": "Bogotá–Villavicencio: K18+300–K19+000, K17+500–K18+300 y K43+250",
+      "id": "evt-5fdfc174112f2fe5cc17",
+      "corredor": "Armenia–La Línea–Cajamarca, Calle Larga, km 47+420",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
       "via": null,
       "km": null,
-      "tipo": "otro",
+      "tipo": "paso_controlado",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "paso bidireccional entre K18+300 y K19+000; reducción de carril en K17+500–K18+300 y en K43+250.",
-      "impacto_operativo": "menor capacidad y posible variación de tiempos; no hay espera cuantificada ni cierre total reportado.",
+      "resumen": "habilitado con paso controlado a un carril; se reporta congestión en la señal externa del corte, sin confirmación de cierre total.",
+      "impacto_operativo": "menor capacidad y riesgo de demoras prolongadas; no se asigna tiempo de espera del corte sin medición oficial.",
       "confianza": 0.5,
-      "actualizado_en": "2026-08-06T07:00:00",
+      "actualizado_en": "2026-08-06T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -633,19 +545,19 @@
       },
       "fuentes": [
         {
-          "id": "src-b2467082106d05fed1ce3e74",
-          "nombre": "Fuente directa: https://x.com/CoviandinaSAS/status/2085311056495124773",
-          "url": "https://x.com/CoviandinaSAS/status/2085311056495124773",
+          "id": "src-0c949741f05b7abf9060aa91",
+          "nombre": "Fuente directa: https://x.com/Elolfato/status/2085403318361207194; https://www.invias.gov.co/publicaciones/9663/invias-pone-en-marcha-obras-para-estabilizar-la-via-armenia-la-linea-a-la-altura-de-cajamarca/; https://elcronista.co/actualidad/invias-desmiente-cierre-total-de-la-via-en-cajamarca",
+          "url": "https://x.com/Elolfato/status/2085403318361207194",
           "fortaleza": "social",
           "publicada_en": null,
-          "consultada_en": "2026-08-06T07:00:00",
-          "evidencia": "paso bidireccional entre K18+300 y K19+000; reducción de carril en K17+500–K18+300 y en K43+250."
+          "consultada_en": "2026-08-06T12:00:00",
+          "evidencia": "habilitado con paso controlado a un carril; se reporta congestión en la señal externa del corte, sin confirmación de cierre total."
         }
       ]
     },
     {
-      "id": "evt-c2995004544b13179a8a",
-      "corredor": "Bogotá–Villavicencio: túnel Renacer–K44+700–peaje de Naranjal",
+      "id": "evt-9091d149a2a417cc7206",
+      "corredor": "Bogotá–Villavicencio, K18+300–K19+000, K17+500–K18+300 y K43+250",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -654,10 +566,10 @@
       "tipo": "otro",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "el último reporte nocturno disponible registró pasos alternos desde K44+700 hasta el peaje de Naranjal por mantenimiento en el túnel Renacer. No hay parte AM posterior que declare el tramo normalizado.",
-      "impacto_operativo": "capacidad variable y posible demora puntual; no se debe convertir el reporte en cierre total.",
+      "resumen": "paso bidireccional en K18+300–K19+000; reducción de carril en K17+500–K18+300 y K43+250.",
+      "impacto_operativo": "menor capacidad y posible variación de tiempos, sin cola cuantificada.",
       "confianza": 0.5,
-      "actualizado_en": "2026-08-06T07:00:00",
+      "actualizado_en": "2026-08-06T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -666,19 +578,19 @@
       },
       "fuentes": [
         {
-          "id": "src-397764b30fcc8579778493f8",
-          "nombre": "Fuente directa: https://x.com/CoviandinaSAS/status/2085218042615628088",
-          "url": "https://x.com/CoviandinaSAS/status/2085218042615628088",
+          "id": "src-95945ffd3984fd0bdad045d2",
+          "nombre": "Fuente directa: https://x.com/CoviandinaSAS/status/2085367121182134617",
+          "url": "https://x.com/CoviandinaSAS/status/2085367121182134617",
           "fortaleza": "social",
           "publicada_en": null,
-          "consultada_en": "2026-08-06T07:00:00",
-          "evidencia": "el último reporte nocturno disponible registró pasos alternos desde K44+700 hasta el peaje de Naranjal por mantenimiento en el túnel Renacer. No hay parte AM posterior que declare el tramo normalizado."
+          "consultada_en": "2026-08-06T12:00:00",
+          "evidencia": "paso bidireccional en K18+300–K19+000; reducción de carril en K17+500–K18+300 y K43+250."
         }
       ]
     },
     {
       "id": "evt-a4f4ae9e1fece43069e1",
-      "corredor": "Buga–Buenaventura: UF6, UF7, UF16 y UF18",
+      "corredor": "Buga–Buenaventura, UF6, UF7, UF16 y UF18",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -687,10 +599,10 @@
       "tipo": "otro",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "ANI reporta 47,98 km rehabilitados en funcionamiento desde el 3 de agosto de 2026; el proyecto registra avance de 28,56%.",
-      "impacto_operativo": "mejora localizada hacia Buenaventura; no permite declarar normalidad de los 128 km del corredor.",
+      "resumen": "47,98 km rehabilitados en funcionamiento desde el 3 de agosto; el proyecto reporta avance de 28,56%.",
+      "impacto_operativo": "mejora localizada hacia Buenaventura; no implica normalidad integral de los 128 km.",
       "confianza": 0.65,
-      "actualizado_en": "2026-08-06T07:00:00",
+      "actualizado_en": "2026-08-06T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -699,19 +611,85 @@
       },
       "fuentes": [
         {
-          "id": "src-9050b26923248eb0290a0404",
+          "id": "src-56020f2b92c550963855fbc5",
           "nombre": "Fuente directa: https://www.ani.gov.co/w/entraron-en-funcionamiento-47-98-km-de-v%C3%ADa-rehabilitada-en-el-proyecto-5g-buga-buenaventura",
           "url": "https://www.ani.gov.co/w/entraron-en-funcionamiento-47-98-km-de-v%C3%ADa-rehabilitada-en-el-proyecto-5g-buga-buenaventura",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-08-06T07:00:00",
-          "evidencia": "ANI reporta 47,98 km rehabilitados en funcionamiento desde el 3 de agosto de 2026; el proyecto registra avance de 28,56%."
+          "consultada_en": "2026-08-06T12:00:00",
+          "evidencia": "47,98 km rehabilitados en funcionamiento desde el 3 de agosto; el proyecto reporta avance de 28,56%."
         }
       ]
     },
     {
-      "id": "evt-17d0ce2d580e16de0e24",
-      "corredor": "Jamundí–Cali: señal de congestión sin evidencia suficiente",
+      "id": "evt-c9af0d06da68d5a33632",
+      "corredor": "Las Palmas, km 6+610, sector Vallas Inicio Gobernación",
+      "tramo": "Tramo por precisar",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
+      "tipo": "otro",
+      "severidad": "low",
+      "estado": "uncertain",
+      "resumen": "movilidad reducida en ambos sentidos a las 12:00 por trabajos en la vía.",
+      "impacto_operativo": "menor capacidad y posible demora de acceso hacia el Oriente antioqueño; no hay espera cuantificada.",
+      "confianza": 0.65,
+      "actualizado_en": "2026-08-06T12:00:00",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
+      "fuentes": [
+        {
+          "id": "src-7bc2d8b2c33adf28b26b86c8",
+          "nombre": "Fuente directa: https://x.com/ConcesionTAO/status/2085410758184100070; https://tuneloriente.com/",
+          "url": "https://x.com/ConcesionTAO/status/2085410758184100070",
+          "fortaleza": "official",
+          "publicada_en": null,
+          "consultada_en": "2026-08-06T12:00:00",
+          "evidencia": "movilidad reducida en ambos sentidos a las 12:00 por trabajos en la vía."
+        }
+      ]
+    },
+    {
+      "id": "evt-cc5f5ceba1f025e58ae2",
+      "corredor": "Puerto López–Puerto Gaitán, PR99+200, peaje Yucao",
+      "tramo": "Tramo por precisar",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
+      "tipo": "paso_controlado",
+      "severidad": "unknown",
+      "estado": "resolved",
+      "resumen": "el corte AM reportó paso a un carril; una actualización posterior, a las 5:09, indicó vía habilitada y operando con normalidad.",
+      "impacto_operativo": "la capacidad pudo haberse normalizado, pero no se debe asumir estabilidad de la apertura sin nuevo parte.",
+      "confianza": 0.95,
+      "actualizado_en": "2026-08-06T12:00:00",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
+      "fuentes": [
+        {
+          "id": "src-526b7ea9693888891009a460",
+          "nombre": "Fuente directa: https://x.com/cviallanos/status/2085290297286590579; https://x.com/cviallanos/status/2085307135705936248",
+          "url": "https://x.com/cviallanos/status/2085290297286590579",
+          "fortaleza": "official",
+          "publicada_en": null,
+          "consultada_en": "2026-08-06T12:00:00",
+          "evidencia": "el corte AM reportó paso a un carril; una actualización posterior, a las 5:09, indicó vía habilitada y operando con normalidad."
+        }
+      ]
+    },
+    {
+      "id": "evt-fe048e89b94a17d79819",
+      "corredor": "Túnel de Oriente, Antioquia",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -720,43 +698,10 @@
       "tipo": "siniestro_vial",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "un mensaje en X menciona accidentes y congestión, pero no aporta parte de concesión, autoridad o ubicación verificable suficiente para sostener el estado del corredor.",
-      "impacto_operativo": "no se cuantifica ni se recomienda desvío con esta evidencia.",
-      "confianza": 0.5,
-      "actualizado_en": "2026-08-06T07:00:00",
-      "georreferencia": {
-        "estado": "sin_georreferencia",
-        "lat": null,
-        "lon": null,
-        "etiqueta": "Sin coordenadas; marcador oculto"
-      },
-      "fuentes": [
-        {
-          "id": "src-346abf76ad8eae3ee9f6400a",
-          "nombre": "Fuente directa de la señal X: https://x.com/i/web/status/2085331393865781548",
-          "url": "https://x.com/i/web/status/2085331393865781548",
-          "fortaleza": "social",
-          "publicada_en": null,
-          "consultada_en": "2026-08-06T07:00:00",
-          "evidencia": "un mensaje en X menciona accidentes y congestión, pero no aporta parte de concesión, autoridad o ubicación verificable suficiente para sostener el estado del corredor."
-        }
-      ]
-    },
-    {
-      "id": "evt-919200d277e792040338",
-      "corredor": "San Gil–Bucaramanga: km 53, sector Pescadero",
-      "tramo": "Tramo por precisar",
-      "departamento": null,
-      "municipio": null,
-      "via": null,
-      "km": null,
-      "tipo": "restriccion",
-      "severidad": "low",
-      "estado": "uncertain",
-      "resumen": "movilidad habilitada a un carril; continúa la restricción para vehículos articulados de mayor capacidad.",
-      "impacto_operativo": "los vehículos restringidos deben usar las rutas alternas indicadas por Invías según su configuración; la capacidad del corredor permanece limitada.",
+      "resumen": "habilitado en ambos sentidos a las 11:20, después de un cierre temporal por accidente con volcamiento; el accidente dejó ocho personas heridas según el reporte periodístico.",
+      "impacto_operativo": "interrupción temporal ya superada; puede persistir variación de tiempos por atención de la emergencia y normalización del flujo.",
       "confianza": 0.65,
-      "actualizado_en": "2026-08-06T07:00:00",
+      "actualizado_en": "2026-08-06T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -765,19 +710,19 @@
       },
       "fuentes": [
         {
-          "id": "src-77f28ba28968ea4981736136",
-          "nombre": "Fuente directa: https://www.invias.gov.co/publicaciones/9672/invias-avanza-en-las-obras-de-contencion-de-la-emergencia-en-pescadero-via-san-gil-bucaramanga/; señal X",
-          "url": "https://www.invias.gov.co/publicaciones/9672/invias-avanza-en-las-obras-de-contencion-de-la-emergencia-en-pescadero-via-san-gil-bucaramanga/",
+          "id": "src-da8c71b967b7c9b472bc142b",
+          "nombre": "Fuente directa: https://x.com/ConcesionTAO/status/2085397921634140618; https://x.com/ConcesionTAO/status/2085400801728397414; https://www.minuto60.com/colombia/choque-tunel-oriente-dejo-ocho-heridos-un-lesionado-grave/13094",
+          "url": "https://x.com/ConcesionTAO/status/2085397921634140618",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-08-06T07:00:00",
-          "evidencia": "movilidad habilitada a un carril; continúa la restricción para vehículos articulados de mayor capacidad."
+          "consultada_en": "2026-08-06T12:00:00",
+          "evidencia": "habilitado en ambos sentidos a las 11:20, después de un cierre temporal por accidente con volcamiento; el accidente dejó ocho personas heridas según el reporte periodístico."
         }
       ]
     },
     {
-      "id": "evt-581bdd0f441bc9b5c011",
-      "corredor": "Villa Rica–Santander de Quilichao–Cali: señal de seguridad sin confirmación vial",
+      "id": "evt-939ca47bc16adcddf274",
+      "corredor": "Villa Rica–Santander de Quilichao–Cali, Panamericana",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -786,10 +731,10 @@
       "tipo": "bloqueo",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "circulan republicaciones sobre una buseta con explosivos interceptada en el peaje de Villa Rica; no hay en esta corrida un parte oficial que confirme cierre, bloqueo o desvío.",
-      "impacto_operativo": "potencialmente relevante, pero no se asigna demora ni restricción sin fuente directa.",
+      "resumen": "circula una señal sobre una buseta con explosivos en el peaje de Villa Rica, pero no hay parte oficial que confirme cierre, bloqueo, desvío o afectación de carga.",
+      "impacto_operativo": "potencialmente relevante, pero no se asigna demora ni restricción.",
       "confianza": 0.5,
-      "actualizado_en": "2026-08-06T07:00:00",
+      "actualizado_en": "2026-08-06T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -798,13 +743,46 @@
       },
       "fuentes": [
         {
-          "id": "src-8a3f6daa1b54a87650a45e89",
-          "nombre": "Fuente directa de la señal X: https://x.com/i/web/status/2085332886417277208",
+          "id": "src-0e51497a9f8e8d6f80d7763d",
+          "nombre": "Fuente directa de la señal: https://x.com/i/web/status/2085332886417277208",
           "url": "https://x.com/i/web/status/2085332886417277208",
           "fortaleza": "social",
           "publicada_en": null,
-          "consultada_en": "2026-08-06T07:00:00",
-          "evidencia": "circulan republicaciones sobre una buseta con explosivos interceptada en el peaje de Villa Rica; no hay en esta corrida un parte oficial que confirme cierre, bloqueo o desvío."
+          "consultada_en": "2026-08-06T12:00:00",
+          "evidencia": "circula una señal sobre una buseta con explosivos en el peaje de Villa Rica, pero no hay parte oficial que confirme cierre, bloqueo, desvío o afectación de carga."
+        }
+      ]
+    },
+    {
+      "id": "evt-1c5930ec7c80e8dfcf28",
+      "corredor": "Villavicencio–Granada, PR54+650, peaje Ocoa",
+      "tramo": "Tramo por precisar",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
+      "tipo": "otro",
+      "severidad": "low",
+      "estado": "uncertain",
+      "resumen": "cierre de los carriles 5 y 6 por mantenimiento; condición persistente.",
+      "impacto_operativo": "capacidad reducida y posible espera puntual sin tiempo publicado.",
+      "confianza": 0.65,
+      "actualizado_en": "2026-08-06T12:00:00",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
+      "fuentes": [
+        {
+          "id": "src-5ab762c6ae9c54cfd149a725",
+          "nombre": "Fuente directa: https://x.com/cviallanos/status/2085365876149067943",
+          "url": "https://x.com/cviallanos/status/2085365876149067943",
+          "fortaleza": "official",
+          "publicada_en": null,
+          "consultada_en": "2026-08-06T12:00:00",
+          "evidencia": "cierre de los carriles 5 y 6 por mantenimiento; condición persistente."
         }
       ]
     }
@@ -2137,6 +2115,219 @@
         ]
       },
       {
+        "corredor": "Samanga–La Esperanza–El Canelo, PR3+0300–PR3+0400",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "critical",
+        "ultima_observacion": "2026-08-06T12:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-07-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-03",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-04",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "cierre total por pérdida total de banca."
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "Las Ánimas–Bogotá, PR66+0480–PR67+0000",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "critical",
+        "ultima_observacion": "2026-08-06T12:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-07-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-03",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-04",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "cierre total temporal, con fin publicado el 7 de septiembre de 2026."
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "La Lejía–Saravena, PR22+0000–PR26+0000",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "critical",
+        "ultima_observacion": "2026-08-06T12:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-07-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-03",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-04",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "cierre total en la tabla oficial."
+            ]
+          }
+        ]
+      },
+      {
         "corredor": "Peaje Ocoa: dos casetas nuevas",
         "dias_confirmados": 1,
         "dias_vigilancia": 0,
@@ -2204,6 +2395,77 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          }
+        ]
+      },
+      {
+        "corredor": "Paso Nacional por Tolú, PR45+0846–PR46+0928",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "high",
+        "ultima_observacion": "2026-08-06T12:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-07-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-03",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-04",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "high",
+            "resumenes": [
+              "cierre parcial por obras, según la tabla oficial vigente."
+            ]
           }
         ]
       },
@@ -2654,6 +2916,77 @@
         ]
       },
       {
+        "corredor": "San Gil–Bucaramanga, km 53, sector Pescadero",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "medium",
+        "ultima_observacion": "2026-08-06T12:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-07-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-03",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-04",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "medium",
+            "resumenes": [
+              "paso a un carril y restricción para carga pesada; condición persistente."
+            ]
+          }
+        ]
+      },
+      {
         "corredor": "Puerto López–Puerto Gaitán: PR99+200, peaje Yucao",
         "dias_confirmados": 1,
         "dias_vigilancia": 0,
@@ -2720,6 +3053,219 @@
             "severidad_maxima": "medium",
             "resumenes": [
               "paso a un carril por labores de mantenimiento, reportado a las 4:01 a. m.; es un nodo nuevo frente al PM anterior."
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "Puerto López–Puerto Gaitán, PR64+300, sector Parador El Kiosco",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "medium",
+        "ultima_observacion": "2026-08-06T12:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-07-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-03",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-04",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "medium",
+            "resumenes": [
+              "paso a un carril reportado a las 10:25 por labores de mantenimiento."
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "Puerto López–Puerto Gaitán, PR03+400, sector Río Metica",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "medium",
+        "ultima_observacion": "2026-08-06T12:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-07-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-03",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-04",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "medium",
+            "resumenes": [
+              "paso a un carril por mantenimiento; condición persistente frente al corte AM."
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "Ibagué (Puente Blanco)–Espinal, PR25+430 y PR28+450",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "medium",
+        "ultima_observacion": "2026-08-06T12:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-07-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-03",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-04",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "medium",
+            "resumenes": [
+              "obras en el corredor y cierre indefinido en el registro oficial; la vía alterna Pitiguao–Tubuga está limitada a vehículos con configuración máxima C2."
             ]
           }
         ]
@@ -3376,6 +3922,77 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          }
+        ]
+      },
+      {
+        "corredor": "Bogotá–Villavicencio, túnel Buenavista I, túnel Quebradablanca, K36+500 y K69+350",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "medium",
+        "ultima_observacion": "2026-08-06T12:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-07-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-03",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-04",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "medium",
+            "resumenes": [
+              "reducción en Buenavista I; paso a un carril en Quebradablanca y K69+350; cierre de carril en K36+500."
+            ]
           }
         ]
       },
@@ -5048,6 +5665,77 @@
         ]
       },
       {
+        "corredor": "Villavicencio–Granada, PR54+650, peaje Ocoa",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-08-06T12:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-07-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-03",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-04",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "cierre de los carriles 5 y 6 por mantenimiento; condición persistente."
+            ]
+          }
+        ]
+      },
+      {
         "corredor": "Villa Rica–Santander de Quilichao–Cali: señal de seguridad sin confirmación vial",
         "dias_confirmados": 0,
         "dias_vigilancia": 1,
@@ -5114,6 +5802,148 @@
             "severidad_maxima": "low",
             "resumenes": [
               "circulan republicaciones sobre una buseta con explosivos interceptada en el peaje de Villa Rica; no hay en esta corrida un parte oficial que confirme cierre, bloqueo o desvío."
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "Villa Rica–Santander de Quilichao–Cali, Panamericana",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-08-06T12:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-07-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-03",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-04",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "circula una señal sobre una buseta con explosivos en el peaje de Villa Rica, pero no hay parte oficial que confirme cierre, bloqueo, desvío o afectación de carga."
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "Túnel de Oriente, Antioquia",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-08-06T12:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-07-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-03",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-04",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "habilitado en ambos sentidos a las 11:20, después de un cierre temporal por accidente con volcamiento; el accidente dejó ocho personas heridas según el reporte periodístico."
             ]
           }
         ]
@@ -5470,6 +6300,77 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          }
+        ]
+      },
+      {
+        "corredor": "Las Palmas, km 6+610, sector Vallas Inicio Gobernación",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-08-06T12:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-07-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-03",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-04",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "movilidad reducida en ambos sentidos a las 12:00 por trabajos en la vía."
+            ]
           }
         ]
       },
@@ -6037,6 +6938,77 @@
             "severidad_maxima": "low",
             "resumenes": [
               "ANI reporta 47,98 km rehabilitados en funcionamiento desde el 3 de agosto de 2026; el proyecto registra avance de 28,56%."
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "Buga–Buenaventura, UF6, UF7, UF16 y UF18",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-08-06T12:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-07-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-03",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-04",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "47,98 km rehabilitados en funcionamiento desde el 3 de agosto; el proyecto reporta avance de 28,56%."
             ]
           }
         ]
@@ -6892,6 +7864,219 @@
             "resumenes": []
           }
         ]
+      },
+      {
+        "corredor": "Bogotá–Villavicencio, K18+300–K19+000, K17+500–K18+300 y K43+250",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-08-06T12:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-07-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-03",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-04",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "paso bidireccional en K18+300–K19+000; reducción de carril en K17+500–K18+300 y K43+250."
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "Armenia–La Línea–Cajamarca, Calle Larga, km 47+420",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-08-06T12:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-07-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-03",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-04",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "habilitado con paso controlado a un carril; se reporta congestión en la señal externa del corte, sin confirmación de cierre total."
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "Puerto López–Puerto Gaitán, PR99+200, peaje Yucao",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "unknown",
+        "ultima_observacion": "2026-08-06T12:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-07-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-03",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-04",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "unknown",
+            "resumenes": [
+              "el corte AM reportó paso a un carril; una actualización posterior, a las 5:09, indicó vía habilitada y operando con normalidad."
+            ]
+          }
+        ]
       }
     ]
   },
@@ -6908,132 +8093,136 @@
         "resueltos": 0,
         "por_verificar": 6
       }
+    },
+    {
+      "cut_id": "2026-08-06-md",
+      "hora": "12:00",
+      "ventana": "MD",
+      "tipo": "corte_final",
+      "descripcion": "2 nuevas; 7 persistentes; 1 resueltas; 7 por verificar.",
+      "conteos": {
+        "nuevos": 2,
+        "persistentes": 7,
+        "resueltos": 1,
+        "por_verificar": 7
+      }
     }
   ],
   "fuentes": [
     {
-      "id": "src-6cdc0a25bc86d747c816dee9",
+      "id": "src-5c01e2626ce495e8f91b3750",
       "nombre": "Fuente directa: https://www.policia.gov.co/index.php/estado-de-las-vias",
       "url": "https://www.policia.gov.co/index.php/estado-de-las-vias",
       "fortaleza": "official",
-      "consultada_en": "2026-08-06T07:00:00",
+      "consultada_en": "2026-08-06T12:00:00",
       "eventos": [
         "evt-04263e0094902be75e1d",
-        "evt-09b2ff79736e8a4a0116",
         "evt-68025aad0ab9fc922f8d",
         "evt-7c3f2e754da00d31a237",
-        "evt-8121a95b628d945aa623"
+        "evt-8121a95b628d945aa623",
+        "evt-844bb1e48a3787e4e7d9"
       ]
     },
     {
-      "id": "src-92de2e68650f61bc69674dcf",
-      "nombre": "Fuente directa: https://x.com/cviallanos/status/2085290296024150207",
-      "url": "https://x.com/cviallanos/status/2085290296024150207",
+      "id": "src-5b7b78ab180d021cd3eabeb3",
+      "nombre": "Fuente directa: https://x.com/cviallanos/status/2085365876149067943",
+      "url": "https://x.com/cviallanos/status/2085365876149067943",
       "fortaleza": "official",
-      "consultada_en": "2026-08-06T07:00:00",
+      "consultada_en": "2026-08-06T12:00:00",
       "eventos": [
-        "evt-13c0c408c009ad5419e1"
-      ]
-    },
-    {
-      "id": "src-346abf76ad8eae3ee9f6400a",
-      "nombre": "Fuente directa de la señal X: https://x.com/i/web/status/2085331393865781548",
-      "url": "https://x.com/i/web/status/2085331393865781548",
-      "fortaleza": "social",
-      "consultada_en": "2026-08-06T07:00:00",
-      "eventos": [
-        "evt-17d0ce2d580e16de0e24"
-      ]
-    },
-    {
-      "id": "src-5c47682ba63b948f30fb0188",
-      "nombre": "Fuente directa: https://x.com/cviallanos/status/2085290294786904098",
-      "url": "https://x.com/cviallanos/status/2085290294786904098",
-      "fortaleza": "official",
-      "consultada_en": "2026-08-06T07:00:00",
-      "eventos": [
+        "evt-13c0c408c009ad5419e1",
         "evt-1c5930ec7c80e8dfcf28"
       ]
     },
     {
-      "id": "src-be469f4066a13ad04caa720b",
-      "nombre": "Fuente directa: https://www.invias.gov.co/publicaciones/9663/invias-pone-en-marcha-obras-para-estabilizar-la-via-armenia-la-linea-a-la-altura-de-cajamarca/; señal X",
-      "url": "https://www.invias.gov.co/publicaciones/9663/invias-pone-en-marcha-obras-para-estabilizar-la-via-armenia-la-linea-a-la-altura-de-cajamarca/",
-      "fortaleza": "official",
-      "consultada_en": "2026-08-06T07:00:00",
+      "id": "src-0c949741f05b7abf9060aa91",
+      "nombre": "Fuente directa: https://x.com/Elolfato/status/2085403318361207194; https://www.invias.gov.co/publicaciones/9663/invias-pone-en-marcha-obras-para-estabilizar-la-via-armenia-la-linea-a-la-altura-de-cajamarca/; https://elcronista.co/actualidad/invias-desmiente-cierre-total-de-la-via-en-cajamarca",
+      "url": "https://x.com/Elolfato/status/2085403318361207194",
+      "fortaleza": "social",
+      "consultada_en": "2026-08-06T12:00:00",
       "eventos": [
-        "evt-2aaddfe0a78bc5b0f19f"
+        "evt-5fdfc174112f2fe5cc17"
       ]
     },
     {
-      "id": "src-8a3f6daa1b54a87650a45e89",
-      "nombre": "Fuente directa de la señal X: https://x.com/i/web/status/2085332886417277208",
-      "url": "https://x.com/i/web/status/2085332886417277208",
+      "id": "src-95945ffd3984fd0bdad045d2",
+      "nombre": "Fuente directa: https://x.com/CoviandinaSAS/status/2085367121182134617",
+      "url": "https://x.com/CoviandinaSAS/status/2085367121182134617",
       "fortaleza": "social",
-      "consultada_en": "2026-08-06T07:00:00",
-      "eventos": [
-        "evt-581bdd0f441bc9b5c011"
-      ]
-    },
-    {
-      "id": "src-b2467082106d05fed1ce3e74",
-      "nombre": "Fuente directa: https://x.com/CoviandinaSAS/status/2085311056495124773",
-      "url": "https://x.com/CoviandinaSAS/status/2085311056495124773",
-      "fortaleza": "social",
-      "consultada_en": "2026-08-06T07:00:00",
+      "consultada_en": "2026-08-06T12:00:00",
       "eventos": [
         "evt-9091d149a2a417cc7206",
         "evt-dd26c5836207883e0eba"
       ]
     },
     {
-      "id": "src-77f28ba28968ea4981736136",
-      "nombre": "Fuente directa: https://www.invias.gov.co/publicaciones/9672/invias-avanza-en-las-obras-de-contencion-de-la-emergencia-en-pescadero-via-san-gil-bucaramanga/; señal X",
+      "id": "src-5944042407b27264549f9caa",
+      "nombre": "Fuente directa: https://www.invias.gov.co/publicaciones/9672/invias-avanza-en-las-obras-de-contencion-de-la-emergencia-en-pescadero-via-san-gil-bucaramanga/; https://x.com/InviasOficial/status/2085030596535828946",
       "url": "https://www.invias.gov.co/publicaciones/9672/invias-avanza-en-las-obras-de-contencion-de-la-emergencia-en-pescadero-via-san-gil-bucaramanga/",
       "fortaleza": "official",
-      "consultada_en": "2026-08-06T07:00:00",
+      "consultada_en": "2026-08-06T12:00:00",
       "eventos": [
         "evt-919200d277e792040338"
       ]
     },
     {
-      "id": "src-e83684b653ac16f936687970",
-      "nombre": "Fuente directa: https://x.com/cviallanos/status/2085108586275905712; último parte AM sin el punto",
-      "url": "https://x.com/cviallanos/status/2085108586275905712",
-      "fortaleza": "official",
-      "consultada_en": "2026-08-06T07:00:00",
+      "id": "src-0e51497a9f8e8d6f80d7763d",
+      "nombre": "Fuente directa de la señal: https://x.com/i/web/status/2085332886417277208",
+      "url": "https://x.com/i/web/status/2085332886417277208",
+      "fortaleza": "social",
+      "consultada_en": "2026-08-06T12:00:00",
       "eventos": [
-        "evt-9544f4bfd8294061c419"
+        "evt-939ca47bc16adcddf274"
       ]
     },
     {
-      "id": "src-9050b26923248eb0290a0404",
+      "id": "src-56020f2b92c550963855fbc5",
       "nombre": "Fuente directa: https://www.ani.gov.co/w/entraron-en-funcionamiento-47-98-km-de-v%C3%ADa-rehabilitada-en-el-proyecto-5g-buga-buenaventura",
       "url": "https://www.ani.gov.co/w/entraron-en-funcionamiento-47-98-km-de-v%C3%ADa-rehabilitada-en-el-proyecto-5g-buga-buenaventura",
       "fortaleza": "official",
-      "consultada_en": "2026-08-06T07:00:00",
+      "consultada_en": "2026-08-06T12:00:00",
       "eventos": [
         "evt-a4f4ae9e1fece43069e1"
       ]
     },
     {
-      "id": "src-397764b30fcc8579778493f8",
-      "nombre": "Fuente directa: https://x.com/CoviandinaSAS/status/2085218042615628088",
-      "url": "https://x.com/CoviandinaSAS/status/2085218042615628088",
-      "fortaleza": "social",
-      "consultada_en": "2026-08-06T07:00:00",
+      "id": "src-729a0366555f9e3af10c28a3",
+      "nombre": "Fuente directa: https://x.com/cviallanos/status/2085386813703618650",
+      "url": "https://x.com/cviallanos/status/2085386813703618650",
+      "fortaleza": "official",
+      "consultada_en": "2026-08-06T12:00:00",
       "eventos": [
-        "evt-c2995004544b13179a8a"
+        "evt-a7f90ecd8a6bffa43ad9"
       ]
     },
     {
-      "id": "src-b43e39c2c074e894fee6af61",
-      "nombre": "Fuente directa: https://x.com/cviallanos/status/2085290297286590579",
+      "id": "src-7bc2d8b2c33adf28b26b86c8",
+      "nombre": "Fuente directa: https://x.com/ConcesionTAO/status/2085410758184100070; https://tuneloriente.com/",
+      "url": "https://x.com/ConcesionTAO/status/2085410758184100070",
+      "fortaleza": "official",
+      "consultada_en": "2026-08-06T12:00:00",
+      "eventos": [
+        "evt-c9af0d06da68d5a33632"
+      ]
+    },
+    {
+      "id": "src-526b7ea9693888891009a460",
+      "nombre": "Fuente directa: https://x.com/cviallanos/status/2085290297286590579; https://x.com/cviallanos/status/2085307135705936248",
       "url": "https://x.com/cviallanos/status/2085290297286590579",
       "fortaleza": "official",
-      "consultada_en": "2026-08-06T07:00:00",
+      "consultada_en": "2026-08-06T12:00:00",
       "eventos": [
         "evt-cc5f5ceba1f025e58ae2"
+      ]
+    },
+    {
+      "id": "src-da8c71b967b7c9b472bc142b",
+      "nombre": "Fuente directa: https://x.com/ConcesionTAO/status/2085397921634140618; https://x.com/ConcesionTAO/status/2085400801728397414; https://www.minuto60.com/colombia/choque-tunel-oriente-dejo-ocho-heridos-un-lesionado-grave/13094",
+      "url": "https://x.com/ConcesionTAO/status/2085397921634140618",
+      "fortaleza": "official",
+      "consultada_en": "2026-08-06T12:00:00",
+      "eventos": [
+        "evt-fe048e89b94a17d79819"
       ]
     }
   ]
