@@ -2,77 +2,44 @@
   "schema_version": "1.1",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-08-11-am",
+  "cut_id": "2026-08-11-md",
   "fecha": "2026-08-11",
-  "ventana": "AM",
-  "hora": "07:00",
-  "generado_en": "2026-08-11T07:00:00",
-  "artefacto_fuente": "2026-08-11-editor-eldato-version-vias-colombia-am.md",
+  "ventana": "MD",
+  "hora": "12:00",
+  "generado_en": "2026-08-11T12:00:00",
+  "artefacto_fuente": "2026-08-11-editor-eldato-version-vias-colombia-md.md",
   "alertas_inmediatas": [
     {
-      "id": "alert-evt-6fe0177e2406d0cfecf8",
+      "id": "alert-evt-6276ddf45747b9583d4b",
       "nivel": "critical",
-      "titulo": "cierre total · Buga–Buenaventura",
-      "mensaje": "alerta crítica persistente. ANI reportó en X cierre total y evacuación en PR 71 el 10-ago; DITRA reportó cierres totales en Valle. La web oficial de ANI detalla afectaciones en PR 69+400, 61+300, 60+300, 60+000, 58+000, 53+100, 53+000 y Buenaventura PR 2+900, con inspección, remoción de material y habilitación progresiva, pero el insumo AM no trae reapertura total del corredor.",
-      "event_id": "evt-6fe0177e2406d0cfecf8",
-      "corredor": "Buga–Buenaventura",
+      "titulo": "cierre total · Bogotá - Villavicencio",
+      "mensaje": "corredor operativo con capacidad reducida. Coviandina reporta a las 12:00 reducciones de carril por mantenimiento y paso alterno en K6+200; los partes de 07:12 y 09:00 registran además paso bidireccional, cierre de carril derecho y pasos a un carril en distintos puntos y túneles. No hay cierre total del corredor en los insumos.",
+      "event_id": "evt-6276ddf45747b9583d4b",
+      "corredor": "Bogotá - Villavicencio",
       "fuente_ids": [
-        "src-04d81422adc3db70655e838b",
-        "src-f98db70490dda14178dbc447",
-        "src-eb121a2a13e85cf08f04d2f6"
-      ]
-    },
-    {
-      "id": "alert-evt-11d87799a57fd1be57a6",
-      "nivel": "critical",
-      "titulo": "cierre total · Cali–Loboguerrero",
-      "mensaje": "cierre total persistente en KM 55+000 según Invías; DITRA confirmó cierres totales en Valle. No hay en el insumo web un boletín más reciente que desplace esa lectura X.",
-      "event_id": "evt-11d87799a57fd1be57a6",
-      "corredor": "Cali–Loboguerrero",
-      "fuente_ids": [
-        "src-5472fde687ceff2242f1bf25",
-        "src-89dd70cfe152a72c5d3ba0be",
-        "src-499cdf4b25e14b94bc8a70fe"
+        "src-9122b9e9317598ab6e40459f"
       ]
     },
     {
       "id": "alert-evt-b8d2d87ec06b4f307e9b",
       "nivel": "critical",
       "titulo": "cierre total · Manizales–Fresno",
-      "mensaje": "cierre total persistente en KM 36 / sector Cerro Bravo según Invías, con recomendación de abstenerse de transitar. DITRA y Policía sostienen afectaciones en Caldas.",
+      "mensaje": "cierre total confirmado en KM 36, sector Cerro Bravo, con recomendación de abstenerse de transitar. Las señales sobre Herveo, Alto de Letras o un camión bajo escombros no tienen confirmación oficial equivalente; las piezas DITRA son imágenes sin PR internos legibles.",
       "event_id": "evt-b8d2d87ec06b4f307e9b",
       "corredor": "Manizales–Fresno",
       "fuente_ids": [
-        "src-221ff9c4cdfa192c8812448e",
-        "src-6d5533057fe5012967c10b8a",
-        "src-161fdd2643275e9e8526773b"
+        "src-62a8e966f8ae2b28ecd76af9"
       ]
     },
     {
       "id": "alert-evt-5671f00604c0a5d416d6",
       "nivel": "critical",
       "titulo": "cierre total · Pereira–Chinchiná",
-      "mensaje": "alerta regional persistente. Policía reportó cierres totales y pasos restringidos en corredores de Caldas, Tolima, Quindío y Valle; el texto visible incluye Pereira–Chinchiná km 22-24. DITRA reportó cierre total en Caldas, aunque parte del detalle interno está en imagen no OCR.",
+      "mensaje": "cierre total reportado para el tramo km 22–24. No se observó parte MD oficial de reapertura. La información adicional de DITRA está principalmente en imagen; sin OCR no se convierten sus PR internos en confirmaciones.",
       "event_id": "evt-5671f00604c0a5d416d6",
       "corredor": "Pereira–Chinchiná",
       "fuente_ids": [
-        "src-753bdbf9aaade661c9996782",
-        "src-7c4882ca10fbf0ec75adadb5",
-        "src-ef68120d44bdabbb6842d9f7"
-      ]
-    },
-    {
-      "id": "alert-evt-6276ddf45747b9583d4b",
-      "nivel": "high",
-      "titulo": "paso controlado · Bogotá - Villavicencio",
-      "mensaje": "operación con restricciones. Coviandina reportó a las 06:05 paso bidireccional en K18+300-K19+000; reducción de carril derecho en K17+500-K18+300 y K43+250; cierre de carril derecho en K36+500; paso a un carril en túnel Quebradablanca y K69+350; y flujo moderado. El parte de 05:05 coincide en lo sustantivo.",
-      "event_id": "evt-6276ddf45747b9583d4b",
-      "corredor": "Bogotá - Villavicencio",
-      "fuente_ids": [
-        "src-33614b0f02c0397cc37a5992",
-        "src-0be518f9e82968c9ae331d7d",
-        "src-7012d866770b1199ae9049e7",
-        "src-fddad753236d7c45ef807eef"
+        "src-2eec7cc43a2ba56883d8bccb"
       ]
     }
   ],
@@ -84,187 +51,124 @@
       "PM"
     ],
     "ventanas_recibidas": [
-      "AM"
+      "AM",
+      "MD"
     ],
-    "eventos_confirmados": 6,
-    "eventos_vigilancia": 3,
+    "eventos_confirmados": 5,
+    "eventos_vigilancia": 4,
     "pendientes_georreferencia": 9,
     "fuentes": [
       {
-        "id": "src-92dee761c22d7b6c14065c8c",
-        "nombre": "Fuente ControlT solo detección inicial: https://risk.controlt.io/map",
+        "id": "src-f0ad08157e614328ea44c4fa",
+        "nombre": "Fuentes: https://x.com/BluRadioCo/status/2087213955794022487; https://x.com/TransitoPolicia/status/2086904967923716566",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-11T07:00:00",
+        "ultima_consulta": "2026-08-11T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-61dd6a58ca5fff278ad5f660",
-        "nombre": "Fuente X: https://x.com/ANI_Colombia/status/2086813129153892625",
+        "id": "src-5cd1fd57b25a548dc77e195c",
+        "nombre": "Fuentes: https://x.com/InviasOficial/status/2086899350932734358; https://x.com/TransitoPolicia/status/2086905667248394639; https://x.com/TransitoPolicia/status/2086904967923716566; https://x.com/elespectador/status/2087147282797879350; https://www.ani.gov.co/w/cuatro-corredores-viales-concesionados-presentaron-afectaciones-y-activaron-protocolos-de-seguridad-por-eventos-sismol%C3%B3gicos",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-11T07:00:00",
+        "ultima_consulta": "2026-08-11T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-5472fde687ceff2242f1bf25",
-        "nombre": "Fuente X: https://x.com/InviasOficial/status/2086827996451664200",
+        "id": "src-2eec7cc43a2ba56883d8bccb",
+        "nombre": "Fuentes: https://x.com/PoliciaColombia/status/2086863458000114020; https://x.com/TransitoPolicia/status/2086864998832156741; https://www.ani.gov.co/w/cuatro-corredores-viales-concesionados-presentaron-afectaciones-y-activaron-protocolos-de-seguridad-por-eventos-sismol%C3%B3gicos",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-11T07:00:00",
+        "ultima_consulta": "2026-08-11T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-89dd70cfe152a72c5d3ba0be",
-        "nombre": "Fuente X: https://x.com/TransitoPolicia/status/2086905880457408946",
+        "id": "src-9122b9e9317598ab6e40459f",
+        "nombre": "Fuentes: https://x.com/CoviandinaSAS/status/2087222390463828314; https://x.com/CoviandinaSAS/status/2087183393943326914; https://x.com/CoviandinaSAS/status/2087150193326141757; https://coviandina.com/intervenciones-en-la-via/actividades-con-intervencion-sobre-el-corredor-vial-desde-el-10-hasta-el-0",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-11T07:00:00",
-        "nota": "Aporta evidencia a 2 evento(s) del corte."
-      },
-      {
-        "id": "src-499cdf4b25e14b94bc8a70fe",
-        "nombre": "Fuente web solo antecedente, no usada para mover estado AM: https://www.invias.gov.co/publicaciones/9487/invias-informa-cierre-preventivo-en-la-via-cali-loboguerrero-por-condiciones-de-riesgo/",
-        "estado": "consultada",
-        "ultima_consulta": "2026-08-11T07:00:00",
+        "ultima_consulta": "2026-08-11T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-ed90b837763a233edd8708bc",
-        "nombre": "Fuente X: https://x.com/PoliciaColombia/status/2086863458000114020",
+        "id": "src-f01433497b7e4aea29f172a2",
+        "nombre": "Fuentes: https://x.com/CaminoPacifico/status/2087222933957611860; https://x.com/CaminoPacifico/status/2087197224094630360; https://x.com/MinTransporteCo/status/2087170770959007920; https://x.com/InviasOficial/status/2086827996451664200; https://x.com/TransitoPolicia/status/2087219878658793935; https://www.ani.gov.co/w/cuatro-corredores-viales-concesionados-presentaron-afectaciones-y-activaron-protocolos-de-seguridad-por-eventos-sismol%C3%B3gicos",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-11T07:00:00",
-        "nota": "Aporta evidencia a 3 evento(s) del corte."
-      },
-      {
-        "id": "src-8053fd4dc8e2b26a273c8ce7",
-        "nombre": "Fuente X: https://x.com/TransitoPolicia/status/2086904967923716566",
-        "estado": "consultada",
-        "ultima_consulta": "2026-08-11T07:00:00",
-        "nota": "Aporta evidencia a 2 evento(s) del corte."
-      },
-      {
-        "id": "src-bd71cb2d6a7ae1963ef3652d",
-        "nombre": "Fuente X: https://x.com/InviasOficial/status/2086899350932734358",
-        "estado": "consultada",
-        "ultima_consulta": "2026-08-11T07:00:00",
+        "ultima_consulta": "2026-08-11T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-09ee35f7af773a61f1345a54",
-        "nombre": "Fuente X: https://x.com/TransitoPolicia/status/2086905667248394639",
+        "id": "src-1fd014510893ece8dcd4fbe2",
+        "nombre": "Fuentes: https://x.com/rutadelsoltram3/status/2085047859871646035; https://x.com/Mi_carro_Yyo/status/2087021697849332132",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-11T07:00:00",
+        "ultima_consulta": "2026-08-11T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-03d505d69b5fa9ff32e64ccd",
-        "nombre": "Fuente web oficial: https://www.ani.gov.co/w/cuatro-corredores-viales-concesionados-presentaron-afectaciones-y-activaron-protocolos-de-seguridad-por-eventos-sismol%C3%B3gicos",
+        "id": "src-62a8e966f8ae2b28ecd76af9",
+        "nombre": "Fuentes: https://x.com/InviasOficial/status/2086827760677277998; https://x.com/PoliciaColombia/status/2086863458000114020; https://x.com/TransitoPolicia/status/2086864998832156741",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-11T07:00:00",
-        "nota": "Aporta evidencia a 4 evento(s) del corte."
-      },
-      {
-        "id": "src-7c4882ca10fbf0ec75adadb5",
-        "nombre": "Fuente X: https://x.com/TransitoPolicia/status/2086864998832156741",
-        "estado": "consultada",
-        "ultima_consulta": "2026-08-11T07:00:00",
-        "nota": "Aporta evidencia a 2 evento(s) del corte."
-      },
-      {
-        "id": "src-33614b0f02c0397cc37a5992",
-        "nombre": "Fuente X antecedente nocturno: https://x.com/CoviandinaSAS/status/2087014590710202836",
-        "estado": "consultada",
-        "ultima_consulta": "2026-08-11T07:00:00",
+        "ultima_consulta": "2026-08-11T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-0be518f9e82968c9ae331d7d",
-        "nombre": "Fuente X: https://x.com/CoviandinaSAS/status/2087118367647736241",
+        "id": "src-6c7293401ff4b88a83ceb3de",
+        "nombre": "Fuentes: https://x.com/ViaSumapaz/status/2086929771645075497; https://x.com/ANI_Colombia/status/2086813129153892625; https://x.com/Mi_carro_Yyo/status/2087218756619567404",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-11T07:00:00",
+        "ultima_consulta": "2026-08-11T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-7012d866770b1199ae9049e7",
-        "nombre": "Fuente X: https://x.com/CoviandinaSAS/status/2087132945655931337",
+        "id": "src-a2d64678044bb5446863e513",
+        "nombre": "Fuentes: https://x.com/MinTransporteCo/status/2087218802266173511",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-11T07:00:00",
-        "nota": "Aporta evidencia a 1 evento(s) del corte."
-      },
-      {
-        "id": "src-fddad753236d7c45ef807eef",
-        "nombre": "Fuente web de contexto, no normalización: https://coviandina.com/intervenciones-en-la-via/actividades-con-intervencion-sobre-el-corredor-vial-desde-el-10-hasta-el-0",
-        "estado": "consultada",
-        "ultima_consulta": "2026-08-11T07:00:00",
-        "nota": "Aporta evidencia a 1 evento(s) del corte."
-      },
-      {
-        "id": "src-04d81422adc3db70655e838b",
-        "nombre": "Fuente X: https://x.com/ANI_Colombia/status/2086815580338684107",
-        "estado": "consultada",
-        "ultima_consulta": "2026-08-11T07:00:00",
-        "nota": "Aporta evidencia a 1 evento(s) del corte."
-      },
-      {
-        "id": "src-221ff9c4cdfa192c8812448e",
-        "nombre": "Fuente X: https://x.com/InviasOficial/status/2086827760677277998",
-        "estado": "consultada",
-        "ultima_consulta": "2026-08-11T07:00:00",
+        "ultima_consulta": "2026-08-11T12:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       }
     ]
   },
   "acciones_sugeridas": [
     {
-      "id": "action-evt-6fe0177e2406d0cfecf8",
+      "id": "action-evt-6276ddf45747b9583d4b",
       "prioridad": "critical",
-      "corredor": "Buga–Buenaventura",
-      "accion": "máximo por acceso portuario a Buenaventura, riesgo de filas, desvíos, incumplimiento de ventanas y retrasos de ingreso/evacuación de mercancía.",
-      "event_id": "evt-6fe0177e2406d0cfecf8",
-      "fundamento": "alerta crítica persistente. ANI reportó en X cierre total y evacuación en PR 71 el 10-ago; DITRA reportó cierres totales en Valle. La web oficial de ANI detalla afectaciones en PR 69+400, 61+300, 60+300, 60+000, 58+000, 53+100, 53+000 y Buenaventura PR 2+900, con inspección, remoción de material y habilitación progresiva, pero el insumo AM no trae reapertura total del corredor."
-    },
-    {
-      "id": "action-evt-11d87799a57fd1be57a6",
-      "prioridad": "critical",
-      "corredor": "Cali–Loboguerrero",
-      "accion": "alto para conexión Cali–Pacífico y operación hacia Buenaventura; puede tensionar rutas alternas y tiempos de acceso portuario.",
-      "event_id": "evt-11d87799a57fd1be57a6",
-      "fundamento": "cierre total persistente en KM 55+000 según Invías; DITRA confirmó cierres totales en Valle. No hay en el insumo web un boletín más reciente que desplace esa lectura X."
+      "corredor": "Bogotá - Villavicencio",
+      "accion": "medio-alto por demoras y menor capacidad en la conexión Llanos–centro.",
+      "event_id": "evt-6276ddf45747b9583d4b",
+      "fundamento": "corredor operativo con capacidad reducida. Coviandina reporta a las 12:00 reducciones de carril por mantenimiento y paso alterno en K6+200; los partes de 07:12 y 09:00 registran además paso bidireccional, cierre de carril derecho y pasos a un carril en distintos puntos y túneles. No hay cierre total del corredor en los insumos."
     },
     {
       "id": "action-evt-b8d2d87ec06b4f307e9b",
       "prioridad": "critical",
       "corredor": "Manizales–Fresno",
-      "accion": "alto para la conexión Eje Cafetero–Tolima, con riesgo de desvíos, tiempos extendidos y pérdida de confiabilidad en itinerarios regionales.",
+      "accion": "alto para la conexión Eje Cafetero–Tolima, con desvíos, mayores tiempos y baja confiabilidad de itinerarios.",
       "event_id": "evt-b8d2d87ec06b4f307e9b",
-      "fundamento": "cierre total persistente en KM 36 / sector Cerro Bravo según Invías, con recomendación de abstenerse de transitar. DITRA y Policía sostienen afectaciones en Caldas."
+      "fundamento": "cierre total confirmado en KM 36, sector Cerro Bravo, con recomendación de abstenerse de transitar. Las señales sobre Herveo, Alto de Letras o un camión bajo escombros no tienen confirmación oficial equivalente; las piezas DITRA son imágenes sin PR internos legibles."
     },
     {
       "id": "action-evt-5671f00604c0a5d416d6",
       "prioridad": "critical",
       "corredor": "Pereira–Chinchiná",
-      "accion": "alto regional para movimientos entre Caldas, Risaralda y conexiones hacia Tolima/Quindío; riesgo de tiempos variables y baja confiabilidad de tránsito.",
+      "accion": "alto a escala regional para los flujos Caldas–Risaralda y sus conexiones con Tolima y Quindío.",
       "event_id": "evt-5671f00604c0a5d416d6",
-      "fundamento": "alerta regional persistente. Policía reportó cierres totales y pasos restringidos en corredores de Caldas, Tolima, Quindío y Valle; el texto visible incluye Pereira–Chinchiná km 22-24. DITRA reportó cierre total en Caldas, aunque parte del detalle interno está en imagen no OCR."
+      "fundamento": "cierre total reportado para el tramo km 22–24. No se observó parte MD oficial de reapertura. La información adicional de DITRA está principalmente en imagen; sin OCR no se convierten sus PR internos en confirmaciones."
     },
     {
-      "id": "action-evt-6276ddf45747b9583d4b",
-      "prioridad": "high",
-      "corredor": "Bogotá - Villavicencio",
-      "accion": "medio-alto por menor capacidad, pasos a un carril y posibles demoras en la conexión Llanos–centro. La lectura correcta es corredor operando con restricciones, no corredor bloqueado.",
-      "event_id": "evt-6276ddf45747b9583d4b",
-      "fundamento": "operación con restricciones. Coviandina reportó a las 06:05 paso bidireccional en K18+300-K19+000; reducción de carril derecho en K17+500-K18+300 y K43+250; cierre de carril derecho en K36+500; paso a un carril en túnel Quebradablanca y K69+350; y flujo moderado. El parte de 05:05 coincide en lo sustantivo."
+      "id": "action-evt-6fe0177e2406d0cfecf8",
+      "prioridad": "medium",
+      "corredor": "Buga–Buenaventura",
+      "accion": "máximo por el acceso a Buenaventura, las ventanas portuarias, los desvíos y la incertidumbre sobre el tránsito de carga pesada.",
+      "event_id": "evt-6fe0177e2406d0cfecf8",
+      "fundamento": "Buga–Buenaventura presenta paso controlado para livianos y emergencias en PR 69+400 y PR 69+000, bajo control de DITRA e inspección antes de habilitar otros vehículos. Cali–Loboguerrero conserva cierre total en KM 55+000 según Invías. No es reapertura total del corredor Pacífico."
     },
     {
       "id": "action-evt-4a7db276382c6d4b5f19",
       "prioridad": "medium",
       "corredor": "Calarcá–Ibagué",
-      "accion": "alto por tratarse de un eje central; sin embargo, la operación reportada es de restricción/evolución, no bloqueo total confirmado para todo el corredor.",
+      "accion": "alto por la importancia del corredor y sus alternativas limitadas; la capacidad y los tiempos siguen sujetos a cambios por sector.",
       "event_id": "evt-4a7db276382c6d4b5f19",
-      "fundamento": "evolutivo y restringido, no cierre total simple. Invías informó el 10-ago que el Cruce de La Línea estaba habilitado con restricciones de movilidad y paso a un carril en algunos sectores. DITRA reportó afectaciones en Tolima y Quindío, pero varios puntos están en imágenes no OCR. La web oficial de ANI agrega que en IP GICA hubo atención con maquinaria y operación a dos carriles en PR 54, PR 55, PR 77 y PR 11+600."
+      "fundamento": "habilitación con restricciones y paso a un carril en algunos sectores, según Invías. ANI web documenta operación a dos carriles en PR 54, PR 55 y PR 77 después de maquinaria, pero ese parte es del 10 de agosto y no fija el estado MD completo. No debe tratarse como cierre total uniforme ni como normalización general."
     }
   ],
   "eventos_confirmados": [
     {
-      "id": "evt-6fe0177e2406d0cfecf8",
-      "corredor": "Buga–Buenaventura",
+      "id": "evt-6276ddf45747b9583d4b",
+      "corredor": "Bogotá - Villavicencio",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -273,10 +177,10 @@
       "tipo": "cierre_total",
       "severidad": "critical",
       "estado": "active",
-      "resumen": "alerta crítica persistente. ANI reportó en X cierre total y evacuación en PR 71 el 10-ago; DITRA reportó cierres totales en Valle. La web oficial de ANI detalla afectaciones en PR 69+400, 61+300, 60+300, 60+000, 58+000, 53+100, 53+000 y Buenaventura PR 2+900, con inspección, remoción de material y habilitación progresiva, pero el insumo AM no trae reapertura total del corredor.",
-      "impacto_operativo": "máximo por acceso portuario a Buenaventura, riesgo de filas, desvíos, incumplimiento de ventanas y retrasos de ingreso/evacuación de mercancía.",
-      "confianza": 0.9,
-      "actualizado_en": "2026-08-11T07:00:00",
+      "resumen": "corredor operativo con capacidad reducida. Coviandina reporta a las 12:00 reducciones de carril por mantenimiento y paso alterno en K6+200; los partes de 07:12 y 09:00 registran además paso bidireccional, cierre de carril derecho y pasos a un carril en distintos puntos y túneles. No hay cierre total del corredor en los insumos.",
+      "impacto_operativo": "medio-alto por demoras y menor capacidad en la conexión Llanos–centro.",
+      "confianza": 0.5,
+      "actualizado_en": "2026-08-11T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -285,89 +189,20 @@
       },
       "fuentes": [
         {
-          "id": "src-04d81422adc3db70655e838b",
-          "nombre": "Fuente X: https://x.com/ANI_Colombia/status/2086815580338684107",
-          "url": "https://x.com/ANI_Colombia/status/2086815580338684107",
-          "fortaleza": "official",
+          "id": "src-9122b9e9317598ab6e40459f",
+          "nombre": "Fuentes: https://x.com/CoviandinaSAS/status/2087222390463828314; https://x.com/CoviandinaSAS/status/2087183393943326914; https://x.com/CoviandinaSAS/status/2087150193326141757; https://coviandina.com/intervenciones-en-la-via/actividades-con-intervencion-sobre-el-corredor-vial-desde-el-10-hasta-el-0",
+          "url": "https://x.com/CoviandinaSAS/status/2087222390463828314",
+          "fortaleza": "social",
           "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "alerta crítica persistente. ANI reportó en X cierre total y evacuación en PR 71 el 10-ago; DITRA reportó cierres totales en Valle. La web oficial de ANI detalla afectaciones en PR 69+400, 61+300, 60+300, 60+000, 58+000, 53+100, 53+000 y Buenaventura PR 2+900, con inspección, remoción de material y habilitación progresiva, pero el insumo AM no trae reapertura total del corredor."
-        },
-        {
-          "id": "src-f98db70490dda14178dbc447",
-          "nombre": "Fuente X: https://x.com/TransitoPolicia/status/2086905880457408946",
-          "url": "https://x.com/TransitoPolicia/status/2086905880457408946",
-          "fortaleza": "official",
-          "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "alerta crítica persistente. ANI reportó en X cierre total y evacuación en PR 71 el 10-ago; DITRA reportó cierres totales en Valle. La web oficial de ANI detalla afectaciones en PR 69+400, 61+300, 60+300, 60+000, 58+000, 53+100, 53+000 y Buenaventura PR 2+900, con inspección, remoción de material y habilitación progresiva, pero el insumo AM no trae reapertura total del corredor."
-        },
-        {
-          "id": "src-eb121a2a13e85cf08f04d2f6",
-          "nombre": "Fuente web oficial: https://www.ani.gov.co/w/cuatro-corredores-viales-concesionados-presentaron-afectaciones-y-activaron-protocolos-de-seguridad-por-eventos-sismol%C3%B3gicos",
-          "url": "https://www.ani.gov.co/w/cuatro-corredores-viales-concesionados-presentaron-afectaciones-y-activaron-protocolos-de-seguridad-por-eventos-sismol%C3%B3gicos",
-          "fortaleza": "official",
-          "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "alerta crítica persistente. ANI reportó en X cierre total y evacuación en PR 71 el 10-ago; DITRA reportó cierres totales en Valle. La web oficial de ANI detalla afectaciones en PR 69+400, 61+300, 60+300, 60+000, 58+000, 53+100, 53+000 y Buenaventura PR 2+900, con inspección, remoción de material y habilitación progresiva, pero el insumo AM no trae reapertura total del corredor."
-        }
-      ]
-    },
-    {
-      "id": "evt-11d87799a57fd1be57a6",
-      "corredor": "Cali–Loboguerrero",
-      "tramo": "Tramo por precisar",
-      "departamento": null,
-      "municipio": null,
-      "via": null,
-      "km": null,
-      "tipo": "cierre_total",
-      "severidad": "critical",
-      "estado": "active",
-      "resumen": "cierre total persistente en KM 55+000 según Invías; DITRA confirmó cierres totales en Valle. No hay en el insumo web un boletín más reciente que desplace esa lectura X.",
-      "impacto_operativo": "alto para conexión Cali–Pacífico y operación hacia Buenaventura; puede tensionar rutas alternas y tiempos de acceso portuario.",
-      "confianza": 0.9,
-      "actualizado_en": "2026-08-11T07:00:00",
-      "georreferencia": {
-        "estado": "sin_georreferencia",
-        "lat": null,
-        "lon": null,
-        "etiqueta": "Sin coordenadas; marcador oculto"
-      },
-      "fuentes": [
-        {
-          "id": "src-5472fde687ceff2242f1bf25",
-          "nombre": "Fuente X: https://x.com/InviasOficial/status/2086827996451664200",
-          "url": "https://x.com/InviasOficial/status/2086827996451664200",
-          "fortaleza": "official",
-          "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "cierre total persistente en KM 55+000 según Invías; DITRA confirmó cierres totales en Valle. No hay en el insumo web un boletín más reciente que desplace esa lectura X."
-        },
-        {
-          "id": "src-89dd70cfe152a72c5d3ba0be",
-          "nombre": "Fuente X: https://x.com/TransitoPolicia/status/2086905880457408946",
-          "url": "https://x.com/TransitoPolicia/status/2086905880457408946",
-          "fortaleza": "official",
-          "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "cierre total persistente en KM 55+000 según Invías; DITRA confirmó cierres totales en Valle. No hay en el insumo web un boletín más reciente que desplace esa lectura X."
-        },
-        {
-          "id": "src-499cdf4b25e14b94bc8a70fe",
-          "nombre": "Fuente web solo antecedente, no usada para mover estado AM: https://www.invias.gov.co/publicaciones/9487/invias-informa-cierre-preventivo-en-la-via-cali-loboguerrero-por-condiciones-de-riesgo/",
-          "url": "https://www.invias.gov.co/publicaciones/9487/invias-informa-cierre-preventivo-en-la-via-cali-loboguerrero-por-condiciones-de-riesgo/",
-          "fortaleza": "official",
-          "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "cierre total persistente en KM 55+000 según Invías; DITRA confirmó cierres totales en Valle. No hay en el insumo web un boletín más reciente que desplace esa lectura X."
+          "consultada_en": "2026-08-11T12:00:00",
+          "evidencia": "corredor operativo con capacidad reducida. Coviandina reporta a las 12:00 reducciones de carril por mantenimiento y paso alterno en K6+200; los partes de 07:12 y 09:00 registran además paso bidireccional, cierre de carril derecho y pasos a un carril en distintos puntos y túneles. No hay cierre total del corredor en los insumos."
         }
       ]
     },
     {
       "id": "evt-b8d2d87ec06b4f307e9b",
       "corredor": "Manizales–Fresno",
-      "tramo": "Cerro Bravo",
+      "tramo": "Cerro Bravo y Alto de Letras",
       "departamento": null,
       "municipio": null,
       "via": null,
@@ -375,10 +210,10 @@
       "tipo": "cierre_total",
       "severidad": "critical",
       "estado": "active",
-      "resumen": "cierre total persistente en KM 36 / sector Cerro Bravo según Invías, con recomendación de abstenerse de transitar. DITRA y Policía sostienen afectaciones en Caldas.",
-      "impacto_operativo": "alto para la conexión Eje Cafetero–Tolima, con riesgo de desvíos, tiempos extendidos y pérdida de confiabilidad en itinerarios regionales.",
+      "resumen": "cierre total confirmado en KM 36, sector Cerro Bravo, con recomendación de abstenerse de transitar. Las señales sobre Herveo, Alto de Letras o un camión bajo escombros no tienen confirmación oficial equivalente; las piezas DITRA son imágenes sin PR internos legibles.",
+      "impacto_operativo": "alto para la conexión Eje Cafetero–Tolima, con desvíos, mayores tiempos y baja confiabilidad de itinerarios.",
       "confianza": 0.9,
-      "actualizado_en": "2026-08-11T07:00:00",
+      "actualizado_en": "2026-08-11T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -387,31 +222,13 @@
       },
       "fuentes": [
         {
-          "id": "src-221ff9c4cdfa192c8812448e",
-          "nombre": "Fuente X: https://x.com/InviasOficial/status/2086827760677277998",
+          "id": "src-62a8e966f8ae2b28ecd76af9",
+          "nombre": "Fuentes: https://x.com/InviasOficial/status/2086827760677277998; https://x.com/PoliciaColombia/status/2086863458000114020; https://x.com/TransitoPolicia/status/2086864998832156741",
           "url": "https://x.com/InviasOficial/status/2086827760677277998",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "cierre total persistente en KM 36 / sector Cerro Bravo según Invías, con recomendación de abstenerse de transitar. DITRA y Policía sostienen afectaciones en Caldas."
-        },
-        {
-          "id": "src-6d5533057fe5012967c10b8a",
-          "nombre": "Fuente X: https://x.com/PoliciaColombia/status/2086863458000114020",
-          "url": "https://x.com/PoliciaColombia/status/2086863458000114020",
-          "fortaleza": "official",
-          "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "cierre total persistente en KM 36 / sector Cerro Bravo según Invías, con recomendación de abstenerse de transitar. DITRA y Policía sostienen afectaciones en Caldas."
-        },
-        {
-          "id": "src-161fdd2643275e9e8526773b",
-          "nombre": "Fuente X: https://x.com/TransitoPolicia/status/2086864998832156741",
-          "url": "https://x.com/TransitoPolicia/status/2086864998832156741",
-          "fortaleza": "official",
-          "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "cierre total persistente en KM 36 / sector Cerro Bravo según Invías, con recomendación de abstenerse de transitar. DITRA y Policía sostienen afectaciones en Caldas."
+          "consultada_en": "2026-08-11T12:00:00",
+          "evidencia": "cierre total confirmado en KM 36, sector Cerro Bravo, con recomendación de abstenerse de transitar. Las señales sobre Herveo, Alto de Letras o un camión bajo escombros no tienen confirmación oficial equivalente; las piezas DITRA son imágenes sin PR internos legibles."
         }
       ]
     },
@@ -426,10 +243,10 @@
       "tipo": "cierre_total",
       "severidad": "critical",
       "estado": "active",
-      "resumen": "alerta regional persistente. Policía reportó cierres totales y pasos restringidos en corredores de Caldas, Tolima, Quindío y Valle; el texto visible incluye Pereira–Chinchiná km 22-24. DITRA reportó cierre total en Caldas, aunque parte del detalle interno está en imagen no OCR.",
-      "impacto_operativo": "alto regional para movimientos entre Caldas, Risaralda y conexiones hacia Tolima/Quindío; riesgo de tiempos variables y baja confiabilidad de tránsito.",
+      "resumen": "cierre total reportado para el tramo km 22–24. No se observó parte MD oficial de reapertura. La información adicional de DITRA está principalmente en imagen; sin OCR no se convierten sus PR internos en confirmaciones.",
+      "impacto_operativo": "alto a escala regional para los flujos Caldas–Risaralda y sus conexiones con Tolima y Quindío.",
       "confianza": 0.9,
-      "actualizado_en": "2026-08-11T07:00:00",
+      "actualizado_en": "2026-08-11T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -438,98 +255,20 @@
       },
       "fuentes": [
         {
-          "id": "src-753bdbf9aaade661c9996782",
-          "nombre": "Fuente X: https://x.com/PoliciaColombia/status/2086863458000114020",
+          "id": "src-2eec7cc43a2ba56883d8bccb",
+          "nombre": "Fuentes: https://x.com/PoliciaColombia/status/2086863458000114020; https://x.com/TransitoPolicia/status/2086864998832156741; https://www.ani.gov.co/w/cuatro-corredores-viales-concesionados-presentaron-afectaciones-y-activaron-protocolos-de-seguridad-por-eventos-sismol%C3%B3gicos",
           "url": "https://x.com/PoliciaColombia/status/2086863458000114020",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "alerta regional persistente. Policía reportó cierres totales y pasos restringidos en corredores de Caldas, Tolima, Quindío y Valle; el texto visible incluye Pereira–Chinchiná km 22-24. DITRA reportó cierre total en Caldas, aunque parte del detalle interno está en imagen no OCR."
-        },
-        {
-          "id": "src-7c4882ca10fbf0ec75adadb5",
-          "nombre": "Fuente X: https://x.com/TransitoPolicia/status/2086864998832156741",
-          "url": "https://x.com/TransitoPolicia/status/2086864998832156741",
-          "fortaleza": "official",
-          "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "alerta regional persistente. Policía reportó cierres totales y pasos restringidos en corredores de Caldas, Tolima, Quindío y Valle; el texto visible incluye Pereira–Chinchiná km 22-24. DITRA reportó cierre total en Caldas, aunque parte del detalle interno está en imagen no OCR."
-        },
-        {
-          "id": "src-ef68120d44bdabbb6842d9f7",
-          "nombre": "Fuente web oficial de contexto regional ANI: https://www.ani.gov.co/w/cuatro-corredores-viales-concesionados-presentaron-afectaciones-y-activaron-protocolos-de-seguridad-por-eventos-sismol%C3%B3gicos",
-          "url": "https://www.ani.gov.co/w/cuatro-corredores-viales-concesionados-presentaron-afectaciones-y-activaron-protocolos-de-seguridad-por-eventos-sismol%C3%B3gicos",
-          "fortaleza": "official",
-          "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "alerta regional persistente. Policía reportó cierres totales y pasos restringidos en corredores de Caldas, Tolima, Quindío y Valle; el texto visible incluye Pereira–Chinchiná km 22-24. DITRA reportó cierre total en Caldas, aunque parte del detalle interno está en imagen no OCR."
+          "consultada_en": "2026-08-11T12:00:00",
+          "evidencia": "cierre total reportado para el tramo km 22–24. No se observó parte MD oficial de reapertura. La información adicional de DITRA está principalmente en imagen; sin OCR no se convierten sus PR internos en confirmaciones."
         }
       ]
     },
     {
-      "id": "evt-6276ddf45747b9583d4b",
-      "corredor": "Bogotá - Villavicencio",
-      "tramo": "Tramo por precisar",
-      "departamento": null,
-      "municipio": null,
-      "via": null,
-      "km": null,
-      "tipo": "paso_controlado",
-      "severidad": "high",
-      "estado": "active",
-      "resumen": "operación con restricciones. Coviandina reportó a las 06:05 paso bidireccional en K18+300-K19+000; reducción de carril derecho en K17+500-K18+300 y K43+250; cierre de carril derecho en K36+500; paso a un carril en túnel Quebradablanca y K69+350; y flujo moderado. El parte de 05:05 coincide en lo sustantivo.",
-      "impacto_operativo": "medio-alto por menor capacidad, pasos a un carril y posibles demoras en la conexión Llanos–centro. La lectura correcta es corredor operando con restricciones, no corredor bloqueado.",
-      "confianza": 0.9,
-      "actualizado_en": "2026-08-11T07:00:00",
-      "georreferencia": {
-        "estado": "sin_georreferencia",
-        "lat": null,
-        "lon": null,
-        "etiqueta": "Sin coordenadas; marcador oculto"
-      },
-      "fuentes": [
-        {
-          "id": "src-33614b0f02c0397cc37a5992",
-          "nombre": "Fuente X antecedente nocturno: https://x.com/CoviandinaSAS/status/2087014590710202836",
-          "url": "https://x.com/CoviandinaSAS/status/2087014590710202836",
-          "fortaleza": "social",
-          "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "operación con restricciones. Coviandina reportó a las 06:05 paso bidireccional en K18+300-K19+000; reducción de carril derecho en K17+500-K18+300 y K43+250; cierre de carril derecho en K36+500; paso a un carril en túnel Quebradablanca y K69+350; y flujo moderado. El parte de 05:05 coincide en lo sustantivo."
-        },
-        {
-          "id": "src-0be518f9e82968c9ae331d7d",
-          "nombre": "Fuente X: https://x.com/CoviandinaSAS/status/2087118367647736241",
-          "url": "https://x.com/CoviandinaSAS/status/2087118367647736241",
-          "fortaleza": "social",
-          "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "operación con restricciones. Coviandina reportó a las 06:05 paso bidireccional en K18+300-K19+000; reducción de carril derecho en K17+500-K18+300 y K43+250; cierre de carril derecho en K36+500; paso a un carril en túnel Quebradablanca y K69+350; y flujo moderado. El parte de 05:05 coincide en lo sustantivo."
-        },
-        {
-          "id": "src-7012d866770b1199ae9049e7",
-          "nombre": "Fuente X: https://x.com/CoviandinaSAS/status/2087132945655931337",
-          "url": "https://x.com/CoviandinaSAS/status/2087132945655931337",
-          "fortaleza": "social",
-          "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "operación con restricciones. Coviandina reportó a las 06:05 paso bidireccional en K18+300-K19+000; reducción de carril derecho en K17+500-K18+300 y K43+250; cierre de carril derecho en K36+500; paso a un carril en túnel Quebradablanca y K69+350; y flujo moderado. El parte de 05:05 coincide en lo sustantivo."
-        },
-        {
-          "id": "src-fddad753236d7c45ef807eef",
-          "nombre": "Fuente web de contexto, no normalización: https://coviandina.com/intervenciones-en-la-via/actividades-con-intervencion-sobre-el-corredor-vial-desde-el-10-hasta-el-0",
-          "url": "https://coviandina.com/intervenciones-en-la-via/actividades-con-intervencion-sobre-el-corredor-vial-desde-el-10-hasta-el-0",
-          "fortaleza": "official",
-          "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "operación con restricciones. Coviandina reportó a las 06:05 paso bidireccional en K18+300-K19+000; reducción de carril derecho en K17+500-K18+300 y K43+250; cierre de carril derecho en K36+500; paso a un carril en túnel Quebradablanca y K69+350; y flujo moderado. El parte de 05:05 coincide en lo sustantivo."
-        }
-      ]
-    },
-    {
-      "id": "evt-4a7db276382c6d4b5f19",
-      "corredor": "Calarcá–Ibagué",
-      "tramo": "Cruce de La Línea / IP GICA",
+      "id": "evt-6fe0177e2406d0cfecf8",
+      "corredor": "Buga–Buenaventura",
+      "tramo": "Dagua y Cali–Loboguerrero",
       "departamento": null,
       "municipio": null,
       "via": null,
@@ -537,10 +276,10 @@
       "tipo": "paso_controlado",
       "severidad": "medium",
       "estado": "active",
-      "resumen": "evolutivo y restringido, no cierre total simple. Invías informó el 10-ago que el Cruce de La Línea estaba habilitado con restricciones de movilidad y paso a un carril en algunos sectores. DITRA reportó afectaciones en Tolima y Quindío, pero varios puntos están en imágenes no OCR. La web oficial de ANI agrega que en IP GICA hubo atención con maquinaria y operación a dos carriles en PR 54, PR 55, PR 77 y PR 11+600.",
-      "impacto_operativo": "alto por tratarse de un eje central; sin embargo, la operación reportada es de restricción/evolución, no bloqueo total confirmado para todo el corredor.",
+      "resumen": "Buga–Buenaventura presenta paso controlado para livianos y emergencias en PR 69+400 y PR 69+000, bajo control de DITRA e inspección antes de habilitar otros vehículos. Cali–Loboguerrero conserva cierre total en KM 55+000 según Invías. No es reapertura total del corredor Pacífico.",
+      "impacto_operativo": "máximo por el acceso a Buenaventura, las ventanas portuarias, los desvíos y la incertidumbre sobre el tránsito de carga pesada.",
       "confianza": 0.9,
-      "actualizado_en": "2026-08-11T07:00:00",
+      "actualizado_en": "2026-08-11T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -549,81 +288,54 @@
       },
       "fuentes": [
         {
-          "id": "src-bd71cb2d6a7ae1963ef3652d",
-          "nombre": "Fuente X: https://x.com/InviasOficial/status/2086899350932734358",
+          "id": "src-f01433497b7e4aea29f172a2",
+          "nombre": "Fuentes: https://x.com/CaminoPacifico/status/2087222933957611860; https://x.com/CaminoPacifico/status/2087197224094630360; https://x.com/MinTransporteCo/status/2087170770959007920; https://x.com/InviasOficial/status/2086827996451664200; https://x.com/TransitoPolicia/status/2087219878658793935; https://www.ani.gov.co/w/cuatro-corredores-viales-concesionados-presentaron-afectaciones-y-activaron-protocolos-de-seguridad-por-eventos-sismol%C3%B3gicos",
+          "url": "https://x.com/CaminoPacifico/status/2087222933957611860",
+          "fortaleza": "official",
+          "publicada_en": null,
+          "consultada_en": "2026-08-11T12:00:00",
+          "evidencia": "Buga–Buenaventura presenta paso controlado para livianos y emergencias en PR 69+400 y PR 69+000, bajo control de DITRA e inspección antes de habilitar otros vehículos. Cali–Loboguerrero conserva cierre total en KM 55+000 según Invías. No es reapertura total del corredor Pacífico."
+        }
+      ]
+    },
+    {
+      "id": "evt-4a7db276382c6d4b5f19",
+      "corredor": "Calarcá–Ibagué",
+      "tramo": "La Línea / IP GICA",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
+      "tipo": "paso_controlado",
+      "severidad": "medium",
+      "estado": "active",
+      "resumen": "habilitación con restricciones y paso a un carril en algunos sectores, según Invías. ANI web documenta operación a dos carriles en PR 54, PR 55 y PR 77 después de maquinaria, pero ese parte es del 10 de agosto y no fija el estado MD completo. No debe tratarse como cierre total uniforme ni como normalización general.",
+      "impacto_operativo": "alto por la importancia del corredor y sus alternativas limitadas; la capacidad y los tiempos siguen sujetos a cambios por sector.",
+      "confianza": 0.9,
+      "actualizado_en": "2026-08-11T12:00:00",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
+      "fuentes": [
+        {
+          "id": "src-5cd1fd57b25a548dc77e195c",
+          "nombre": "Fuentes: https://x.com/InviasOficial/status/2086899350932734358; https://x.com/TransitoPolicia/status/2086905667248394639; https://x.com/TransitoPolicia/status/2086904967923716566; https://x.com/elespectador/status/2087147282797879350; https://www.ani.gov.co/w/cuatro-corredores-viales-concesionados-presentaron-afectaciones-y-activaron-protocolos-de-seguridad-por-eventos-sismol%C3%B3gicos",
           "url": "https://x.com/InviasOficial/status/2086899350932734358",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "evolutivo y restringido, no cierre total simple. Invías informó el 10-ago que el Cruce de La Línea estaba habilitado con restricciones de movilidad y paso a un carril en algunos sectores. DITRA reportó afectaciones en Tolima y Quindío, pero varios puntos están en imágenes no OCR. La web oficial de ANI agrega que en IP GICA hubo atención con maquinaria y operación a dos carriles en PR 54, PR 55, PR 77 y PR 11+600."
-        },
-        {
-          "id": "src-603f92d2f456bd649054dc53",
-          "nombre": "Fuente X: https://x.com/TransitoPolicia/status/2086904967923716566",
-          "url": "https://x.com/TransitoPolicia/status/2086904967923716566",
-          "fortaleza": "official",
-          "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "evolutivo y restringido, no cierre total simple. Invías informó el 10-ago que el Cruce de La Línea estaba habilitado con restricciones de movilidad y paso a un carril en algunos sectores. DITRA reportó afectaciones en Tolima y Quindío, pero varios puntos están en imágenes no OCR. La web oficial de ANI agrega que en IP GICA hubo atención con maquinaria y operación a dos carriles en PR 54, PR 55, PR 77 y PR 11+600."
-        },
-        {
-          "id": "src-09ee35f7af773a61f1345a54",
-          "nombre": "Fuente X: https://x.com/TransitoPolicia/status/2086905667248394639",
-          "url": "https://x.com/TransitoPolicia/status/2086905667248394639",
-          "fortaleza": "official",
-          "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "evolutivo y restringido, no cierre total simple. Invías informó el 10-ago que el Cruce de La Línea estaba habilitado con restricciones de movilidad y paso a un carril en algunos sectores. DITRA reportó afectaciones en Tolima y Quindío, pero varios puntos están en imágenes no OCR. La web oficial de ANI agrega que en IP GICA hubo atención con maquinaria y operación a dos carriles en PR 54, PR 55, PR 77 y PR 11+600."
-        },
-        {
-          "id": "src-03d505d69b5fa9ff32e64ccd",
-          "nombre": "Fuente web oficial: https://www.ani.gov.co/w/cuatro-corredores-viales-concesionados-presentaron-afectaciones-y-activaron-protocolos-de-seguridad-por-eventos-sismol%C3%B3gicos",
-          "url": "https://www.ani.gov.co/w/cuatro-corredores-viales-concesionados-presentaron-afectaciones-y-activaron-protocolos-de-seguridad-por-eventos-sismol%C3%B3gicos",
-          "fortaleza": "official",
-          "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "evolutivo y restringido, no cierre total simple. Invías informó el 10-ago que el Cruce de La Línea estaba habilitado con restricciones de movilidad y paso a un carril en algunos sectores. DITRA reportó afectaciones en Tolima y Quindío, pero varios puntos están en imágenes no OCR. La web oficial de ANI agrega que en IP GICA hubo atención con maquinaria y operación a dos carriles en PR 54, PR 55, PR 77 y PR 11+600."
+          "consultada_en": "2026-08-11T12:00:00",
+          "evidencia": "habilitación con restricciones y paso a un carril en algunos sectores, según Invías. ANI web documenta operación a dos carriles en PR 54, PR 55 y PR 77 después de maquinaria, pero ese parte es del 10 de agosto y no fija el estado MD completo. No debe tratarse como cierre total uniforme ni como normalización general."
         }
       ]
     }
   ],
   "eventos_vigilancia": [
     {
-      "id": "evt-76c1159007cb97b2575b",
-      "corredor": "Autopista al Mar 2",
-      "tramo": "Variante de Fúquene",
-      "departamento": null,
-      "municipio": null,
-      "via": null,
-      "km": null,
-      "tipo": "otro",
-      "severidad": "low",
-      "estado": "uncertain",
-      "resumen": "normalización documentada por web oficial. ANI reportó cierre preventivo de una hora en K10+400, inspección geotécnica y reapertura al tránsito.",
-      "impacto_operativo": "bajo-medio después de la reapertura reportada; queda como antecedente de control, no como alerta principal.",
-      "confianza": 0.65,
-      "actualizado_en": "2026-08-11T07:00:00",
-      "georreferencia": {
-        "estado": "sin_georreferencia",
-        "lat": null,
-        "lon": null,
-        "etiqueta": "Sin coordenadas; marcador oculto"
-      },
-      "fuentes": [
-        {
-          "id": "src-9a1eb0e2b3c821fec8542c0e",
-          "nombre": "Fuente web oficial: https://www.ani.gov.co/w/cuatro-corredores-viales-concesionados-presentaron-afectaciones-y-activaron-protocolos-de-seguridad-por-eventos-sismol%C3%B3gicos",
-          "url": "https://www.ani.gov.co/w/cuatro-corredores-viales-concesionados-presentaron-afectaciones-y-activaron-protocolos-de-seguridad-por-eventos-sismol%C3%B3gicos",
-          "fortaleza": "official",
-          "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "normalización documentada por web oficial. ANI reportó cierre preventivo de una hora en K10+400, inspección geotécnica y reapertura al tránsito."
-        }
-      ]
-    },
-    {
-      "id": "evt-479ffb433d6db4bf9636",
-      "corredor": "Quindío regional",
+      "id": "evt-4470ca4276d1e8498413",
+      "corredor": "Armenia–Montenegro y Quindío regional",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -632,10 +344,10 @@
       "tipo": "otro",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "presión regional por cierres totales y pasos restringidos a un carril reportados por DITRA/Policía. El texto recuperado no permite leer todos los puntos internos de las imágenes; por eso no se publican PR adicionales como confirmación textual AM.",
-      "impacto_operativo": "medio-alto para accesos regionales, alimentación hacia La Línea y movimientos entre Armenia, Pereira y municipios cercanos.",
-      "confianza": 0.65,
-      "actualizado_en": "2026-08-11T07:00:00",
+      "resumen": "BluRadio reporta un carril cerrado por deslizamiento en Armenia–Montenegro. Quimbaya exacto no tuvo rastro limpio en X App-Only. Los PR internos de DITRA no son legibles en las imágenes recuperadas.",
+      "impacto_operativo": "medio-alto para accesos regionales y conexiones entre Armenia, Montenegro, Pereira y La Línea.",
+      "confianza": 0.5,
+      "actualizado_en": "2026-08-11T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -644,28 +356,19 @@
       },
       "fuentes": [
         {
-          "id": "src-ed90b837763a233edd8708bc",
-          "nombre": "Fuente X: https://x.com/PoliciaColombia/status/2086863458000114020",
-          "url": "https://x.com/PoliciaColombia/status/2086863458000114020",
-          "fortaleza": "official",
+          "id": "src-f0ad08157e614328ea44c4fa",
+          "nombre": "Fuentes: https://x.com/BluRadioCo/status/2087213955794022487; https://x.com/TransitoPolicia/status/2086904967923716566",
+          "url": "https://x.com/BluRadioCo/status/2087213955794022487",
+          "fortaleza": "social",
           "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "presión regional por cierres totales y pasos restringidos a un carril reportados por DITRA/Policía. El texto recuperado no permite leer todos los puntos internos de las imágenes; por eso no se publican PR adicionales como confirmación textual AM."
-        },
-        {
-          "id": "src-8053fd4dc8e2b26a273c8ce7",
-          "nombre": "Fuente X: https://x.com/TransitoPolicia/status/2086904967923716566",
-          "url": "https://x.com/TransitoPolicia/status/2086904967923716566",
-          "fortaleza": "official",
-          "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "presión regional por cierres totales y pasos restringidos a un carril reportados por DITRA/Policía. El texto recuperado no permite leer todos los puntos internos de las imágenes; por eso no se publican PR adicionales como confirmación textual AM."
+          "consultada_en": "2026-08-11T12:00:00",
+          "evidencia": "BluRadio reporta un carril cerrado por deslizamiento en Armenia–Montenegro. Quimbaya exacto no tuvo rastro limpio en X App-Only. Los PR internos de DITRA no son legibles en las imágenes recuperadas."
         }
       ]
     },
     {
-      "id": "evt-022fb69f79d5f3b78796",
-      "corredor": "Túnel Sumapaz y puente Mariano Ospina",
+      "id": "evt-e3cd75c206af38607b81",
+      "corredor": "Bogotá–Girardot: túnel Sumapaz y puente Mariano Ospina",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -674,10 +377,10 @@
       "tipo": "otro",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "por verificar con afectación parcial confirmada. ANI reportó cierre del túnel Sumapaz y del puente Mariano Ospina para inspección de infraestructura; no se observó en los insumos AM una reapertura ANI posterior.",
-      "impacto_operativo": "potencial alto si afecta flujos por Bogotá–Girardot/Flandes, pero no hay base suficiente para publicar “caída de puente” ni para ampliar la afectación a La Victoria–La Unión como hecho confirmado.",
-      "confianza": 0.65,
-      "actualizado_en": "2026-08-11T07:00:00",
+      "resumen": "ViaSumapaz reporta operación normal del túnel Sumapaz después de su rehabilitación. El puente Mariano Ospina conserva el antecedente de cierre preventivo para inspección, sin actualización oficial MD que confirme reapertura o daño estructural. La señal de un puente en La Victoria–La Unión no se identifica automáticamente con Mariano Ospina.",
+      "impacto_operativo": "potencialmente alto para Bogotá–Girardot/Flandes, pero insuficiente para publicar caída de puente o cierre vigente sin parte directo.",
+      "confianza": 0.5,
+      "actualizado_en": "2026-08-11T12:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -686,22 +389,79 @@
       },
       "fuentes": [
         {
-          "id": "src-92dee761c22d7b6c14065c8c",
-          "nombre": "Fuente ControlT solo detección inicial: https://risk.controlt.io/map",
-          "url": "https://risk.controlt.io/map",
-          "fortaleza": "media",
+          "id": "src-6c7293401ff4b88a83ceb3de",
+          "nombre": "Fuentes: https://x.com/ViaSumapaz/status/2086929771645075497; https://x.com/ANI_Colombia/status/2086813129153892625; https://x.com/Mi_carro_Yyo/status/2087218756619567404",
+          "url": "https://x.com/ViaSumapaz/status/2086929771645075497",
+          "fortaleza": "social",
           "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "por verificar con afectación parcial confirmada. ANI reportó cierre del túnel Sumapaz y del puente Mariano Ospina para inspección de infraestructura; no se observó en los insumos AM una reapertura ANI posterior."
-        },
+          "consultada_en": "2026-08-11T12:00:00",
+          "evidencia": "ViaSumapaz reporta operación normal del túnel Sumapaz después de su rehabilitación. El puente Mariano Ospina conserva el antecedente de cierre preventivo para inspección, sin actualización oficial MD que confirme reapertura o daño estructural. La señal de un puente en La Victoria–La Unión no se identifica automáticamente con Mariano Ospina."
+        }
+      ]
+    },
+    {
+      "id": "evt-e5133c086b4b880ca816",
+      "corredor": "Quibdó–Pereira",
+      "tramo": "Tramo por precisar",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
+      "tipo": "otro",
+      "severidad": "low",
+      "estado": "uncertain",
+      "resumen": "MinTransporte reporta paso habilitado a un carril, con trabajos en curso para recuperar la operación total. Es habilitación parcial, no normalización completa.",
+      "impacto_operativo": "medio por menor capacidad y mayores tiempos en la conexión Chocó–Risaralda.",
+      "confianza": 0.65,
+      "actualizado_en": "2026-08-11T12:00:00",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
+      "fuentes": [
         {
-          "id": "src-61dd6a58ca5fff278ad5f660",
-          "nombre": "Fuente X: https://x.com/ANI_Colombia/status/2086813129153892625",
-          "url": "https://x.com/ANI_Colombia/status/2086813129153892625",
+          "id": "src-a2d64678044bb5446863e513",
+          "nombre": "Fuentes: https://x.com/MinTransporteCo/status/2087218802266173511",
+          "url": "https://x.com/MinTransporteCo/status/2087218802266173511",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-08-11T07:00:00",
-          "evidencia": "por verificar con afectación parcial confirmada. ANI reportó cierre del túnel Sumapaz y del puente Mariano Ospina para inspección de infraestructura; no se observó en los insumos AM una reapertura ANI posterior."
+          "consultada_en": "2026-08-11T12:00:00",
+          "evidencia": "MinTransporte reporta paso habilitado a un carril, con trabajos en curso para recuperar la operación total. Es habilitación parcial, no normalización completa."
+        }
+      ]
+    },
+    {
+      "id": "evt-b6f4341e88d8630ee9a0",
+      "corredor": "San Roque–Bosconia",
+      "tramo": "Chiriguaná",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
+      "tipo": "bloqueo",
+      "severidad": "low",
+      "estado": "uncertain",
+      "resumen": "queda en radar por verificar. La concesión publicó el 5 de agosto un cierre por bloqueo comunitario en PR 20+500 RN 4516; una señal ciudadana nocturna menciona cierre en Bosconia sin motivo. No hay actualización MD de autoridad o concesión que confirme vigencia.",
+      "impacto_operativo": "potencial medio, sujeto a confirmación antes de tratarlo como alerta operativa.",
+      "confianza": 0.5,
+      "actualizado_en": "2026-08-11T12:00:00",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
+      "fuentes": [
+        {
+          "id": "src-1fd014510893ece8dcd4fbe2",
+          "nombre": "Fuentes: https://x.com/rutadelsoltram3/status/2085047859871646035; https://x.com/Mi_carro_Yyo/status/2087021697849332132",
+          "url": "https://x.com/rutadelsoltram3/status/2085047859871646035",
+          "fortaleza": "social",
+          "publicada_en": null,
+          "consultada_en": "2026-08-11T12:00:00",
+          "evidencia": "queda en radar por verificar. La concesión publicó el 5 de agosto un cierre por bloqueo comunitario en PR 20+500 RN 4516; una señal ciudadana nocturna menciona cierre en Bosconia sin motivo. No hay actualización MD de autoridad o concesión que confirme vigencia."
         }
       ]
     }
@@ -1509,10 +1269,10 @@
         "corredor": "Bogotá - Villavicencio",
         "dias_confirmados": 2,
         "dias_vigilancia": 1,
-        "cortes_con_observacion": 5,
+        "cortes_con_observacion": 6,
         "severidad_maxima": "critical",
-        "ultima_observacion": "2026-08-11T07:00:00",
-        "ultimo_estado": "confirmed",
+        "ultima_observacion": "2026-08-11T12:00:00",
+        "ultimo_estado": "watch",
         "dias": [
           {
             "fecha": "2026-08-05",
@@ -1577,13 +1337,15 @@
           {
             "fecha": "2026-08-11",
             "ventanas": [
-              "AM"
+              "AM",
+              "MD"
             ],
             "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "high",
+            "vigilancia": 1,
+            "severidad_maxima": "critical",
             "resumenes": [
-              "operación con restricciones. Coviandina reportó a las 06:05 paso bidireccional en K18+300-K19+000; reducción de carril derecho en K17+500-K18+300 y K43+250; cierre de carril derecho en K36+500; paso a un carril en túnel Quebradablanca y K69+350; y flujo moderado. El parte de 05:05 coincide en lo sustantivo."
+              "operación con restricciones. Coviandina reportó a las 06:05 paso bidireccional en K18+300-K19+000; reducción de carril derecho en K17+500-K18+300 y K43+250; cierre de carril derecho en K36+500; paso a un carril en túnel Quebradablanca y K69+350; y flujo moderado. El parte de 05:05 coincide en lo sustantivo.",
+              "corredor operativo con capacidad reducida. Coviandina reporta a las 12:00 reducciones de carril por mantenimiento y paso alterno en K6+200; los partes de 07:12 y 09:00 registran además paso bidireccional, cierre de carril derecho y pasos a un carril en distintos puntos y túneles. No hay cierre total del corredor en los insumos."
             ]
           }
         ]
@@ -2445,6 +2207,79 @@
         ]
       },
       {
+        "corredor": "Pereira–Chinchiná",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 2,
+        "severidad_maxima": "critical",
+        "ultima_observacion": "2026-08-11T12:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [
+              "AM",
+              "MD"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "alerta regional persistente. Policía reportó cierres totales y pasos restringidos en corredores de Caldas, Tolima, Quindío y Valle; el texto visible incluye Pereira–Chinchiná km 22-24. DITRA reportó cierre total en Caldas, aunque parte del detalle interno está en imagen no OCR.",
+              "cierre total reportado para el tramo km 22–24. No se observó parte MD oficial de reapertura. La información adicional de DITRA está principalmente en imagen; sin OCR no se convierten sus PR internos en confirmaciones."
+            ]
+          }
+        ]
+      },
+      {
         "corredor": "Pereira – Chinchiná",
         "dias_confirmados": 1,
         "dias_vigilancia": 0,
@@ -2587,6 +2422,79 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          }
+        ]
+      },
+      {
+        "corredor": "Manizales–Fresno",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 2,
+        "severidad_maxima": "critical",
+        "ultima_observacion": "2026-08-11T12:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [
+              "AM",
+              "MD"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "cierre total persistente en KM 36 / sector Cerro Bravo según Invías, con recomendación de abstenerse de transitar. DITRA y Policía sostienen afectaciones en Caldas.",
+              "cierre total confirmado en KM 36, sector Cerro Bravo, con recomendación de abstenerse de transitar. Las señales sobre Herveo, Alto de Letras o un camión bajo escombros no tienen confirmación oficial equivalente; las piezas DITRA son imágenes sin PR internos legibles."
+            ]
           }
         ]
       },
@@ -2810,6 +2718,79 @@
         ]
       },
       {
+        "corredor": "Buga–Buenaventura",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 2,
+        "severidad_maxima": "critical",
+        "ultima_observacion": "2026-08-11T12:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [
+              "AM",
+              "MD"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "alerta crítica persistente. ANI reportó en X cierre total y evacuación en PR 71 el 10-ago; DITRA reportó cierres totales en Valle. La web oficial de ANI detalla afectaciones en PR 69+400, 61+300, 60+300, 60+000, 58+000, 53+100, 53+000 y Buenaventura PR 2+900, con inspección, remoción de material y habilitación progresiva, pero el insumo AM no trae reapertura total del corredor.",
+              "Buga–Buenaventura presenta paso controlado para livianos y emergencias en PR 69+400 y PR 69+000, bajo control de DITRA e inspección antes de habilitar otros vehículos. Cali–Loboguerrero conserva cierre total en KM 55+000 según Invías. No es reapertura total del corredor Pacífico."
+            ]
+          }
+        ]
+      },
+      {
         "corredor": "Buga – Buenaventura",
         "dias_confirmados": 1,
         "dias_vigilancia": 0,
@@ -3025,77 +3006,6 @@
         ]
       },
       {
-        "corredor": "Pereira–Chinchiná",
-        "dias_confirmados": 1,
-        "dias_vigilancia": 0,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-08-11T07:00:00",
-        "ultimo_estado": "confirmed",
-        "dias": [
-          {
-            "fecha": "2026-08-05",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-06",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-07",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-08",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-09",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-11",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "alerta regional persistente. Policía reportó cierres totales y pasos restringidos en corredores de Caldas, Tolima, Quindío y Valle; el texto visible incluye Pereira–Chinchiná km 22-24. DITRA reportó cierre total en Caldas, aunque parte del detalle interno está en imagen no OCR."
-            ]
-          }
-        ]
-      },
-      {
         "corredor": "Pereira – Chinchiná (Caldas) — km 22–24",
         "dias_confirmados": 1,
         "dias_vigilancia": 0,
@@ -3238,77 +3148,6 @@
         ]
       },
       {
-        "corredor": "Manizales–Fresno",
-        "dias_confirmados": 1,
-        "dias_vigilancia": 0,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-08-11T07:00:00",
-        "ultimo_estado": "confirmed",
-        "dias": [
-          {
-            "fecha": "2026-08-05",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-06",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-07",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-08",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-09",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-11",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "cierre total persistente en KM 36 / sector Cerro Bravo según Invías, con recomendación de abstenerse de transitar. DITRA y Policía sostienen afectaciones en Caldas."
-            ]
-          }
-        ]
-      },
-      {
         "corredor": "Manizales – Fresno (Caldas–Tolima)",
         "dias_confirmados": 1,
         "dias_vigilancia": 0,
@@ -3446,77 +3285,6 @@
             "severidad_maxima": "critical",
             "resumenes": [
               "cierre total persistente en KM 55+000 según Invías; DITRA confirmó cierres totales en Valle. No hay en el insumo web un boletín más reciente que desplace esa lectura X."
-            ]
-          }
-        ]
-      },
-      {
-        "corredor": "Buga–Buenaventura",
-        "dias_confirmados": 1,
-        "dias_vigilancia": 0,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-08-11T07:00:00",
-        "ultimo_estado": "confirmed",
-        "dias": [
-          {
-            "fecha": "2026-08-05",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-06",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-07",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-08",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-09",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-11",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "alerta crítica persistente. ANI reportó en X cierre total y evacuación en PR 71 el 10-ago; DITRA reportó cierres totales en Valle. La web oficial de ANI detalla afectaciones en PR 69+400, 61+300, 60+300, 60+000, 58+000, 53+100, 53+000 y Buenaventura PR 2+900, con inspección, remoción de material y habilitación progresiva, pero el insumo AM no trae reapertura total del corredor."
             ]
           }
         ]
@@ -4414,6 +4182,79 @@
         ]
       },
       {
+        "corredor": "Calarcá–Ibagué",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 2,
+        "severidad_maxima": "medium",
+        "ultima_observacion": "2026-08-11T12:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [
+              "AM",
+              "MD"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "medium",
+            "resumenes": [
+              "evolutivo y restringido, no cierre total simple. Invías informó el 10-ago que el Cruce de La Línea estaba habilitado con restricciones de movilidad y paso a un carril en algunos sectores. DITRA reportó afectaciones en Tolima y Quindío, pero varios puntos están en imágenes no OCR. La web oficial de ANI agrega que en IP GICA hubo atención con maquinaria y operación a dos carriles en PR 54, PR 55, PR 77 y PR 11+600.",
+              "habilitación con restricciones y paso a un carril en algunos sectores, según Invías. ANI web documenta operación a dos carriles en PR 54, PR 55 y PR 77 después de maquinaria, pero ese parte es del 10 de agosto y no fija el estado MD completo. No debe tratarse como cierre total uniforme ni como normalización general."
+            ]
+          }
+        ]
+      },
+      {
         "corredor": "Villavicencio–Puerto López–Puerto Gaitán, río Metica PR03+400",
         "dias_confirmados": 1,
         "dias_vigilancia": 0,
@@ -4907,77 +4748,6 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Calarcá–Ibagué",
-        "dias_confirmados": 1,
-        "dias_vigilancia": 0,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "medium",
-        "ultima_observacion": "2026-08-11T07:00:00",
-        "ultimo_estado": "confirmed",
-        "dias": [
-          {
-            "fecha": "2026-08-05",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-06",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-07",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-08",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-09",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-11",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "evolutivo y restringido, no cierre total simple. Invías informó el 10-ago que el Cruce de La Línea estaba habilitado con restricciones de movilidad y paso a un carril en algunos sectores. DITRA reportó afectaciones en Tolima y Quindío, pero varios puntos están en imágenes no OCR. La web oficial de ANI agrega que en IP GICA hubo atención con maquinaria y operación a dos carriles en PR 54, PR 55, PR 77 y PR 11+600."
-            ]
           }
         ]
       },
@@ -7573,6 +7343,77 @@
         ]
       },
       {
+        "corredor": "San Roque–Bosconia",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-08-11T12:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "queda en radar por verificar. La concesión publicó el 5 de agosto un cierre por bloqueo comunitario en PR 20+500 RN 4516; una señal ciudadana nocturna menciona cierre en Bosconia sin motivo. No hay actualización MD de autoridad o concesión que confirme vigencia."
+            ]
+          }
+        ]
+      },
+      {
         "corredor": "Río Metica, Puerto López–Puerto Gaitán",
         "dias_confirmados": 0,
         "dias_vigilancia": 1,
@@ -7782,6 +7623,77 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          }
+        ]
+      },
+      {
+        "corredor": "Quibdó–Pereira",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-08-11T12:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "MinTransporte reporta paso habilitado a un carril, con trabajos en curso para recuperar la operación total. Es habilitación parcial, no normalización completa."
+            ]
           }
         ]
       },
@@ -9632,6 +9544,77 @@
         ]
       },
       {
+        "corredor": "Bogotá–Girardot: túnel Sumapaz y puente Mariano Ospina",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-08-11T12:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "ViaSumapaz reporta operación normal del túnel Sumapaz después de su rehabilitación. El puente Mariano Ospina conserva el antecedente de cierre preventivo para inspección, sin actualización oficial MD que confirme reapertura o daño estructural. La señal de un puente en La Victoria–La Unión no se identifica automáticamente con Mariano Ospina."
+            ]
+          }
+        ]
+      },
+      {
         "corredor": "Avenida Mirolindo, Ibagué",
         "dias_confirmados": 0,
         "dias_vigilancia": 1,
@@ -9914,6 +9897,77 @@
             "resumenes": []
           }
         ]
+      },
+      {
+        "corredor": "Armenia–Montenegro y Quindío regional",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-08-11T12:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-08-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "BluRadio reporta un carril cerrado por deslizamiento en Armenia–Montenegro. Quimbaya exacto no tuvo rastro limpio en X App-Only. Los PR internos de DITRA no son legibles en las imágenes recuperadas."
+            ]
+          }
+        ]
       }
     ]
   },
@@ -9930,185 +9984,110 @@
         "resueltos": 0,
         "por_verificar": 3
       }
+    },
+    {
+      "cut_id": "2026-08-11-md",
+      "hora": "12:00",
+      "ventana": "MD",
+      "tipo": "corte_final",
+      "descripcion": "0 nuevas; 5 persistentes; 0 resueltas; 4 por verificar.",
+      "conteos": {
+        "nuevos": 0,
+        "persistentes": 5,
+        "resueltos": 0,
+        "por_verificar": 4
+      }
     }
   ],
   "fuentes": [
     {
-      "id": "src-92dee761c22d7b6c14065c8c",
-      "nombre": "Fuente ControlT solo detección inicial: https://risk.controlt.io/map",
-      "url": "https://risk.controlt.io/map",
-      "fortaleza": "media",
-      "consultada_en": "2026-08-11T07:00:00",
+      "id": "src-f0ad08157e614328ea44c4fa",
+      "nombre": "Fuentes: https://x.com/BluRadioCo/status/2087213955794022487; https://x.com/TransitoPolicia/status/2086904967923716566",
+      "url": "https://x.com/BluRadioCo/status/2087213955794022487",
+      "fortaleza": "social",
+      "consultada_en": "2026-08-11T12:00:00",
       "eventos": [
-        "evt-022fb69f79d5f3b78796"
+        "evt-4470ca4276d1e8498413"
       ]
     },
     {
-      "id": "src-61dd6a58ca5fff278ad5f660",
-      "nombre": "Fuente X: https://x.com/ANI_Colombia/status/2086813129153892625",
-      "url": "https://x.com/ANI_Colombia/status/2086813129153892625",
-      "fortaleza": "official",
-      "consultada_en": "2026-08-11T07:00:00",
-      "eventos": [
-        "evt-022fb69f79d5f3b78796"
-      ]
-    },
-    {
-      "id": "src-5472fde687ceff2242f1bf25",
-      "nombre": "Fuente X: https://x.com/InviasOficial/status/2086827996451664200",
-      "url": "https://x.com/InviasOficial/status/2086827996451664200",
-      "fortaleza": "official",
-      "consultada_en": "2026-08-11T07:00:00",
-      "eventos": [
-        "evt-11d87799a57fd1be57a6"
-      ]
-    },
-    {
-      "id": "src-89dd70cfe152a72c5d3ba0be",
-      "nombre": "Fuente X: https://x.com/TransitoPolicia/status/2086905880457408946",
-      "url": "https://x.com/TransitoPolicia/status/2086905880457408946",
-      "fortaleza": "official",
-      "consultada_en": "2026-08-11T07:00:00",
-      "eventos": [
-        "evt-11d87799a57fd1be57a6",
-        "evt-6fe0177e2406d0cfecf8"
-      ]
-    },
-    {
-      "id": "src-499cdf4b25e14b94bc8a70fe",
-      "nombre": "Fuente web solo antecedente, no usada para mover estado AM: https://www.invias.gov.co/publicaciones/9487/invias-informa-cierre-preventivo-en-la-via-cali-loboguerrero-por-condiciones-de-riesgo/",
-      "url": "https://www.invias.gov.co/publicaciones/9487/invias-informa-cierre-preventivo-en-la-via-cali-loboguerrero-por-condiciones-de-riesgo/",
-      "fortaleza": "official",
-      "consultada_en": "2026-08-11T07:00:00",
-      "eventos": [
-        "evt-11d87799a57fd1be57a6"
-      ]
-    },
-    {
-      "id": "src-ed90b837763a233edd8708bc",
-      "nombre": "Fuente X: https://x.com/PoliciaColombia/status/2086863458000114020",
-      "url": "https://x.com/PoliciaColombia/status/2086863458000114020",
-      "fortaleza": "official",
-      "consultada_en": "2026-08-11T07:00:00",
-      "eventos": [
-        "evt-479ffb433d6db4bf9636",
-        "evt-5671f00604c0a5d416d6",
-        "evt-b8d2d87ec06b4f307e9b"
-      ]
-    },
-    {
-      "id": "src-8053fd4dc8e2b26a273c8ce7",
-      "nombre": "Fuente X: https://x.com/TransitoPolicia/status/2086904967923716566",
-      "url": "https://x.com/TransitoPolicia/status/2086904967923716566",
-      "fortaleza": "official",
-      "consultada_en": "2026-08-11T07:00:00",
-      "eventos": [
-        "evt-479ffb433d6db4bf9636",
-        "evt-4a7db276382c6d4b5f19"
-      ]
-    },
-    {
-      "id": "src-bd71cb2d6a7ae1963ef3652d",
-      "nombre": "Fuente X: https://x.com/InviasOficial/status/2086899350932734358",
+      "id": "src-5cd1fd57b25a548dc77e195c",
+      "nombre": "Fuentes: https://x.com/InviasOficial/status/2086899350932734358; https://x.com/TransitoPolicia/status/2086905667248394639; https://x.com/TransitoPolicia/status/2086904967923716566; https://x.com/elespectador/status/2087147282797879350; https://www.ani.gov.co/w/cuatro-corredores-viales-concesionados-presentaron-afectaciones-y-activaron-protocolos-de-seguridad-por-eventos-sismol%C3%B3gicos",
       "url": "https://x.com/InviasOficial/status/2086899350932734358",
       "fortaleza": "official",
-      "consultada_en": "2026-08-11T07:00:00",
+      "consultada_en": "2026-08-11T12:00:00",
       "eventos": [
         "evt-4a7db276382c6d4b5f19"
       ]
     },
     {
-      "id": "src-09ee35f7af773a61f1345a54",
-      "nombre": "Fuente X: https://x.com/TransitoPolicia/status/2086905667248394639",
-      "url": "https://x.com/TransitoPolicia/status/2086905667248394639",
+      "id": "src-2eec7cc43a2ba56883d8bccb",
+      "nombre": "Fuentes: https://x.com/PoliciaColombia/status/2086863458000114020; https://x.com/TransitoPolicia/status/2086864998832156741; https://www.ani.gov.co/w/cuatro-corredores-viales-concesionados-presentaron-afectaciones-y-activaron-protocolos-de-seguridad-por-eventos-sismol%C3%B3gicos",
+      "url": "https://x.com/PoliciaColombia/status/2086863458000114020",
       "fortaleza": "official",
-      "consultada_en": "2026-08-11T07:00:00",
+      "consultada_en": "2026-08-11T12:00:00",
       "eventos": [
-        "evt-4a7db276382c6d4b5f19"
+        "evt-5671f00604c0a5d416d6"
       ]
     },
     {
-      "id": "src-03d505d69b5fa9ff32e64ccd",
-      "nombre": "Fuente web oficial: https://www.ani.gov.co/w/cuatro-corredores-viales-concesionados-presentaron-afectaciones-y-activaron-protocolos-de-seguridad-por-eventos-sismol%C3%B3gicos",
-      "url": "https://www.ani.gov.co/w/cuatro-corredores-viales-concesionados-presentaron-afectaciones-y-activaron-protocolos-de-seguridad-por-eventos-sismol%C3%B3gicos",
-      "fortaleza": "official",
-      "consultada_en": "2026-08-11T07:00:00",
-      "eventos": [
-        "evt-4a7db276382c6d4b5f19",
-        "evt-5671f00604c0a5d416d6",
-        "evt-6fe0177e2406d0cfecf8",
-        "evt-76c1159007cb97b2575b"
-      ]
-    },
-    {
-      "id": "src-7c4882ca10fbf0ec75adadb5",
-      "nombre": "Fuente X: https://x.com/TransitoPolicia/status/2086864998832156741",
-      "url": "https://x.com/TransitoPolicia/status/2086864998832156741",
-      "fortaleza": "official",
-      "consultada_en": "2026-08-11T07:00:00",
-      "eventos": [
-        "evt-5671f00604c0a5d416d6",
-        "evt-b8d2d87ec06b4f307e9b"
-      ]
-    },
-    {
-      "id": "src-33614b0f02c0397cc37a5992",
-      "nombre": "Fuente X antecedente nocturno: https://x.com/CoviandinaSAS/status/2087014590710202836",
-      "url": "https://x.com/CoviandinaSAS/status/2087014590710202836",
+      "id": "src-9122b9e9317598ab6e40459f",
+      "nombre": "Fuentes: https://x.com/CoviandinaSAS/status/2087222390463828314; https://x.com/CoviandinaSAS/status/2087183393943326914; https://x.com/CoviandinaSAS/status/2087150193326141757; https://coviandina.com/intervenciones-en-la-via/actividades-con-intervencion-sobre-el-corredor-vial-desde-el-10-hasta-el-0",
+      "url": "https://x.com/CoviandinaSAS/status/2087222390463828314",
       "fortaleza": "social",
-      "consultada_en": "2026-08-11T07:00:00",
+      "consultada_en": "2026-08-11T12:00:00",
       "eventos": [
         "evt-6276ddf45747b9583d4b"
       ]
     },
     {
-      "id": "src-0be518f9e82968c9ae331d7d",
-      "nombre": "Fuente X: https://x.com/CoviandinaSAS/status/2087118367647736241",
-      "url": "https://x.com/CoviandinaSAS/status/2087118367647736241",
-      "fortaleza": "social",
-      "consultada_en": "2026-08-11T07:00:00",
-      "eventos": [
-        "evt-6276ddf45747b9583d4b"
-      ]
-    },
-    {
-      "id": "src-7012d866770b1199ae9049e7",
-      "nombre": "Fuente X: https://x.com/CoviandinaSAS/status/2087132945655931337",
-      "url": "https://x.com/CoviandinaSAS/status/2087132945655931337",
-      "fortaleza": "social",
-      "consultada_en": "2026-08-11T07:00:00",
-      "eventos": [
-        "evt-6276ddf45747b9583d4b"
-      ]
-    },
-    {
-      "id": "src-fddad753236d7c45ef807eef",
-      "nombre": "Fuente web de contexto, no normalización: https://coviandina.com/intervenciones-en-la-via/actividades-con-intervencion-sobre-el-corredor-vial-desde-el-10-hasta-el-0",
-      "url": "https://coviandina.com/intervenciones-en-la-via/actividades-con-intervencion-sobre-el-corredor-vial-desde-el-10-hasta-el-0",
+      "id": "src-f01433497b7e4aea29f172a2",
+      "nombre": "Fuentes: https://x.com/CaminoPacifico/status/2087222933957611860; https://x.com/CaminoPacifico/status/2087197224094630360; https://x.com/MinTransporteCo/status/2087170770959007920; https://x.com/InviasOficial/status/2086827996451664200; https://x.com/TransitoPolicia/status/2087219878658793935; https://www.ani.gov.co/w/cuatro-corredores-viales-concesionados-presentaron-afectaciones-y-activaron-protocolos-de-seguridad-por-eventos-sismol%C3%B3gicos",
+      "url": "https://x.com/CaminoPacifico/status/2087222933957611860",
       "fortaleza": "official",
-      "consultada_en": "2026-08-11T07:00:00",
-      "eventos": [
-        "evt-6276ddf45747b9583d4b"
-      ]
-    },
-    {
-      "id": "src-04d81422adc3db70655e838b",
-      "nombre": "Fuente X: https://x.com/ANI_Colombia/status/2086815580338684107",
-      "url": "https://x.com/ANI_Colombia/status/2086815580338684107",
-      "fortaleza": "official",
-      "consultada_en": "2026-08-11T07:00:00",
+      "consultada_en": "2026-08-11T12:00:00",
       "eventos": [
         "evt-6fe0177e2406d0cfecf8"
       ]
     },
     {
-      "id": "src-221ff9c4cdfa192c8812448e",
-      "nombre": "Fuente X: https://x.com/InviasOficial/status/2086827760677277998",
+      "id": "src-1fd014510893ece8dcd4fbe2",
+      "nombre": "Fuentes: https://x.com/rutadelsoltram3/status/2085047859871646035; https://x.com/Mi_carro_Yyo/status/2087021697849332132",
+      "url": "https://x.com/rutadelsoltram3/status/2085047859871646035",
+      "fortaleza": "social",
+      "consultada_en": "2026-08-11T12:00:00",
+      "eventos": [
+        "evt-b6f4341e88d8630ee9a0"
+      ]
+    },
+    {
+      "id": "src-62a8e966f8ae2b28ecd76af9",
+      "nombre": "Fuentes: https://x.com/InviasOficial/status/2086827760677277998; https://x.com/PoliciaColombia/status/2086863458000114020; https://x.com/TransitoPolicia/status/2086864998832156741",
       "url": "https://x.com/InviasOficial/status/2086827760677277998",
       "fortaleza": "official",
-      "consultada_en": "2026-08-11T07:00:00",
+      "consultada_en": "2026-08-11T12:00:00",
       "eventos": [
         "evt-b8d2d87ec06b4f307e9b"
+      ]
+    },
+    {
+      "id": "src-6c7293401ff4b88a83ceb3de",
+      "nombre": "Fuentes: https://x.com/ViaSumapaz/status/2086929771645075497; https://x.com/ANI_Colombia/status/2086813129153892625; https://x.com/Mi_carro_Yyo/status/2087218756619567404",
+      "url": "https://x.com/ViaSumapaz/status/2086929771645075497",
+      "fortaleza": "social",
+      "consultada_en": "2026-08-11T12:00:00",
+      "eventos": [
+        "evt-e3cd75c206af38607b81"
+      ]
+    },
+    {
+      "id": "src-a2d64678044bb5446863e513",
+      "nombre": "Fuentes: https://x.com/MinTransporteCo/status/2087218802266173511",
+      "url": "https://x.com/MinTransporteCo/status/2087218802266173511",
+      "fortaleza": "official",
+      "consultada_en": "2026-08-11T12:00:00",
+      "eventos": [
+        "evt-e5133c086b4b880ca816"
       ]
     }
   ]
