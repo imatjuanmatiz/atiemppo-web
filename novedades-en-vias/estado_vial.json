@@ -2,66 +2,55 @@
   "schema_version": "1.1",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-08-12-md",
+  "cut_id": "2026-08-12-pm",
   "fecha": "2026-08-12",
-  "ventana": "MD",
-  "hora": "12:00",
-  "generado_en": "2026-08-12T12:00:00",
-  "artefacto_fuente": "2026-08-12-editor-eldato-version-vias-colombia-md.md",
+  "ventana": "PM",
+  "hora": "17:00",
+  "generado_en": "2026-08-12T17:00:00",
+  "artefacto_fuente": "2026-08-12-editor-eldato-version-vias-colombia-pm.md",
   "alertas_inmediatas": [
     {
-      "id": "alert-evt-3a4dcaa8ee34be3d640c",
+      "id": "alert-evt-d7d0603abe974664eb4c",
       "nivel": "critical",
-      "titulo": "cierre total · Bogotá–Villavicencio — túneles y puntos de mantenimiento",
-      "mensaje": "reducciones de carril y pasos alternos en túneles Mesa Grande, Nuevo Quebradablanca, Monterredondo y La Santandereana, y en K0+000, K31+640, K58+000, K73+600 y K74+000. No es cierre total del corredor.",
-      "event_id": "evt-3a4dcaa8ee34be3d640c",
-      "corredor": "Bogotá–Villavicencio — túneles y puntos de mantenimiento",
+      "titulo": "cierre total · Bogotá–Villavicencio — mantenimiento y restricciones operativas",
+      "mensaje": "Coviandina reporta paso bidireccional en K18+300–K19+000, reducciones, cierre de carril derecho en K36+500 y pasos a un carril en túnel Quebradablanca y K69+350, además de otros puntos del parte PM. No es cierre total del corredor.",
+      "event_id": "evt-d7d0603abe974664eb4c",
+      "corredor": "Bogotá–Villavicencio — mantenimiento y restricciones operativas",
       "fuente_ids": [
-        "src-f79f62262754239ccd9c35ab"
+        "src-7b4e10d912c64f9b58a84bd3"
       ]
     },
     {
       "id": "alert-evt-39db832b543cca8d7b0b",
       "nivel": "critical",
       "titulo": "cierre total · La Unión–La Victoria — puente Mariano Ospina",
-      "mensaje": "el puente está cerrado para inspección según ANI; el tablero DITRA del 11 de agosto lo registra como cierre total por caída. La evidencia no permite afirmar cierre total de todo el corredor ni confirmar colapso como hecho independiente.",
+      "mensaje": "cierre del puente reforzado por fuente territorial. La Gobernación del Valle reporta fisuras y riesgo de colapso; DITRA lo había registrado como cierre total y una señal X PM indica que no hay flujo vehicular. No hay reapertura ni ventana de atención confirmada.",
       "event_id": "evt-39db832b543cca8d7b0b",
       "corredor": "La Unión–La Victoria — puente Mariano Ospina",
       "fuente_ids": [
-        "src-ae4c998c9cd694c6130b3558"
+        "src-102cd492cceaf4284ad2bc10"
       ]
     },
     {
-      "id": "alert-evt-e8275f78cb276fbb2f84",
+      "id": "alert-evt-9b4dfa38108e8451afe6",
       "nivel": "critical",
-      "titulo": "cierre total · Manizales–Fresno — Herveo, último DITRA localizado",
-      "mensaje": "cierre total en K36+800 y K40+300 según el tablero DITRA del 11 de agosto, publicado a las 20:17 COT. Es el último estado X localizado, no un parte fresco del MD.",
-      "event_id": "evt-e8275f78cb276fbb2f84",
-      "corredor": "Manizales–Fresno — Herveo, último DITRA localizado",
+      "titulo": "cierre total · Pereira–Chinchiná — K22–K24",
+      "mensaje": "cierre total registrado en el último tablero DITRA localizado del 11 de agosto; no hay parte PM nuevo. La antigüedad impide presentarlo como estado PM confirmado y tampoco permite declarar reapertura.",
+      "event_id": "evt-9b4dfa38108e8451afe6",
+      "corredor": "Pereira–Chinchiná — K22–K24",
       "fuente_ids": [
-        "src-f0612e9a6cefd85f371f493d"
+        "src-748ece7f780506eb5b5c392a"
       ]
     },
     {
-      "id": "alert-evt-7b5d564ee40484fc9579",
-      "nivel": "critical",
-      "titulo": "cierre total · Pereira–Chinchiná — K22–K24, último DITRA localizado",
-      "mensaje": "cierre total en el tablero DITRA del 11 de agosto. No se afirma que siga vigente solo porque no apareció un post posterior; tampoco se declara reapertura.",
-      "event_id": "evt-7b5d564ee40484fc9579",
-      "corredor": "Pereira–Chinchiná — K22–K24, último DITRA localizado",
-      "fuente_ids": [
-        "src-66ea0c0a98b779aeabda8463"
-      ]
-    },
-    {
-      "id": "alert-evt-9272d050b55ad17cc91f",
+      "id": "alert-evt-983ce7d9dabb58614eba",
       "nivel": "high",
-      "titulo": "cierre parcial · Armenia–Montenegro — K3+900, último DITRA localizado",
-      "mensaje": "cierre parcial registrado en el tablero DITRA del 11 de agosto; sin post posterior con estado puntual.",
-      "event_id": "evt-9272d050b55ad17cc91f",
-      "corredor": "Armenia–Montenegro — K3+900, último DITRA localizado",
+      "titulo": "cierre parcial · Armenia–Montenegro — K3+900",
+      "mensaje": "cierre parcial registrado en el tablero DITRA del 11 de agosto; no hay publicación PM con estado puntual, sentido o carril actualizado.",
+      "event_id": "evt-983ce7d9dabb58614eba",
+      "corredor": "Armenia–Montenegro — K3+900",
       "fuente_ids": [
-        "src-3f65984ddce04e5965e291f1"
+        "src-fed28a7db72edc425f7264bc"
       ]
     }
   ],
@@ -74,124 +63,131 @@
     ],
     "ventanas_recibidas": [
       "AM",
-      "MD"
+      "MD",
+      "PM"
     ],
-    "eventos_confirmados": 6,
-    "eventos_vigilancia": 7,
-    "pendientes_georreferencia": 13,
+    "eventos_confirmados": 5,
+    "eventos_vigilancia": 10,
+    "pendientes_georreferencia": 15,
     "fuentes": [
       {
-        "id": "src-87970e240a8994bc6ba64527",
-        "nombre": "Fuente con URL completa: https://risk.controlt.io/map ; https://x.com/RutaMagdalenaOf",
+        "id": "src-dc6f50fe2564d604427eb621",
+        "nombre": "Fuente con URL completa: https://x.com/PasaenBogota/status/2087639093651833194",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-12T12:00:00",
-        "nota": "Aporta evidencia a 3 evento(s) del corte."
-      },
-      {
-        "id": "src-ae4c998c9cd694c6130b3558",
-        "nombre": "Fuente con URL completa: https://x.com/ANI_Colombia/status/2086813129153892625 ; https://x.com/TransitoPolicia/status/2087347689591570498",
-        "estado": "consultada",
-        "ultima_consulta": "2026-08-12T12:00:00",
+        "ultima_consulta": "2026-08-12T17:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-f79f62262754239ccd9c35ab",
-        "nombre": "Fuente con URL completa: https://x.com/CoviandinaSAS/status/2087545020987375646",
-        "estado": "consultada",
-        "ultima_consulta": "2026-08-12T12:00:00",
-        "nota": "Aporta evidencia a 1 evento(s) del corte."
-      },
-      {
-        "id": "src-f94b19cbaf92d4fb6b6a28f6",
-        "nombre": "Fuente con URL completa: https://x.com/CaminoPacifico/status/2087574628625481742 ; https://x.com/ANI_Colombia/status/2087556577939046909",
-        "estado": "consultada",
-        "ultima_consulta": "2026-08-12T12:00:00",
-        "nota": "Aporta evidencia a 1 evento(s) del corte."
-      },
-      {
-        "id": "src-66ea0c0a98b779aeabda8463",
-        "nombre": "Fuente con URL completa: https://x.com/PoliciaColombia/status/2086863458000114020 ; https://x.com/TransitoPolicia/status/2087347689591570498",
-        "estado": "consultada",
-        "ultima_consulta": "2026-08-12T12:00:00",
-        "nota": "Aporta evidencia a 1 evento(s) del corte."
-      },
-      {
-        "id": "src-d0f11b54bc6935261ffd1c10",
+        "id": "src-75aaea72d600fca0f6dabcb9",
         "nombre": "Fuente con URL completa: https://x.com/TransitoPolicia/status/2087347689591570498",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-12T12:00:00",
+        "ultima_consulta": "2026-08-12T17:00:00",
         "nota": "Aporta evidencia a 4 evento(s) del corte."
       },
       {
-        "id": "src-8343886de8e93b28aba2c234",
-        "nombre": "Fuente con URL completa: https://x.com/rutadelsoltram3/status/2085153223833227283",
+        "id": "src-e53d0c4cf2d1552d4c36e1bd",
+        "nombre": "Fuente con URL completa: https://x.com/Prensalibcasan/status/2087627568266526742 ; https://risk.controlt.io/map",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-12T12:00:00",
+        "ultima_consulta": "2026-08-12T17:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-7d160dae9553fb40309ea123",
-        "nombre": "Fuente con URL completa: https://x.com/ConLaPintada/status/2087218307438932287",
+        "id": "src-102cd492cceaf4284ad2bc10",
+        "nombre": "Fuente con URL completa: https://www.valledelcauca.gov.co/publicaciones/90190/gobernadora-confirma-afectaciones-en-la-victoria-615-viviendas-con-danos-hospital-en-revision-y-cierre-de-puente/ ; https://x.com/jotava16/status/2087640453399101676 ; https://x.com/TransitoPolicia/status/2087347689591570498",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-12T12:00:00",
+        "ultima_consulta": "2026-08-12T17:00:00",
+        "nota": "Aporta evidencia a 1 evento(s) del corte."
+      },
+      {
+        "id": "src-9162c3180df167109b026f98",
+        "nombre": "Fuente con URL completa: https://risk.controlt.io/map ; https://x.com/opinioncaribe/status/2087553829415915940",
+        "estado": "consultada",
+        "ultima_consulta": "2026-08-12T17:00:00",
+        "nota": "Aporta evidencia a 3 evento(s) del corte."
+      },
+      {
+        "id": "src-1f377b15695451d4d6d25fdc",
+        "nombre": "Fuente con URL completa: https://x.com/CaminoPacifico/status/2087574628625481742 ; https://x.com/ANI_Colombia/status/2087556577939046909 ; https://caminodelpacifico.com/documents/d/camino-pacifico/COMUNICADO%20OFICIAL%20UVCP%20-%20ESTADO%20DEL%20CORREDOR%2012%20DE%20AGOSTO",
+        "estado": "consultada",
+        "ultima_consulta": "2026-08-12T17:00:00",
+        "nota": "Aporta evidencia a 1 evento(s) del corte."
+      },
+      {
+        "id": "src-748ece7f780506eb5b5c392a",
+        "nombre": "Fuente con URL completa: https://x.com/PoliciaColombia/status/2086863458000114020 ; https://x.com/TransitoPolicia/status/2087347689591570498",
+        "estado": "consultada",
+        "ultima_consulta": "2026-08-12T17:00:00",
+        "nota": "Aporta evidencia a 1 evento(s) del corte."
+      },
+      {
+        "id": "src-7d438b2b576f01e63edd5861",
+        "nombre": "Fuente con URL completa: https://x.com/ConLaPintada/status/2087218307438932287 ; https://risk.controlt.io/map",
+        "estado": "consultada",
+        "ultima_consulta": "2026-08-12T17:00:00",
+        "nota": "Aporta evidencia a 1 evento(s) del corte."
+      },
+      {
+        "id": "src-7b4e10d912c64f9b58a84bd3",
+        "nombre": "Fuente con URL completa: https://x.com/CoviandinaSAS/status/2087655915159724140 ; https://coviandina.com/intervenciones-en-la-via/actividades-con-intervencion-sobre-el-corredor-vial-desde-el-10-hasta-el-0",
+        "estado": "consultada",
+        "ultima_consulta": "2026-08-12T17:00:00",
+        "nota": "Aporta evidencia a 1 evento(s) del corte."
+      },
+      {
+        "id": "src-934d534786468b4667e6048a",
+        "nombre": "Fuente con URL completa: https://x.com/RedDeApoyoSIC/status/2087610806917644641 ; https://x.com/lavozdepueblo1/status/2087648286530298148",
+        "estado": "consultada",
+        "ultima_consulta": "2026-08-12T17:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       }
     ]
   },
   "acciones_sugeridas": [
     {
-      "id": "action-evt-3a4dcaa8ee34be3d640c",
+      "id": "action-evt-d7d0603abe974664eb4c",
       "prioridad": "critical",
-      "corredor": "Bogotá–Villavicencio — túneles y puntos de mantenimiento",
-      "accion": "medio-alto por menor capacidad, velocidad variable y posibles tiempos de espera entre Bogotá y los Llanos.",
-      "event_id": "evt-3a4dcaa8ee34be3d640c",
-      "fundamento": "reducciones de carril y pasos alternos en túneles Mesa Grande, Nuevo Quebradablanca, Monterredondo y La Santandereana, y en K0+000, K31+640, K58+000, K73+600 y K74+000. No es cierre total del corredor."
+      "corredor": "Bogotá–Villavicencio — mantenimiento y restricciones operativas",
+      "accion": "menor capacidad, velocidad variable y posibles esperas entre Bogotá y los Llanos; programar tiempo adicional.",
+      "event_id": "evt-d7d0603abe974664eb4c",
+      "fundamento": "Coviandina reporta paso bidireccional en K18+300–K19+000, reducciones, cierre de carril derecho en K36+500 y pasos a un carril en túnel Quebradablanca y K69+350, además de otros puntos del parte PM. No es cierre total del corredor."
     },
     {
       "id": "action-evt-39db832b543cca8d7b0b",
       "prioridad": "critical",
       "corredor": "La Unión–La Victoria — puente Mariano Ospina",
-      "accion": "potencialmente alto si el cruce permanece cerrado; alcance, rutas alternas y condición estructural siguen abiertos.",
+      "accion": "alto en el punto del puente; revisar desvíos y no prometer tránsito por el cruce.",
       "event_id": "evt-39db832b543cca8d7b0b",
-      "fundamento": "el puente está cerrado para inspección según ANI; el tablero DITRA del 11 de agosto lo registra como cierre total por caída. La evidencia no permite afirmar cierre total de todo el corredor ni confirmar colapso como hecho independiente."
+      "fundamento": "cierre del puente reforzado por fuente territorial. La Gobernación del Valle reporta fisuras y riesgo de colapso; DITRA lo había registrado como cierre total y una señal X PM indica que no hay flujo vehicular. No hay reapertura ni ventana de atención confirmada."
     },
     {
-      "id": "action-evt-e8275f78cb276fbb2f84",
+      "id": "action-evt-9b4dfa38108e8451afe6",
       "prioridad": "critical",
-      "corredor": "Manizales–Fresno — Herveo, último DITRA localizado",
-      "accion": "alto para la conexión Eje Cafetero–Tolima; requiere desvíos y tiempos menos previsibles.",
-      "event_id": "evt-e8275f78cb276fbb2f84",
-      "fundamento": "cierre total en K36+800 y K40+300 según el tablero DITRA del 11 de agosto, publicado a las 20:17 COT. Es el último estado X localizado, no un parte fresco del MD."
+      "corredor": "Pereira–Chinchiná — K22–K24",
+      "accion": "alto para los flujos entre Caldas, Risaralda, Tolima y Quindío.",
+      "event_id": "evt-9b4dfa38108e8451afe6",
+      "fundamento": "cierre total registrado en el último tablero DITRA localizado del 11 de agosto; no hay parte PM nuevo. La antigüedad impide presentarlo como estado PM confirmado y tampoco permite declarar reapertura."
     },
     {
-      "id": "action-evt-7b5d564ee40484fc9579",
-      "prioridad": "critical",
-      "corredor": "Pereira–Chinchiná — K22–K24, último DITRA localizado",
-      "accion": "alto para flujos entre Caldas, Risaralda, Tolima y Quindío.",
-      "event_id": "evt-7b5d564ee40484fc9579",
-      "fundamento": "cierre total en el tablero DITRA del 11 de agosto. No se afirma que siga vigente solo porque no apareció un post posterior; tampoco se declara reapertura."
-    },
-    {
-      "id": "action-evt-9272d050b55ad17cc91f",
+      "id": "action-evt-983ce7d9dabb58614eba",
       "prioridad": "high",
-      "corredor": "Armenia–Montenegro — K3+900, último DITRA localizado",
+      "corredor": "Armenia–Montenegro — K3+900",
       "accion": "medio-alto por menor capacidad y posibles demoras en el Eje Cafetero.",
-      "event_id": "evt-9272d050b55ad17cc91f",
-      "fundamento": "cierre parcial registrado en el tablero DITRA del 11 de agosto; sin post posterior con estado puntual."
+      "event_id": "evt-983ce7d9dabb58614eba",
+      "fundamento": "cierre parcial registrado en el tablero DITRA del 11 de agosto; no hay publicación PM con estado puntual, sentido o carril actualizado."
     },
     {
-      "id": "action-evt-3c029dd8853c47fe1f73",
+      "id": "action-evt-71d5077ebd6776f3d2f6",
       "prioridad": "medium",
-      "corredor": "Buga–Buenaventura — PR 69+400, La Yolomba, Dagua",
-      "accion": "crítico: el paso controlado puede producir demoras y no garantiza continuidad sin espera hacia Buenaventura.",
-      "event_id": "evt-3c029dd8853c47fe1f73",
-      "fundamento": "vigente en X al corte: PARE y SIGA con habilitación en ambos sentidos; ANI reporta paso controlado para todo tipo de vehículos, incluida carga. No equivale a flujo libre ni a cierre total vigente en PR 69+400."
+      "corredor": "Buga–Buenaventura — La Yolomba, PR 69+400",
+      "accion": "tránsito posible, con espera y control. No extrapolar este estado a PR 69+600, km 50–55, km 58+700 ni a otros puntos de Dagua.",
+      "event_id": "evt-71d5077ebd6776f3d2f6",
+      "fundamento": "habilitada en ambos sentidos con PARE/SIGA y paso controlado para todo tipo de vehículos, incluida carga, según las publicaciones X del operador y ANI. La condición es localizada y no equivale a flujo libre, cierre resuelto ni normalización del corredor."
     }
   ],
   "eventos_confirmados": [
     {
-      "id": "evt-3a4dcaa8ee34be3d640c",
-      "corredor": "Bogotá–Villavicencio — túneles y puntos de mantenimiento",
+      "id": "evt-d7d0603abe974664eb4c",
+      "corredor": "Bogotá–Villavicencio — mantenimiento y restricciones operativas",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -200,10 +196,10 @@
       "tipo": "cierre_total",
       "severidad": "critical",
       "estado": "active",
-      "resumen": "reducciones de carril y pasos alternos en túneles Mesa Grande, Nuevo Quebradablanca, Monterredondo y La Santandereana, y en K0+000, K31+640, K58+000, K73+600 y K74+000. No es cierre total del corredor.",
-      "impacto_operativo": "medio-alto por menor capacidad, velocidad variable y posibles tiempos de espera entre Bogotá y los Llanos.",
+      "resumen": "Coviandina reporta paso bidireccional en K18+300–K19+000, reducciones, cierre de carril derecho en K36+500 y pasos a un carril en túnel Quebradablanca y K69+350, además de otros puntos del parte PM. No es cierre total del corredor.",
+      "impacto_operativo": "menor capacidad, velocidad variable y posibles esperas entre Bogotá y los Llanos; programar tiempo adicional.",
       "confianza": 0.5,
-      "actualizado_en": "2026-08-12T12:00:00",
+      "actualizado_en": "2026-08-12T17:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -212,13 +208,13 @@
       },
       "fuentes": [
         {
-          "id": "src-f79f62262754239ccd9c35ab",
-          "nombre": "Fuente con URL completa: https://x.com/CoviandinaSAS/status/2087545020987375646",
-          "url": "https://x.com/CoviandinaSAS/status/2087545020987375646",
+          "id": "src-7b4e10d912c64f9b58a84bd3",
+          "nombre": "Fuente con URL completa: https://x.com/CoviandinaSAS/status/2087655915159724140 ; https://coviandina.com/intervenciones-en-la-via/actividades-con-intervencion-sobre-el-corredor-vial-desde-el-10-hasta-el-0",
+          "url": "https://x.com/CoviandinaSAS/status/2087655915159724140",
           "fortaleza": "social",
           "publicada_en": null,
-          "consultada_en": "2026-08-12T12:00:00",
-          "evidencia": "reducciones de carril y pasos alternos en túneles Mesa Grande, Nuevo Quebradablanca, Monterredondo y La Santandereana, y en K0+000, K31+640, K58+000, K73+600 y K74+000. No es cierre total del corredor."
+          "consultada_en": "2026-08-12T17:00:00",
+          "evidencia": "Coviandina reporta paso bidireccional en K18+300–K19+000, reducciones, cierre de carril derecho en K36+500 y pasos a un carril en túnel Quebradablanca y K69+350, además de otros puntos del parte PM. No es cierre total del corredor."
         }
       ]
     },
@@ -233,10 +229,10 @@
       "tipo": "cierre_total",
       "severidad": "critical",
       "estado": "active",
-      "resumen": "el puente está cerrado para inspección según ANI; el tablero DITRA del 11 de agosto lo registra como cierre total por caída. La evidencia no permite afirmar cierre total de todo el corredor ni confirmar colapso como hecho independiente.",
-      "impacto_operativo": "potencialmente alto si el cruce permanece cerrado; alcance, rutas alternas y condición estructural siguen abiertos.",
-      "confianza": 0.9,
-      "actualizado_en": "2026-08-12T12:00:00",
+      "resumen": "cierre del puente reforzado por fuente territorial. La Gobernación del Valle reporta fisuras y riesgo de colapso; DITRA lo había registrado como cierre total y una señal X PM indica que no hay flujo vehicular. No hay reapertura ni ventana de atención confirmada.",
+      "impacto_operativo": "alto en el punto del puente; revisar desvíos y no prometer tránsito por el cruce.",
+      "confianza": 0.65,
+      "actualizado_en": "2026-08-12T17:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -245,19 +241,19 @@
       },
       "fuentes": [
         {
-          "id": "src-ae4c998c9cd694c6130b3558",
-          "nombre": "Fuente con URL completa: https://x.com/ANI_Colombia/status/2086813129153892625 ; https://x.com/TransitoPolicia/status/2087347689591570498",
-          "url": "https://x.com/ANI_Colombia/status/2086813129153892625",
-          "fortaleza": "official",
+          "id": "src-102cd492cceaf4284ad2bc10",
+          "nombre": "Fuente con URL completa: https://www.valledelcauca.gov.co/publicaciones/90190/gobernadora-confirma-afectaciones-en-la-victoria-615-viviendas-con-danos-hospital-en-revision-y-cierre-de-puente/ ; https://x.com/jotava16/status/2087640453399101676 ; https://x.com/TransitoPolicia/status/2087347689591570498",
+          "url": "https://www.valledelcauca.gov.co/publicaciones/90190/gobernadora-confirma-afectaciones-en-la-victoria-615-viviendas-con-danos-hospital-en-revision-y-cierre-de-puente/",
+          "fortaleza": "media",
           "publicada_en": null,
-          "consultada_en": "2026-08-12T12:00:00",
-          "evidencia": "el puente está cerrado para inspección según ANI; el tablero DITRA del 11 de agosto lo registra como cierre total por caída. La evidencia no permite afirmar cierre total de todo el corredor ni confirmar colapso como hecho independiente."
+          "consultada_en": "2026-08-12T17:00:00",
+          "evidencia": "cierre del puente reforzado por fuente territorial. La Gobernación del Valle reporta fisuras y riesgo de colapso; DITRA lo había registrado como cierre total y una señal X PM indica que no hay flujo vehicular. No hay reapertura ni ventana de atención confirmada."
         }
       ]
     },
     {
-      "id": "evt-e8275f78cb276fbb2f84",
-      "corredor": "Manizales–Fresno — Herveo, último DITRA localizado",
+      "id": "evt-9b4dfa38108e8451afe6",
+      "corredor": "Pereira–Chinchiná — K22–K24",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -266,10 +262,10 @@
       "tipo": "cierre_total",
       "severidad": "critical",
       "estado": "active",
-      "resumen": "cierre total en K36+800 y K40+300 según el tablero DITRA del 11 de agosto, publicado a las 20:17 COT. Es el último estado X localizado, no un parte fresco del MD.",
-      "impacto_operativo": "alto para la conexión Eje Cafetero–Tolima; requiere desvíos y tiempos menos previsibles.",
+      "resumen": "cierre total registrado en el último tablero DITRA localizado del 11 de agosto; no hay parte PM nuevo. La antigüedad impide presentarlo como estado PM confirmado y tampoco permite declarar reapertura.",
+      "impacto_operativo": "alto para los flujos entre Caldas, Risaralda, Tolima y Quindío.",
       "confianza": 0.9,
-      "actualizado_en": "2026-08-12T12:00:00",
+      "actualizado_en": "2026-08-12T17:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -278,52 +274,19 @@
       },
       "fuentes": [
         {
-          "id": "src-f0612e9a6cefd85f371f493d",
-          "nombre": "Fuente con URL completa: https://x.com/TransitoPolicia/status/2087347689591570498",
-          "url": "https://x.com/TransitoPolicia/status/2087347689591570498",
-          "fortaleza": "official",
-          "publicada_en": null,
-          "consultada_en": "2026-08-12T12:00:00",
-          "evidencia": "cierre total en K36+800 y K40+300 según el tablero DITRA del 11 de agosto, publicado a las 20:17 COT. Es el último estado X localizado, no un parte fresco del MD."
-        }
-      ]
-    },
-    {
-      "id": "evt-7b5d564ee40484fc9579",
-      "corredor": "Pereira–Chinchiná — K22–K24, último DITRA localizado",
-      "tramo": "Tramo por precisar",
-      "departamento": null,
-      "municipio": null,
-      "via": null,
-      "km": null,
-      "tipo": "cierre_total",
-      "severidad": "critical",
-      "estado": "active",
-      "resumen": "cierre total en el tablero DITRA del 11 de agosto. No se afirma que siga vigente solo porque no apareció un post posterior; tampoco se declara reapertura.",
-      "impacto_operativo": "alto para flujos entre Caldas, Risaralda, Tolima y Quindío.",
-      "confianza": 0.9,
-      "actualizado_en": "2026-08-12T12:00:00",
-      "georreferencia": {
-        "estado": "sin_georreferencia",
-        "lat": null,
-        "lon": null,
-        "etiqueta": "Sin coordenadas; marcador oculto"
-      },
-      "fuentes": [
-        {
-          "id": "src-66ea0c0a98b779aeabda8463",
+          "id": "src-748ece7f780506eb5b5c392a",
           "nombre": "Fuente con URL completa: https://x.com/PoliciaColombia/status/2086863458000114020 ; https://x.com/TransitoPolicia/status/2087347689591570498",
           "url": "https://x.com/PoliciaColombia/status/2086863458000114020",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-08-12T12:00:00",
-          "evidencia": "cierre total en el tablero DITRA del 11 de agosto. No se afirma que siga vigente solo porque no apareció un post posterior; tampoco se declara reapertura."
+          "consultada_en": "2026-08-12T17:00:00",
+          "evidencia": "cierre total registrado en el último tablero DITRA localizado del 11 de agosto; no hay parte PM nuevo. La antigüedad impide presentarlo como estado PM confirmado y tampoco permite declarar reapertura."
         }
       ]
     },
     {
-      "id": "evt-9272d050b55ad17cc91f",
-      "corredor": "Armenia–Montenegro — K3+900, último DITRA localizado",
+      "id": "evt-983ce7d9dabb58614eba",
+      "corredor": "Armenia–Montenegro — K3+900",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -332,10 +295,10 @@
       "tipo": "cierre_parcial",
       "severidad": "high",
       "estado": "active",
-      "resumen": "cierre parcial registrado en el tablero DITRA del 11 de agosto; sin post posterior con estado puntual.",
+      "resumen": "cierre parcial registrado en el tablero DITRA del 11 de agosto; no hay publicación PM con estado puntual, sentido o carril actualizado.",
       "impacto_operativo": "medio-alto por menor capacidad y posibles demoras en el Eje Cafetero.",
       "confianza": 0.9,
-      "actualizado_en": "2026-08-12T12:00:00",
+      "actualizado_en": "2026-08-12T17:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -344,19 +307,19 @@
       },
       "fuentes": [
         {
-          "id": "src-3f65984ddce04e5965e291f1",
+          "id": "src-fed28a7db72edc425f7264bc",
           "nombre": "Fuente con URL completa: https://x.com/TransitoPolicia/status/2087347689591570498",
           "url": "https://x.com/TransitoPolicia/status/2087347689591570498",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-08-12T12:00:00",
-          "evidencia": "cierre parcial registrado en el tablero DITRA del 11 de agosto; sin post posterior con estado puntual."
+          "consultada_en": "2026-08-12T17:00:00",
+          "evidencia": "cierre parcial registrado en el tablero DITRA del 11 de agosto; no hay publicación PM con estado puntual, sentido o carril actualizado."
         }
       ]
     },
     {
-      "id": "evt-3c029dd8853c47fe1f73",
-      "corredor": "Buga–Buenaventura — PR 69+400, La Yolomba, Dagua",
+      "id": "evt-71d5077ebd6776f3d2f6",
+      "corredor": "Buga–Buenaventura — La Yolomba, PR 69+400",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -365,10 +328,10 @@
       "tipo": "paso_controlado",
       "severidad": "medium",
       "estado": "active",
-      "resumen": "vigente en X al corte: PARE y SIGA con habilitación en ambos sentidos; ANI reporta paso controlado para todo tipo de vehículos, incluida carga. No equivale a flujo libre ni a cierre total vigente en PR 69+400.",
-      "impacto_operativo": "crítico: el paso controlado puede producir demoras y no garantiza continuidad sin espera hacia Buenaventura.",
+      "resumen": "habilitada en ambos sentidos con PARE/SIGA y paso controlado para todo tipo de vehículos, incluida carga, según las publicaciones X del operador y ANI. La condición es localizada y no equivale a flujo libre, cierre resuelto ni normalización del corredor.",
+      "impacto_operativo": "tránsito posible, con espera y control. No extrapolar este estado a PR 69+600, km 50–55, km 58+700 ni a otros puntos de Dagua.",
       "confianza": 0.9,
-      "actualizado_en": "2026-08-12T12:00:00",
+      "actualizado_en": "2026-08-12T17:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -377,33 +340,33 @@
       },
       "fuentes": [
         {
-          "id": "src-f94b19cbaf92d4fb6b6a28f6",
-          "nombre": "Fuente con URL completa: https://x.com/CaminoPacifico/status/2087574628625481742 ; https://x.com/ANI_Colombia/status/2087556577939046909",
+          "id": "src-1f377b15695451d4d6d25fdc",
+          "nombre": "Fuente con URL completa: https://x.com/CaminoPacifico/status/2087574628625481742 ; https://x.com/ANI_Colombia/status/2087556577939046909 ; https://caminodelpacifico.com/documents/d/camino-pacifico/COMUNICADO%20OFICIAL%20UVCP%20-%20ESTADO%20DEL%20CORREDOR%2012%20DE%20AGOSTO",
           "url": "https://x.com/CaminoPacifico/status/2087574628625481742",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-08-12T12:00:00",
-          "evidencia": "vigente en X al corte: PARE y SIGA con habilitación en ambos sentidos; ANI reporta paso controlado para todo tipo de vehículos, incluida carga. No equivale a flujo libre ni a cierre total vigente en PR 69+400."
+          "consultada_en": "2026-08-12T17:00:00",
+          "evidencia": "habilitada en ambos sentidos con PARE/SIGA y paso controlado para todo tipo de vehículos, incluida carga, según las publicaciones X del operador y ANI. La condición es localizada y no equivale a flujo libre, cierre resuelto ni normalización del corredor."
         }
       ]
     }
   ],
   "eventos_vigilancia": [
     {
-      "id": "evt-e6eaa6ed4b200e983d7e",
-      "corredor": "Buga — accidente frente a planta Solla, señal sin confirmación",
+      "id": "evt-05e34ef0327186f0375e",
+      "corredor": "Bogotá–Villavicencio — salida del túnel Boquerón",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
       "via": null,
       "km": null,
-      "tipo": "otro",
+      "tipo": "siniestro_vial",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "señal ControlT sin ubicación operativa, carril afectado, víctimas o duración confirmadas; la búsqueda X no produjo fuente oficial suficiente.",
-      "impacto_operativo": "indeterminado hasta precisar si afecta un corredor troncal y si hay cierre o manejo de tráfico.",
-      "confianza": 0.35,
-      "actualizado_en": "2026-08-12T12:00:00",
+      "resumen": "accidente reportado en X entre un tractocamión y una motocicleta, con posible retraso. Es una señal no oficial y no está confirmada por el operador, DITRA ni autoridad competente al corte PM.",
+      "impacto_operativo": "posible demora y regulación local; no declarar cierre, duración ni desvío.",
+      "confianza": 0.5,
+      "actualizado_en": "2026-08-12T17:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -412,13 +375,13 @@
       },
       "fuentes": [
         {
-          "id": "src-ede89e6ce9f9845778b8981c",
-          "nombre": "Fuente con URL completa: https://risk.controlt.io/map",
-          "url": "https://risk.controlt.io/map",
-          "fortaleza": "media",
+          "id": "src-dc6f50fe2564d604427eb621",
+          "nombre": "Fuente con URL completa: https://x.com/PasaenBogota/status/2087639093651833194",
+          "url": "https://x.com/PasaenBogota/status/2087639093651833194",
+          "fortaleza": "social",
           "publicada_en": null,
-          "consultada_en": "2026-08-12T12:00:00",
-          "evidencia": "señal ControlT sin ubicación operativa, carril afectado, víctimas o duración confirmadas; la búsqueda X no produjo fuente oficial suficiente."
+          "consultada_en": "2026-08-12T17:00:00",
+          "evidencia": "accidente reportado en X entre un tractocamión y una motocicleta, con posible retraso. Es una señal no oficial y no está confirmada por el operador, DITRA ni autoridad competente al corte PM."
         }
       ]
     },
@@ -430,13 +393,13 @@
       "municipio": null,
       "via": null,
       "km": null,
-      "tipo": "otro",
+      "tipo": "restriccion",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "el parte vigente de PR 69+400 no se extrapola a PR 79+200, PR 52+000 ni a los puntos del tablero DITRA. Cali–Loboguerrero K52+300, K36+100 y K37+600 aparecen como cierres totales en DITRA del 11 de agosto, sin actualización MD puntual.",
-      "impacto_operativo": "crítico para acceso a Buenaventura; no programar esos puntos como libres por la habilitación localizada en PR 69+400.",
+      "resumen": "el parte de PR 69+400 no resuelve otros puntos. El último tablero DITRA localizado, del 11 de agosto, conserva cierres o restricciones en varios km, incluidos puntos de Cali–Loboguerrero; no hay actualización PM granular para confirmar vigencia, reapertura o condición de paso.",
+      "impacto_operativo": "potencialmente alto para el acceso a Buenaventura; no programar estos puntos como libres por la habilitación de La Yolomba.",
       "confianza": 0.65,
-      "actualizado_en": "2026-08-12T12:00:00",
+      "actualizado_en": "2026-08-12T17:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -445,19 +408,19 @@
       },
       "fuentes": [
         {
-          "id": "src-d0f11b54bc6935261ffd1c10",
+          "id": "src-b6f110f5eb80c389d57dc1f4",
           "nombre": "Fuente con URL completa: https://x.com/TransitoPolicia/status/2087347689591570498",
           "url": "https://x.com/TransitoPolicia/status/2087347689591570498",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-08-12T12:00:00",
-          "evidencia": "el parte vigente de PR 69+400 no se extrapola a PR 79+200, PR 52+000 ni a los puntos del tablero DITRA. Cali–Loboguerrero K52+300, K36+100 y K37+600 aparecen como cierres totales en DITRA del 11 de agosto, sin actualización MD puntual."
+          "consultada_en": "2026-08-12T17:00:00",
+          "evidencia": "el parte de PR 69+400 no resuelve otros puntos. El último tablero DITRA localizado, del 11 de agosto, conserva cierres o restricciones en varios km, incluidos puntos de Cali–Loboguerrero; no hay actualización PM granular para confirmar vigencia, reapertura o condición de paso."
         }
       ]
     },
     {
       "id": "evt-a6b8551f58455e8c80cd",
-      "corredor": "La Pintada–Bolombolo — Conexión Pacífico 2",
+      "corredor": "La Pintada–Bolombolo — conexión Pacífico 2",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -466,10 +429,10 @@
       "tipo": "otro",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "cierres totales programados, no vigentes el 12 de agosto: 13 de agosto, K0+000–K25+850 en sentido La Pintada–Bolombolo; 14 de agosto, K25+850–K12+700 y K12+700–K42+050 según sentido. La apertura será escalonada al avance de la competencia.",
-      "impacto_operativo": "medio y planificable; exige ajustar itinerarios, ventanas de despacho y posibles desvíos.",
+      "resumen": "cierres totales programados para el 13 y 14 de agosto por la Vuelta a Colombia; no son una novedad vigente del corte PM del 12 de agosto.",
+      "impacto_operativo": "planificable, pero exige ajustar despachos, ventanas y desvíos.",
       "confianza": 0.5,
-      "actualizado_en": "2026-08-12T12:00:00",
+      "actualizado_en": "2026-08-12T17:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -478,19 +441,19 @@
       },
       "fuentes": [
         {
-          "id": "src-7d160dae9553fb40309ea123",
-          "nombre": "Fuente con URL completa: https://x.com/ConLaPintada/status/2087218307438932287",
+          "id": "src-7d438b2b576f01e63edd5861",
+          "nombre": "Fuente con URL completa: https://x.com/ConLaPintada/status/2087218307438932287 ; https://risk.controlt.io/map",
           "url": "https://x.com/ConLaPintada/status/2087218307438932287",
           "fortaleza": "social",
           "publicada_en": null,
-          "consultada_en": "2026-08-12T12:00:00",
-          "evidencia": "cierres totales programados, no vigentes el 12 de agosto: 13 de agosto, K0+000–K25+850 en sentido La Pintada–Bolombolo; 14 de agosto, K25+850–K12+700 y K12+700–K42+050 según sentido. La apertura será escalonada al avance de la competencia."
+          "consultada_en": "2026-08-12T17:00:00",
+          "evidencia": "cierres totales programados para el 13 y 14 de agosto por la Vuelta a Colombia; no son una novedad vigente del corte PM del 12 de agosto."
         }
       ]
     },
     {
-      "id": "evt-cf7ed3eb3eac9ed84f85",
-      "corredor": "Montenegro–Quimbaya — puntos DITRA del 11 de agosto",
+      "id": "evt-10534324744969d7ce7b",
+      "corredor": "Manizales–Fresno — Herveo",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -499,10 +462,10 @@
       "tipo": "otro",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "cierres totales y parciales en K4+800, K5, K5+700, K8+600, K10+600 y K12. La imagen no desagrega el tipo de cierre por cada km y no hay actualización MD puntual.",
-      "impacto_operativo": "medio-alto por capacidad incierta y posibles desvíos locales.",
+      "resumen": "último estado X localizado en el tablero DITRA del 11 de agosto: cierres o afectaciones en puntos de Herveo. No hubo publicación DITRA nueva en PM; no se presenta como actualización fresca ni se declara reapertura.",
+      "impacto_operativo": "alto para la conexión Eje Cafetero–Tolima; requiere revalidación antes de despacho.",
       "confianza": 0.65,
-      "actualizado_en": "2026-08-12T12:00:00",
+      "actualizado_en": "2026-08-12T17:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -511,13 +474,79 @@
       },
       "fuentes": [
         {
-          "id": "src-da81e4f40aa007b771010e41",
+          "id": "src-75aaea72d600fca0f6dabcb9",
           "nombre": "Fuente con URL completa: https://x.com/TransitoPolicia/status/2087347689591570498",
           "url": "https://x.com/TransitoPolicia/status/2087347689591570498",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-08-12T12:00:00",
-          "evidencia": "cierres totales y parciales en K4+800, K5, K5+700, K8+600, K10+600 y K12. La imagen no desagrega el tipo de cierre por cada km y no hay actualización MD puntual."
+          "consultada_en": "2026-08-12T17:00:00",
+          "evidencia": "último estado X localizado en el tablero DITRA del 11 de agosto: cierres o afectaciones en puntos de Herveo. No hubo publicación DITRA nueva en PM; no se presenta como actualización fresca ni se declara reapertura."
+        }
+      ]
+    },
+    {
+      "id": "evt-184807bf856194a3f9e9",
+      "corredor": "Marginal del Llano — después de Aguaclara, Casanare",
+      "tramo": "Tramo por precisar",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
+      "tipo": "siniestro_vial",
+      "severidad": "low",
+      "estado": "uncertain",
+      "resumen": "@Prensalibcasan reporta un siniestro con dos motociclistas y autoridades llegando. ControlT registra un accidente en Aguaclara–Villa Carola, pero con hora posterior y referencia de sentido diferente. La correspondencia es parcial; el punto, sentido, estado y código reportado no están confirmados.",
+      "impacto_operativo": "posible demora local; no estimar duración, cierre ni desvío.",
+      "confianza": 0.5,
+      "actualizado_en": "2026-08-12T17:00:00",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
+      "fuentes": [
+        {
+          "id": "src-e53d0c4cf2d1552d4c36e1bd",
+          "nombre": "Fuente con URL completa: https://x.com/Prensalibcasan/status/2087627568266526742 ; https://risk.controlt.io/map",
+          "url": "https://x.com/Prensalibcasan/status/2087627568266526742",
+          "fortaleza": "social",
+          "publicada_en": null,
+          "consultada_en": "2026-08-12T17:00:00",
+          "evidencia": "@Prensalibcasan reporta un siniestro con dos motociclistas y autoridades llegando. ControlT registra un accidente en Aguaclara–Villa Carola, pero con hora posterior y referencia de sentido diferente. La correspondencia es parcial; el punto, sentido, estado y código reportado no están confirmados."
+        }
+      ]
+    },
+    {
+      "id": "evt-a781b5a3986c6d0a0f50",
+      "corredor": "Montenegro–Quimbaya — puntos DITRA",
+      "tramo": "Tramo por precisar",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
+      "tipo": "otro",
+      "severidad": "low",
+      "estado": "uncertain",
+      "resumen": "el tablero DITRA del 11 de agosto registra cierres totales y parciales en K4+800, K5, K5+700, K8+600, K10+600 y K12. No hay actualización PM que desagregue el estado por km.",
+      "impacto_operativo": "capacidad incierta y posibles desvíos locales.",
+      "confianza": 0.65,
+      "actualizado_en": "2026-08-12T17:00:00",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
+      "fuentes": [
+        {
+          "id": "src-85f88e571758dc7685655add",
+          "nombre": "Fuente con URL completa: https://x.com/TransitoPolicia/status/2087347689591570498",
+          "url": "https://x.com/TransitoPolicia/status/2087347689591570498",
+          "fortaleza": "official",
+          "publicada_en": null,
+          "consultada_en": "2026-08-12T17:00:00",
+          "evidencia": "el tablero DITRA del 11 de agosto registra cierres totales y parciales en K4+800, K5, K5+700, K8+600, K10+600 y K12. No hay actualización PM que desagregue el estado por km."
         }
       ]
     },
@@ -532,43 +561,10 @@
       "tipo": "bloqueo",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "histórico, no vigente confirmado. El último post localizado, del 5 de agosto, informó vía habilitada después de un bloqueo comunitario; no hay parte MD que confirme cierre, apertura o normalización actual.",
-      "impacto_operativo": "incierto; no asumir continuidad ni desvío sin parte reciente.",
-      "confianza": 0.5,
-      "actualizado_en": "2026-08-12T12:00:00",
-      "georreferencia": {
-        "estado": "sin_georreferencia",
-        "lat": null,
-        "lon": null,
-        "etiqueta": "Sin coordenadas; marcador oculto"
-      },
-      "fuentes": [
-        {
-          "id": "src-8343886de8e93b28aba2c234",
-          "nombre": "Fuente con URL completa: https://x.com/rutadelsoltram3/status/2085153223833227283",
-          "url": "https://x.com/rutadelsoltram3/status/2085153223833227283",
-          "fortaleza": "social",
-          "publicada_en": null,
-          "consultada_en": "2026-08-12T12:00:00",
-          "evidencia": "histórico, no vigente confirmado. El último post localizado, del 5 de agosto, informó vía habilitada después de un bloqueo comunitario; no hay parte MD que confirme cierre, apertura o normalización actual."
-        }
-      ]
-    },
-    {
-      "id": "evt-ece331f3e9f03e62369d",
-      "corredor": "San Roque–La Paz — Becerril, K57, señal sin confirmación",
-      "tramo": "Tramo por precisar",
-      "departamento": null,
-      "municipio": null,
-      "via": null,
-      "km": null,
-      "tipo": "bloqueo",
-      "severidad": "low",
-      "estado": "uncertain",
-      "resumen": "señal ControlT de bloqueo comunitario por falta de energía; no existe post X operativo verificable en el corte. No se presenta como cierre vigente.",
-      "impacto_operativo": "potencial, pero no cuantificable sin ubicación y duración confirmadas.",
+      "resumen": "señal histórica de ControlT sobre bloqueo comunitario; no hay post PM que confirme vigencia. El último antecedente X localizado informó vía habilitada el 5 de agosto, pero no confirma el estado del 12 de agosto.",
+      "impacto_operativo": "incierto; no asumir continuidad ni desvío.",
       "confianza": 0.35,
-      "actualizado_en": "2026-08-12T12:00:00",
+      "actualizado_en": "2026-08-12T17:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -577,19 +573,19 @@
       },
       "fuentes": [
         {
-          "id": "src-816bb74918b622e63e9f203f",
-          "nombre": "Fuente con URL completa: https://risk.controlt.io/map",
+          "id": "src-0558322b727847a62f8d7602",
+          "nombre": "Fuente con URL completa: https://risk.controlt.io/map ; https://x.com/rutadelsoltram3/status/2085153223833227283",
           "url": "https://risk.controlt.io/map",
           "fortaleza": "media",
           "publicada_en": null,
-          "consultada_en": "2026-08-12T12:00:00",
-          "evidencia": "señal ControlT de bloqueo comunitario por falta de energía; no existe post X operativo verificable en el corte. No se presenta como cierre vigente."
+          "consultada_en": "2026-08-12T17:00:00",
+          "evidencia": "señal histórica de ControlT sobre bloqueo comunitario; no hay post PM que confirme vigencia. El último antecedente X localizado informó vía habilitada el 5 de agosto, pero no confirma el estado del 12 de agosto."
         }
       ]
     },
     {
-      "id": "evt-2ff35a942fbed9bd74dd",
-      "corredor": "Tasajera — PR53, señal sin confirmación",
+      "id": "evt-694becd6c38469c492b4",
+      "corredor": "Tasajera — PR 53",
       "tramo": "Tramo por precisar",
       "departamento": null,
       "municipio": null,
@@ -598,10 +594,10 @@
       "tipo": "otro",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "@RutaMagdalenaOf devolvió cero resultados para la consulta dirigida; no hay confirmación X del cierre ControlT ni de su resolución. La ausencia de post no prueba normalización.",
-      "impacto_operativo": "por verificar; no modificar itinerarios únicamente con la señal no contrastada.",
+      "resumen": "ControlT mantiene una señal de cierre por manifestación relacionada con suministro de agua; no hubo publicación PM verificable de la concesión ni confirmación web. Un antecedente X sobre PR 59 habilitado corresponde a otro punto y no resuelve PR 53.",
+      "impacto_operativo": "potencial riesgo de cierre o desvío, sin vigencia operativa confirmada.",
       "confianza": 0.35,
-      "actualizado_en": "2026-08-12T12:00:00",
+      "actualizado_en": "2026-08-12T17:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -610,13 +606,79 @@
       },
       "fuentes": [
         {
-          "id": "src-87970e240a8994bc6ba64527",
-          "nombre": "Fuente con URL completa: https://risk.controlt.io/map ; https://x.com/RutaMagdalenaOf",
+          "id": "src-9162c3180df167109b026f98",
+          "nombre": "Fuente con URL completa: https://risk.controlt.io/map ; https://x.com/opinioncaribe/status/2087553829415915940",
           "url": "https://risk.controlt.io/map",
           "fortaleza": "media",
           "publicada_en": null,
-          "consultada_en": "2026-08-12T12:00:00",
-          "evidencia": "@RutaMagdalenaOf devolvió cero resultados para la consulta dirigida; no hay confirmación X del cierre ControlT ni de su resolución. La ausencia de post no prueba normalización."
+          "consultada_en": "2026-08-12T17:00:00",
+          "evidencia": "ControlT mantiene una señal de cierre por manifestación relacionada con suministro de agua; no hubo publicación PM verificable de la concesión ni confirmación web. Un antecedente X sobre PR 59 habilitado corresponde a otro punto y no resuelve PR 53."
+        }
+      ]
+    },
+    {
+      "id": "evt-ed828721f80d91526aed",
+      "corredor": "Yumbo–Mulaló — accidente reportado",
+      "tramo": "Tramo por precisar",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
+      "tipo": "otro",
+      "severidad": "low",
+      "estado": "uncertain",
+      "resumen": "cuentas no oficiales reportan colisión entre taxi y vehículo de carga. No hay confirmación oficial PM del punto exacto, heridos, carriles afectados ni circulación.",
+      "impacto_operativo": "posible afectación puntual y demora durante la atención del siniestro; no asignar duración.",
+      "confianza": 0.5,
+      "actualizado_en": "2026-08-12T17:00:00",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
+      "fuentes": [
+        {
+          "id": "src-934d534786468b4667e6048a",
+          "nombre": "Fuente con URL completa: https://x.com/RedDeApoyoSIC/status/2087610806917644641 ; https://x.com/lavozdepueblo1/status/2087648286530298148",
+          "url": "https://x.com/RedDeApoyoSIC/status/2087610806917644641",
+          "fortaleza": "social",
+          "publicada_en": null,
+          "consultada_en": "2026-08-12T17:00:00",
+          "evidencia": "cuentas no oficiales reportan colisión entre taxi y vehículo de carga. No hay confirmación oficial PM del punto exacto, heridos, carriles afectados ni circulación."
+        }
+      ]
+    },
+    {
+      "id": "evt-badcbf884d1bf02e98ae",
+      "corredor": "Yumbo–San Arcos — antes de planta Terpel",
+      "tramo": "Tramo por precisar",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
+      "tipo": "siniestro_vial",
+      "severidad": "low",
+      "estado": "uncertain",
+      "resumen": "ControlT registra un accidente entre vehículo de carga y taxi, con un herido reportado, pero no hay coincidencia X directa en PM. No debe usarse el accidente de Yumbo–Mulaló como confirmación de este tramo.",
+      "impacto_operativo": "indeterminado; no declarar cierre ni desvío.",
+      "confianza": 0.35,
+      "actualizado_en": "2026-08-12T17:00:00",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
+      "fuentes": [
+        {
+          "id": "src-202c432f75c829baa857ce45",
+          "nombre": "Fuente con URL completa: https://risk.controlt.io/map",
+          "url": "https://risk.controlt.io/map",
+          "fortaleza": "media",
+          "publicada_en": null,
+          "consultada_en": "2026-08-12T17:00:00",
+          "evidencia": "ControlT registra un accidente entre vehículo de carga y taxi, con un herido reportado, pero no hay coincidencia X directa en PM. No debe usarse el accidente de Yumbo–Mulaló como confirmación de este tramo."
         }
       ]
     }
@@ -2350,6 +2412,79 @@
         ]
       },
       {
+        "corredor": "La Unión–La Victoria — puente Mariano Ospina",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 2,
+        "severidad_maxima": "critical",
+        "ultima_observacion": "2026-08-12T17:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-12",
+            "ventanas": [
+              "MD",
+              "PM"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "el puente está cerrado para inspección según ANI; el tablero DITRA del 11 de agosto lo registra como cierre total por caída. La Gobernación del Valle confirma el 12 de agosto el cierre por fisuras y riesgo de colapso. La evidencia no permite extender el cierre a todo el corredor.",
+              "cierre del puente reforzado por fuente territorial. La Gobernación del Valle reporta fisuras y riesgo de colapso; DITRA lo había registrado como cierre total y una señal X PM indica que no hay flujo vehicular. No hay reapertura ni ventana de atención confirmada."
+            ]
+          }
+        ]
+      },
+      {
         "corredor": "La Lejía - Saravena",
         "dias_confirmados": 1,
         "dias_vigilancia": 0,
@@ -2780,6 +2915,77 @@
         ]
       },
       {
+        "corredor": "Pereira–Chinchiná — K22–K24",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "critical",
+        "ultima_observacion": "2026-08-12T17:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-12",
+            "ventanas": [
+              "PM"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "cierre total registrado en el último tablero DITRA localizado del 11 de agosto; no hay parte PM nuevo. La antigüedad impide presentarlo como estado PM confirmado y tampoco permite declarar reapertura."
+            ]
+          }
+        ]
+      },
+      {
         "corredor": "Pereira – Chinchiná (Caldas) — km 22–24",
         "dias_confirmados": 1,
         "dias_vigilancia": 0,
@@ -3131,77 +3337,6 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "La Unión–La Victoria — puente Mariano Ospina",
-        "dias_confirmados": 1,
-        "dias_vigilancia": 0,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-08-12T12:00:00",
-        "ultimo_estado": "confirmed",
-        "dias": [
-          {
-            "fecha": "2026-08-06",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-07",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-08",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-09",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-11",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-12",
-            "ventanas": [
-              "MD"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "el puente está cerrado para inspección según ANI; el tablero DITRA del 11 de agosto lo registra como cierre total por caída. La evidencia no permite afirmar cierre total de todo el corredor ni confirmar colapso como hecho independiente."
-            ]
           }
         ]
       },
@@ -3856,6 +3991,77 @@
             "severidad_maxima": "high",
             "resumenes": [
               "cierre parcial registrado en el tablero DITRA del 11 de agosto; sin post posterior con estado puntual."
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "Armenia–Montenegro — K3+900",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "high",
+        "ultima_observacion": "2026-08-12T17:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-12",
+            "ventanas": [
+              "PM"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "high",
+            "resumenes": [
+              "cierre parcial registrado en el tablero DITRA del 11 de agosto; no hay publicación PM con estado puntual, sentido o carril actualizado."
             ]
           }
         ]
@@ -4954,6 +5160,77 @@
         ]
       },
       {
+        "corredor": "Buga–Buenaventura — La Yolomba, PR 69+400",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "medium",
+        "ultima_observacion": "2026-08-12T17:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-12",
+            "ventanas": [
+              "PM"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "medium",
+            "resumenes": [
+              "habilitada en ambos sentidos con PARE/SIGA y paso controlado para todo tipo de vehículos, incluida carga, según las publicaciones X del operador y ANI. La condición es localizada y no equivale a flujo libre, cierre resuelto ni normalización del corredor."
+            ]
+          }
+        ]
+      },
+      {
         "corredor": "Armenia–La Línea–Cajamarca: km 47+420",
         "dias_confirmados": 1,
         "dias_vigilancia": 0,
@@ -5170,6 +5447,77 @@
             "severidad_maxima": "critical",
             "resumenes": [
               "reducciones de carril y pasos alternos en túneles Mesa Grande, Nuevo Quebradablanca, Monterredondo y La Santandereana, y en K0+000, K31+640, K58+000, K73+600 y K74+000. No es cierre total del corredor."
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "Bogotá–Villavicencio — mantenimiento y restricciones operativas",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "critical",
+        "ultima_observacion": "2026-08-12T17:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-12",
+            "ventanas": [
+              "PM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "Coviandina reporta paso bidireccional en K18+300–K19+000, reducciones, cierre de carril derecho en K36+500 y pasos a un carril en túnel Quebradablanca y K69+350, además de otros puntos del parte PM. No es cierre total del corredor."
             ]
           }
         ]
@@ -6312,6 +6660,79 @@
         ]
       },
       {
+        "corredor": "San Roque–Bosconia — PR20+500, La Aurora",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 2,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-08-12T17:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-12",
+            "ventanas": [
+              "MD",
+              "PM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "histórico, no vigente confirmado. El último post localizado, del 5 de agosto, informó vía habilitada después de un bloqueo comunitario; no hay parte MD que confirme cierre, apertura o normalización actual.",
+              "señal histórica de ControlT sobre bloqueo comunitario; no hay post PM que confirme vigencia. El último antecedente X localizado informó vía habilitada el 5 de agosto, pero no confirma el estado del 12 de agosto."
+            ]
+          }
+        ]
+      },
+      {
         "corredor": "Quindío — pasos a un carril (Armenia",
         "dias_confirmados": 0,
         "dias_vigilancia": 1,
@@ -6679,6 +7100,79 @@
         ]
       },
       {
+        "corredor": "Buga–Buenaventura — otros puntos Dagua",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 2,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-08-12T17:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-12",
+            "ventanas": [
+              "MD",
+              "PM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "el parte vigente de PR 69+400 no se extrapola a PR 79+200, PR 52+000 ni a los puntos del tablero DITRA. Cali–Loboguerrero K52+300, K36+100 y K37+600 aparecen como cierres totales en DITRA del 11 de agosto, sin actualización MD puntual.",
+              "el parte de PR 69+400 no resuelve otros puntos. El último tablero DITRA localizado, del 11 de agosto, conserva cierres o restricciones en varios km, incluidos puntos de Cali–Loboguerrero; no hay actualización PM granular para confirmar vigencia, reapertura o condición de paso."
+            ]
+          }
+        ]
+      },
+      {
         "corredor": "Buenaventura–Loboguerrero–Buga, EDS Pacífico, PR16+600–PR16+830",
         "dias_confirmados": 0,
         "dias_vigilancia": 2,
@@ -7042,6 +7536,148 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          }
+        ]
+      },
+      {
+        "corredor": "Yumbo–San Arcos — antes de planta Terpel",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-08-12T17:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-12",
+            "ventanas": [
+              "PM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "ControlT registra un accidente entre vehículo de carga y taxi, con un herido reportado, pero no hay coincidencia X directa en PM. No debe usarse el accidente de Yumbo–Mulaló como confirmación de este tramo."
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "Yumbo–Mulaló — accidente reportado",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-08-12T17:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-12",
+            "ventanas": [
+              "PM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "cuentas no oficiales reportan colisión entre taxi y vehículo de carga. No hay confirmación oficial PM del punto exacto, heridos, carriles afectados ni circulación."
+            ]
           }
         ]
       },
@@ -7472,6 +8108,77 @@
         ]
       },
       {
+        "corredor": "Tasajera — PR 53",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-08-12T17:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-12",
+            "ventanas": [
+              "PM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "ControlT mantiene una señal de cierre por manifestación relacionada con suministro de agua; no hubo publicación PM verificable de la concesión ni confirmación web. Un antecedente X sobre PR 59 habilitado corresponde a otro punto y no resuelve PR 53."
+            ]
+          }
+        ]
+      },
+      {
         "corredor": "Santiago de Cali",
         "dias_confirmados": 0,
         "dias_vigilancia": 1,
@@ -7681,77 +8388,6 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "San Roque–Bosconia — PR20+500, La Aurora",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "low",
-        "ultima_observacion": "2026-08-12T12:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-08-06",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-07",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-08",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-09",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-11",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-12",
-            "ventanas": [
-              "MD"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "histórico, no vigente confirmado. El último post localizado, del 5 de agosto, informó vía habilitada después de un bloqueo comunitario; no hay parte MD que confirme cierre, apertura o normalización actual."
-            ]
           }
         ]
       },
@@ -8750,6 +9386,219 @@
         ]
       },
       {
+        "corredor": "Montenegro–Quimbaya — puntos DITRA",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-08-12T17:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-12",
+            "ventanas": [
+              "PM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "el tablero DITRA del 11 de agosto registra cierres totales y parciales en K4+800, K5, K5+700, K8+600, K10+600 y K12. No hay actualización PM que desagregue el estado por km."
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "Marginal del Llano — después de Aguaclara, Casanare",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-08-12T17:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-12",
+            "ventanas": [
+              "PM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "@Prensalibcasan reporta un siniestro con dos motociclistas y autoridades llegando. ControlT registra un accidente en Aguaclara–Villa Carola, pero con hora posterior y referencia de sentido diferente. La correspondencia es parcial; el punto, sentido, estado y código reportado no están confirmados."
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "Manizales–Fresno — Herveo",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-08-12T17:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-12",
+            "ventanas": [
+              "PM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "último estado X localizado en el tablero DITRA del 11 de agosto: cierres o afectaciones en puntos de Herveo. No hubo publicación DITRA nueva en PM; no se presenta como actualización fresca ni se declara reapertura."
+            ]
+          }
+        ]
+      },
+      {
         "corredor": "Las Palmas, km 6+610, Antioquia",
         "dias_confirmados": 0,
         "dias_vigilancia": 1,
@@ -8888,6 +9737,77 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          }
+        ]
+      },
+      {
+        "corredor": "La Pintada–Bolombolo — conexión Pacífico 2",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-08-12T17:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-12",
+            "ventanas": [
+              "PM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "cierres totales programados para el 13 y 14 de agosto por la Vuelta a Colombia; no son una novedad vigente del corte PM del 12 de agosto."
+            ]
           }
         ]
       },
@@ -9815,77 +10735,6 @@
         ]
       },
       {
-        "corredor": "Buga–Buenaventura — otros puntos Dagua",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "low",
-        "ultima_observacion": "2026-08-12T12:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-08-06",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-07",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-08",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-09",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-11",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-12",
-            "ventanas": [
-              "MD"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "el parte vigente de PR 69+400 no se extrapola a PR 79+200, PR 52+000 ni a los puntos del tablero DITRA. Cali–Loboguerrero K52+300, K36+100 y K37+600 aparecen como cierres totales en DITRA del 11 de agosto, sin actualización MD puntual."
-            ]
-          }
-        ]
-      },
-      {
         "corredor": "Buga — accidente frente a planta Solla, señal sin confirmación",
         "dias_confirmados": 0,
         "dias_vigilancia": 1,
@@ -10383,6 +11232,77 @@
         ]
       },
       {
+        "corredor": "Bogotá–Villavicencio — salida del túnel Boquerón",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-08-12T17:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-08-06",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-07",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-08",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-09",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-12",
+            "ventanas": [
+              "PM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "accidente reportado en X entre un tractocamión y una motocicleta, con posible retraso. Es una señal no oficial y no está confirmada por el operador, DITRA ni autoridad competente al corte PM."
+            ]
+          }
+        ]
+      },
+      {
         "corredor": "Bogotá–Girardot, túnel Sumapaz y otros eventos",
         "dias_confirmados": 0,
         "dias_vigilancia": 1,
@@ -10765,92 +11685,138 @@
         "resueltos": 0,
         "por_verificar": 7
       }
+    },
+    {
+      "cut_id": "2026-08-12-od",
+      "hora": "17:00",
+      "ventana": "OD",
+      "tipo": "corte_final",
+      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
+      "conteos": {
+        "nuevos": 0,
+        "persistentes": 0,
+        "resueltos": 0,
+        "por_verificar": 0
+      }
+    },
+    {
+      "cut_id": "2026-08-12-pm",
+      "hora": "17:00",
+      "ventana": "PM",
+      "tipo": "corte_final",
+      "descripcion": "4 nuevas; 1 persistentes; 0 resueltas; 10 por verificar.",
+      "conteos": {
+        "nuevos": 4,
+        "persistentes": 1,
+        "resueltos": 0,
+        "por_verificar": 10
+      }
     }
   ],
   "fuentes": [
     {
-      "id": "src-87970e240a8994bc6ba64527",
-      "nombre": "Fuente con URL completa: https://risk.controlt.io/map ; https://x.com/RutaMagdalenaOf",
-      "url": "https://risk.controlt.io/map",
-      "fortaleza": "media",
-      "consultada_en": "2026-08-12T12:00:00",
+      "id": "src-dc6f50fe2564d604427eb621",
+      "nombre": "Fuente con URL completa: https://x.com/PasaenBogota/status/2087639093651833194",
+      "url": "https://x.com/PasaenBogota/status/2087639093651833194",
+      "fortaleza": "social",
+      "consultada_en": "2026-08-12T17:00:00",
       "eventos": [
-        "evt-2ff35a942fbed9bd74dd",
-        "evt-e6eaa6ed4b200e983d7e",
-        "evt-ece331f3e9f03e62369d"
+        "evt-05e34ef0327186f0375e"
       ]
     },
     {
-      "id": "src-ae4c998c9cd694c6130b3558",
-      "nombre": "Fuente con URL completa: https://x.com/ANI_Colombia/status/2086813129153892625 ; https://x.com/TransitoPolicia/status/2087347689591570498",
-      "url": "https://x.com/ANI_Colombia/status/2086813129153892625",
+      "id": "src-75aaea72d600fca0f6dabcb9",
+      "nombre": "Fuente con URL completa: https://x.com/TransitoPolicia/status/2087347689591570498",
+      "url": "https://x.com/TransitoPolicia/status/2087347689591570498",
       "fortaleza": "official",
-      "consultada_en": "2026-08-12T12:00:00",
+      "consultada_en": "2026-08-12T17:00:00",
+      "eventos": [
+        "evt-10534324744969d7ce7b",
+        "evt-8eb28eb6ef8b75a45584",
+        "evt-983ce7d9dabb58614eba",
+        "evt-a781b5a3986c6d0a0f50"
+      ]
+    },
+    {
+      "id": "src-e53d0c4cf2d1552d4c36e1bd",
+      "nombre": "Fuente con URL completa: https://x.com/Prensalibcasan/status/2087627568266526742 ; https://risk.controlt.io/map",
+      "url": "https://x.com/Prensalibcasan/status/2087627568266526742",
+      "fortaleza": "social",
+      "consultada_en": "2026-08-12T17:00:00",
+      "eventos": [
+        "evt-184807bf856194a3f9e9"
+      ]
+    },
+    {
+      "id": "src-102cd492cceaf4284ad2bc10",
+      "nombre": "Fuente con URL completa: https://www.valledelcauca.gov.co/publicaciones/90190/gobernadora-confirma-afectaciones-en-la-victoria-615-viviendas-con-danos-hospital-en-revision-y-cierre-de-puente/ ; https://x.com/jotava16/status/2087640453399101676 ; https://x.com/TransitoPolicia/status/2087347689591570498",
+      "url": "https://www.valledelcauca.gov.co/publicaciones/90190/gobernadora-confirma-afectaciones-en-la-victoria-615-viviendas-con-danos-hospital-en-revision-y-cierre-de-puente/",
+      "fortaleza": "media",
+      "consultada_en": "2026-08-12T17:00:00",
       "eventos": [
         "evt-39db832b543cca8d7b0b"
       ]
     },
     {
-      "id": "src-f79f62262754239ccd9c35ab",
-      "nombre": "Fuente con URL completa: https://x.com/CoviandinaSAS/status/2087545020987375646",
-      "url": "https://x.com/CoviandinaSAS/status/2087545020987375646",
-      "fortaleza": "social",
-      "consultada_en": "2026-08-12T12:00:00",
+      "id": "src-9162c3180df167109b026f98",
+      "nombre": "Fuente con URL completa: https://risk.controlt.io/map ; https://x.com/opinioncaribe/status/2087553829415915940",
+      "url": "https://risk.controlt.io/map",
+      "fortaleza": "media",
+      "consultada_en": "2026-08-12T17:00:00",
       "eventos": [
-        "evt-3a4dcaa8ee34be3d640c"
+        "evt-694becd6c38469c492b4",
+        "evt-a2dab409018cd20a4de4",
+        "evt-badcbf884d1bf02e98ae"
       ]
     },
     {
-      "id": "src-f94b19cbaf92d4fb6b6a28f6",
-      "nombre": "Fuente con URL completa: https://x.com/CaminoPacifico/status/2087574628625481742 ; https://x.com/ANI_Colombia/status/2087556577939046909",
+      "id": "src-1f377b15695451d4d6d25fdc",
+      "nombre": "Fuente con URL completa: https://x.com/CaminoPacifico/status/2087574628625481742 ; https://x.com/ANI_Colombia/status/2087556577939046909 ; https://caminodelpacifico.com/documents/d/camino-pacifico/COMUNICADO%20OFICIAL%20UVCP%20-%20ESTADO%20DEL%20CORREDOR%2012%20DE%20AGOSTO",
       "url": "https://x.com/CaminoPacifico/status/2087574628625481742",
       "fortaleza": "official",
-      "consultada_en": "2026-08-12T12:00:00",
+      "consultada_en": "2026-08-12T17:00:00",
       "eventos": [
-        "evt-3c029dd8853c47fe1f73"
+        "evt-71d5077ebd6776f3d2f6"
       ]
     },
     {
-      "id": "src-66ea0c0a98b779aeabda8463",
+      "id": "src-748ece7f780506eb5b5c392a",
       "nombre": "Fuente con URL completa: https://x.com/PoliciaColombia/status/2086863458000114020 ; https://x.com/TransitoPolicia/status/2087347689591570498",
       "url": "https://x.com/PoliciaColombia/status/2086863458000114020",
       "fortaleza": "official",
-      "consultada_en": "2026-08-12T12:00:00",
+      "consultada_en": "2026-08-12T17:00:00",
       "eventos": [
-        "evt-7b5d564ee40484fc9579"
+        "evt-9b4dfa38108e8451afe6"
       ]
     },
     {
-      "id": "src-d0f11b54bc6935261ffd1c10",
-      "nombre": "Fuente con URL completa: https://x.com/TransitoPolicia/status/2087347689591570498",
-      "url": "https://x.com/TransitoPolicia/status/2087347689591570498",
-      "fortaleza": "official",
-      "consultada_en": "2026-08-12T12:00:00",
-      "eventos": [
-        "evt-8eb28eb6ef8b75a45584",
-        "evt-9272d050b55ad17cc91f",
-        "evt-cf7ed3eb3eac9ed84f85",
-        "evt-e8275f78cb276fbb2f84"
-      ]
-    },
-    {
-      "id": "src-8343886de8e93b28aba2c234",
-      "nombre": "Fuente con URL completa: https://x.com/rutadelsoltram3/status/2085153223833227283",
-      "url": "https://x.com/rutadelsoltram3/status/2085153223833227283",
-      "fortaleza": "social",
-      "consultada_en": "2026-08-12T12:00:00",
-      "eventos": [
-        "evt-a2dab409018cd20a4de4"
-      ]
-    },
-    {
-      "id": "src-7d160dae9553fb40309ea123",
-      "nombre": "Fuente con URL completa: https://x.com/ConLaPintada/status/2087218307438932287",
+      "id": "src-7d438b2b576f01e63edd5861",
+      "nombre": "Fuente con URL completa: https://x.com/ConLaPintada/status/2087218307438932287 ; https://risk.controlt.io/map",
       "url": "https://x.com/ConLaPintada/status/2087218307438932287",
       "fortaleza": "social",
-      "consultada_en": "2026-08-12T12:00:00",
+      "consultada_en": "2026-08-12T17:00:00",
       "eventos": [
         "evt-a6b8551f58455e8c80cd"
+      ]
+    },
+    {
+      "id": "src-7b4e10d912c64f9b58a84bd3",
+      "nombre": "Fuente con URL completa: https://x.com/CoviandinaSAS/status/2087655915159724140 ; https://coviandina.com/intervenciones-en-la-via/actividades-con-intervencion-sobre-el-corredor-vial-desde-el-10-hasta-el-0",
+      "url": "https://x.com/CoviandinaSAS/status/2087655915159724140",
+      "fortaleza": "social",
+      "consultada_en": "2026-08-12T17:00:00",
+      "eventos": [
+        "evt-d7d0603abe974664eb4c"
+      ]
+    },
+    {
+      "id": "src-934d534786468b4667e6048a",
+      "nombre": "Fuente con URL completa: https://x.com/RedDeApoyoSIC/status/2087610806917644641 ; https://x.com/lavozdepueblo1/status/2087648286530298148",
+      "url": "https://x.com/RedDeApoyoSIC/status/2087610806917644641",
+      "fortaleza": "social",
+      "consultada_en": "2026-08-12T17:00:00",
+      "eventos": [
+        "evt-ed828721f80d91526aed"
       ]
     }
   ]
