@@ -24,6 +24,30 @@ Bruno apoya la toma de asistencia, ayuda a presentar datos, propone preguntas de
   <figcaption>Un asistente de IA puede apoyar el aprendizaje siempre que tenga contexto, límites claros y supervisión humana.</figcaption>
 </figure>
 
+## Bruno en acción
+
+Estas son algunas escenas de la experiencia. No muestran a Bruno resolviendo el curso por los estudiantes, sino acompañando tareas concretas dentro de las reglas definidas por el docente.
+
+<figure class="post-figure">
+  <img src="/assets/images/blog/bruno-en-el-aula/profe-bruno-1.jpeg" alt="Bruno orienta un ejercicio de clase con una pista en WhatsApp y espera la instrucción oficial para enviar un taller">
+  <figcaption>Bruno entrega una pista para orientar el ejercicio sin revelar la respuesta y espera la instrucción oficial antes de enviar el taller.</figcaption>
+</figure>
+
+<figure class="post-figure">
+  <img src="/assets/images/blog/bruno-en-el-aula/profe-bruno-2.jpeg" alt="Bruno inicia la toma de asistencia en un grupo de WhatsApp">
+  <figcaption>Bruno inicia la toma de asistencia y pide una confirmación estructurada con nombre completo.</figcaption>
+</figure>
+
+<figure class="post-figure">
+  <img src="/assets/images/blog/bruno-en-el-aula/profe-bruno-3.jpeg" alt="Bruno registra confirmaciones y cierra la asistencia con un resumen">
+  <figcaption>Bruno registra confirmaciones, identifica duplicados y cierra la asistencia con un resumen de resultados.</figcaption>
+</figure>
+
+<figure class="post-figure">
+  <img src="/assets/images/blog/bruno-en-el-aula/profe-bruno-4.jpeg" alt="Bruno presenta los datos generales y los indicadores de un ejercicio de nivel de servicio">
+  <figcaption>Bruno presenta los datos generales del ejercicio y calcula indicadores de nivel de servicio para que el grupo pueda validarlos.</figcaption>
+</figure>
+
 No se trata de reemplazar al profesor ni de entregarles a los estudiantes una máquina para resolverlo todo. Se trata de experimentar con una nueva forma de acompañar el aprendizaje.
 
 ## El dato ya no es el principal obstáculo
