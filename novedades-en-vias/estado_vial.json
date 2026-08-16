@@ -2,12 +2,12 @@
   "schema_version": "1.1",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-08-16-md",
+  "cut_id": "2026-08-16-pm",
   "fecha": "2026-08-16",
-  "ventana": "MD",
-  "hora": "12:00",
-  "generado_en": "2026-08-16T12:00:00",
-  "artefacto_fuente": "2026-08-16-editor-eldato-version-vias-colombia-md.md",
+  "ventana": "PM",
+  "hora": "17:00",
+  "generado_en": "2026-08-16T17:00:00",
+  "artefacto_fuente": "2026-08-16-editor-eldato-version-vias-colombia-pm.md",
   "alertas_inmediatas": [],
   "salud_fuentes": {
     "estado_general": "degradada",
@@ -18,38 +18,39 @@
     ],
     "ventanas_recibidas": [
       "AM",
-      "MD"
+      "MD",
+      "PM"
     ],
     "eventos_confirmados": 0,
     "eventos_vigilancia": 5,
     "pendientes_georreferencia": 5,
     "fuentes": [
       {
-        "id": "src-c0d78436243c0a5f15807ef6",
-        "nombre": "Estado actual 12:05: rige el diurno DITRA 05:00 / PMT concesión (paso a carril 06:00–20:00; 20:00–06:00 solo emergencias y ayudas). INVÍAS 5079066 no se editó y sigue escribiendo 07:00–19:00: discrepancia de horas, no de existencia del paso. Causa: derrumbes post-sismo en La Yolomba. Impacto carga: se puede programar de día con Pare y Siga; no tratar la noche como paso libre. Siguiente hito: DITRA de tarde del 16 o parte de concesión. URLs",
+        "id": "src-85ebb03506051471be84b8cb",
+        "nombre": "Estado actual 17:33: rige el diurno DITRA 05:00 / PMT concesión (paso a carril 06:00–20:00; 20:00–06:00 solo emergencias y ayudas). INVÍAS 5079066 no se editó y sigue escribiendo 07:00–19:00: discrepancia de horas, no de existencia del paso. Causa: derrumbes post-sismo en La Yolomba. Impacto carga: se puede programar de día con Pare y Siga; no tratar la noche (desde 20:00) como paso libre. Siguiente hito: DITRA de tarde del 16 o parte de concesión. URLs",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-16T12:00:00",
+        "ultima_consulta": "2026-08-16T17:00:00",
         "nota": "Aporta evidencia a 3 evento(s) del corte."
       },
       {
-        "id": "src-dbb2fa8d172a5b17062bafa7",
+        "id": "src-5eb7848813a642d01995b6ed",
         "nombre": "Mediacanoa PR 112+000: un carril hasta las 10:00 del 17. Sin acorte. URL",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-16T12:00:00",
+        "ultima_consulta": "2026-08-16T17:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-2dfd319d363ed910889b55ec",
-        "nombre": "Estado actual: el corredor no está en cierre total de infraestructura. El 09:50 del 16 (último parte; hay también 07:33 y 08:00) mantiene bidireccional K18+300–K19+000, reducciones K17+500–K18+300 y K43+250, cierre de carril derecho en K36+500, un carril en Quebradablanca y K69+350. Boquerón sigue sin habilitación explícita desde el cierre 08:58 del 15. Impacto carga: no programar como vía fluida; Boquerón puede seguir deteniendo el sentido Bogotá–Villavicencio. Siguiente hito: parte que nombre Boquerón, DITRA del 16, o el reversible anunciado para el 17 (no rige hoy). URL",
+        "id": "src-0727b2f395a0827f4814a2f6",
+        "nombre": "Estado actual: el corredor no está en cierre total de infraestructura. El 16:45 del 16 (último parte; hay también 12:21 y 14:58) mantiene bidireccional K18+300–K19+000, reducciones K17+500–K18+300 y K43+250, cierre de carril derecho en K36+500, un carril en Quebradablanca y K69+350. Boquerón sigue sin habilitación explícita desde el cierre 08:58 del 15. Impacto carga: no programar como vía fluida; Boquerón puede seguir deteniendo el sentido Bogotá–Villavicencio. Siguiente hito: parte que nombre Boquerón, DITRA del 16, o el reversible anunciado para el 17 (no rige hoy). URL",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-16T12:00:00",
+        "ultima_consulta": "2026-08-16T17:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       },
       {
-        "id": "src-6d0257d171505e4b610bedf8",
+        "id": "src-c6c97e1548011bb69719236c",
         "nombre": "Estado actual: DITRA 05:00 no los nombra. INVÍAS los tiene inactivos desde el 14 sin `fech_apertura`. No se declaran abiertos. Impacto: los OD Bogotá/Medellín–Pereira/Manizales siguen con cuello. URLs",
         "estado": "consultada",
-        "ultima_consulta": "2026-08-16T12:00:00",
+        "ultima_consulta": "2026-08-16T17:00:00",
         "nota": "Aporta evidencia a 1 evento(s) del corte."
       }
     ]
@@ -68,10 +69,10 @@
       "tipo": "otro",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "Estado actual: el corredor no está en cierre total de infraestructura. El 09:50 del 16 (último parte; hay también 07:33 y 08:00) mantiene bidireccional K18+300–K19+000, reducciones K17+500–K18+300 y K43+250, cierre de carril derecho en K36+500, un carril en Quebradablanca y K69+350. Boquerón sigue sin habilitación explícita desde el cierre 08:58 del 15. Impacto carga: no programar como vía fluida; Boquerón puede seguir deteniendo el sentido Bogotá–Villavicencio. Siguiente hito: parte que nombre Boquerón, DITRA del 16, o el reversible anunciado para el **17** (no rige hoy). URL: https://x.com/CoviandinaSAS/status/2089001890436518142",
+      "resumen": "Estado actual: el corredor no está en cierre total de infraestructura. El 16:45 del 16 (último parte; hay también 12:21 y 14:58) mantiene bidireccional K18+300–K19+000, reducciones K17+500–K18+300 y K43+250, cierre de carril derecho en K36+500, un carril en Quebradablanca y K69+350. Boquerón sigue sin habilitación explícita desde el cierre 08:58 del 15. Impacto carga: no programar como vía fluida; Boquerón puede seguir deteniendo el sentido Bogotá–Villavicencio. Siguiente hito: parte que nombre Boquerón, DITRA del 16, o el reversible anunciado para el **17** (no rige hoy). URL: https://x.com/CoviandinaSAS/status/2089106336302723301",
       "impacto_operativo": "",
       "confianza": 0.65,
-      "actualizado_en": "2026-08-16T12:00:00",
+      "actualizado_en": "2026-08-16T17:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -80,13 +81,13 @@
       },
       "fuentes": [
         {
-          "id": "src-2dfd319d363ed910889b55ec",
-          "nombre": "Estado actual: el corredor no está en cierre total de infraestructura. El 09:50 del 16 (último parte; hay también 07:33 y 08:00) mantiene bidireccional K18+300–K19+000, reducciones K17+500–K18+300 y K43+250, cierre de carril derecho en K36+500, un carril en Quebradablanca y K69+350. Boquerón sigue sin habilitación explícita desde el cierre 08:58 del 15. Impacto carga: no programar como vía fluida; Boquerón puede seguir deteniendo el sentido Bogotá–Villavicencio. Siguiente hito: parte que nombre Boquerón, DITRA del 16, o el reversible anunciado para el 17 (no rige hoy). URL",
-          "url": "https://x.com/CoviandinaSAS/status/2089001890436518142",
+          "id": "src-0727b2f395a0827f4814a2f6",
+          "nombre": "Estado actual: el corredor no está en cierre total de infraestructura. El 16:45 del 16 (último parte; hay también 12:21 y 14:58) mantiene bidireccional K18+300–K19+000, reducciones K17+500–K18+300 y K43+250, cierre de carril derecho en K36+500, un carril en Quebradablanca y K69+350. Boquerón sigue sin habilitación explícita desde el cierre 08:58 del 15. Impacto carga: no programar como vía fluida; Boquerón puede seguir deteniendo el sentido Bogotá–Villavicencio. Siguiente hito: parte que nombre Boquerón, DITRA del 16, o el reversible anunciado para el 17 (no rige hoy). URL",
+          "url": "https://x.com/CoviandinaSAS/status/2089106336302723301",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-08-16T12:00:00",
-          "evidencia": "Estado actual: el corredor no está en cierre total de infraestructura. El 09:50 del 16 (último parte; hay también 07:33 y 08:00) mantiene bidireccional K18+300–K19+000, reducciones K17+500–K18+300 y K43+250, cierre de carril derecho en K36+500, un carril en Quebradablanca y K69+350. Boquerón sigue sin habilitación explícita desde el cierre 08:58 del 15. Impacto carga: no programar como vía fluida; Boquerón puede seguir deteniendo el sentido Bogotá–Villavicencio. Siguiente hito: parte que nombre Boquerón, DITRA del 16, o el reversible anunciado para el **17** (no rige hoy). URL: https://x.com/CoviandinaSAS/status/2089001890436518142"
+          "consultada_en": "2026-08-16T17:00:00",
+          "evidencia": "Estado actual: el corredor no está en cierre total de infraestructura. El 16:45 del 16 (último parte; hay también 12:21 y 14:58) mantiene bidireccional K18+300–K19+000, reducciones K17+500–K18+300 y K43+250, cierre de carril derecho en K36+500, un carril en Quebradablanca y K69+350. Boquerón sigue sin habilitación explícita desde el cierre 08:58 del 15. Impacto carga: no programar como vía fluida; Boquerón puede seguir deteniendo el sentido Bogotá–Villavicencio. Siguiente hito: parte que nombre Boquerón, DITRA del 16, o el reversible anunciado para el **17** (no rige hoy). URL: https://x.com/CoviandinaSAS/status/2089106336302723301"
         }
       ]
     },
@@ -101,10 +102,10 @@
       "tipo": "otro",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "Estado actual 12:05: rige el diurno DITRA 05:00 / PMT concesión (paso a carril 06:00–20:00; 20:00–06:00 solo emergencias y ayudas). INVÍAS 5079066 no se editó y sigue escribiendo 07:00–19:00: discrepancia de horas, no de existencia del paso. Causa: derrumbes post-sismo en La Yolomba. Impacto carga: se puede programar de día con Pare y Siga; no tratar la noche como paso libre. Siguiente hito: DITRA de tarde del 16 o parte de concesión. URLs: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/MapServer/0/query?where=objectid%3D5079066&outFields=*&returnGeometry=false&f=pjson · https://x.com/CaminoPacifico/status/2088407328613658851",
+      "resumen": "Estado actual 17:33: rige el diurno DITRA 05:00 / PMT concesión (paso a carril 06:00–20:00; 20:00–06:00 solo emergencias y ayudas). INVÍAS 5079066 no se editó y sigue escribiendo 07:00–19:00: discrepancia de horas, no de existencia del paso. Causa: derrumbes post-sismo en La Yolomba. Impacto carga: se puede programar de día con Pare y Siga; no tratar la noche (desde 20:00) como paso libre. Siguiente hito: DITRA de tarde del 16 o parte de concesión. URLs: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/MapServer/0/query?where=objectid%3D5079066&outFields=*&returnGeometry=false&f=pjson · https://x.com/CaminoPacifico/status/2088407328613658851",
       "impacto_operativo": "",
       "confianza": 0.65,
-      "actualizado_en": "2026-08-16T12:00:00",
+      "actualizado_en": "2026-08-16T17:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -113,22 +114,22 @@
       },
       "fuentes": [
         {
-          "id": "src-c0d78436243c0a5f15807ef6",
-          "nombre": "Estado actual 12:05: rige el diurno DITRA 05:00 / PMT concesión (paso a carril 06:00–20:00; 20:00–06:00 solo emergencias y ayudas). INVÍAS 5079066 no se editó y sigue escribiendo 07:00–19:00: discrepancia de horas, no de existencia del paso. Causa: derrumbes post-sismo en La Yolomba. Impacto carga: se puede programar de día con Pare y Siga; no tratar la noche como paso libre. Siguiente hito: DITRA de tarde del 16 o parte de concesión. URLs",
+          "id": "src-85ebb03506051471be84b8cb",
+          "nombre": "Estado actual 17:33: rige el diurno DITRA 05:00 / PMT concesión (paso a carril 06:00–20:00; 20:00–06:00 solo emergencias y ayudas). INVÍAS 5079066 no se editó y sigue escribiendo 07:00–19:00: discrepancia de horas, no de existencia del paso. Causa: derrumbes post-sismo en La Yolomba. Impacto carga: se puede programar de día con Pare y Siga; no tratar la noche (desde 20:00) como paso libre. Siguiente hito: DITRA de tarde del 16 o parte de concesión. URLs",
           "url": "https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784",
           "fortaleza": "media",
           "publicada_en": null,
-          "consultada_en": "2026-08-16T12:00:00",
-          "evidencia": "Estado actual 12:05: rige el diurno DITRA 05:00 / PMT concesión (paso a carril 06:00–20:00; 20:00–06:00 solo emergencias y ayudas). INVÍAS 5079066 no se editó y sigue escribiendo 07:00–19:00: discrepancia de horas, no de existencia del paso. Causa: derrumbes post-sismo en La Yolomba. Impacto carga: se puede programar de día con Pare y Siga; no tratar la noche como paso libre. Siguiente hito: DITRA de tarde del 16 o parte de concesión. URLs: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/MapServer/0/query?where=objectid%3D5079066&outFields=*&returnGeometry=false&f=pjson · https://x.com/CaminoPacifico/status/2088407328613658851"
+          "consultada_en": "2026-08-16T17:00:00",
+          "evidencia": "Estado actual 17:33: rige el diurno DITRA 05:00 / PMT concesión (paso a carril 06:00–20:00; 20:00–06:00 solo emergencias y ayudas). INVÍAS 5079066 no se editó y sigue escribiendo 07:00–19:00: discrepancia de horas, no de existencia del paso. Causa: derrumbes post-sismo en La Yolomba. Impacto carga: se puede programar de día con Pare y Siga; no tratar la noche (desde 20:00) como paso libre. Siguiente hito: DITRA de tarde del 16 o parte de concesión. URLs: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/MapServer/0/query?where=objectid%3D5079066&outFields=*&returnGeometry=false&f=pjson · https://x.com/CaminoPacifico/status/2088407328613658851"
         },
         {
-          "id": "src-dbb2fa8d172a5b17062bafa7",
+          "id": "src-5eb7848813a642d01995b6ed",
           "nombre": "Mediacanoa PR 112+000: un carril hasta las 10:00 del 17. Sin acorte. URL",
           "url": "https://x.com/CaminoPacifico/status/2088699159830532254",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-08-16T12:00:00",
-          "evidencia": "Estado actual 12:05: rige el diurno DITRA 05:00 / PMT concesión (paso a carril 06:00–20:00; 20:00–06:00 solo emergencias y ayudas). INVÍAS 5079066 no se editó y sigue escribiendo 07:00–19:00: discrepancia de horas, no de existencia del paso. Causa: derrumbes post-sismo en La Yolomba. Impacto carga: se puede programar de día con Pare y Siga; no tratar la noche como paso libre. Siguiente hito: DITRA de tarde del 16 o parte de concesión. URLs: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/MapServer/0/query?where=objectid%3D5079066&outFields=*&returnGeometry=false&f=pjson · https://x.com/CaminoPacifico/status/2088407328613658851"
+          "consultada_en": "2026-08-16T17:00:00",
+          "evidencia": "Estado actual 17:33: rige el diurno DITRA 05:00 / PMT concesión (paso a carril 06:00–20:00; 20:00–06:00 solo emergencias y ayudas). INVÍAS 5079066 no se editó y sigue escribiendo 07:00–19:00: discrepancia de horas, no de existencia del paso. Causa: derrumbes post-sismo en La Yolomba. Impacto carga: se puede programar de día con Pare y Siga; no tratar la noche (desde 20:00) como paso libre. Siguiente hito: DITRA de tarde del 16 o parte de concesión. URLs: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/MapServer/0/query?where=objectid%3D5079066&outFields=*&returnGeometry=false&f=pjson · https://x.com/CaminoPacifico/status/2088407328613658851"
         }
       ]
     },
@@ -146,7 +147,7 @@
       "resumen": "Estado actual: DITRA 05:00 del 15 lo mantiene en cierre total. Hermes 5075865 está inactivo desde el 14 sin fecha de apertura: no abre el puente. Impacto carga: no hay paso por ese puente. Siguiente hito: DITRA del 16 o parte de reconstrucción. URL: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784",
       "impacto_operativo": "",
       "confianza": 0.35,
-      "actualizado_en": "2026-08-16T12:00:00",
+      "actualizado_en": "2026-08-16T17:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -155,12 +156,12 @@
       },
       "fuentes": [
         {
-          "id": "src-ee90a5464c41685aeb30dde5",
+          "id": "src-8bee4eef19ecdec8cc1e0db1",
           "nombre": "Estado actual: DITRA 05:00 del 15 lo mantiene en cierre total. Hermes 5075865 está inactivo desde el 14 sin fecha de apertura: no abre el puente. Impacto carga: no hay paso por ese puente. Siguiente hito: DITRA del 16 o parte de reconstrucción. URL",
           "url": "https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784",
           "fortaleza": "media",
           "publicada_en": null,
-          "consultada_en": "2026-08-16T12:00:00",
+          "consultada_en": "2026-08-16T17:00:00",
           "evidencia": "Estado actual: DITRA 05:00 del 15 lo mantiene en cierre total. Hermes 5075865 está inactivo desde el 14 sin fecha de apertura: no abre el puente. Impacto carga: no hay paso por ese puente. Siguiente hito: DITRA del 16 o parte de reconstrucción. URL: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784"
         }
       ]
@@ -176,10 +177,10 @@
       "tipo": "otro",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "Estado actual: DITRA 05:00 del 15 etiqueta cierre total y lo acota a 06:30–16:00 los días 15 y 16. A las 12:05 del 16 esa franja **sigue en curso**. No hay DITRA del 16 ni parte de concesión/X que habilite. Causa: deslizamiento post-sismo. Impacto carga: no despachar por Montenegro–Quimbaya hasta después de las 16:00, y solo si un parte de la tarde habilita; la ausencia a las 16:00 no se lee sola como apertura. INVÍAS 5073466 (PR 4+800) sigue en cierre total activo y no usa los km de DITRA. Siguiente hito: parte que levante la franja o DITRA del 16. URL: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784",
+      "resumen": "Estado actual: DITRA 05:00 del 15 etiqueta cierre total y lo acota a 06:30–16:00 los días 15 y 16. A las 17:33 del 16 esa franja **ya terminó**. No hay DITRA del 16 ni parte de concesión/X que habilite. Causa: deslizamiento post-sismo. Impacto carga: el reloj del NO PASE programado se cumplió; eso no basta para despachar. La ausencia a las 16:00 no se lee sola como apertura. INVÍAS 5073466 (PR 4+800) sigue en cierre total activo y no usa los km de DITRA. Siguiente hito: parte que habilite o DITRA del 16/~18:00. URL: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784",
       "impacto_operativo": "",
       "confianza": 0.35,
-      "actualizado_en": "2026-08-16T12:00:00",
+      "actualizado_en": "2026-08-16T17:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -188,13 +189,13 @@
       },
       "fuentes": [
         {
-          "id": "src-9f9e8a7b679db8fd55766f16",
-          "nombre": "Estado actual: DITRA 05:00 del 15 etiqueta cierre total y lo acota a 06:30–16:00 los días 15 y 16. A las 12:05 del 16 esa franja sigue en curso. No hay DITRA del 16 ni parte de concesión/X que habilite. Causa: deslizamiento post-sismo. Impacto carga: no despachar por Montenegro–Quimbaya hasta después de las 16:00, y solo si un parte de la tarde habilita; la ausencia a las 16:00 no se lee sola como apertura. INVÍAS 5073466 (PR 4+800) sigue en cierre total activo y no usa los km de DITRA. Siguiente hito: parte que levante la franja o DITRA del 16. URL",
+          "id": "src-b5271e46146d65a26784c935",
+          "nombre": "Estado actual: DITRA 05:00 del 15 etiqueta cierre total y lo acota a 06:30–16:00 los días 15 y 16. A las 17:33 del 16 esa franja ya terminó. No hay DITRA del 16 ni parte de concesión/X que habilite. Causa: deslizamiento post-sismo. Impacto carga: el reloj del NO PASE programado se cumplió; eso no basta para despachar. La ausencia a las 16:00 no se lee sola como apertura. INVÍAS 5073466 (PR 4+800) sigue en cierre total activo y no usa los km de DITRA. Siguiente hito: parte que habilite o DITRA del 16/~18:00. URL",
           "url": "https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784",
           "fortaleza": "media",
           "publicada_en": null,
-          "consultada_en": "2026-08-16T12:00:00",
-          "evidencia": "Estado actual: DITRA 05:00 del 15 etiqueta cierre total y lo acota a 06:30–16:00 los días 15 y 16. A las 12:05 del 16 esa franja **sigue en curso**. No hay DITRA del 16 ni parte de concesión/X que habilite. Causa: deslizamiento post-sismo. Impacto carga: no despachar por Montenegro–Quimbaya hasta después de las 16:00, y solo si un parte de la tarde habilita; la ausencia a las 16:00 no se lee sola como apertura. INVÍAS 5073466 (PR 4+800) sigue en cierre total activo y no usa los km de DITRA. Siguiente hito: parte que levante la franja o DITRA del 16. URL: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784"
+          "consultada_en": "2026-08-16T17:00:00",
+          "evidencia": "Estado actual: DITRA 05:00 del 15 etiqueta cierre total y lo acota a 06:30–16:00 los días 15 y 16. A las 17:33 del 16 esa franja **ya terminó**. No hay DITRA del 16 ni parte de concesión/X que habilite. Causa: deslizamiento post-sismo. Impacto carga: el reloj del NO PASE programado se cumplió; eso no basta para despachar. La ausencia a las 16:00 no se lee sola como apertura. INVÍAS 5073466 (PR 4+800) sigue en cierre total activo y no usa los km de DITRA. Siguiente hito: parte que habilite o DITRA del 16/~18:00. URL: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784"
         }
       ]
     },
@@ -212,7 +213,7 @@
       "resumen": "Estado actual: DITRA 05:00 no los nombra. INVÍAS los tiene inactivos desde el 14 sin `fech_apertura`. No se declaran abiertos. Impacto: los OD Bogotá/Medellín–Pereira/Manizales siguen con cuello. URLs: https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/MapServer/0/query?where=objectid%3D5074664&outFields=*&returnGeometry=false&f=pjson · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/MapServer/0/query?where=objectid%3D5079064&outFields=*&returnGeometry=false&f=pjson",
       "impacto_operativo": "",
       "confianza": 0.65,
-      "actualizado_en": "2026-08-16T12:00:00",
+      "actualizado_en": "2026-08-16T17:00:00",
       "georreferencia": {
         "estado": "sin_georreferencia",
         "lat": null,
@@ -221,12 +222,12 @@
       },
       "fuentes": [
         {
-          "id": "src-6d0257d171505e4b610bedf8",
+          "id": "src-c6c97e1548011bb69719236c",
           "nombre": "Estado actual: DITRA 05:00 no los nombra. INVÍAS los tiene inactivos desde el 14 sin `fech_apertura`. No se declaran abiertos. Impacto: los OD Bogotá/Medellín–Pereira/Manizales siguen con cuello. URLs",
           "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/MapServer/0/query?where=objectid%3D5074664&outFields=*&returnGeometry=false&f=pjson",
           "fortaleza": "official",
           "publicada_en": null,
-          "consultada_en": "2026-08-16T12:00:00",
+          "consultada_en": "2026-08-16T17:00:00",
           "evidencia": "Estado actual: DITRA 05:00 no los nombra. INVÍAS los tiene inactivos desde el 14 sin `fech_apertura`. No se declaran abiertos. Impacto: los OD Bogotá/Medellín–Pereira/Manizales siguen con cuello. URLs: https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/MapServer/0/query?where=objectid%3D5074664&outFields=*&returnGeometry=false&f=pjson · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/MapServer/0/query?where=objectid%3D5079064&outFields=*&returnGeometry=false&f=pjson"
         }
       ]
@@ -241,9 +242,9 @@
         "corredor": "Bogotá - Villavicencio",
         "dias_confirmados": 4,
         "dias_vigilancia": 2,
-        "cortes_con_observacion": 14,
+        "cortes_con_observacion": 15,
         "severidad_maxima": "critical",
-        "ultima_observacion": "2026-08-16T12:00:00",
+        "ultima_observacion": "2026-08-16T17:00:00",
         "ultimo_estado": "watch",
         "dias": [
           {
@@ -331,14 +332,16 @@
             "fecha": "2026-08-16",
             "ventanas": [
               "AM",
-              "MD"
+              "MD",
+              "PM"
             ],
             "confirmados": 0,
             "vigilancia": 1,
             "severidad_maxima": "low",
             "resumenes": [
               "Estado actual: el corredor no está en cierre total de infraestructura. El 22:44 del 15 (último parte; no hay AM del 16) mantiene bidireccional K18–K19, reducciones y un carril en Quebradablanca y K69+350. Boquerón sigue sin habilitación explícita desde el cierre 08:58 del 15. Impacto carga: no programar como vía fluida; Boquerón puede seguir deteniendo el sentido Bogotá–Villavicencio. Siguiente hito: parte del operador de esta mañana que nombre Boquerón o el DITRA del 16. URL: https://x.com/CoviandinaSAS/status/2088833936612802717",
-              "Estado actual: el corredor no está en cierre total de infraestructura. El 09:50 del 16 (último parte; hay también 07:33 y 08:00) mantiene bidireccional K18+300–K19+000, reducciones K17+500–K18+300 y K43+250, cierre de carril derecho en K36+500, un carril en Quebradablanca y K69+350. Boquerón sigue sin habilitación explícita desde el cierre 08:58 del 15. Impacto carga: no programar como vía fluida; Boquerón puede seguir deteniendo el sentido Bogotá–Villavicencio. Siguiente hito: parte que nombre Boquerón, DITRA del 16, o el reversible anunciado para el **17** (no rige hoy). URL: https://x.com/CoviandinaSAS/status/2089001890436518142"
+              "Estado actual: el corredor no está en cierre total de infraestructura. El 09:50 del 16 (último parte; hay también 07:33 y 08:00) mantiene bidireccional K18+300–K19+000, reducciones K17+500–K18+300 y K43+250, cierre de carril derecho en K36+500, un carril en Quebradablanca y K69+350. Boquerón sigue sin habilitación explícita desde el cierre 08:58 del 15. Impacto carga: no programar como vía fluida; Boquerón puede seguir deteniendo el sentido Bogotá–Villavicencio. Siguiente hito: parte que nombre Boquerón, DITRA del 16, o el reversible anunciado para el **17** (no rige hoy). URL: https://x.com/CoviandinaSAS/status/2089001890436518142",
+              "Estado actual: el corredor no está en cierre total de infraestructura. El 16:45 del 16 (último parte; hay también 12:21 y 14:58) mantiene bidireccional K18+300–K19+000, reducciones K17+500–K18+300 y K43+250, cierre de carril derecho en K36+500, un carril en Quebradablanca y K69+350. Boquerón sigue sin habilitación explícita desde el cierre 08:58 del 15. Impacto carga: no programar como vía fluida; Boquerón puede seguir deteniendo el sentido Bogotá–Villavicencio. Siguiente hito: parte que nombre Boquerón, DITRA del 16, o el reversible anunciado para el **17** (no rige hoy). URL: https://x.com/CoviandinaSAS/status/2089106336302723301"
             ]
           }
         ]
@@ -4121,9 +4124,9 @@
         "corredor": "Pereira–Chinchiná PR 22–24 y Letras PR 40+300",
         "dias_confirmados": 0,
         "dias_vigilancia": 2,
-        "cortes_con_observacion": 5,
+        "cortes_con_observacion": 6,
         "severidad_maxima": "low",
-        "ultima_observacion": "2026-08-16T12:00:00",
+        "ultima_observacion": "2026-08-16T17:00:00",
         "ultimo_estado": "watch",
         "dias": [
           {
@@ -4186,7 +4189,8 @@
             "fecha": "2026-08-16",
             "ventanas": [
               "AM",
-              "MD"
+              "MD",
+              "PM"
             ],
             "confirmados": 0,
             "vigilancia": 1,
@@ -4201,9 +4205,9 @@
         "corredor": "Buga–Buenaventura km 69+400",
         "dias_confirmados": 0,
         "dias_vigilancia": 3,
-        "cortes_con_observacion": 5,
+        "cortes_con_observacion": 6,
         "severidad_maxima": "low",
-        "ultima_observacion": "2026-08-16T12:00:00",
+        "ultima_observacion": "2026-08-16T17:00:00",
         "ultimo_estado": "watch",
         "dias": [
           {
@@ -4268,14 +4272,95 @@
             "fecha": "2026-08-16",
             "ventanas": [
               "AM",
-              "MD"
+              "MD",
+              "PM"
             ],
             "confirmados": 0,
             "vigilancia": 1,
             "severidad_maxima": "low",
             "resumenes": [
               "Estado actual 07:10: rige el diurno DITRA 05:00 / PMT concesión (paso a carril 06:00–20:00; 20:00–06:00 solo emergencias y ayudas). INVÍAS 5079066 no se editó y sigue escribiendo 07:00–19:00: discrepancia de horas, no de existencia del paso. Causa: derrumbes post-sismo en La Yolomba. Impacto carga: se puede programar de día con Pare y Siga; no tratar la noche como paso libre. Siguiente hito: DITRA AM/MD del 16 o parte de concesión. URLs: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/MapServer/0/query?where=objectid%3D5079066&outFields=*&returnGeometry=false&f=pjson · https://x.com/CaminoPacifico/status/2088407328613658851",
-              "Estado actual 12:05: rige el diurno DITRA 05:00 / PMT concesión (paso a carril 06:00–20:00; 20:00–06:00 solo emergencias y ayudas). INVÍAS 5079066 no se editó y sigue escribiendo 07:00–19:00: discrepancia de horas, no de existencia del paso. Causa: derrumbes post-sismo en La Yolomba. Impacto carga: se puede programar de día con Pare y Siga; no tratar la noche como paso libre. Siguiente hito: DITRA de tarde del 16 o parte de concesión. URLs: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/MapServer/0/query?where=objectid%3D5079066&outFields=*&returnGeometry=false&f=pjson · https://x.com/CaminoPacifico/status/2088407328613658851"
+              "Estado actual 12:05: rige el diurno DITRA 05:00 / PMT concesión (paso a carril 06:00–20:00; 20:00–06:00 solo emergencias y ayudas). INVÍAS 5079066 no se editó y sigue escribiendo 07:00–19:00: discrepancia de horas, no de existencia del paso. Causa: derrumbes post-sismo en La Yolomba. Impacto carga: se puede programar de día con Pare y Siga; no tratar la noche como paso libre. Siguiente hito: DITRA de tarde del 16 o parte de concesión. URLs: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/MapServer/0/query?where=objectid%3D5079066&outFields=*&returnGeometry=false&f=pjson · https://x.com/CaminoPacifico/status/2088407328613658851",
+              "Estado actual 17:33: rige el diurno DITRA 05:00 / PMT concesión (paso a carril 06:00–20:00; 20:00–06:00 solo emergencias y ayudas). INVÍAS 5079066 no se editó y sigue escribiendo 07:00–19:00: discrepancia de horas, no de existencia del paso. Causa: derrumbes post-sismo en La Yolomba. Impacto carga: se puede programar de día con Pare y Siga; no tratar la noche (desde 20:00) como paso libre. Siguiente hito: DITRA de tarde del 16 o parte de concesión. URLs: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/MapServer/0/query?where=objectid%3D5079066&outFields=*&returnGeometry=false&f=pjson · https://x.com/CaminoPacifico/status/2088407328613658851"
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "Montenegro–Quimbaya km 8 y km 16+050",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 2,
+        "cortes_con_observacion": 4,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-08-16T17:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-08-10",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-11",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-12",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-13",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-14",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-15",
+            "ventanas": [
+              "PM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "Estado actual: DITRA 05:00 del 15 etiqueta cierre total y lo acota a 06:30–16:00 los días 15 y 16 de agosto. A las 17:35 esa franja de hoy ya cerró; no hay DITRA de tarde ni parte de concesión/X que habilite el tramo. Causa: deslizamiento post-sismo. Impacto carga: no despachar como vía abierta esta noche ni como NO PASE 24 h; el domingo 16 vuelve la franja 06:30–16:00 si el DITRA de tarde no cambia el tablero. INVÍAS 5073466 (PR 4+800) sigue en cierre total activo y no usa los km de DITRA. Siguiente hito: DITRA ~18:00 del 15 o parte del 16 antes de las 06:30. URL: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784"
+            ]
+          },
+          {
+            "fecha": "2026-08-16",
+            "ventanas": [
+              "AM",
+              "MD",
+              "PM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "Estado actual: DITRA 05:00 del 15 etiqueta cierre total y lo acota a 06:30–16:00 los días 15 y 16. A las 07:10 del 16 esa franja **está en curso**. No hay DITRA AM ni parte de concesión/X que habilite. Causa: deslizamiento post-sismo. Impacto carga: no despachar por Montenegro–Quimbaya hasta después de las 16:00, y solo si un parte de la tarde habilita; la ausencia a las 16:00 no se lee sola como apertura. INVÍAS 5073466 (PR 4+800) sigue en cierre total activo y no usa los km de DITRA. Siguiente hito: parte que levante la franja o DITRA del 16. URL: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784",
+              "Estado actual: DITRA 05:00 del 15 etiqueta cierre total y lo acota a 06:30–16:00 los días 15 y 16. A las 12:05 del 16 esa franja **sigue en curso**. No hay DITRA del 16 ni parte de concesión/X que habilite. Causa: deslizamiento post-sismo. Impacto carga: no despachar por Montenegro–Quimbaya hasta después de las 16:00, y solo si un parte de la tarde habilita; la ausencia a las 16:00 no se lee sola como apertura. INVÍAS 5073466 (PR 4+800) sigue en cierre total activo y no usa los km de DITRA. Siguiente hito: parte que levante la franja o DITRA del 16. URL: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784",
+              "Estado actual: DITRA 05:00 del 15 etiqueta cierre total y lo acota a 06:30–16:00 los días 15 y 16. A las 17:33 del 16 esa franja **ya terminó**. No hay DITRA del 16 ni parte de concesión/X que habilite. Causa: deslizamiento post-sismo. Impacto carga: el reloj del NO PASE programado se cumplió; eso no basta para despachar. La ausencia a las 16:00 no se lee sola como apertura. INVÍAS 5073466 (PR 4+800) sigue en cierre total activo y no usa los km de DITRA. Siguiente hito: parte que habilite o DITRA del 16/~18:00. URL: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784"
             ]
           }
         ]
@@ -4358,12 +4443,12 @@
         ]
       },
       {
-        "corredor": "Montenegro–Quimbaya km 8 y km 16+050",
+        "corredor": "La Unión–La Victoria, puente Mariano Ospina",
         "dias_confirmados": 0,
-        "dias_vigilancia": 2,
+        "dias_vigilancia": 1,
         "cortes_con_observacion": 3,
         "severidad_maxima": "low",
-        "ultima_observacion": "2026-08-16T12:00:00",
+        "ultima_observacion": "2026-08-16T17:00:00",
         "ultimo_estado": "watch",
         "dias": [
           {
@@ -4408,28 +4493,24 @@
           },
           {
             "fecha": "2026-08-15",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-16",
             "ventanas": [
+              "AM",
+              "MD",
               "PM"
             ],
             "confirmados": 0,
             "vigilancia": 1,
             "severidad_maxima": "low",
             "resumenes": [
-              "Estado actual: DITRA 05:00 del 15 etiqueta cierre total y lo acota a 06:30–16:00 los días 15 y 16 de agosto. A las 17:35 esa franja de hoy ya cerró; no hay DITRA de tarde ni parte de concesión/X que habilite el tramo. Causa: deslizamiento post-sismo. Impacto carga: no despachar como vía abierta esta noche ni como NO PASE 24 h; el domingo 16 vuelve la franja 06:30–16:00 si el DITRA de tarde no cambia el tablero. INVÍAS 5073466 (PR 4+800) sigue en cierre total activo y no usa los km de DITRA. Siguiente hito: DITRA ~18:00 del 15 o parte del 16 antes de las 06:30. URL: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784"
-            ]
-          },
-          {
-            "fecha": "2026-08-16",
-            "ventanas": [
-              "AM",
-              "MD"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "Estado actual: DITRA 05:00 del 15 etiqueta cierre total y lo acota a 06:30–16:00 los días 15 y 16. A las 07:10 del 16 esa franja **está en curso**. No hay DITRA AM ni parte de concesión/X que habilite. Causa: deslizamiento post-sismo. Impacto carga: no despachar por Montenegro–Quimbaya hasta después de las 16:00, y solo si un parte de la tarde habilita; la ausencia a las 16:00 no se lee sola como apertura. INVÍAS 5073466 (PR 4+800) sigue en cierre total activo y no usa los km de DITRA. Siguiente hito: parte que levante la franja o DITRA del 16. URL: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784",
-              "Estado actual: DITRA 05:00 del 15 etiqueta cierre total y lo acota a 06:30–16:00 los días 15 y 16. A las 12:05 del 16 esa franja **sigue en curso**. No hay DITRA del 16 ni parte de concesión/X que habilite. Causa: deslizamiento post-sismo. Impacto carga: no despachar por Montenegro–Quimbaya hasta después de las 16:00, y solo si un parte de la tarde habilita; la ausencia a las 16:00 no se lee sola como apertura. INVÍAS 5073466 (PR 4+800) sigue en cierre total activo y no usa los km de DITRA. Siguiente hito: parte que levante la franja o DITRA del 16. URL: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784"
+              "Estado actual: DITRA 05:00 del 15 lo mantiene en cierre total. Hermes 5075865 está inactivo desde el 14 sin fecha de apertura: no abre el puente. Impacto carga: no hay paso por ese puente. Siguiente hito: DITRA del 16 o parte de reconstrucción. URL: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784"
             ]
           }
         ]
@@ -4800,78 +4881,6 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "La Unión–La Victoria, puente Mariano Ospina",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 2,
-        "severidad_maxima": "low",
-        "ultima_observacion": "2026-08-16T12:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-08-10",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-11",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-12",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-16",
-            "ventanas": [
-              "AM",
-              "MD"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "Estado actual: DITRA 05:00 del 15 lo mantiene en cierre total. Hermes 5075865 está inactivo desde el 14 sin fecha de apertura: no abre el puente. Impacto carga: no hay paso por ese puente. Siguiente hito: DITRA del 16 o parte de reconstrucción. URL: https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784"
-            ]
           }
         ]
       },
@@ -9455,15 +9464,28 @@
         "resueltos": 0,
         "por_verificar": 5
       }
+    },
+    {
+      "cut_id": "2026-08-16-pm",
+      "hora": "17:00",
+      "ventana": "PM",
+      "tipo": "corte_final",
+      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 5 por verificar.",
+      "conteos": {
+        "nuevos": 0,
+        "persistentes": 0,
+        "resueltos": 0,
+        "por_verificar": 5
+      }
     }
   ],
   "fuentes": [
     {
-      "id": "src-c0d78436243c0a5f15807ef6",
-      "nombre": "Estado actual 12:05: rige el diurno DITRA 05:00 / PMT concesión (paso a carril 06:00–20:00; 20:00–06:00 solo emergencias y ayudas). INVÍAS 5079066 no se editó y sigue escribiendo 07:00–19:00: discrepancia de horas, no de existencia del paso. Causa: derrumbes post-sismo en La Yolomba. Impacto carga: se puede programar de día con Pare y Siga; no tratar la noche como paso libre. Siguiente hito: DITRA de tarde del 16 o parte de concesión. URLs",
+      "id": "src-85ebb03506051471be84b8cb",
+      "nombre": "Estado actual 17:33: rige el diurno DITRA 05:00 / PMT concesión (paso a carril 06:00–20:00; 20:00–06:00 solo emergencias y ayudas). INVÍAS 5079066 no se editó y sigue escribiendo 07:00–19:00: discrepancia de horas, no de existencia del paso. Causa: derrumbes post-sismo en La Yolomba. Impacto carga: se puede programar de día con Pare y Siga; no tratar la noche (desde 20:00) como paso libre. Siguiente hito: DITRA de tarde del 16 o parte de concesión. URLs",
       "url": "https://discord.com/channels/1503518480173891717/1526707675990200322/1538231763544051784",
       "fortaleza": "media",
-      "consultada_en": "2026-08-16T12:00:00",
+      "consultada_en": "2026-08-16T17:00:00",
       "eventos": [
         "evt-04dc71c2afbe6dac265a",
         "evt-39db832b543cca8d7b0b",
@@ -9471,31 +9493,31 @@
       ]
     },
     {
-      "id": "src-dbb2fa8d172a5b17062bafa7",
+      "id": "src-5eb7848813a642d01995b6ed",
       "nombre": "Mediacanoa PR 112+000: un carril hasta las 10:00 del 17. Sin acorte. URL",
       "url": "https://x.com/CaminoPacifico/status/2088699159830532254",
       "fortaleza": "official",
-      "consultada_en": "2026-08-16T12:00:00",
+      "consultada_en": "2026-08-16T17:00:00",
       "eventos": [
         "evt-04dc71c2afbe6dac265a"
       ]
     },
     {
-      "id": "src-2dfd319d363ed910889b55ec",
-      "nombre": "Estado actual: el corredor no está en cierre total de infraestructura. El 09:50 del 16 (último parte; hay también 07:33 y 08:00) mantiene bidireccional K18+300–K19+000, reducciones K17+500–K18+300 y K43+250, cierre de carril derecho en K36+500, un carril en Quebradablanca y K69+350. Boquerón sigue sin habilitación explícita desde el cierre 08:58 del 15. Impacto carga: no programar como vía fluida; Boquerón puede seguir deteniendo el sentido Bogotá–Villavicencio. Siguiente hito: parte que nombre Boquerón, DITRA del 16, o el reversible anunciado para el 17 (no rige hoy). URL",
-      "url": "https://x.com/CoviandinaSAS/status/2089001890436518142",
+      "id": "src-0727b2f395a0827f4814a2f6",
+      "nombre": "Estado actual: el corredor no está en cierre total de infraestructura. El 16:45 del 16 (último parte; hay también 12:21 y 14:58) mantiene bidireccional K18+300–K19+000, reducciones K17+500–K18+300 y K43+250, cierre de carril derecho en K36+500, un carril en Quebradablanca y K69+350. Boquerón sigue sin habilitación explícita desde el cierre 08:58 del 15. Impacto carga: no programar como vía fluida; Boquerón puede seguir deteniendo el sentido Bogotá–Villavicencio. Siguiente hito: parte que nombre Boquerón, DITRA del 16, o el reversible anunciado para el 17 (no rige hoy). URL",
+      "url": "https://x.com/CoviandinaSAS/status/2089106336302723301",
       "fortaleza": "official",
-      "consultada_en": "2026-08-16T12:00:00",
+      "consultada_en": "2026-08-16T17:00:00",
       "eventos": [
         "evt-6276ddf45747b9583d4b"
       ]
     },
     {
-      "id": "src-6d0257d171505e4b610bedf8",
+      "id": "src-c6c97e1548011bb69719236c",
       "nombre": "Estado actual: DITRA 05:00 no los nombra. INVÍAS los tiene inactivos desde el 14 sin `fech_apertura`. No se declaran abiertos. Impacto: los OD Bogotá/Medellín–Pereira/Manizales siguen con cuello. URLs",
       "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/MapServer/0/query?where=objectid%3D5074664&outFields=*&returnGeometry=false&f=pjson",
       "fortaleza": "official",
-      "consultada_en": "2026-08-16T12:00:00",
+      "consultada_en": "2026-08-16T17:00:00",
       "eventos": [
         "evt-caf99dd7bc9b991f8682"
       ]
