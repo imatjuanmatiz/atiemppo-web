@@ -30,11 +30,11 @@ La campaña busca recaudar **30 millones de pesos** para adquirir **18 antenas S
 
 La propuesta parte de una idea sencilla: la logística no solo mueve carga. También puede movilizar personas, recursos y esperanza cuando más se necesita.
 
-## El recaudo necesita impulso
+## Actualización del recaudo: corte del 16 de agosto
 
-En la actualización compartida por la campaña, ya se habían recaudado **$2,3 millones** gracias a los primeros ocho aportes. Es un comienzo valioso, pero todavía hacen falta **$27,7 millones** para alcanzar la meta inicial.
+La campaña ya registra **14 aportes** y **$6.240.619 recaudados**, equivalentes al **20,8% de la meta de $30 millones**. El avance visual de la campaña representa **21 de los 100 cupos** propuestos para movilizar esta ayuda.
 
-Cada aporte acerca la posibilidad de conectar una comunidad. No es necesario aportar una suma específica para participar: la invitación es contribuir con el monto que esté al alcance de cada persona.
+Cada aporte acerca la posibilidad de conectar una comunidad. Todavía faltan **$23.759.381** para alcanzar la meta inicial, por eso la invitación sigue siendo aportar con el monto que esté al alcance y compartir la campaña con nuevas personas.
 
 ## ¿Cómo puedes ayudar hoy?
 
@@ -61,12 +61,14 @@ Hoy, cien logísticos hispanos están invitando a Colombia a hacer parte de esa 
 **Dona, comparte y ayúdanos a conectar nuevamente a Colombia. Porque cuando muchos aportamos un poco, podemos lograr algo enorme.** 💛💙❤️
 
 <blockquote>
+  <strong>Corte:</strong> 16 de agosto de 2026 · 14 aportes · $6.240.619 recaudados.<br>
+  <strong>Avance:</strong> 20,8% de la meta; equivalente a 21 de 100 cupos.<br>
   <strong>Meta:</strong> $30.000.000 para 18 antenas Starlink.<br>
   <strong>Destinos:</strong> Buenaventura, Pereira y Manizales.<br>
   <strong>Vaki:</strong> <a href="https://vaki.co/vaki/100-logisticos-hispanos-unidos-por-colombia?utm_source=copy&utm_medium=toolbar&utm_campaign=v4">100 Logísticos Hispanos Unidos por Colombia</a><br>
   <strong>Con Llave:</strong> @TLE643
 </blockquote>
 
-*Los valores recaudados pueden cambiar con cada nuevo aporte. Consulta la Vaki para ver el estado actualizado de la campaña y sus condiciones de participación.*
+*Los valores recaudados corresponden al corte del 16 de agosto de 2026 y pueden cambiar con cada nuevo aporte. Consulta la Vaki para ver el estado actualizado de la campaña y sus condiciones de participación.*
 
 [Conoce la campaña y aporta en Vaki](https://vaki.co/vaki/100-logisticos-hispanos-unidos-por-colombia?utm_source=copy&utm_medium=toolbar&utm_campaign=v4) · [Conoce ATIEMPPO](https://atiemppo.com/)
