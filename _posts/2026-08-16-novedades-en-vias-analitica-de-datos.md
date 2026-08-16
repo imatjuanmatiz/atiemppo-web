@@ -19,7 +19,7 @@ En transporte, un cierre, una restricción, un derrumbe, una obra o una reapertu
 
 **Novedades en Vías** nace para organizar esas señales y convertirlas en una lectura útil para la logística colombiana.
 
-<figure class="post-figure">
+<figure class="post-figure post-figure-compact">
   <img src="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia.png" alt="Reporte de Novedades en Vías compartido por Bruno en un canal operativo">
   <figcaption>Un corte operativo resume el estado conocido, los cambios por corredor, las fuentes y los puntos que todavía requieren seguimiento.</figcaption>
 </figure>
@@ -36,6 +36,13 @@ Cuando una empresa recibe información vial sin contexto, aparecen preguntas dif
 - ¿Qué impacto puede tener para una salida, una entrega o un acceso portuario?
 
 La analítica ayuda a responder esas preguntas sin confundir una señal con una confirmación. Su aporte no es acumular enlaces, sino relacionar tiempo, ubicación, fuente, estado, severidad e impacto operativo.
+
+La siguiente captura muestra un corte de la tarde: varias novedades aparecen agrupadas por corredor, con tramo, estado, hora de referencia y enlaces para continuar la verificación.
+
+<figure class="post-figure post-figure-compact">
+  <img src="/assets/images/blog/novedades-en-vias/corte-pm-15-agosto-2026.png" alt="Corte PM de Novedades en Vías con listado de rutas, estados y fuentes">
+  <figcaption>Un corte PM convierte señales de distintos corredores en un listado ordenado para orientar el seguimiento operativo.</figcaption>
+</figure>
 
 ## Qué hacemos desde la analítica de datos
 
@@ -58,6 +65,13 @@ El sistema puede producir diferentes salidas según la necesidad:
 ### Cortes AM, MD y PM
 
 Tres momentos del día permiten revisar la red vial, mantener continuidad con el corte anterior y comunicar qué cambió durante la jornada.
+
+<figure class="post-figure post-figure-compact">
+  <img src="/assets/images/blog/novedades-en-vias/corte-am-16-agosto-2026.png" alt="Corte AM de Novedades en Vías del 16 de agosto de 2026">
+  <figcaption>El corte AM abre la jornada con el listado de rutas y novedades, incluyendo horas, tramos, estados y fuentes.</figcaption>
+</figure>
+
+La historia no termina en publicar ese listado. El siguiente corte compara lo que continúa, lo que cambia y lo que todavía no tiene una confirmación suficiente.
 
 ### Reportes bajo demanda
 
