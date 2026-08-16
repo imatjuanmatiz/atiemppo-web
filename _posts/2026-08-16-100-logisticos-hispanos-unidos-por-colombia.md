@@ -2,7 +2,7 @@
 layout: post
 title: "100 logísticos hispanos unidos por Colombia: conectar también es ayudar"
 description: "Una campaña del Clúster de Logística Bogotá–Región para llevar 18 antenas Starlink a zonas afectadas por el terremoto."
-date: 2026-08-16 17:10:00 -0500
+date: 2026-08-16 11:00:00 -0500
 author: "ATIEMPPO"
 lab: "Comunidad logística"
 emoji: "🇨🇴"
