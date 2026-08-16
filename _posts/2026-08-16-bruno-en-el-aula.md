@@ -19,36 +19,56 @@ Este semestre decidí hacer algo distinto con mis estudiantes: llevar a **Bruno 
 
 Bruno apoya la toma de asistencia, ayuda a presentar datos, propone preguntas de repaso y permite que los estudiantes le escriban de forma independiente para recibir apoyo con los ejercicios. Todo esto ocurre dentro de límites previamente definidos y bajo la orientación del docente.
 
-<figure class="post-figure">
+<figure class="post-figure post-figure-compact">
   <img src="/assets/images/blog/bruno-en-el-aula/profe-bruno-whatsapp-tip.jpg" alt="Bruno explica en WhatsApp un criterio para trabajar con agentes de inteligencia artificial">
   <figcaption>Un asistente de IA puede apoyar el aprendizaje siempre que tenga contexto, límites claros y supervisión humana.</figcaption>
 </figure>
 
-## Bruno en acción
+No se trata de reemplazar al profesor ni de entregarles a los estudiantes una máquina para resolverlo todo. Se trata de experimentar con una nueva forma de acompañar el aprendizaje.
 
-Estas son algunas escenas de la experiencia. No muestran a Bruno resolviendo el curso por los estudiantes, sino acompañando tareas concretas dentro de las reglas definidas por el docente.
+## La historia empieza con una asistencia
 
-<figure class="post-figure">
-  <img src="/assets/images/blog/bruno-en-el-aula/profe-bruno-1.jpeg" alt="Bruno orienta un ejercicio de clase con una pista en WhatsApp y espera la instrucción oficial para enviar un taller">
-  <figcaption>Bruno entrega una pista para orientar el ejercicio sin revelar la respuesta y espera la instrucción oficial antes de enviar el taller.</figcaption>
-</figure>
+Una de las primeras tareas de Bruno es operativa: ayudar a tomar asistencia sin que el docente tenga que ordenar manualmente cada respuesta del grupo.
 
-<figure class="post-figure">
+<figure class="post-figure post-figure-compact">
   <img src="/assets/images/blog/bruno-en-el-aula/profe-bruno-2.jpeg" alt="Bruno inicia la toma de asistencia en un grupo de WhatsApp">
   <figcaption>Bruno inicia la toma de asistencia y pide una confirmación estructurada con nombre completo.</figcaption>
 </figure>
 
-<figure class="post-figure">
-  <img src="/assets/images/blog/bruno-en-el-aula/profe-bruno-3.jpeg" alt="Bruno registra confirmaciones y cierra la asistencia con un resumen">
-  <figcaption>Bruno registra confirmaciones, identifica duplicados y cierra la asistencia con un resumen de resultados.</figcaption>
+La instrucción es sencilla, pero el valor está en darle forma al proceso: recibir las confirmaciones, asociarlas con una persona y dejar un registro que el docente pueda revisar.
+
+## Orientar sin resolver
+
+Después aparece la tarea pedagógica. Un estudiante puede preguntar cómo avanzar en un ejercicio y recibir una pista que le permita continuar sin obtener la respuesta completa.
+
+<figure class="post-figure post-figure-compact">
+  <img src="/assets/images/blog/bruno-en-el-aula/profe-bruno-1.jpeg" alt="Bruno orienta un ejercicio de clase con una pista en WhatsApp y espera la instrucción oficial para enviar un taller">
+  <figcaption>Bruno entrega una pista para orientar el ejercicio sin revelar la respuesta y respeta la instrucción oficial de entrega.</figcaption>
 </figure>
 
-<figure class="post-figure">
+Aquí se ve una diferencia importante entre acompañar y reemplazar: el agente puede señalar dónde mirar, formular una pregunta o explicar un concepto de otra manera, pero el estudiante sigue teniendo que comprender y resolver.
+
+## Los datos se vuelven una conversación
+
+En otro momento, Bruno ayuda a poner los datos sobre la mesa para que el grupo pueda analizarlos y validarlos.
+
+<figure class="post-figure post-figure-compact">
   <img src="/assets/images/blog/bruno-en-el-aula/profe-bruno-4.jpeg" alt="Bruno presenta los datos generales y los indicadores de un ejercicio de nivel de servicio">
   <figcaption>Bruno presenta los datos generales del ejercicio y calcula indicadores de nivel de servicio para que el grupo pueda validarlos.</figcaption>
 </figure>
 
-No se trata de reemplazar al profesor ni de entregarles a los estudiantes una máquina para resolverlo todo. Se trata de experimentar con una nueva forma de acompañar el aprendizaje.
+La pantalla no es el punto final. Es el punto de partida para preguntar qué significa cada indicador, cómo se obtuvo, qué supuestos contiene y qué decisiones permite tomar.
+
+## Cerrar, revisar y dejar trazabilidad
+
+Al final de la actividad, el asistente puede cerrar la asistencia, detectar confirmaciones repetidas y entregar un resumen para revisión del docente.
+
+<figure class="post-figure post-figure-compact">
+  <img src="/assets/images/blog/bruno-en-el-aula/profe-bruno-3.jpeg" alt="Bruno registra confirmaciones y cierra la asistencia con un resumen">
+  <figcaption>Bruno registra confirmaciones, identifica duplicados y cierra la asistencia con un resumen de resultados.</figcaption>
+</figure>
+
+Estas escenas muestran el papel que buscamos: un asistente que ordena, orienta y hace visible el proceso, siempre dentro de reglas definidas y con la responsabilidad pedagógica en el docente.
 
 ## El dato ya no es el principal obstáculo
 
