@@ -9,12 +9,12 @@ render_with_liquid: false
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>ATIEMPPO — Negocio, datos e IA para recuperar tiempo</title>
-<meta name="description" content="Siete soluciones de ATIEMPPO para entender costos de transporte, crear agentes, capacitar equipos, convertir datos en conocimiento, acelerar estudios, acompañar decisiones y operar proyectos de campo."/>
+<meta name="description" content="ATIEMPPO transforma áreas de transporte para decidir mejor, trabajar con datos y aprovechar agentes de IA. Tres puertas de entrada: una decisión, incorporar agentes o desarrollar capacidades propias."/>
 <meta name="ai-content-declaration" content="human-authored"/>
 <meta name="llms-txt" content="https://atiemppo.com/llms.txt"/>
 <link rel="alternate" type="text/plain" title="LLMs.txt" href="/llms.txt"/>
 <meta property="og:title" content="ATIEMPPO — Negocio, datos e IA para recuperar tiempo"/>
-<meta property="og:description" content="Hablamos el idioma del negocio y el de la tecnología para recuperar tiempo operativo."/>
+<meta property="og:description" content="Datos, criterio y agentes para que las áreas de transporte recuperen tiempo y tomen mejores decisiones."/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://atiemppo.com"/>
 <meta property="og:locale" content="es_CO"/>
@@ -33,7 +33,7 @@ render_with_liquid: false
       "@type": ["Organization","ProfessionalService"],
       "@id": "https://atiemppo.com/#organization",
       "name": "ATIEMPPO S.A.S.",
-      "description": "Empresa colombiana que conecta negocio, datos e IA para ayudar a personas y empresas a recuperar tiempo operativo, con foco en logística y supply chain en Colombia y América Latina.",
+      "description": "Empresa colombiana que transforma áreas de transporte para tomar mejores decisiones, trabajar con datos y aprovechar agentes de IA, con foco en logística y supply chain en Colombia y América Latina.",
       "url": "https://atiemppo.com",
       "foundingDate": "2013",
       "logo": "https://atiemppo.com/assets/images/logo-atiemppo.png",
@@ -54,21 +54,19 @@ render_with_liquid: false
     {
       "@type": "Service",
       "@id": "https://atiemppo.com/#service-industria-tiempo",
-      "name": "Negocio, datos e IA para recuperar tiempo operativo",
+      "name": "Servicios para transformar áreas de transporte",
       "provider": { "@id": "https://atiemppo.com/#organization" },
       "areaServed": ["Colombia", "América Latina"],
-      "serviceType": "Datos, agentes de IA, automatización y acompañamiento operativo",
+      "serviceType": "Consultoría, datos SICETAC, capacitación agéntica y conexión con agentes",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Siete soluciones para recuperar tiempo",
+        "name": "Cinco servicios ATIEMPPO 2026",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Análisis y comparación de costos de transporte con SICETAC, RNDC e Índice de Red", "url": "https://atiemppo.com/indices-sicetac/" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diseño de agentes para procesos reales de empresa" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Profe Bruno — capacitación para crear agentes, automatizar tareas y organizar bases de conocimiento" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reportes vivos, análisis, modelos de conocimiento y memorias", "url": "https://atiemppo.com/reportes/" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Estudios acelerados con IA, fuentes verificables y criterio experto" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Consultoría especializada para empresas, ciudades y gobiernos", "url": "https://atiemppo.com/servicios/" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Proyectos de captura en campo, calidad, modelos de datos, evaluación y dispersión", "url": "https://atiemppo.com/servicios/#captura-campo" } }
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Consultorías potencializadas con IA para decisiones de transporte", "url": "https://atiemppo.com/servicios/#consultorias" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Datos SICETAC e inteligencia de red", "url": "https://atiemppo.com/servicios/#datos" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Capacitación y Experiencia Agéntica", "url": "https://atiemppo.com/servicios/#capacitacion" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Conexión con agentes especializados de ATIEMPPO", "url": "https://atiemppo.com/servicios/#agentes-gestionados" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hoja de ruta de agentes y capacidades propias", "url": "https://atiemppo.com/servicios/#hoja-de-ruta" } }
         ]
       }
     }
@@ -270,6 +268,12 @@ section[id]{scroll-margin-top:86px}
 .scn strong{color:var(--navy)}
 .scn .proof{display:block;margin-top:9px;font-family:var(--mono);font-size:10.5px;line-height:1.45;text-transform:uppercase;letter-spacing:.45px;color:var(--green-d)}
 .solution-note{margin-top:18px;padding:16px 18px;border-left:3px solid var(--green);background:rgba(0,184,107,.07);border-radius:0 12px 12px 0;color:var(--muted-2);font-size:13.5px;line-height:1.55}
+.door-stack{display:flex;flex-direction:column;gap:10px;margin-top:22px}
+.door-mini{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;background:#fff;border:1px solid var(--line);border-radius:12px;border-left:3px solid var(--green);text-align:left}
+.door-mini .n{flex:none;font-family:var(--mono);font-size:11px;font-weight:600;color:var(--green-d);padding-top:2px}
+.door-mini strong{display:block;font-size:14.5px;color:var(--navy);letter-spacing:-.2px}
+.door-mini p{margin:4px 0 0;font-size:13px;line-height:1.45;color:var(--muted-2)}
+.scn .result{display:inline-block;margin:0 0 8px;padding:3px 8px;border-radius:999px;background:rgba(0,184,107,.1);color:var(--green-d);font-family:var(--mono);font-size:10px;letter-spacing:.4px;text-transform:uppercase}
 
 /* PRODUCTOS */
 .prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -393,9 +397,9 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
   <nav class="site-nav">
     <a href="/" class="nav-logo" aria-label="ATIEMPPO"><img src="assets/images/logo-atiemppo.png" alt="ATIEMPPO"/></a>
     <div class="nav-links">
-      <a href="#soluciones">Soluciones</a>
+      <a href="/servicios/">Servicios</a>
+      <a href="#soluciones">Puertas de entrada</a>
       <a href="#sesion-abierta">Sesión abierta</a>
-      <a href="/banco-de-conocimiento/">Banco de conocimiento</a>
       <a href="#productos">Productos</a>
       <a href="/reportes/">Reportes</a>
       <a href="/blog/">Blog</a>
@@ -406,9 +410,9 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
   </nav>
 </div>
 <div class="mobile-nav" id="mobileNav">
-  <a href="#soluciones" onclick="closeMenu()">Soluciones</a>
+  <a href="/servicios/" onclick="closeMenu()">Servicios</a>
+  <a href="#soluciones" onclick="closeMenu()">Puertas de entrada</a>
   <a href="#sesion-abierta" onclick="closeMenu()">Sesión abierta</a>
-  <a href="/banco-de-conocimiento/" onclick="closeMenu()">Banco de conocimiento</a>
   <a href="#productos" onclick="closeMenu()">Productos</a>
   <a href="/reportes/" onclick="closeMenu()">Reportes</a>
   <a href="/blog/" onclick="closeMenu()">Blog</a>
@@ -424,10 +428,10 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
       <div>
         <div class="badge"><span class="dot"></span> 2026 · La industria del tiempo</div>
         <h1>Hablamos los <span class="ul">dos idiomas</span><br/>para recuperar tiempo.</h1>
-        <p class="hero-sub">Traducimos entre el <strong>idioma del negocio</strong> y el de la <strong>tecnología</strong> para entender tus problemas, tus datos y tu operación. Desde ahí usamos criterio, IA y agentes para que tu equipo recupere tiempo.</p>
+        <p class="hero-sub">Traducimos entre el <strong>idioma del negocio</strong> y el de la <strong>tecnología</strong> para que las áreas de transporte tomen mejores decisiones, trabajen con datos y aprovechen agentes. Convertimos inteligencia artificial en tiempo, criterio y acción.</p>
         <div class="hero-actions">
           <a href="#contacto" class="btn btn-primary">Hablemos de tu operación →</a>
-          <a href="#puente" class="btn btn-ghost">Ver cómo trabajamos</a>
+          <a href="/servicios/" class="btn btn-ghost">Ver servicios 2026</a>
         </div>
         <div class="stats">
           <div class="stat"><div class="n">+13</div><div class="l">marcas y aliados</div></div>
@@ -545,41 +549,44 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
     <div class="container">
       <div class="puente-head" data-reveal>
         <div style="max-width:680px">
-          <p class="kicker">El puente ATIEMPPO</p>
-          <h2 class="h2">Del problema operativo a una forma mejor de trabajar.</h2>
+          <p class="kicker">El journey ATIEMPPO</p>
+          <h2 class="h2">De una pregunta real a un resultado que el equipo puede usar.</h2>
         </div>
-        <p class="lead" style="max-width:380px">El tiempo se pierde cuando negocio y tecnología no hablan claro, cuando la información está dispersa y cada decisión vuelve a empezar de cero. ATIEMPPO traduce entre esos mundos.</p>
+        <p class="lead" style="max-width:380px">No empezamos por una tecnología. Empezamos por una decisión, un dato que no está listo o una tarea que consume tiempo. Cada servicio se contrata por separado.</p>
       </div>
       <div class="steps">
-        <article class="step" data-reveal><div class="num">01</div><h3>Entender el problema</h3><p>Escuchamos cómo trabaja el equipo, dónde se repite trabajo y qué decisiones consumen más tiempo del necesario.</p><div class="bar"></div></article>
-        <article class="step" data-reveal><div class="num">02</div><h3>Traducir los dos idiomas</h3><p>Conectamos la necesidad del negocio con datos, criterios técnicos, fuentes confiables y posibilidades reales de IA.</p><div class="bar"></div></article>
-        <article class="step" data-reveal><div class="num">03</div><h3>Construir con contexto</h3><p>Usamos IA, agentes, analítica y herramientas propias para ordenar información y sostener continuidad.</p><div class="bar"></div></article>
-        <article class="step" data-reveal><div class="num">04</div><h3>Recuperar tiempo</h3><p>Menos reprocesos y tareas repetitivas. Más tiempo para decidir, vender, atender clientes y mover la operación.</p><div class="bar"></div></article>
+        <article class="step" data-reveal><div class="num">01</div><h3>Enfocar</h3><p>Definimos la decisión, tarea o capacidad que importa ahora y el resultado más pequeño que crea valor.</p><div class="bar"></div></article>
+        <article class="step" data-reveal><div class="num">02</div><h3>Preparar</h3><p>Acordamos fuentes, alcance, supuestos, límites, usuarios y el criterio de aceptación.</p><div class="bar"></div></article>
+        <article class="step" data-reveal><div class="num">03</div><h3>Construir y activar</h3><p>Analizamos, configuramos o facilitamos la experiencia con trazabilidad, revisión humana y uso por el equipo.</p><div class="bar"></div></article>
+        <article class="step" data-reveal><div class="num">04</div><h3>Aprender</h3><p>Documentamos hallazgos, límites y un siguiente paso opcional: datos, agentes o capacidades propias.</p><div class="bar"></div></article>
       </div>
     </div>
   </section>
 
-  <!-- SIETE SOLUCIONES -->
+  <!-- TRES PUERTAS · CINCO SERVICIOS -->
   <section class="section" id="soluciones">
     <div class="container cuando">
       <div class="cuando-sticky" data-reveal>
-        <p class="kicker">Siete soluciones para avanzar</p>
-        <h2 class="h2">Empieza por la pregunta que hoy más tiempo te está quitando.</h2>
-        <p class="lead" style="margin:18px 0 28px">No tienes que conocer nuestros productos ni llegar con un proyecto definido. Una pregunta concreta es suficiente para empezar.</p>
+        <p class="kicker">Tres resultados · cinco servicios</p>
+        <h2 class="h2">Empieza por una sola puerta: decidir, incorporar agentes o desarrollar capacidades.</h2>
+        <p class="lead" style="margin:18px 0 28px">No tienes que comprar el portafolio. Una pregunta concreta basta para elegir el primer resultado y dejar el resto como continuidad opcional.</p>
         <div class="hero-actions" style="margin-top:0">
-          <a href="#contacto" class="btn btn-dark">Avanza hoy con nosotros</a>
-          <a href="#productos" class="btn btn-ghost">Ver qué las respalda</a>
+          <a href="/servicios/" class="btn btn-dark">Ver el portafolio 2026</a>
+          <a href="#contacto" class="btn btn-ghost">Hablemos de una decisión</a>
         </div>
-        <p class="solution-note">Trabajamos con fuentes autorizadas, límites claros y revisión humana. La solución se diseña alrededor de la decisión, no alrededor de una herramienta.</p>
+        <div class="door-stack">
+          <div class="door-mini"><span class="n">01</span><div><strong>Decidir mejor</strong><p>Consultoría o datos de red para una pregunta concreta.</p></div></div>
+          <div class="door-mini"><span class="n">02</span><div><strong>Incorporar agentes</strong><p>Capacitación sobre una tarea real o conexión gestionada.</p></div></div>
+          <div class="door-mini"><span class="n">03</span><div><strong>Desarrollar capacidades</strong><p>Hoja de ruta y primer piloto, sin desplegar todo de una vez.</p></div></div>
+        </div>
+        <p class="solution-note">Una sola puerta por conversación. Fuentes autorizadas, límites claros y revisión humana.</p>
       </div>
       <div class="scn-list">
-        <a class="scn" data-reveal href="/indices-sicetac/"><span class="n">01</span><span class="copy"><h3>Entender y comparar costos de transporte</h3><p>Ordenamos tu red y la contrastamos con SICETAC, RNDC e Índice de Red para tomar decisiones sobre rutas, tarifas, presupuesto y negociación.</p><span class="proof">SICETAC · RNDC · Índice de Red</span></span></a>
-        <a class="scn" data-reveal href="#productos"><span class="n">02</span><span class="copy"><h3>Crear agentes para procesos reales</h3><p>Diseñamos tareas, fuentes, memoria, límites y revisión humana para que el agente entregue resultados útiles dentro de la empresa.</p><span class="proof">Bruno / OpenClaw · agentes por proceso</span></span></a>
-        <a class="scn" data-reveal href="/formacion/profe-bruno-ia-aplicada/"><span class="n">03</span><span class="copy"><h3>Aprender a construir y operar agentes</h3><p>Profe Bruno acompaña a personas y equipos para automatizar tareas, crear sus propios agentes, organizar una base de conocimiento y construir su propio cerebro.</p><span class="proof">Profe Bruno · capacitación aplicada</span></span></a>
-        <a class="scn" data-reveal href="/reportes/"><span class="n">04</span><span class="copy"><h3>Convertir datos y documentos en conocimiento vivo</h3><p>Transformamos archivos sueltos en reportes vivos, análisis, modelos de conocimiento y memorias que se pueden consultar y actualizar.</p><span class="proof">Reportes Vivos · modelos de conocimiento</span></span></a>
-        <a class="scn" data-reveal href="/reportes/"><span class="n">05</span><span class="copy"><h3>Acelerar estudios con fuentes verificables</h3><p>La IA ayuda a buscar, organizar y analizar; nuestro equipo valida fuentes, declara límites y convierte los hallazgos en una respuesta ejecutiva.</p><span class="proof">Estudios de mercado · análisis sectorial</span></span></a>
-        <a class="scn" data-reveal href="/servicios/"><span class="n">06</span><span class="copy"><h3>Acompañar decisiones que necesitan criterio experto</h3><p>Apoyamos empresas, ciudades y gobiernos con investigación de mercados, coyuntura, mapeo de nodos y costos, sesiones profesionales, talleres y conferencias.</p><span class="proof">Consultoría especializada · mesas de trabajo</span></span></a>
-        <a class="scn" data-reveal href="/servicios/#captura-campo"><span class="n">07</span><span class="copy"><h3>Diseñar operaciones de campo confiables</h3><p>Construimos captura, reglas de calidad, modelos de datos, evaluación y trazabilidad para pagos o incentivos.</p><span class="proof">Eureka · captura · calidad · dispersión</span></span></a>
+        <a class="scn" data-reveal href="/servicios/#consultorias"><span class="n">01</span><span class="copy"><span class="result">Decidir mejor</span><h3>Consultorías potencializadas con IA</h3><p>Convertimos una pregunta de red, mercado, ubicación, coyuntura o operación en una decisión sustentada, con evidencia, supuestos y una ruta de acción.</p><span class="proof">Informe ejecutivo · activación · siguientes pasos</span></span></a>
+        <a class="scn" data-reveal href="/servicios/#datos"><span class="n">02</span><span class="copy"><span class="result">Decidir mejor</span><h3>Datos SICETAC e inteligencia de red</h3><p>Base, homologación, índice, simulación o API: componentes distintos para que tu equipo consulte, presupueste y negocie con una referencia usable.</p><span class="proof">SICETAC · RNDC · homologación · Índice de Red</span></span></a>
+        <a class="scn" data-reveal href="/servicios/#capacitacion"><span class="n">03</span><span class="copy"><span class="result">Incorporar agentes</span><h3>Capacitación y Experiencia Agéntica</h3><p>Personas y equipos pasan de chatear con IA a dirigir agentes sobre una tarea real, con fuentes, límites y revisión humana.</p><span class="proof">Profe Bruno · práctica · método reutilizable</span></span></a>
+        <a class="scn" data-reveal href="/servicios/#agentes-gestionados"><span class="n">04</span><span class="copy"><span class="result">Incorporar agentes</span><h3>Conexión con agentes ATIEMPPO</h3><p>Un servicio gestionado para consultar fuentes autorizadas, conservar memoria y apoyar tareas, sin construir toda la infraestructura desde el primer día.</p><span class="proof">Piloto acotado · Bruno · especialistas · cierre</span></span></a>
+        <a class="scn" data-reveal href="/servicios/#hoja-de-ruta"><span class="n">05</span><span class="copy"><span class="result">Desarrollar capacidades</span><h3>Hoja de ruta y capacidades propias</h3><p>Priorizamos casos de uso, definimos gobierno y dejamos el plan del primer piloto. La implementación productiva se estima aparte.</p><span class="proof">Diagnóstico · priorización · primer piloto</span></span></a>
       </div>
     </div>
   </section>
@@ -588,9 +595,9 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
   <section class="section" id="productos">
     <div class="container">
       <div class="section-head" data-reveal style="max-width:760px;margin-bottom:46px">
-        <p class="kicker">Productos, proyectos y métodos que lo respaldan</p>
-        <h2 class="h2">Las soluciones se apoyan en activos que ya existen.</h2>
-        <p class="lead" style="margin-top:14px">Estos nombres son evidencia de lo que sabemos construir y operar. Empezamos por tu problema; elegimos el activo que corresponda después.</p>
+        <p class="kicker">Activos que respaldan los servicios</p>
+        <h2 class="h2">Los cinco servicios se apoyan en productos y casos que ya existen.</h2>
+        <p class="lead" style="margin-top:14px">Estos nombres son evidencia de lo que sabemos construir. El cliente elige una puerta de entrada; el activo se selecciona después.</p>
       </div>
       <div class="prod-grid">
         <a class="prod" data-reveal href="/sicetac-al-instante/">
@@ -621,9 +628,9 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
           <div class="prod-media"><img src="assets/images/atiemppo/cover-insignia.png" alt="Insignia Impact"/><span class="tag">Impacto</span></div>
           <div class="prod-body"><h3>Insignia Impact</h3><p>Proyecto en desarrollo para conectar operación, impacto y responsabilidad en logística y supply chain.</p><span class="prod-cta">Conocer el proyecto <span class="arw">→</span></span></div>
         </a>
-        <a class="prod" data-reveal href="/servicios/#captura-campo">
-          <div class="prod-media"><img src="assets/images/generated/atiemppo-industria-tiempo-hero.png" alt="Operación de captura y datos en campo"/><span class="tag">Campo</span></div>
-          <div class="prod-body"><h3>Eureka</h3><p>Experiencia aplicada para diseñar captura, calidad, evaluación y trazabilidad desde el territorio.</p><span class="prod-cta">Ver capacidad <span class="arw">→</span></span></div>
+        <a class="prod" data-reveal href="/servicios/#trabajos-especiales">
+          <div class="prod-media"><img src="assets/images/generated/atiemppo-industria-tiempo-hero.png" alt="Operación de captura y datos en campo"/><span class="tag">Trabajo especial</span></div>
+          <div class="prod-body"><h3>Campo y operaciones heredadas</h3><p>Captura, calidad y trazabilidad en territorio se atienden como encargo especial, no como línea central 2026.</p><span class="prod-cta">Ver el alcance <span class="arw">→</span></span></div>
         </a>
       </div>
     </div>
@@ -637,12 +644,12 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
         <div data-reveal>
           <p class="kicker on-dark">Cómo trabajamos</p>
           <h2 class="h2">Una pregunta concreta es suficiente para empezar.</h2>
-          <p class="lead" style="margin:18px 0 28px;max-width:480px">La convertimos en un alcance claro, un entregable que se pueda probar y una forma de continuar sin empezar de cero.</p>
+          <p class="lead" style="margin:18px 0 28px;max-width:480px">La convertimos en un alcance claro, un entregable verificable y un siguiente paso opcional. No vendemos el ecosistema completo en la primera conversación.</p>
           <div class="cap-list">
-            <div class="cap-item"><span class="n">1</span><div><h3>Escuchar</h3><p>Entendemos la decisión, el proceso y el tiempo que hoy se está perdiendo.</p></div></div>
-            <div class="cap-item"><span class="n">2</span><div><h3>Acotar</h3><p>Acordamos fuentes, límites, responsables y criterios de revisión.</p></div></div>
-            <div class="cap-item"><span class="n">3</span><div><h3>Construir</h3><p>Entregamos algo vivo que el equipo pueda usar, revisar y mejorar.</p></div></div>
-            <div class="cap-item"><span class="n">4</span><div><h3>Continuar</h3><p>Dejamos memoria, método y un siguiente paso claro.</p></div></div>
+            <div class="cap-item"><span class="n">1</span><div><h3>Enfocar</h3><p>Una decisión, una tarea o una capacidad. Un responsable. Un resultado observable.</p></div></div>
+            <div class="cap-item"><span class="n">2</span><div><h3>Preparar</h3><p>Fuentes, límites, permisos, supuestos y criterio de aceptación quedan por escrito.</p></div></div>
+            <div class="cap-item"><span class="n">3</span><div><h3>Construir</h3><p>Análisis, datos o agentes con trazabilidad. La IA acelera; el criterio valida.</p></div></div>
+            <div class="cap-item"><span class="n">4</span><div><h3>Activar</h3><p>El equipo usa el resultado. Dejamos memoria y un siguiente paso con valor propio.</p></div></div>
           </div>
         </div>
         <div class="win-wrap" data-reveal>
@@ -699,7 +706,7 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
       <div data-reveal>
         <p class="kicker on-dark">Siguiente paso</p>
         <h2 class="h2">Avanza hoy con nosotros.</h2>
-        <p class="lead" style="margin:18px 0 32px;max-width:460px">Una pregunta concreta es suficiente para empezar. Cuéntanos qué quieres entender, agilizar, construir o decidir.</p>
+        <p class="lead" style="margin:18px 0 32px;max-width:460px">¿Cuál es la decisión o tarea de transporte que más tiempo, incertidumbre o retrabajo está generando hoy?</p>
         <div class="contact-links">
           <a href="mailto:juanmatiz@atiemppo.co" class="c-link"><span class="ic">@</span><div><div class="v">juanmatiz@atiemppo.co</div><div class="k">Correo</div></div></a>
           <a href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20hablar%20sobre%20un%20proyecto%20para%20recuperar%20tiempo%20operativo." target="_blank" rel="noopener" class="c-link"><span class="ic">↗</span><div><div class="v">+57 310 768 7010</div><div class="k">WhatsApp · Bogotá, Colombia</div></div></a>
@@ -724,7 +731,7 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
             <div class="fg"><label>Empresa</label><input type="text" name="empresa" placeholder="Nombre de tu empresa"/></div>
             <div class="fg"><label>Teléfono o WhatsApp</label><input type="text" name="telefono" placeholder="+57 300 000 0000"/></div>
           </div>
-          <div class="fg"><label>¿Qué tiempo quieres recuperar?</label><textarea name="mensaje" placeholder="Cuéntanos qué proceso, sistema o decisión consume demasiado tiempo..." required></textarea></div>
+          <div class="fg"><label>¿Qué decisión o tarea de transporte quieres resolver primero?</label><textarea name="mensaje" placeholder="Cuéntanos la decisión, el dato o la tarea que más tiempo o incertidumbre genera hoy..." required></textarea></div>
           <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:4px">Enviar mensaje →</button>
           <p class="form-note">ATIEMPPO recibirá tu mensaje por correo y responderá para coordinar el siguiente paso.</p>
         </form>
@@ -751,9 +758,9 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
     <div class="footer-top">
       <div class="footer-brand">
         <img src="assets/images/logo-atiemppo.png" alt="ATIEMPPO"/>
-        <p>Datos, agentes y sistemas operativos para recuperar tiempo en las empresas.</p>
+        <p>Datos, criterio y agentes para que las áreas de transporte recuperen tiempo y decidan mejor.</p>
       </div>
-      <div class="footer-col"><h4>Qué hacemos</h4><ul><li><a href="#puente">El puente</a></li><li><a href="#soluciones">Siete soluciones</a></li><li><a href="/banco-de-conocimiento/">Banco de conocimiento</a></li><li><a href="/agentes/">Agentes</a></li><li><a href="#capacidades">Cómo trabajamos</a></li><li><a href="/novedades-en-vias/">Novedades en Vías</a></li><li><a href="/reportes/">Reportes</a></li><li><a href="/blog/">Blog</a></li></ul></div>
+      <div class="footer-col"><h4>Qué hacemos</h4><ul><li><a href="/servicios/">Servicios 2026</a></li><li><a href="#soluciones">Tres puertas de entrada</a></li><li><a href="#puente">El journey</a></li><li><a href="#capacidades">Cómo trabajamos</a></li><li><a href="/novedades-en-vias/">Novedades en Vías</a></li><li><a href="/reportes/">Reportes</a></li><li><a href="/blog/">Blog</a></li></ul></div>
       <div class="footer-col"><h4>Productos</h4><ul><li><a href="/sicetac-al-instante/">SICETAC al Instante</a></li><li><a href="/indices-sicetac/">Índice SICETAC para tu red</a></li><li><a href="/sicetac-api/">API SICETAC</a></li><li><a href="/base-completa-sicetac/">Base SICETAC</a></li><li><a href="https://www.eldatologistico.com" target="_blank" rel="noopener">El Dato Logístico</a></li><li><a href="https://chat.whatsapp.com/DC2nQ5FjQ04KmiWdOKU0XH?mode=gi_t" target="_blank" rel="noopener">La Comunidad</a></li><li><a href="/insignia-impact/">Insignia Impact</a></li></ul></div>
       <div class="footer-col"><h4>Contacto</h4><ul><li><a href="mailto:juanmatiz@atiemppo.co">juanmatiz@atiemppo.co</a></li><li><a href="/politicaprivacidad">Privacidad</a></li><li><a href="/llms.txt">llms.txt</a></li></ul></div>
     </div>

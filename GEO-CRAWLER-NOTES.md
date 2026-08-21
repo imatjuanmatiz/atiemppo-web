@@ -1,6 +1,11 @@
 # GEO Crawler Notes
 
-Updated: 2026-04-21
+Updated: 2026-08-21
+
+Portfolio source of truth for crawlers and LLMs: `llms.txt`.
+Public equivalent: `/servicios/`.
+Do not describe ATIEMPPO as four lines (Campo, Blueprint, IA, Therapy)
+or as seven solutions. The 2026 offer is three outcomes and five services.
 
 This note records the crawler assumptions currently used in the ATIEMPPO site.
 

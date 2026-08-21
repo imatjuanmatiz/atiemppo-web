@@ -138,7 +138,7 @@ Before implementing a layer of conversation with data, you have to understand wh
 
 <div class="edl-recursos">
   <h4>Keep exploring</h4>
-  <a href="https://atiemppo.com/servicios/#logistics-blueprint">See the Logistics Blueprint service line</a>
+  <a href="https://atiemppo.com/servicios/#datos">See SICETAC data and network intelligence</a>
   <a href="https://atiemppo.com/sicetac-api/">Learn about the SICETAC API for companies</a>
   <a href="https://atiemppo.com/eldatologistico/">Go to El Dato Logístico</a>
 </div>
