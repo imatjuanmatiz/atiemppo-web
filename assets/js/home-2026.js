@@ -34,18 +34,18 @@
     },
     ai: {
       chapter: "03",
-      title: "Incorporar IA y aprender a trabajar con agentes.",
-      description: "Combinamos conocimiento especializado en transporte con aprendizaje práctico de inteligencia artificial para que el equipo resuelva tareas reales de su operación y desarrolle capacidades propias.",
-      outcomes: ["Agente Especialista en Transporte para resolver consultas y tareas con contexto del sector.", "Profe Bruno para aprender IA aplicada al transporte y construir agentes.", "Capacidades propias para continuar y escalar."],
-      serviceUrl: "#servicios",
-      category: "Transporte e IA",
-      product: "Agente Especialista en Transporte + Profe Bruno",
-      productDescription: "El Agente Especialista en Transporte apoya consultas y tareas de la operación con contexto del sector. Profe Bruno acompaña al equipo a aprender IA aplicada y a construir sus propios agentes.",
+      title: "Especialización, aprendizaje y agentes para las áreas de transporte.",
+      description: "Ayudamos al equipo a aprender IA, usar agentes especializados y convertir tareas reales de transporte en sistemas de trabajo que puedan revisar y mejorar.",
+      outcomes: ["Especialista Bruno para consultas y tareas con contexto del sector.", "Profe Bruno para aprender IA aplicada al transporte.", "Experiencia para diseñar, probar y gobernar agentes propios."],
+      serviceUrl: "#agent-catalog",
+      category: "Especialización y agentes",
+      product: "Especialista Bruno + Profe Bruno",
+      productDescription: "Especialista Bruno aplica conocimiento de transporte sobre consultas y tareas de la operación. Profe Bruno acompaña al equipo a aprender IA y a construir agentes con propósito, fuentes y límites.",
       productImage: "/assets/images/atiemppo/mesa-trabajo-ia.png",
-      productAlt: "Mesa de trabajo con un Agente Especialista en Transporte y Profe Bruno",
-      productUrl: "/formacion/profe-bruno-ia-aplicada/",
-      productCta: "Ver aprendizaje",
-      proof: ["Agente Especialista", "Profe Bruno"]
+      productAlt: "Mesa de trabajo con Especialista Bruno y Profe Bruno",
+      productUrl: "#agent-catalog",
+      productCta: "Ver fichas de agentes",
+      proof: ["Especialista Bruno", "Profe Bruno"]
     }
   };
 
@@ -166,26 +166,29 @@
   });
 
   var catalogToggle = document.querySelector(".catalog-toggle");
-  var catalog = document.getElementById("product-catalog");
-  if (catalogToggle && catalog) {
-    function setCatalogExpanded(expanded) {
+  var catalogs = Array.prototype.slice.call(document.querySelectorAll(".catalog-section"));
+  if (catalogToggle && catalogs.length) {
+    function updateCatalogToggle() {
+      var expanded = catalogs.some(function (section) { return !section.hidden; });
       catalogToggle.setAttribute("aria-expanded", expanded ? "true" : "false");
-      catalog.hidden = !expanded;
       catalogToggle.firstChild.nodeValue = expanded ? "Ocultar fichas " : "Ver todas las fichas ";
     }
 
     catalogToggle.addEventListener("click", function () {
       var expanded = catalogToggle.getAttribute("aria-expanded") === "true";
-      setCatalogExpanded(!expanded);
+      catalogs.forEach(function (section) { section.hidden = expanded; });
+      updateCatalogToggle();
     });
 
     document.addEventListener("click", function (event) {
-      var link = event.target.closest('a[href="#product-catalog"]');
+      var link = event.target.closest('a[href="#product-catalog"], a[href="#agent-catalog"]');
       if (!link) return;
       event.preventDefault();
-      setCatalogExpanded(true);
+      var target = document.querySelector(link.getAttribute("href"));
+      catalogs.forEach(function (section) { section.hidden = section !== target; });
+      updateCatalogToggle();
       window.requestAnimationFrame(function () {
-        catalog.scrollIntoView({ behavior: "smooth", block: "start" });
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
       });
     });
   }
