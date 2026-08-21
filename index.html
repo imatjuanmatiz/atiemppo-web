@@ -8,14 +8,14 @@ render_with_liquid: false
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>ATIEMPPO — Servicios para transformar las áreas de transporte</title>
-<meta name="description" content="Tres resultados y cinco servicios para áreas de transporte: consultorías con IA, datos SICETAC, capacitación agéntica, conexión con agentes y hoja de ruta."/>
+<title>ATIEMPPO — Datos, criterio y agentes para áreas de transporte</title>
+<meta name="description" content="ATIEMPPO ayuda a áreas de transporte a decidir mejor, usar datos SICETAC y trabajar con agentes. Prueba SICETAC al Instante o únete a Novedades en Vías."/>
 <meta name="ai-content-declaration" content="human-authored"/>
 <meta name="llms-txt" content="https://atiemppo.com/llms.txt"/>
 <link rel="alternate" type="text/plain" title="LLMs.txt" href="/llms.txt"/>
 <link rel="alternate" type="text/plain" title="LLMs full" href="/llms-full.txt"/>
-<meta property="og:title" content="ATIEMPPO — Servicios para transformar las áreas de transporte"/>
-<meta property="og:description" content="Datos, criterio y agentes para que las áreas de transporte decidan mejor, incorporen agentes y desarrollen capacidades propias."/>
+<meta property="og:title" content="ATIEMPPO — Datos, criterio y agentes para áreas de transporte"/>
+<meta property="og:description" content="Datos, criterio y agentes para que las áreas de transporte decidan mejor. Prueba SICETAC al Instante o únete a Novedades en Vías."/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://atiemppo.com/"/>
 <meta property="og:locale" content="es_CO"/>
@@ -24,8 +24,8 @@ render_with_liquid: false
 <meta property="og:image:alt" content="Servicios ATIEMPPO para áreas de transporte"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="@atiemppo"/>
-<meta name="twitter:title" content="ATIEMPPO — Servicios para transformar las áreas de transporte"/>
-<meta name="twitter:description" content="Datos, criterio y agentes para que las áreas de transporte decidan mejor, incorporen agentes y desarrollen capacidades propias."/>
+<meta name="twitter:title" content="ATIEMPPO — Datos, criterio y agentes para áreas de transporte"/>
+<meta name="twitter:description" content="Datos, criterio y agentes para áreas de transporte. SICETAC al Instante y Novedades en Vías, listos para usar."/>
 <meta name="twitter:image" content="https://atiemppo.com/assets/images/generated/atiemppo-capa-agentica-bruno.png"/>
 <link rel="canonical" href="https://atiemppo.com/"/>
 <link rel="alternate" hreflang="es" href="https://atiemppo.com/"/>
@@ -59,8 +59,8 @@ render_with_liquid: false
       "@type": "WebPage",
       "@id": "https://atiemppo.com/#webpage",
       "url": "https://atiemppo.com/",
-      "name": "ATIEMPPO — Servicios para transformar las áreas de transporte",
-      "description": "Tres resultados y cinco servicios de ATIEMPPO para áreas de transporte: decidir mejor, incorporar agentes y desarrollar capacidades propias.",
+      "name": "ATIEMPPO — Datos, criterio y agentes para áreas de transporte",
+      "description": "ATIEMPPO ayuda a áreas de transporte a decidir mejor, usar datos SICETAC y trabajar con agentes.",
       "isPartOf": {
         "@id": "https://atiemppo.com/#organization"
       }
@@ -420,6 +420,41 @@ button{font:inherit}
 .prod:hover .prod-cta .arw{transform:translateX(3px);display:inline-block}
 .prod-cta .arw{display:inline-block;transition:transform .2s}
 .activos-foot{margin-top:22px}
+.btn-ghost-ink{border:1px solid var(--line-strong);color:var(--nav);background:#fff}
+.detail-visuals{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:18px;
+}
+.detail-visual{
+  display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);
+  border-radius:12px;overflow:hidden;transition:transform .2s,border-color .2s;
+}
+.detail-visual:hover{transform:translateY(-2px);border-color:var(--line-strong)}
+.detail-visual img{width:100%;height:92px;object-fit:cover;display:block;background:#16314d}
+.detail-visual span{padding:10px 12px 12px;font-size:13px;font-weight:700;letter-spacing:-.02em}
+.entry-banners{padding:0 0 56px}
+.entry-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.entry{
+  position:relative;overflow:hidden;border-radius:18px;color:#fff;
+  padding:28px 28px 26px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;
+  background:linear-gradient(150deg,#16314d,#0e243a);
+}
+.entry-sicetac{background:linear-gradient(150deg,#0e2c4d,#082b3d)}
+.entry-kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;
+  letter-spacing:.16em;text-transform:uppercase;color:#8ec6ef;margin-bottom:12px;
+}
+.entry h3{
+  font-family:'DM Serif Display',Georgia,serif;font-size:clamp(1.5rem,3vw,2.1rem);
+  font-weight:400;line-height:1.08;margin:0 0 10px;
+}
+.entry p{color:rgba(255,255,255,.76);font-size:14px;line-height:1.55;margin:0 0 18px;max-width:420px}
+.entry p strong{color:#fff}
+.entry-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.entry-hint{font-size:13px;font-weight:700;color:#8ec6ef}
+.entry-qr{display:flex;flex-direction:column;align-items:center;gap:8px}
+.entry-qr a{display:block;background:#fff;padding:10px;border-radius:14px}
+.entry-qr img{width:132px;height:132px;display:block}
+.entry-qr small{font-size:11px;letter-spacing:.04em;color:rgba(255,255,255,.55);text-align:center}
 .contact-section{padding:0 0 70px}
 .contact-panel{
   background:#fff;border:1px solid var(--line);border-radius:18px;padding:32px;
@@ -462,7 +497,7 @@ button{font:inherit}
 @media(max-width:900px){
   .topbar-inner{flex-direction:column;align-items:flex-start}
   .topnav{gap:14px}
-  .portfolio-head,.activos-head,.cta-box,.why-panel,.detail-bottom,.doors-grid,.contact-panel,.contact-form .frow,.prod-grid{grid-template-columns:1fr 1fr}
+  .portfolio-head,.activos-head,.cta-box,.why-panel,.detail-bottom,.doors-grid,.contact-panel,.contact-form .frow,.prod-grid,.entry-grid,.detail-visuals{grid-template-columns:1fr 1fr}
   .cta-actions{justify-content:flex-start}
 }
 @media(max-width:900px){
@@ -472,7 +507,9 @@ button{font:inherit}
 @media(max-width:680px){
   .hero{padding-top:52px}
   .hero-media img{height:200px}
-  .services-grid,.capabilities-grid,.prod-grid{grid-template-columns:1fr}
+  .services-grid,.capabilities-grid,.prod-grid,.entry-grid,.detail-visuals{grid-template-columns:1fr}
+  .entry{grid-template-columns:1fr;padding:24px}
+  .entry-qr{align-items:flex-start}
   .service-card,.service-card:nth-child(4),.service-card:nth-child(5){grid-column:auto}
   .detail-top,.detail-body,.why-panel{padding:22px}
   .detail-top-row{align-items:flex-start;flex-direction:column}
@@ -486,7 +523,8 @@ button{font:inherit}
       <img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO"/>
     </a>
     <nav class="topnav" aria-label="Navegacion principal">
-      <a href="/" class="active">Servicios</a>
+      <a href="/" class="active">Inicio</a>
+      <a href="#lineas">Servicios</a>
       <a href="/enfoque/">Enfoque</a>
       <a href="#aplicaciones">Aplicaciones</a>
       <a href="/novedades-en-vias/">Novedades en Vías</a>
@@ -501,12 +539,12 @@ button{font:inherit}
   <div class="container">
     <div class="hero-inner">
       <div class="eyebrow">ATIEMPPO S.A.S.</div>
-      <h1>Servicios para transformar las <em>áreas de transporte</em>.</h1>
-      <p>Tres resultados y cinco servicios. Empezamos por una pregunta real y cotizamos una sola puerta de entrada: decidir mejor, incorporar agentes o desarrollar capacidades propias.</p>
+      <h1>Datos, criterio y agentes para las <em>áreas de transporte</em>.</h1>
+      <p>Este es el inicio: tres resultados, cinco servicios y aplicaciones que ya se pueden usar. Empezamos por una pregunta real, o por una consulta de SICETAC y el estado de las vías.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="https://wa.me/573107687010?text=Hola%20Juan%2C%20quiero%20hablar%20con%20ATIEMPPO%20sobre%20una%20decision%20o%20tarea%20de%20transporte." target="_blank" rel="noopener">Abrir WhatsApp</a>
-        <a class="btn btn-secondary" href="#lineas">Ver las cinco líneas</a>
-        <a class="btn btn-secondary" href="/enfoque/">Cómo pensamos la IA</a>
+        <a class="btn btn-primary" href="https://wa.me/573107687010?text=Hola%20Juan%2C%20quiero%20hablar%20con%20ATIEMPPO%20sobre%20una%20decision%20o%20tarea%20de%20transporte." target="_blank" rel="noopener">Hablar con Juan</a>
+        <a class="btn btn-secondary" href="#lineas">Ver servicios</a>
+        <a class="btn btn-secondary" href="#probar">Probar SICETAC y Vías</a>
       </div>
     </div>
     <figure class="hero-media">
@@ -615,6 +653,12 @@ button{font:inherit}
             </ul>
           </div>
         </div>
+        <div class="section-label" style="margin-top:22px">Hojas de producto</div>
+        <div class="detail-visuals">
+          <a class="detail-visual" href="/reportes/"><img src="/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png" alt="Reportes Vivos"/><span>Reportes Vivos</span></a>
+          <a class="detail-visual" href="https://www.eldatologistico.com" target="_blank" rel="noopener"><img src="/assets/images/blog/el-dato-logistico/home-radar-logistico-semanal.png" alt="El Dato Logístico"/><span>El Dato Logístico</span></a>
+          <a class="detail-visual" href="/novedades-en-vias/"><img src="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia.png" alt="Novedades en Vías"/><span>Novedades en Vías</span></a>
+        </div>
       </div>
     </article>
 
@@ -656,9 +700,16 @@ button{font:inherit}
             </ul>
           </div>
         </div>
+        <div class="section-label" style="margin-top:22px">Hojas de producto</div>
+        <div class="detail-visuals">
+          <a class="detail-visual" href="/sicetac-al-instante/"><img src="/assets/images/atiemppo/cover-sicetac.png" alt="SICETAC al Instante"/><span>SICETAC al Instante</span></a>
+          <a class="detail-visual" href="/indices-sicetac/"><img src="/assets/images/atiemppo/cover-base.png" alt="Índice de Red"/><span>Índice de Red</span></a>
+          <a class="detail-visual" href="/base-completa-sicetac/"><img src="/assets/images/atiemppo/cover-base.png" alt="Base SICETAC"/><span>Base SICETAC</span></a>
+          <a class="detail-visual" href="/sicetac-api/"><img src="/assets/images/atiemppo/cover-sicetac.png" alt="API SICETAC"/><span>API SICETAC</span></a>
+        </div>
         <div class="hero-actions" style="margin-top:28px">
           <a class="btn btn-primary" href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20hablar%20de%20SICETAC%20o%20de%20mi%20red%20de%20transporte." target="_blank" rel="noopener">Quiero una referencia usable</a>
-          <a class="btn btn-secondary" href="/indices-sicetac/">Ver el Índice de Red</a>
+          <a class="btn btn-ghost-ink" href="/indices-sicetac/">Ver el Índice de Red</a>
         </div>
       </div>
     </article>
@@ -701,9 +752,15 @@ button{font:inherit}
             </ul>
           </div>
         </div>
+        <div class="section-label" style="margin-top:22px">Hojas de producto</div>
+        <div class="detail-visuals">
+          <a class="detail-visual" href="/formacion/profe-bruno-ia-aplicada/"><img src="/assets/images/atiemppo/mesa-trabajo-ia.png" alt="Profe Bruno"/><span>Profe Bruno</span></a>
+          <a class="detail-visual" href="/sesiones/"><img src="/assets/images/blog/bruno-en-el-aula/profe-bruno-1.jpeg" alt="Sesión abierta"/><span>Sesión abierta</span></a>
+          <a class="detail-visual" href="/banco-de-conocimiento/"><img src="/assets/images/atiemppo/banco-conocimiento-latam.png" alt="Banco de conocimiento"/><span>Banco de conocimiento</span></a>
+        </div>
         <div class="hero-actions" style="margin-top:28px">
           <a class="btn btn-primary" href="/formacion/profe-bruno-ia-aplicada/">Conocer Profe Bruno</a>
-          <a class="btn btn-secondary" href="/sesiones/">Sesión abierta</a>
+          <a class="btn btn-ghost-ink" href="/sesiones/">Sesión abierta</a>
         </div>
       </div>
     </article>
@@ -746,6 +803,12 @@ button{font:inherit}
             </ul>
           </div>
         </div>
+        <div class="section-label" style="margin-top:22px">Hojas de producto</div>
+        <div class="detail-visuals">
+          <a class="detail-visual" href="/ia-que-ejecuta-bruno-openclaw/"><img src="/assets/images/atiemppo/bruno-openclaw.png" alt="Bruno / OpenClaw" style="object-position:top left"/><span>Bruno / OpenClaw</span></a>
+          <a class="detail-visual" href="/novedades-en-vias/"><img src="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia.png" alt="Novedades en Vías"/><span>Novedades en Vías</span></a>
+          <a class="detail-visual" href="/agentes/"><img src="/assets/images/generated/atiemppo-capa-agentica-bruno.png" alt="Catálogo de agentes"/><span>Catálogo de agentes</span></a>
+        </div>
       </div>
     </article>
 
@@ -787,6 +850,12 @@ button{font:inherit}
             </ul>
           </div>
         </div>
+        <div class="section-label" style="margin-top:22px">Hojas de producto</div>
+        <div class="detail-visuals">
+          <a class="detail-visual" href="/banco-de-conocimiento/"><img src="/assets/images/atiemppo/banco-conocimiento-latam.png" alt="Banco de conocimiento"/><span>Banco de conocimiento</span></a>
+          <a class="detail-visual" href="/agentes/"><img src="/assets/images/generated/atiemppo-capa-agentica-bruno.png" alt="Agentes ATIEMPPO"/><span>Agentes ATIEMPPO</span></a>
+          <a class="detail-visual" href="/formacion/profe-bruno-ia-aplicada/"><img src="/assets/images/atiemppo/mesa-trabajo-ia.png" alt="Profe Bruno"/><span>Profe Bruno</span></a>
+        </div>
       </div>
     </article>
   </div>
@@ -809,6 +878,14 @@ button{font:inherit}
       <a class="prod" href="/indices-sicetac/">
         <div class="prod-media"><img src="/assets/images/atiemppo/cover-base.png" alt="Índice SICETAC para la red de una empresa"/><span class="tag">Red</span></div>
         <div class="prod-body"><h3>Índice de Red</h3><p>Convierte las rutas de tu empresa en una referencia propia y actualizable para presupuesto y negociación.</p><span class="prod-cta">Entender el modelo <span class="arw">→</span></span></div>
+      </a>
+      <a class="prod" href="/base-completa-sicetac/">
+        <div class="prod-media"><img src="/assets/images/atiemppo/cover-base.png" alt="Base completa SICETAC"/><span class="tag">Base</span></div>
+        <div class="prod-body"><h3>Base SICETAC</h3><p>Referencia estructurada, puntual o recurrente, con corte, campos y nota metodológica.</p><span class="prod-cta">Ver la base <span class="arw">→</span></span></div>
+      </a>
+      <a class="prod" href="/sicetac-api/">
+        <div class="prod-media"><img src="/assets/images/atiemppo/cover-sicetac.png" alt="API SICETAC"/><span class="tag">API</span></div>
+        <div class="prod-body"><h3>API SICETAC</h3><p>Consumo técnico para sistemas o agentes, con alcance, cobertura y soporte definidos.</p><span class="prod-cta">Ver la API <span class="arw">→</span></span></div>
       </a>
       <a class="prod" href="/ia-que-ejecuta-bruno-openclaw/">
         <div class="prod-media">
@@ -840,6 +917,43 @@ button{font:inherit}
       </a>
     </div>
     <p class="activos-foot"><a href="/enfoque/#aplicaciones" style="font-size:14px;font-weight:700;color:var(--blue)">Cómo pensamos la IA en estas aplicaciones →</a></p>
+  </div>
+</section>
+
+<section class="entry-banners" id="probar">
+  <div class="container">
+    <div class="entry-grid">
+      <article class="entry">
+        <div>
+          <div class="entry-kicker">Comunidad gratuita</div>
+          <h3>Únete a Novedades en Vías</h3>
+          <p>La comunidad de WhatsApp donde <strong>Bruno reporta todos los días</strong> el estado de las vías de Colombia. Información operativa, directo al chat.</p>
+          <div class="entry-actions">
+            <a class="btn btn-primary" href="https://chat.whatsapp.com/DC2nQ5FjQ04KmiWdOKU0XH?mode=gi_t" target="_blank" rel="noopener">Unirme al grupo →</a>
+            <a class="entry-hint" href="/novedades-en-vias/">Ver la hoja de Vías</a>
+          </div>
+        </div>
+        <div class="entry-qr">
+          <a href="https://chat.whatsapp.com/DC2nQ5FjQ04KmiWdOKU0XH?mode=gi_t" target="_blank" rel="noopener"><img src="/assets/images/atiemppo/novedades-qr.png" alt="Código QR para unirse a Novedades en Vías"/></a>
+          <small>WhatsApp · Novedades en Vías</small>
+        </div>
+      </article>
+      <article class="entry entry-sicetac">
+        <div>
+          <div class="entry-kicker">Acceso directo · SICETAC</div>
+          <h3>SICETAC al Instante</h3>
+          <p>Consulta una ruta real desde WhatsApp o la web. Empieza con origen y destino; no necesitas una reunión para la primera consulta.</p>
+          <div class="entry-actions">
+            <a class="btn btn-primary" href="https://wa.me/573134503694?text=Hola%2C%20quiero%20consultar%20SICETAC%20al%20Instante.%20Mi%20ruta%20es%3A" target="_blank" rel="noopener">Abrir WhatsApp →</a>
+            <a class="entry-hint" href="/sicetac-al-instante/">Ver la hoja del producto</a>
+          </div>
+        </div>
+        <div class="entry-qr">
+          <a href="https://wa.me/573134503694?text=Hola%2C%20quiero%20consultar%20SICETAC%20al%20Instante.%20Mi%20ruta%20es%3A" target="_blank" rel="noopener"><img src="/assets/images/atiemppo/sicetac-instant-qr.png" alt="Código QR para consultar SICETAC al Instante"/></a>
+          <small>WhatsApp · SICETAC al Instante</small>
+        </div>
+      </article>
+    </div>
   </div>
 </section>
 
@@ -933,7 +1047,8 @@ button{font:inherit}
   <div class="container">
     <small>&copy; 2026 ATIEMPPO S.A.S. · Bogotá, Colombia · atiemppo.com</small>
     <nav class="page-footer-nav" aria-label="Enlaces del pie">
-      <a href="/">Servicios</a>
+      <a href="/">Inicio</a>
+      <a href="#lineas">Servicios</a>
       <a href="/enfoque/">Enfoque</a>
       <a href="#aplicaciones">Aplicaciones</a>
       <a href="/novedades-en-vias/">Novedades en Vías</a>
