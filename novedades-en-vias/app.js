@@ -60,16 +60,23 @@ function render() {
 
   const delta = state.que_cambio || [];
   const notes = state.notas_cambio || [];
-  document.getElementById("delta-table").innerHTML = delta.length
-    ? table(["Corredor / tramo", "Antes", "Ahora", "Cambio", "Evidencia"], delta, (row) => `
-        <td>${escapeHtml(row.corredor)}</td>
-        <td>${escapeHtml(row.antes)}</td>
-        <td>${escapeHtml(row.ahora)}</td>
-        <td>${escapeHtml(row.cambio)}</td>
-        <td>${linkify(row.evidencia)}</td>
-      `)
-    : empty("Sin tabla de cambios en este corte.");
-  document.getElementById("delta-notes").innerHTML = notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("");
+  const deltaSection = document.getElementById("que-cambio");
+  const isMorning = String(state.ventana || "").toUpperCase() === "AM";
+  if (isMorning) {
+    deltaSection.hidden = true;
+  } else {
+    deltaSection.hidden = false;
+    document.getElementById("delta-table").innerHTML = delta.length
+      ? table(["Corredor / tramo", "Antes (AM)", "Ahora", "Cambio", "Evidencia"], delta, (row) => `
+          <td>${escapeHtml(row.corredor)}</td>
+          <td>${escapeHtml(row.antes)}</td>
+          <td>${escapeHtml(row.ahora)}</td>
+          <td>${escapeHtml(row.cambio)}</td>
+          <td>${linkify(row.evidencia)}</td>
+        `)
+      : empty("Ningún tramo cambió de estado frente al listado de la mañana.");
+    document.getElementById("delta-notes").innerHTML = notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("");
+  }
 
   const listado = (state.listado && state.listado.length) ? state.listado : fallbackListado();
   document.getElementById("listado-table").innerHTML = listado.length
