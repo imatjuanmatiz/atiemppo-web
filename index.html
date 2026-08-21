@@ -6,1148 +6,173 @@ render_with_liquid: false
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>ATIEMPPO — Datos, criterio y agentes para áreas de transporte</title>
-<meta name="description" content="ATIEMPPO ayuda a áreas de transporte a decidir mejor, usar datos SICETAC y trabajar con agentes. Prueba SICETAC al Instante o únete a Novedades en Vías."/>
-<meta name="ai-content-declaration" content="human-authored"/>
-<meta name="llms-txt" content="https://atiemppo.com/llms.txt"/>
-<link rel="alternate" type="text/plain" title="LLMs.txt" href="/llms.txt"/>
-<link rel="alternate" type="text/plain" title="LLMs full" href="/llms-full.txt"/>
-<meta property="og:title" content="ATIEMPPO — Datos, criterio y agentes para áreas de transporte"/>
-<meta property="og:description" content="Datos, criterio y agentes para que las áreas de transporte decidan mejor. Prueba SICETAC al Instante o únete a Novedades en Vías."/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="https://atiemppo.com/"/>
-<meta property="og:locale" content="es_CO"/>
-<meta property="og:site_name" content="ATIEMPPO"/>
-<meta property="og:image" content="https://atiemppo.com/assets/images/generated/atiemppo-capa-agentica-bruno.png"/>
-<meta property="og:image:alt" content="Servicios ATIEMPPO para áreas de transporte"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:site" content="@atiemppo"/>
-<meta name="twitter:title" content="ATIEMPPO — Datos, criterio y agentes para áreas de transporte"/>
-<meta name="twitter:description" content="Datos, criterio y agentes para áreas de transporte. SICETAC al Instante y Novedades en Vías, listos para usar."/>
-<meta name="twitter:image" content="https://atiemppo.com/assets/images/generated/atiemppo-capa-agentica-bruno.png"/>
-<link rel="canonical" href="https://atiemppo.com/"/>
-<link rel="alternate" hreflang="es" href="https://atiemppo.com/"/>
-<link rel="alternate" hreflang="en" href="https://atiemppo.com/en/"/>
-<link rel="alternate" hreflang="x-default" href="https://atiemppo.com/"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://atiemppo.com/#organization",
-      "name": "ATIEMPPO S.A.S.",
-      "url": "https://atiemppo.com",
-      "logo": "https://atiemppo.com/assets/images/logo-atiemppo.png",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bogota",
-        "addressCountry": "CO"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+57-310-768-7010",
-        "email": "juanmatiz@atiemppo.co"
-      }
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://atiemppo.com/#webpage",
-      "url": "https://atiemppo.com/",
-      "name": "ATIEMPPO — Datos, criterio y agentes para áreas de transporte",
-      "description": "ATIEMPPO ayuda a áreas de transporte a decidir mejor, usar datos SICETAC y trabajar con agentes.",
-      "isPartOf": {
-        "@id": "https://atiemppo.com/#organization"
-      }
-    },
-    {
-      "@type": "ItemList",
-      "@id": "https://atiemppo.com/#itemlist",
-      "name": "Servicios ATIEMPPO 2026",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Consultorías potencializadas con IA", "url": "https://atiemppo.com/#consultorias" },
-        { "@type": "ListItem", "position": 2, "name": "Datos SICETAC e inteligencia de red", "url": "https://atiemppo.com/#datos" },
-        { "@type": "ListItem", "position": 3, "name": "Capacitación y Experiencia Agéntica", "url": "https://atiemppo.com/#capacitacion" },
-        { "@type": "ListItem", "position": 4, "name": "Conexión con agentes ATIEMPPO", "url": "https://atiemppo.com/#agentes-gestionados" },
-        { "@type": "ListItem", "position": 5, "name": "Hoja de ruta y capacidades propias", "url": "https://atiemppo.com/#hoja-de-ruta" }
-      ]
-    },
-    {
-      "@type": "Service",
-      "@id": "https://atiemppo.com/#consultorias-service",
-      "name": "Consultorías potencializadas con IA",
-      "provider": { "@id": "https://atiemppo.com/#organization" },
-      "areaServed": ["Colombia", "America Latina"],
-      "url": "https://atiemppo.com/#consultorias",
-      "serviceType": "Consultoria de transporte, logistica y supply chain con evidencia y revision humana",
-      "description": "Convierte una pregunta compleja de transporte en una decision sustentada, con fuentes, supuestos, limites y una ruta de accion."
-    },
-    {
-      "@type": "Service",
-      "@id": "https://atiemppo.com/#datos-service",
-      "name": "Datos SICETAC e inteligencia de red",
-      "provider": { "@id": "https://atiemppo.com/#organization" },
-      "areaServed": ["Colombia", "America Latina"],
-      "url": "https://atiemppo.com/#datos",
-      "serviceType": "Base SICETAC, homologacion de rutas, indice de red, simulacion y API",
-      "description": "Convierte referencias SICETAC y datos de la red del cliente en informacion estructurada, comparable y utilizable."
-    },
-    {
-      "@type": "Service",
-      "@id": "https://atiemppo.com/#capacitacion-service",
-      "name": "Capacitación y Experiencia Agéntica",
-      "provider": { "@id": "https://atiemppo.com/#organization" },
-      "areaServed": ["Colombia", "America Latina"],
-      "url": "https://atiemppo.com/#capacitacion",
-      "serviceType": "Formacion aplicada para dirigir agentes sobre tareas reales",
-      "description": "Prepara a personas y equipos para pasar de chatear con IA a dirigir agentes con proposito, fuentes, limites y revision humana."
-    },
-    {
-      "@type": "Service",
-      "@id": "https://atiemppo.com/#agentes-gestionados-service",
-      "name": "Conexión con agentes ATIEMPPO",
-      "provider": { "@id": "https://atiemppo.com/#organization" },
-      "areaServed": ["Colombia", "America Latina"],
-      "url": "https://atiemppo.com/#agentes-gestionados",
-      "serviceType": "Servicio gestionado de agentes especializados en transporte y logistica",
-      "description": "Conecta al equipo con agentes especializados, fuentes autorizadas, memoria, soporte y cierre, sin construir toda la infraestructura desde el primer dia."
-    },
-    {
-      "@type": "Service",
-      "@id": "https://atiemppo.com/#hoja-de-ruta-service",
-      "name": "Hoja de ruta de agentes y capacidades propias",
-      "provider": { "@id": "https://atiemppo.com/#organization" },
-      "areaServed": ["Colombia", "America Latina"],
-      "url": "https://atiemppo.com/#hoja-de-ruta",
-      "serviceType": "Diagnostico, priorizacion y plan del primer piloto de agentes",
-      "description": "Convierte oportunidades dispersas de IA en una agenda priorizada, gobernable y con un primer piloto definido. La implementacion productiva se estima aparte."
-    }
-  ]
-}
-</script>
-<style>
-:root{
-  --ink:#1d1d1b;
-  --muted:#5e625f;
-  --paper:#fafaf8;
-  --surface:#ffffff;
-  --line:rgba(29,29,27,.08);
-  --line-strong:rgba(29,29,27,.16);
-  --nav:#16314d;
-  --nav-strong:#0e243a;
-  --blue:#2e75b6;
-  --blue-soft:#d5e8f0;
-  --green:#1a8c64;
-  --green-soft:#d4f0e3;
-  --berry:#9b3a7a;
-  --berry-soft:#f0d5e8;
-  --gold:#b67a2e;
-  --gold-soft:#f0e4d5;
-  --shadow:0 20px 50px rgba(0,0,0,.08);
-  --r:14px;
-}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  background:var(--paper);
-  color:var(--ink);
-  font-family:'Instrument Sans',system-ui,sans-serif;
-  line-height:1.6;
-}
-a{text-decoration:none;color:inherit}
-img{max-width:100%;display:block}
-button{font:inherit}
-.container{max-width:1120px;margin:0 auto;padding:0 24px}
-.eyebrow{
-  display:inline-flex;align-items:center;gap:10px;
-  font-size:11px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;
-}
-.eyebrow::before{content:'';width:22px;height:1px;background:currentColor}
-
-.topbar{
-  position:sticky;top:0;z-index:30;
-  background:rgba(22,49,77,.94);
-  backdrop-filter:blur(18px);
-  border-bottom:1px solid rgba(255,255,255,.08);
-}
-.topbar-inner{
-  max-width:1180px;margin:0 auto;padding:16px 24px;
-  display:flex;align-items:center;justify-content:space-between;gap:20px;
-}
-.brand{display:flex;align-items:center}
-.brand img{height:42px;width:auto}
-.topnav{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
-.topnav a{font-size:14px;color:rgba(255,255,255,.74);transition:color .2s}
-.topnav a:hover,.topnav a.active{color:#fff}
-.topnav .cta-link{
-  padding:10px 16px;border-radius:999px;
-  background:#2e75b6;color:#fff;font-weight:600;
-}
-
-.hero{
-  background:linear-gradient(180deg,var(--nav) 0%,var(--nav-strong) 100%);
-  color:#fff;padding:74px 0 0;position:relative;overflow:hidden;
-}
-.hero::before,
-.hero::after{
-  content:'';position:absolute;border-radius:999px;filter:blur(10px);pointer-events:none;
-}
-.hero::before{
-  width:480px;height:480px;left:-120px;bottom:-220px;
-  background:radial-gradient(circle,rgba(46,117,182,.24) 0%,transparent 68%);
-}
-.hero::after{
-  width:420px;height:420px;right:-120px;top:-180px;
-  background:radial-gradient(circle,rgba(108,180,232,.16) 0%,transparent 68%);
-}
-.hero .container{
-  display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end;
-  position:relative;z-index:1;padding-bottom:0;
-}
-.hero-inner{position:relative;z-index:1;max-width:560px}
-.hero-media{
-  position:relative;align-self:end;
-  border-radius:16px 16px 0 0;overflow:hidden;
-  border:1px solid rgba(255,255,255,.14);border-bottom:0;
-  box-shadow:0 -24px 60px rgba(0,0,0,.24);
-}
-.hero-media img{width:100%;height:280px;object-fit:cover;display:block;filter:saturate(1.05)}
-.hero-media::before{
-  content:'';position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(22,49,77,0) 50%,rgba(22,49,77,.5) 100%);
-}
-.hero .eyebrow{color:rgba(255,255,255,.62);margin-bottom:18px}
-.hero h1{
-  font-family:'DM Serif Display',Georgia,serif;
-  font-size:clamp(2.6rem,7vw,4.6rem);
-  line-height:1.02;font-weight:400;letter-spacing:-.03em;
-  margin-bottom:18px;
-}
-.hero h1 em{font-style:italic;color:#8ec6ef}
-.hero p{
-  font-size:18px;color:rgba(255,255,255,.76);
-  max-width:660px;margin-bottom:28px;
-}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:8px;
-  padding:13px 22px;border-radius:999px;font-size:14px;font-weight:600;
-  transition:transform .2s,background .2s,border-color .2s,color .2s;
-}
-.btn:hover{transform:translateY(-1px)}
-.btn-primary{background:#2e75b6;color:#fff}
-.btn-secondary{border:1px solid rgba(255,255,255,.18);color:#fff;background:rgba(255,255,255,.06)}
-
-.proofbar{
-  background:#16314d;color:#fff;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.12);
-}
-.proofbar .container{
-  display:flex;justify-content:center;align-items:center;text-align:center;
-  font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
-}
-
-.portfolio{padding:56px 0 18px}
-.portfolio-head{
-  display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:end;margin-bottom:28px;
-}
-.portfolio-title{
-  font-family:'DM Serif Display',Georgia,serif;
-  font-size:clamp(2rem,4vw,3.2rem);font-weight:400;line-height:1.05;
-}
-.portfolio-copy{color:var(--muted);max-width:440px}
-
-.doors-grid{
-  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:0 0 36px;
-}
-.door-card{
-  background:#fff;border:1px solid var(--line);border-radius:var(--r);
-  padding:22px 20px 20px;position:relative;overflow:hidden;
-  box-shadow:0 10px 24px rgba(22,49,77,.04);
-}
-.door-card::before{
-  content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--accent,#2e75b6);
-}
-.door-kicker{
-  display:block;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--muted);margin-bottom:10px;
-}
-.door-card strong{display:block;font-size:16px;margin-bottom:8px;letter-spacing:-.02em}
-.door-card p{font-size:13px;color:var(--muted);line-height:1.5}
-.services-grid{
-  display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;margin-bottom:26px;
-}
-.service-card{grid-column:span 2}
-.special-note{
-  margin-top:28px;padding:22px 24px;border:1px dashed var(--line-strong);border-radius:14px;background:#fff;
-}
-.special-note h3{font-size:16px;margin-bottom:8px}
-.special-note p{font-size:14px;color:var(--muted);max-width:760px}
-.service-card{
-  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
-  padding:24px 22px 22px;position:relative;overflow:hidden;cursor:pointer;
-  transition:transform .22s,border-color .22s,box-shadow .22s;
-  text-align:left;
-}
-.service-card::after{
-  content:'';position:absolute;left:0;right:0;bottom:0;height:4px;
-  transform:scaleX(0);transform-origin:left;transition:transform .25s ease;
-  background:var(--accent,#2e75b6);
-}
-.service-card:hover,.service-card.is-active{
-  transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--line-strong);
-}
-.service-card:hover::after,.service-card.is-active::after{transform:scaleX(1)}
-.service-number{
-  position:absolute;top:10px;right:16px;font-size:40px;font-weight:700;
-  font-family:'DM Serif Display',Georgia,serif;opacity:.09;color:var(--accent,#2e75b6);
-}
-.service-icon{font-size:28px;display:block;margin-bottom:12px}
-.service-title{font-size:18px;font-weight:700;letter-spacing:-.02em;margin-bottom:8px}
-.service-tagline{font-size:13px;color:var(--muted);min-height:62px}
-.service-arrow{margin-top:18px;font-size:13px;font-weight:700;color:var(--accent,#2e75b6)}
-
-.details-wrap{padding-bottom:64px}
-.service-detail{
-  background:var(--surface);border:1px solid var(--line);border-radius:18px;
-  box-shadow:var(--shadow);overflow:hidden;
-}
-.service-detail[hidden]{display:none}
-.detail-top{
-  padding:32px;border-left:4px solid var(--accent,#2e75b6);
-  border-bottom:1px solid var(--line);
-}
-.detail-top-row{
-  display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:14px;
-}
-.detail-title-group{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-.detail-number{
-  font-size:14px;font-weight:700;color:rgba(29,29,27,.35);
-  font-family:'DM Serif Display',Georgia,serif;
-}
-.detail-icon{font-size:24px}
-.detail-title{
-  font-family:'DM Serif Display',Georgia,serif;
-  font-size:30px;font-weight:400;line-height:1.05;
-}
-.detail-close{
-  border:1px solid var(--line-strong);background:#fff;color:#555;
-  padding:8px 14px;border-radius:999px;cursor:pointer;
-}
-.detail-close:hover{background:#f4f4f2}
-.detail-desc{max-width:760px;color:#494c49;font-size:15px}
-.detail-body{padding:30px 32px 34px}
-.section-label{
-  font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
-  color:rgba(29,29,27,.42);margin-bottom:18px;
-}
-.capabilities-grid{
-  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-bottom:32px;
-}
-.capability{
-  padding:18px;border:1px solid var(--line);border-left:4px solid var(--accent-soft,#d5e8f0);
-  border-radius:12px;background:#fff;
-}
-.capability h3{font-size:15px;margin-bottom:6px}
-.capability p{font-size:13px;color:#5b5e5b}
-.detail-bottom{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.detail-list{list-style:none}
-.detail-list li{
-  padding:9px 0;border-bottom:1px solid var(--line);font-size:14px;color:#444846;
-}
-.detail-list.cases li::before{content:'→ ';color:var(--accent,#2e75b6);font-weight:700}
-.detail-list.deliverables li::before{content:'✓ ';color:var(--accent,#2e75b6);font-weight:700}
-
-.why-section{
-  padding:0 0 70px;
-}
-.why-panel{
-  background:linear-gradient(135deg,#fff 0%,#f6f5f1 100%);
-  border:1px solid var(--line);border-radius:18px;padding:30px;
-  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;
-}
-.why-card{
-  padding:18px;border-radius:14px;background:#fff;border:1px solid var(--line);
-  transition:transform .2s,box-shadow .2s,border-color .2s;
-}
-.why-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--line-strong)}
-.why-card h3{font-size:15px;margin-bottom:8px}
-.why-card p{font-size:13px;color:var(--muted)}
-
-.cta{
-  padding:54px 0;background:#16314d;color:#fff;
-}
-.cta-box{
-  display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;
-}
-.cta-copy h2{
-  font-family:'DM Serif Display',Georgia,serif;
-  font-size:clamp(2rem,4vw,3rem);font-weight:400;line-height:1.04;margin-bottom:10px;
-}
-.cta-copy p{max-width:600px;color:rgba(255,255,255,.72)}
-.cta-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
-.activos{padding:8px 0 64px}
-.activos-head{
-  display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:end;margin-bottom:28px;
-}
-.activos-title{
-  font-family:'DM Serif Display',Georgia,serif;
-  font-size:clamp(2rem,4vw,3.2rem);font-weight:400;line-height:1.05;
-}
-.activos-copy{color:var(--muted);max-width:440px}
-.prod-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
-.prod{
-  display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);
-  border-radius:16px;overflow:hidden;transition:transform .22s,box-shadow .22s,border-color .22s;
-}
-.prod:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--line-strong)}
-.prod-media{height:168px;position:relative;overflow:hidden;background:#16314d}
-.prod-media img{width:100%;height:100%;object-fit:cover;display:block;object-position:center top}
-.prod-media.logo{background:#fff;display:flex;align-items:center;justify-content:center;padding:18px}
-.prod-media.logo img{width:auto;max-width:82%;max-height:92px;object-fit:contain}
-.prod-media .tag{
-  position:absolute;top:12px;left:12px;font-size:10px;font-weight:700;letter-spacing:.12em;
-  text-transform:uppercase;padding:5px 10px;border-radius:999px;background:rgba(14,44,77,.9);color:#fff;
-}
-.prod-body{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1}
-.prod-body h3{font-size:16px;letter-spacing:-.02em;margin:0 0 8px}
-.prod-body p{margin:0 0 14px;color:var(--muted);font-size:13px;line-height:1.5;flex:1}
-.prod-cta{font-size:13px;font-weight:700;color:var(--blue)}
-.prod:hover .prod-cta .arw{transform:translateX(3px);display:inline-block}
-.prod-cta .arw{display:inline-block;transition:transform .2s}
-.activos-foot{margin-top:22px}
-.btn-ghost-ink{border:1px solid var(--line-strong);color:var(--nav);background:#fff}
-.detail-visuals{
-  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:18px;
-}
-.detail-visual{
-  display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);
-  border-radius:12px;overflow:hidden;transition:transform .2s,border-color .2s;
-}
-.detail-visual:hover{transform:translateY(-2px);border-color:var(--line-strong)}
-.detail-visual img{width:100%;height:92px;object-fit:cover;display:block;background:#16314d}
-.detail-visual span{padding:10px 12px 12px;font-size:13px;font-weight:700;letter-spacing:-.02em}
-.entry-banners{padding:0 0 56px}
-.entry-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.entry{
-  position:relative;overflow:hidden;border-radius:18px;color:#fff;
-  padding:28px 28px 26px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;
-  background:linear-gradient(150deg,#16314d,#0e243a);
-}
-.entry-sicetac{background:linear-gradient(150deg,#0e2c4d,#082b3d)}
-.entry-kicker{
-  display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;
-  letter-spacing:.16em;text-transform:uppercase;color:#8ec6ef;margin-bottom:12px;
-}
-.entry h3{
-  font-family:'DM Serif Display',Georgia,serif;font-size:clamp(1.5rem,3vw,2.1rem);
-  font-weight:400;line-height:1.08;margin:0 0 10px;
-}
-.entry p{color:rgba(255,255,255,.76);font-size:14px;line-height:1.55;margin:0 0 18px;max-width:420px}
-.entry p strong{color:#fff}
-.entry-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-.entry-hint{font-size:13px;font-weight:700;color:#8ec6ef}
-.entry-qr{display:flex;flex-direction:column;align-items:center;gap:8px}
-.entry-qr a{display:block;background:#fff;padding:10px;border-radius:14px}
-.entry-qr img{width:132px;height:132px;display:block}
-.entry-qr small{font-size:11px;letter-spacing:.04em;color:rgba(255,255,255,.55);text-align:center}
-.contact-section{padding:0 0 70px}
-.contact-panel{
-  background:#fff;border:1px solid var(--line);border-radius:18px;padding:32px;
-  display:grid;grid-template-columns:1fr 1.1fr;gap:32px;
-}
-.contact-copy h2{
-  font-family:'DM Serif Display',Georgia,serif;
-  font-size:clamp(1.8rem,3vw,2.4rem);font-weight:400;line-height:1.08;margin-bottom:10px;
-}
-.contact-copy p{color:var(--muted);font-size:15px;margin-bottom:18px}
-.contact-links{display:flex;flex-direction:column;gap:10px}
-.contact-links a{font-size:14px;font-weight:600;color:var(--nav)}
-.contact-form .frow{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
-.contact-form .fg{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
-.contact-form label{font-size:12px;font-weight:600;color:var(--muted)}
-.contact-form input,.contact-form textarea{
-  border:1px solid var(--line-strong);border-radius:10px;padding:11px 12px;background:#fff;color:var(--ink);
-}
-.contact-form textarea{min-height:110px;resize:vertical}
-.contact-form .hp-field{display:none}
-.form-note{font-size:12px;color:var(--muted);margin-top:10px}
-
-.page-footer{
-  background:#0f243a;color:#c4cdd5;padding:20px 0 26px;
-  border-top:1px solid rgba(255,255,255,.08);
-}
-.page-footer .container{
-  display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap;
-}
-.page-footer small{font-size:12px}
-.page-footer-nav{display:flex;gap:18px;flex-wrap:wrap}
-.page-footer-nav a{font-size:12px;color:#dce4ea}
-
-.service-card:nth-child(4){grid-column:2 / span 2}
-.service-card:nth-child(5){grid-column:4 / span 2}
-@media(max-width:1080px){
-  .services-grid,.prod-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .service-card,.service-card:nth-child(4),.service-card:nth-child(5){grid-column:auto}
-}
-@media(max-width:900px){
-  .topbar-inner{flex-direction:column;align-items:flex-start}
-  .topnav{gap:14px}
-  .portfolio-head,.activos-head,.cta-box,.why-panel,.detail-bottom,.doors-grid,.contact-panel,.contact-form .frow,.prod-grid,.entry-grid,.detail-visuals{grid-template-columns:1fr 1fr}
-  .cta-actions{justify-content:flex-start}
-}
-@media(max-width:900px){
-  .hero .container{grid-template-columns:1fr}
-  .hero-media{margin-top:24px;border-radius:16px;border-bottom:1px solid rgba(255,255,255,.14)}
-}
-@media(max-width:680px){
-  .hero{padding-top:52px}
-  .hero-media img{height:200px}
-  .services-grid,.capabilities-grid,.prod-grid,.entry-grid,.detail-visuals{grid-template-columns:1fr}
-  .entry{grid-template-columns:1fr;padding:24px}
-  .entry-qr{align-items:flex-start}
-  .service-card,.service-card:nth-child(4),.service-card:nth-child(5){grid-column:auto}
-  .detail-top,.detail-body,.why-panel{padding:22px}
-  .detail-top-row{align-items:flex-start;flex-direction:column}
-}
-</style>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>ATIEMPPO — Datos, criterio y agentes para áreas de transporte</title>
+  <meta name="description" content="En ATIEMPPO ayudamos a las áreas de transporte a decidir mejor y a operar con datos y agentes de IA."/>
+  <meta name="ai-content-declaration" content="human-authored"/>
+  <meta name="llms-txt" content="https://atiemppo.com/llms.txt"/>
+  <link rel="alternate" type="text/plain" title="LLMs.txt" href="/llms.txt"/>
+  <link rel="alternate" type="text/plain" title="LLMs full" href="/llms-full.txt"/>
+  <meta property="og:title" content="ATIEMPPO — Datos, criterio y agentes para áreas de transporte"/>
+  <meta property="og:description" content="Ayudamos a las áreas de transporte a decidir mejor y a operar con datos y agentes de IA."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://atiemppo.com/"/>
+  <meta property="og:locale" content="es_CO"/>
+  <meta property="og:site_name" content="ATIEMPPO"/>
+  <meta property="og:image" content="https://atiemppo.com/assets/images/generated/atiemppo-capa-agentica-bruno.png"/>
+  <meta property="og:image:alt" content="Ecosistema de datos y agentes ATIEMPPO para áreas de transporte"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@atiemppo"/>
+  <meta name="twitter:title" content="ATIEMPPO — Datos, criterio y agentes para áreas de transporte"/>
+  <meta name="twitter:description" content="Ayudamos a las áreas de transporte a decidir mejor y a operar con datos y agentes de IA."/>
+  <meta name="twitter:image" content="https://atiemppo.com/assets/images/generated/atiemppo-capa-agentica-bruno.png"/>
+  <link rel="canonical" href="https://atiemppo.com/"/>
+  <link rel="alternate" hreflang="es" href="https://atiemppo.com/"/>
+  <link rel="alternate" hreflang="en" href="https://atiemppo.com/en/"/>
+  <link rel="alternate" hreflang="x-default" href="https://atiemppo.com/"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:wght@400;500;600;700&family=Material+Symbols+Rounded:FILL@0..1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/assets/css/home-2026.css"/>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {"@type":"Organization","@id":"https://atiemppo.com/#organization","name":"ATIEMPPO S.A.S.","url":"https://atiemppo.com","logo":"https://atiemppo.com/assets/images/logo-atiemppo.png","address":{"@type":"PostalAddress","addressLocality":"Bogota","addressCountry":"CO"},"contactPoint":{"@type":"ContactPoint","telephone":"+57-310-768-7010","email":"juanmatiz@atiemppo.co"}},
+      {"@type":"WebPage","@id":"https://atiemppo.com/#webpage","url":"https://atiemppo.com/","name":"ATIEMPPO — Datos, criterio y agentes para áreas de transporte","isPartOf":{"@id":"https://atiemppo.com/#organization"}},
+      {"@type":"ItemList","name":"Servicios ATIEMPPO 2026","itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Consultoría para decidir mejor","url":"https://atiemppo.com/#servicios"},
+        {"@type":"ListItem","position":2,"name":"Capacitación para la era de la IA","url":"https://atiemppo.com/#servicios"},
+        {"@type":"ListItem","position":3,"name":"Fábrica de Agentes","url":"https://atiemppo.com/#servicios"},
+        {"@type":"ListItem","position":4,"name":"Bruno / OpenClaw","url":"https://atiemppo.com/#servicios"},
+        {"@type":"ListItem","position":5,"name":"Plataforma ATIEMPPO","url":"https://atiemppo.com/#servicios"}
+      ]},
+      {"@type":"Service","@id":"https://atiemppo.com/#consulting-service","name":"Consultoría para decidir mejor","provider":{"@id":"https://atiemppo.com/#organization"},"areaServed":["Colombia","America Latina"],"url":"https://atiemppo.com/#servicios","serviceType":"Consultoría de transporte y logística con datos e inteligencia artificial","description":"Convierte una pregunta compleja en una respuesta explicable, con fuentes, supuestos, límites y una ruta de acción."},
+      {"@type":"Service","@id":"https://atiemppo.com/#training-service","name":"Capacitación para la era de la IA","provider":{"@id":"https://atiemppo.com/#organization"},"areaServed":["Colombia","America Latina"],"url":"https://atiemppo.com/#servicios","serviceType":"Formación aplicada en inteligencia artificial y agentes","description":"Prepara a equipos para dirigir agentes sobre tareas reales con propósito, fuentes, límites y revisión humana."},
+      {"@type":"Service","@id":"https://atiemppo.com/#agent-factory-service","name":"Fábrica de Agentes","provider":{"@id":"https://atiemppo.com/#organization"},"areaServed":["Colombia","America Latina"],"url":"https://atiemppo.com/#servicios","serviceType":"Diseño y construcción de agentes especializados","description":"Diseña y construye agentes para tareas de transporte con criterios de aceptación, trazabilidad y control humano."},
+      {"@type":"Service","@id":"https://atiemppo.com/#bruno-openclaw-service","name":"Bruno / OpenClaw","provider":{"@id":"https://atiemppo.com/#organization"},"areaServed":["Colombia","America Latina"],"url":"https://atiemppo.com/#servicios","serviceType":"Orquestación de agentes con memoria y herramientas","description":"Conecta agentes, memoria, contexto y herramientas para ejecutar con coherencia, seguimiento y gobierno."},
+      {"@type":"Service","@id":"https://atiemppo.com/#platform-service","name":"Plataforma ATIEMPPO","provider":{"@id":"https://atiemppo.com/#organization"},"areaServed":["Colombia","America Latina"],"url":"https://atiemppo.com/#servicios","serviceType":"Plataforma de datos, agentes e indicadores","description":"Integra datos, agentes e indicadores con seguridad, gobierno y una experiencia consistente."}
+    ]
+  }
+  </script>
 </head>
 <body>
-<header class="topbar">
-  <div class="topbar-inner">
-    <a href="/" class="brand" aria-label="ATIEMPPO">
-      <img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO"/>
-    </a>
-    <nav class="topnav" aria-label="Navegacion principal">
-      <a href="/" class="active">Inicio</a>
-      <a href="#lineas">Servicios</a>
-      <a href="/enfoque/">Enfoque</a>
-      <a href="#aplicaciones">Aplicaciones</a>
-      <a href="/novedades-en-vias/">Novedades en Vías</a>
-      <a href="/blog/">Blog</a>
-      <a href="/en/" style="font-size:12px;letter-spacing:.08em">EN</a>
-      <a href="#contacto" class="cta-link">Hablemos</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="container">
-    <div class="hero-inner">
-      <div class="eyebrow">ATIEMPPO S.A.S.</div>
-      <h1>Datos, criterio y agentes para las <em>áreas de transporte</em>.</h1>
-      <p>En ATIEMPPO transformamos las áreas de transporte para que tomen mejores decisiones, trabajen con datos y aprovechen agentes de inteligencia artificial en su operación. Acompañamos a sus equipos a aprender, incorporar y desarrollar estas capacidades, convirtiendo la inteligencia artificial en tiempo, criterio y acción.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="https://wa.me/573107687010?text=Hola%20Juan%2C%20quiero%20hablar%20con%20ATIEMPPO%20sobre%20una%20decision%20o%20tarea%20de%20transporte." target="_blank" rel="noopener">Hablar con Juan</a>
-        <a class="btn btn-secondary" href="#lineas">Ver servicios</a>
-        <a class="btn btn-secondary" href="#probar">Probar SICETAC y Vías</a>
-      </div>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="/" aria-label="ATIEMPPO, inicio"><img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO"/></a>
+      <button class="nav-toggle" type="button" aria-label="Abrir navegación" aria-controls="main-nav" aria-expanded="false"><span class="material-symbols-rounded" aria-hidden="true">menu</span></button>
+      <nav class="site-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="/" aria-current="page">Inicio</a><a href="#servicios">Servicios</a><a href="/enfoque/">Enfoque</a><a href="#aplicaciones">Aplicaciones</a><a href="/novedades-en-vias/">Novedades en Vías</a><a href="/blog/">Blog</a><a href="/en/" lang="en">EN</a><a class="nav-cta" href="#contacto">Hablemos</a>
+      </nav>
     </div>
-    <figure class="hero-media">
-      <img src="/assets/images/generated/atiemppo-capa-agentica-bruno.png" alt="Bruno, agente de IA de ATIEMPPO, como capa de trabajo en proyectos de servicios"/>
-    </figure>
-  </div>
-</section>
+  </header>
 
-<div class="proofbar">
-  <div class="container">Tres resultados · cinco servicios · una puerta de entrada</div>
-</div>
-
-<section class="portfolio" id="lineas">
-  <div class="container">
-    <div class="portfolio-head">
-      <div>
-        <div class="eyebrow" style="color:#5e625f;margin-bottom:16px">Portafolio ATIEMPPO 2026</div>
-        <h2 class="portfolio-title">Tres puertas de entrada. Cinco servicios con alcances distintos.</h2>
-      </div>
-      <p class="portfolio-copy">Mostramos el ecosistema, pero cotizamos un primer resultado concreto. Abre la línea que se parece a tu necesidad de hoy.</p>
-    </div>
-
-    <div class="doors-grid">
-      <article class="door-card" style="--accent:#B67A2E"><span class="door-kicker">Resultado 01</span><strong>Tengo una decisión que tomar</strong><p>Consultoría o datos de red para responder preguntas de costos, rutas, mercado, ubicación u operación.</p></article>
-      <article class="door-card" style="--accent:#2E75B6"><span class="door-kicker">Resultado 02</span><strong>Quiero ahorrar tiempo e incorporar agentes</strong><p>Capacitación sobre una tarea real o una conexión gestionada con agentes especializados.</p></article>
-      <article class="door-card" style="--accent:#16314D"><span class="door-kicker">Resultado 03</span><strong>Quiero construir capacidades propias</strong><p>Hoja de ruta para priorizar casos de uso, gobierno y el primer piloto, sin prometer aún un despliegue productivo.</p></article>
-    </div>
-
-    <div class="services-grid" role="tablist" aria-label="Lineas de servicio">
-      <button class="service-card is-active" type="button" data-target="consultoria" data-accent="#B67A2E" data-soft="#F0E4D5" aria-expanded="true">
-        <span class="service-number">01</span>
-        <span class="service-icon">🧭</span>
-        <div class="service-title" style="color:#5C3A1B">Consultorías con IA</div>
-        <div class="service-tagline">Una pregunta de negocio se convierte en una decisión sustentada.</div>
-        <div class="service-arrow">Explorar línea →</div>
-      </button>
-      <button class="service-card" type="button" data-target="datos" data-accent="#1A8C64" data-soft="#D4F0E3" aria-expanded="false">
-        <span class="service-number">02</span>
-        <span class="service-icon">🗺️</span>
-        <div class="service-title" style="color:#0D5C3F">Datos e inteligencia de red</div>
-        <div class="service-tagline">Base, homologación, índice, simulación o API. Por separado.</div>
-        <div class="service-arrow">Explorar línea →</div>
-      </button>
-      <button class="service-card" type="button" data-target="capacitacion" data-accent="#9B3A7A" data-soft="#F0D5E8" aria-expanded="false">
-        <span class="service-number">03</span>
-        <span class="service-icon">🎓</span>
-        <div class="service-title" style="color:#5C1B4A">Capacitación agéntica</div>
-        <div class="service-tagline">De chatear con IA a dirigir agentes sobre una tarea real.</div>
-        <div class="service-arrow">Explorar línea →</div>
-      </button>
-      <button class="service-card" type="button" data-target="conexion" data-accent="#2E75B6" data-soft="#D5E8F0" aria-expanded="false">
-        <span class="service-number">04</span>
-        <span class="service-icon">🔗</span>
-        <div class="service-title" style="color:#1B3A5C">Conexión con agentes</div>
-        <div class="service-tagline">Usar especialistas de ATIEMPPO sin construir toda la infraestructura.</div>
-        <div class="service-arrow">Explorar línea →</div>
-      </button>
-      <button class="service-card" type="button" data-target="ruta" data-accent="#16314D" data-soft="#D5E0EA" aria-expanded="false">
-        <span class="service-number">05</span>
-        <span class="service-icon">📌</span>
-        <div class="service-title" style="color:#16314D">Hoja de ruta</div>
-        <div class="service-tagline">Priorizar, gobernar y definir el primer piloto. Implementar es otra fase.</div>
-        <div class="service-arrow">Explorar línea →</div>
-      </button>
-    </div>
-  </div>
-</section>
-
-<section class="details-wrap">
-  <div class="container">
-    <article class="service-detail" id="consultorias" data-detail="consultoria" style="--accent:#B67A2E;--accent-soft:#F0E4D5">
-      <div class="detail-top">
-        <div class="detail-top-row">
-          <div class="detail-title-group">
-            <span class="detail-number">01</span>
-            <span class="detail-icon">🧭</span>
-            <h2 class="detail-title" style="color:#5C3A1B">Consultorías potencializadas con IA</h2>
-          </div>
-          <button class="detail-close" type="button" data-close-detail>Cerrar</button>
-        </div>
-        <p class="detail-desc">Convertimos una pregunta compleja de transporte, logística o supply chain en una decisión sustentada. Combinamos experiencia sectorial, fuentes especializadas, datos e inteligencia artificial con revisión humana. El cliente no compra IA en abstracto: compra una respuesta explicable y una ruta de acción.</p>
-      </div>
-      <div class="detail-body">
-        <div class="section-label">Qué incluye</div>
-        <div class="capabilities-grid">
-          <div class="capability"><h3 style="color:#5C3A1B">Pregunta de decisión</h3><p>Cada proyecto comienza por lo que el equipo debe poder decidir al final, no por una lista de análisis.</p></div>
-          <div class="capability"><h3 style="color:#5C3A1B">Evidencia trazable</h3><p>Fuentes, cortes, supuestos y límites quedan visibles. Se distinguen hechos, estimaciones y escenarios.</p></div>
-          <div class="capability"><h3 style="color:#5C3A1B">IA como método</h3><p>Los agentes aceleran búsqueda, cruces y memoria. Los cálculos críticos y las recomendaciones conservan revisión humana.</p></div>
-          <div class="capability"><h3 style="color:#5C3A1B">Activación</h3><p>El informe se trabaja con el equipo. Un documento sin conversación deja valor sin capturar.</p></div>
-        </div>
-        <div class="detail-bottom">
-          <div>
-            <div class="section-label">Aplicaciones</div>
-            <ul class="detail-list cases">
-              <li>Estudios de mercado, coyuntura y caracterización de actores</li>
-              <li>Corredores, nodos y localización de red</li>
-              <li>Presupuestos, escenarios y lecturas de operación</li>
-            </ul>
-          </div>
-          <div>
-            <div class="section-label">El cliente recibe</div>
-            <ul class="detail-list deliverables">
-              <li>Recomendación o respuesta ejecutiva</li>
-              <li>Soporte técnico y límites documentados</li>
-              <li>Sesión de activación y siguientes pasos</li>
-            </ul>
+  <main>
+    <section class="home-hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">ATIEMPPO S.A.S.</p>
+          <h1>Datos, criterio y agentes para las <em>áreas de transporte.</em></h1>
+          <!-- Texto de posicionamiento aprobado: conservar siempre completo. -->
+          <p class="hero-positioning" id="home-positioning">En Atiemppo ayudamos a las áreas de transporte a decidir mejor y a operar con datos y agentes de IA. Acompañamos a sus equipos a aprender, incorporar y desarrollar esas capacidades, hasta convertir la Inteligencia Artificial en tiempo, criterio y acción.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#prioridades">Encontrar mi punto de entrada <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a>
+            <a class="btn btn-outline" href="https://wa.me/573107687010?text=Hola%20Juan%2C%20quiero%20hablar%20con%20ATIEMPPO%20sobre%20una%20decision%20o%20tarea%20de%20transporte." target="_blank" rel="noopener">Hablar con Juan</a>
           </div>
         </div>
-        <div class="section-label" style="margin-top:22px">Hojas de producto</div>
-        <div class="detail-visuals">
-          <a class="detail-visual" href="/reportes/"><img src="/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png" alt="Reportes Vivos"/><span>Reportes Vivos</span></a>
-          <a class="detail-visual" href="https://www.eldatologistico.com" target="_blank" rel="noopener"><img src="/assets/images/blog/el-dato-logistico/home-radar-logistico-semanal.png" alt="El Dato Logístico"/><span>El Dato Logístico</span></a>
-          <a class="detail-visual" href="/novedades-en-vias/"><img src="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia.png" alt="Novedades en Vías"/><span>Novedades en Vías</span></a>
-        </div>
-      </div>
-    </article>
-
-    <article class="service-detail" id="datos" data-detail="datos" style="--accent:#1A8C64;--accent-soft:#D4F0E3" hidden>
-      <div class="detail-top">
-        <div class="detail-top-row">
-          <div class="detail-title-group">
-            <span class="detail-number">02</span>
-            <span class="detail-icon">🗺️</span>
-            <h2 class="detail-title" style="color:#0D5C3F">Datos SICETAC e inteligencia de red</h2>
-          </div>
-          <button class="detail-close" type="button" data-close-detail>Cerrar</button>
-        </div>
-        <p class="detail-desc">Convertimos referencias SICETAC y datos de tu red en información estructurada, comparable y utilizable. No es un paquete único: Base, homologación, índice, simulación y API se contratan por separado.</p>
-      </div>
-      <div class="detail-body">
-        <div class="section-label">Componentes</div>
-        <div class="capabilities-grid">
-          <div class="capability"><h3 style="color:#0D5C3F">Base SICETAC</h3><p>Referencia estructurada, puntual, bajo demanda o recurrente, con corte, campos y nota metodológica.</p></div>
-          <div class="capability"><h3 style="color:#0D5C3F">Homologación de rutas</h3><p>Normalizamos el maestro del cliente y construimos equivalencias, excepciones y reglas de gobierno del dato.</p></div>
-          <div class="capability"><h3 style="color:#0D5C3F">Evolución e Índice de la Red</h3><p>Cambio ruta a ruta frente a SICETAC y, cuando hay ponderadores, lectura del impacto sobre la red.</p></div>
-          <div class="capability"><h3 style="color:#0D5C3F">Simulación y API</h3><p>Escenarios de presupuesto o consumo técnico para sistemas y agentes, con alcance, cobertura y soporte definidos.</p></div>
-        </div>
-        <div class="detail-bottom">
-          <div>
-            <div class="section-label">Cómo empezamos</div>
-            <ul class="detail-list cases">
-              <li>Si solo necesitas la referencia: Base puntual o mensual</li>
-              <li>Si tu red está inconsistente: homologación</li>
-              <li>Si quieres medir evolución o impacto: Índice de la Red</li>
-            </ul>
-          </div>
-          <div>
-            <div class="section-label">El cliente recibe</div>
-            <ul class="detail-list deliverables">
-              <li>El producto contratado, no el paquete completo</li>
-              <li>Campos, cortes, equivalencias y proxies documentados</li>
-              <li>Condiciones de uso y limitaciones visibles</li>
-            </ul>
-          </div>
-        </div>
-        <div class="section-label" style="margin-top:22px">Hojas de producto</div>
-        <div class="detail-visuals">
-          <a class="detail-visual" href="/sicetac-al-instante/"><img src="/assets/images/atiemppo/cover-sicetac.png" alt="SICETAC al Instante"/><span>SICETAC al Instante</span></a>
-          <a class="detail-visual" href="/indices-sicetac/"><img src="/assets/images/atiemppo/cover-base.png" alt="Índice de Red"/><span>Índice de Red</span></a>
-          <a class="detail-visual" href="/base-completa-sicetac/"><img src="/assets/images/atiemppo/cover-base.png" alt="Base SICETAC"/><span>Base SICETAC</span></a>
-          <a class="detail-visual" href="/sicetac-api/"><img src="/assets/images/atiemppo/cover-sicetac.png" alt="API SICETAC"/><span>API SICETAC</span></a>
-        </div>
-        <div class="hero-actions" style="margin-top:28px">
-          <a class="btn btn-primary" href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20hablar%20de%20SICETAC%20o%20de%20mi%20red%20de%20transporte." target="_blank" rel="noopener">Quiero una referencia usable</a>
-          <a class="btn btn-ghost-ink" href="/indices-sicetac/">Ver el Índice de Red</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="service-detail" id="capacitacion" data-detail="capacitacion" style="--accent:#9B3A7A;--accent-soft:#F0D5E8" hidden>
-      <div class="detail-top">
-        <div class="detail-top-row">
-          <div class="detail-title-group">
-            <span class="detail-number">03</span>
-            <span class="detail-icon">🎓</span>
-            <h2 class="detail-title" style="color:#5C1B4A">Capacitación y Experiencia Agéntica</h2>
-          </div>
-          <button class="detail-close" type="button" data-close-detail>Cerrar</button>
-        </div>
-        <p class="detail-desc">Preparamos a personas, gerentes y equipos de transporte para pasar de conversar con una IA a dirigir agentes con propósito, contexto, fuentes, límites y revisión humana. El aprendizaje trabaja sobre una tarea real.</p>
-      </div>
-      <div class="detail-body">
-        <div class="section-label">Formatos</div>
-        <div class="capabilities-grid">
-          <div class="capability"><h3 style="color:#5C1B4A">Sesión personalizada</h3><p>Para una persona o grupo pequeño: primera rutina, mejor encargo y criterio de calidad.</p></div>
-          <div class="capability"><h3 style="color:#5C1B4A">Sesión ejecutiva</h3><p>Para gerentes que necesitan ver oportunidades, riesgos y gobierno antes de activar pilotos.</p></div>
-          <div class="capability"><h3 style="color:#5C1B4A">Taller o laboratorio</h3><p>El equipo trabaja una tarea real, documenta el flujo y acuerda revisión humana.</p></div>
-          <div class="capability"><h3 style="color:#5C1B4A">Experiencia empresarial</h3><p>Entorno preparado, práctica, acompañamiento y cierre. No cotizamos solo las horas de aula.</p></div>
-        </div>
-        <div class="detail-bottom">
-          <div>
-            <div class="section-label">Qué se aprende</div>
-            <ul class="detail-list cases">
-              <li>Propósito, fuentes, memoria, permisos y guardrails</li>
-              <li>Formato de salida y cuándo escalar a una persona</li>
-              <li>Cuándo usar un agente ATIEMPPO y cuándo construir capacidad propia</li>
-            </ul>
-          </div>
-          <div>
-            <div class="section-label">El cliente recibe</div>
-            <ul class="detail-list deliverables">
-              <li>Criterio práctico y una tarea trabajada</li>
-              <li>Ficha, procedimiento o flujo reutilizable</li>
-              <li>Aprendizajes y recomendación de continuidad</li>
-            </ul>
-          </div>
-        </div>
-        <div class="section-label" style="margin-top:22px">Hojas de producto</div>
-        <div class="detail-visuals">
-          <a class="detail-visual" href="/formacion/profe-bruno-ia-aplicada/"><img src="/assets/images/atiemppo/mesa-trabajo-ia.png" alt="Profe Bruno"/><span>Profe Bruno</span></a>
-          <a class="detail-visual" href="/sesiones/"><img src="/assets/images/blog/bruno-en-el-aula/profe-bruno-1.jpeg" alt="Sesión abierta"/><span>Sesión abierta</span></a>
-          <a class="detail-visual" href="/banco-de-conocimiento/"><img src="/assets/images/atiemppo/banco-conocimiento-latam.png" alt="Banco de conocimiento"/><span>Banco de conocimiento</span></a>
-        </div>
-        <div class="hero-actions" style="margin-top:28px">
-          <a class="btn btn-primary" href="/formacion/profe-bruno-ia-aplicada/">Conocer Profe Bruno</a>
-          <a class="btn btn-ghost-ink" href="/sesiones/">Sesión abierta</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="service-detail" id="agentes-gestionados" data-detail="conexion" style="--accent:#2E75B6;--accent-soft:#D5E8F0" hidden>
-      <div class="detail-top">
-        <div class="detail-top-row">
-          <div class="detail-title-group">
-            <span class="detail-number">04</span>
-            <span class="detail-icon">🔗</span>
-            <h2 class="detail-title" style="color:#1B3A5C">Conexión con agentes ATIEMPPO</h2>
-          </div>
-          <button class="detail-close" type="button" data-close-detail>Cerrar</button>
-        </div>
-        <p class="detail-desc">Conectamos al equipo con agentes especializados de transporte y logística para consultar fuentes autorizadas, apoyar tareas reales y conservar memoria, sin exigir que el cliente construya toda la infraestructura desde el primer día. Es un servicio gestionado: usuarios, periodo, fuentes, permisos, soporte y cierre forman parte del producto.</p>
-      </div>
-      <div class="detail-body">
-        <div class="section-label">Cómo se contrata</div>
-        <div class="capabilities-grid">
-          <div class="capability"><h3 style="color:#1B3A5C">Capa de continuidad</h3><p>Complementa una consultoría o un producto de datos. Conserva fuentes, decisiones y memoria durante un periodo definido.</p></div>
-          <div class="capability"><h3 style="color:#1B3A5C">Piloto gestionado</h3><p>Grupo acotado de usuarios, uno o dos casos de uso, activación, acompañamiento y cierre con métricas.</p></div>
-          <div class="capability"><h3 style="color:#1B3A5C">Bruno articulador</h3><p>Organiza especialistas y resultados revisables. No sustituye al responsable humano ni aprueba decisiones.</p></div>
-          <div class="capability"><h3 style="color:#1B3A5C">Fuentes y permisos</h3><p>La conexión estándar usa fuentes autorizadas por ATIEMPPO. Información interna exige un alcance específico.</p></div>
-        </div>
-        <div class="detail-bottom">
-          <div>
-            <div class="section-label">Especialidades posibles</div>
-            <ul class="detail-list cases">
-              <li>SICETAC, rutas, costos y presupuestos</li>
-              <li>RNDC, vías, coyuntura y reportes</li>
-              <li>Conocimiento interno autorizado, si se contrata</li>
-            </ul>
-          </div>
-          <div>
-            <div class="section-label">El cliente recibe</div>
-            <ul class="detail-list deliverables">
-              <li>Accesos, periodo y sesión de activación</li>
-              <li>Guía de uso, fuentes y límites</li>
-              <li>Soporte, memoria y informe de cierre</li>
-            </ul>
-          </div>
-        </div>
-        <div class="section-label" style="margin-top:22px">Hojas de producto</div>
-        <div class="detail-visuals">
-          <a class="detail-visual" href="/ia-que-ejecuta-bruno-openclaw/"><img src="/assets/images/atiemppo/bruno-openclaw.png" alt="Bruno / OpenClaw" style="object-position:top left"/><span>Bruno / OpenClaw</span></a>
-          <a class="detail-visual" href="/novedades-en-vias/"><img src="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia.png" alt="Novedades en Vías"/><span>Novedades en Vías</span></a>
-          <a class="detail-visual" href="/agentes/"><img src="/assets/images/generated/atiemppo-capa-agentica-bruno.png" alt="Catálogo de agentes"/><span>Catálogo de agentes</span></a>
-        </div>
-      </div>
-    </article>
-
-    <article class="service-detail" id="hoja-de-ruta" data-detail="ruta" style="--accent:#16314D;--accent-soft:#D5E0EA" hidden>
-      <div class="detail-top">
-        <div class="detail-top-row">
-          <div class="detail-title-group">
-            <span class="detail-number">05</span>
-            <span class="detail-icon">📌</span>
-            <h2 class="detail-title" style="color:#16314D">Hoja de ruta y capacidades propias</h2>
-          </div>
-          <button class="detail-close" type="button" data-close-detail>Cerrar</button>
-        </div>
-        <p class="detail-desc">Convertimos oportunidades dispersas de inteligencia artificial en una agenda priorizada y gobernable, conectada con las decisiones, datos y procesos reales del área de transporte. La hoja de ruta no implica automáticamente el desarrollo productivo.</p>
-      </div>
-      <div class="detail-body">
-        <div class="section-label">Qué queda definido</div>
-        <div class="capabilities-grid">
-          <div class="capability"><h3 style="color:#16314D">Mapa de oportunidades</h3><p>Tareas y decisiones convertidas en casos de uso con usuario, frecuencia, entradas y resultado.</p></div>
-          <div class="capability"><h3 style="color:#16314D">Priorización</h3><p>Valor, datos, riesgo, integración y adopción, no entusiasmo tecnológico.</p></div>
-          <div class="capability"><h3 style="color:#16314D">Arquitectura y gobierno</h3><p>Fuentes, permisos, memoria, guardrails, revisión humana y responsables.</p></div>
-          <div class="capability"><h3 style="color:#16314D">Primer piloto</h3><p>Plan ejecutable, métricas y una estimación aparte si se pide implementación.</p></div>
-        </div>
-        <div class="detail-bottom">
-          <div>
-            <div class="section-label">Cuándo tiene sentido</div>
-            <ul class="detail-list cases">
-              <li>El equipo ya experimentó con IA y necesita orden</li>
-              <li>Hay muchas ideas y pocos criterios de prioridad</li>
-              <li>Hay que decidir entre construir, comprar, conectar o no hacer</li>
-            </ul>
-          </div>
-          <div>
-            <div class="section-label">El cliente recibe</div>
-            <ul class="detail-list deliverables">
-              <li>Diagnóstico y matriz priorizada</li>
-              <li>Fichas de agentes potenciales</li>
-              <li>Plan del primer piloto, sin compromiso de despliegue</li>
-            </ul>
-          </div>
-        </div>
-        <div class="section-label" style="margin-top:22px">Hojas de producto</div>
-        <div class="detail-visuals">
-          <a class="detail-visual" href="/banco-de-conocimiento/"><img src="/assets/images/atiemppo/banco-conocimiento-latam.png" alt="Banco de conocimiento"/><span>Banco de conocimiento</span></a>
-          <a class="detail-visual" href="/agentes/"><img src="/assets/images/generated/atiemppo-capa-agentica-bruno.png" alt="Agentes ATIEMPPO"/><span>Agentes ATIEMPPO</span></a>
-          <a class="detail-visual" href="/formacion/profe-bruno-ia-aplicada/"><img src="/assets/images/atiemppo/mesa-trabajo-ia.png" alt="Profe Bruno"/><span>Profe Bruno</span></a>
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section class="activos" id="aplicaciones">
-  <div class="container">
-    <div class="activos-head">
-      <div>
-        <div class="eyebrow" style="color:#5e625f;margin-bottom:16px">Activos que respaldan los servicios</div>
-        <h2 class="activos-title">Los cinco servicios se apoyan en aplicaciones que ya existen.</h2>
-      </div>
-      <p class="activos-copy">Estas imágenes son los productos y casos en operación. El cliente elige una puerta de entrada; el activo se selecciona después.</p>
-    </div>
-    <div class="prod-grid">
-      <a class="prod" href="/sicetac-al-instante/">
-        <div class="prod-media"><img src="/assets/images/atiemppo/cover-sicetac.png" alt="SICETAC al Instante"/><span class="tag">Consulta</span></div>
-        <div class="prod-body"><h3>SICETAC al Instante</h3><p>Consulta y explica una referencia SICETAC para una ruta concreta desde WhatsApp o la web.</p><span class="prod-cta">Ver producto <span class="arw">→</span></span></div>
-      </a>
-      <a class="prod" href="/indices-sicetac/">
-        <div class="prod-media"><img src="/assets/images/atiemppo/cover-base.png" alt="Índice SICETAC para la red de una empresa"/><span class="tag">Red</span></div>
-        <div class="prod-body"><h3>Índice de Red</h3><p>Convierte las rutas de tu empresa en una referencia propia y actualizable para presupuesto y negociación.</p><span class="prod-cta">Entender el modelo <span class="arw">→</span></span></div>
-      </a>
-      <a class="prod" href="/base-completa-sicetac/">
-        <div class="prod-media"><img src="/assets/images/atiemppo/cover-base.png" alt="Base completa SICETAC"/><span class="tag">Base</span></div>
-        <div class="prod-body"><h3>Base SICETAC</h3><p>Referencia estructurada, puntual o recurrente, con corte, campos y nota metodológica.</p><span class="prod-cta">Ver la base <span class="arw">→</span></span></div>
-      </a>
-      <a class="prod" href="/sicetac-api/">
-        <div class="prod-media"><img src="/assets/images/atiemppo/cover-sicetac.png" alt="API SICETAC"/><span class="tag">API</span></div>
-        <div class="prod-body"><h3>API SICETAC</h3><p>Consumo técnico para sistemas o agentes, con alcance, cobertura y soporte definidos.</p><span class="prod-cta">Ver la API <span class="arw">→</span></span></div>
-      </a>
-      <a class="prod" href="/ia-que-ejecuta-bruno-openclaw/">
-        <div class="prod-media">
-          <img src="/assets/images/atiemppo/bruno-openclaw.png" alt="Bruno / OpenClaw" style="object-position:top left"/>
-          <img src="/assets/images/atiemppo/openclaw-logo.png" alt="" style="position:absolute;bottom:10px;right:10px;width:42px;height:42px;object-fit:contain;filter:drop-shadow(0 4px 10px rgba(0,0,0,.4))"/>
-          <span class="tag">Agente</span>
-        </div>
-        <div class="prod-body"><h3>Bruno / OpenClaw</h3><p>Un agente que coordina fuentes, memoria, tareas, límites y próximas acciones.</p><span class="prod-cta">Conocer el caso <span class="arw">→</span></span></div>
-      </a>
-      <a class="prod" href="/formacion/profe-bruno-ia-aplicada/">
-        <div class="prod-media"><img src="/assets/images/atiemppo/mesa-trabajo-ia.png" alt="Mesa de trabajo de Profe Bruno"/><span class="tag">Capacitación</span></div>
-        <div class="prod-body"><h3>Profe Bruno</h3><p>Aprender haciendo: un agente, una base de conocimiento y un método para dirigirlos.</p><span class="prod-cta">Ver el enfoque <span class="arw">→</span></span></div>
-      </a>
-      <a class="prod" href="/reportes/">
-        <div class="prod-media"><img src="/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png" alt="Biblioteca de Reportes Vivos"/><span class="tag">Conocimiento vivo</span></div>
-        <div class="prod-body"><h3>Reportes Vivos</h3><p>Datos, mapas y análisis navegables que se pueden volver a consultar y actualizar.</p><span class="prod-cta">Abrir biblioteca <span class="arw">→</span></span></div>
-      </a>
-      <a class="prod" href="/novedades-en-vias/">
-        <div class="prod-media"><img src="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia.png" alt="Bruno reportando Novedades en Vías por WhatsApp"/><span class="tag">Vías</span></div>
-        <div class="prod-body"><h3>Novedades en Vías</h3><p>Bruno reporta el estado de corredores en Colombia, todos los días, en WhatsApp.</p><span class="prod-cta">Ver el reporte <span class="arw">→</span></span></div>
-      </a>
-      <a class="prod" href="https://www.eldatologistico.com" target="_blank" rel="noopener">
-        <div class="prod-media logo"><img src="/assets/images/eldatologistico/logo-el-dato-logistico.png" alt="El Dato Logístico"/><span class="tag">Medio</span></div>
-        <div class="prod-body"><h3>El Dato Logístico</h3><p>Análisis, coyuntura y conversación sectorial para convertir señales en mejores preguntas.</p><span class="prod-cta">Ir al medio <span class="arw">→</span></span></div>
-      </a>
-      <a class="prod" href="/insignia-impact/">
-        <div class="prod-media"><img src="/assets/images/atiemppo/cover-insignia.png" alt="Insignia Impact"/><span class="tag">Impacto</span></div>
-        <div class="prod-body"><h3>Insignia Impact</h3><p>Proyecto en desarrollo para conectar operación, impacto y responsabilidad en logística.</p><span class="prod-cta">Conocer el proyecto <span class="arw">→</span></span></div>
-      </a>
-    </div>
-    <p class="activos-foot"><a href="/enfoque/#aplicaciones" style="font-size:14px;font-weight:700;color:var(--blue)">Cómo pensamos la IA en estas aplicaciones →</a></p>
-  </div>
-</section>
-
-<section class="entry-banners" id="probar">
-  <div class="container">
-    <div class="entry-grid">
-      <article class="entry">
         <div>
-          <div class="entry-kicker">Comunidad gratuita</div>
-          <h3>Únete a Novedades en Vías</h3>
-          <p>La comunidad de WhatsApp donde <strong>Bruno reporta todos los días</strong> el estado de las vías de Colombia. Información operativa, directo al chat.</p>
-          <div class="entry-actions">
-            <a class="btn btn-primary" href="https://chat.whatsapp.com/DC2nQ5FjQ04KmiWdOKU0XH?mode=gi_t" target="_blank" rel="noopener">Unirme al grupo →</a>
-            <a class="entry-hint" href="/novedades-en-vias/">Ver la hoja de Vías</a>
+          <figure class="hero-visual"><img src="/assets/images/generated/atiemppo-capa-agentica-bruno.png" alt="Bruno conecta fuentes, memoria, criterio y agentes en una capa de trabajo"/></figure>
+          <div class="hero-proof" aria-label="Principios de trabajo">
+            <span><span class="material-symbols-rounded" aria-hidden="true">verified_user</span>Criterio humano al centro</span><span><span class="material-symbols-rounded" aria-hidden="true">database</span>Datos trazables</span><span><span class="material-symbols-rounded" aria-hidden="true">task_alt</span>Acciones verificables</span>
           </div>
         </div>
-        <div class="entry-qr">
-          <a href="https://chat.whatsapp.com/DC2nQ5FjQ04KmiWdOKU0XH?mode=gi_t" target="_blank" rel="noopener"><img src="/assets/images/atiemppo/novedades-qr.png" alt="Código QR para unirse a Novedades en Vías"/></a>
-          <small>WhatsApp · Novedades en Vías</small>
+      </div>
+    </section>
+
+    <section class="journey" id="prioridades">
+      <div class="container">
+        <header class="journey-head"><p class="eyebrow">Mapa de decisión</p><h2 class="section-heading">¿Cuál es tu prioridad hoy?</h2><p class="section-copy">Tres puntos de entrada. Un mismo ecosistema que se adapta a la necesidad concreta de tu área.</p></header>
+        <div class="journey-tabs" role="tablist" aria-label="Prioridades de transformación">
+          <button class="journey-card" id="priority-decision" type="button" role="tab" aria-selected="true" aria-controls="recommended-chapter" tabindex="0" data-priority="decision"><span class="material-symbols-rounded" aria-hidden="true">track_changes</span><span><strong>Decidir mejor</strong><small>Responder preguntas importantes con datos, contexto y criterio.</small></span><span class="material-symbols-rounded journey-check" aria-hidden="true">check_circle</span></button>
+          <button class="journey-card" id="priority-agents" type="button" role="tab" aria-selected="false" aria-controls="recommended-chapter" tabindex="-1" data-priority="agents"><span class="material-symbols-rounded" aria-hidden="true">smart_toy</span><span><strong>Incorporar agentes</strong><small>Activar agentes que explican, ejecutan y aprenden en la operación.</small></span><span class="material-symbols-rounded journey-check" aria-hidden="true">check_circle</span></button>
+          <button class="journey-card" id="priority-capabilities" type="button" role="tab" aria-selected="false" aria-controls="recommended-chapter" tabindex="-1" data-priority="capabilities"><span class="material-symbols-rounded" aria-hidden="true">group</span><span><strong>Desarrollar capacidades propias</strong><small>Preparar equipos para priorizar, gobernar y escalar la IA.</small></span><span class="material-symbols-rounded journey-check" aria-hidden="true">check_circle</span></button>
         </div>
-      </article>
-      <article class="entry entry-sicetac">
+      </div>
+    </section>
+
+    <section class="chapter" id="recommended-chapter" role="tabpanel" aria-labelledby="priority-decision" tabindex="0">
+      <div class="container chapter-panel">
+        <div class="chapter-copy">
+          <div class="chapter-number" data-chapter-number>01</div>
+          <div><p class="chapter-kicker" data-chapter-kicker>Servicio recomendado</p><h2 class="chapter-title" data-chapter-title>Consultoría para decidir mejor.</h2><p class="chapter-description" data-chapter-description>Convertimos preguntas complejas de transporte en decisiones sustentadas con datos, método y criterio experto.</p><span class="chapter-label">Lo que logramos contigo</span><ul class="chapter-outcomes" data-chapter-outcomes><li><span class="material-symbols-rounded" aria-hidden="true">check</span>Decisiones con más claridad y menos riesgo.</li><li><span class="material-symbols-rounded" aria-hidden="true">check</span>Análisis que conectan datos, contexto y criterio.</li><li><span class="material-symbols-rounded" aria-hidden="true">check</span>Planes de acción realistas y priorizados.</li></ul><a class="btn btn-primary" data-service-link href="#servicios">Explorar el servicio <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a></div>
+        </div>
+        <article class="product-dossier" aria-live="polite">
+          <div class="dossier-meta"><span>Ficha destacada</span><span data-product-category>Consultoría</span></div><h3 class="dossier-title" data-product-title>SICETAC al Instante</h3><p class="dossier-description" data-product-description>Consulta y explica una referencia SICETAC para una ruta concreta desde WhatsApp o la web.</p><div class="dossier-media"><img data-product-image src="/assets/images/atiemppo/cover-sicetac.png" alt="Ficha de SICETAC al Instante"/></div><div class="dossier-footer"><div class="dossier-proof" data-product-proof><span>Respuesta explicable</span><span>Consulta inmediata</span></div><a class="btn btn-ink" data-product-link href="/sicetac-al-instante/">Abrir ficha <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="ecosystem" id="servicios">
+      <div class="container">
+        <header class="ecosystem-head"><p class="eyebrow">Nuestro ecosistema</p><h2 class="section-heading">Un camino conectado para potenciar tu área de transporte.</h2><p>Cada servicio puede contratarse por separado. La conexión aparece cuando el resultado requiere datos, equipos y agentes trabajando con un mismo criterio.</p></header>
+        <div class="service-route" role="tablist" aria-label="Servicios ATIEMPPO">
+          <button class="service-node" id="service-consulting" type="button" role="tab" aria-selected="true" aria-controls="service-focus" tabindex="0" data-service="consulting"><span class="material-symbols-rounded" aria-hidden="true">explore</span><strong>Consultoría</strong><small>Decisiones con criterio y evidencia.</small></button>
+          <button class="service-node" id="service-training" type="button" role="tab" aria-selected="false" aria-controls="service-focus" tabindex="-1" data-service="training"><span class="material-symbols-rounded" aria-hidden="true">school</span><strong>Capacitación</strong><small>Equipos que aplican la IA con propósito.</small></button>
+          <button class="service-node" id="service-factory" type="button" role="tab" aria-selected="false" aria-controls="service-focus" tabindex="-1" data-service="factory"><span class="material-symbols-rounded" aria-hidden="true">smart_toy</span><strong>Fábrica de Agentes</strong><small>Agentes diseñados para la operación.</small></button>
+          <button class="service-node" id="service-bruno" type="button" role="tab" aria-selected="false" aria-controls="service-focus" tabindex="-1" data-service="bruno"><span class="material-symbols-rounded" aria-hidden="true">hub</span><strong>Bruno / OpenClaw</strong><small>Orquestación, memoria y ejecución.</small></button>
+          <button class="service-node" id="service-platform" type="button" role="tab" aria-selected="false" aria-controls="service-focus" tabindex="-1" data-service="platform"><span class="material-symbols-rounded" aria-hidden="true">layers</span><strong>Plataforma ATIEMPPO</strong><small>Infraestructura segura y conectada.</small></button>
+        </div>
+        <article class="service-focus" id="service-focus" role="tabpanel" aria-labelledby="service-consulting" tabindex="0">
+          <div><p class="eyebrow" data-service-eyebrow>Servicio 01</p><h3 data-service-title>Consultoría para decidir mejor</h3><p data-service-description>Una pregunta compleja se convierte en una respuesta explicable, con fuentes, supuestos, límites y una ruta de acción.</p><ul data-service-capabilities><li>Pregunta de decisión</li><li>Evidencia trazable</li><li>Activación con el equipo</li></ul></div>
+          <a class="service-focus-media" data-service-media-link href="/reportes/"><img data-service-image src="/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png" alt="Reporte vivo para una decisión de transporte"/></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="products" id="aplicaciones">
+      <div class="container products-layout">
+        <header class="products-intro"><p class="eyebrow">Fichas destacadas</p><h2 class="section-heading">Soluciones que ya generan impacto.</h2><p class="section-copy">Herramientas y capacidades que convierten datos, criterio y agentes en resultados medibles.</p><button class="catalog-toggle" type="button" aria-expanded="false" aria-controls="product-catalog">Ver todas las fichas <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></button></header>
         <div>
-          <div class="entry-kicker">Acceso directo · SICETAC</div>
-          <h3>SICETAC al Instante</h3>
-          <p>Consulta una ruta real desde WhatsApp o la web. Empieza con origen y destino; no necesitas una reunión para la primera consulta.</p>
-          <div class="entry-actions">
-            <a class="btn btn-primary" href="https://wa.me/573134503694?text=Hola%2C%20quiero%20consultar%20SICETAC%20al%20Instante.%20Mi%20ruta%20es%3A" target="_blank" rel="noopener">Abrir WhatsApp →</a>
-            <a class="entry-hint" href="/sicetac-al-instante/">Ver la hoja del producto</a>
+          <div class="featured-products">
+            <a class="product-card featured" href="/formacion/profe-bruno-ia-aplicada/"><div class="product-cover"><img src="/assets/images/atiemppo/mesa-trabajo-ia.png" alt="Profe Bruno en una mesa de trabajo con inteligencia artificial"/></div><div class="product-body"><span class="product-label">Ficha de aprendizaje</span><h3>Profe Bruno</h3><p>Tu profesor de transporte e IA, siempre disponible para aprender haciendo.</p><span class="product-link">Ver ficha completa →</span></div></a>
+            <a class="product-card" href="/reportes/"><div class="product-cover"><img src="/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png" alt="Mapa de un Reporte Vivo"/></div><div class="product-body"><span class="product-label">Conocimiento vivo</span><h3>Reportes Vivos</h3><p>Indicadores, mapas y tableros siempre actualizados.</p><span class="product-link">Ver ficha →</span></div></a>
+            <a class="product-card" href="/novedades-en-vias/"><div class="product-cover"><img src="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia.png" alt="Reporte de Novedades en Vías"/></div><div class="product-body"><span class="product-label">Operación vial</span><h3>Novedades en Vías</h3><p>Alertas y cambios para mantenerte al día.</p><span class="product-link">Ver ficha →</span></div></a>
+            <a class="product-card" href="/ia-que-ejecuta-bruno-openclaw/"><div class="product-cover"><img src="/assets/images/atiemppo/bruno-openclaw.png" alt="Bruno y OpenClaw"/></div><div class="product-body"><span class="product-label">Orquestación</span><h3>Bruno / OpenClaw</h3><p>Memoria, criterio y ejecución conectados.</p><span class="product-link">Ver ficha →</span></div></a>
+          </div>
+          <div class="catalog-grid" id="product-catalog" hidden>
+            <a class="product-card" href="/sicetac-al-instante/"><div class="product-cover"><img src="/assets/images/atiemppo/cover-sicetac.png" alt="SICETAC al Instante"/></div><div class="product-body"><span class="product-label">Consulta</span><h3>SICETAC al Instante</h3><p>Una referencia explicada para una ruta concreta.</p><span class="product-link">Ver producto →</span></div></a>
+            <a class="product-card" href="/indices-sicetac/"><div class="product-cover"><img src="/assets/images/atiemppo/cover-base.png" alt="Índice de Red"/></div><div class="product-body"><span class="product-label">Red</span><h3>Índice de Red</h3><p>Una referencia actualizable para presupuesto y negociación.</p><span class="product-link">Ver modelo →</span></div></a>
+            <a class="product-card" href="/base-completa-sicetac/"><div class="product-cover"><img src="/assets/images/atiemppo/cover-base.png" alt="Base SICETAC"/></div><div class="product-body"><span class="product-label">Base</span><h3>Base SICETAC</h3><p>Información estructurada con corte y nota metodológica.</p><span class="product-link">Ver la base →</span></div></a>
+            <a class="product-card" href="/sicetac-api/"><div class="product-cover"><img src="/assets/images/atiemppo/cover-sicetac.png" alt="API SICETAC"/></div><div class="product-body"><span class="product-label">API</span><h3>API SICETAC</h3><p>Consumo técnico para sistemas y agentes.</p><span class="product-link">Ver API →</span></div></a>
+            <a class="product-card" href="https://www.eldatologistico.com" target="_blank" rel="noopener"><div class="product-cover"><img src="/assets/images/blog/el-dato-logistico/home-radar-logistico-semanal.png" alt="El Dato Logístico"/></div><div class="product-body"><span class="product-label">Medio</span><h3>El Dato Logístico</h3><p>Señales y análisis para mejores preguntas.</p><span class="product-link">Ir al medio →</span></div></a>
+            <a class="product-card" href="/insignia-impact/"><div class="product-cover"><img src="/assets/images/atiemppo/cover-insignia.png" alt="Insignia Impact"/></div><div class="product-body"><span class="product-label">Impacto</span><h3>Insignia Impact</h3><p>Operación, impacto y responsabilidad logística.</p><span class="product-link">Conocer proyecto →</span></div></a>
           </div>
         </div>
-        <div class="entry-qr">
-          <a href="https://wa.me/573134503694?text=Hola%2C%20quiero%20consultar%20SICETAC%20al%20Instante.%20Mi%20ruta%20es%3A" target="_blank" rel="noopener"><img src="/assets/images/atiemppo/sicetac-instant-qr.png" alt="Código QR para consultar SICETAC al Instante"/></a>
-          <small>WhatsApp · SICETAC al Instante</small>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
+      </div>
+    </section>
 
-<section class="why-section">
-  <div class="container">
-    <div class="why-panel">
-      <div class="why-card">
-        <div class="section-label">Por que ATIEMPPO</div>
-        <h3>Especialización en transporte</h3>
-        <p>El trabajo parte de decisiones reales de red, costos, SICETAC y operación. La IA acelera; el criterio valida.</p>
-      </div>
-      <div class="why-card">
-        <div class="section-label">Ventaja</div>
-        <h3>Una puerta de entrada, no el portafolio completo</h3>
-        <p>Cotizamos un primer resultado verificable. Datos, agentes y capacidades propias se contratan por separado.</p>
-      </div>
-      <div class="why-card">
-        <div class="section-label">Método</div>
-        <h3>Fuentes, límites y revisión humana</h3>
-        <p>Cada entrega deja supuestos visibles, criterio de aceptación y un siguiente paso opcional.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    <section class="trust" aria-label="Por qué ATIEMPPO"><div class="container trust-grid"><article class="trust-item"><span class="material-symbols-rounded" aria-hidden="true">local_shipping</span><h3>Especialización en transporte</h3><p>El trabajo parte de decisiones reales de red, costos, SICETAC y operación.</p></article><article class="trust-item"><span class="material-symbols-rounded" aria-hidden="true">adjust</span><h3>Una puerta de entrada concreta</h3><p>Cotizamos un primer resultado verificable, no el portafolio completo.</p></article><article class="trust-item"><span class="material-symbols-rounded" aria-hidden="true">fact_check</span><h3>Fuentes y revisión humana</h3><p>Los supuestos, límites y criterios de aceptación siempre quedan visibles.</p></article></div></section>
 
-<section class="why-section" id="trabajos-especiales">
-  <div class="container">
-    <div class="special-note" id="captura-campo">
-      <h3>Trabajos especiales, no líneas centrales</h3>
-      <p>La producción de eventos y la operación heredada de captura en campo, auditorías, inventarios o dispersión de pagos se pueden atender como encargos específicos. No forman parte de las cinco líneas de 2026 ni se presentan como el camino para transformar un área de transporte con datos y agentes.</p>
-    </div>
-  </div>
-</section>
+    <section class="direct-entry" id="probar"><div class="container entry-grid">
+      <article class="entry-card"><div><span class="product-label">Comunidad gratuita</span><h3>Novedades en Vías</h3><p>Bruno reporta todos los días el estado de los corredores de Colombia, directamente en WhatsApp.</p><a class="btn btn-primary" href="https://chat.whatsapp.com/DC2nQ5FjQ04KmiWdOKU0XH?mode=gi_t" target="_blank" rel="noopener">Unirme al grupo</a></div><img src="/assets/images/atiemppo/novedades-qr.png" alt="Código QR de Novedades en Vías"/></article>
+      <article class="entry-card"><div><span class="product-label">Consulta directa</span><h3>SICETAC al Instante</h3><p>Consulta una ruta real desde WhatsApp o la web. Solo necesitas origen y destino.</p><a class="btn btn-primary" href="https://wa.me/573134503694?text=Hola%2C%20quiero%20consultar%20SICETAC%20al%20Instante.%20Mi%20ruta%20es%3A" target="_blank" rel="noopener">Abrir WhatsApp</a></div><img src="/assets/images/atiemppo/sicetac-instant-qr.png" alt="Código QR de SICETAC al Instante"/></article>
+    </div></section>
 
-<section class="cta">
-  <div class="container">
-    <div class="cta-box">
-      <div class="cta-copy">
-        <h2>Avanza hoy con nosotros.</h2>
-        <p>¿Cuál es la decisión o tarea de transporte que más tiempo, incertidumbre o retrabajo está generando hoy? Desde ahí elegimos la puerta de entrada.</p>
-      </div>
-      <div class="cta-actions">
-        <a class="btn btn-primary" href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20hablar%20sobre%20el%20portafolio%20de%20servicios." target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn btn-secondary" href="mailto:juanmatiz@atiemppo.co?subject=Portafolio%20de%20Servicios%20ATIEMPPO">Correo</a>
-        <a class="btn btn-secondary" href="#contacto">Formulario</a>
-      </div>
-    </div>
-  </div>
-</section>
+    <section class="conversation"><div class="container conversation-panel"><div class="conversation-image"><img src="/assets/images/blog/segunda-clase-gerencia-logistica-openclaw-cesa/juan-pablo-matiz-openclaw-cesa.jpg" alt="Juan Pablo Matiz conversa con un equipo sobre agentes de inteligencia artificial"/></div><div><p class="eyebrow">Conversemos sobre tu operación</p><h2>Una conversación puede abrir la mejor ruta.</h2><p>Entendemos tu contexto, priorizamos lo que genera más valor y te mostramos cómo puede ayudarte nuestro ecosistema.</p></div><div class="conversation-actions"><a class="btn btn-primary" href="#contacto">Agendar una consulta</a><a class="btn btn-outline" href="https://wa.me/573107687010?text=Hola%20Juan%2C%20quiero%20hablar%20con%20ATIEMPPO." target="_blank" rel="noopener">WhatsApp</a></div></div></section>
 
-<section class="contact-section" id="contacto">
-  <div class="container">
-    <div class="contact-panel">
-      <div class="contact-copy">
-        <div class="eyebrow" style="color:#5e625f;margin-bottom:14px">Siguiente paso</div>
-        <h2>Avanza hoy con nosotros.</h2>
-        <p>¿Cuál es la decisión o tarea de transporte que más tiempo, incertidumbre o retrabajo está generando hoy?</p>
-        <div class="contact-links">
-          <a href="https://wa.me/573107687010?text=Hola%20Juan%2C%20quiero%20hablar%20con%20ATIEMPPO%20sobre%20una%20decision%20o%20tarea%20de%20transporte." target="_blank" rel="noopener">WhatsApp · +57 310 768 7010</a>
-          <a href="mailto:juanmatiz@atiemppo.co?subject=ATIEMPPO%20—%20quiero%20hablar">juanmatiz@atiemppo.co</a>
-          <a href="https://wa.me/573134503694?text=Hola%2C%20quiero%20consultar%20SICETAC%20al%20Instante.%20Mi%20ruta%20es%3A" target="_blank" rel="noopener">Consultar SICETAC al Instante</a>
-        </div>
-      </div>
-      <form class="contact-form" id="contactForm" name="contacto" method="POST"
-        action="https://formsubmit.co/juanmatiz@atiemppo.co"
-        data-google-script-url="https://script.google.com/macros/s/AKfycbyNHCVUttnrND5PWHBFA4ag6x4LXI-zKxlnzBLlnGYJZAICFZDZHki1IAxmowqAUqIDaQ/exec">
-        <input type="hidden" name="_subject" value="Nuevo contacto desde atiemppo.com"/>
-        <input type="hidden" name="_next" value="https://atiemppo.com/gracias/"/>
-        <input type="hidden" name="success_redirect" value="https://atiemppo.com/gracias/"/>
-        <input type="hidden" name="_template" value="table"/>
-        <input type="hidden" name="origen" value="atiemppo.com/home"/>
-        <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off"/>
-        <input type="hidden" name="user_agent" value=""/>
-        <div class="frow">
-          <div class="fg"><label>Nombre completo</label><input type="text" name="nombre" placeholder="Tu nombre" required/></div>
-          <div class="fg"><label>Correo electrónico</label><input type="email" name="email" placeholder="tu@empresa.com" required/></div>
-        </div>
-        <div class="frow">
-          <div class="fg"><label>Empresa</label><input type="text" name="empresa" placeholder="Nombre de tu empresa"/></div>
-          <div class="fg"><label>Teléfono o WhatsApp</label><input type="text" name="telefono" placeholder="+57 300 000 0000"/></div>
-        </div>
-        <div class="fg"><label>¿Qué decisión o tarea de transporte quieres resolver primero?</label><textarea name="mensaje" placeholder="Cuéntanos la decisión, el dato o la tarea que más tiempo o incertidumbre genera hoy..." required></textarea></div>
-        <button type="submit" class="btn btn-primary">Enviar mensaje →</button>
-        <p class="form-note">ATIEMPPO recibirá tu mensaje y responderá para coordinar el siguiente paso.</p>
+    <section class="contact" id="contacto"><div class="container"><div class="contact-panel">
+      <div class="contact-copy"><p class="eyebrow">Siguiente paso</p><h2>Hablemos de tu primera prioridad.</h2><p>Cuéntanos cuál es la decisión o tarea de transporte que más tiempo, incertidumbre o retrabajo está generando hoy.</p><div class="contact-links"><a href="https://wa.me/573107687010?text=Hola%20Juan%2C%20quiero%20hablar%20con%20ATIEMPPO." target="_blank" rel="noopener">WhatsApp · +57 310 768 7010</a><a href="mailto:juanmatiz@atiemppo.co?subject=ATIEMPPO%20—%20quiero%20hablar">juanmatiz@atiemppo.co</a></div></div>
+      <form id="contactForm" name="contacto" method="POST" action="https://formsubmit.co/juanmatiz@atiemppo.co" data-google-script-url="https://script.google.com/macros/s/AKfycbyNHCVUttnrND5PWHBFA4ag6x4LXI-zKxlnzBLlnGYJZAICFZDZHki1IAxmowqAUqIDaQ/exec">
+        <input type="hidden" name="_subject" value="Nuevo contacto desde atiemppo.com"/><input type="hidden" name="_next" value="https://atiemppo.com/gracias/"/><input type="hidden" name="success_redirect" value="https://atiemppo.com/gracias/"/><input type="hidden" name="_template" value="table"/><input type="hidden" name="origen" value="atiemppo.com/home"/><input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off"/><input type="hidden" name="user_agent" value=""/>
+        <div class="form-row"><div class="field"><label for="contact-name">Nombre completo</label><input id="contact-name" type="text" name="nombre" placeholder="Tu nombre" autocomplete="name" required/></div><div class="field"><label for="contact-email">Correo electrónico</label><input id="contact-email" type="email" name="email" placeholder="tu@empresa.com" autocomplete="email" required/></div></div>
+        <div class="form-row"><div class="field"><label for="contact-company">Empresa</label><input id="contact-company" type="text" name="empresa" placeholder="Nombre de tu empresa" autocomplete="organization"/></div><div class="field"><label for="contact-phone">Teléfono o WhatsApp</label><input id="contact-phone" type="tel" name="telefono" placeholder="+57 300 000 0000" autocomplete="tel"/></div></div>
+        <div class="field"><label for="contact-message">¿Qué decisión o tarea quieres resolver primero?</label><textarea id="contact-message" name="mensaje" placeholder="Cuéntanos la decisión, el dato o la tarea que más tiempo o incertidumbre genera hoy..." required></textarea></div><button class="btn btn-primary" type="submit">Enviar mensaje <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></button><p class="form-note">ATIEMPPO recibirá tu mensaje y responderá para coordinar el siguiente paso.</p>
       </form>
-    </div>
-  </div>
-</section>
+    </div><details class="special-work" id="trabajos-especiales"><summary>Trabajos especiales</summary><p>La producción de eventos y los encargos de captura en campo, auditorías, inventarios o dispersión de pagos se atienden de forma específica. No forman parte de las cinco líneas centrales de 2026.</p></details></div></section>
+  </main>
 
-<footer class="page-footer">
-  <div class="container">
-    <small>&copy; 2026 ATIEMPPO S.A.S. · Bogotá, Colombia · atiemppo.com</small>
-    <nav class="page-footer-nav" aria-label="Enlaces del pie">
-      <a href="/">Inicio</a>
-      <a href="#lineas">Servicios</a>
-      <a href="/enfoque/">Enfoque</a>
-      <a href="#aplicaciones">Aplicaciones</a>
-      <a href="/novedades-en-vias/">Novedades en Vías</a>
-      <a href="/blog/">Blog</a>
-      <a href="/llms.txt">llms.txt</a>
-    </nav>
-  </div>
-</footer>
-
-<script>
-(function(){
-  var cards = Array.prototype.slice.call(document.querySelectorAll('.service-card'));
-  var details = Array.prototype.slice.call(document.querySelectorAll('.service-detail'));
-  var defaultTarget = 'consultoria';
-  var hashToTarget = {
-    '#consultorias': 'consultoria',
-    '#datos': 'datos',
-    '#capacitacion': 'capacitacion',
-    '#agentes-gestionados': 'conexion',
-    '#hoja-de-ruta': 'ruta',
-    '#logistics-blueprint': 'datos',
-    '#ia-transformacion': 'conexion',
-    '#logistics-therapy': 'consultoria',
-    '#captura-campo': null,
-    '#trabajos-especiales': null
-  };
-  var targetToHash = {
-    'consultoria': '#consultorias',
-    'datos': '#datos',
-    'capacitacion': '#capacitacion',
-    'conexion': '#agentes-gestionados',
-    'ruta': '#hoja-de-ruta'
-  };
-
-  function showDetail(target, options) {
-    options = options || {};
-    cards.forEach(function(card){
-      var isActive = card.getAttribute('data-target') === target;
-      card.classList.toggle('is-active', isActive);
-      card.setAttribute('aria-expanded', isActive ? 'true' : 'false');
-    });
-
-    details.forEach(function(detail){
-      detail.hidden = detail.getAttribute('data-detail') !== target;
-    });
-
-    if (options.updateHash !== false) {
-      if (target && targetToHash[target]) {
-        history.replaceState(null, '', targetToHash[target]);
-      } else if (!target) {
-        history.replaceState(null, '', '#lineas');
-      }
-    }
-  }
-
-  cards.forEach(function(card){
-    card.addEventListener('click', function(){
-      showDetail(card.getAttribute('data-target'));
-      var detail = document.querySelector('[data-detail="' + card.getAttribute('data-target') + '"]');
-      if (detail) {
-        detail.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    });
-  });
-
-  Array.prototype.slice.call(document.querySelectorAll('[data-close-detail]')).forEach(function(btn){
-    btn.addEventListener('click', function(){
-      showDetail(null);
-      var portfolio = document.getElementById('lineas');
-      if (portfolio) {
-        portfolio.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    });
-  });
-
-  var initialHash = window.location.hash;
-  if (initialHash === '#captura-campo' || initialHash === '#trabajos-especiales') {
-    showDetail(null, { updateHash: false });
-    var special = document.getElementById('trabajos-especiales');
-    if (special) {
-      window.setTimeout(function(){ special.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);
-    }
-  } else if (initialHash === '#contacto') {
-    showDetail(defaultTarget, { updateHash: false });
-  } else {
-    showDetail(hashToTarget[initialHash] || defaultTarget, { updateHash: false });
-  }
-})();
-const contactForm=document.getElementById("contactForm");
-if(contactForm){
-  const endpoint=contactForm.dataset.googleScriptUrl;
-  const userAgentField=contactForm.querySelector('input[name="user_agent"]');
-  const submitButton=contactForm.querySelector('button[type="submit"]');
-  if(userAgentField){userAgentField.value=navigator.userAgent||"";}
-  if(endpoint){contactForm.action=endpoint;}
-  contactForm.addEventListener("submit",function(){
-    if(submitButton){submitButton.disabled=true;submitButton.textContent="Enviando...";}
-  });
-}
-</script>
+  <footer class="site-footer"><div class="container footer-shell"><small>&copy; 2026 ATIEMPPO S.A.S. · Bogotá, Colombia · atiemppo.com</small><nav class="footer-nav" aria-label="Enlaces del pie"><a href="/">Inicio</a><a href="#servicios">Servicios</a><a href="/enfoque/">Enfoque</a><a href="#aplicaciones">Aplicaciones</a><a href="/novedades-en-vias/">Novedades en Vías</a><a href="/blog/">Blog</a><a href="/llms.txt">llms.txt</a></nav></div></footer>
+  <script src="/assets/js/home-2026.js" defer></script>
 </body>
 </html>

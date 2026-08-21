@@ -1,0 +1,206 @@
+(function () {
+  "use strict";
+
+  var priorityData = {
+    decision: {
+      chapter: "01",
+      title: "Consultoría para decidir mejor.",
+      description: "Convertimos preguntas complejas de transporte en decisiones sustentadas con datos, método y criterio experto.",
+      outcomes: ["Decisiones con más claridad y menos riesgo.", "Análisis que conectan datos, contexto y criterio.", "Planes de acción realistas y priorizados."],
+      serviceUrl: "#servicios",
+      category: "Consultoría",
+      product: "SICETAC al Instante",
+      productDescription: "Consulta y explica una referencia SICETAC para una ruta concreta desde WhatsApp o la web.",
+      productImage: "/assets/images/atiemppo/cover-sicetac.png",
+      productAlt: "Ficha de SICETAC al Instante",
+      productUrl: "/sicetac-al-instante/",
+      proof: ["Respuesta explicable", "Consulta inmediata"]
+    },
+    agents: {
+      chapter: "02",
+      title: "Agentes incorporados a la operación.",
+      description: "Diseñamos y conectamos agentes especializados para tareas reales, con memoria, fuentes autorizadas, límites y revisión humana.",
+      outcomes: ["Menos tiempo en tareas repetitivas.", "Trazabilidad sobre fuentes y acciones.", "Agentes que trabajan con el criterio del equipo."],
+      serviceUrl: "/agentes/",
+      category: "Fábrica de Agentes",
+      product: "Bruno / OpenClaw",
+      productDescription: "Una capa de trabajo para coordinar fuentes, memoria, criterio, herramientas y ejecución.",
+      productImage: "/assets/images/generated/atiemppo-capa-agentica-bruno-openclaw.png",
+      productAlt: "Arquitectura agéntica de Bruno y OpenClaw",
+      productUrl: "/ia-que-ejecuta-bruno-openclaw/",
+      proof: ["Memoria y contexto", "Ejecución gobernada"]
+    },
+    capabilities: {
+      chapter: "03",
+      title: "Capacidades propias para la era de la IA.",
+      description: "Preparamos a los equipos para aprender, priorizar casos, dirigir agentes y construir una hoja de ruta gobernable.",
+      outcomes: ["Aprendizaje sobre tareas reales.", "Criterios para priorizar casos de uso.", "Un primer piloto con alcance claro."],
+      serviceUrl: "#servicios",
+      category: "Capacitación",
+      product: "Profe Bruno",
+      productDescription: "Un profesor de transporte e inteligencia artificial para aprender haciendo, con contenidos y casos aplicados.",
+      productImage: "/assets/images/atiemppo/mesa-trabajo-ia.png",
+      productAlt: "Mesa de trabajo de Profe Bruno",
+      productUrl: "/formacion/profe-bruno-ia-aplicada/",
+      proof: ["Aprender haciendo", "Método transferible"]
+    }
+  };
+
+  var serviceData = {
+    consulting: {
+      eyebrow: "Servicio 01",
+      title: "Consultoría para decidir mejor",
+      description: "Una pregunta compleja se convierte en una respuesta explicable, con fuentes, supuestos, límites y una ruta de acción.",
+      capabilities: ["Pregunta de decisión", "Evidencia trazable", "Activación con el equipo"],
+      image: "/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png",
+      alt: "Reporte vivo para una decisión de transporte",
+      url: "/reportes/"
+    },
+    training: {
+      eyebrow: "Servicio 02",
+      title: "Capacitación para la era de la IA",
+      description: "El equipo pasa de conversar con una IA a dirigir agentes sobre tareas de transporte con propósito, fuentes, límites y revisión.",
+      capabilities: ["Caso real del equipo", "Práctica acompañada", "Capacidad transferible"],
+      image: "/assets/images/atiemppo/mesa-trabajo-ia.png",
+      alt: "Mesa de trabajo de capacitación con inteligencia artificial",
+      url: "/formacion/profe-bruno-ia-aplicada/"
+    },
+    factory: {
+      eyebrow: "Servicio 03",
+      title: "Fábrica de Agentes",
+      description: "Diseñamos y construimos agentes especializados para una operación concreta, con criterios de aceptación y control humano.",
+      capabilities: ["Caso y alcance", "Fuentes y herramientas", "Prueba y trazabilidad"],
+      image: "/assets/images/blog/bruno-openclaw/bruno-discord-hq-orquestador.png",
+      alt: "Centro de orquestación de agentes de Bruno",
+      url: "/agentes/"
+    },
+    bruno: {
+      eyebrow: "Servicio 04",
+      title: "Bruno / OpenClaw",
+      description: "Nuestro orquestador conecta agentes, memoria, contexto y herramientas para ejecutar con coherencia y seguimiento.",
+      capabilities: ["Memoria", "Criterio", "Ejecución"],
+      image: "/assets/images/atiemppo/bruno-openclaw.png",
+      alt: "Bruno y OpenClaw como capa de orquestación",
+      url: "/ia-que-ejecuta-bruno-openclaw/"
+    },
+    platform: {
+      eyebrow: "Servicio 05",
+      title: "Plataforma ATIEMPPO",
+      description: "La capa tecnológica que integra datos, agentes e indicadores con seguridad, gobierno y una experiencia consistente.",
+      capabilities: ["Fuentes conectadas", "Gobierno y permisos", "Indicadores de resultado"],
+      image: "/assets/images/generated/atiemppo-capa-agentica-bruno.png",
+      alt: "Plataforma ATIEMPPO conectando fuentes, memoria y agentes",
+      url: "/enfoque/"
+    }
+  };
+
+  function setupTabs(selector, dataAttribute, activate) {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll(selector));
+    if (!tabs.length) return;
+
+    function select(tab, focus) {
+      tabs.forEach(function (item) {
+        var selected = item === tab;
+        item.setAttribute("aria-selected", selected ? "true" : "false");
+        item.tabIndex = selected ? 0 : -1;
+      });
+      activate(tab.getAttribute(dataAttribute), tab);
+      if (focus) tab.focus();
+    }
+
+    tabs.forEach(function (tab, index) {
+      tab.addEventListener("click", function () { select(tab, false); });
+      tab.addEventListener("keydown", function (event) {
+        var nextIndex = index;
+        if (event.key === "ArrowRight" || event.key === "ArrowDown") nextIndex = (index + 1) % tabs.length;
+        if (event.key === "ArrowLeft" || event.key === "ArrowUp") nextIndex = (index - 1 + tabs.length) % tabs.length;
+        if (event.key === "Home") nextIndex = 0;
+        if (event.key === "End") nextIndex = tabs.length - 1;
+        if (nextIndex !== index) {
+          event.preventDefault();
+          select(tabs[nextIndex], true);
+        }
+      });
+    });
+  }
+
+  setupTabs(".journey-card", "data-priority", function (key, tab) {
+    var data = priorityData[key];
+    var panel = document.getElementById("recommended-chapter");
+    if (!data || !panel) return;
+    panel.setAttribute("aria-labelledby", tab.id);
+    panel.querySelector("[data-chapter-number]").textContent = data.chapter;
+    panel.querySelector("[data-chapter-title]").textContent = data.title;
+    panel.querySelector("[data-chapter-description]").textContent = data.description;
+    panel.querySelector("[data-service-link]").href = data.serviceUrl;
+    panel.querySelector("[data-product-category]").textContent = data.category;
+    panel.querySelector("[data-product-title]").textContent = data.product;
+    panel.querySelector("[data-product-description]").textContent = data.productDescription;
+    panel.querySelector("[data-product-link]").href = data.productUrl;
+    var image = panel.querySelector("[data-product-image]");
+    image.src = data.productImage;
+    image.alt = data.productAlt;
+    panel.querySelector("[data-chapter-outcomes]").innerHTML = data.outcomes.map(function (item) {
+      return '<li><span class="material-symbols-rounded" aria-hidden="true">check</span>' + item + "</li>";
+    }).join("");
+    panel.querySelector("[data-product-proof]").innerHTML = data.proof.map(function (item) { return "<span>" + item + "</span>"; }).join("");
+  });
+
+  setupTabs(".service-node", "data-service", function (key, tab) {
+    var data = serviceData[key];
+    var panel = document.getElementById("service-focus");
+    if (!data || !panel) return;
+    panel.setAttribute("aria-labelledby", tab.id);
+    panel.querySelector("[data-service-eyebrow]").textContent = data.eyebrow;
+    panel.querySelector("[data-service-title]").textContent = data.title;
+    panel.querySelector("[data-service-description]").textContent = data.description;
+    panel.querySelector("[data-service-capabilities]").innerHTML = data.capabilities.map(function (item) { return "<li>" + item + "</li>"; }).join("");
+    var image = panel.querySelector("[data-service-image]");
+    image.src = data.image;
+    image.alt = data.alt;
+    panel.querySelector("[data-service-media-link]").href = data.url;
+  });
+
+  var catalogToggle = document.querySelector(".catalog-toggle");
+  var catalog = document.getElementById("product-catalog");
+  if (catalogToggle && catalog) {
+    catalogToggle.addEventListener("click", function () {
+      var expanded = catalogToggle.getAttribute("aria-expanded") === "true";
+      catalogToggle.setAttribute("aria-expanded", expanded ? "false" : "true");
+      catalog.hidden = expanded;
+      catalogToggle.firstChild.nodeValue = expanded ? "Ver todas las fichas " : "Ocultar fichas ";
+    });
+  }
+
+  var navToggle = document.querySelector(".nav-toggle");
+  var nav = document.getElementById("main-nav");
+  if (navToggle && nav) {
+    navToggle.addEventListener("click", function () {
+      var open = navToggle.getAttribute("aria-expanded") === "true";
+      navToggle.setAttribute("aria-expanded", open ? "false" : "true");
+      navToggle.setAttribute("aria-label", open ? "Abrir navegación" : "Cerrar navegación");
+      navToggle.querySelector(".material-symbols-rounded").textContent = open ? "menu" : "close";
+      nav.classList.toggle("is-open", !open);
+      document.body.classList.toggle("nav-open", !open);
+    });
+    nav.addEventListener("click", function (event) {
+      if (event.target.tagName !== "A" || window.innerWidth > 820) return;
+      navToggle.click();
+    });
+  }
+
+  var contactForm = document.getElementById("contactForm");
+  if (contactForm) {
+    var endpoint = contactForm.dataset.googleScriptUrl;
+    var userAgentField = contactForm.querySelector('input[name="user_agent"]');
+    var submitButton = contactForm.querySelector('button[type="submit"]');
+    if (userAgentField) userAgentField.value = navigator.userAgent || "";
+    if (endpoint) contactForm.action = endpoint;
+    contactForm.addEventListener("submit", function () {
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = "Enviando...";
+      }
+    });
+  }
+})();
