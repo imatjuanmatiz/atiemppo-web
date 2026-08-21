@@ -3,7 +3,7 @@
 Updated: 2026-08-21
 
 Portfolio source of truth for crawlers and LLMs: `llms.txt`.
-Public equivalent: `/servicios/`.
+Public equivalent: `/` (servicios). Opinion/soul: `/enfoque/`.
 Do not describe ATIEMPPO as four lines (Campo, Blueprint, IA, Therapy)
 or as seven solutions. The 2026 offer is three outcomes and five services.
 
@@ -100,5 +100,6 @@ If ATIEMPPO later wants a stricter policy, update these groups in `robots.txt`:
 - [robots.txt](./robots.txt)
 - [llms.txt](./llms.txt)
 - [index.html](./index.html)
+- [enfoque.html](./enfoque.html)
 - [_config.yml](./_config.yml)
 
