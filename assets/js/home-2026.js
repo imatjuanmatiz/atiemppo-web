@@ -22,13 +22,13 @@
       title: "Usar los servicios, aplicaciones y datos de ATIEMPPO para mejorar las áreas de transporte.",
       description: "Integramos soluciones listas para consultar información, analizar la operación y convertir datos de transporte en decisiones más claras.",
       outcomes: ["Aplicaciones para consultas y tareas operativas.", "Reportes para entender cambios, riesgos y oportunidades.", "Bases estructuradas y cálculo del Índice de Red."],
-      serviceUrl: "#aplicaciones",
+      serviceUrl: "#product-catalog",
       category: "Ecosistema ATIEMPPO",
       product: "Aplicaciones, reportes, bases e índices",
       productDescription: "Accede a aplicaciones como SICETAC al Instante, Reportes Vivos, bases de datos estructuradas y el cálculo del Índice de Red según las necesidades de tu área de transporte.",
       productImage: "/assets/images/atiemppo/cover-base.png",
       productAlt: "Servicios, aplicaciones y datos de ATIEMPPO para las áreas de transporte",
-      productUrl: "#aplicaciones",
+      productUrl: "#product-catalog",
       productCta: "Ver soluciones",
       proof: ["Datos para decidir", "Soluciones disponibles"]
     },
@@ -168,11 +168,25 @@
   var catalogToggle = document.querySelector(".catalog-toggle");
   var catalog = document.getElementById("product-catalog");
   if (catalogToggle && catalog) {
+    function setCatalogExpanded(expanded) {
+      catalogToggle.setAttribute("aria-expanded", expanded ? "true" : "false");
+      catalog.hidden = !expanded;
+      catalogToggle.firstChild.nodeValue = expanded ? "Ocultar fichas " : "Ver todas las fichas ";
+    }
+
     catalogToggle.addEventListener("click", function () {
       var expanded = catalogToggle.getAttribute("aria-expanded") === "true";
-      catalogToggle.setAttribute("aria-expanded", expanded ? "false" : "true");
-      catalog.hidden = expanded;
-      catalogToggle.firstChild.nodeValue = expanded ? "Ver todas las fichas " : "Ocultar fichas ";
+      setCatalogExpanded(!expanded);
+    });
+
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest('a[href="#product-catalog"]');
+      if (!link) return;
+      event.preventDefault();
+      setCatalogExpanded(true);
+      window.requestAnimationFrame(function () {
+        catalog.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
     });
   }
 

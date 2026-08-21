@@ -275,8 +275,12 @@ img { display: block; max-width: 100%; }
 .featured .product-body p { color: rgba(255,255,255,.68); }
 .product-link { color: var(--blue); font-size: 12px; font-weight: 700; }
 .featured .product-link { color: var(--blue-light); }
-.catalog-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 20px; }
-.catalog-grid[hidden] { display: none; }
+.catalog-section { margin-top: 26px; scroll-margin-top: 100px; }
+.catalog-section[hidden] { display: none; }
+.catalog-heading { max-width: 720px; margin-bottom: 20px; padding-top: 22px; border-top: 1px solid var(--line); }
+.catalog-heading h3 { margin: 8px 0 7px; font-family: var(--serif); font-size: clamp(2rem, 3.4vw, 3rem); font-weight: 400; line-height: 1.02; }
+.catalog-heading p { margin: 0; color: var(--muted); font-size: 13px; }
+.catalog-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
 .catalog-grid .product-card .product-cover { height: 150px; }
 
 /* Proof, entry and contact */
