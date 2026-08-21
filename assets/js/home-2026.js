@@ -14,21 +14,23 @@
       productImage: "/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png",
       productAlt: "Ficha de Reportes Vivos",
       productUrl: "/reportes/",
+      productCta: "Abrir ficha",
       proof: ["Evidencia trazable", "Recomendación accionable"]
     },
     data: {
       chapter: "02",
-      title: "Servicios y aplicaciones para mejorar tus datos.",
-      description: "Usa soluciones disponibles para consultar SICETAC, estructurar información y entender mejor el comportamiento de tu red de transporte.",
-      outcomes: ["Referencias SICETAC explicadas y utilizables.", "Bases estructuradas y rutas homologadas.", "Índices para leer la evolución y el impacto sobre tu red."],
+      title: "Usar los servicios, aplicaciones y datos de ATIEMPPO para mejorar las áreas de transporte.",
+      description: "Integramos soluciones listas para consultar información, analizar la operación y convertir datos de transporte en decisiones más claras.",
+      outcomes: ["Aplicaciones para consultas y tareas operativas.", "Reportes para entender cambios, riesgos y oportunidades.", "Bases estructuradas y cálculo del Índice de Red."],
       serviceUrl: "#aplicaciones",
-      category: "Datos SICETAC",
-      product: "SICETAC al Instante",
-      productDescription: "Consulta una ruta concreta y accede a Base SICETAC, Red, Índice de Red y API según la necesidad de tu operación.",
-      productImage: "/assets/images/atiemppo/cover-sicetac.png",
-      productAlt: "Ficha de SICETAC al Instante y soluciones de datos",
-      productUrl: "/sicetac-al-instante/",
-      proof: ["Datos utilizables", "Lectura de red"]
+      category: "Ecosistema ATIEMPPO",
+      product: "Aplicaciones, reportes, bases e índices",
+      productDescription: "Accede a aplicaciones como SICETAC al Instante, Reportes Vivos, bases de datos estructuradas y el cálculo del Índice de Red según las necesidades de tu área de transporte.",
+      productImage: "/assets/images/atiemppo/cover-base.png",
+      productAlt: "Servicios, aplicaciones y datos de ATIEMPPO para las áreas de transporte",
+      productUrl: "#aplicaciones",
+      productCta: "Ver soluciones",
+      proof: ["Datos para decidir", "Soluciones disponibles"]
     },
     ai: {
       chapter: "03",
@@ -42,6 +44,7 @@
       productImage: "/assets/images/atiemppo/mesa-trabajo-ia.png",
       productAlt: "Mesa de trabajo con un Agente Especialista en Transporte y Profe Bruno",
       productUrl: "/formacion/profe-bruno-ia-aplicada/",
+      productCta: "Ver aprendizaje",
       proof: ["Agente Especialista", "Profe Bruno"]
     }
   };
@@ -137,6 +140,7 @@
     panel.querySelector("[data-product-title]").textContent = data.product;
     panel.querySelector("[data-product-description]").textContent = data.productDescription;
     panel.querySelector("[data-product-link]").href = data.productUrl;
+    panel.querySelector("[data-product-link-text]").textContent = data.productCta;
     var image = panel.querySelector("[data-product-image]");
     image.src = data.productImage;
     image.alt = data.productAlt;
