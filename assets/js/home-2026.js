@@ -33,16 +33,16 @@
     ai: {
       chapter: "03",
       title: "Incorporar IA y aprender a trabajar con agentes.",
-      description: "Acompañamos a los equipos a aprender, incorporar y dirigir agentes de inteligencia artificial sobre tareas reales de transporte.",
-      outcomes: ["Aprendizaje aplicado a la operación.", "Agentes con propósito, fuentes y límites.", "Capacidades propias para continuar y escalar."],
+      description: "Combinamos profesores especializados con aprendizaje práctico de inteligencia artificial para que el equipo incorpore agentes sobre tareas reales de transporte.",
+      outcomes: ["Profe Especialista para aprender y consultar el conocimiento propio del área.", "Profe Bruno para aprender IA y construir agentes aplicados.", "Capacidades propias para continuar y escalar."],
       serviceUrl: "#servicios",
-      category: "IA y Agentes",
-      product: "Profe Bruno",
-      productDescription: "Un profesor de transporte e inteligencia artificial para aprender haciendo, con contenidos y casos aplicados.",
+      category: "Aprendizaje con IA",
+      product: "Profe Especialista + Profe Bruno",
+      productDescription: "Usa un Profe Especialista para aprender y consultar el conocimiento específico de tu operación, y Profe Bruno para aprender IA y convertir ese aprendizaje en agentes aplicados.",
       productImage: "/assets/images/atiemppo/mesa-trabajo-ia.png",
-      productAlt: "Mesa de trabajo de Profe Bruno",
+      productAlt: "Mesa de trabajo con Profe Especialista y Profe Bruno",
       productUrl: "/formacion/profe-bruno-ia-aplicada/",
-      proof: ["Aprender haciendo", "Método transferible"]
+      proof: ["Profe Especialista", "Profe Bruno"]
     }
   };
 
