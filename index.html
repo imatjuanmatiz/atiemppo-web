@@ -390,15 +390,36 @@ button{font:inherit}
 }
 .cta-copy p{max-width:600px;color:rgba(255,255,255,.72)}
 .cta-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
-.apps-strip{
-  padding:0 0 56px;
+.activos{padding:8px 0 64px}
+.activos-head{
+  display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:end;margin-bottom:28px;
 }
-.apps-strip-inner{
-  display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
-  padding:22px 24px;border-radius:14px;background:#fff;border:1px solid var(--line);
+.activos-title{
+  font-family:'DM Serif Display',Georgia,serif;
+  font-size:clamp(2rem,4vw,3.2rem);font-weight:400;line-height:1.05;
 }
-.apps-strip p{font-size:15px;color:var(--muted);max-width:640px}
-.apps-strip strong{color:var(--ink)}
+.activos-copy{color:var(--muted);max-width:440px}
+.prod-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.prod{
+  display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);
+  border-radius:16px;overflow:hidden;transition:transform .22s,box-shadow .22s,border-color .22s;
+}
+.prod:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--line-strong)}
+.prod-media{height:168px;position:relative;overflow:hidden;background:#16314d}
+.prod-media img{width:100%;height:100%;object-fit:cover;display:block;object-position:center top}
+.prod-media.logo{background:#fff;display:flex;align-items:center;justify-content:center;padding:18px}
+.prod-media.logo img{width:auto;max-width:82%;max-height:92px;object-fit:contain}
+.prod-media .tag{
+  position:absolute;top:12px;left:12px;font-size:10px;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;padding:5px 10px;border-radius:999px;background:rgba(14,44,77,.9);color:#fff;
+}
+.prod-body{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1}
+.prod-body h3{font-size:16px;letter-spacing:-.02em;margin:0 0 8px}
+.prod-body p{margin:0 0 14px;color:var(--muted);font-size:13px;line-height:1.5;flex:1}
+.prod-cta{font-size:13px;font-weight:700;color:var(--blue)}
+.prod:hover .prod-cta .arw{transform:translateX(3px);display:inline-block}
+.prod-cta .arw{display:inline-block;transition:transform .2s}
+.activos-foot{margin-top:22px}
 .contact-section{padding:0 0 70px}
 .contact-panel{
   background:#fff;border:1px solid var(--line);border-radius:18px;padding:32px;
@@ -435,13 +456,13 @@ button{font:inherit}
 .service-card:nth-child(4){grid-column:2 / span 2}
 .service-card:nth-child(5){grid-column:4 / span 2}
 @media(max-width:1080px){
-  .services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .services-grid,.prod-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .service-card,.service-card:nth-child(4),.service-card:nth-child(5){grid-column:auto}
 }
 @media(max-width:900px){
   .topbar-inner{flex-direction:column;align-items:flex-start}
   .topnav{gap:14px}
-  .portfolio-head,.cta-box,.why-panel,.detail-bottom,.doors-grid,.contact-panel,.contact-form .frow{grid-template-columns:1fr}
+  .portfolio-head,.activos-head,.cta-box,.why-panel,.detail-bottom,.doors-grid,.contact-panel,.contact-form .frow,.prod-grid{grid-template-columns:1fr 1fr}
   .cta-actions{justify-content:flex-start}
 }
 @media(max-width:900px){
@@ -451,7 +472,7 @@ button{font:inherit}
 @media(max-width:680px){
   .hero{padding-top:52px}
   .hero-media img{height:200px}
-  .services-grid,.capabilities-grid{grid-template-columns:1fr}
+  .services-grid,.capabilities-grid,.prod-grid{grid-template-columns:1fr}
   .service-card,.service-card:nth-child(4),.service-card:nth-child(5){grid-column:auto}
   .detail-top,.detail-body,.why-panel{padding:22px}
   .detail-top-row{align-items:flex-start;flex-direction:column}
@@ -467,7 +488,7 @@ button{font:inherit}
     <nav class="topnav" aria-label="Navegacion principal">
       <a href="/" class="active">Servicios</a>
       <a href="/enfoque/">Enfoque</a>
-      <a href="/enfoque/#aplicaciones">Aplicaciones</a>
+      <a href="#aplicaciones">Aplicaciones</a>
       <a href="/novedades-en-vias/">Novedades en Vías</a>
       <a href="/blog/">Blog</a>
       <a href="/en/" style="font-size:12px;letter-spacing:.08em">EN</a>
@@ -771,6 +792,57 @@ button{font:inherit}
   </div>
 </section>
 
+<section class="activos" id="aplicaciones">
+  <div class="container">
+    <div class="activos-head">
+      <div>
+        <div class="eyebrow" style="color:#5e625f;margin-bottom:16px">Activos que respaldan los servicios</div>
+        <h2 class="activos-title">Los cinco servicios se apoyan en aplicaciones que ya existen.</h2>
+      </div>
+      <p class="activos-copy">Estas imágenes son los productos y casos en operación. El cliente elige una puerta de entrada; el activo se selecciona después.</p>
+    </div>
+    <div class="prod-grid">
+      <a class="prod" href="/sicetac-al-instante/">
+        <div class="prod-media"><img src="/assets/images/atiemppo/cover-sicetac.png" alt="SICETAC al Instante"/><span class="tag">Consulta</span></div>
+        <div class="prod-body"><h3>SICETAC al Instante</h3><p>Consulta y explica una referencia SICETAC para una ruta concreta desde WhatsApp o la web.</p><span class="prod-cta">Ver producto <span class="arw">→</span></span></div>
+      </a>
+      <a class="prod" href="/indices-sicetac/">
+        <div class="prod-media"><img src="/assets/images/atiemppo/cover-base.png" alt="Índice SICETAC para la red de una empresa"/><span class="tag">Red</span></div>
+        <div class="prod-body"><h3>Índice de Red</h3><p>Convierte las rutas de tu empresa en una referencia propia y actualizable para presupuesto y negociación.</p><span class="prod-cta">Entender el modelo <span class="arw">→</span></span></div>
+      </a>
+      <a class="prod" href="/ia-que-ejecuta-bruno-openclaw/">
+        <div class="prod-media">
+          <img src="/assets/images/atiemppo/bruno-openclaw.png" alt="Bruno / OpenClaw" style="object-position:top left"/>
+          <img src="/assets/images/atiemppo/openclaw-logo.png" alt="" style="position:absolute;bottom:10px;right:10px;width:42px;height:42px;object-fit:contain;filter:drop-shadow(0 4px 10px rgba(0,0,0,.4))"/>
+          <span class="tag">Agente</span>
+        </div>
+        <div class="prod-body"><h3>Bruno / OpenClaw</h3><p>Un agente que coordina fuentes, memoria, tareas, límites y próximas acciones.</p><span class="prod-cta">Conocer el caso <span class="arw">→</span></span></div>
+      </a>
+      <a class="prod" href="/formacion/profe-bruno-ia-aplicada/">
+        <div class="prod-media"><img src="/assets/images/atiemppo/mesa-trabajo-ia.png" alt="Mesa de trabajo de Profe Bruno"/><span class="tag">Capacitación</span></div>
+        <div class="prod-body"><h3>Profe Bruno</h3><p>Aprender haciendo: un agente, una base de conocimiento y un método para dirigirlos.</p><span class="prod-cta">Ver el enfoque <span class="arw">→</span></span></div>
+      </a>
+      <a class="prod" href="/reportes/">
+        <div class="prod-media"><img src="/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png" alt="Biblioteca de Reportes Vivos"/><span class="tag">Conocimiento vivo</span></div>
+        <div class="prod-body"><h3>Reportes Vivos</h3><p>Datos, mapas y análisis navegables que se pueden volver a consultar y actualizar.</p><span class="prod-cta">Abrir biblioteca <span class="arw">→</span></span></div>
+      </a>
+      <a class="prod" href="/novedades-en-vias/">
+        <div class="prod-media"><img src="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia.png" alt="Bruno reportando Novedades en Vías por WhatsApp"/><span class="tag">Vías</span></div>
+        <div class="prod-body"><h3>Novedades en Vías</h3><p>Bruno reporta el estado de corredores en Colombia, todos los días, en WhatsApp.</p><span class="prod-cta">Ver el reporte <span class="arw">→</span></span></div>
+      </a>
+      <a class="prod" href="https://www.eldatologistico.com" target="_blank" rel="noopener">
+        <div class="prod-media logo"><img src="/assets/images/eldatologistico/logo-el-dato-logistico.png" alt="El Dato Logístico"/><span class="tag">Medio</span></div>
+        <div class="prod-body"><h3>El Dato Logístico</h3><p>Análisis, coyuntura y conversación sectorial para convertir señales en mejores preguntas.</p><span class="prod-cta">Ir al medio <span class="arw">→</span></span></div>
+      </a>
+      <a class="prod" href="/insignia-impact/">
+        <div class="prod-media"><img src="/assets/images/atiemppo/cover-insignia.png" alt="Insignia Impact"/><span class="tag">Impacto</span></div>
+        <div class="prod-body"><h3>Insignia Impact</h3><p>Proyecto en desarrollo para conectar operación, impacto y responsabilidad en logística.</p><span class="prod-cta">Conocer el proyecto <span class="arw">→</span></span></div>
+      </a>
+    </div>
+    <p class="activos-foot"><a href="/enfoque/#aplicaciones" style="font-size:14px;font-weight:700;color:var(--blue)">Cómo pensamos la IA en estas aplicaciones →</a></p>
+  </div>
+</section>
+
 <section class="why-section">
   <div class="container">
     <div class="why-panel">
@@ -798,15 +870,6 @@ button{font:inherit}
     <div class="special-note" id="captura-campo">
       <h3>Trabajos especiales, no líneas centrales</h3>
       <p>La producción de eventos y la operación heredada de captura en campo, auditorías, inventarios o dispersión de pagos se pueden atender como encargos específicos. No forman parte de las cinco líneas de 2026 ni se presentan como el camino para transformar un área de transporte con datos y agentes.</p>
-    </div>
-  </div>
-</section>
-
-<section class="apps-strip" id="aplicaciones-home">
-  <div class="container">
-    <div class="apps-strip-inner">
-      <p>Esa oferta se sostiene en <strong>aplicaciones que ya existen</strong>: SICETAC al Instante, Novedades en Vías, Bruno, reportes vivos y Profe Bruno. Ahí se ve cómo pensamos la IA en las áreas de transporte.</p>
-      <a class="btn btn-primary" href="/enfoque/#aplicaciones">Ver aplicaciones</a>
     </div>
   </div>
 </section>
@@ -872,7 +935,7 @@ button{font:inherit}
     <nav class="page-footer-nav" aria-label="Enlaces del pie">
       <a href="/">Servicios</a>
       <a href="/enfoque/">Enfoque</a>
-      <a href="/enfoque/#aplicaciones">Aplicaciones</a>
+      <a href="#aplicaciones">Aplicaciones</a>
       <a href="/novedades-en-vias/">Novedades en Vías</a>
       <a href="/blog/">Blog</a>
       <a href="/llms.txt">llms.txt</a>
