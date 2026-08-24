@@ -7,7 +7,7 @@
       title: "Consultoría para decidir mejor.",
       description: "Convertimos preguntas complejas de transporte en decisiones sustentadas con datos, método y criterio experto.",
       outcomes: ["Decisiones con más claridad y menos riesgo.", "Análisis que conectan datos, contexto y criterio.", "Planes de acción realistas y priorizados."],
-      serviceUrl: "#servicios",
+      serviceUrl: "/consultoria/",
       category: "Consultoría",
       product: "Reportes Vivos",
       productDescription: "Análisis, mapas e indicadores navegables que convierten una pregunta de transporte en evidencia para decidir.",
@@ -53,11 +53,11 @@
     consulting: {
       eyebrow: "Servicio 01",
       title: "Consultoría para decidir mejor",
-      description: "Una pregunta compleja se convierte en una respuesta explicable, con fuentes, supuestos, límites y una ruta de acción.",
-      capabilities: ["Pregunta de decisión", "Evidencia trazable", "Activación con el equipo"],
+      description: "Convertimos preguntas de transporte, logística y supply chain en decisiones sustentadas con datos, escenarios comparables, fuentes especializadas y revisión humana.",
+      capabilities: ["Redes, costos y escenarios", "Mercados, nodos y corredores", "Salida ejecutiva y soporte técnico"],
       image: "/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png",
       alt: "Reporte vivo para una decisión de transporte",
-      url: "/reportes/"
+      url: "/consultoria/"
     },
     training: {
       eyebrow: "Servicio 02",

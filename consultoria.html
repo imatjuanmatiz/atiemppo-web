@@ -1,0 +1,199 @@
+---
+layout: none
+permalink: /consultoria/
+render_with_liquid: false
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Consultoría para decidir mejor | ATIEMPPO</title>
+  <meta name="description" content="ATIEMPPO convierte preguntas complejas de transporte, logística y supply chain en decisiones sustentadas con datos, fuentes especializadas, inteligencia artificial y revisión humana."/>
+  <meta name="ai-content-declaration" content="human-authored"/>
+  <link rel="canonical" href="https://atiemppo.com/consultoria/"/>
+  <meta property="og:title" content="Consultoría para decidir mejor | ATIEMPPO"/>
+  <meta property="og:description" content="Una pregunta compleja se convierte en evidencia organizada, opciones comparables y una ruta de acción."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://atiemppo.com/consultoria/"/>
+  <meta property="og:locale" content="es_CO"/>
+  <meta property="og:site_name" content="ATIEMPPO"/>
+  <meta property="og:image" content="https://atiemppo.com/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Consultoría para decidir mejor | ATIEMPPO"/>
+  <meta name="twitter:description" content="Convertimos preguntas complejas de transporte, logística y supply chain en decisiones sustentadas y accionables."/>
+  <meta name="twitter:image" content="https://atiemppo.com/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:wght@400;500;600;700&family=Material+Symbols+Rounded:FILL@0..1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/assets/css/home-2026.css"/>
+  <style>
+    .consulting-hero { padding: 74px 0 82px; background: var(--navy-deep); color: #fff; }
+    .consulting-hero-grid { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(340px, .92fr); gap: 72px; align-items: end; }
+    .consulting-hero h1 { max-width: 790px; margin: 0; font-family: var(--serif); font-size: clamp(3rem, 5.2vw, 5.4rem); font-weight: 400; line-height: .98; letter-spacing: -.035em; }
+    .consulting-hero h1 em { display: block; color: var(--blue-light); font-weight: 400; }
+    .consulting-hero .eyebrow { color: rgba(255,255,255,.58); }
+    .consulting-lead { max-width: 690px; margin: 26px 0 0; color: rgba(255,255,255,.78); font-size: 17px; line-height: 1.72; }
+    .consulting-hero-note { padding: 24px; border: 1px solid rgba(255,255,255,.16); border-radius: 16px; background: rgba(255,255,255,.05); }
+    .consulting-hero-note strong { display: block; margin-bottom: 10px; color: var(--blue-light); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; }
+    .consulting-hero-note p { margin: 0; color: rgba(255,255,255,.76); font-family: var(--serif); font-size: 24px; line-height: 1.18; }
+    .consulting-section { padding: 86px 0; }
+    .consulting-section.alt { background: #fff; }
+    .consulting-section.dark { background: var(--navy); color: #fff; }
+    .consulting-section-head { max-width: 760px; margin-bottom: 38px; }
+    .consulting-section-head p:not(.eyebrow) { max-width: 700px; margin: 16px 0 0; color: var(--muted); }
+    .dark .consulting-section-head p:not(.eyebrow) { color: rgba(255,255,255,.68); }
+    .consulting-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .consulting-card { min-height: 190px; padding: 24px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+    .consulting-card h3 { margin: 0 0 10px; color: var(--navy); font-family: var(--serif); font-size: 25px; font-weight: 400; line-height: 1.08; }
+    .consulting-card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.62; }
+    .dark .consulting-card { border-color: var(--line-dark); background: rgba(255,255,255,.06); }
+    .dark .consulting-card h3 { color: #fff; }
+    .dark .consulting-card p { color: rgba(255,255,255,.68); }
+    .consulting-number { display: block; margin-bottom: 26px; color: var(--blue); font-size: 12px; font-weight: 700; letter-spacing: .18em; }
+    .dark .consulting-number { color: var(--blue-light); }
+    .consulting-method { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid var(--line-dark); }
+    .consulting-step { padding: 26px 24px 10px 0; border-right: 1px solid var(--line-dark); }
+    .consulting-step:nth-child(3n+2), .consulting-step:nth-child(3n+3) { padding-left: 24px; }
+    .consulting-step:nth-child(3n) { border-right: 0; }
+    .consulting-step h3 { margin: 0 0 8px; font-family: var(--serif); font-size: 25px; font-weight: 400; }
+    .consulting-step p { margin: 0; color: rgba(255,255,255,.68); font-size: 14px; line-height: 1.62; }
+    .consulting-deliverables { display: grid; grid-template-columns: .8fr 1.2fr; gap: 70px; align-items: start; }
+    .consulting-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 28px; margin: 0; padding: 0; list-style: none; }
+    .consulting-list li { padding: 15px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+    .consulting-list li::before { content: "✓"; display: inline-block; width: 24px; color: var(--green); font-weight: 700; }
+    .consulting-quote { margin: 0; padding: 28px; border-left: 3px solid var(--blue); background: #eef5fb; color: var(--navy); font-family: var(--serif); font-size: 25px; line-height: 1.2; }
+    .consulting-contracts { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+    .consulting-contract { padding: 18px 14px; border-top: 2px solid var(--blue-light); background: rgba(255,255,255,.06); }
+    .consulting-contract strong { display: block; margin-bottom: 7px; color: #fff; font-size: 14px; }
+    .consulting-contract span { color: rgba(255,255,255,.62); font-size: 12px; line-height: 1.45; }
+    .consulting-cta { padding: 80px 0; background: var(--paper); }
+    .consulting-cta-panel { display: flex; justify-content: space-between; gap: 34px; align-items: center; padding: 38px 42px; border-radius: 18px; background: var(--navy-deep); color: #fff; }
+    .consulting-cta-panel h2 { max-width: 700px; margin: 0 0 10px; font-family: var(--serif); font-size: clamp(2.2rem, 4vw, 3.8rem); font-weight: 400; line-height: 1.02; }
+    .consulting-cta-panel p { max-width: 650px; margin: 0; color: rgba(255,255,255,.68); }
+    .consulting-cta-panel .btn { flex: 0 0 auto; }
+    @media (max-width: 820px) {
+      .consulting-hero-grid, .consulting-deliverables { grid-template-columns: 1fr; gap: 34px; }
+      .consulting-grid { grid-template-columns: repeat(2, 1fr); }
+      .consulting-method { grid-template-columns: repeat(2, 1fr); }
+      .consulting-step:nth-child(3n+2), .consulting-step:nth-child(3n+3) { padding-left: 0; }
+      .consulting-step:nth-child(3n) { border-right: 1px solid var(--line-dark); }
+      .consulting-step:nth-child(even) { padding-left: 24px; border-right: 0; }
+      .consulting-contracts { grid-template-columns: repeat(3, 1fr); }
+      .consulting-cta-panel { align-items: flex-start; flex-direction: column; }
+    }
+    @media (max-width: 560px) {
+      .consulting-hero { padding: 52px 0 60px; }
+      .consulting-hero h1 { font-size: 3.15rem; }
+      .consulting-section { padding: 64px 0; }
+      .consulting-grid, .consulting-method, .consulting-list, .consulting-contracts { grid-template-columns: 1fr; }
+      .consulting-step, .consulting-step:nth-child(even), .consulting-step:nth-child(3n) { padding: 22px 0; border-right: 0; border-bottom: 1px solid var(--line-dark); }
+      .consulting-step:last-child { border-bottom: 0; }
+      .consulting-cta { padding: 56px 0; }
+      .consulting-cta-panel { padding: 28px 22px; }
+      .consulting-cta-panel .btn { width: 100%; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"Consultoría para decidir mejor",
+    "provider":{"@type":"Organization","name":"ATIEMPPO S.A.S.","url":"https://atiemppo.com"},
+    "areaServed":["Colombia","América Latina"],
+    "serviceType":"Consultoría de transporte, logística y supply chain con datos e inteligencia artificial",
+    "url":"https://atiemppo.com/consultoria/",
+    "description":"ATIEMPPO convierte preguntas complejas de transporte, logística y supply chain en decisiones sustentadas con datos, fuentes especializadas, inteligencia artificial y revisión humana."
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="/" aria-label="ATIEMPPO, inicio"><img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO"/></a>
+      <button class="nav-toggle" type="button" aria-label="Abrir navegación" aria-controls="main-nav" aria-expanded="false"><span class="material-symbols-rounded" aria-hidden="true">menu</span></button>
+      <nav class="site-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="/">Inicio</a><a href="/#servicios" aria-current="page">Servicios</a><a href="/enfoque/">Enfoque</a><a href="/#aplicaciones">Aplicaciones</a><a href="/novedades-en-vias/">Novedades en Vías</a><a href="/blog/">Blog</a><a href="/en/" lang="en">EN</a><a class="nav-cta" href="/#contacto">Hablemos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="consulting-hero">
+      <div class="container consulting-hero-grid">
+        <div>
+          <p class="eyebrow">Servicio 01 · Consultoría potencializada con IA</p>
+          <h1>Convertimos preguntas complejas en <em>decisiones que se pueden defender y ejecutar.</em></h1>
+          <p class="consulting-lead">ATIEMPPO desarrolla consultorías a la medida para empresas y áreas de transporte, logística y supply chain. Combinamos experiencia sectorial, datos, fuentes especializadas e inteligencia artificial para acelerar el análisis, mantener trazabilidad y convertir los hallazgos en opciones concretas de acción.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="/#contacto">Hablemos de una decisión <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a><a class="btn btn-outline" href="/#servicios">Ver todos los servicios</a></div>
+        </div>
+        <aside class="consulting-hero-note"><strong>La pregunta de entrada</strong><p>¿Qué decisión debe poder tomar el cliente al finalizar este trabajo que hoy no puede tomar con suficiente claridad?</p></aside>
+      </div>
+    </section>
+
+    <section class="consulting-section">
+      <div class="container">
+        <header class="consulting-section-head"><p class="eyebrow">Qué podemos resolver</p><h2 class="section-heading">Una consultoría empieza por la decisión, no por la herramienta.</h2><p>Trabajamos sobre una pregunta concreta y organizamos la evidencia necesaria para responderla. La inteligencia artificial acelera búsquedas, cruces, comparaciones y documentación; el criterio experto revisa lo importante y orienta la acción.</p></header>
+        <div class="consulting-grid">
+          <article class="consulting-card"><span class="consulting-number">01 · RED</span><h3>Ubicaciones y escenarios de red</h3><p>Comparamos alternativas de localización, demanda presente y futura, nodos, corredores y condiciones de servicio.</p></article>
+          <article class="consulting-card"><span class="consulting-number">02 · MERCADO</span><h3>Actores, empresas y oportunidades</h3><p>Identificamos y priorizamos empresas, segmentos, nodos logísticos y corredores a partir de fuentes múltiples y criterios visibles.</p></article>
+          <article class="consulting-card"><span class="consulting-number">03 · COSTOS</span><h3>Costos y escenarios de transporte</h3><p>Analizamos tarifas, estructura de costos, balance de carga, viajes y escenarios para entender qué puede cambiar una decisión.</p></article>
+          <article class="consulting-card"><span class="consulting-number">04 · OPERACIÓN</span><h3>Diagnósticos de red y operación</h3><p>Reconocemos oportunidades en fletes, seguridad, sostenibilidad, cobertura de datos e inteligencia artificial aplicada.</p></article>
+          <article class="consulting-card"><span class="consulting-number">05 · CARACTERIZACIÓN</span><h3>Mercados y capacidades específicas</h3><p>Construimos lecturas acotadas de sectores y actores con fuentes secundarias, fecha, nivel de confianza y exclusiones claras.</p></article>
+          <article class="consulting-card"><span class="consulting-number">06 · SIGUIENTE PASO</span><h3>De la respuesta a la continuidad</h3><p>Cuando el análisis lo revela, dejamos una ruta para datos recurrentes, agentes especializados o nuevas capacidades del equipo.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="consulting-section dark">
+      <div class="container">
+        <header class="consulting-section-head"><p class="eyebrow">Nuestro método</p><h2 class="section-heading">Evidencia organizada. Criterio experto. Activación con el equipo.</h2><p>El resultado no es un documento aislado: es una respuesta explicable, con supuestos y límites visibles, que puede convertirse en una conversación de decisión.</p></header>
+        <div class="consulting-method">
+          <article class="consulting-step"><span class="consulting-number">01</span><h3>Enfocamos</h3><p>Reformulamos el problema, acordamos preguntas, alcance, audiencia y criterio de aceptación.</p></article>
+          <article class="consulting-step"><span class="consulting-number">02</span><h3>Diseñamos la evidencia</h3><p>Definimos fuentes, cortes, variables, supuestos, niveles de confianza y controles de calidad.</p></article>
+          <article class="consulting-step"><span class="consulting-number">03</span><h3>Construimos el análisis</h3><p>Limpiamos, cruzamos, investigamos, modelamos y comparamos escenarios con trazabilidad.</p></article>
+          <article class="consulting-step"><span class="consulting-number">04</span><h3>Contrastamos</h3><p>Revisamos hallazgos, excepciones, plausibilidad y consecuencias operativas con criterio sectorial.</p></article>
+          <article class="consulting-step"><span class="consulting-number">05</span><h3>Sintetizamos</h3><p>Convertimos el análisis en conclusiones, opciones y recomendaciones que se pueden priorizar.</p></article>
+          <article class="consulting-step"><span class="consulting-number">06</span><h3>Activamos</h3><p>Trabajamos el resultado con el equipo y dejamos registradas decisiones, dudas y próximos análisis.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="consulting-section alt">
+      <div class="container consulting-deliverables">
+        <header class="consulting-section-head"><p class="eyebrow">Salidas configurables</p><h2 class="section-heading">El entregable se diseña alrededor de la decisión.</h2><p>No todos los proyectos necesitan el mismo formato. Definimos la combinación de salidas que permita entender, defender y activar el resultado.</p></header>
+        <div><blockquote class="consulting-quote">“El cliente no compra IA aplicada en abstracto. Compra una respuesta explicable, evidencia organizada y una ruta de acción.”</blockquote><ul class="consulting-list"><li>Informe ejecutivo de decisión</li><li>Anexo técnico y metodológico</li><li>Matriz de evidencia o base consolidada</li><li>Escenarios y supuestos comparables</li><li>Mapas, fichas de actores o corredores</li><li>Sesión ejecutiva de resultados</li><li>Backlog de decisiones y datos faltantes</li><li>Memoria o capa agéntica, si se contrata</li></ul></div>
+      </div>
+    </section>
+
+    <section class="consulting-section dark">
+      <div class="container">
+        <header class="consulting-section-head"><p class="eyebrow">Cómo cuidamos el resultado</p><h2 class="section-heading">Lo que afirmamos debe poder revisarse.</h2><p>Separamos hechos observados, estimaciones y escenarios. Las fuentes, supuestos, límites y datos faltantes quedan visibles para que el equipo pueda usar el resultado con confianza.</p></header>
+        <div class="consulting-grid">
+          <article class="consulting-card"><h3>Fuentes y cálculos rastreables</h3><p>Cada conclusión relevante se conecta con una fuente, un cálculo o un supuesto identificado.</p></article>
+          <article class="consulting-card"><h3>Límites explícitos</h3><p>No presentamos como hechos lo que solo puede sostenerse como proxy, estimación o escenario.</p></article>
+          <article class="consulting-card"><h3>Alcance controlado</h3><p>Entrevistas, trabajo de campo, integraciones, software y proyecciones se cotizan cuando hacen parte del alcance.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="consulting-section">
+      <div class="container">
+        <header class="consulting-section-head"><p class="eyebrow">Formas de trabajo</p><h2 class="section-heading">Una entrada concreta, con continuidad cuando tiene sentido.</h2><p>Podemos comenzar con un estudio puntual y ampliar solo si la evidencia muestra una oportunidad clara.</p></header>
+        <div class="consulting-contracts">
+          <div class="consulting-contract"><strong>Proyecto cerrado</strong><span>Una decisión, un alcance y entregables definidos.</span></div>
+          <div class="consulting-contract"><strong>Estudio puntual</strong><span>Una pregunta acotada para una necesidad inmediata.</span></div>
+          <div class="consulting-contract"><strong>Diagnóstico modular</strong><span>Bloques de análisis que se priorizan por etapas.</span></div>
+          <div class="consulting-contract"><strong>Bolsa especializada</strong><span>Backlog acordado, responsables y regla de cierre.</span></div>
+          <div class="consulting-contract"><strong>Mesa ejecutiva</strong><span>Sesión de análisis para ordenar una decisión.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="consulting-cta"><div class="container"><div class="consulting-cta-panel"><div><p class="eyebrow">Siguiente paso</p><h2>Cuéntanos qué decisión necesita más claridad.</h2><p>Podemos ayudarte a formular la pregunta, identificar la evidencia necesaria y definir un primer resultado verificable.</p></div><a class="btn btn-primary" href="/#contacto">Hablemos de tu decisión <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-shell"><small>&copy; 2026 ATIEMPPO S.A.S. · Bogotá, Colombia · atiemppo.com</small><nav class="footer-nav" aria-label="Enlaces del pie"><a href="/">Inicio</a><a href="/#servicios">Servicios</a><a href="/enfoque/">Enfoque</a><a href="/#aplicaciones">Aplicaciones</a><a href="/novedades-en-vias/">Novedades en Vías</a><a href="/blog/">Blog</a><a href="/llms.txt">llms.txt</a></nav></div></footer>
+  <script src="/assets/js/home-2026.js?v=20260824-1" defer></script>
+</body>
+</html>
