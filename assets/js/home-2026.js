@@ -8,6 +8,7 @@
       description: "Convertimos preguntas complejas de transporte en decisiones sustentadas con datos, método y criterio experto.",
       outcomes: ["Decisiones con más claridad y menos riesgo.", "Análisis que conectan datos, contexto y criterio.", "Planes de acción realistas y priorizados."],
       serviceUrl: "/consultoria/",
+      serviceCta: "Conocer la consultoría",
       category: "Consultoría",
       product: "Reportes Vivos",
       productDescription: "Análisis, mapas e indicadores navegables que convierten una pregunta de transporte en evidencia para decidir.",
@@ -20,32 +21,34 @@
     data: {
       chapter: "02",
       title: "Usar los servicios, aplicaciones y datos de ATIEMPPO para mejorar las áreas de transporte.",
-      description: "Integramos soluciones listas para consultar información, analizar la operación y convertir datos de transporte en decisiones más claras.",
-      outcomes: ["Aplicaciones para consultas y tareas operativas.", "Reportes para entender cambios, riesgos y oportunidades.", "Bases estructuradas y cálculo del Índice de Red."],
-      serviceUrl: "#product-catalog",
+      description: "Integramos aplicaciones, bases, índices, reportes y fuentes de información para consultar la operación y convertir datos de transporte en decisiones más claras.",
+      outcomes: ["Aplicaciones para consultas y tareas operativas.", "Bases, índices y reportes para comparar escenarios.", "Información sectorial para formular mejores preguntas."],
+      serviceUrl: "#soluciones",
+      serviceCta: "Ver soluciones",
       category: "Ecosistema ATIEMPPO",
       product: "Aplicaciones, reportes, bases e índices",
-      productDescription: "Accede a aplicaciones como SICETAC al Instante, Reportes Vivos, bases de datos estructuradas y el cálculo del Índice de Red según las necesidades de tu área de transporte.",
+      productDescription: "Accede a SICETAC al Instante, Base SICETAC, Índice de la Red, Reportes Vivos, API SICETAC y soluciones a medida como un cotizador de transporte.",
       productImage: "/assets/images/atiemppo/cover-base.png",
       productAlt: "Servicios, aplicaciones y datos de ATIEMPPO para las áreas de transporte",
-      productUrl: "#product-catalog",
+      productUrl: "#soluciones",
       productCta: "Ver soluciones",
       proof: ["Datos para decidir", "Soluciones disponibles"]
     },
     ai: {
       chapter: "03",
-      title: "Especialización, aprendizaje y agentes para las áreas de transporte.",
-      description: "Ayudamos al equipo a aprender IA, usar agentes especializados y convertir tareas reales de transporte en sistemas de trabajo que puedan revisar y mejorar.",
-      outcomes: ["Especialista Bruno para consultas y tareas con contexto del sector.", "Profe Bruno para aprender IA aplicada al transporte.", "Experiencia para diseñar, probar y gobernar agentes propios."],
-      serviceUrl: "#agent-catalog",
+      title: "Aprender a trabajar con agentes.",
+      description: "Preparamos a personas, empresarios, gerentes y equipos para convertir la inteligencia artificial en una forma de trabajo con práctica, dirección y contexto.",
+      outcomes: ["Profe Bruno para aprender IA aplicada sobre tareas reales.", "ATIEMPPO Lab para talleres y casos vivos con empresarios.", "Sesiones ejecutivas y experiencias agénticas para equipos."],
+      serviceUrl: "#experiencias",
+      serviceCta: "Ver experiencias",
       category: "Especialización y agentes",
-      product: "Especialista Bruno + Profe Bruno",
-      productDescription: "Especialista Bruno aplica conocimiento de transporte sobre consultas y tareas de la operación. Profe Bruno acompaña al equipo a aprender IA y a construir agentes con propósito, fuentes y límites.",
+      product: "Profe Bruno + ATIEMPPO Lab",
+      productDescription: "Profe Bruno acompaña el aprendizaje aplicado. ATIEMPPO Lab, las sesiones ejecutivas y la Experiencia Agéntica llevan ese aprendizaje a talleres, decisiones gerenciales y casos empresariales.",
       productImage: "/assets/images/atiemppo/mesa-trabajo-ia.png",
-      productAlt: "Mesa de trabajo con Especialista Bruno y Profe Bruno",
-      productUrl: "#agent-catalog",
+      productAlt: "Mesa de trabajo de aprendizaje y experiencias agénticas ATIEMPPO",
+      productUrl: "#experiencias",
       productCta: "Ver fichas de agentes",
-      proof: ["Especialista Bruno", "Profe Bruno"]
+      proof: ["Práctica aplicada", "Casos empresariales"]
     }
   };
 
@@ -136,6 +139,7 @@
     panel.querySelector("[data-chapter-title]").textContent = data.title;
     panel.querySelector("[data-chapter-description]").textContent = data.description;
     panel.querySelector("[data-service-link]").href = data.serviceUrl;
+    panel.querySelector("[data-service-link-text]").textContent = data.serviceCta;
     panel.querySelector("[data-product-category]").textContent = data.category;
     panel.querySelector("[data-product-title]").textContent = data.product;
     panel.querySelector("[data-product-description]").textContent = data.productDescription;
