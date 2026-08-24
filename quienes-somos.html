@@ -1,0 +1,147 @@
+---
+layout: none
+permalink: /quienes-somos/
+render_with_liquid: false
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Quiénes somos | ATIEMPPO</title>
+  <meta name="description" content="Conoce ATIEMPPO: nuestra marca, nuestro enfoque y la forma en que ayudamos a empresas y áreas de transporte y logística a convertir datos en decisiones y capacidades."/>
+  <meta name="ai-content-declaration" content="human-authored"/>
+  <link rel="canonical" href="https://atiemppo.com/quienes-somos/"/>
+  <meta property="og:title" content="Quiénes somos | ATIEMPPO"/>
+  <meta property="og:description" content="Datos, criterio y agentes de IA para que la logística y el transporte recuperen tiempo y decidan mejor."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://atiemppo.com/quienes-somos/"/>
+  <meta property="og:locale" content="es_CO"/>
+  <meta property="og:site_name" content="ATIEMPPO"/>
+  <meta property="og:image" content="https://atiemppo.com/assets/images/generated/atiemppo-industria-tiempo-hero.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Quiénes somos | ATIEMPPO"/>
+  <meta name="twitter:description" content="Nuestra marca, nuestro enfoque y hacia dónde vamos."/>
+  <meta name="twitter:image" content="https://atiemppo.com/assets/images/generated/atiemppo-industria-tiempo-hero.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:wght@400;500;600;700&family=Material+Symbols+Rounded:FILL@0..1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/assets/css/home-2026.css"/>
+  <style>
+    .about-hero { padding: 78px 0 86px; background: var(--navy-deep); color: #fff; }
+    .about-hero-grid { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(330px, .92fr); gap: 70px; align-items: center; }
+    .about-hero .eyebrow { color: rgba(255,255,255,.58); }
+    .about-hero h1 { max-width: 780px; margin: 0; font-family: var(--serif); font-size: clamp(3rem, 5.4vw, 5.5rem); font-weight: 400; line-height: .97; letter-spacing: -.035em; }
+    .about-hero h1 em { display: block; color: var(--blue-light); font-weight: 400; }
+    .about-lead { max-width: 680px; margin: 26px 0 0; color: rgba(255,255,255,.78); font-size: 17px; line-height: 1.72; }
+    .about-visual { margin: 0; padding: 9px; border: 1px solid rgba(255,255,255,.15); border-radius: 20px; background: rgba(255,255,255,.04); }
+    .about-visual img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 13px; }
+    .about-section { padding: 86px 0; }
+    .about-section.alt { background: #fff; }
+    .about-section.dark { background: var(--navy); color: #fff; }
+    .about-section-head { max-width: 760px; margin-bottom: 38px; }
+    .about-section-head p:not(.eyebrow) { max-width: 700px; margin: 16px 0 0; color: var(--muted); }
+    .dark .about-section-head p:not(.eyebrow) { color: rgba(255,255,255,.68); }
+    .about-three { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .about-card { padding: 26px; border: 1px solid var(--line); border-radius: 15px; background: var(--surface); }
+    .about-card h3 { margin: 12px 0 9px; color: var(--navy); font-family: var(--serif); font-size: 28px; font-weight: 400; line-height: 1.05; }
+    .about-card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.64; }
+    .about-card .about-icon { color: var(--blue); font-size: 30px; }
+    .about-principles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 1px solid var(--line-dark); }
+    .about-principle { padding: 26px 22px 10px 0; border-right: 1px solid var(--line-dark); }
+    .about-principle + .about-principle { padding-left: 22px; }
+    .about-principle:last-child { border-right: 0; }
+    .about-principle strong { display: block; margin-bottom: 9px; color: var(--blue-light); font-size: 12px; letter-spacing: .15em; text-transform: uppercase; }
+    .about-principle p { margin: 0; color: rgba(255,255,255,.7); font-size: 14px; line-height: 1.6; }
+    .about-direction { display: grid; grid-template-columns: .85fr 1.15fr; gap: 70px; align-items: start; }
+    .about-direction h2 { margin: 0; font-family: var(--serif); font-size: clamp(2.3rem, 4vw, 4rem); font-weight: 400; line-height: 1.02; }
+    .about-direction-copy p { margin: 0 0 18px; color: var(--muted); font-size: 15px; line-height: 1.7; }
+    .about-quote { margin: 0 0 25px; padding: 26px; border-left: 3px solid var(--blue); background: #eef5fb; color: var(--navy); font-family: var(--serif); font-size: 27px; line-height: 1.18; }
+    .about-cta { padding: 78px 0; background: var(--paper); }
+    .about-cta-panel { display: flex; justify-content: space-between; gap: 34px; align-items: center; padding: 38px 42px; border-radius: 18px; background: var(--navy-deep); color: #fff; }
+    .about-cta-panel h2 { max-width: 700px; margin: 0 0 10px; font-family: var(--serif); font-size: clamp(2.2rem, 4vw, 3.8rem); font-weight: 400; line-height: 1.02; }
+    .about-cta-panel p { max-width: 650px; margin: 0; color: rgba(255,255,255,.68); }
+    .about-cta-panel .btn { flex: 0 0 auto; }
+    @media (max-width: 820px) {
+      .about-hero-grid, .about-direction { grid-template-columns: 1fr; gap: 34px; }
+      .about-visual { order: -1; max-width: 520px; }
+      .about-three { grid-template-columns: 1fr; }
+      .about-principles { grid-template-columns: repeat(2, 1fr); }
+      .about-principle:nth-child(2) { border-right: 0; }
+      .about-principle:nth-child(n+3) { border-top: 1px solid var(--line-dark); }
+      .about-cta-panel { align-items: flex-start; flex-direction: column; }
+    }
+    @media (max-width: 560px) {
+      .about-hero { padding: 52px 0 60px; }
+      .about-hero h1 { font-size: 3.15rem; }
+      .about-section { padding: 64px 0; }
+      .about-principles { grid-template-columns: 1fr; }
+      .about-principle, .about-principle + .about-principle, .about-principle:nth-child(n+3) { padding: 22px 0; border-right: 0; border-top: 1px solid var(--line-dark); }
+      .about-principle:first-child { border-top: 0; }
+      .about-cta { padding: 56px 0; }
+      .about-cta-panel { padding: 28px 22px; }
+      .about-cta-panel .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="/" aria-label="ATIEMPPO, inicio"><img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO"/></a>
+      <button class="nav-toggle" type="button" aria-label="Abrir navegación" aria-controls="main-nav" aria-expanded="false"><span class="material-symbols-rounded" aria-hidden="true">menu</span></button>
+      <nav class="site-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="/">Inicio</a><a href="/consultoria/">Consultoría</a><a href="/#soluciones">Aplicaciones</a><a href="/#experiencias">Aprender</a><a href="/novedades-en-vias/">Novedades en Vías</a><a href="/blog/">Blog</a><a href="/quienes-somos/" aria-current="page">Quiénes somos</a><a href="/en/" lang="en">EN</a><a class="nav-cta" href="/#contacto">Hablemos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-hero">
+      <div class="container about-hero-grid">
+        <div>
+          <p class="eyebrow">Quiénes somos · ATIEMPPO</p>
+          <h1>Recuperar tiempo sin perder <em>criterio.</em></h1>
+          <p class="about-lead">ATIEMPPO ayuda a empresas y áreas de transporte y logística a convertir sus datos en mejores decisiones, automatizar tareas con agentes de IA y desarrollar capacidades que se traduzcan en tiempo, criterio y acción.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="/#soluciones">Conocer lo que hacemos <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a><a class="btn btn-outline" href="/#contacto">Hablemos</a></div>
+        </div>
+        <figure class="about-visual"><img src="/assets/images/generated/atiemppo-industria-tiempo-hero.png" alt="ATIEMPPO conecta datos, criterio y agentes para recuperar tiempo en la logística y el transporte"/></figure>
+      </div>
+    </section>
+
+    <section class="about-section alt">
+      <div class="container">
+        <header class="about-section-head"><p class="eyebrow">Nuestra propuesta</p><h2 class="section-heading">Tres maneras de ayudarte a mover una prioridad.</h2><p>No empezamos por llenar una empresa de herramientas. Empezamos por una decisión, una aplicación o una capacidad que pueda producir valor en el trabajo real.</p></header>
+        <div class="about-three">
+          <article class="about-card"><span class="material-symbols-rounded about-icon" aria-hidden="true">explore</span><h3>Consultoría</h3><p>Convertimos preguntas complejas de transporte, logística y supply chain en evidencia organizada, opciones comparables y una ruta de acción.</p></article>
+          <article class="about-card"><span class="material-symbols-rounded about-icon" aria-hidden="true">database</span><h3>Aplicaciones</h3><p>Ofrecemos aplicaciones, bases, índices, reportes e información sectorial para consultar, comparar, presupuestar y operar con una referencia utilizable.</p></article>
+          <article class="about-card"><span class="material-symbols-rounded about-icon" aria-hidden="true">school</span><h3>Aprender</h3><p>Acompañamos a personas, empresarios, gerentes y equipos a pasar de conversar con IA a trabajar con agentes sobre tareas reales.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section dark">
+      <div class="container">
+        <header class="about-section-head"><p class="eyebrow">Nuestro enfoque</p><h2 class="section-heading">La IA tiene sentido cuando mejora una forma de trabajar.</h2><p>Por eso combinamos conocimiento del sector, fuentes trazables, herramientas y revisión humana. Los agentes aceleran el trabajo; no reemplazan la responsabilidad de decidir.</p></header>
+        <div class="about-principles">
+          <article class="about-principle"><strong>01 · Tiempo</strong><p>Reducimos búsquedas dispersas, reprocesos y tareas repetitivas para devolver atención a lo que importa.</p></article>
+          <article class="about-principle"><strong>02 · Criterio</strong><p>Hacemos visibles los supuestos, límites, fuentes y preguntas que sostienen una recomendación.</p></article>
+          <article class="about-principle"><strong>03 · Acción</strong><p>El resultado debe servir para priorizar, conversar, presupuestar, activar o decidir el siguiente paso.</p></article>
+          <article class="about-principle"><strong>04 · Continuidad</strong><p>Documentamos aprendizajes y construimos capacidades que puedan repetirse y mejorar con el equipo.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container about-direction">
+        <div><p class="eyebrow">De dónde venimos</p><h2>Una mezcla de logística, datos, tecnología y aprendizaje aplicado.</h2></div>
+        <div class="about-direction-copy"><blockquote class="about-quote">“La tecnología importa cuando ayuda a que una decisión difícil tenga mejor contexto y menos fricción.”</blockquote><p>ATIEMPPO nace de trabajar cerca de las preguntas que aparecen en el transporte: cuánto cuesta una ruta, cómo cambia una red, qué información falta, qué corredor conviene priorizar y cómo se puede sostener una decisión en el tiempo.</p><p>Ese trabajo nos llevó a combinar consultoría, información estructurada, aplicaciones, reportes vivos, formación y agentes. No como piezas aisladas, sino como capacidades que pueden entrar por separado según la prioridad de cada empresa.</p><p>Vamos hacia una nueva capa de trabajo para la logística y el transporte: equipos que consultan mejor sus datos, aprenden a dirigir agentes y convierten sus decisiones en memoria, procesos y acción.</p></div>
+      </div>
+    </section>
+
+    <section class="about-cta"><div class="container"><div class="about-cta-panel"><div><p class="eyebrow">Siguiente paso</p><h2>Conversemos sobre la prioridad que quieres mover primero.</h2><p>Podemos ayudarte a elegir entre una consultoría, una aplicación o una experiencia para aprender y trabajar con agentes.</p></div><a class="btn btn-primary" href="/#contacto">Hablemos con ATIEMPPO <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-shell"><small>&copy; 2026 ATIEMPPO S.A.S. · Bogotá, Colombia · atiemppo.com</small><nav class="footer-nav" aria-label="Enlaces del pie"><a href="/">Inicio</a><a href="/consultoria/">Consultoría</a><a href="/#soluciones">Aplicaciones</a><a href="/#experiencias">Aprender</a><a href="/novedades-en-vias/">Novedades en Vías</a><a href="/blog/">Blog</a><a href="/quienes-somos/">Quiénes somos</a></nav></div></footer>
+  <script src="/assets/js/home-2026.js?v=20260824-2" defer></script>
+</body>
+</html>
