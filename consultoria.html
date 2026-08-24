@@ -34,6 +34,9 @@ render_with_liquid: false
     .consulting-hero h1 em { display: block; color: var(--blue-light); font-weight: 400; }
     .consulting-hero .eyebrow { color: rgba(255,255,255,.58); }
     .consulting-lead { max-width: 690px; margin: 26px 0 0; color: rgba(255,255,255,.78); font-size: 17px; line-height: 1.72; }
+    .consulting-hero-side { display: grid; gap: 18px; align-self: end; }
+    .consulting-hero-visual { width: min(100%, 390px); aspect-ratio: 1; margin: 0 0 0 auto; border: 1px solid rgba(255,255,255,.16); border-radius: 18px; overflow: hidden; background: #102a40; box-shadow: 0 18px 50px rgba(0,0,0,.2); }
+    .consulting-hero-visual img { width: 100%; height: 100%; display: block; object-fit: cover; }
     .consulting-hero-note { padding: 24px; border: 1px solid rgba(255,255,255,.16); border-radius: 16px; background: rgba(255,255,255,.05); }
     .consulting-hero-note strong { display: block; margin-bottom: 10px; color: var(--blue-light); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; }
     .consulting-hero-note p { margin: 0; color: rgba(255,255,255,.76); font-family: var(--serif); font-size: 24px; line-height: 1.18; }
@@ -74,6 +77,8 @@ render_with_liquid: false
     .consulting-cta-panel .btn { flex: 0 0 auto; }
     @media (max-width: 820px) {
       .consulting-hero-grid, .consulting-deliverables { grid-template-columns: 1fr; gap: 34px; }
+      .consulting-hero-side { justify-items: start; }
+      .consulting-hero-visual { width: min(100%, 420px); margin-left: 0; }
       .consulting-grid { grid-template-columns: repeat(2, 1fr); }
       .consulting-method { grid-template-columns: repeat(2, 1fr); }
       .consulting-step:nth-child(3n+2), .consulting-step:nth-child(3n+3) { padding-left: 0; }
@@ -127,7 +132,10 @@ render_with_liquid: false
           <p class="consulting-lead">ATIEMPPO desarrolla consultorías a la medida para empresas y áreas de transporte, logística y supply chain. Combinamos experiencia sectorial, datos, fuentes especializadas e inteligencia artificial para acelerar el análisis, mantener trazabilidad y convertir los hallazgos en opciones concretas de acción.</p>
           <div class="hero-actions"><a class="btn btn-primary" href="/#contacto">Hablemos de una decisión <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a><a class="btn btn-outline" href="/#soluciones">Ver soluciones</a></div>
         </div>
-        <aside class="consulting-hero-note"><strong>La pregunta de entrada</strong><p>¿Qué decisión podrá tomar la empresa al finalizar este trabajo con mayor claridad, evidencia y confianza?</p></aside>
+        <div class="consulting-hero-side">
+          <figure class="consulting-hero-visual"><img src="/assets/images/inventory/atiemppo-mesa-rutas-internacional-reference.png" alt="Equipo de trabajo analizando rutas y datos para orientar una decisión logística"/></figure>
+          <aside class="consulting-hero-note"><strong>La pregunta de entrada</strong><p>¿Qué decisión podrá tomar la empresa al finalizar este trabajo con mayor claridad, evidencia y confianza?</p></aside>
+        </div>
       </div>
     </section>
 
