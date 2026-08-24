@@ -2,15 +2,16 @@
   "schema_version": "1.2",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-08-24-am",
+  "cut_id": "2026-08-24-pm",
   "fecha": "2026-08-24",
-  "ventana": "AM",
-  "hora": "07:00",
-  "generado_en": "2026-08-24T07:00:00",
-  "artefacto_fuente": "2026-08-24-editor-eldato-version-vias-colombia-am.md",
+  "ventana": "PM",
+  "hora": "17:00",
+  "generado_en": "2026-08-24T17:00:00",
+  "artefacto_fuente": "2026-08-24-editor-eldato-version-vias-colombia-pm.md",
   "que_cambio": [],
   "notas_cambio": [
-    "Este corte es el listado base del día. MD y PM miden el cambio contra esta mañana, no contra el mismo corredor del corte anterior."
+    "Cambio medido contra el listado AM (2026-08-24-editor-eldato-version-vias-colombia-am.md), no contra el corte anterior de la misma ventana.",
+    "Ningún tramo cambió de estado operativo frente a la mañana. Un parte nuevo con el mismo PMT no entra aquí."
   ],
   "listado": [
     {
@@ -108,7 +109,7 @@
       "icono": "🟠",
       "corredor": "Las Ánimas–Bogotá",
       "km": "",
-      "estado": "obra / mantenimiento — izaje 13:30–14:30; a las 07:00 no rige",
+      "estado": "obra / mantenimiento — izaje 13:30–14:30; a las 17:30 no rige",
       "fuente": ""
     },
     {
@@ -135,58 +136,66 @@
   ],
   "senales_tempranas": [
     {
-      "tramo": "Villavicencio–Restrepo km 3+400, Vanguardia",
-      "senal": "ControlT MD 23: cierre de calzada por árbol; ya no aparece en ControlT AM 24",
-      "fuente": "ControlT MD 23",
-      "vigilar": "0 concesión; no se resuelve porque salió del radar"
+      "tramo": "Luruaco, Arroyo de Piedra",
+      "senal": "ControlT NUEVA ~14:17: cierre total por la comunidad",
+      "fuente": "ControlT PM",
+      "vigilar": "0 INVÍAS / 0 DITRA / 0 X"
     },
     {
-      "tramo": "San Alberto–La Lizama, sentido Bogotá",
-      "senal": "ControlT PM 23: accidente; ya no aparece en ControlT AM",
-      "fuente": "ControlT PM 23",
-      "vigilar": "0 oficial"
+      "tramo": "Melgar, entrada desde Bogotá",
+      "senal": "ControlT NUEVA ~16:20: accidente de tractomula con cemento; congestión",
+      "fuente": "ControlT PM",
+      "vigilar": "0 X oficial"
     },
     {
-      "tramo": "Mocoa–Pitalito, Verdeyaco",
-      "senal": "Prensa 21: operador PR 30+400",
-      "fuente": "ControlT · Mi Putumayo",
-      "vigilar": "Sin INVÍAS vivo ni X de concesión"
+      "tramo": "Cartagena, PR 8 sentido Gambote",
+      "senal": "ControlT NUEVA ~17:02: accidente de carga",
+      "fuente": "ControlT PM",
+      "vigilar": "0 X oficial"
     },
     {
-      "tramo": "Cereté–Lorica km 15 / San Pelayo",
-      "senal": "Prensa: alcaldía informa despeje en Pelayito",
-      "fuente": "ControlT · @LaRazonCo",
-      "vigilar": "Señales cruzadas; 0 oficial"
+      "tramo": "Valledupar / Caracolí",
+      "senal": "ControlT NUEVA ~16:56: accidente",
+      "fuente": "ControlT PM",
+      "vigilar": "0 X oficial"
+    },
+    {
+      "tramo": "Bosconia–Valledupar K 86+150, Hito 33A",
+      "senal": "PMT desde el 25-ago: desvío bidireccional a vía existente",
+      "fuente": "@rutadelsoltram3 15:27",
+      "vigilar": "A las 17:30 no rige"
     },
     {
       "tramo": "Piedecuesta, Ruta 45A",
       "senal": "ControlT persistente: un carril y cierre parcial",
-      "fuente": "ControlT AM",
+      "fuente": "ControlT PM",
+      "vigilar": "Sin contraste oficial"
+    },
+    {
+      "tramo": "Cimitarra, Ruta 45",
+      "senal": "ControlT persistente: un carril hasta las 22:00",
+      "fuente": "ControlT PM",
       "vigilar": "Sin contraste oficial"
     },
     {
       "tramo": "Aracataca–Ye de Ciénaga, puente Río Frío PR 85+700",
       "senal": "PMT un carril nocturno 18 ago–1 sep",
       "fuente": "@rutadelsoltram3 19-ago",
-      "vigilar": "A las 07:00 no rige"
-    },
-    {
-      "tramo": "Cimitarra, Ruta 45",
-      "senal": "ControlT persistente: un carril hasta las 22:00",
-      "fuente": "ControlT AM",
-      "vigilar": "Sin contraste oficial"
+      "vigilar": "A las 17:30 no rige"
     }
   ],
   "alertas_inmediatas": [],
   "salud_fuentes": {
-    "estado_general": "degradada",
+    "estado_general": "estable",
     "ventanas_esperadas": [
       "AM",
       "MD",
       "PM"
     ],
     "ventanas_recibidas": [
-      "AM"
+      "AM",
+      "MD",
+      "PM"
     ],
     "eventos_confirmados": 0,
     "eventos_vigilancia": 0,
@@ -3118,6 +3127,32 @@
       "cut_id": "2026-08-24-am",
       "hora": "07:00",
       "ventana": "AM",
+      "tipo": "corte_final",
+      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
+      "conteos": {
+        "nuevos": 0,
+        "persistentes": 0,
+        "resueltos": 0,
+        "por_verificar": 0
+      }
+    },
+    {
+      "cut_id": "2026-08-24-md",
+      "hora": "12:00",
+      "ventana": "MD",
+      "tipo": "corte_final",
+      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
+      "conteos": {
+        "nuevos": 0,
+        "persistentes": 0,
+        "resueltos": 0,
+        "por_verificar": 0
+      }
+    },
+    {
+      "cut_id": "2026-08-24-pm",
+      "hora": "17:00",
+      "ventana": "PM",
       "tipo": "corte_final",
       "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
       "conteos": {
