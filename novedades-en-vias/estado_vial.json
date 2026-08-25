@@ -2,16 +2,15 @@
   "schema_version": "1.2",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-08-24-pm",
-  "fecha": "2026-08-24",
-  "ventana": "PM",
-  "hora": "17:00",
-  "generado_en": "2026-08-24T17:00:00",
-  "artefacto_fuente": "2026-08-24-editor-eldato-version-vias-colombia-pm.md",
+  "cut_id": "2026-08-25-am",
+  "fecha": "2026-08-25",
+  "ventana": "AM",
+  "hora": "07:00",
+  "generado_en": "2026-08-25T07:00:00",
+  "artefacto_fuente": "2026-08-25-editor-eldato-version-vias-colombia-am.md",
   "que_cambio": [],
   "notas_cambio": [
-    "Cambio medido contra el listado AM (2026-08-24-editor-eldato-version-vias-colombia-am.md), no contra el corte anterior de la misma ventana.",
-    "Ningún tramo cambió de estado operativo frente a la mañana. Un parte nuevo con el mismo PMT no entra aquí."
+    "Este corte es el listado base del día. MD y PM miden el cambio contra esta mañana, no contra el mismo corredor del corte anterior."
   ],
   "listado": [
     {
@@ -109,7 +108,7 @@
       "icono": "🟠",
       "corredor": "Las Ánimas–Bogotá",
       "km": "",
-      "estado": "obra / mantenimiento — izaje 13:30–14:30; a las 17:30 no rige",
+      "estado": "obra / mantenimiento — izaje 13:30–14:30; a las 07:00 no rige",
       "fuente": ""
     },
     {
@@ -128,6 +127,13 @@
     },
     {
       "icono": "🟠",
+      "corredor": "Ruta del Sol / Bosconia–Valledupar",
+      "km": "",
+      "estado": "operación con restricciones — PMT desvío bidireccional Hito 33A a vía existente — circular con demora",
+      "fuente": ""
+    },
+    {
+      "icono": "🟠",
       "corredor": "Transversal del Sisga",
       "km": "",
       "estado": "paso controlado — Santa María–San Luis de Gaceno a un carril — circular con demora",
@@ -136,66 +142,40 @@
   ],
   "senales_tempranas": [
     {
-      "tramo": "Luruaco, Arroyo de Piedra",
-      "senal": "ControlT NUEVA ~14:17: cierre total por la comunidad",
-      "fuente": "ControlT PM",
-      "vigilar": "0 INVÍAS / 0 DITRA / 0 X"
-    },
-    {
-      "tramo": "Melgar, entrada desde Bogotá",
-      "senal": "ControlT NUEVA ~16:20: accidente de tractomula con cemento; congestión",
-      "fuente": "ControlT PM",
-      "vigilar": "0 X oficial"
-    },
-    {
-      "tramo": "Cartagena, PR 8 sentido Gambote",
-      "senal": "ControlT NUEVA ~17:02: accidente de carga",
-      "fuente": "ControlT PM",
-      "vigilar": "0 X oficial"
-    },
-    {
-      "tramo": "Valledupar / Caracolí",
-      "senal": "ControlT NUEVA ~16:56: accidente",
-      "fuente": "ControlT PM",
-      "vigilar": "0 X oficial"
-    },
-    {
-      "tramo": "Bosconia–Valledupar K 86+150, Hito 33A",
-      "senal": "PMT desde el 25-ago: desvío bidireccional a vía existente",
-      "fuente": "@rutadelsoltram3 15:27",
-      "vigilar": "A las 17:30 no rige"
-    },
-    {
-      "tramo": "Piedecuesta, Ruta 45A",
-      "senal": "ControlT persistente: un carril y cierre parcial",
-      "fuente": "ControlT PM",
-      "vigilar": "Sin contraste oficial"
-    },
-    {
-      "tramo": "Cimitarra, Ruta 45",
-      "senal": "ControlT persistente: un carril hasta las 22:00",
-      "fuente": "ControlT PM",
-      "vigilar": "Sin contraste oficial"
+      "tramo": "Calima, Ruta 40",
+      "senal": "ControlT persistente: horario 06:00–20:00 toda clase; nocturno solo emergencias",
+      "fuente": "ControlT AM",
+      "vigilar": "0 INVÍAS / 0 DITRA de ese punto; no fusionar con Yolomba"
     },
     {
       "tramo": "Aracataca–Ye de Ciénaga, puente Río Frío PR 85+700",
       "senal": "PMT un carril nocturno 18 ago–1 sep",
-      "fuente": "@rutadelsoltram3 19-ago",
-      "vigilar": "A las 17:30 no rige"
+      "fuente": "@rutadelsoltram3 19-ago · ControlT AM",
+      "vigilar": "A las 07:00 no rige"
+    },
+    {
+      "tramo": "Luruaco, Arroyo de Piedra",
+      "senal": "ControlT PM: cierre total por la comunidad; ya no aparece en ControlT AM",
+      "fuente": "ControlT PM vs AM",
+      "vigilar": "0 oficial; ausencia no resuelve"
+    },
+    {
+      "tramo": "Melgar, entrada desde Bogotá",
+      "senal": "ControlT PM: tractomula con cemento; ya no en ControlT AM",
+      "fuente": "ControlT PM vs AM",
+      "vigilar": "0 X oficial"
     }
   ],
   "alertas_inmediatas": [],
   "salud_fuentes": {
-    "estado_general": "estable",
+    "estado_general": "degradada",
     "ventanas_esperadas": [
       "AM",
       "MD",
       "PM"
     ],
     "ventanas_recibidas": [
-      "AM",
-      "MD",
-      "PM"
+      "AM"
     ],
     "eventos_confirmados": 0,
     "eventos_vigilancia": 0,
@@ -206,33 +186,19 @@
   "eventos_confirmados": [],
   "eventos_vigilancia": [],
   "historial_corredores": {
-    "periodo_inicio": "2026-08-18",
-    "periodo_fin": "2026-08-24",
+    "periodo_inicio": "2026-08-19",
+    "periodo_fin": "2026-08-25",
     "metodologia": "Días distintos por corredor; confirmado exige estado activo y confianza mínima de 0,65.",
     "corredores": [
       {
         "corredor": "Samanga–El Canelo 16200",
-        "dias_confirmados": 6,
+        "dias_confirmados": 5,
         "dias_vigilancia": 0,
-        "cortes_con_observacion": 16,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "critical",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "Cierre total PR 3+0300–3+0400"
-            ]
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -303,6 +269,14 @@
           },
           {
             "fecha": "2026-08-24",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
@@ -313,28 +287,13 @@
       },
       {
         "corredor": "Montenegro–Quimbaya",
-        "dias_confirmados": 6,
+        "dias_confirmados": 5,
         "dias_vigilancia": 0,
-        "cortes_con_observacion": 16,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "critical",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "DITRA 17:00 del 17 **no** usa este PR ni nombra km 8/16. INVÍAS: cierre total activo PR 4+800",
-              "Cierre total; caída de árboles desde el 13-ago PR 4+800"
-            ]
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -410,32 +369,26 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
         "corredor": "Las Ánimas–Bogotá",
-        "dias_confirmados": 6,
+        "dias_confirmados": 5,
         "dias_vigilancia": 0,
-        "cortes_con_observacion": 16,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "critical",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "Cierre total por izaje; hasta 07/09/2026 PR 66+0480–67+0000"
-            ]
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -519,32 +472,26 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
         "corredor": "La Unión–La Victoria",
-        "dias_confirmados": 6,
+        "dias_confirmados": 5,
         "dias_vigilancia": 0,
-        "cortes_con_observacion": 16,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "critical",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "Cierre total Puente Mariano Ospina"
-            ]
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -615,6 +562,14 @@
           },
           {
             "fecha": "2026-08-24",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
@@ -625,27 +580,13 @@
       },
       {
         "corredor": "La Lejía - Saravena",
-        "dias_confirmados": 6,
+        "dias_confirmados": 5,
         "dias_vigilancia": 0,
-        "cortes_con_observacion": 16,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "critical",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "Cierre total PR 22–26"
-            ]
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -721,33 +662,26 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
         "corredor": "Armenia–Alcalá",
-        "dias_confirmados": 6,
+        "dias_confirmados": 5,
         "dias_vigilancia": 0,
-        "cortes_con_observacion": 16,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "critical",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "Cierre total programado el **17** (06:30–16:00). Franja venció; **sin habilitación explícita** para el 18 km 18–20, Cruce Arauca",
-              "Cierre total programado el **17** (06:30–16:00). Franja venció; **sin habilitación** para el 18 km 18–20, Cruce Arauca"
-            ]
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -823,32 +757,26 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
         "corredor": "Paso Nacional por Tolú",
-        "dias_confirmados": 6,
+        "dias_confirmados": 5,
         "dias_vigilancia": 0,
-        "cortes_con_observacion": 16,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "high",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "high",
-            "resumenes": [
-              "Cierre parcial por obras PR 45+0846–46+0928"
-            ]
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -919,6 +847,14 @@
           },
           {
             "fecha": "2026-08-24",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
@@ -929,27 +865,13 @@
       },
       {
         "corredor": "Medellín–Buenaventura",
-        "dias_confirmados": 6,
+        "dias_confirmados": 5,
         "dias_vigilancia": 0,
-        "cortes_con_observacion": 16,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "medium",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "69+400 diurno un carril; Mediacanoa franja venció 10:00 del 17 sin habilitación OD humanitario"
-            ]
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -1020,6 +942,14 @@
           },
           {
             "fecha": "2026-08-24",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
@@ -1030,28 +960,13 @@
       },
       {
         "corredor": "Girardot–Ibagué–Cajamarca",
-        "dias_confirmados": 6,
+        "dias_confirmados": 5,
         "dias_vigilancia": 0,
-        "cortes_con_observacion": 16,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "medium",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "Paso a un carril PR 10+100",
-              "Paso a un carril (deslizamiento) PR 10+100"
-            ]
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -1127,33 +1042,26 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
         "corredor": "Bogotá–Buenaventura",
-        "dias_confirmados": 6,
+        "dias_confirmados": 5,
         "dias_vigilancia": 0,
-        "cortes_con_observacion": 16,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "medium",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "69+400 diurno un carril (DITRA); Mediacanoa franja venció 10:00 del 17 sin habilitación OD humanitario",
-              "69+400 diurno un carril; Mediacanoa franja venció 10:00 del 17 sin habilitación OD humanitario"
-            ]
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -1230,34 +1138,26 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
         "corredor": "Bogotá - Villavicencio",
-        "dias_confirmados": 6,
+        "dias_confirmados": 5,
         "dias_vigilancia": 0,
-        "cortes_con_observacion": 16,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "medium",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 1,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "**Paso alterno K62–K65** por volcamiento en K62 (último parte **06:22 del 18**). Bidireccional K18+300–K19; reducciones; un carril Quebradablanca y K69+350. Reversible nocturno **finalizado 22:05**. Boquerón: **sin habilitación** del peaje desde 08:58 del 15 K62–K65 (Chirajara); K18–K19; K36+500; Quebradablanca; K69+350; peaje Boquerón",
-              "Pasos alternos K18+400 (trabajos INVÍAS); reducción de carril en los tres túneles; pasos alternos K31+640 y K6+200 (parte 11:34). Boquerón: **sin habilitación** del peaje K18+400; túneles Herradura, Moscosio y La Culebra; K31+640; K6+200; peaje Boquerón",
-              "Pasos alternos K18+400 (trabajos INVÍAS) y K6+200 (parte 16:45). Boquerón: **sin habilitación** del peaje K18+400; K6+200; peaje Boquerón"
-            ]
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -1341,6 +1241,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -1353,14 +1261,6 @@
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -1434,33 +1334,26 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
         "corredor": "Bogotá–Pereira",
         "dias_confirmados": 3,
-        "dias_vigilancia": 3,
-        "cortes_con_observacion": 16,
+        "dias_vigilancia": 2,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "medium",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "Cuello Chinchiná (sin apertura confirmada) OD humanitario",
-              "Cuello Chinchiná (sin parte de apertura) OD humanitario"
-            ]
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -1537,6 +1430,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -1549,14 +1450,6 @@
         "ultima_observacion": "2026-08-21T12:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [],
@@ -1612,6 +1505,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -1624,14 +1525,6 @@
         "ultima_observacion": "2026-08-20T12:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -1687,6 +1580,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -1699,14 +1600,6 @@
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [],
@@ -1770,32 +1663,26 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
         "corredor": "Ibagué–Cajamarca, 2ª calzada",
         "dias_confirmados": 0,
-        "dias_vigilancia": 6,
-        "cortes_con_observacion": 15,
+        "dias_vigilancia": 5,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "medium",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "Paso a un carril hoy 18-ago por limpieza y mantenimiento de puentes (PMT) K13+927",
-              "Paso a un carril hoy 18-ago por limpieza y mantenimiento de puentes (PMT). Sin cancelación PM K13+927"
-            ]
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -1872,6 +1759,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -1884,14 +1779,6 @@
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [],
@@ -1958,33 +1845,26 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
         "corredor": "Pereira–Chinchiná",
         "dias_confirmados": 0,
-        "dias_vigilancia": 6,
-        "cortes_con_observacion": 16,
+        "dias_vigilancia": 5,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "low",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "DITRA no lo lista. INVÍAS dejó el registro inactivo. Sin parte de apertura PR 22+000–24+000",
-              "Sin parte de apertura PR 22+000–24+000"
-            ]
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -2055,6 +1935,14 @@
           },
           {
             "fecha": "2026-08-24",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
@@ -2066,26 +1954,12 @@
       {
         "corredor": "Peajes Autopista del Café, Caldas",
         "dias_confirmados": 0,
-        "dias_vigilancia": 6,
-        "cortes_con_observacion": 16,
+        "dias_vigilancia": 5,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "low",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "No cobran peaje a esos vehículos ayudas y emergencia"
-            ]
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -2156,6 +2030,14 @@
           },
           {
             "fecha": "2026-08-24",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
@@ -2167,26 +2049,12 @@
       {
         "corredor": "Peajes ANI en 5 corredores",
         "dias_confirmados": 0,
-        "dias_vigilancia": 6,
-        "cortes_con_observacion": 16,
+        "dias_vigilancia": 5,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "low",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "Paso sin cobro / con prioridad, previa coordinación (último refuerzo ANI 16:29 del 17) maquinaria amarilla y ayudas"
-            ]
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -2257,6 +2125,14 @@
           },
           {
             "fecha": "2026-08-24",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
@@ -2268,27 +2144,12 @@
       {
         "corredor": "Medellín–Pereira",
         "dias_confirmados": 0,
-        "dias_vigilancia": 6,
-        "cortes_con_observacion": 16,
+        "dias_vigilancia": 5,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "low",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "Cuello Chinchiná (sin apertura confirmada) OD humanitario",
-              "Cuello Chinchiná (sin parte de apertura) OD humanitario"
-            ]
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -2359,6 +2220,14 @@
           },
           {
             "fecha": "2026-08-24",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
@@ -2370,27 +2239,12 @@
       {
         "corredor": "Medellín–Manizales",
         "dias_confirmados": 0,
-        "dias_vigilancia": 6,
-        "cortes_con_observacion": 16,
+        "dias_vigilancia": 5,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "low",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "Letras / Chinchiná OD humanitario",
-              "Letras 36+800 / Chinchiná OD humanitario"
-            ]
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -2461,6 +2315,14 @@
           },
           {
             "fecha": "2026-08-24",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
@@ -2472,26 +2334,12 @@
       {
         "corredor": "Ibagué–Espinal 4004",
         "dias_confirmados": 0,
-        "dias_vigilancia": 6,
-        "cortes_con_observacion": 16,
+        "dias_vigilancia": 5,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "low",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "Obras PR 25+430–28+450"
-            ]
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -2562,6 +2410,14 @@
           },
           {
             "fecha": "2026-08-24",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
@@ -2573,26 +2429,12 @@
       {
         "corredor": "Cali–Loboguerrero",
         "dias_confirmados": 0,
-        "dias_vigilancia": 6,
-        "cortes_con_observacion": 16,
+        "dias_vigilancia": 5,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "low",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "Paso a carril km 52+300"
-            ]
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -2663,6 +2505,14 @@
           },
           {
             "fecha": "2026-08-24",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
@@ -2674,27 +2524,12 @@
       {
         "corredor": "Buga–Buenaventura",
         "dias_confirmados": 0,
-        "dias_vigilancia": 6,
-        "cortes_con_observacion": 16,
+        "dias_vigilancia": 5,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "low",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "DITRA no los nombra. INVÍAS los pasó a inactivo 10:28 del 15. Sin parte de apertura PR 58+700 y PR 50–55 salida túneles",
-              "Sin parte de apertura PR 58+700 y PR 50–55 salida túneles"
-            ]
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -2770,33 +2605,26 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
         "corredor": "Bogotá–Manizales",
         "dias_confirmados": 0,
-        "dias_vigilancia": 6,
-        "cortes_con_observacion": 16,
+        "dias_vigilancia": 5,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "low",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "Letras 36+800 paso a carril (DITRA/INVÍAS); PR 40+300 sin apertura OD humanitario",
-              "Letras 36+800 paso a carril; PR 40+300 sin parte de apertura OD humanitario"
-            ]
-          },
           {
             "fecha": "2026-08-19",
             "ventanas": [
@@ -2873,34 +2701,27 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-08-25",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
         "corredor": "Alto de Letras, Manizales–Fresno",
         "dias_confirmados": 0,
-        "dias_vigilancia": 6,
-        "cortes_con_observacion": 16,
+        "dias_vigilancia": 5,
+        "cortes_con_observacion": 13,
         "severidad_maxima": "low",
         "ultima_observacion": "2026-08-23T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
           {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "DITRA no lo lista. INVÍAS dejó el registro inactivo. Sin parte de apertura PR 40+300",
-              "Sin parte de apertura PR 40+300"
-            ]
-          },
-          {
             "fecha": "2026-08-19",
             "ventanas": [
               "AM",
@@ -2975,143 +2796,9 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Medellín–Quibdó",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "low",
-        "ultima_observacion": "2026-08-18T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "Sin tramo propio en DITRA 17:00 OD humanitario"
-            ]
           },
           {
-            "fecha": "2026-08-19",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-20",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-21",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-22",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-23",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-24",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Bogotá–Quibdó",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "low",
-        "ultima_observacion": "2026-08-18T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-08-18",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "Sin tramo propio en DITRA 17:00 OD humanitario"
-            ]
-          },
-          {
-            "fecha": "2026-08-19",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-20",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-21",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-22",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-23",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-08-24",
+            "fecha": "2026-08-25",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
@@ -3124,35 +2811,9 @@
   },
   "cambios_dia": [
     {
-      "cut_id": "2026-08-24-am",
+      "cut_id": "2026-08-25-am",
       "hora": "07:00",
       "ventana": "AM",
-      "tipo": "corte_final",
-      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
-      "conteos": {
-        "nuevos": 0,
-        "persistentes": 0,
-        "resueltos": 0,
-        "por_verificar": 0
-      }
-    },
-    {
-      "cut_id": "2026-08-24-md",
-      "hora": "12:00",
-      "ventana": "MD",
-      "tipo": "corte_final",
-      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
-      "conteos": {
-        "nuevos": 0,
-        "persistentes": 0,
-        "resueltos": 0,
-        "por_verificar": 0
-      }
-    },
-    {
-      "cut_id": "2026-08-24-pm",
-      "hora": "17:00",
-      "ventana": "PM",
       "tipo": "corte_final",
       "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
       "conteos": {
