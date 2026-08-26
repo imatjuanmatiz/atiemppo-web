@@ -2,15 +2,44 @@
   "schema_version": "1.2",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-08-26-am",
+  "cut_id": "2026-08-26-pm",
   "fecha": "2026-08-26",
-  "ventana": "AM",
-  "hora": "07:00",
-  "generado_en": "2026-08-26T07:00:00",
-  "artefacto_fuente": "2026-08-26-editor-eldato-version-vias-colombia-am.md",
-  "que_cambio": [],
+  "ventana": "PM",
+  "hora": "17:00",
+  "generado_en": "2026-08-26T17:00:00",
+  "artefacto_fuente": "2026-08-26-editor-eldato-version-vias-colombia-pm.md",
+  "que_cambio": [
+    {
+      "corredor": "Accesos a Yopal / El Crucero–Aguazul",
+      "antes": "no estaba en el listado AM",
+      "ahora": "cierre total — lodo sobre la calzada; sin alterna — no despachar",
+      "cambio": "nueva",
+      "evidencia": ""
+    },
+    {
+      "corredor": "Libertadores Sácama–La Cabuya",
+      "antes": "no estaba en el listado AM",
+      "ahora": "cierre total — puente y lodo; sin alterna — no despachar",
+      "cambio": "nueva",
+      "evidencia": ""
+    },
+    {
+      "corredor": "Ibagué–Espinal",
+      "antes": "obra / mantenimiento — restricción de carga; incendio forestal en Variante Chicoral con paso — circular despacio",
+      "ahora": "paso controlado — siniestro a un carril en Variante Chicoral; incendio forestal con paso; restricción de carga — circular con demora",
+      "cambio": "empeoró",
+      "evidencia": ""
+    },
+    {
+      "corredor": "Puerto López–Puerto Gaitán",
+      "antes": "paso controlado — un carril, Río Metica",
+      "ahora": "paso controlado — un carril, Río Metica — circular con demora",
+      "cambio": "empeoró",
+      "evidencia": ""
+    }
+  ],
   "notas_cambio": [
-    "Este corte es el listado base del día. MD y PM miden el cambio contra esta mañana, no contra el mismo corredor del corte anterior."
+    "Cambio medido contra el listado AM (2026-08-26-editor-eldato-version-vias-colombia-am.md), no contra el corte anterior de la misma ventana."
   ],
   "listado": [
     {
@@ -39,6 +68,20 @@
       "corredor": "Samanga–El Canelo",
       "km": "",
       "estado": "cierre total — pérdida de banca — no despachar",
+      "fuente": ""
+    },
+    {
+      "icono": "🔴",
+      "corredor": "Accesos a Yopal / El Crucero–Aguazul",
+      "km": "",
+      "estado": "cierre total — lodo sobre la calzada; sin alterna — no despachar",
+      "fuente": ""
+    },
+    {
+      "icono": "🔴",
+      "corredor": "Libertadores Sácama–La Cabuya",
+      "km": "",
+      "estado": "cierre total — puente y lodo; sin alterna — no despachar",
       "fuente": ""
     },
     {
@@ -87,7 +130,7 @@
       "icono": "🟠",
       "corredor": "Ibagué–Espinal",
       "km": "",
-      "estado": "obra / mantenimiento — restricción de carga; incendio forestal en Variante Chicoral con paso — circular despacio",
+      "estado": "paso controlado — siniestro a un carril en Variante Chicoral; incendio forestal con paso; restricción de carga — circular con demora",
       "fuente": ""
     },
     {
@@ -101,14 +144,14 @@
       "icono": "🟠",
       "corredor": "Puerto López–Puerto Gaitán",
       "km": "",
-      "estado": "paso controlado — un carril, Río Metica",
+      "estado": "paso controlado — un carril, Río Metica — circular con demora",
       "fuente": ""
     },
     {
       "icono": "🟠",
       "corredor": "Las Ánimas–Bogotá",
       "km": "",
-      "estado": "obra / mantenimiento — izaje 13:30–14:30; a las 07:00 no rige",
+      "estado": "obra / mantenimiento — izaje 13:30–14:30; a las 17:30 no rige",
       "fuente": ""
     },
     {
@@ -142,40 +185,30 @@
   ],
   "senales_tempranas": [
     {
-      "tramo": "Alto Calima PR 87+590, UF16",
-      "senal": "cierre de calzada derecha ~20 min 26-ago 10:00–11:00",
-      "fuente": "@CaminoPacifico 14:04 25-ago",
-      "vigilar": "A las 07:00 no rige"
-    },
-    {
-      "tramo": "San José de Nus–Medellín, km 34",
-      "senal": "ControlT NUEVA: accidente; solo mulas bajando",
-      "fuente": "ControlT AM",
-      "vigilar": "0 oficial"
-    },
-    {
       "tramo": "Calima, Ruta 40",
       "senal": "ControlT persistente: horario 06:00–20:00 toda clase; nocturno solo emergencias",
-      "fuente": "ControlT AM",
+      "fuente": "ControlT PM",
       "vigilar": "0 INVÍAS / 0 DITRA de ese punto; no fusionar con Yolomba ni Alto Calima"
     },
     {
       "tramo": "Aracataca–Ye de Ciénaga, puente Río Frío PR 85+700",
-      "senal": "PMT un carril nocturno 18 ago–1 sep",
-      "fuente": "@rutadelsoltram3 19-ago · ControlT AM",
-      "vigilar": "A las 07:00 no rige"
+      "senal": "PMT un carril nocturno 19:00–04:00 18 ago–1 sep",
+      "fuente": "@rutadelsoltram3 19-ago · ControlT PM",
+      "vigilar": "A las 17:30 no rige"
     }
   ],
   "alertas_inmediatas": [],
   "salud_fuentes": {
-    "estado_general": "degradada",
+    "estado_general": "estable",
     "ventanas_esperadas": [
       "AM",
       "MD",
       "PM"
     ],
     "ventanas_recibidas": [
-      "AM"
+      "AM",
+      "MD",
+      "PM"
     ],
     "eventos_confirmados": 0,
     "eventos_vigilancia": 0,
@@ -2664,6 +2697,32 @@
       "cut_id": "2026-08-26-am",
       "hora": "07:00",
       "ventana": "AM",
+      "tipo": "corte_final",
+      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
+      "conteos": {
+        "nuevos": 0,
+        "persistentes": 0,
+        "resueltos": 0,
+        "por_verificar": 0
+      }
+    },
+    {
+      "cut_id": "2026-08-26-md",
+      "hora": "12:00",
+      "ventana": "MD",
+      "tipo": "corte_final",
+      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
+      "conteos": {
+        "nuevos": 0,
+        "persistentes": 0,
+        "resueltos": 0,
+        "por_verificar": 0
+      }
+    },
+    {
+      "cut_id": "2026-08-26-pm",
+      "hora": "17:00",
+      "ventana": "PM",
       "tipo": "corte_final",
       "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
       "conteos": {
