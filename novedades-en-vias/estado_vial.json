@@ -2,15 +2,44 @@
   "schema_version": "1.2",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-08-27-am",
+  "cut_id": "2026-08-27-pm",
   "fecha": "2026-08-27",
-  "ventana": "AM",
-  "hora": "07:00",
-  "generado_en": "2026-08-27T07:00:00",
-  "artefacto_fuente": "2026-08-27-editor-eldato-version-vias-colombia-am.md",
-  "que_cambio": [],
+  "ventana": "PM",
+  "hora": "17:00",
+  "generado_en": "2026-08-27T17:00:00",
+  "artefacto_fuente": "2026-08-27-editor-eldato-version-vias-colombia-pm.md",
+  "que_cambio": [
+    {
+      "corredor": "Puerto Salgar–Barrancabermeja (por homologar)",
+      "antes": "no estaba en el listado AM",
+      "ahora": "cierre parcial — un carril en Peroles por accidente — circular con demora",
+      "cambio": "nueva",
+      "evidencia": ""
+    },
+    {
+      "corredor": "Villavicencio–Granada (por homologar)",
+      "antes": "no estaba en el listado AM",
+      "ahora": "paso controlado — un carril en Granja Iraca — circular con demora",
+      "cambio": "nueva",
+      "evidencia": ""
+    },
+    {
+      "corredor": "Bogotá–Villavicencio",
+      "antes": "operación con restricciones — siniestro con pasos alternos y PMT a un carril — circular con demora",
+      "ahora": "operación con restricciones — PMT a un carril y pasos alternos — circular con demora",
+      "cambio": "empeoró",
+      "evidencia": ""
+    },
+    {
+      "corredor": "Ibagué–Espinal",
+      "antes": "paso controlado — siniestro a un carril en Variante Chicoral; incendio forestal con paso; restricción de carga — circular con demora",
+      "ahora": "paso controlado — siniestro a un carril en Variante Picaleña; Chicoral sin habilitación; incendio con paso; restricción de carga — circular con demora",
+      "cambio": "empeoró",
+      "evidencia": ""
+    }
+  ],
   "notas_cambio": [
-    "Este corte es el listado base del día. MD y PM miden el cambio contra esta mañana, no contra el mismo corredor del corte anterior."
+    "Cambio medido contra el listado AM (2026-08-27-editor-eldato-version-vias-colombia-am.md), no contra el corte anterior de la misma ventana."
   ],
   "listado": [
     {
@@ -66,7 +95,7 @@
       "icono": "🟠",
       "corredor": "Bogotá–Villavicencio",
       "km": "",
-      "estado": "operación con restricciones — siniestro con pasos alternos y PMT a un carril — circular con demora",
+      "estado": "operación con restricciones — PMT a un carril y pasos alternos — circular con demora",
       "fuente": ""
     },
     {
@@ -101,7 +130,7 @@
       "icono": "🟠",
       "corredor": "Ibagué–Espinal",
       "km": "",
-      "estado": "paso controlado — siniestro a un carril en Variante Chicoral; incendio forestal con paso; restricción de carga — circular con demora",
+      "estado": "paso controlado — siniestro a un carril en Variante Picaleña; Chicoral sin habilitación; incendio con paso; restricción de carga — circular con demora",
       "fuente": ""
     },
     {
@@ -120,9 +149,23 @@
     },
     {
       "icono": "🟠",
+      "corredor": "Villavicencio–Granada (por homologar)",
+      "km": "",
+      "estado": "paso controlado — un carril en Granja Iraca — circular con demora",
+      "fuente": ""
+    },
+    {
+      "icono": "🟠",
+      "corredor": "Puerto Salgar–Barrancabermeja (por homologar)",
+      "km": "",
+      "estado": "cierre parcial — un carril en Peroles por accidente — circular con demora",
+      "fuente": ""
+    },
+    {
+      "icono": "🟠",
       "corredor": "Las Ánimas–Bogotá",
       "km": "",
-      "estado": "obra / mantenimiento — izaje 13:30–14:30; a las 07:00 no rige",
+      "estado": "obra / mantenimiento — izaje 13:30–14:30; a las 17:30 no rige",
       "fuente": ""
     },
     {
@@ -156,28 +199,66 @@
   ],
   "senales_tempranas": [
     {
+      "tramo": "Sincelejo–Calamar / vía oriental, puente Calamar (Ruta 2515 km 138)",
+      "senal": "ControlT ACTUALIZADA: bloqueo; prensa ~12:43",
+      "fuente": "ControlT PM · @HENRYFOREROJ 12:43",
+      "vigilar": "0 DITRA / 0 INVÍAS / 0 concesión"
+    },
+    {
+      "tramo": "Lorica–San Onofre, peaje / Glorieta de Pita",
+      "senal": "ControlT persistente de bloqueo; usuario 14:37 dice que sigue",
+      "fuente": "ControlT PM · @LindaCantor1 14:37",
+      "vigilar": "concesión dio fin a las 11:06; sin parte PM que lo reabra"
+    },
+    {
+      "tramo": "Cimitarra, ruta 45",
+      "senal": "ControlT: socavón; restricción de carga pesada",
+      "fuente": "ControlT PM",
+      "vigilar": "0 contraste oficial"
+    },
+    {
+      "tramo": "Los Santos, ruta 45A",
+      "senal": "ControlT: socavón; restricción de carga pesada",
+      "fuente": "ControlT PM",
+      "vigilar": "0 contraste oficial"
+    },
+    {
+      "tramo": "Armenia–Montenegro",
+      "senal": "ControlT: un carril por deslizamiento (sismo)",
+      "fuente": "ControlT PM",
+      "vigilar": "distinto de Quimbaya; 0 DITRA / 0 INVÍAS de ese punto"
+    },
+    {
       "tramo": "Calima, Ruta 40",
       "senal": "ControlT persistente: horario 06:00–20:00 toda clase; nocturno solo emergencias",
-      "fuente": "ControlT AM",
+      "fuente": "ControlT PM",
       "vigilar": "0 INVÍAS / 0 DITRA de ese punto; no fusionar con Yolomba ni Alto Calima"
     },
     {
-      "tramo": "Aracataca–Ye de Ciénaga, puente Río Frío PR 85+700",
-      "senal": "PMT un carril nocturno 19:00–04:00 18 ago–1 sep",
-      "fuente": "@rutadelsoltram3 19-ago · ControlT AM",
-      "vigilar": "A las 07:00 no rige"
+      "tramo": "Pajarito, ruta 62",
+      "senal": "ControlT: restricción por árboles",
+      "fuente": "ControlT PM",
+      "vigilar": "0 INVÍAS 27"
+    },
+    {
+      "tramo": "Cisneros, Buenaventura–Loboguerrero",
+      "senal": "ControlT: PARE-SIGA",
+      "fuente": "ControlT PM",
+      "vigilar": "corredor ya en paso controlado; 0 operador PM"
     }
   ],
   "alertas_inmediatas": [],
   "salud_fuentes": {
-    "estado_general": "degradada",
+    "estado_general": "estable",
     "ventanas_esperadas": [
       "AM",
       "MD",
       "PM"
     ],
     "ventanas_recibidas": [
-      "AM"
+      "AM",
+      "MD",
+      "PM"
     ],
     "eventos_confirmados": 0,
     "eventos_vigilancia": 0,
@@ -2443,6 +2524,32 @@
       "cut_id": "2026-08-27-am",
       "hora": "07:00",
       "ventana": "AM",
+      "tipo": "corte_final",
+      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
+      "conteos": {
+        "nuevos": 0,
+        "persistentes": 0,
+        "resueltos": 0,
+        "por_verificar": 0
+      }
+    },
+    {
+      "cut_id": "2026-08-27-md",
+      "hora": "12:00",
+      "ventana": "MD",
+      "tipo": "corte_final",
+      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
+      "conteos": {
+        "nuevos": 0,
+        "persistentes": 0,
+        "resueltos": 0,
+        "por_verificar": 0
+      }
+    },
+    {
+      "cut_id": "2026-08-27-pm",
+      "hora": "17:00",
+      "ventana": "PM",
       "tipo": "corte_final",
       "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
       "conteos": {
