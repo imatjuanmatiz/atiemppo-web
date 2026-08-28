@@ -2,15 +2,44 @@
   "schema_version": "1.2",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-08-28-am",
+  "cut_id": "2026-08-28-pm",
   "fecha": "2026-08-28",
-  "ventana": "AM",
-  "hora": "07:00",
-  "generado_en": "2026-08-28T07:00:00",
-  "artefacto_fuente": "2026-08-28-editor-eldato-version-vias-colombia-am.md",
-  "que_cambio": [],
+  "ventana": "PM",
+  "hora": "17:00",
+  "generado_en": "2026-08-28T17:00:00",
+  "artefacto_fuente": "2026-08-28-editor-eldato-version-vias-colombia-pm.md",
+  "que_cambio": [
+    {
+      "corredor": "Puerto Salgar–Barrancabermeja (por homologar)",
+      "antes": "no estaba en el listado AM",
+      "ahora": "paso controlado — un carril en El Zarzal — circular con demora",
+      "cambio": "nueva",
+      "evidencia": ""
+    },
+    {
+      "corredor": "Villavicencio–Granada (por homologar)",
+      "antes": "no estaba en el listado AM",
+      "ahora": "paso controlado — un carril en Gramalote — circular con demora",
+      "cambio": "nueva",
+      "evidencia": ""
+    },
+    {
+      "corredor": "Villavicencio–Puerto López (por homologar)",
+      "antes": "no estaba en el listado AM",
+      "ahora": "paso controlado — un carril en Las Brisas y Japoneses — circular con demora",
+      "cambio": "nueva",
+      "evidencia": ""
+    },
+    {
+      "corredor": "Cali–Loboguerrero",
+      "antes": "paso controlado — tres puntos a un carril",
+      "ahora": "paso controlado — varios puntos a un carril — circular con demora, no es corredor cerrado",
+      "cambio": "empeoró",
+      "evidencia": ""
+    }
+  ],
   "notas_cambio": [
-    "Este corte es el listado base del día. MD y PM miden el cambio contra esta mañana, no contra el mismo corredor del corte anterior."
+    "Cambio medido contra el listado AM (2026-08-28-editor-eldato-version-vias-colombia-am.md), no contra el corte anterior de la misma ventana."
   ],
   "listado": [
     {
@@ -80,7 +109,7 @@
       "icono": "🟠",
       "corredor": "Cali–Loboguerrero",
       "km": "",
-      "estado": "paso controlado — tres puntos a un carril",
+      "estado": "paso controlado — varios puntos a un carril — circular con demora, no es corredor cerrado",
       "fuente": ""
     },
     {
@@ -120,9 +149,30 @@
     },
     {
       "icono": "🟠",
+      "corredor": "Villavicencio–Puerto López (por homologar)",
+      "km": "",
+      "estado": "paso controlado — un carril en Las Brisas y Japoneses — circular con demora",
+      "fuente": ""
+    },
+    {
+      "icono": "🟠",
+      "corredor": "Villavicencio–Granada (por homologar)",
+      "km": "",
+      "estado": "paso controlado — un carril en Gramalote — circular con demora",
+      "fuente": ""
+    },
+    {
+      "icono": "🟠",
+      "corredor": "Puerto Salgar–Barrancabermeja (por homologar)",
+      "km": "",
+      "estado": "paso controlado — un carril en El Zarzal — circular con demora",
+      "fuente": ""
+    },
+    {
+      "icono": "🟠",
       "corredor": "Las Ánimas–Bogotá",
       "km": "",
-      "estado": "obra / mantenimiento — izaje 13:30–14:30; a las 07:00 no rige",
+      "estado": "obra / mantenimiento — izaje 13:30–14:30; a las 17:30 no rige",
       "fuente": ""
     },
     {
@@ -156,52 +206,54 @@
   ],
   "senales_tempranas": [
     {
-      "tramo": "Sincelejo–Calamar / vía oriental, puente Calamar (Ruta 2515 km 138)",
-      "senal": "ControlT persistente de bloqueo; usuario 19:40 27 con video",
-      "fuente": "ControlT AM · @jahd0730 19:40 27",
-      "vigilar": "0 DITRA / 0 INVÍAS / 0 concesión"
-    },
-    {
-      "tramo": "Lorica–San Onofre, peaje / Glorieta de Pita",
-      "senal": "ControlT persistente de bloqueo",
-      "fuente": "ControlT AM",
-      "vigilar": "concesión dio fin a las 11:06 27; 0 parte AM que lo reabra"
-    },
-    {
       "tramo": "Cimitarra, ruta 45",
       "senal": "ControlT: socavón; restricción de carga pesada",
-      "fuente": "ControlT AM",
+      "fuente": "ControlT PM",
       "vigilar": "0 contraste oficial"
     },
     {
       "tramo": "Los Santos, ruta 45A",
       "senal": "ControlT: socavón; restricción de carga pesada",
-      "fuente": "ControlT AM",
+      "fuente": "ControlT PM",
       "vigilar": "0 contraste oficial"
-    },
-    {
-      "tramo": "Armenia–Montenegro",
-      "senal": "ControlT: un carril por deslizamiento (sismo)",
-      "fuente": "ControlT AM",
-      "vigilar": "distinto de Quimbaya; 0 DITRA / 0 INVÍAS de ese punto"
     },
     {
       "tramo": "Calima, Ruta 40",
       "senal": "ControlT persistente: horario 06:00–20:00 toda clase; nocturno solo emergencias",
-      "fuente": "ControlT AM",
+      "fuente": "ControlT PM",
       "vigilar": "0 INVÍAS / 0 DITRA de ese punto; no fusionar con Yolomba ni Alto Calima"
+    },
+    {
+      "tramo": "Buenaventura, Av. Simón Bolívar PR 10+100–10+460",
+      "senal": "ControlT NUEVA: cierre de carril derecho por obras",
+      "fuente": "ControlT PM",
+      "vigilar": "programado desde el 02-sep; no rige hoy"
+    },
+    {
+      "tramo": "Ríofrío–Ciénaga, ruta 45, puente Río Frío",
+      "senal": "ControlT: un carril nocturno por mantenimiento de puente (18-ago–01-sep)",
+      "fuente": "ControlT PM",
+      "vigilar": "0 contraste oficial de calzada en este corte"
+    },
+    {
+      "tramo": "Curumaní, ruta 45",
+      "senal": "ControlT NUEVA: congestión alta hacia Curumaní",
+      "fuente": "ControlT PM",
+      "vigilar": "sin dato de calzada; 0 oficial"
     }
   ],
   "alertas_inmediatas": [],
   "salud_fuentes": {
-    "estado_general": "degradada",
+    "estado_general": "estable",
     "ventanas_esperadas": [
       "AM",
       "MD",
       "PM"
     ],
     "ventanas_recibidas": [
-      "AM"
+      "AM",
+      "MD",
+      "PM"
     ],
     "eventos_confirmados": 0,
     "eventos_vigilancia": 0,
@@ -2230,6 +2282,32 @@
       "cut_id": "2026-08-28-am",
       "hora": "07:00",
       "ventana": "AM",
+      "tipo": "corte_final",
+      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
+      "conteos": {
+        "nuevos": 0,
+        "persistentes": 0,
+        "resueltos": 0,
+        "por_verificar": 0
+      }
+    },
+    {
+      "cut_id": "2026-08-28-md",
+      "hora": "12:00",
+      "ventana": "MD",
+      "tipo": "corte_final",
+      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
+      "conteos": {
+        "nuevos": 0,
+        "persistentes": 0,
+        "resueltos": 0,
+        "por_verificar": 0
+      }
+    },
+    {
+      "cut_id": "2026-08-28-pm",
+      "hora": "17:00",
+      "ventana": "PM",
       "tipo": "corte_final",
       "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
       "conteos": {
