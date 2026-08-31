@@ -2,44 +2,44 @@
   "schema_version": "1.2",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-08-30-md",
-  "fecha": "2026-08-30",
+  "cut_id": "2026-08-31-md",
+  "fecha": "2026-08-31",
   "ventana": "MD",
   "hora": "12:00",
-  "generado_en": "2026-08-30T12:00:00",
-  "artefacto_fuente": "2026-08-30-editor-eldato-version-vias-colombia-md.md",
+  "generado_en": "2026-08-31T12:00:00",
+  "artefacto_fuente": "2026-08-31-editor-eldato-version-vias-colombia-md.md",
   "que_cambio": [
     {
-      "corredor": "Acceso a Sincelejo / Sincelejo–Toluviejo (por homologar)",
+      "corredor": "Villavicencio–Granada (por homologar)",
       "antes": "no estaba en el listado AM",
-      "ahora": "paso controlado — calzada izquierda por árboles; hay un carril — circular con demora, no es corredor cerrado",
+      "ahora": "paso controlado — un carril en Agrocom — circular con demora",
       "cambio": "nueva",
       "evidencia": ""
     },
     {
-      "corredor": "Troncal de Occidente / Sincelejo–Puerta de Hierro (por homologar)",
+      "corredor": "Villavicencio–Puerto López (por homologar)",
       "antes": "no estaba en el listado AM",
-      "ahora": "paso controlado — árboles a un carril en dos puntos — circular con demora",
+      "ahora": "paso controlado — un carril en Pompeya — circular con demora",
       "cambio": "nueva",
       "evidencia": ""
     },
     {
-      "corredor": "Acceso a Florencia (por homologar)",
-      "antes": "cierre total — caída de rocas; sin alterna — no despachar",
-      "ahora": "cierre total — dos tramos sin paso; sin alterna — no despachar",
+      "corredor": "Bogotá–Villavicencio",
+      "antes": "operación con restricciones — PMT a un carril y tramos bidireccionales — circular con demora",
+      "ahora": "operación con restricciones — PMT: pasos alternos y reducción de carril — circular con demora",
       "cambio": "empeoró",
       "evidencia": ""
     },
     {
-      "corredor": "Puerto Salgar–Barrancabermeja (por homologar)",
-      "antes": "paso controlado — un carril en El Zarzal y La Olinda — circular con demora",
-      "ahora": "paso controlado — un carril en El Zarzal, La Olinda, El Águila y Agua Blanca Alta — circular con demora",
+      "corredor": "Ibagué–Espinal",
+      "antes": "paso controlado — siniestro a un carril en Variante Picaleña; Chicoral sin habilitación; incendio con paso; restricción de carga — circular con demora",
+      "ahora": "paso controlado — siniestros a un carril en Variante Ibagué y Chicoral; Picaleña y Chicoral previos sin habilitación; incendio con paso; restricción de carga — circular con demora",
       "cambio": "empeoró",
       "evidencia": ""
     }
   ],
   "notas_cambio": [
-    "Cambio medido contra el listado AM (2026-08-30-editor-eldato-version-vias-colombia-am.md), no contra el corte anterior de la misma ventana."
+    "Cambio medido contra el listado AM (2026-08-31-editor-eldato-version-vias-colombia-am.md), no contra el corte anterior de la misma ventana."
   ],
   "listado": [
     {
@@ -86,6 +86,13 @@
     },
     {
       "icono": "🔴",
+      "corredor": "Libertadores Belén–Sácama (por homologar)",
+      "km": "",
+      "estado": "cierre total — deslizamiento y árboles; apertura en evaluación — no despachar",
+      "fuente": ""
+    },
+    {
+      "icono": "🔴",
       "corredor": "Acceso a Florencia (por homologar)",
       "km": "",
       "estado": "cierre total — dos tramos sin paso; sin alterna — no despachar",
@@ -109,7 +116,7 @@
       "icono": "🟠",
       "corredor": "Bogotá–Villavicencio",
       "km": "",
-      "estado": "operación con restricciones — PMT a un carril y tramos bidireccionales; pasos alternos en K8 — circular con demora",
+      "estado": "operación con restricciones — PMT: pasos alternos y reducción de carril — circular con demora",
       "fuente": ""
     },
     {
@@ -144,7 +151,7 @@
       "icono": "🟠",
       "corredor": "Ibagué–Espinal",
       "km": "",
-      "estado": "paso controlado — siniestro a un carril en Variante Picaleña; Chicoral sin habilitación; incendio con paso; restricción de carga — circular con demora",
+      "estado": "paso controlado — siniestros a un carril en Variante Ibagué y Chicoral; Picaleña y Chicoral previos sin habilitación; incendio con paso; restricción de carga — circular con demora",
       "fuente": ""
     },
     {
@@ -163,9 +170,23 @@
     },
     {
       "icono": "🟠",
+      "corredor": "Villavicencio–Granada (por homologar)",
+      "km": "",
+      "estado": "paso controlado — un carril en Agrocom — circular con demora",
+      "fuente": ""
+    },
+    {
+      "icono": "🟠",
+      "corredor": "Villavicencio–Puerto López (por homologar)",
+      "km": "",
+      "estado": "paso controlado — un carril en Pompeya — circular con demora",
+      "fuente": ""
+    },
+    {
+      "icono": "🟠",
       "corredor": "Puerto Salgar–Barrancabermeja (por homologar)",
       "km": "",
-      "estado": "paso controlado — un carril en El Zarzal, La Olinda, El Águila y Agua Blanca Alta — circular con demora",
+      "estado": "paso controlado — un carril en El Zarzal, La Olinda, El Águila, Agua Blanca Alta y Caño Baúl — circular con demora",
       "fuente": ""
     },
     {
@@ -227,16 +248,34 @@
   ],
   "senales_tempranas": [
     {
-      "tramo": "Vélez–Landázuri, ruta 62",
-      "senal": "ControlT NUEVA: mula volteada",
-      "fuente": "ControlT MD",
-      "vigilar": "0 contraste oficial"
+      "tramo": "Panamericana, El Estrecho (Patía)",
+      "senal": "ControlT NUEVA: cierre preventivo tras ataque; prensa cierra Popayán–Pasto; Caracol cita STT Cauca paso a un carril N–S",
+      "fuente": "ControlT MD · prensa",
+      "vigilar": "0 DITRA / 0 INVÍAS / 0 @InviasOficial"
     },
     {
-      "tramo": "Landázuri–Vélez, ruta 62",
-      "senal": "ControlT persistente: «acabando de dar paso a un carril»; tractomula con viga",
+      "tramo": "Panamericana, Jamundí km 15 y 17",
+      "senal": "ControlT NUEVA: cierre preventivo 30-ago",
       "fuente": "ControlT MD",
-      "vigilar": "0 contraste oficial"
+      "vigilar": "0 contraste oficial; no fusionar con El Estrecho"
+    },
+    {
+      "tramo": "Ventaquemada, ruta 55 hacia Bogotá",
+      "senal": "ControlT NUEVA: accidente de carga",
+      "fuente": "ControlT MD",
+      "vigilar": "0 Coviandina / 0 oficial"
+    },
+    {
+      "tramo": "Calima, Ruta 40",
+      "senal": "ControlT ACTUALIZADA: 06:00–20:00 toda clase; nocturno solo emergencias",
+      "fuente": "ControlT MD",
+      "vigilar": "0 INVÍAS / 0 DITRA de ese punto; no fusionar con Yolomba"
+    },
+    {
+      "tramo": "Caramanta / adelante peaje Supía, ruta 25",
+      "senal": "ControlT: accidente bus–carga; un carril",
+      "fuente": "ControlT MD",
+      "vigilar": "0 contraste de concesión; el un carril oficial sigue siendo Pacífico Tres 18:02 29-ago"
     },
     {
       "tramo": "Cimitarra, ruta 45",
@@ -251,22 +290,10 @@
       "vigilar": "0 contraste oficial"
     },
     {
-      "tramo": "Calima, Ruta 40",
-      "senal": "ControlT persistente: horario 06:00–20:00 toda clase; nocturno solo emergencias",
+      "tramo": "Landázuri–Vélez, ruta 62",
+      "senal": "ControlT persistente: «acabando de dar paso a un carril»; tractomula con viga",
       "fuente": "ControlT MD",
-      "vigilar": "0 INVÍAS / 0 DITRA de ese punto; no fusionar con Yolomba ni Alto Calima"
-    },
-    {
-      "tramo": "Armenia–Montenegro",
-      "senal": "ControlT: un carril por deslizamiento (sismo)",
-      "fuente": "ControlT MD",
-      "vigilar": "distinto de Quimbaya; 0 DITRA / 0 INVÍAS de ese punto"
-    },
-    {
-      "tramo": "Soatá, ruta 55",
-      "senal": "ControlT NUEVA: accidente Belén–Soatá (traslado a hospital)",
-      "fuente": "ControlT MD",
-      "vigilar": "0 contraste oficial; no describe calzada"
+      "vigilar": "0 contraste oficial"
     }
   ],
   "alertas_inmediatas": [],
@@ -290,14 +317,14 @@
   "eventos_confirmados": [],
   "eventos_vigilancia": [],
   "historial_corredores": {
-    "periodo_inicio": "2026-08-24",
-    "periodo_fin": "2026-08-30",
+    "periodo_inicio": "2026-08-25",
+    "periodo_fin": "2026-08-31",
     "metodologia": "Días distintos por corredor; confirmado exige estado activo y confianza mínima de 0,65.",
     "corredores": []
   },
   "cambios_dia": [
     {
-      "cut_id": "2026-08-30-am",
+      "cut_id": "2026-08-31-am",
       "hora": "07:00",
       "ventana": "AM",
       "tipo": "corte_final",
@@ -310,7 +337,7 @@
       }
     },
     {
-      "cut_id": "2026-08-30-md",
+      "cut_id": "2026-08-31-md",
       "hora": "12:00",
       "ventana": "MD",
       "tipo": "corte_final",
