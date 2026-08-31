@@ -6,633 +6,71 @@ render_with_liquid: false
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>ATIEMPPO — Business, data & AI to win back time</title>
-<meta name="description" content="ATIEMPPO helps transport teams decide better, work with data and use AI agents. Three entry points: a decision, adopting agents, or building in-house capability."/>
-<meta name="ai-content-declaration" content="human-authored"/>
-<meta name="llms-txt" content="https://atiemppo.com/llms.txt"/>
-<link rel="alternate" type="text/plain" title="LLMs.txt" href="/llms.txt"/>
-<meta property="og:title" content="ATIEMPPO — Business, data & AI to win back time"/>
-<meta property="og:description" content="We speak the language of business and of technology to win back operational time."/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="https://atiemppo.com/en/"/>
-<meta property="og:locale" content="en_US"/>
-<meta property="og:image" content="https://atiemppo.com/assets/images/generated/atiemppo-industria-tiempo-hero.png"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:site" content="@atiemppo"/>
-<link rel="canonical" href="https://atiemppo.com/en/"/>
-<link rel="alternate" hreflang="es" href="https://atiemppo.com/"/>
-<link rel="alternate" hreflang="en" href="https://atiemppo.com/en/"/>
-<link rel="alternate" hreflang="x-default" href="https://atiemppo.com/"/>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": ["Organization","ProfessionalService"],
-      "@id": "https://atiemppo.com/#organization",
-      "name": "ATIEMPPO S.A.S.",
-      "description": "Colombian company that helps transport teams make better decisions, work with data and use AI agents, focused on logistics and supply chain in Colombia and Latin America.","inLanguage": "en",
-      "url": "https://atiemppo.com",
-      "foundingDate": "2013",
-      "logo": "https://atiemppo.com/assets/images/logo-atiemppo.png",
-      "address": { "@type": "PostalAddress", "streetAddress": "Calle 146 #7-64 of. 401", "addressLocality": "Bogotá", "addressCountry": "CO" },
-      "contactPoint": { "@type": "ContactPoint", "telephone": "+57-310-768-7010", "email": "juanmatiz@atiemppo.co", "contactType": "sales", "areaServed": "CO", "availableLanguage": "es" },
-      "founder": { "@id": "https://atiemppo.com/#juan-pablo-matiz" },
-      "areaServed": ["Colombia", "América Latina"],
-      "sameAs": ["https://www.eldatologistico.com", "https://linkedin.com/in/juanmatizg", "https://github.com/imatjuanmatiz"],
-      "knowsAbout": ["Logistics", "Supply chain", "SICETAC", "Freight costs in Colombia", "Applied artificial intelligence", "AI agents", "Data analysis", "Process automation"]
-    },
-    {
-      "@type": "Person",
-      "@id": "https://atiemppo.com/#juan-pablo-matiz",
-      "name": "Juan Pablo Matiz",
-      "jobTitle": "Founder",
-      "worksFor": { "@id": "https://atiemppo.com/#organization" }
-    },
-    {
-      "@type": "Service",
-      "@id": "https://atiemppo.com/#service-industria-tiempo",
-      "name": "Services to transform transport teams",
-      "provider": { "@id": "https://atiemppo.com/#organization" },
-      "areaServed": ["Colombia", "América Latina"],
-      "serviceType": "Consulting, SICETAC data, agentic training and managed agents",
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Five ATIEMPPO services for 2026",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI-enabled consulting for transport decisions", "url": "https://atiemppo.com/#consultorias" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SICETAC data and network intelligence", "url": "https://atiemppo.com/#datos" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Agentic training and experience", "url": "https://atiemppo.com/#capacitacion" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Managed connection to ATIEMPPO agents", "url": "https://atiemppo.com/#agentes-gestionados" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roadmap for in-house agents and capabilities", "url": "https://atiemppo.com/#hoja-de-ruta" } }
-        ]
-      }
-    }
-  ]
-}
-</script>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
-<style>
-:root{
-  --bg:#F4F6F2; --ink:#0B1220; --navy:#0E2C4D; --navy-d:#0a2138;
-  --green:#00B86B; --green-d:#00925a; --green-l:#7bf3bf; --sky:#7fd0ff;
-  --muted:#3a4456; --muted-2:#566071; --muted-3:#6a7384;
-  --line:rgba(11,18,32,.08); --line-2:rgba(11,18,32,.16);
-  --display:'Space Grotesk',system-ui,sans-serif;
-  --font:'IBM Plex Sans',system-ui,sans-serif;
-  --mono:'IBM Plex Mono',ui-monospace,monospace;
-  --maxw:1200px;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;background:var(--bg)}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.55;overflow-x:hidden}
-body.nav-open{overflow:hidden}
-img{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
-button,input,textarea{font:inherit}
-::selection{background:var(--green);color:#062a1c}
-section[id]{scroll-margin-top:86px}
-
-@keyframes pulseDot{0%,100%{opacity:.25}50%{opacity:1}}
-@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-@keyframes drift{0%{transform:translate(0,0)}50%{transform:translate(12px,-16px)}100%{transform:translate(0,0)}}
-@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@keyframes sweep{0%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
-@keyframes revealIn{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
-@supports (animation-timeline:view()){
-  @media (prefers-reduced-motion:no-preference){
-    [data-reveal]{animation:revealIn .8s cubic-bezier(.16,.84,.44,1) both;animation-timeline:view();animation-range:entry 0% cover 32%}
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>ATIEMPPO — Data, judgment and AI for better decisions in logistics and transport.</title>
+  <meta name="description" content="At ATIEMPPO, we help transport and logistics companies and teams make better decisions. We combine industry experience, applied research, data analysis, artificial intelligence and expert guidance to optimize costs, evaluate alternatives and turn information into action."/>
+  <meta name="ai-content-declaration" content="human-authored"/>
+  <meta name="llms-txt" content="https://atiemppo.com/en/llms.txt"/>
+  <link rel="alternate" type="text/plain" title="LLMs.txt" href="/en/llms.txt"/>
+  <link rel="alternate" type="text/plain" title="LLMs full" href="/llms-full.txt"/>
+  <meta property="og:title" content="ATIEMPPO — Data, judgment and AI for better decisions in logistics and transport."/>
+  <meta property="og:description" content="At ATIEMPPO, we help transport and logistics companies and teams make better decisions. We combine industry experience, applied research, data analysis, artificial intelligence and expert guidance to optimize costs, evaluate alternatives and turn information into action."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://atiemppo.com/en/"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="ATIEMPPO"/>
+  <meta property="og:image" content="https://atiemppo.com/assets/images/generated/atiemppo-capa-agentica-bruno.png"/>
+  <meta property="og:image:alt" content="Data, judgment and AI agents for logistics and transport"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@atiemppo"/>
+  <meta name="twitter:title" content="ATIEMPPO — Data, judgment and AI for better decisions in logistics and transport."/>
+  <meta name="twitter:description" content="At ATIEMPPO, we help transport and logistics companies and teams make better decisions. We combine industry experience, applied research, data analysis, artificial intelligence and expert guidance to optimize costs, evaluate alternatives and turn information into action."/>
+  <meta name="twitter:image" content="https://atiemppo.com/assets/images/generated/atiemppo-capa-agentica-bruno.png"/>
+  <link rel="canonical" href="https://atiemppo.com/en/"/>
+  <link rel="alternate" hreflang="es" href="https://atiemppo.com/"/>
+  <link rel="alternate" hreflang="en" href="https://atiemppo.com/en/"/>
+  <link rel="alternate" hreflang="x-default" href="https://atiemppo.com/"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:wght@400;500;600;700&family=Material+Symbols+Rounded:FILL@0..1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/assets/css/home-2026.css"/>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {"@type":"Organization","@id":"https://atiemppo.com/#organization","name":"ATIEMPPO S.A.S.","url":"https://atiemppo.com","logo":"https://atiemppo.com/assets/images/logo-atiemppo.png","address":{"@type":"PostalAddress","addressLocality":"Bogota","addressCountry":"CO"},"contactPoint":{"@type":"ContactPoint","telephone":"+57-310-768-7010","email":"juanmatiz@atiemppo.co","areaServed":"Latin America","availableLanguage":["en","es"]}},
+      {"@type":"WebPage","@id":"https://atiemppo.com/en/#webpage","url":"https://atiemppo.com/en/","name":"ATIEMPPO — Data, judgment and AI for better decisions in logistics and transport.","inLanguage":"en","isPartOf":{"@id":"https://atiemppo.com/#organization"}},
+      {"@type":"ItemList","name":"ATIEMPPO service lines","itemListElement":[{"@type":"ListItem","position":1,"name":"Consulting for better decisions","url":"https://atiemppo.com/en/consultoria/"},{"@type":"ListItem","position":2,"name":"Applications, data and information for transport","url":"https://atiemppo.com/en/#soluciones"},{"@type":"ListItem","position":3,"name":"Learning to work with AI agents","url":"https://atiemppo.com/en/#experiencias"}]}
+    ]
   }
-}
-
-/* NAV */
-.site-nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px;padding:0 28px;max-width:var(--maxw);margin:0 auto;background:transparent}
-.nav-wrap{position:sticky;top:0;z-index:100;background:rgba(244,246,242,.82);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--line)}
-.nav-logo img{height:30px;width:auto}
-.nav-links{display:flex;align-items:center;gap:28px}
-.nav-links a{font-size:14.5px;font-weight:500;color:var(--muted)}
-.nav-links a:hover{color:var(--navy)}
-.nav-cta{display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:#fff!important;padding:11px 18px;border-radius:10px;font-size:14px;font-weight:600;transition:background .2s,transform .2s}
-.nav-cta:hover{background:var(--green);color:#062a1c!important;transform:translateY(-1px)}
-.nav-cta .dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulseDot 1.8s infinite}
-.nav-cta:hover .dot{background:#062a1c}
-.lang-switch{display:inline-flex;align-items:center;font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.5px;color:var(--muted);border:1px solid var(--line-2);border-radius:8px;padding:8px 11px;transition:all .2s}
-.lang-switch:hover{border-color:var(--navy);color:var(--navy)}
-.nav-burger{display:none;width:44px;height:44px;border:0;background:transparent;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer}
-.nav-burger span{width:24px;height:2px;background:var(--navy);border-radius:9px;transition:.2s}
-.nav-burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-.nav-burger.open span:nth-child(2){opacity:0}
-.nav-burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-.mobile-nav{display:none}
-
-/* LAYOUT */
-.container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 28px}
-.section{padding:90px 0}
-.kicker{font-family:var(--mono);font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:var(--green-d);margin:0 0 14px}
-.kicker.on-dark{color:var(--green-l)}
-.h2{font-family:var(--display);font-weight:700;font-size:clamp(28px,3.6vw,44px);line-height:1.08;letter-spacing:-1.4px;margin:0}
-.lead{color:var(--muted);font-size:17px;line-height:1.62;margin:0}
-.btn{display:inline-flex;align-items:center;gap:9px;border-radius:12px;font-size:15px;font-weight:700;padding:14px 22px;border:1px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
-.btn-primary{background:var(--green);color:#062a1c;box-shadow:0 12px 30px -12px rgba(0,184,107,.6)}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 18px 38px -12px rgba(0,184,107,.7)}
-.btn-ghost{background:transparent;color:var(--navy);border-color:var(--line-2)}
-.btn-ghost:hover{background:rgba(14,44,77,.05)}
-.btn-dark{background:var(--navy);color:#fff}
-.btn-dark:hover{background:var(--green);color:#062a1c}
-
-/* HERO */
-.hero{position:relative;max-width:var(--maxw);margin:0 auto;padding:72px 28px 64px;overflow:hidden}
-.hero-grid-bg{position:absolute;inset:0;pointer-events:none;opacity:.5;background-image:radial-gradient(circle at 1px 1px,rgba(14,44,77,.16) 1px,transparent 0);background-size:30px 30px;-webkit-mask-image:radial-gradient(ellipse 70% 60% at 75% 35%,#000 0%,transparent 75%);mask-image:radial-gradient(ellipse 70% 60% at 75% 35%,#000 0%,transparent 75%)}
-.hero-inner{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
-.badge{display:inline-flex;align-items:center;gap:9px;padding:7px 13px;border:1px solid var(--line-2);border-radius:100px;background:rgba(255,255,255,.6);font-family:var(--mono);font-size:11.5px;letter-spacing:.5px;text-transform:uppercase;color:var(--navy)}
-.badge .dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulseDot 1.8s infinite}
-.hero h1{font-family:var(--display);font-weight:700;font-size:clamp(40px,5.4vw,68px);line-height:1.02;letter-spacing:-2px;margin:22px 0 0}
-.hero h1 .ul{position:relative;white-space:nowrap}
-.hero h1 .ul::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:11px;background:var(--green);opacity:.35;z-index:-1;border-radius:3px}
-.hero-sub{max-width:520px;margin:24px 0 0;font-size:18px;line-height:1.6;color:var(--muted)}
-.hero-sub strong{color:var(--navy)}
-.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
-.stats{display:flex;gap:30px;margin-top:44px;flex-wrap:wrap}
-.stat .n{font-family:var(--display);font-weight:700;font-size:30px;color:var(--navy);letter-spacing:-1px}
-.stat .l{font-family:var(--mono);font-size:11.5px;color:var(--muted-3);text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
-.stat-div{width:1px;background:var(--line-2)}
-.hero-visual{position:relative;height:440px}
-.hero-panel{position:absolute;inset:0;background:linear-gradient(160deg,var(--navy),var(--navy-d));border-radius:24px;overflow:hidden;box-shadow:0 40px 80px -30px rgba(14,44,77,.55)}
-.hero-panel .dots{position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,.07) 1px,transparent 0);background-size:24px 24px}
-.sweep{position:absolute;left:-40%;width:60%;height:2px}
-.sweep.a{top:30%;background:linear-gradient(90deg,transparent,var(--green),transparent);animation:sweep 4s ease-in-out infinite}
-.sweep.b{top:62%;background:linear-gradient(90deg,transparent,#3a86ff,transparent);animation:sweep 5.2s ease-in-out infinite .8s}
-.chip{position:absolute;width:188px;backdrop-filter:blur(4px);border-radius:13px;padding:14px 16px}
-.chip.biz{top:46px;left:34px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);animation:floaty 5s ease-in-out infinite}
-.chip.tech{bottom:46px;right:34px;background:rgba(0,184,107,.12);border:1px solid rgba(0,184,107,.4);animation:floaty 6s ease-in-out infinite 1s}
-.chip .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.6px;text-transform:uppercase;margin-bottom:7px}
-.chip.biz .tag{color:var(--sky)}
-.chip.tech .tag{color:var(--green-l);text-align:right}
-.chip .t1{color:#fff;font-weight:600;font-size:14px;margin-bottom:5px}
-.chip.tech .t1{font-family:var(--mono);font-size:12px;margin-bottom:6px}
-.chip .t2{font-size:12px;line-height:1.45}
-.chip.biz .t2{color:#9fb0c4}
-.chip.tech .t2{color:#9fe7c6}
-.node{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:120px;height:120px;border-radius:50%;border:1px dashed rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center}
-.node .core{width:74px;height:74px;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--green),#06915a);display:flex;align-items:center;justify-content:center;box-shadow:0 0 50px -6px rgba(0,184,107,.7);animation:drift 7s ease-in-out infinite;font-family:var(--display);font-weight:700;color:#04241a;font-size:24px}
-.float-badge{position:absolute;bottom:-18px;left:-18px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px 16px;box-shadow:0 18px 40px -16px rgba(11,18,32,.25);display:flex;align-items:center;gap:11px}
-.float-badge .dot{width:9px;height:9px;border-radius:50%;background:var(--green);animation:pulseDot 1.6s infinite}
-.float-badge .b1{font-size:12.5px;font-weight:700;color:var(--ink)}
-.float-badge .b2{font-family:var(--mono);font-size:10.5px;color:var(--muted-3)}
-
-/* PUENTE */
-.puente-head{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;flex-wrap:wrap;margin-bottom:48px}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.step{position:relative;background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 22px 28px;overflow:hidden;transition:transform .3s,box-shadow .3s}
-.step:hover{transform:translateY(-6px);box-shadow:0 26px 50px -28px rgba(14,44,77,.45)}
-.step .num{font-family:var(--display);font-weight:700;font-size:46px;color:rgba(14,44,77,.1);letter-spacing:-2px;line-height:1}
-.step h3{font-family:var(--display);font-weight:600;font-size:19px;letter-spacing:-.4px;margin:14px 0 10px}
-.step p{margin:0;color:var(--muted-2);font-size:14px;line-height:1.55}
-.step .bar{position:absolute;left:0;bottom:0;height:3px;width:100%;background:linear-gradient(90deg,var(--green),transparent)}
-
-/* CAPA AGENTICA */
-.dark{background:var(--navy);color:#fff;position:relative;overflow:hidden}
-.dark .dots{position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,.05) 1px,transparent 0);background-size:30px 30px}
-.split{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.cap-list{display:flex;flex-direction:column;gap:14px;margin-top:6px}
-.cap-item{display:flex;gap:16px;align-items:flex-start;padding:16px 18px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);transition:background .25s}
-.cap-item:hover{background:rgba(0,184,107,.1)}
-.cap-item .n{flex:none;width:30px;height:30px;border-radius:9px;background:rgba(0,184,107,.18);color:var(--green-l);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:14px}
-.cap-item h3{font-weight:600;font-size:16px;margin:0 0 4px}
-.cap-item p{color:#9fb0c4;font-size:14px;line-height:1.5;margin:0}
-.dark .lead{color:#a8b8cc}
-.window{border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.14);box-shadow:0 40px 80px -34px rgba(0,0,0,.6);background:#fff}
-.window-bar{display:flex;align-items:center;gap:7px;padding:11px 14px;background:#f3f4f2;border-bottom:1px solid var(--line)}
-.window-bar i{width:11px;height:11px;border-radius:50%;display:block}
-.window-bar .label{margin-left:10px;font-family:var(--mono);font-size:11px;color:var(--muted-3)}
-.window img{width:100%;height:auto;display:block}
-.win-wrap{position:relative}
-.win-wrap .float-badge{right:-12px;left:auto}
-
-/* CUANDO */
-.cuando{display:grid;grid-template-columns:.85fr 1.15fr;gap:54px;align-items:start}
-.cuando-sticky{position:sticky;top:96px}
-.scn-list{display:flex;flex-direction:column;gap:12px}
-.scn{display:flex;gap:18px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;transition:transform .25s,border-color .25s,box-shadow .25s}
-.scn:hover{transform:translateX(6px);border-color:rgba(0,184,107,.55)}
-.scn .n{flex:none;font-family:var(--mono);font-size:14px;font-weight:600;color:var(--green-d)}
-.scn .copy{min-width:0}
-.scn h3{font-family:var(--display);font-weight:600;font-size:18px;letter-spacing:-.35px;margin:0 0 7px;color:var(--navy)}
-.scn p{margin:0;font-size:14.5px;line-height:1.55;color:#465064}
-.scn strong{color:var(--navy)}
-.scn .proof{display:block;margin-top:9px;font-family:var(--mono);font-size:10.5px;line-height:1.45;text-transform:uppercase;letter-spacing:.45px;color:var(--green-d)}
-.solution-note{margin-top:18px;padding:16px 18px;border-left:3px solid var(--green);background:rgba(0,184,107,.07);border-radius:0 12px 12px 0;color:var(--muted-2);font-size:13.5px;line-height:1.55}
-.door-stack{display:flex;flex-direction:column;gap:10px;margin-top:22px}
-.door-mini{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;background:#fff;border:1px solid var(--line);border-radius:12px;border-left:3px solid var(--green);text-align:left}
-.door-mini .n{flex:none;font-family:var(--mono);font-size:11px;font-weight:600;color:var(--green-d);padding-top:2px}
-.door-mini strong{display:block;font-size:14.5px;color:var(--navy);letter-spacing:-.2px}
-.door-mini p{margin:4px 0 0;font-size:13px;line-height:1.45;color:var(--muted-2)}
-.scn .result{display:inline-block;margin:0 0 8px;padding:3px 8px;border-radius:999px;background:rgba(0,184,107,.1);color:var(--green-d);font-family:var(--mono);font-size:10px;letter-spacing:.4px;text-transform:uppercase}
-
-/* PRODUCTOS */
-.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.prod{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .3s,box-shadow .3s,border-color .3s}
-.prod:hover{transform:translateY(-6px);box-shadow:0 30px 56px -30px rgba(14,44,77,.5);border-color:rgba(0,184,107,.5)}
-.prod-media{height:118px;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
-.prod-media img{width:100%;height:100%;object-fit:cover;display:block}
-.prod-media.logo{background:#fff;display:flex;align-items:center;justify-content:center;padding:16px}
-.prod-media.logo img{width:auto;max-width:80%;max-height:78px;object-fit:contain}
-.prod-media .tag{position:absolute;top:12px;left:12px;font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.6px;padding:5px 10px;border-radius:7px;background:rgba(14,44,77,.9);color:#fff}
-.prod-body{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
-.prod-body h3{font-family:var(--display);font-weight:600;font-size:19px;letter-spacing:-.4px;margin:0 0 9px}
-.prod-body p{margin:0 0 18px;color:var(--muted-2);font-size:14px;line-height:1.55;flex:1}
-.prod-cta{display:inline-flex;align-items:center;gap:7px;font-weight:600;font-size:14px;color:var(--green-d)}
-.prod:hover .prod-cta .arw{transform:translateX(3px)}
-.prod-cta .arw{transition:transform .2s}
-
-/* NOVEDADES */
-.nov{position:relative;overflow:hidden;border-radius:22px;background:linear-gradient(150deg,var(--navy),var(--navy-d));color:#fff;padding:42px 44px;display:grid;grid-template-columns:1.3fr auto;gap:46px;align-items:center}
-.nov .dots{position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,.05) 1px,transparent 0);background-size:26px 26px}
-.nov-in{position:relative}
-.nov .pill{display:inline-flex;align-items:center;gap:9px;padding:6px 13px;border-radius:100px;background:rgba(0,184,107,.15);border:1px solid rgba(0,184,107,.4);font-family:var(--mono);font-size:11px;letter-spacing:.6px;text-transform:uppercase;color:var(--green-l)}
-.nov .pill .dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulseDot 1.8s infinite}
-.nov h3{font-family:var(--display);font-weight:700;font-size:clamp(26px,3vw,38px);line-height:1.1;letter-spacing:-1.2px;margin:18px 0 12px}
-.nov p{color:#a8b8cc;font-size:16.5px;line-height:1.6;margin:0 0 26px;max-width:440px}
-.nov p strong{color:#fff}
-.nov-actions{display:flex;flex-wrap:wrap;gap:13px;align-items:center}
-.nov-actions .hint{font-size:13.5px;color:#8295ab}
-.qr{position:relative;display:flex;flex-direction:column;align-items:center;gap:12px}
-.qr a{display:block;background:#fff;padding:14px;border-radius:18px;box-shadow:0 24px 50px -20px rgba(0,0,0,.6);transition:transform .25s}
-.qr a:hover{transform:scale(1.03)}
-.qr img{width:186px;height:186px;display:block}
-.qr .cap{font-family:var(--mono);font-size:11px;letter-spacing:.5px;color:#8295ab;text-align:center}
-
-/* CLIENTES */
-.clients{padding:46px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
-.clients .lbl{font-family:var(--mono);font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted-3);max-width:var(--maxw);margin:0 auto 26px;padding:0 28px}
-.marquee-mask{position:relative;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
-.marquee{display:flex;gap:14px;width:max-content;animation:marquee 34s linear infinite}
-.client-chip{flex:none;padding:14px 26px;border:1px solid rgba(11,18,32,.1);border-radius:100px;font-family:var(--display);font-weight:600;font-size:16px;color:var(--muted);white-space:nowrap;background:#F8FAF6}
-
-/* CONTACTO */
-.contact-inner{position:relative;display:grid;grid-template-columns:1fr 1.05fr;gap:60px;align-items:start}
-.contact-links{display:flex;flex-direction:column;gap:14px;margin-top:8px}
-.c-link{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:13px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);transition:background .2s}
-.c-link:hover{background:rgba(0,184,107,.12)}
-.c-link .ic{flex:none;width:38px;height:38px;border-radius:10px;background:rgba(0,184,107,.18);display:flex;align-items:center;justify-content:center;color:var(--green-l);font-family:var(--mono);font-weight:600}
-.c-link .v{color:#fff;font-weight:600;font-size:15px}
-.c-link .k{color:#8295ab;font-size:12.5px;font-family:var(--mono)}
-.contact-form{background:#fff;color:var(--ink);border-radius:20px;padding:32px;box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
-.frow{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.fg{margin-bottom:16px;display:flex;flex-direction:column;gap:7px}
-.fg label{font-size:12.5px;font-weight:600;color:#384152}
-.fg input,.fg textarea{width:100%;border:1px solid var(--line-2);border-radius:10px;padding:12px 13px;font-size:14.5px;color:var(--ink);background:#fff;outline:none;transition:border-color .15s,box-shadow .15s}
-.fg input:focus,.fg textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(0,184,107,.12)}
-.fg textarea{min-height:108px;resize:vertical}
-.hp-field{position:absolute!important;left:-9999px!important;opacity:0!important;pointer-events:none!important}
-.form-note{margin:10px 0 0;color:#8a93a3;font-size:12px;line-height:1.5}
-
-/* WA FLOAT */
-.wa-float{position:fixed;right:24px;bottom:24px;z-index:120;display:inline-flex;align-items:center;gap:10px;padding:13px 18px;border-radius:999px;background:#25d366;color:#fff;font-size:14px;font-weight:800;box-shadow:0 18px 40px rgba(37,211,102,.28)}
-
-/* FOOTER */
-footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
-.footer-inner{max-width:var(--maxw);margin:0 auto}
-.footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.1)}
-.footer-brand img{height:30px;filter:brightness(0) invert(1);opacity:.92}
-.footer-brand p{font-size:14px;line-height:1.6;color:#90a1b6;max-width:280px;margin:16px 0 0}
-.footer-col h4{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spacing:1px;color:var(--green-l);margin:0 0 16px}
-.footer-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px}
-.footer-col a{color:#cdd8e6;font-size:14px}
-.footer-col a:hover{color:#fff}
-.footer-bottom{padding-top:26px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px;color:#7e90a6}
-.footer-bottom .mono{font-family:var(--mono)}
-
-@media(max-width:980px){
-  .nav-links{display:none}
-  .nav-burger{display:flex}
-  .mobile-nav{position:fixed;inset:72px 0 0;z-index:99;display:none;flex-direction:column;gap:20px;padding:34px 26px;background:rgba(244,246,242,.98);border-top:1px solid var(--line)}
-  .mobile-nav.open{display:flex}
-  .mobile-nav a{font-size:22px;font-weight:700;color:var(--ink)}
-  .hero-inner,.split,.cuando,.contact-inner,.nov{grid-template-columns:1fr}
-  .hero-visual{height:380px;margin-top:8px}
-  .steps{grid-template-columns:1fr 1fr}
-  .prod-grid{grid-template-columns:1fr 1fr}
-  .cuando-sticky{position:static}
-  .nov{padding:34px 26px}
-  .qr{flex-direction:row;justify-content:flex-start}
-  .footer-top{grid-template-columns:1fr 1fr}
-}
-@media(max-width:600px){
-  .container,.hero{padding-left:18px;padding-right:18px}
-  .site-nav{padding:0 18px}
-  .section{padding:64px 0}
-  .steps,.prod-grid,.frow,.footer-top{grid-template-columns:1fr}
-  .stats{gap:20px}
-  .stat-div{display:none}
-  .hero-actions .btn{width:100%;justify-content:center}
-  .wa-float{right:16px;bottom:16px;width:56px;height:56px;padding:0;justify-content:center;font-size:0}
-  .wa-float::after{content:"WA";font-size:13px}
-}
-</style>
+  </script>
 </head>
 <body>
+  <header class="site-header"><div class="container nav-shell"><a class="brand" href="/en/" aria-label="ATIEMPPO, home"><img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO"/></a><button class="nav-toggle" type="button" aria-label="Open navigation" aria-controls="main-nav" aria-expanded="false"><span class="material-symbols-rounded" aria-hidden="true">menu</span></button><nav class="site-nav" id="main-nav" aria-label="Main navigation"><a href="/en/" aria-current="page">Home</a><a href="/en/consultoria/">Consulting</a><a href="#soluciones">Applications</a><a href="#experiencias">Learn</a><a href="/en/novedades-en-vias/">Road updates</a><a href="/en/blog/">Blog</a><a href="/en/quienes-somos/">About us</a><a href="/" lang="es">ES</a><a class="nav-cta" href="#contacto">Let's talk</a></nav></div></header>
 
-<div class="nav-wrap">
-  <nav class="site-nav">
-    <a href="/en/" class="nav-logo" aria-label="ATIEMPPO"><img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO"/></a>
-    <div class="nav-links">
-      <a href="/">Services</a>
-      <a href="/enfoque/">Approach</a>
-      <a href="/enfoque/#aplicaciones">Applications</a>
-      <a href="/reportes/">Reports</a>
-      <a href="/en/blog/">Blog</a>
-      <a href="/" class="lang-switch" aria-label="Ver en español">ES</a>
-      <a href="#contacto" class="nav-cta">Let's talk <span class="dot"></span></a>
-    </div>
-    <button class="nav-burger" id="burger" aria-label="Open menu" aria-controls="mobileNav" aria-expanded="false"><span></span><span></span><span></span></button>
-  </nav>
-</div>
-<div class="mobile-nav" id="mobileNav">
-  <a href="/" onclick="closeMenu()">Services</a>
-  <a href="/enfoque/" onclick="closeMenu()">Approach</a>
-  <a href="/enfoque/#aplicaciones" onclick="closeMenu()">Applications</a>
-  <a href="/reportes/" onclick="closeMenu()">Reports</a>
-  <a href="/en/blog/" onclick="closeMenu()">Blog</a>
-  <a href="/" onclick="closeMenu()">Español</a>
-  <a href="#contacto" onclick="closeMenu()">Let's talk</a>
-</div>
+  <main>
+    <section class="home-hero"><div class="container hero-grid"><div class="hero-copy"><p class="eyebrow">ATIEMPPO S.A.S.</p><h1>Data, judgment and AI for better decisions in <em>logistics and transport.</em></h1><p class="hero-positioning">At ATIEMPPO, we help transport and logistics companies and teams make better decisions. We combine industry experience, applied research, data analysis, artificial intelligence and expert guidance to optimize costs, evaluate alternatives and turn information into action.</p><div class="hero-actions"><a class="btn btn-primary" href="#prioridades">Explore our solutions <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a><a class="btn btn-outline" href="https://wa.me/573107687010?text=Hello%20ATIEMPPO%2C%20I%20would%20like%20to%20talk%20about%20a%20transport%20decision%20or%20task." target="_blank" rel="noopener">Let's talk about your challenge</a></div></div><div><figure class="hero-visual"><img src="/assets/images/generated/atiemppo-capa-agentica-bruno.png" alt="Bruno connects sources, memory, judgment and agents in a working layer"/></figure><div class="hero-proof" aria-label="Working principles"><span><span class="material-symbols-rounded" aria-hidden="true">verified_user</span>Human judgment at the center</span><span><span class="material-symbols-rounded" aria-hidden="true">database</span>Traceable data</span><span><span class="material-symbols-rounded" aria-hidden="true">task_alt</span>Verifiable actions</span></div></div></div></section>
 
-<main>
-  <!-- HERO -->
-  <section class="hero" id="inicio">
-    <div class="hero-grid-bg" aria-hidden="true"></div>
-    <div class="hero-inner">
-      <div>
-        <div class="badge"><span class="dot"></span> 2026 · The time industry</div>
-        <h1>We speak <span class="ul">both languages</span><br/>to win back time.</h1>
-        <p class="hero-sub">We translate between the <strong>language of business</strong> and that of <strong>technology</strong> so transport teams make better decisions, work with data and use agents. We turn AI into time, judgment and action.</p>
-        <div class="hero-actions">
-          <a href="#contacto" class="btn btn-primary">Let's talk about your operation →</a>
-          <a href="#puente" class="btn btn-ghost">See how we work</a>
-        </div>
-        <div class="stats">
-          <div class="stat"><div class="n">+13</div><div class="l">brands & partners</div></div>
-          <div class="stat-div"></div>
-          <div class="stat"><div class="n">130+</div><div class="l">days of agents in operation</div></div>
-          <div class="stat-div"></div>
-          <div class="stat"><div class="n">LATAM</div><div class="l">logistics focus</div></div>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="hero-panel">
-          <div class="dots"></div>
-          <div class="sweep a"></div>
-          <div class="sweep b"></div>
-          <div class="chip biz">
-            <div class="tag">// business</div>
-            <div class="t1">"We lose time on rework."</div>
-            <div class="t2">decisions, clients, operation</div>
-          </div>
-          <div class="chip tech">
-            <div class="tag">technology //</div>
-            <div class="t1">agent.run(context)</div>
-            <div class="t2">data · AI · agents · judgment</div>
-          </div>
-          <div class="node"><div class="core">A</div></div>
-        </div>
-        <div class="float-badge">
-          <img src="/assets/images/atiemppo/openclaw-logo.png" alt="OpenClaw" style="width:26px;height:26px;object-fit:contain;flex:none"/>
-          <div><div class="b1">Bruno is reporting</div><div class="b2">road tracking · today</div></div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <section class="journey" id="prioridades"><div class="container"><header class="journey-head"><p class="eyebrow">Decision map</p><h2 class="section-heading">What is your priority today?</h2><p class="section-copy">Three entry points. What would you like to achieve first?</p></header><div class="journey-tabs" role="tablist" aria-label="ATIEMPPO entry points"><button class="journey-card" id="priority-decision" type="button" role="tab" aria-selected="true" aria-controls="recommended-chapter" tabindex="0" data-priority="decision"><span class="material-symbols-rounded" aria-hidden="true">track_changes</span><span><strong>Make better decisions</strong><small>Answer important questions with data, context and judgment.</small></span><span class="material-symbols-rounded journey-check" aria-hidden="true">check_circle</span></button><button class="journey-card" id="priority-data" type="button" role="tab" aria-selected="false" aria-controls="recommended-chapter" tabindex="-1" data-priority="data"><span class="material-symbols-rounded" aria-hidden="true">database</span><span><strong>Use ATIEMPPO services, applications and data</strong><small>Applications, datasets, indexes, reports and sector information for transport teams.</small></span><span class="material-symbols-rounded journey-check" aria-hidden="true">check_circle</span></button><button class="journey-card" id="priority-ai" type="button" role="tab" aria-selected="false" aria-controls="recommended-chapter" tabindex="-1" data-priority="ai"><span class="material-symbols-rounded" aria-hidden="true">school</span><span><strong>Learn to work with agents</strong><small>Profe Bruno, ATIEMPPO Lab, executive sessions and agentic experiences.</small></span><span class="material-symbols-rounded journey-check" aria-hidden="true">check_circle</span></button></div></div></section>
 
-  <!-- PUENTE -->
-  <section class="section" id="puente">
-    <div class="container">
-      <div class="puente-head" data-reveal>
-        <div style="max-width:680px">
-          <p class="kicker">The ATIEMPPO journey</p>
-          <h2 class="h2">From a real question to a result the team can use.</h2>
-        </div>
-        <p class="lead" style="max-width:380px">We do not start with a tool. We start with a decision, a dataset that is not ready, or a task that consumes time. Each service can be contracted on its own.</p>
-      </div>
-      <div class="steps">
-        <article class="step" data-reveal><div class="num">01</div><h3>Focus</h3><p>We define the decision, task or capability that matters now and the smallest result that creates value.</p><div class="bar"></div></article>
-        <article class="step" data-reveal><div class="num">02</div><h3>Prepare</h3><p>We agree on sources, scope, assumptions, limits, users and the acceptance criterion.</p><div class="bar"></div></article>
-        <article class="step" data-reveal><div class="num">03</div><h3>Build and activate</h3><p>We analyze, configure or facilitate the work with traceability, human review and actual use by the team.</p><div class="bar"></div></article>
-        <article class="step" data-reveal><div class="num">04</div><h3>Learn</h3><p>We document findings, limits and an optional next step: data, agents or in-house capability.</p><div class="bar"></div></article>
-      </div>
-    </div>
-  </section>
+    <section class="chapter" id="recommended-chapter" role="tabpanel" aria-labelledby="priority-decision" tabindex="0"><div class="container chapter-panel"><div class="chapter-copy"><div class="chapter-number" data-chapter-number>01</div><div><p class="chapter-kicker" data-chapter-kicker>Recommended service</p><h2 class="chapter-title" data-chapter-title>Consulting for better decisions.</h2><p class="chapter-description" data-chapter-description>We turn complex transport questions into decisions supported by data, method and expert judgment.</p><span class="chapter-label">What we achieve with you</span><ul class="chapter-outcomes" data-chapter-outcomes><li><span class="material-symbols-rounded" aria-hidden="true">check</span>Clearer decisions with lower risk.</li><li><span class="material-symbols-rounded" aria-hidden="true">check</span>Analysis connecting data, context and judgment.</li><li><span class="material-symbols-rounded" aria-hidden="true">check</span>Realistic, prioritized action plans.</li></ul><a class="btn btn-primary" data-service-link href="/en/consultoria/"><span data-service-link-text>Explore consulting</span> <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a></div></div><article class="product-dossier" aria-live="polite"><div class="dossier-meta"><span>Featured reference</span><span data-product-category>Consulting</span></div><h3 class="dossier-title" data-product-title>Living Reports</h3><p class="dossier-description" data-product-description>Browsable analyses, maps and indicators that turn a transport question into evidence for decision-making.</p><div class="dossier-media"><img data-product-image src="/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png" alt="Living Reports reference"/></div><div class="dossier-footer"><div class="dossier-proof" data-product-proof><span>Traceable evidence</span><span>Actionable recommendation</span></div><a class="btn btn-ink" data-product-link href="/en/reportes/"><span data-product-link-text>Explore the reports</span> <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a></div></article></div></section>
 
-  <!-- THREE DOORS · FIVE SERVICES -->
-  <section class="section" id="soluciones">
-    <div class="container cuando">
-      <div class="cuando-sticky" data-reveal>
-        <p class="kicker">Three outcomes · five services</p>
-        <h2 class="h2">Start with one door: decide, adopt agents, or build in-house capability.</h2>
-        <p class="lead" style="margin:18px 0 28px">You do not need to buy the whole portfolio. One concrete question is enough to choose a first result and leave the rest as optional continuity.</p>
-        <div class="hero-actions" style="margin-top:0">
-          <a href="/" class="btn btn-dark">See the 2026 portfolio</a>
-          <a href="#contacto" class="btn btn-ghost">Talk about a decision</a>
-        </div>
-        <div class="door-stack">
-          <div class="door-mini"><span class="n">01</span><div><strong>Decide better</strong><p>Consulting or network data for one concrete question.</p></div></div>
-          <div class="door-mini"><span class="n">02</span><div><strong>Adopt agents</strong><p>Training on a real task, or a managed connection.</p></div></div>
-          <div class="door-mini"><span class="n">03</span><div><strong>Build capability</strong><p>A roadmap and first pilot, without deploying everything at once.</p></div></div>
-        </div>
-        <p class="solution-note">One door per conversation. Authorized sources, clear limits and human review.</p>
-      </div>
-      <div class="scn-list">
-        <a class="scn" data-reveal href="/#consultorias"><span class="n">01</span><span class="copy"><span class="result">Decide better</span><h3>AI-enabled consulting</h3><p>We turn a network, market, location, context or operations question into a supported decision, with evidence, assumptions and a path to act.</p><span class="proof">Executive brief · activation · next steps</span></span></a>
-        <a class="scn" data-reveal href="/#datos"><span class="n">02</span><span class="copy"><span class="result">Decide better</span><h3>SICETAC data and network intelligence</h3><p>Base, route matching, index, simulation or API: separate components so your team can query, budget and negotiate with a usable reference.</p><span class="proof">SICETAC · RNDC · matching · Network Index</span></span></a>
-        <a class="scn" data-reveal href="/#capacitacion"><span class="n">03</span><span class="copy"><span class="result">Adopt agents</span><h3>Agentic training</h3><p>People and teams move from chatting with AI to directing agents on a real task, with sources, limits and human review.</p><span class="proof">Profe Bruno · practice · reusable method</span></span></a>
-        <a class="scn" data-reveal href="/#agentes-gestionados"><span class="n">04</span><span class="copy"><span class="result">Adopt agents</span><h3>Connection to ATIEMPPO agents</h3><p>A managed service to query authorized sources, keep memory and support tasks without building all the infrastructure on day one.</p><span class="proof">Bounded pilot · Bruno · specialists · close-out</span></span></a>
-        <a class="scn" data-reveal href="/#hoja-de-ruta"><span class="n">05</span><span class="copy"><span class="result">Build capability</span><h3>Roadmap and in-house capability</h3><p>We prioritize use cases, define governance and leave a plan for the first pilot. Productive implementation is estimated separately.</p><span class="proof">Diagnosis · prioritization · first pilot</span></span></a>
-      </div>
-    </div>
-  </section>
+    <section class="documents" id="consultoria-documentos"><div class="container"><header class="documents-head"><div><p class="eyebrow">Consulting</p><h2 class="section-heading">Consulting for better decisions.</h2></div><p>A shared reading of the situation to formulate the question, organize evidence and turn a complex decision into a path to action.</p></header><div class="document-grid"><a class="document-card" href="/en/consultoria/"><span class="document-label">Service page</span><h3>Consulting for better decisions</h3><p>Questions we solve, how we work, what we deliver and the boundaries we care for.</p><span class="document-link">Read the page →</span></a><a class="document-card" href="/en/reportes/"><span class="document-label">Living document</span><h3>Living Reports</h3><p>Maps, indicators and browsable analyses that turn a transport question into evidence.</p><span class="document-link">View reports →</span></a><a class="document-card" href="/en/quienes-somos/"><span class="document-label">ATIEMPPO approach</span><h3>How we think about AI</h3><p>How data, human judgment, agents and operational decisions connect.</p><span class="document-link">Learn about us →</span></a></div></div></section>
 
-  <!-- PRODUCTOS -->
-  <section class="section" id="productos">
-    <div class="container">
-      <div class="section-head" data-reveal style="max-width:760px;margin-bottom:46px">
-        <p class="kicker">Assets behind the services</p>
-        <h2 class="h2">The five services are backed by products and cases that already exist.</h2>
-        <p class="lead" style="margin-top:14px">These names are evidence of what we know how to build. The client chooses one entry point; the asset is selected afterwards.</p>
-      </div>
-      <div class="prod-grid">
-        <a class="prod" data-reveal href="/sicetac-al-instante/">
-          <div class="prod-media"><img src="/assets/images/atiemppo/cover-sicetac.png" alt="SICETAC al Instante"/><span class="tag">Lookup</span></div>
-          <div class="prod-body"><h3>SICETAC al Instante</h3><p>Look up and explain a SICETAC reference for a specific route from WhatsApp or the web.</p><span class="prod-cta">View product <span class="arw">→</span></span></div>
-        </a>
-        <a class="prod" data-reveal href="/indices-sicetac/">
-          <div class="prod-media"><img src="/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png" alt="SICETAC index applied to a company network"/><span class="tag">Service</span></div>
-          <div class="prod-body"><h3>Network Index</h3><p>Turn your company's routes into a tailored, updatable reference for budgeting and negotiation.</p><span class="prod-cta">Understand the model <span class="arw">→</span></span></div>
-        </a>
-        <a class="prod" data-reveal href="/ia-que-ejecuta-bruno-openclaw/">
-          <div class="prod-media"><img src="/assets/images/atiemppo/bruno-openclaw.png" alt="Bruno / OpenClaw" style="object-position:top left"/><img src="/assets/images/atiemppo/openclaw-logo.png" alt="" style="position:absolute;bottom:10px;right:10px;width:42px;height:42px;object-fit:contain;filter:drop-shadow(0 4px 10px rgba(0,0,0,.4))"/><span class="tag">Agent</span></div>
-          <div class="prod-body"><h3>Bruno / OpenClaw</h3><p>Shows how an agent can coordinate sources, memory, tasks, boundaries and next actions.</p><span class="prod-cta">Explore the case <span class="arw">→</span></span></div>
-        </a>
-        <a class="prod" data-reveal href="/en/blog/profe-bruno-ia-aplicada/">
-          <div class="prod-media"><img src="/assets/images/atiemppo/mesa-trabajo-ia.png" alt="Profe Bruno workbench"/><span class="tag">Training</span></div>
-          <div class="prod-body"><h3>Profe Bruno</h3><p>Learn by doing: a tested agent, an organized knowledge base and a method to sustain both.</p><span class="prod-cta">See the approach <span class="arw">→</span></span></div>
-        </a>
-        <a class="prod" data-reveal href="/reportes/">
-          <div class="prod-media"><img src="/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png" alt="Living Reports library"/><span class="tag">Living knowledge</span></div>
-          <div class="prod-body"><h3>Living Reports</h3><p>Browsable data, maps and analyses that can be queried again and updated.</p><span class="prod-cta">Open the library <span class="arw">→</span></span></div>
-        </a>
-        <a class="prod" data-reveal href="https://www.eldatologistico.com" target="_blank" rel="noopener">
-          <div class="prod-media logo"><img src="/assets/images/eldatologistico/logo-el-dato-logistico.png" alt="El Dato Logístico"/><span class="tag">Media</span></div>
-          <div class="prod-body"><h3>El Dato Logístico</h3><p>Analysis, current affairs and sector conversation that turn signals into better questions.</p><span class="prod-cta">Go to the publication <span class="arw">→</span></span></div>
-        </a>
-        <a class="prod" data-reveal href="/insignia-impact/">
-          <div class="prod-media"><img src="/assets/images/atiemppo/cover-insignia.png" alt="Insignia Impact"/><span class="tag">Impact</span></div>
-          <div class="prod-body"><h3>Insignia Impact</h3><p>A project in development connecting operations, impact and responsibility in logistics and supply chain.</p><span class="prod-cta">Explore the project <span class="arw">→</span></span></div>
-        </a>
-        <a class="prod" data-reveal href="/#trabajos-especiales">
-          <div class="prod-media"><img src="/assets/images/generated/atiemppo-industria-tiempo-hero.png" alt="Field data capture operation"/><span class="tag">Special work</span></div>
-          <div class="prod-body"><h3>Field and inherited operations</h3><p>Capture, quality and field traceability can be handled as special assignments, not as a 2026 core line.</p><span class="prod-cta">See the scope <span class="arw">→</span></span></div>
-        </a>
-      </div>
-    </div>
-  </section>
+    <section class="solutions" id="soluciones"><div class="container"><header class="catalog-heading solutions-head"><span class="product-label">Applications</span><h2 class="section-heading">Applications for querying, comparing and budgeting.</h2><p>Applications, bases, indexes, reports and information sources that give transport teams a usable reference.</p></header><div class="solution-grid"><a class="product-card solution-card solution-card-featured" href="/en/sicetac-al-instante/"><div class="product-cover"><img src="/assets/images/atiemppo/cover-sicetac.png" alt="SICETAC al Instante"/></div><div class="product-body"><span class="product-label">Application</span><h3>SICETAC al Instante</h3><p>Query and explain the SICETAC reference value for a specific route from WhatsApp or the web.</p><span class="product-link">View application →</span></div></a><a class="product-card solution-card" href="/en/base-completa-sicetac/"><div class="product-cover"><img src="/assets/images/atiemppo/cover-base.png" alt="SICETAC Base"/></div><div class="product-body"><span class="product-label">Database</span><h3>SICETAC Base</h3><p>Structured, one-time or recurring information for queries, analysis and internal comparisons.</p><span class="product-link">View the base →</span></div></a><a class="product-card solution-card" href="/en/indices-sicetac/"><div class="product-cover"><img src="/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png" alt="Network Index"/></div><div class="product-body"><span class="product-label">Network intelligence</span><h3>Network Index</h3><p>A tailored reference for budgeting, scenario updates and evidence-based negotiation.</p><span class="product-link">View the model →</span></div></a><a class="product-card solution-card" href="#contacto"><div class="product-cover"><img src="/assets/images/atiemppo/cover-base.png" alt="ATIEMPPO Transport Quote Calculator"/></div><div class="product-body"><span class="product-label">Coming soon</span><h3>Transport Quote Calculator</h3><p>We are enabling a tool to pre-quote freight routes with references, assumptions and clear criteria for each operation.</p><span class="product-link">Request information →</span></div></a><a class="product-card solution-card" href="/en/reportes/"><div class="product-cover"><img src="/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png" alt="ATIEMPPO Living Reports"/></div><div class="product-body"><span class="product-label">Reports</span><h3>Living Reports</h3><p>Browsable analyses, maps and indicators for understanding changes, risks and opportunities.</p><span class="product-link">View reports →</span></div></a><a class="product-card solution-card" href="/en/sicetac-api/"><div class="product-cover"><img src="/assets/images/atiemppo/cover-sicetac.png" alt="SICETAC API"/></div><div class="product-body"><span class="product-label">Integration</span><h3>SICETAC API</h3><p>A layer for connecting systems, applications and agents to the SICETAC reference value.</p><span class="product-link">View API →</span></div></a><a class="product-card solution-card" href="/en/novedades-en-vias/"><div class="product-cover"><img src="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia.png" alt="Road updates"/></div><div class="product-body"><span class="product-label">Operational information</span><h3>Road updates</h3><p>Follow road changes so logistics teams can keep their operational context current.</p><span class="product-link">View updates →</span></div></a><a class="product-card solution-card" href="https://www.eldatologistico.com" target="_blank" rel="noopener"><div class="product-cover"><img src="/assets/images/blog/el-dato-logistico/home-radar-logistico-semanal.png" alt="El Dato Logístico"/></div><div class="product-body"><span class="product-label">Sector information</span><h3>El Dato Logístico</h3><p>Signals, analysis and context for asking better questions about logistics and transport.</p><span class="product-link">Visit the publication →</span></div></a></div></div></section>
 
-  <!-- HOW WE WORK -->
-  <section class="section dark" id="capacidades">
-    <div class="dots" aria-hidden="true"></div>
-    <div class="container">
-      <div class="split">
-        <div data-reveal>
-          <p class="kicker on-dark">How we work</p>
-          <h2 class="h2">One concrete question is enough to start.</h2>
-          <p class="lead" style="margin:18px 0 28px;max-width:480px">We turn it into a clear scope, a verifiable deliverable and an optional next step. We do not sell the whole ecosystem in the first conversation.</p>
-          <div class="cap-list">
-            <div class="cap-item"><span class="n">1</span><div><h3>Focus</h3><p>One decision, one task or one capability. An owner. An observable result.</p></div></div>
-            <div class="cap-item"><span class="n">2</span><div><h3>Prepare</h3><p>Sources, limits, permissions, assumptions and the acceptance criterion go on paper.</p></div></div>
-            <div class="cap-item"><span class="n">3</span><div><h3>Build</h3><p>Analysis, data or agents with traceability. AI accelerates; judgment validates.</p></div></div>
-            <div class="cap-item"><span class="n">4</span><div><h3>Activate</h3><p>The team uses the result. We leave memory and a next step with value of its own.</p></div></div>
-          </div>
-        </div>
-        <div class="win-wrap" data-reveal>
-          <div class="window">
-            <div class="window-bar"><i style="background:#ef5f57"></i><i style="background:#f6bd3b"></i><i style="background:#5fc454"></i><span class="label" style="display:inline-flex;align-items:center;gap:7px"><img src="/assets/images/atiemppo/openclaw-logo.png" alt="" style="width:16px;height:16px;object-fit:contain"/>AI workbench</span></div>
-            <img src="/assets/images/atiemppo/mesa-trabajo-ia.png" alt="ATIEMPPO AI workbench: one question enters, sources and memory are organized, and the team receives reports, analysis and next steps"/>
-          </div>
-          <div class="float-badge"><span class="dot"></span><div><div class="b1">Move forward with us</div><div class="b2">question · scope · living deliverable · continuity</div></div></div>
-        </div>
-      </div>
+    <section class="agentic-catalog" id="experiencias"><div class="container"><header class="agentic-head"><div><p class="eyebrow">Learn</p><h2 class="section-heading">Learning to work with agents takes practice, direction and context.</h2></div><p>This block is distinct from Applications: these experiences are for people, business owners, executives and teams turning AI into a way of working.</p></header><div class="agentic-grid"><a class="agentic-card" href="/en/formacion/profe-bruno-ia-aplicada/"><div class="agentic-card-media"><img src="/assets/images/atiemppo/mesa-trabajo-ia.png" alt="Profe Bruno at an AI workbench"/></div><div class="agentic-card-body"><span class="agentic-label">Applied learning</span><h3>Profe Bruno</h3><p>Move from chatting with AI to working with context, sources, limits and agents on real tasks.</p><span class="agentic-link">View Profe Bruno →</span></div></a><a class="agentic-card" href="/en/ia-aplicada/cuatro-proyectos-atiemppo-lab/"><div class="agentic-card-media"><img src="/assets/images/generated/atiemppo-industria-tiempo-hero.png" alt="ATIEMPPO Lab and applied AI projects"/></div><div class="agentic-card-body"><span class="agentic-label">Business workshop</span><h3>ATIEMPPO Lab</h3><p>Understand applied AI through projects, processes and live business cases.</p><span class="agentic-link">Learn about ATIEMPPO Lab →</span></div></a><a class="agentic-card" href="#contacto"><div class="agentic-card-media"><img src="/assets/images/generated/atiemppo-sesiones-gerentes-ia.png" alt="Executive team discussing logistics data and decisions"/></div><div class="agentic-card-body"><span class="agentic-label">Executive session</span><h3>Sessions for executives</h3><p>Conversations and demonstrations to identify opportunities, risks, priorities and governance decisions.</p><span class="agentic-link">Design a session →</span></div></a><a class="agentic-card" href="/en/agentes/"><div class="agentic-card-media"><img src="/assets/images/generated/atiemppo-capa-agentica-bruno-openclaw.png" alt="ATIEMPPO Agentic Experience"/></div><div class="agentic-card-body"><span class="agentic-label">Business experience</span><h3>Agentic Experience</h3><p>A guided environment to test agents, sources, memory, flows and human review inside a real case.</p><span class="agentic-link">Explore the experience →</span></div></a></div></div></section>
 
-      <!-- NOVEDADES EN VIAS -->
-      <div class="nov" data-reveal style="margin-top:56px">
-        <div class="dots" aria-hidden="true"></div>
-        <div class="nov-in">
-          <div class="pill"><span class="dot"></span> Free community</div>
-          <h3>Join Novedades en Vías</h3>
-          <p>The WhatsApp community where <strong>Bruno, our agent, reports every day</strong> on the state of Colombia's roads. Real operational information, straight to your chat.</p>
-          <div class="nov-actions">
-            <a href="https://chat.whatsapp.com/DC2nQ5FjQ04KmiWdOKU0XH?mode=gi_t" target="_blank" rel="noopener" class="btn btn-primary">Join the WhatsApp group →</a>
-            <span class="hint">or scan the QR code →</span>
-          </div>
-        </div>
-        <div class="qr">
-          <a href="https://chat.whatsapp.com/DC2nQ5FjQ04KmiWdOKU0XH?mode=gi_t" target="_blank" rel="noopener"><img src="/assets/images/atiemppo/novedades-qr.png" alt="QR code to join Novedades en Vías on WhatsApp"/></a>
-          <div class="cap">Novedades en vías · ATIEMPPO</div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <section class="trust" aria-label="Why ATIEMPPO"><div class="container trust-grid"><article class="trust-item"><span class="material-symbols-rounded" aria-hidden="true">local_shipping</span><h3>Transport specialization</h3><p>The work starts from real decisions about networks, costs, SICETAC and operations.</p></article><article class="trust-item"><span class="material-symbols-rounded" aria-hidden="true">adjust</span><h3>A concrete entry point</h3><p>We scope a first verifiable result before expanding the conversation.</p></article><article class="trust-item"><span class="material-symbols-rounded" aria-hidden="true">fact_check</span><h3>Sources and human review</h3><p>Assumptions, boundaries and acceptance criteria remain visible.</p></article></div></section>
 
-  <!-- CONTACTO -->
-  <section class="section dark" id="contacto">
-    <div class="dots" aria-hidden="true"></div>
-    <div class="container contact-inner">
-      <div data-reveal>
-        <p class="kicker on-dark">Next step</p>
-        <h2 class="h2">Move forward with us today.</h2>
-        <p class="lead" style="margin:18px 0 32px;max-width:460px">What transport decision or task is currently creating the most time, uncertainty or rework?</p>
-        <div class="contact-links">
-          <a href="mailto:juanmatiz@atiemppo.co" class="c-link"><span class="ic">@</span><div><div class="v">juanmatiz@atiemppo.co</div><div class="k">Email</div></div></a>
-          <a href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20hablar%20sobre%20un%20proyecto%20para%20recuperar%20tiempo%20operativo." target="_blank" rel="noopener" class="c-link"><span class="ic">↗</span><div><div class="v">+57 310 768 7010</div><div class="k">WhatsApp · Bogotá, Colombia</div></div></a>
-        </div>
-      </div>
-      <div class="contact-form" data-reveal>
-        <form id="contactForm" name="contacto" method="POST"
-          action="https://formsubmit.co/juanmatiz@atiemppo.co"
-          data-google-script-url="https://script.google.com/macros/s/AKfycbyNHCVUttnrND5PWHBFA4ag6x4LXI-zKxlnzBLlnGYJZAICFZDZHki1IAxmowqAUqIDaQ/exec">
-          <input type="hidden" name="_subject" value="New contact from atiemppo.com (EN)"/>
-          <input type="hidden" name="_next" value="https://atiemppo.com/gracias/"/>
-          <input type="hidden" name="success_redirect" value="https://atiemppo.com/gracias/"/>
-          <input type="hidden" name="_template" value="table"/>
-          <input type="hidden" name="origen" value="atiemppo.com"/>
-          <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off"/>
-          <input type="hidden" name="user_agent" value=""/>
-          <div class="frow">
-            <div class="fg"><label>Full name</label><input type="text" name="nombre" placeholder="Your name" required/></div>
-            <div class="fg"><label>Email</label><input type="email" name="email" placeholder="you@company.com" required/></div>
-          </div>
-          <div class="frow">
-            <div class="fg"><label>Company</label><input type="text" name="empresa" placeholder="Your company"/></div>
-            <div class="fg"><label>Phone or WhatsApp</label><input type="text" name="telefono" placeholder="+57 300 000 0000"/></div>
-          </div>
-          <div class="fg"><label>Which transport decision or task should we solve first?</label><textarea name="mensaje" placeholder="Tell us the decision, dataset or task that currently creates the most time or uncertainty..." required></textarea></div>
-          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:4px">Send message →</button>
-          <p class="form-note">ATIEMPPO will receive your message by email and reply to coordinate the next step.</p>
-        </form>
-      </div>
-    </div>
-  </section>
+    <section class="direct-entry" id="probar"><div class="container entry-grid"><article class="entry-card"><div><span class="product-label">Free community</span><h3>Road updates</h3><p>Bruno reports the state of Colombia's corridors every day, directly in WhatsApp.</p><a class="btn btn-primary" href="https://chat.whatsapp.com/DC2nQ5FjQ04KmiWdOKU0XH?mode=gi_t" target="_blank" rel="noopener">Join the group</a></div><img src="/assets/images/atiemppo/novedades-qr.png" alt="QR code for Road updates on WhatsApp"/></article><article class="entry-card"><div><span class="product-label">Direct query</span><h3>SICETAC al Instante</h3><p>Query a real route from WhatsApp or the web. You only need origin and destination.</p><a class="btn btn-primary" href="https://wa.me/573134503694?text=Hello%2C%20I%20would%20like%20to%20query%20SICETAC%20al%20Instante.%20My%20route%20is%3A" target="_blank" rel="noopener">Open WhatsApp</a></div><img src="/assets/images/atiemppo/sicetac-instant-qr.png" alt="QR code for SICETAC al Instante"/></article></div></section>
 
-</main>
+    <section class="conversation"><div class="container conversation-panel"><div class="conversation-image"><img src="/assets/images/inventory/atiemppo-rutas-decision-reference.png" alt="A prioritized route among multiple paths to guide a logistics decision"/></div><div><p class="eyebrow">Let's talk about your operation</p><h2>A conversation can open the best route.</h2><p>We understand your context, prioritize what creates the most value and show how our ecosystem can help.</p></div><div class="conversation-actions"><a class="btn btn-primary" href="#contacto">Schedule a conversation</a><a class="btn btn-outline" href="https://wa.me/573107687010?text=Hello%20ATIEMPPO%2C%20I%20would%20like%20to%20talk." target="_blank" rel="noopener">WhatsApp</a></div></div></section>
 
-<a href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20hablar%20sobre%20un%20proyecto%20para%20recuperar%20tiempo%20operativo." class="wa-float" target="_blank" rel="noopener" aria-label="Open ATIEMPPO WhatsApp">WhatsApp</a>
-
-<footer>
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO"/>
-        <p>Data, judgment and agents so transport teams win back time and decide better.</p>
-      </div>
-      <div class="footer-col"><h4>What we do</h4><ul><li><a href="/">2026 services</a></li><li><a href="#soluciones">Three entry points</a></li><li><a href="#puente">The journey</a></li><li><a href="#capacidades">How we work</a></li><li><a href="/reportes/">Reports</a></li><li><a href="/en/blog/">Blog</a></li></ul></div>
-      <div class="footer-col"><h4>Products</h4><ul><li><a href="/sicetac-al-instante/">SICETAC al Instante</a></li><li><a href="/sicetac-api/">API SICETAC</a></li><li><a href="/base-completa-sicetac/">Base SICETAC</a></li><li><a href="https://www.eldatologistico.com" target="_blank" rel="noopener">El Dato Logístico</a></li><li><a href="https://chat.whatsapp.com/DC2nQ5FjQ04KmiWdOKU0XH?mode=gi_t" target="_blank" rel="noopener">La Comunidad</a></li><li><a href="/insignia-impact/">Insignia Impact</a></li></ul></div>
-      <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:juanmatiz@atiemppo.co">juanmatiz@atiemppo.co</a></li><li><a href="/politicaprivacidad">Privacy</a></li><li><a href="/llms.txt">llms.txt</a></li></ul></div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 ATIEMPPO S.A.S. · Bogotá, Colombia</span>
-      <span class="mono">Business, data & AI to win back time</span>
-    </div>
-  </div>
-</footer>
-
-<script>
-const burgerBtn=document.getElementById("burger");
-const mobileNav=document.getElementById("mobileNav");
-burgerBtn.addEventListener("click",()=>{
-  burgerBtn.classList.toggle("open");
-  mobileNav.classList.toggle("open");
-  burgerBtn.setAttribute("aria-expanded",String(mobileNav.classList.contains("open")));
-  document.body.classList.toggle("nav-open",mobileNav.classList.contains("open"));
-});
-function closeMenu(){
-  burgerBtn.classList.remove("open");
-  mobileNav.classList.remove("open");
-  burgerBtn.setAttribute("aria-expanded","false");
-  document.body.classList.remove("nav-open");
-}
-const contactForm=document.getElementById("contactForm");
-if(contactForm){
-  const endpoint=contactForm.dataset.googleScriptUrl;
-  const userAgentField=contactForm.querySelector('input[name="user_agent"]');
-  const submitButton=contactForm.querySelector('button[type="submit"]');
-  if(userAgentField){userAgentField.value=navigator.userAgent||"";}
-  if(endpoint){contactForm.action=endpoint;}
-  contactForm.addEventListener("submit",()=>{
-    if(submitButton){submitButton.disabled=true;submitButton.textContent="Sending...";}
-  });
-}
-</script>
+    <section class="contact" id="contacto"><div class="container"><div class="contact-panel"><div class="contact-copy"><p class="eyebrow">Next step</p><h2>Let's talk about your first priority.</h2><p>Tell us which transport decision or task is generating the most time, uncertainty or rework today.</p><div class="contact-links"><a href="https://wa.me/573107687010?text=Hello%20ATIEMPPO%2C%20I%20would%20like%20to%20talk." target="_blank" rel="noopener">WhatsApp · +57 310 768 7010</a><a href="mailto:juanmatiz@atiemppo.co">juanmatiz@atiemppo.co</a></div></div><form id="contactForm" name="contacto-en" method="POST" action="https://formsubmit.co/juanmatiz@atiemppo.co" data-google-script-url="https://script.google.com/macros/s/AKfycbyNHCVUttnrND5PWHBFA4ag6x4LXI-zKxlnzBLlnGYJZAICFZDZHki1IAxmowqAUqIDaQ/exec"><input type="hidden" name="_subject" value="New contact from atiemppo.com/en"/><input type="hidden" name="_next" value="https://atiemppo.com/gracias/"/><input type="hidden" name="success_redirect" value="https://atiemppo.com/gracias/"/><input type="hidden" name="_template" value="table"/><input type="hidden" name="origen" value="atiemppo.com/home-en"/><input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off"/><input type="hidden" name="user_agent" value=""/><div class="form-row"><div class="field"><label for="contact-name">Full name</label><input id="contact-name" type="text" name="nombre" placeholder="Your name" autocomplete="name" required/></div><div class="field"><label for="contact-email">Email</label><input id="contact-email" type="email" name="email" placeholder="you@company.com" autocomplete="email" required/></div></div><div class="form-row"><div class="field"><label for="contact-company">Company</label><input id="contact-company" type="text" name="empresa" placeholder="Your company" autocomplete="organization"/></div><div class="field"><label for="contact-phone">Phone or WhatsApp</label><input id="contact-phone" type="tel" name="telefono" placeholder="+57 300 000 0000" autocomplete="tel"/></div></div><div class="field"><label for="contact-message">What decision or task should we solve first?</label><textarea id="contact-message" name="mensaje" placeholder="Tell us about the decision, data or task that creates the most time or uncertainty today..." required></textarea></div><button class="btn btn-primary" type="submit">Send message <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></button><p class="form-note">ATIEMPPO will receive your message and reply to coordinate the next step.</p></form></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-shell"><small>&copy; 2026 ATIEMPPO S.A.S. · Bogotá, Colombia · atiemppo.com</small><nav class="footer-nav" aria-label="Footer links"><a href="/en/">Home</a><a href="/en/consultoria/">Consulting</a><a href="#soluciones">Applications</a><a href="#experiencias">Learn</a><a href="/en/novedades-en-vias/">Road updates</a><a href="/en/blog/">Blog</a><a href="/en/quienes-somos/">About us</a><a href="/en/llms.txt">llms.txt</a></nav></div></footer>
+  <script src="/assets/js/home-2026-en.js?v=20260830-1" defer></script>
 </body>
 </html>

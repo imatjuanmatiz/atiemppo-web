@@ -7,42 +7,48 @@
       title: "Consultoría para decidir mejor.",
       description: "Convertimos preguntas complejas de transporte en decisiones sustentadas con datos, método y criterio experto.",
       outcomes: ["Decisiones con más claridad y menos riesgo.", "Análisis que conectan datos, contexto y criterio.", "Planes de acción realistas y priorizados."],
-      serviceUrl: "#servicios",
+      serviceUrl: "/consultoria/",
+      serviceCta: "Conocer la consultoría",
       category: "Consultoría",
       product: "Reportes Vivos",
       productDescription: "Análisis, mapas e indicadores navegables que convierten una pregunta de transporte en evidencia para decidir.",
       productImage: "/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png",
       productAlt: "Ficha de Reportes Vivos",
       productUrl: "/reportes/",
+      productCta: "Abrir ficha",
       proof: ["Evidencia trazable", "Recomendación accionable"]
     },
     data: {
       chapter: "02",
-      title: "Servicios y aplicaciones para mejorar tus datos.",
-      description: "Usa soluciones disponibles para consultar SICETAC, estructurar información y entender mejor el comportamiento de tu red de transporte.",
-      outcomes: ["Referencias SICETAC explicadas y utilizables.", "Bases estructuradas y rutas homologadas.", "Índices para leer la evolución y el impacto sobre tu red."],
-      serviceUrl: "#aplicaciones",
-      category: "Datos SICETAC",
-      product: "SICETAC al Instante",
-      productDescription: "Consulta una ruta concreta y accede a Base SICETAC, Red, Índice de Red y API según la necesidad de tu operación.",
-      productImage: "/assets/images/atiemppo/cover-sicetac.png",
-      productAlt: "Ficha de SICETAC al Instante y soluciones de datos",
-      productUrl: "/sicetac-al-instante/",
-      proof: ["Datos utilizables", "Lectura de red"]
+      title: "Usar los servicios, aplicaciones y datos de ATIEMPPO para mejorar las áreas de transporte.",
+      description: "Integramos aplicaciones, bases, índices, reportes y fuentes de información para consultar la operación y convertir datos de transporte en decisiones más claras.",
+      outcomes: ["Aplicaciones para consultas y tareas operativas.", "Bases, índices y reportes para comparar escenarios.", "Información sectorial para formular mejores preguntas."],
+      serviceUrl: "#soluciones",
+      serviceCta: "Ver soluciones",
+      category: "Ecosistema ATIEMPPO",
+      product: "Aplicaciones, reportes, bases e índices",
+      productDescription: "Accede a SICETAC al Instante, Base SICETAC, Índice de la Red, Reportes Vivos, API SICETAC y soluciones a medida como un cotizador de transporte.",
+      productImage: "/assets/images/atiemppo/cover-base.png",
+      productAlt: "Servicios, aplicaciones y datos de ATIEMPPO para las áreas de transporte",
+      productUrl: "#soluciones",
+      productCta: "Ver soluciones",
+      proof: ["Datos para decidir", "Soluciones disponibles"]
     },
     ai: {
       chapter: "03",
-      title: "Incorporar IA y aprender a trabajar con agentes.",
-      description: "Combinamos conocimiento especializado en transporte con aprendizaje práctico de inteligencia artificial para que el equipo resuelva tareas reales de su operación y desarrolle capacidades propias.",
-      outcomes: ["Agente Especialista en Transporte para resolver consultas y tareas con contexto del sector.", "Profe Bruno para aprender IA aplicada al transporte y construir agentes.", "Capacidades propias para continuar y escalar."],
-      serviceUrl: "#servicios",
-      category: "Transporte e IA",
-      product: "Agente Especialista en Transporte + Profe Bruno",
-      productDescription: "El Agente Especialista en Transporte apoya consultas y tareas de la operación con contexto del sector. Profe Bruno acompaña al equipo a aprender IA aplicada y a construir sus propios agentes.",
+      title: "Aprender a trabajar con agentes.",
+      description: "Preparamos a personas, empresarios, gerentes y equipos para convertir la inteligencia artificial en una forma de trabajo con práctica, dirección y contexto.",
+      outcomes: ["Profe Bruno para aprender IA aplicada sobre tareas reales.", "ATIEMPPO Lab para talleres y casos vivos con empresarios.", "Sesiones ejecutivas y experiencias agénticas para equipos."],
+      serviceUrl: "#experiencias",
+      serviceCta: "Ver experiencias",
+      category: "Especialización y agentes",
+      product: "Profe Bruno + ATIEMPPO Lab",
+      productDescription: "Profe Bruno acompaña el aprendizaje aplicado. ATIEMPPO Lab, las sesiones ejecutivas y la Experiencia Agéntica llevan ese aprendizaje a talleres, decisiones gerenciales y casos empresariales.",
       productImage: "/assets/images/atiemppo/mesa-trabajo-ia.png",
-      productAlt: "Mesa de trabajo con un Agente Especialista en Transporte y Profe Bruno",
-      productUrl: "/formacion/profe-bruno-ia-aplicada/",
-      proof: ["Agente Especialista", "Profe Bruno"]
+      productAlt: "Mesa de trabajo de aprendizaje y experiencias agénticas ATIEMPPO",
+      productUrl: "#experiencias",
+      productCta: "Ver fichas de agentes",
+      proof: ["Práctica aplicada", "Casos empresariales"]
     }
   };
 
@@ -50,11 +56,11 @@
     consulting: {
       eyebrow: "Servicio 01",
       title: "Consultoría para decidir mejor",
-      description: "Una pregunta compleja se convierte en una respuesta explicable, con fuentes, supuestos, límites y una ruta de acción.",
-      capabilities: ["Pregunta de decisión", "Evidencia trazable", "Activación con el equipo"],
+      description: "Convertimos preguntas de transporte, logística y supply chain en decisiones sustentadas con datos, escenarios comparables, fuentes especializadas y revisión humana.",
+      capabilities: ["Redes, costos y escenarios", "Mercados, nodos y corredores", "Salida ejecutiva y soporte técnico"],
       image: "/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png",
       alt: "Reporte vivo para una decisión de transporte",
-      url: "/reportes/"
+      url: "/consultoria/"
     },
     training: {
       eyebrow: "Servicio 02",
@@ -133,10 +139,12 @@
     panel.querySelector("[data-chapter-title]").textContent = data.title;
     panel.querySelector("[data-chapter-description]").textContent = data.description;
     panel.querySelector("[data-service-link]").href = data.serviceUrl;
+    panel.querySelector("[data-service-link-text]").textContent = data.serviceCta;
     panel.querySelector("[data-product-category]").textContent = data.category;
     panel.querySelector("[data-product-title]").textContent = data.product;
     panel.querySelector("[data-product-description]").textContent = data.productDescription;
     panel.querySelector("[data-product-link]").href = data.productUrl;
+    panel.querySelector("[data-product-link-text]").textContent = data.productCta;
     var image = panel.querySelector("[data-product-image]");
     image.src = data.productImage;
     image.alt = data.productAlt;
@@ -162,13 +170,30 @@
   });
 
   var catalogToggle = document.querySelector(".catalog-toggle");
-  var catalog = document.getElementById("product-catalog");
-  if (catalogToggle && catalog) {
+  var catalogs = Array.prototype.slice.call(document.querySelectorAll(".catalog-section"));
+  if (catalogToggle && catalogs.length) {
+    function updateCatalogToggle() {
+      var expanded = catalogs.some(function (section) { return !section.hidden; });
+      catalogToggle.setAttribute("aria-expanded", expanded ? "true" : "false");
+      catalogToggle.firstChild.nodeValue = expanded ? "Ocultar fichas " : "Ver todas las fichas ";
+    }
+
     catalogToggle.addEventListener("click", function () {
       var expanded = catalogToggle.getAttribute("aria-expanded") === "true";
-      catalogToggle.setAttribute("aria-expanded", expanded ? "false" : "true");
-      catalog.hidden = expanded;
-      catalogToggle.firstChild.nodeValue = expanded ? "Ver todas las fichas " : "Ocultar fichas ";
+      catalogs.forEach(function (section) { section.hidden = expanded; });
+      updateCatalogToggle();
+    });
+
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest('a[href="#product-catalog"], a[href="#agent-catalog"]');
+      if (!link) return;
+      event.preventDefault();
+      var target = document.querySelector(link.getAttribute("href"));
+      catalogs.forEach(function (section) { section.hidden = section !== target; });
+      updateCatalogToggle();
+      window.requestAnimationFrame(function () {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
     });
   }
 
