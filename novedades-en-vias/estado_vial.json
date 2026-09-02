@@ -2,24 +2,17 @@
   "schema_version": "1.2",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-08-31-md",
-  "fecha": "2026-08-31",
+  "cut_id": "2026-09-02-md",
+  "fecha": "2026-09-02",
   "ventana": "MD",
   "hora": "12:00",
-  "generado_en": "2026-08-31T12:00:00",
-  "artefacto_fuente": "2026-08-31-editor-eldato-version-vias-colombia-md.md",
+  "generado_en": "2026-09-02T12:00:00",
+  "artefacto_fuente": "2026-09-02-editor-eldato-version-vias-colombia-md.md",
   "que_cambio": [
     {
       "corredor": "Villavicencio–Granada (por homologar)",
       "antes": "no estaba en el listado AM",
-      "ahora": "paso controlado — un carril en Agrocom — circular con demora",
-      "cambio": "nueva",
-      "evidencia": ""
-    },
-    {
-      "corredor": "Villavicencio–Puerto López (por homologar)",
-      "antes": "no estaba en el listado AM",
-      "ahora": "paso controlado — un carril en Pompeya — circular con demora",
+      "ahora": "paso controlado — un carril en Puente Guamal — circular con demora",
       "cambio": "nueva",
       "evidencia": ""
     },
@@ -32,14 +25,14 @@
     },
     {
       "corredor": "Ibagué–Espinal",
-      "antes": "paso controlado — siniestro a un carril en Variante Picaleña; Chicoral sin habilitación; incendio con paso; restricción de carga — circular con demora",
-      "ahora": "paso controlado — siniestros a un carril en Variante Ibagué y Chicoral; Picaleña y Chicoral previos sin habilitación; incendio con paso; restricción de carga — circular con demora",
+      "antes": "paso controlado — siniestros a un carril en Variante Ibagué y Chicoral; Picaleña y Chicoral previos sin habilitación; incendio con paso; restricción de carga — circular con demora",
+      "ahora": "paso controlado — marcas viales a un carril en Variante Ibagué; siniestros previos sin habilitación; restricción de carga — circular con demora",
       "cambio": "empeoró",
       "evidencia": ""
     }
   ],
   "notas_cambio": [
-    "Cambio medido contra el listado AM (2026-08-31-editor-eldato-version-vias-colombia-am.md), no contra el corte anterior de la misma ventana."
+    "Cambio medido contra el listado AM (2026-09-02-editor-eldato-version-vias-colombia-am.md), no contra el corte anterior de la misma ventana."
   ],
   "listado": [
     {
@@ -151,7 +144,7 @@
       "icono": "🟠",
       "corredor": "Ibagué–Espinal",
       "km": "",
-      "estado": "paso controlado — siniestros a un carril en Variante Ibagué y Chicoral; Picaleña y Chicoral previos sin habilitación; incendio con paso; restricción de carga — circular con demora",
+      "estado": "paso controlado — marcas viales a un carril en Variante Ibagué; siniestros previos sin habilitación; restricción de carga — circular con demora",
       "fuente": ""
     },
     {
@@ -172,21 +165,21 @@
       "icono": "🟠",
       "corredor": "Villavicencio–Granada (por homologar)",
       "km": "",
-      "estado": "paso controlado — un carril en Agrocom — circular con demora",
-      "fuente": ""
-    },
-    {
-      "icono": "🟠",
-      "corredor": "Villavicencio–Puerto López (por homologar)",
-      "km": "",
-      "estado": "paso controlado — un carril en Pompeya — circular con demora",
+      "estado": "paso controlado — un carril en Puente Guamal — circular con demora",
       "fuente": ""
     },
     {
       "icono": "🟠",
       "corredor": "Puerto Salgar–Barrancabermeja (por homologar)",
       "km": "",
-      "estado": "paso controlado — un carril en El Zarzal, La Olinda, El Águila, Agua Blanca Alta y Caño Baúl — circular con demora",
+      "estado": "paso controlado — PMT 24 h y pérdida de banca — circular con demora",
+      "fuente": ""
+    },
+    {
+      "icono": "🟠",
+      "corredor": "Accesos norte / Zipaquirá–Cajicá (por homologar)",
+      "km": "",
+      "estado": "paso controlado — berma y carril bajo en Refisal — circular con demora, no es corredor cerrado",
       "fuente": ""
     },
     {
@@ -248,57 +241,57 @@
   ],
   "senales_tempranas": [
     {
-      "tramo": "Panamericana, El Estrecho (Patía)",
-      "senal": "ControlT NUEVA: cierre preventivo tras ataque; prensa cierra Popayán–Pasto; Caracol cita STT Cauca paso a un carril N–S",
-      "fuente": "ControlT MD · prensa",
-      "vigilar": "0 DITRA / 0 INVÍAS / 0 @InviasOficial"
-    },
-    {
-      "tramo": "Panamericana, Jamundí km 15 y 17",
-      "senal": "ControlT NUEVA: cierre preventivo 30-ago",
+      "tramo": "La Calera / Patios–Guasca km 11+500, Teusacá",
+      "senal": "ControlT persistente: línea de alta tensión sobre la calzada",
       "fuente": "ControlT MD",
-      "vigilar": "0 contraste oficial; no fusionar con El Estrecho"
+      "vigilar": "0 DITRA / 0 INVÍAS / 0 concesión"
     },
     {
-      "tramo": "Ventaquemada, ruta 55 hacia Bogotá",
-      "senal": "ControlT NUEVA: accidente de carga",
+      "tramo": "Guaduas–Villeta, El Cacique",
+      "senal": "ControlT ACTUALIZADA: accidente mula",
       "fuente": "ControlT MD",
-      "vigilar": "0 Coviandina / 0 oficial"
+      "vigilar": "0 contraste oficial de hoy"
     },
     {
-      "tramo": "Calima, Ruta 40",
-      "senal": "ControlT ACTUALIZADA: 06:00–20:00 toda clase; nocturno solo emergencias",
+      "tramo": "El Carmen de Bolívar, glorieta",
+      "senal": "ControlT NUEVA: tractomula volcada; congestión",
       "fuente": "ControlT MD",
-      "vigilar": "0 INVÍAS / 0 DITRA de ese punto; no fusionar con Yolomba"
+      "vigilar": "0 DITRA / 0 concesión"
     },
     {
-      "tramo": "Caramanta / adelante peaje Supía, ruta 25",
-      "senal": "ControlT: accidente bus–carga; un carril",
+      "tramo": "Gachancipá, ruta 55",
+      "senal": "ControlT NUEVA: obras 10:00–18:00 a un carril",
       "fuente": "ControlT MD",
-      "vigilar": "0 contraste de concesión; el un carril oficial sigue siendo Pacífico Tres 18:02 29-ago"
+      "vigilar": "0 concesión en X; no es estado"
     },
     {
-      "tramo": "Cimitarra, ruta 45",
-      "senal": "ControlT: socavón; restricción de carga pesada",
+      "tramo": "La Vega, Villeta–Facatativá",
+      "senal": "ControlT NUEVA: tráfico detenido ambos sentidos",
       "fuente": "ControlT MD",
       "vigilar": "0 contraste oficial"
     },
     {
-      "tramo": "Los Santos, ruta 45A",
-      "senal": "ControlT: socavón; restricción de carga pesada",
+      "tramo": "Tuluá, Carrera 40",
+      "senal": "ControlT NUEVA: prohibido pesados por intercambiador",
       "fuente": "ControlT MD",
-      "vigilar": "0 contraste oficial"
+      "vigilar": "0 concesión / 0 DITRA"
     },
     {
-      "tramo": "Landázuri–Vélez, ruta 62",
-      "senal": "ControlT persistente: «acabando de dar paso a un carril»; tractomula con viga",
+      "tramo": "Yopal",
+      "senal": "ControlT NUEVA: Vuelta a Colombia 2–6 sep; cierres anunciados",
       "fuente": "ControlT MD",
-      "vigilar": "0 contraste oficial"
+      "vigilar": "0 DITRA / 0 INVÍAS de ese evento"
+    },
+    {
+      "tramo": "Av. Simón Bolívar, Buenaventura PR 10+100–10+460",
+      "senal": "ControlT persistente: cierre de carril derecho desde 02-sep (El Retén)",
+      "fuente": "ControlT MD",
+      "vigilar": "0 CaminoPacífico / 0 DITRA de ese punto"
     }
   ],
   "alertas_inmediatas": [],
   "salud_fuentes": {
-    "estado_general": "estable",
+    "estado_general": "degradada",
     "ventanas_esperadas": [
       "AM",
       "MD",
@@ -306,8 +299,7 @@
     ],
     "ventanas_recibidas": [
       "AM",
-      "MD",
-      "PM"
+      "MD"
     ],
     "eventos_confirmados": 0,
     "eventos_vigilancia": 0,
@@ -318,14 +310,14 @@
   "eventos_confirmados": [],
   "eventos_vigilancia": [],
   "historial_corredores": {
-    "periodo_inicio": "2026-08-25",
-    "periodo_fin": "2026-08-31",
+    "periodo_inicio": "2026-08-27",
+    "periodo_fin": "2026-09-02",
     "metodologia": "Días distintos por corredor; confirmado exige estado activo y confianza mínima de 0,65.",
     "corredores": []
   },
   "cambios_dia": [
     {
-      "cut_id": "2026-08-31-am",
+      "cut_id": "2026-09-02-am",
       "hora": "07:00",
       "ventana": "AM",
       "tipo": "corte_final",
@@ -338,7 +330,7 @@
       }
     },
     {
-      "cut_id": "2026-08-31-md",
+      "cut_id": "2026-09-02-md",
       "hora": "12:00",
       "ventana": "MD",
       "tipo": "corte_final",
