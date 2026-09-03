@@ -2,9 +2,9 @@
 
 Fecha de estado: 2026-09-02
 
-Rama local: `codex/webmcp-sicetac-v1`
+Rama de implementación: `codex/webmcp-sicetac-v1`
 
-Estado: implementado y validado localmente; no publicado ni desplegado.
+Estado: publicado en `main` y validado de punta a punta en `https://atiemppo.com/sicetac-al-instante/`.
 
 ## Objetivo
 
@@ -76,7 +76,10 @@ Revalidado el 2026-09-02:
 - respuesta WebMCP compacta: 457 caracteres de JSON y 95 de `texto`;
 - CORS del backend para `Origin: https://atiemppo.com`: correcto;
 - `git diff --check`: correcto;
-- sitio publicado actual: todavía no contiene el tool.
+- publicación de GitHub Pages para el commit `4d1ec6c`: correcta;
+- sitio público: contiene `document.modelContext.registerTool` y `consultar_sicetac`;
+- navegador integrado: descubrió el tool desde la página y lo ejecutó correctamente;
+- prueba publicada Bogotá → Barranquilla: H2 `$7.638.005`, H4 `$7.821.531`, H8 `$8.188.583` y peajes `$869.600` COP.
 
 Nota de entorno: Jekyll 3.9 con Ruby 3.2.4 falla por una incompatibilidad preexistente de Liquid con `String#tainted?`; Ruby 3.1.4 construye el sitio correctamente.
 
@@ -98,7 +101,7 @@ El token no autoriza por sí mismo una publicación. Para Site tools del navegad
 
 ## Coordinación con otros cambios de la web
 
-Mientras esta rama esté pendiente, otro proyecto puede modificar el resto de `PAGINA-WEB-ATIEMPPO`, pero debe evitar sobrescribir estos archivos sin revisar la integración:
+Otros proyectos pueden modificar el resto de `PAGINA-WEB-ATIEMPPO`, pero deben evitar sobrescribir estos archivos sin revisar la integración:
 
 - `sicetac-al-instante.html`
 - `llms.txt`
@@ -107,14 +110,10 @@ Mientras esta rama esté pendiente, otro proyecto puede modificar el resto de `P
 
 El archivo local `docs/SEGUIMIENTO-EN-2026-08-30.md` pertenece al trabajo anterior de la fase inglesa y no se incluye en esta rama.
 
-## Pasos pendientes para publicación
+## Estado de publicación y siguiente paso opcional
 
-1. Revisión humana del diff.
-2. Obtener el token de Chrome solo si la prueba lo requiere.
-3. Autorizar push o PR.
-4. Autorizar publicación/despliegue.
-5. Abrir la página publicada con un agente compatible.
-6. Confirmar que descubre `consultar_sicetac` y ejecuta una ruta real.
-7. Registrar la evidencia y el resultado de la prueba.
+La rama se subió a GitHub y el mismo cambio se publicó en `main` con autorización explícita de Juan. La publicación, el descubrimiento del tool y una consulta real quedaron verificados.
 
-No realizar push, PR, migración, despliegue ni publicación sin autorización explícita.
+No queda ningún paso obligatorio para el objetivo de que un agente compatible entre a ATIEMPPO y consulte SICETAC. Como prueba adicional opcional, se puede obtener el token público del Origin Trial de Chrome y activar el meta tag ya preparado. Ese token no es una clave del API ni debe confundirse con la futura API comercial.
+
+No se modificó ni publicó el trabajo local separado de `SICETAC-API-MCP`.
