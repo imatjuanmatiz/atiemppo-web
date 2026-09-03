@@ -85,19 +85,18 @@ Nota de entorno: Jekyll 3.9 con Ruby 3.2.4 falla por una incompatibilidad preexi
 
 ## Token de Chrome, explicado sin lenguaje técnico
 
-El token pendiente es un token público del Origin Trial de Chrome para WebMCP. No es una clave de SICETAC, OpenAI, Render ni Supabase.
+El token público del Origin Trial de Chrome para WebMCP fue creado el 2026-09-02 para `https://atiemppo.com`. No es una clave de SICETAC, OpenAI, Render ni Supabase.
 
-Cuando se decida probar con Chrome:
+Configuración registrada:
 
-1. Abrir `https://developer.chrome.com/origintrials/`.
-2. Iniciar sesión con Google.
-3. Buscar `WebMCP`.
-4. Registrar exactamente el origen `https://atiemppo.com`.
-5. Copiar la cadena que entrega Chrome.
-6. Reemplazar el placeholder comentado en el `<head>` de `sicetac-al-instante.html`.
-7. Construir y revisar nuevamente antes de publicar.
+- origen exacto: `https://atiemppo.com`;
+- subdominios: no;
+- uso por terceros: no;
+- uso esperado: 0 a 10.000 páginas diarias;
+- expiración indicada por Chrome: 2026-11-16;
+- token instalado en el `<head>` de `sicetac-al-instante.html`.
 
-El token no autoriza por sí mismo una publicación. Para Site tools del navegador integrado de ChatGPT/Codex, la disponibilidad depende del soporte de OpenAI y no de este token de Chrome.
+El token es público por diseño y permite que Chrome habilite el experimento para ese origen. Para Site tools del navegador integrado de ChatGPT/Codex, la disponibilidad depende del soporte de OpenAI y no de este token de Chrome.
 
 ## Coordinación con otros cambios de la web
 
@@ -114,6 +113,6 @@ El archivo local `docs/SEGUIMIENTO-EN-2026-08-30.md` pertenece al trabajo anteri
 
 La rama se subió a GitHub y el mismo cambio se publicó en `main` con autorización explícita de Juan. La publicación, el descubrimiento del tool y una consulta real quedaron verificados.
 
-No queda ningún paso obligatorio para el objetivo de que un agente compatible entre a ATIEMPPO y consulte SICETAC. Como prueba adicional opcional, se puede obtener el token público del Origin Trial de Chrome y activar el meta tag ya preparado. Ese token no es una clave del API ni debe confundirse con la futura API comercial.
+No queda ningún paso obligatorio para el objetivo de que un agente compatible entre a ATIEMPPO y consulte SICETAC. El paso adicional de registrar el Origin Trial de Chrome también quedó realizado; ese token no es una clave del API ni debe confundirse con la futura API comercial.
 
 No se modificó ni publicó el trabajo local separado de `SICETAC-API-MCP`.
