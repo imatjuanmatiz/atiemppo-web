@@ -79,6 +79,8 @@ Revalidado el 2026-09-02:
 - publicación de GitHub Pages para el commit `4d1ec6c`: correcta;
 - sitio público: contiene `document.modelContext.registerTool` y `consultar_sicetac`;
 - navegador integrado: descubrió el tool desde la página y lo ejecutó correctamente;
+- Chrome 152 con `WebMCP for testing` y Model Context Tool Inspector: descubrió `consultar_sicetac`, mostró su esquema y confirmó `readOnlyHint`;
+- ejecución manual desde el inspector de Chrome: correcta, sin usar formulario ni iframe;
 - prueba publicada Bogotá → Barranquilla: H2 `$7.638.005`, H4 `$7.821.531`, H8 `$8.188.583` y peajes `$869.600` COP.
 
 Nota de entorno: Jekyll 3.9 con Ruby 3.2.4 falla por una incompatibilidad preexistente de Liquid con `String#tainted?`; Ruby 3.1.4 construye el sitio correctamente.
@@ -97,6 +99,15 @@ Configuración registrada:
 - token instalado en el `<head>` de `sicetac-al-instante.html`.
 
 El token es público por diseño y permite que Chrome habilite el experimento para ese origen. Para Site tools del navegador integrado de ChatGPT/Codex, la disponibilidad depende del soporte de OpenAI y no de este token de Chrome.
+
+Para repetir la prueba manual en Chrome 150 o superior:
+
+1. habilitar `chrome://flags/#enable-webmcp-testing` y reiniciar Chrome;
+2. instalar Model Context Tool Inspector;
+3. abrir la landing y el panel lateral del inspector;
+4. elegir `consultar_sicetac`, proporcionar argumentos JSON válidos y ejecutar.
+
+El inspector es una herramienta de desarrollo y no implementa límites de seguridad para uso general; debe utilizarse únicamente en sitios confiables y puede deshabilitarse cuando termine la prueba.
 
 ## Coordinación con otros cambios de la web
 
