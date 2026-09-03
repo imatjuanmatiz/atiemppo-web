@@ -12,6 +12,13 @@ render_with_liquid: false
 <meta name="description" content="Consulta valores SICETAC por WhatsApp y web: modo normal, modo plus, cambios de configuración y detalle de peajes por ruta."/>
 <meta name="ai-content-declaration" content="human-authored"/>
 <meta name="llms-txt" content="https://atiemppo.com/llms.txt"/>
+<!--
+  WebMCP origin trial de Chrome 149-156:
+  solicita el token para https://atiemppo.com en
+  https://developer.chrome.com/blog/ai-webmcp-origin-trial y, cuando exista,
+  reemplaza el placeholder y descomenta solo el meta tag siguiente.
+  <meta http-equiv="origin-trial" content="WEBMCP_ORIGIN_TRIAL_TOKEN"/>
+-->
 <link rel="alternate" type="text/plain" title="LLMs.txt" href="/llms.txt"/>
 <meta property="og:title" content="SICETAC al Instante | ATIEMPPO"/>
 <meta property="og:description" content="Valores SICETAC rápidos para rutas, configuraciones, horas logísticas y detalle de peajes."/>
@@ -428,6 +435,192 @@ function closeMenu(){
     document.body.classList.remove("nav-open");
   }
 }
+
+(() => {
+  if(!document.modelContext||typeof document.modelContext.registerTool!=="function") return;
+
+  const API_URL="https://sicetac-api-mcp.onrender.com/consulta";
+  const VEHICLES=["CA","C257","C279","C2910","C2M10","C3","C2S2","C2S3","C3S2","C3S3","V2","V3","V4"];
+  const BODY_TYPES=[
+    "General - Estacas",
+    "General - Furgon",
+    "General - Estibas",
+    "General - Plataforma",
+    "Portacontenedores",
+    "Furgon Refrigerado",
+    "Granel Solido - Estacas",
+    "Granel Solido - Furgon",
+    "Granel Solido - Volco",
+    "Granel Solido - Estibas",
+    "Granel Solido - Plataforma",
+    "Granel Liquido - Tanque"
+  ];
+  const registrationController=new AbortController();
+
+  const cleanText=(value)=>typeof value==="string"?value.replace(/\s+/g," ").trim():"";
+  const finiteNumber=(value)=>{
+    if(typeof value==="number") return Number.isFinite(value)?value:null;
+    if(typeof value!=="string") return null;
+    const cleaned=value.replace(/[^\d.-]/g,"");
+    if(!cleaned) return null;
+    const parsed=Number(cleaned);
+    return Number.isFinite(parsed)?parsed:null;
+  };
+  const shortText=(value)=>cleanText(String(value??"")).slice(0,1500);
+
+  function readVariants(data){
+    const raw=data?.variantes??data?.SICETAC_VARIANTES??data?.VARIANTES;
+    if(Array.isArray(raw)&&raw.length) return raw;
+    return [data?.SICETAC??data].filter(Boolean);
+  }
+
+  function compactResult(data,request){
+    const allVariants=readVariants(data);
+    const variants=allVariants.slice(0,5).map((variant,index)=>{
+      const result=variant?.RESULTADO??variant?.resultado??variant;
+      const totals=variant?.totales??result?.totales??{};
+      const tolls=variant?.peajes_resumen??result?.peajes_resumen??{};
+      const h2=finiteNumber(totals?.H2??totals?.h2);
+      const h4=finiteNumber(totals?.H4??totals?.h4);
+      const h8=finiteNumber(totals?.H8??totals?.h8??result?.total_viaje);
+      return {
+        nombre:shortText(variant?.NOMBRE_SICE??variant?.nombre_sice??variant?.nombre_ruta??variant?.detalle_lookup?.nombre_sice??data?.detalle_lookup?.nombre_sice??`Ruta ${index+1}`),
+        id_sice:variant?.ID_SICE??variant?.id_sice??variant?.RUTASID??null,
+        H2:h2,
+        H4:h4,
+        H8:h8,
+        peajes:finiteNumber(tolls?.total_peajes??result?.peajes??variant?.peajes)
+      };
+    });
+    const origin=cleanText(data?.origen??data?.SICETAC?.origen) || request.origen;
+    const destination=cleanText(data?.destino??data?.SICETAC?.destino) || request.destino;
+    const totals=variants.map(({nombre,id_sice,H8,peajes})=>({
+      nombre,
+      id_sice,
+      total_viaje:H8,
+      peajes
+    }));
+    const hours=variants.map(({nombre,id_sice,H2,H4,H8})=>({nombre,id_sice,H2,H4,H8}));
+    let summary=variants.map((variant)=>{
+      const hoursText=["H2","H4","H8"]
+        .map((hour)=>variant[hour]===null?null:`${hour}: ${variant[hour]} COP`)
+        .filter(Boolean)
+        .join(" | ");
+      return `${variant.nombre}${variant.id_sice?` (ID ${variant.id_sice})`:""}: ${hoursText}${variant.peajes===null?"":` | peajes: ${variant.peajes} COP`}`;
+    }).join("\n");
+    if(allVariants.length>variants.length){
+      summary+=`\nSe muestran ${variants.length} de ${allVariants.length} variantes oficiales.`;
+    }
+
+    return {
+      ok:true,
+      ruta:{
+        origen:origin,
+        destino:destination,
+        vehiculo:cleanText(data?.configuracion??data?.vehiculo) || request.vehiculo,
+        carroceria:cleanText(data?.carroceria) || request.carroceria,
+        variantes:allVariants.length,
+        variantes_mostradas:variants.length
+      },
+      totales:totals,
+      horas:hours,
+      texto:shortText(summary || `Consulta SICETAC: ${origin} a ${destination}.`)
+    };
+  }
+
+  function compactError(request,message){
+    return {
+      ok:false,
+      ruta:{
+        origen:request?.origen??null,
+        destino:request?.destino??null,
+        vehiculo:request?.vehiculo??null,
+        carroceria:request?.carroceria??null
+      },
+      totales:[],
+      horas:[],
+      texto:shortText(message || "No fue posible consultar SICETAC.")
+    };
+  }
+
+  async function executeSicetac(input,{signal}={}){
+    const request={
+      origen:cleanText(input?.origen),
+      destino:cleanText(input?.destino),
+      vehiculo:cleanText(input?.vehiculo)||"C3S3",
+      carroceria:cleanText(input?.carroceria)||"General - Estacas",
+      resumen:true,
+      peajes:true
+    };
+
+    if(!request.origen||!request.destino){
+      return compactError(request,"Origen y destino son obligatorios. Ejemplo: Bogotá a Medellín.");
+    }
+    if(!VEHICLES.includes(request.vehiculo)){
+      return compactError(request,`Vehículo inválido. Permitidos: ${VEHICLES.join(", ")}.`);
+    }
+    if(!BODY_TYPES.includes(request.carroceria)){
+      return compactError(request,`Carrocería inválida. Permitidas: ${BODY_TYPES.join(", ")}.`);
+    }
+
+    try{
+      const response=await fetch(API_URL,{
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify(request),
+        signal
+      });
+      const raw=await response.text();
+      let data={};
+      try{data=raw?JSON.parse(raw):{};}catch{
+        return compactError(request,`El servicio SICETAC devolvió una respuesta no válida (HTTP ${response.status}).`);
+      }
+      if(!response.ok){
+        return compactError(request,data?.error??data?.detail??`La consulta SICETAC falló (HTTP ${response.status}).`);
+      }
+      return compactResult(data,request);
+    }catch(error){
+      if(error?.name==="AbortError") throw error;
+      return compactError(request,"No fue posible conectar con el servicio SICETAC. Intenta de nuevo.");
+    }
+  }
+
+  async function registerSicetacTool(){
+    try{
+      await document.modelContext.registerTool({
+        name:"consultar_sicetac",
+        title:"Consultar SICETAC",
+        description:"Consulta el valor de referencia SICETAC de una ruta en Colombia (origen y destino). Devuelve totales y horas logísticas H2/H4/H8. Una ruta, gratis. No es el Índice de la Red ni la Base completa. No cotiza ATIEMPPO ni inventa clientes.",
+        inputSchema:{
+          type:"object",
+          properties:{
+            origen:{type:"string",description:"Ciudad o municipio de origen en Colombia."},
+            destino:{type:"string",description:"Ciudad o municipio de destino en Colombia."},
+            vehiculo:{type:"string",enum:VEHICLES,default:"C3S3",description:"Configuración vehicular permitida por SICETAC al Instante."},
+            carroceria:{type:"string",enum:BODY_TYPES,default:"General - Estacas",description:"Tipo de carrocería permitido por SICETAC al Instante."}
+          },
+          required:["origen","destino"],
+          additionalProperties:false
+        },
+        annotations:{readOnlyHint:true},
+        execute:executeSicetac
+      },{signal:registrationController.signal});
+    }catch(error){
+      if(!registrationController.signal.aborted){
+        console.warn("No fue posible registrar consultar_sicetac en WebMCP.",error);
+      }
+    }
+  }
+
+  window.addEventListener("pagehide",(event)=>{
+    if(!event.persisted) registrationController.abort();
+  });
+  if(document.prerendering){
+    document.addEventListener("prerenderingchange",registerSicetacTool,{once:true});
+  }else{
+    registerSicetacTool();
+  }
+})();
 </script>
 </body>
 </html>
