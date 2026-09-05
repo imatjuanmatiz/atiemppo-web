@@ -1,0 +1,107 @@
+/* Commercial service families. The approved homepage hero keeps its original styles. */
+.commercial-heading { max-width: 800px; margin-bottom: 42px; }
+.commercial-heading > p:last-child { max-width: 720px; font-size: 17px; line-height: 1.7; }
+.commercial-heading .section-heading, .learning-feature .section-heading, .editorial-grid .section-heading, .experience-grid .section-heading { margin: 12px 0 22px; }
+.commercial-consult, .commercial-products, .commercial-learning, .commercial-editorial, .commercial-experience, .service-section { padding: 88px 0; }
+.commercial-consult { background: #eef2f4; color: #102c53; border-top: 5px solid var(--blue); }
+.commercial-consult .eyebrow, .consulting-opening .eyebrow { color: var(--blue); }
+.question-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 34px; }
+.question-offer { border-top: 1px solid currentColor; padding: 25px 0 10px; display: flex; flex-direction: column; align-items: start; }
+.offer-number { font-size: 13px; letter-spacing: .12em; }
+.question-offer h3 { font-family: var(--serif); font-size: clamp(1.8rem,2.4vw,2.25rem); line-height: 1.13; font-weight: 400; margin: 23px 0 17px; }
+.question-offer p { font-size: 16px; line-height: 1.7; margin: 0 0 26px; flex: 1; }
+.text-link { display: inline-block; color: inherit; font-size: 14px; font-weight: 600; line-height: 1.5; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+.text-link:hover { text-decoration-thickness: 2px; }
+.text-link:focus-visible, .commercial-editorial a:focus-visible { outline: 3px solid currentColor; outline-offset: 5px; }
+.section-link { margin-top: 34px; }
+.commercial-products { background: var(--navy-deep); color: #f7f9fc; }
+.commercial-products .eyebrow { color: #b6d5ff; }
+.commercial-product-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; }
+.commercial-product { border: 1px solid #4a5b72; background: #17273c; display: flex; flex-direction: column; min-width: 0; }
+.offer-cover { width: 100%; height: 200px; object-fit: contain; background: var(--navy-deep); }
+.offer-body { padding: 30px 26px; display: flex; flex-direction: column; flex: 1; }
+.offer-body h3 { font-family: var(--serif); font-weight: 400; font-size: 2.2rem; line-height: 1.08; margin: 14px 0 18px; }
+.offer-body > p:not(.eyebrow) { color: #d2deed; font-size: 16px; line-height: 1.65; margin: 0 0 26px; flex: 1; }
+.offer-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 24px; margin-top: 26px; }
+.offer-body .offer-actions { flex-direction: column; align-items: start; margin-top: auto; }
+.offer-actions .btn { text-align: center; line-height: 1.45; white-space: normal; }
+.commercial-products .btn-primary { background: #c4dcff; color: #102038; border-color: #c4dcff; }
+.commercial-products .btn-primary:hover { background: #e1edff; }
+.service-shortcuts, .learning-options { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 34px; margin-top: 52px; }
+.service-shortcuts article, .learning-options article { border-top: 1px solid currentColor; padding-top: 22px; }
+.service-shortcuts h3, .learning-options h3 { font-family: var(--serif); font-size: 1.7rem; line-height: 1.2; font-weight: 400; margin: 0 0 15px; }
+.service-shortcuts p, .learning-options p { font-size: 16px; line-height: 1.65; }
+.service-shortcuts .text-link, .learning-options .text-link { display: block; margin: 18px 0 0; }
+.commercial-learning { background: #0d2945; color: #f1f7f4; }
+.commercial-learning .eyebrow, .profe-opening .eyebrow { color: var(--blue-light); }
+.learning-feature { display: grid; grid-template-columns: 1.12fr 1fr; align-items: center; gap: 60px; }
+.learning-feature figure { margin: 0; }
+.learning-feature figure img { width: 100%; display: block; }
+.feature-lead { font-size: 20px; line-height: 1.6; max-width: 780px; }
+.learning-feature p { line-height: 1.7; }
+.commercial-learning .btn-primary, .profe-opening .btn-primary { background: #f2f5ef; color: #123c32; border-color: #f2f5ef; }
+.commercial-editorial { background: var(--paper); color: #142c42; }
+.editorial-grid { display: grid; grid-template-columns: 1fr .9fr; gap: 76px; align-items: center; }
+.editorial-logo { width: 230px; max-width: 75%; height: auto; margin-bottom: 28px; }
+.editorial-preview { display: block; border: 1px solid #ccd2d3; background: #fff; padding: 18px; color: #142c42; }
+.editorial-preview img { width: 100%; display: block; }
+.editorial-preview span { display: block; padding-top: 18px; font-size: 14px; }
+.commercial-experience { background: #fff; color: #142c42; }
+.experience-grid, .service-split { display: grid; grid-template-columns: 1fr 1.15fr; gap: 72px; }
+.experience-role { font-size: 14px; }
+.experience-grid .text-link, .service-split .text-link { margin: 12px 22px 0 0; }
+.experience-grid p, .service-split p { line-height: 1.75; }
+.service-interest { margin: 16px 0; }
+.service-interest select { width: 100%; min-width: 0; padding: 14px; font: inherit; color: #142c42; background: #fff; border: 1px solid #8695a1; border-radius: 7px; }
+.service-interest select:focus-visible { outline: 3px solid #2f79c5; outline-offset: 2px; }
+.service-opening { padding: 88px 0; background: #eef1f4; color: #102c53; }
+.service-opening h1 { font-family: var(--serif); font-size: clamp(2.8rem,5vw,4.8rem); font-weight: 400; line-height: 1.07; letter-spacing: -.025em; max-width: 1000px; margin: 24px 0; }
+.consulting-opening { background: #eef2f4; border-bottom: 5px solid var(--blue); }
+.service-section { background: #fff; color: #102c53; }
+.service-paper { background: #f2f4f5; }
+.consulting-offer { display: grid; grid-template-columns: 1fr 1.15fr; gap: 72px; padding: 34px 0; border-top: 1px solid #a5b8d3; }
+.consulting-offer h3 { font-family: var(--serif); font-size: clamp(1.8rem,3vw,2.5rem); font-weight: 400; line-height: 1.15; margin: 0; }
+.consulting-offer p { margin: 0 0 20px; line-height: 1.75; }
+.service-close { padding: 72px 0; background: #112b48; color: #fff; }
+.service-close .section-heading { max-width: 830px; }
+.service-close .offer-actions { margin-top: 28px; }
+.profe-opening, .profe-page .service-close { background: #0d2945; color: #f1f7f4; }
+.section-note { font-size: 14px; margin-top: 30px; }
+#prioridades, #soluciones, #experiencias, #consultorias, #acompanamiento, #contacto { scroll-margin-top: 100px; }
+@media (max-width: 1050px) {
+  .learning-feature, .editorial-grid { gap: 34px; }
+  .commercial-product-grid { gap: 16px; }
+  .offer-body { padding: 24px 20px; }
+  .offer-cover { height: 160px; }
+}
+@media (max-width: 820px) {
+  .question-grid, .commercial-product-grid, .learning-feature, .editorial-grid, .experience-grid, .service-split, .consulting-offer { grid-template-columns: 1fr; gap: 28px; }
+  .service-shortcuts, .learning-options { grid-template-columns: 1fr; gap: 28px; }
+  .commercial-consult, .commercial-products, .commercial-learning, .commercial-editorial, .commercial-experience, .service-section, .service-opening { padding: 58px 0; }
+  .offer-cover { height: 250px; }
+  .learning-feature figure { max-width: 560px; }
+  .question-offer h3 { margin-top: 14px; }
+  .commercial-heading { margin-bottom: 30px; }
+  .service-opening h1 br { display: none; }
+}
+@media (max-width: 480px) {
+  .offer-cover { height: 200px; }
+  .offer-actions { align-items: stretch; flex-direction: column; }
+  .offer-body .offer-actions { align-items: stretch; }
+  .feature-lead { font-size: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .commercial-service *, .commercial-products *, .commercial-learning * { scroll-behavior: auto; }
+}
+
+.learning-options-two { grid-template-columns: repeat(2,minmax(0,1fr)); }
+@media (max-width: 820px) { .learning-options-two { grid-template-columns: 1fr; } }
+
+.consult-intro { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 48px; margin-bottom: 42px; }
+.consult-intro .commercial-heading { margin-bottom: 0; }
+.consult-illustration { margin: 0; }
+.consult-illustration img { width: 100%; height: auto; display: block; }
+.consult-illustration figcaption { margin-top: 12px; font-size: 12px; color: #415b73; }
+.consulting-opening h1 { font-size: clamp(2.7rem,4vw,4rem); }
+.consulting-opening .feature-lead { font-size: 18px; }
+@media (max-width: 820px) { .consult-intro { grid-template-columns: 1fr; gap: 28px; margin-bottom: 30px; } }
