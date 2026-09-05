@@ -2,55 +2,76 @@
   "use strict";
 
   var priorityData = {
-    decision: {
-      chapter: "01",
-      title: "Consulting for better decisions.",
-      description: "We turn complex transport questions into decisions supported by data, method and expert judgment.",
-      outcomes: ["Clearer decisions with lower risk.", "Analysis connecting data, context and judgment.", "Realistic, prioritized action plans."],
-      serviceUrl: "/en/consultoria/",
-      serviceCta: "Explore consulting",
-      category: "Consulting",
-      product: "Living Reports",
-      productDescription: "Browsable analyses, maps and indicators that turn a transport question into evidence for decision-making.",
-      productImage: "/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png",
-      productAlt: "Living Reports reference",
-      productUrl: "/en/reportes/",
-      productCta: "Explore the reports",
-      proof: ["Traceable evidence", "Actionable recommendation"]
-    },
-    data: {
-      chapter: "02",
-      title: "Use ATIEMPPO services, applications and data to strengthen transport teams.",
-      description: "We bring together applications, databases, indexes, reports and information sources so teams can query operations and turn transport data into clearer decisions.",
-      outcomes: ["Applications for queries and operational tasks.", "Datasets, indexes and reports for comparing scenarios.", "Sector information for asking better questions."],
-      serviceUrl: "#soluciones",
-      serviceCta: "See applications",
-      category: "ATIEMPPO ecosystem",
-      product: "Applications, reports, bases and indexes",
-      productDescription: "SICETAC al Instante, SICETAC Base, Network Index, Living Reports, SICETAC API and upcoming solutions such as the Transport Quote Calculator.",
-      productImage: "/assets/images/atiemppo/cover-base.png",
-      productAlt: "ATIEMPPO applications, services and data for transport teams",
-      productUrl: "#soluciones",
-      productCta: "See applications",
-      proof: ["Data for decisions", "Available solutions"]
-    },
-    ai: {
-      chapter: "03",
-      title: "Learn to work with agents.",
-      description: "We prepare people, business owners, executives and teams to turn artificial intelligence into a way of working through practice, direction and context.",
-      outcomes: ["Profe Bruno for learning applied AI on real tasks.", "ATIEMPPO Lab for workshops and live business cases.", "Executive sessions and agentic experiences for teams."],
-      serviceUrl: "#experiencias",
-      serviceCta: "See learning experiences",
-      category: "Learning and agents",
-      product: "Profe Bruno + ATIEMPPO Lab",
-      productDescription: "Profe Bruno supports applied learning. ATIEMPPO Lab, executive sessions and the Agentic Experience take that learning into workshops, management decisions and business cases.",
-      productImage: "/assets/images/atiemppo/mesa-trabajo-ia.png",
-      productAlt: "ATIEMPPO learning and agentic workbench",
-      productUrl: "#experiencias",
-      productCta: "See learning cards",
-      proof: ["Applied practice", "Business cases"]
-    }
-  };
+  "decision": {
+    "chapter": "01",
+    "title": "What is happening in your market?",
+    "description": "A growth opportunity, a warehouse location or a network that needs to change. We work with you to compare the options and understand what they mean for your business.",
+    "outcomes": [
+      "Market research and outlook studies.",
+      "Network design and location analysis.",
+      "Transport costs, operations and policy."
+    ],
+    "serviceUrl": "/en/consultoria/",
+    "serviceCta": "Explore our consulting services",
+    "category": "A look at our work",
+    "product": "Explore the analysis for yourself",
+    "productDescription": "Open a report to explore its maps, routes and indicators. See one of the ways we make an analysis available for you to use.",
+    "productImage": "/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png",
+    "productAlt": "Example of a SICETAC report showing changes by route",
+    "productUrl": "/en/reportes/",
+    "productCta": "Explore the reports",
+    "proof": [
+      "Maps and indicators",
+      "Analysis you can explore"
+    ]
+  },
+  "data": {
+    "chapter": "02",
+    "title": "Work with data for your routes.",
+    "description": "Look up a transport reference value, use the SICETAC database in your analysis or track changes in your network costs. Choose the service you need.",
+    "outcomes": [
+      "A lookup for one route.",
+      "A dataset for working with many routes.",
+      "An index to track changes in your network."
+    ],
+    "serviceUrl": "#soluciones",
+    "serviceCta": "Choose a SICETAC service",
+    "category": "For your own analysis",
+    "product": "SICETAC Database",
+    "productDescription": "Structured data to match with your company routes and use in your own analysis. Request a one-time or recurring delivery.",
+    "productImage": "/assets/images/atiemppo/cover-base.png",
+    "productAlt": "ATIEMPPO SICETAC Database overview",
+    "productUrl": "/en/?servicio=base-sicetac#contacto",
+    "productCta": "Request the database",
+    "proof": [
+      "One-time or recurring delivery",
+      "Match data to your routes"
+    ]
+  },
+  "ai": {
+    "chapter": "03",
+    "title": "Bring a task you want to improve.",
+    "description": "Prepare a report, analyze a file or find information. With Profe Bruno and our workshops, you learn to use AI on something from your own work.",
+    "outcomes": [
+      "Profe Bruno for guided learning.",
+      "Workshops built around a task from your team.",
+      "Sessions for executives exploring where to start."
+    ],
+    "serviceUrl": "#experiencias",
+    "serviceCta": "Explore learning options",
+    "category": "Applied learning",
+    "product": "Profe Bruno",
+    "productDescription": "Learn to explain what you need, work with your materials and check the result. From there, we can explore how an agent could repeat the task.",
+    "productImage": "/assets/images/atiemppo/mesa-trabajo-ia.png",
+    "productAlt": "Illustration of a workspace with artificial intelligence tools",
+    "productUrl": "/en/?servicio=profe-bruno#contacto",
+    "productCta": "Learn with Profe Bruno",
+    "proof": [
+      "A task of your own",
+      "Guided practice"
+    ]
+  }
+};
 
   var tabs = Array.prototype.slice.call(document.querySelectorAll(".journey-card"));
   var panel = document.getElementById("recommended-chapter");
@@ -115,6 +136,18 @@
 
   var contactForm = document.getElementById("contactForm");
   if (contactForm) {
+    var serviceSelect = contactForm.querySelector('[name="servicio"]');
+    var requestedService = new URLSearchParams(window.location.search).get("servicio");
+    if (serviceSelect && requestedService && Array.prototype.some.call(serviceSelect.options, function (option) { return option.value === requestedService; })) {
+      serviceSelect.value = requestedService;
+    }
+    // The existing receiver stores mensaje; include the selected service there too.
+    contactForm.addEventListener("formdata", function (event) {
+      if (!serviceSelect || !serviceSelect.value) return;
+      var serviceLabel = serviceSelect.options[serviceSelect.selectedIndex].text;
+      var message = event.formData.get("mensaje") || "";
+      event.formData.set("mensaje", "Service: " + serviceLabel + "\n\n" + message);
+    });
     var endpoint = contactForm.dataset.googleScriptUrl;
     var userAgentField = contactForm.querySelector('input[name="user_agent"]');
     var submitButton = contactForm.querySelector('button[type="submit"]');
