@@ -2,15 +2,30 @@
   "schema_version": "1.2",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-09-08-am",
+  "cut_id": "2026-09-08-pm",
   "fecha": "2026-09-08",
-  "ventana": "AM",
-  "hora": "07:00",
-  "generado_en": "2026-09-08T07:00:00",
-  "artefacto_fuente": "2026-09-08-editor-eldato-version-vias-colombia-am.md",
-  "que_cambio": [],
+  "ventana": "PM",
+  "hora": "17:00",
+  "generado_en": "2026-09-08T17:00:00",
+  "artefacto_fuente": "2026-09-08-editor-eldato-version-vias-colombia-pm.md",
+  "que_cambio": [
+    {
+      "corredor": "Villavicencio–Puerto López",
+      "antes": "no estaba en el listado AM",
+      "ahora": "paso controlado — un carril en Pompeya — circular con demora",
+      "cambio": "nueva",
+      "evidencia": ""
+    },
+    {
+      "corredor": "Ibagué–Cajamarca / La Línea",
+      "antes": "paso controlado — cierres totales intermitentes ~1 h por trasiego de GLP; 2ª calzada Los Osos — programar despacho; no es corredor cerrado de forma continua",
+      "ahora": "paso controlado — cierres totales intermitentes ~1 h por trasiego de GLP; 2ª calzada Los Osos; PMT un carril en la 2ª calzada — programar despacho; no es corredor cerrado de forma continua",
+      "cambio": "empeoró",
+      "evidencia": ""
+    }
+  ],
   "notas_cambio": [
-    "Este corte es el listado base del día. MD y PM miden el cambio contra esta mañana, no contra el mismo corredor del corte anterior."
+    "Cambio medido contra el listado AM (2026-09-08-editor-eldato-version-vias-colombia-am.md), no contra el corte anterior de la misma ventana."
   ],
   "listado": [
     {
@@ -73,7 +88,7 @@
       "icono": "🟠",
       "corredor": "Ibagué–Cajamarca / La Línea",
       "km": "",
-      "estado": "paso controlado — cierres totales intermitentes ~1 h por trasiego de GLP; 2ª calzada Los Osos — programar despacho; no es corredor cerrado de forma continua",
+      "estado": "paso controlado — cierres totales intermitentes ~1 h por trasiego de GLP; 2ª calzada Los Osos; PMT un carril en la 2ª calzada — programar despacho; no es corredor cerrado de forma continua",
       "fuente": ""
     },
     {
@@ -144,6 +159,13 @@
       "corredor": "Puerto López–Puerto Gaitán",
       "km": "",
       "estado": "paso controlado — un carril en Río Metica — circular con demora",
+      "fuente": ""
+    },
+    {
+      "icono": "🟠",
+      "corredor": "Villavicencio–Puerto López",
+      "km": "",
+      "estado": "paso controlado — un carril en Pompeya — circular con demora",
       "fuente": ""
     },
     {
@@ -233,58 +255,60 @@
   ],
   "senales_tempranas": [
     {
-      "tramo": "Cómbita / Tunja–Paipa PR 4+800",
-      "senal": "ControlT NUEVA: cierre total por volcamiento y derrame de aceite ~04:45",
-      "fuente": "ControlT AM",
-      "vigilar": "0 DITRA / 0 INVÍAS / 0 concesión de calzada"
+      "tramo": "Herveo / Letras km 40+300",
+      "senal": "ControlT NUEVA: un carril por deslizamiento de tierra y piedras ~12:25",
+      "fuente": "ControlT PM",
+      "vigilar": "0 DITRA de ventana / 0 concesión de ese punto"
     },
     {
-      "tramo": "Funza / Siberia–Cota",
-      "senal": "ControlT NUEVA: accidente frente a parque industrial Cofradía",
-      "fuente": "ControlT AM",
-      "vigilar": "0 concesión"
-    },
-    {
-      "tramo": "Sampués–Chinú",
-      "senal": "ControlT NUEVA: accidente",
-      "fuente": "ControlT AM",
-      "vigilar": "0 DITRA / 0 concesión"
-    },
-    {
-      "tramo": "Puerto Salgar / Koran",
-      "senal": "ControlT NUEVA: accidente",
-      "fuente": "ControlT AM",
-      "vigilar": "0 Magdalena de ese punto; no fusionar con Tierra Adentro km 21+000 (oficial, un carril)"
-    },
-    {
-      "tramo": "Aratoca",
-      "senal": "ControlT persistente: socavón; cierre total y restringido",
-      "fuente": "ControlT AM",
+      "tramo": "Los Santos / 45A",
+      "senal": "ControlT persistente: cierre total y restringido para carga pesada por socavón",
+      "fuente": "ControlT PM",
       "vigilar": "0 DITRA / 0 INVÍAS / 0 concesión"
+    },
+    {
+      "tramo": "Aratoca / 45A",
+      "senal": "ControlT persistente: socavón; cierre total y restringido carga pesada",
+      "fuente": "ControlT PM",
+      "vigilar": "0 DITRA / 0 INVÍAS / 0 concesión"
+    },
+    {
+      "tramo": "Cómbita / Tunja–Paipa PR 4+800",
+      "senal": "ControlT persistente: cierre total por volcamiento y derrame de aceite",
+      "fuente": "ControlT PM",
+      "vigilar": "0 DITRA / 0 INVÍAS / 0 concesión de calzada"
     },
     {
       "tramo": "San Gil",
       "senal": "ControlT persistente: socavón; restricción de carga pesada",
-      "fuente": "ControlT AM",
+      "fuente": "ControlT PM",
       "vigilar": "0 contraste oficial de hoy (Policía p.1 es obras PR 53, otro punto)"
+    },
+    {
+      "tramo": "Buenaventura / Oasis–Centracar",
+      "senal": "ControlT persistente: congestión alta",
+      "fuente": "ControlT PM",
+      "vigilar": "0 CaminoPacífico de ese punto; no fusionar con Yolomba"
     },
     {
       "tramo": "Calima, Ruta 40",
       "senal": "ControlT persistente: 06:00–20:00 toda clase; nocturno solo emergencias",
-      "fuente": "ControlT AM",
+      "fuente": "ControlT PM",
       "vigilar": "0 INVÍAS / 0 DITRA de ese punto; no fusionar con Yolomba"
     }
   ],
   "alertas_inmediatas": [],
   "salud_fuentes": {
-    "estado_general": "degradada",
+    "estado_general": "estable",
     "ventanas_esperadas": [
       "AM",
       "MD",
       "PM"
     ],
     "ventanas_recibidas": [
-      "AM"
+      "AM",
+      "MD",
+      "PM"
     ],
     "eventos_confirmados": 0,
     "eventos_vigilancia": 0,
@@ -305,6 +329,32 @@
       "cut_id": "2026-09-08-am",
       "hora": "07:00",
       "ventana": "AM",
+      "tipo": "corte_final",
+      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
+      "conteos": {
+        "nuevos": 0,
+        "persistentes": 0,
+        "resueltos": 0,
+        "por_verificar": 0
+      }
+    },
+    {
+      "cut_id": "2026-09-08-md",
+      "hora": "12:00",
+      "ventana": "MD",
+      "tipo": "corte_final",
+      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
+      "conteos": {
+        "nuevos": 0,
+        "persistentes": 0,
+        "resueltos": 0,
+        "por_verificar": 0
+      }
+    },
+    {
+      "cut_id": "2026-09-08-pm",
+      "hora": "17:00",
+      "ventana": "PM",
       "tipo": "corte_final",
       "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
       "conteos": {
