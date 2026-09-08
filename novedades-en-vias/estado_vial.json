@@ -2,37 +2,15 @@
   "schema_version": "1.2",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-09-02-md",
-  "fecha": "2026-09-02",
-  "ventana": "MD",
-  "hora": "12:00",
-  "generado_en": "2026-09-02T12:00:00",
-  "artefacto_fuente": "2026-09-02-editor-eldato-version-vias-colombia-md.md",
-  "que_cambio": [
-    {
-      "corredor": "Villavicencio–Granada (por homologar)",
-      "antes": "no estaba en el listado AM",
-      "ahora": "paso controlado — un carril en Puente Guamal — circular con demora",
-      "cambio": "nueva",
-      "evidencia": ""
-    },
-    {
-      "corredor": "Bogotá–Villavicencio",
-      "antes": "operación con restricciones — PMT a un carril y tramos bidireccionales — circular con demora",
-      "ahora": "operación con restricciones — PMT: pasos alternos y reducción de carril — circular con demora",
-      "cambio": "empeoró",
-      "evidencia": ""
-    },
-    {
-      "corredor": "Ibagué–Espinal",
-      "antes": "paso controlado — siniestros a un carril en Variante Ibagué y Chicoral; Picaleña y Chicoral previos sin habilitación; incendio con paso; restricción de carga — circular con demora",
-      "ahora": "paso controlado — marcas viales a un carril en Variante Ibagué; siniestros previos sin habilitación; restricción de carga — circular con demora",
-      "cambio": "empeoró",
-      "evidencia": ""
-    }
-  ],
+  "cut_id": "2026-09-08-am",
+  "fecha": "2026-09-08",
+  "ventana": "AM",
+  "hora": "07:00",
+  "generado_en": "2026-09-08T07:00:00",
+  "artefacto_fuente": "2026-09-08-editor-eldato-version-vias-colombia-am.md",
+  "que_cambio": [],
   "notas_cambio": [
-    "Cambio medido contra el listado AM (2026-09-02-editor-eldato-version-vias-colombia-am.md), no contra el corte anterior de la misma ventana."
+    "Este corte es el listado base del día. MD y PM miden el cambio contra esta mañana, no contra el mismo corredor del corte anterior."
   ],
   "listado": [
     {
@@ -93,6 +71,27 @@
     },
     {
       "icono": "🟠",
+      "corredor": "Ibagué–Cajamarca / La Línea",
+      "km": "",
+      "estado": "paso controlado — cierres totales intermitentes ~1 h por trasiego de GLP; 2ª calzada Los Osos — programar despacho; no es corredor cerrado de forma continua",
+      "fuente": ""
+    },
+    {
+      "icono": "🟠",
+      "corredor": "Ibagué–Espinal",
+      "km": "",
+      "estado": "cierre parcial — Variante Picaleña cerrada en El Rodeo por manifestación (hay alterna por la antigua); un carril en Payandé — circular por la 40TLC, no es corredor cerrado",
+      "fuente": ""
+    },
+    {
+      "icono": "🟠",
+      "corredor": "Bucaramanga–Pamplona (por homologar)",
+      "km": "",
+      "estado": "sin confirmación de apertura — franja de ciclismo 04:30–12:00 del 6-sep vencida — verificar antes de despachar",
+      "fuente": ""
+    },
+    {
+      "icono": "🟠",
       "corredor": "Pacífico Tres / Peaje Supía (por homologar)",
       "km": "",
       "estado": "paso controlado — un carril; 0 parte de apertura total — circular con demora, no es corredor cerrado",
@@ -100,16 +99,9 @@
     },
     {
       "icono": "🟠",
-      "corredor": "Ibagué–Cajamarca / La Línea",
-      "km": "",
-      "estado": "paso controlado — 2ª calzada cerrada en Los Osos; el resto a un carril — circular con demora, no es corredor cerrado",
-      "fuente": ""
-    },
-    {
-      "icono": "🟠",
       "corredor": "Bogotá–Villavicencio",
       "km": "",
-      "estado": "operación con restricciones — PMT: pasos alternos y reducción de carril — circular con demora",
+      "estado": "cierre parcial — k50+100 sentido Bogotá–Villavicencio por siniestro en puente metálico; mix PMT en el resto — no despachar en ese sentido hasta habilitación",
       "fuente": ""
     },
     {
@@ -142,13 +134,6 @@
     },
     {
       "icono": "🟠",
-      "corredor": "Ibagué–Espinal",
-      "km": "",
-      "estado": "paso controlado — marcas viales a un carril en Variante Ibagué; siniestros previos sin habilitación; restricción de carga — circular con demora",
-      "fuente": ""
-    },
-    {
-      "icono": "🟠",
       "corredor": "Paso Nacional por Tolú",
       "km": "",
       "estado": "cierre parcial — obras",
@@ -158,35 +143,35 @@
       "icono": "🟠",
       "corredor": "Puerto López–Puerto Gaitán",
       "km": "",
-      "estado": "paso controlado — un carril, Río Metica — circular con demora",
-      "fuente": ""
-    },
-    {
-      "icono": "🟠",
-      "corredor": "Villavicencio–Granada (por homologar)",
-      "km": "",
-      "estado": "paso controlado — un carril en Puente Guamal — circular con demora",
+      "estado": "paso controlado — un carril en Río Metica — circular con demora",
       "fuente": ""
     },
     {
       "icono": "🟠",
       "corredor": "Puerto Salgar–Barrancabermeja (por homologar)",
       "km": "",
-      "estado": "paso controlado — PMT 24 h y pérdida de banca — circular con demora",
+      "estado": "paso controlado — PMT 24 h, pérdida de banca y un carril en Tierra Adentro y San Cayetano — circular con demora",
       "fuente": ""
     },
     {
       "icono": "🟠",
       "corredor": "Accesos norte / Zipaquirá–Cajicá (por homologar)",
       "km": "",
-      "estado": "paso controlado — berma y carril bajo en Refisal — circular con demora, no es corredor cerrado",
+      "estado": "paso controlado — berma Refisal; topografía en variante Cajicá — circular con demora, no es corredor cerrado",
       "fuente": ""
     },
     {
       "icono": "🟠",
       "corredor": "Las Ánimas–Bogotá",
       "km": "",
-      "estado": "obra / mantenimiento — izaje 13:30–14:30; a las 12:00 no rige",
+      "estado": "cierre parcial — un carril en Mumbú–Santa Cecilia — circular con demora",
+      "fuente": ""
+    },
+    {
+      "icono": "🟠",
+      "corredor": "Yopal–Paz de Ariporo (por homologar)",
+      "km": "",
+      "estado": "paso controlado — un carril por material vegetal — circular con demora",
       "fuente": ""
     },
     {
@@ -208,6 +193,13 @@
       "corredor": "Ruta del Sol / Bosconia–Valledupar",
       "km": "",
       "estado": "operación con restricciones — PMT desvío bidireccional Hito 33A a vía existente — circular con demora",
+      "fuente": ""
+    },
+    {
+      "icono": "🟠",
+      "corredor": "Ruta del Sol / Variante Aracataca (por homologar)",
+      "km": "",
+      "estado": "cierre parcial — carril interno PR 02+315; hay paso por el externo — circular con demora",
       "fuente": ""
     },
     {
@@ -241,52 +233,46 @@
   ],
   "senales_tempranas": [
     {
-      "tramo": "La Calera / Patios–Guasca km 11+500, Teusacá",
-      "senal": "ControlT persistente: línea de alta tensión sobre la calzada",
-      "fuente": "ControlT MD",
-      "vigilar": "0 DITRA / 0 INVÍAS / 0 concesión"
+      "tramo": "Cómbita / Tunja–Paipa PR 4+800",
+      "senal": "ControlT NUEVA: cierre total por volcamiento y derrame de aceite ~04:45",
+      "fuente": "ControlT AM",
+      "vigilar": "0 DITRA / 0 INVÍAS / 0 concesión de calzada"
     },
     {
-      "tramo": "Guaduas–Villeta, El Cacique",
-      "senal": "ControlT ACTUALIZADA: accidente mula",
-      "fuente": "ControlT MD",
-      "vigilar": "0 contraste oficial de hoy"
+      "tramo": "Funza / Siberia–Cota",
+      "senal": "ControlT NUEVA: accidente frente a parque industrial Cofradía",
+      "fuente": "ControlT AM",
+      "vigilar": "0 concesión"
     },
     {
-      "tramo": "El Carmen de Bolívar, glorieta",
-      "senal": "ControlT NUEVA: tractomula volcada; congestión",
-      "fuente": "ControlT MD",
+      "tramo": "Sampués–Chinú",
+      "senal": "ControlT NUEVA: accidente",
+      "fuente": "ControlT AM",
       "vigilar": "0 DITRA / 0 concesión"
     },
     {
-      "tramo": "Gachancipá, ruta 55",
-      "senal": "ControlT NUEVA: obras 10:00–18:00 a un carril",
-      "fuente": "ControlT MD",
-      "vigilar": "0 concesión en X; no es estado"
+      "tramo": "Puerto Salgar / Koran",
+      "senal": "ControlT NUEVA: accidente",
+      "fuente": "ControlT AM",
+      "vigilar": "0 Magdalena de ese punto; no fusionar con Tierra Adentro km 21+000 (oficial, un carril)"
     },
     {
-      "tramo": "La Vega, Villeta–Facatativá",
-      "senal": "ControlT NUEVA: tráfico detenido ambos sentidos",
-      "fuente": "ControlT MD",
-      "vigilar": "0 contraste oficial"
+      "tramo": "Aratoca",
+      "senal": "ControlT persistente: socavón; cierre total y restringido",
+      "fuente": "ControlT AM",
+      "vigilar": "0 DITRA / 0 INVÍAS / 0 concesión"
     },
     {
-      "tramo": "Tuluá, Carrera 40",
-      "senal": "ControlT NUEVA: prohibido pesados por intercambiador",
-      "fuente": "ControlT MD",
-      "vigilar": "0 concesión / 0 DITRA"
+      "tramo": "San Gil",
+      "senal": "ControlT persistente: socavón; restricción de carga pesada",
+      "fuente": "ControlT AM",
+      "vigilar": "0 contraste oficial de hoy (Policía p.1 es obras PR 53, otro punto)"
     },
     {
-      "tramo": "Yopal",
-      "senal": "ControlT NUEVA: Vuelta a Colombia 2–6 sep; cierres anunciados",
-      "fuente": "ControlT MD",
-      "vigilar": "0 DITRA / 0 INVÍAS de ese evento"
-    },
-    {
-      "tramo": "Av. Simón Bolívar, Buenaventura PR 10+100–10+460",
-      "senal": "ControlT persistente: cierre de carril derecho desde 02-sep (El Retén)",
-      "fuente": "ControlT MD",
-      "vigilar": "0 CaminoPacífico / 0 DITRA de ese punto"
+      "tramo": "Calima, Ruta 40",
+      "senal": "ControlT persistente: 06:00–20:00 toda clase; nocturno solo emergencias",
+      "fuente": "ControlT AM",
+      "vigilar": "0 INVÍAS / 0 DITRA de ese punto; no fusionar con Yolomba"
     }
   ],
   "alertas_inmediatas": [],
@@ -298,8 +284,7 @@
       "PM"
     ],
     "ventanas_recibidas": [
-      "AM",
-      "MD"
+      "AM"
     ],
     "eventos_confirmados": 0,
     "eventos_vigilancia": 0,
@@ -310,29 +295,16 @@
   "eventos_confirmados": [],
   "eventos_vigilancia": [],
   "historial_corredores": {
-    "periodo_inicio": "2026-08-27",
-    "periodo_fin": "2026-09-02",
+    "periodo_inicio": "2026-09-02",
+    "periodo_fin": "2026-09-08",
     "metodologia": "Días distintos por corredor; confirmado exige estado activo y confianza mínima de 0,65.",
     "corredores": []
   },
   "cambios_dia": [
     {
-      "cut_id": "2026-09-02-am",
+      "cut_id": "2026-09-08-am",
       "hora": "07:00",
       "ventana": "AM",
-      "tipo": "corte_final",
-      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
-      "conteos": {
-        "nuevos": 0,
-        "persistentes": 0,
-        "resueltos": 0,
-        "por_verificar": 0
-      }
-    },
-    {
-      "cut_id": "2026-09-02-md",
-      "hora": "12:00",
-      "ventana": "MD",
       "tipo": "corte_final",
       "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
       "conteos": {
