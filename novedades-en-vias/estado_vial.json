@@ -2,15 +2,23 @@
   "schema_version": "1.2",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-09-09-am",
+  "cut_id": "2026-09-09-pm",
   "fecha": "2026-09-09",
-  "ventana": "AM",
-  "hora": "07:00",
-  "generado_en": "2026-09-09T07:00:00",
-  "artefacto_fuente": "2026-09-09-editor-eldato-version-vias-colombia-am.md",
-  "que_cambio": [],
+  "ventana": "PM",
+  "hora": "17:00",
+  "generado_en": "2026-09-09T17:00:00",
+  "artefacto_fuente": "2026-09-09-editor-eldato-version-vias-colombia-pm.md",
+  "que_cambio": [
+    {
+      "corredor": "Tesalia / Candelaria–Laberinto (por homologar)",
+      "antes": "no estaba en el listado AM",
+      "ahora": "cierre total — incendio; sin alterna — no despachar",
+      "cambio": "nueva",
+      "evidencia": ""
+    }
+  ],
   "notas_cambio": [
-    "Este corte es el listado base del día. MD y PM miden el cambio contra esta mañana, no contra el mismo corredor del corte anterior."
+    "Cambio medido contra el listado AM (2026-09-09-editor-eldato-version-vias-colombia-am.md), no contra el corte anterior de la misma ventana."
   ],
   "listado": [
     {
@@ -67,6 +75,13 @@
       "corredor": "Acceso a Florencia (por homologar)",
       "km": "",
       "estado": "cierre total — dos tramos sin paso; sin alterna — no despachar",
+      "fuente": ""
+    },
+    {
+      "icono": "🔴",
+      "corredor": "Tesalia / Candelaria–Laberinto (por homologar)",
+      "km": "",
+      "estado": "cierre total — incendio; sin alterna — no despachar",
       "fuente": ""
     },
     {
@@ -235,38 +250,46 @@
     {
       "tramo": "Los Santos / 45A",
       "senal": "ControlT persistente: cierre total y restringido para carga pesada por socavón",
-      "fuente": "ControlT AM",
+      "fuente": "ControlT PM",
       "vigilar": "0 DITRA / 0 INVÍAS / 0 concesión"
     },
     {
       "tramo": "Aratoca / 45A",
       "senal": "ControlT persistente: socavón; cierre total y restringido carga pesada",
-      "fuente": "ControlT AM",
+      "fuente": "ControlT PM",
       "vigilar": "0 DITRA / 0 INVÍAS / 0 concesión"
     },
     {
       "tramo": "San Gil",
       "senal": "ControlT persistente: socavón; restricción de carga pesada",
-      "fuente": "ControlT AM",
+      "fuente": "ControlT PM",
       "vigilar": "0 contraste oficial de hoy (Policía p.1 es obras PR 53, otro punto)"
     },
     {
       "tramo": "Calima, Ruta 40",
       "senal": "ControlT persistente: 06:00–20:00 toda clase; nocturno solo emergencias",
-      "fuente": "ControlT AM",
+      "fuente": "ControlT PM",
       "vigilar": "0 INVÍAS / 0 DITRA de ese punto; no fusionar con Yolomba"
+    },
+    {
+      "tramo": "El Carmen (Norte de Santander)",
+      "senal": "ControlT persistente: 20:00–05:00 motos y carga pesada, septiembre, por orden público",
+      "fuente": "ControlT PM",
+      "vigilar": "0 DITRA / 0 Policía de ventana / 0 concesión"
     }
   ],
   "alertas_inmediatas": [],
   "salud_fuentes": {
-    "estado_general": "degradada",
+    "estado_general": "estable",
     "ventanas_esperadas": [
       "AM",
       "MD",
       "PM"
     ],
     "ventanas_recibidas": [
-      "AM"
+      "AM",
+      "MD",
+      "PM"
     ],
     "eventos_confirmados": 0,
     "eventos_vigilancia": 0,
@@ -287,6 +310,32 @@
       "cut_id": "2026-09-09-am",
       "hora": "07:00",
       "ventana": "AM",
+      "tipo": "corte_final",
+      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
+      "conteos": {
+        "nuevos": 0,
+        "persistentes": 0,
+        "resueltos": 0,
+        "por_verificar": 0
+      }
+    },
+    {
+      "cut_id": "2026-09-09-md",
+      "hora": "12:00",
+      "ventana": "MD",
+      "tipo": "corte_final",
+      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
+      "conteos": {
+        "nuevos": 0,
+        "persistentes": 0,
+        "resueltos": 0,
+        "por_verificar": 0
+      }
+    },
+    {
+      "cut_id": "2026-09-09-pm",
+      "hora": "17:00",
+      "ventana": "PM",
       "tipo": "corte_final",
       "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
       "conteos": {
