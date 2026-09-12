@@ -2,36 +2,17 @@
   "schema_version": "1.2",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-09-11-md",
-  "fecha": "2026-09-11",
-  "ventana": "MD",
-  "hora": "12:00",
-  "generado_en": "2026-09-11T12:00:00",
-  "artefacto_fuente": "2026-09-11-editor-eldato-version-vias-colombia-md.md",
-  "que_cambio": [
-    {
-      "corredor": "Buga–Buenaventura",
-      "antes": "paso controlado",
-      "ahora": "cierre total",
-      "cambio": "empeoró",
-      "evidencia": "CaminoPacífico 08:11: cierre total Yolomba PR 69+000 por caída de material"
-    }
-  ],
+  "cut_id": "2026-09-12-am",
+  "fecha": "2026-09-12",
+  "ventana": "AM",
+  "hora": "07:00",
+  "generado_en": "2026-09-12T07:00:00",
+  "artefacto_fuente": "2026-09-12-editor-eldato-version-vias-colombia-am.md",
+  "que_cambio": [],
   "notas_cambio": [
-    "Buga–Buenaventura: el operador cierra La Yolomba (Dagua) Ruta 4001 PR 69+000; 0 parte MD de habilitación.",
-    "Bogotá–Villavicencio: mix 10:48 distinto al de las 15:14 del 10-sep; 0 habilitación de k50. No entra.",
-    "Puerto Salgar–Barrancabermeja: flyer 11:05 reitera PMT 24 h. No entra.",
-    "Puerto López–Puerto Gaitán: 0 parte MD de Metica. No entra.",
-    "Ibagué–Espinal: 0 parte GICA MD de Picaleña El Rodeo; ausencia no reabre la variante (hay alterna 40TLC)."
+    "Este corte es el listado base del día. MD y PM miden el cambio contra esta mañana, no contra el mismo corredor del corte anterior."
   ],
   "listado": [
-    {
-      "icono": "🔴",
-      "corredor": "Buga–Buenaventura",
-      "km": "",
-      "estado": "cierre total — La Yolomba PR 69+000 por caída de material — no despachar",
-      "fuente": ""
-    },
     {
       "icono": "🔴",
       "corredor": "La Unión–La Victoria",
@@ -89,6 +70,13 @@
       "fuente": ""
     },
     {
+      "icono": "🔴",
+      "corredor": "San Gil–Onzaga (por homologar)",
+      "km": "",
+      "estado": "cierre total — pontón con falla estructural; sin alterna — no despachar",
+      "fuente": ""
+    },
+    {
       "icono": "🟠",
       "corredor": "Accesos a Yopal / El Crucero–Aguazul",
       "km": "",
@@ -132,6 +120,13 @@
     },
     {
       "icono": "🟠",
+      "corredor": "Buga–Buenaventura",
+      "km": "",
+      "estado": "paso controlado — Yolomba restablecida; PMT en peaje Loboguerrero; Mediacanoa y túneles sin habilitación — circular con demora, no es corredor cerrado",
+      "fuente": ""
+    },
+    {
+      "icono": "🟠",
       "corredor": "Cali–Loboguerrero",
       "km": "",
       "estado": "paso controlado — varios puntos a un carril — circular con demora, no es corredor cerrado",
@@ -169,14 +164,14 @@
       "icono": "🟠",
       "corredor": "Puerto Salgar–Barrancabermeja (por homologar)",
       "km": "",
-      "estado": "paso controlado — PMT 24 h, pérdida de banca y un carril en Tierra Adentro, San Cayetano, Los Indios y La Legía — circular con demora",
+      "estado": "paso controlado — PMT 24 h, pérdida de banca y un carril en Tierra Adentro, San Cayetano y La Legía — circular con demora",
       "fuente": ""
     },
     {
       "icono": "🟠",
       "corredor": "Accesos norte / Zipaquirá–Cajicá (por homologar)",
       "km": "",
-      "estado": "paso controlado — berma Refisal; topografía en variante Cajicá — circular con demora, no es corredor cerrado",
+      "estado": "paso controlado — berma Refisal — circular con demora, no es corredor cerrado",
       "fuente": ""
     },
     {
@@ -252,52 +247,40 @@
   ],
   "senales_tempranas": [
     {
-      "tramo": "Guaduas–Villeta / Parador Cabra Feliz",
-      "senal": "ControlT NUEVA: accidente; tractomula volcada; paso a un carril",
-      "fuente": "ControlT MD",
+      "tramo": "Mosquera / Calle 13",
+      "senal": "ControlT NUEVA: accidente con persona fallecida",
+      "fuente": "ControlT AM",
       "vigilar": "0 DITRA / 0 INVÍAS / 0 concesión"
     },
     {
-      "tramo": "Ibagué–Cajamarca / La Línea (Calarcá)",
-      "senal": "ControlT NUEVA: accidente; turbo volcado",
-      "fuente": "ControlT MD",
-      "vigilar": "0 GICA MD"
-    },
-    {
-      "tramo": "Autopista Norte / Bello",
-      "senal": "ControlT NUEVA: accidente tractomula",
-      "fuente": "ControlT MD",
-      "vigilar": "urbano; 0 DITRA"
-    },
-    {
-      "tramo": "Donmatías / vía Matasanos",
-      "senal": "ControlT NUEVA: accidente múltiple; congestión",
-      "fuente": "ControlT MD",
-      "vigilar": "0 DITRA / 0 concesión"
+      "tramo": "El Copey / Ruta 45",
+      "senal": "ControlT NUEVA: accidente; dos motos y un furgón",
+      "fuente": "ControlT AM",
+      "vigilar": "0 DITRA / 0 INVÍAS"
     },
     {
       "tramo": "Los Santos / 45A",
       "senal": "ControlT persistente: cierre total y restringido para carga pesada por socavón",
-      "fuente": "ControlT MD",
+      "fuente": "ControlT AM",
       "vigilar": "0 DITRA / 0 INVÍAS / 0 concesión"
     },
     {
       "tramo": "Aratoca / 45A",
       "senal": "ControlT persistente: socavón; cierre total y restringido carga pesada",
-      "fuente": "ControlT MD",
+      "fuente": "ControlT AM",
       "vigilar": "0 DITRA / 0 INVÍAS / 0 concesión"
-    },
-    {
-      "tramo": "San Gil",
-      "senal": "ControlT persistente: socavón; restricción de carga pesada",
-      "fuente": "ControlT MD",
-      "vigilar": "0 contraste oficial de hoy (Policía p.1 es obras PR 53, otro punto)"
     },
     {
       "tramo": "Calima, Ruta 40",
       "senal": "ControlT persistente: 06:00–20:00 toda clase; nocturno solo emergencias",
-      "fuente": "ControlT MD",
+      "fuente": "ControlT AM",
       "vigilar": "0 INVÍAS / 0 DITRA de ese punto; no fusionar con Yolomba"
+    },
+    {
+      "tramo": "El Carmen (Norte de Santander)",
+      "senal": "ControlT persistente: 20:00–05:00 motos y carga pesada, septiembre, por orden público",
+      "fuente": "ControlT AM",
+      "vigilar": "0 DITRA / 0 Policía de ventana / 0 concesión"
     }
   ],
   "alertas_inmediatas": [],
@@ -309,7 +292,7 @@
       "PM"
     ],
     "ventanas_recibidas": [
-      "MD"
+      "AM"
     ],
     "eventos_confirmados": 0,
     "eventos_vigilancia": 0,
@@ -320,16 +303,16 @@
   "eventos_confirmados": [],
   "eventos_vigilancia": [],
   "historial_corredores": {
-    "periodo_inicio": "2026-09-05",
-    "periodo_fin": "2026-09-11",
+    "periodo_inicio": "2026-09-06",
+    "periodo_fin": "2026-09-12",
     "metodologia": "Días distintos por corredor; confirmado exige estado activo y confianza mínima de 0,65.",
     "corredores": []
   },
   "cambios_dia": [
     {
-      "cut_id": "2026-09-11-md",
-      "hora": "12:00",
-      "ventana": "MD",
+      "cut_id": "2026-09-12-am",
+      "hora": "07:00",
+      "ventana": "AM",
       "tipo": "corte_final",
       "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
       "conteos": {
