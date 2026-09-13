@@ -75,6 +75,9 @@ h1{max-width:860px;margin:0 0 20px;font-family:var(--display);font-size:clamp(46
 .pill{display:inline-flex;align-items:center;padding:6px 9px;border:1px solid var(--line);border-radius:999px;color:#42556a;font-size:12px;font-weight:750;background:#fbfdff}
 .open{margin-top:auto;color:var(--blue);font-size:13px;font-weight:850;letter-spacing:.1em;text-transform:uppercase}
 .philosophy{padding:0 0 76px}
+.client-cta{padding:58px 0 76px;background:#0d2945;color:#fff}
+.client-cta-inner{display:flex;align-items:end;justify-content:space-between;gap:32px}
+.client-cta .eyebrow{color:#b6d5ff}.client-cta h2{max-width:700px;margin:0 0 14px;font-family:var(--display);font-size:clamp(34px,5vw,58px);line-height:1.02;letter-spacing:-.04em}.client-cta p{max-width:700px;margin:0;color:#d2deed;font-size:17px;line-height:1.7}.client-cta .btn-primary{background:#c4dcff;color:#102038;border-color:#c4dcff}
 .method{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .method article{padding:24px;border-radius:var(--radius);background:var(--soft);border:1px solid var(--line)}
 .method strong{display:block;margin-bottom:16px;font-family:var(--display);font-size:34px;line-height:1;color:rgba(31,78,121,.28)}
@@ -85,6 +88,7 @@ h1{max-width:860px;margin:0 0 20px;font-family:var(--display);font-size:clamp(46
 @media(max-width:920px){
   .report-grid,.method{grid-template-columns:1fr}
   .nav{display:none}
+  .client-cta-inner{display:block}
 }
 @media(max-width:560px){
   .container{padding:0 18px}
@@ -103,6 +107,7 @@ h1{max-width:860px;margin:0 0 20px;font-family:var(--display);font-size:clamp(46
     </a>
     <nav class="nav" aria-label="Navegación principal">
       <a href="/">ATIEMPPO</a>
+      <a href="/reportes/para-empresas/">Crea tu reporte</a>
       <a href="https://www.eldatologistico.com" target="_blank" rel="noopener">El Dato Logístico</a>
       <a href="/blog/">Blog</a>
       <a class="nav-cta" href="/#contacto">Hablemos</a>
@@ -118,7 +123,7 @@ h1{max-width:860px;margin:0 0 20px;font-family:var(--display);font-size:clamp(46
       <p class="hero-copy">Esta biblioteca reúne reportes HTML interactivos de ATIEMPPO y El Dato Logístico. La newsletter cuenta la historia; cada enlace trae al lector al reporte vivo, actualizado y navegable, sin depender de un PDF como experiencia principal.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#biblioteca">Explorar biblioteca</a>
-        <a class="btn btn-secondary" href="/#contacto">Proponer análisis</a>
+        <a class="btn btn-secondary" href="/reportes/para-empresas/">Crear un reporte para mi empresa</a>
       </div>
     </div>
   </section>
@@ -147,6 +152,17 @@ h1{max-width:860px;margin:0 0 20px;font-family:var(--display);font-size:clamp(46
           </a>
         {% endfor %}
       </div>
+    </div>
+  </section>
+
+  <section class="client-cta">
+    <div class="container client-cta-inner">
+      <div>
+        <div class="eyebrow">Para empresas y equipos</div>
+        <h2>¿Qué decisión necesita una lectura viva?</h2>
+        <p>Podemos convertir una pregunta de logística, transporte o mercado en una página que tu equipo pueda explorar, compartir y volver a consultar.</p>
+      </div>
+      <div class="hero-actions"><a class="btn btn-primary" href="/reportes/para-empresas/">Diseñar mi reporte vivo</a></div>
     </div>
   </section>
 

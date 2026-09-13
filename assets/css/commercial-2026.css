@@ -32,6 +32,11 @@
 .service-shortcuts h3, .learning-options h3 { font-family: var(--serif); font-size: 1.7rem; line-height: 1.2; font-weight: 400; margin: 0 0 15px; }
 .service-shortcuts p, .learning-options p { font-size: 16px; line-height: 1.65; }
 .service-shortcuts .text-link, .learning-options .text-link { display: block; margin: 18px 0 0; }
+.service-shortcuts article:nth-child(2) { position: relative; padding: 24px 22px 20px; border: 1px solid #6f8eac; border-top: 4px solid #b6d5ff; background: #203a56; box-shadow: 0 18px 42px rgba(0,0,0,.14); }
+.service-shortcuts article:nth-child(2)::before { content: "Muestra tu trabajo con nosotros"; display: block; margin-bottom: 17px; color: #b6d5ff; font-size: 10px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+.service-shortcuts article:nth-child(2) h3 { color: #fff; }
+.service-shortcuts article:nth-child(2) p { color: #d2deed; }
+.service-shortcuts article:nth-child(2) .text-link { color: #fff; }
 .commercial-learning { background: #0d2945; color: #f1f7f4; }
 .commercial-learning .eyebrow, .profe-opening .eyebrow { color: var(--blue-light); }
 .learning-feature { display: grid; grid-template-columns: 1.12fr 1fr; align-items: center; gap: 60px; }

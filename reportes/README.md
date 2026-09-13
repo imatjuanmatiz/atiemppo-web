@@ -2,6 +2,8 @@
 
 Esta carpeta publica la biblioteca publica de reportes HTML en `atiemppo.com/reportes/`.
 
+La landing comercial para empresas vive en `/reportes/para-empresas/`; no agrega reportes a la biblioteca y funciona como entrada para solicitar un reporte vivo a medida.
+
 La newsletter cuenta la historia y envia trafico al link del reporte. El reporte principal debe ser HTML navegable; cualquier PDF debe quedar como respaldo, no como experiencia principal.
 
 ## Arquitectura

@@ -190,6 +190,15 @@
     panel.querySelector("[data-service-media-link]").href = data.url;
   });
 
+  var reportShortcut = document.querySelector(".service-shortcuts article:nth-child(2)");
+  if (reportShortcut && !reportShortcut.querySelector('[href="/reportes/para-empresas/"]')) {
+    var reportSalesLink = document.createElement("a");
+    reportSalesLink.className = "text-link";
+    reportSalesLink.href = "/reportes/para-empresas/";
+    reportSalesLink.textContent = "Quiero un reporte para mi empresa →";
+    reportShortcut.appendChild(reportSalesLink);
+  }
+
   var catalogToggle = document.querySelector(".catalog-toggle");
   var catalogs = Array.prototype.slice.call(document.querySelectorAll(".catalog-section"));
   if (catalogToggle && catalogs.length) {
@@ -238,6 +247,12 @@
   var contactForm = document.getElementById("contactForm");
   if (contactForm) {
     var serviceSelect = contactForm.querySelector('[name="servicio"]');
+    if (serviceSelect && !Array.prototype.some.call(serviceSelect.options, function (option) { return option.value === "reportes-vivos"; })) {
+      var reportOption = document.createElement("option");
+      reportOption.value = "reportes-vivos";
+      reportOption.textContent = "Reportes Vivos para mi empresa";
+      serviceSelect.appendChild(reportOption);
+    }
     var requestedService = new URLSearchParams(window.location.search).get("servicio");
     if (serviceSelect && requestedService && Array.prototype.some.call(serviceSelect.options, function (option) { return option.value === requestedService; })) {
       serviceSelect.value = requestedService;
