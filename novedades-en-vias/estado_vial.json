@@ -2,23 +2,15 @@
   "schema_version": "1.2",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-09-12-pm",
-  "fecha": "2026-09-12",
-  "ventana": "PM",
-  "hora": "17:00",
-  "generado_en": "2026-09-12T17:00:00",
-  "artefacto_fuente": "2026-09-12-editor-eldato-version-vias-colombia-pm.md",
-  "que_cambio": [
-    {
-      "corredor": "Ruta del Sol / La Loma–Bosconia (por homologar)",
-      "antes": "no estaba en el listado AM",
-      "ahora": "cierre total — bloqueo de la comunidad en Cuatro Vientos — no despachar",
-      "cambio": "nueva",
-      "evidencia": ""
-    }
-  ],
+  "cut_id": "2026-09-13-am",
+  "fecha": "2026-09-13",
+  "ventana": "AM",
+  "hora": "07:00",
+  "generado_en": "2026-09-13T07:00:00",
+  "artefacto_fuente": "2026-09-13-editor-eldato-version-vias-colombia-am.md",
+  "que_cambio": [],
   "notas_cambio": [
-    "Cambio medido contra el listado AM (2026-09-12-editor-eldato-version-vias-colombia-am.md), no contra el corte anterior de la misma ventana."
+    "Este corte es el listado base del día. MD y PM miden el cambio contra esta mañana, no contra el mismo corredor del corte anterior."
   ],
   "listado": [
     {
@@ -82,13 +74,6 @@
       "corredor": "San Gil–Onzaga (por homologar)",
       "km": "",
       "estado": "cierre total — pontón con falla estructural; sin alterna — no despachar",
-      "fuente": ""
-    },
-    {
-      "icono": "🔴",
-      "corredor": "Ruta del Sol / La Loma–Bosconia (por homologar)",
-      "km": "",
-      "estado": "cierre total — bloqueo de la comunidad en Cuatro Vientos — no despachar",
       "fuente": ""
     },
     {
@@ -170,16 +155,23 @@
     },
     {
       "icono": "🟠",
+      "corredor": "Villavicencio–Puerto López",
+      "km": "",
+      "estado": "paso controlado — un carril en El Carajo por incidente vial — circular con demora",
+      "fuente": ""
+    },
+    {
+      "icono": "🟠",
       "corredor": "Puerto López–Puerto Gaitán",
       "km": "",
-      "estado": "paso controlado — un carril en Río Metica — circular con demora",
+      "estado": "paso controlado — un carril en Río Metica y Hacienda Mundo Nuevo — circular con demora",
       "fuente": ""
     },
     {
       "icono": "🟠",
       "corredor": "Puerto Salgar–Barrancabermeja (por homologar)",
       "km": "",
-      "estado": "paso controlado — PMT 24 h, pérdida de banca y un carril en Tierra Adentro, San Cayetano y La Legía — circular con demora",
+      "estado": "paso controlado — calzada N/S cerrada en El Maranal por volcamiento; PMT 24 h y un carril en Tierra Adentro, San Cayetano y La Legía — circular con demora, no es corredor cerrado",
       "fuente": ""
     },
     {
@@ -262,54 +254,40 @@
   ],
   "senales_tempranas": [
     {
-      "tramo": "Alban–Latribuna / Ubaté 45A",
-      "senal": "ControlT NUEVA: deslizamiento y árbol; ambos carriles",
-      "fuente": "ControlT PM",
-      "vigilar": "0 DITRA / 0 INVÍAS / 0 concesión / 0 X oficial"
-    },
-    {
-      "tramo": "El Copey / Ruta 45",
-      "senal": "ControlT persistente: accidente; dos motos y un furgón",
-      "fuente": "ControlT PM",
-      "vigilar": "0 DITRA / 0 INVÍAS"
-    },
-    {
       "tramo": "Los Santos / 45A",
       "senal": "ControlT persistente: cierre total y restringido para carga pesada por socavón",
-      "fuente": "ControlT PM",
+      "fuente": "ControlT AM",
       "vigilar": "0 DITRA / 0 INVÍAS / 0 concesión"
     },
     {
       "tramo": "Aratoca / 45A",
       "senal": "ControlT persistente: socavón; cierre total y restringido carga pesada",
-      "fuente": "ControlT PM",
+      "fuente": "ControlT AM",
       "vigilar": "0 DITRA / 0 INVÍAS / 0 concesión"
     },
     {
       "tramo": "Calima, Ruta 40",
       "senal": "ControlT persistente: 06:00–20:00 toda clase; nocturno solo emergencias",
-      "fuente": "ControlT PM",
+      "fuente": "ControlT AM",
       "vigilar": "0 INVÍAS / 0 DITRA de ese punto; no fusionar con Yolomba"
     },
     {
       "tramo": "El Carmen (Norte de Santander)",
       "senal": "ControlT persistente: 20:00–05:00 motos y carga pesada, septiembre, por orden público",
-      "fuente": "ControlT PM",
+      "fuente": "ControlT AM",
       "vigilar": "0 DITRA / 0 Policía de ventana / 0 concesión"
     }
   ],
   "alertas_inmediatas": [],
   "salud_fuentes": {
-    "estado_general": "estable",
+    "estado_general": "degradada",
     "ventanas_esperadas": [
       "AM",
       "MD",
       "PM"
     ],
     "ventanas_recibidas": [
-      "AM",
-      "MD",
-      "PM"
+      "AM"
     ],
     "eventos_confirmados": 0,
     "eventos_vigilancia": 0,
@@ -320,42 +298,16 @@
   "eventos_confirmados": [],
   "eventos_vigilancia": [],
   "historial_corredores": {
-    "periodo_inicio": "2026-09-06",
-    "periodo_fin": "2026-09-12",
+    "periodo_inicio": "2026-09-07",
+    "periodo_fin": "2026-09-13",
     "metodologia": "Días distintos por corredor; confirmado exige estado activo y confianza mínima de 0,65.",
     "corredores": []
   },
   "cambios_dia": [
     {
-      "cut_id": "2026-09-12-am",
+      "cut_id": "2026-09-13-am",
       "hora": "07:00",
       "ventana": "AM",
-      "tipo": "corte_final",
-      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
-      "conteos": {
-        "nuevos": 0,
-        "persistentes": 0,
-        "resueltos": 0,
-        "por_verificar": 0
-      }
-    },
-    {
-      "cut_id": "2026-09-12-md",
-      "hora": "12:00",
-      "ventana": "MD",
-      "tipo": "corte_final",
-      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
-      "conteos": {
-        "nuevos": 0,
-        "persistentes": 0,
-        "resueltos": 0,
-        "por_verificar": 0
-      }
-    },
-    {
-      "cut_id": "2026-09-12-pm",
-      "hora": "17:00",
-      "ventana": "PM",
       "tipo": "corte_final",
       "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
       "conteos": {
