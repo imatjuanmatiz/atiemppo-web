@@ -159,6 +159,7 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:56px 28px 34px;margin-top:
       <a href="/#productos">Productos</a>
       <a href="/novedades-en-vias/">Novedades en Vías</a>
       <a href="/reportes/">Reportes</a>
+      <a href="/conferencias/">Conferencias</a>
       <a href="/blog/" class="active">Blog</a>
       <a href="/en/blog/" class="lang-switch" aria-label="View in English">EN</a>
       <a href="/#contacto" class="nav-cta">Hablemos <span class="dot"></span></a>
@@ -171,6 +172,7 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:56px 28px 34px;margin-top:
   <a href="/#productos" onclick="closeMenu()">Productos</a>
   <a href="/novedades-en-vias/" onclick="closeMenu()">Novedades en Vías</a>
   <a href="/reportes/" onclick="closeMenu()">Reportes</a>
+  <a href="/conferencias/" onclick="closeMenu()">Conferencias</a>
   <a href="/blog/" onclick="closeMenu()">Blog</a>
   <a href="/en/blog/" onclick="closeMenu()">English</a>
   <a href="/#contacto" onclick="closeMenu()">Hablemos</a>
@@ -181,7 +183,7 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:56px 28px 34px;margin-top:
     <div class="grid-bg" aria-hidden="true"></div>
     <div class="badge"><span class="dot"></span> Laboratorio en Vivo</div>
     <h1>Avances, experimentos y aprendizajes.</h1>
-    <p>Piezas cortas que dan contexto a cada proyecto vivo de ATIEMPPO: SICETAC, El Dato Logístico, La Comunidad, Insignia Impact y más.</p>
+    <p>Piezas cortas que dan contexto al trabajo de ATIEMPPO: logística, conferencias, datos, IA aplicada, Reportes Vivos y más.</p>
   </section>
 
   <div class="blog-main">
@@ -226,6 +228,7 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:56px 28px 34px;margin-top:
         <a href="/#productos">Productos</a>
         <a href="/novedades-en-vias/">Novedades en Vías</a>
         <a href="/reportes/">Reportes</a>
+        <a href="/conferencias/">Conferencias</a>
         <a href="/blog/">Blog</a>
         <a href="/#contacto">Hablemos</a>
       </div>
@@ -254,7 +257,8 @@ const CATC={
   'la comunidad':['rgba(124,58,180,.13)','#6d34a0'],
   'la herramienta':['rgba(60,72,90,.1)','#3a4456'],
   'atica':['rgba(42,111,219,.14)','#2156b8'],
-  'sicetac-lab':['rgba(0,184,107,.14)','#00925a']
+  'sicetac-lab':['rgba(0,184,107,.14)','#00925a'],
+  'conferencias':['rgba(180,120,20,.14)','#9a6a10']
 };
 function catColor(c){return CATC[(c||'').trim()]||['rgba(14,44,77,.1)','#0E2C4D'];}
 

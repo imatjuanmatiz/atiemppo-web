@@ -247,12 +247,16 @@
   var contactForm = document.getElementById("contactForm");
   if (contactForm) {
     var serviceSelect = contactForm.querySelector('[name="servicio"]');
-    if (serviceSelect && !Array.prototype.some.call(serviceSelect.options, function (option) { return option.value === "reportes-vivos"; })) {
-      var reportOption = document.createElement("option");
-      reportOption.value = "reportes-vivos";
-      reportOption.textContent = "Reportes Vivos para mi empresa";
-      serviceSelect.appendChild(reportOption);
-    }
+    [
+      { value: "reportes-vivos", text: "Reportes Vivos para mi empresa" },
+      { value: "conferencias", text: "Conferencias para mi evento" }
+    ].forEach(function (item) {
+      if (!serviceSelect || Array.prototype.some.call(serviceSelect.options, function (option) { return option.value === item.value; })) return;
+      var option = document.createElement("option");
+      option.value = item.value;
+      option.textContent = item.text;
+      serviceSelect.appendChild(option);
+    });
     var requestedService = new URLSearchParams(window.location.search).get("servicio");
     if (serviceSelect && requestedService && Array.prototype.some.call(serviceSelect.options, function (option) { return option.value === requestedService; })) {
       serviceSelect.value = requestedService;

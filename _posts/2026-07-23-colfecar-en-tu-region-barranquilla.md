@@ -4,9 +4,9 @@ title: "COLFECAR en tu Región: conversaciones que conectan al transporte desde 
 description: "Juan Pablo Matiz participa en COLFECAR en tu Región, en Barranquilla, un espacio de conocimiento, conversación y networking para el sector transporte."
 date: 2026-07-23 10:10:00 -0500
 author: "Juan Pablo Matiz"
-lab: "ATIEMPPO"
+lab: "Conferencias"
 emoji: "🚚"
-tags: [colfecar, barranquilla, transporte, logística, conocimiento, atiemppo]
+tags: [conferencias, colfecar, barranquilla, transporte, logística, conocimiento, atiemppo]
 image: /assets/images/blog/colfecar-en-tu-region-barranquilla/juan-pablo-matiz-colfecar-barranquilla.jpg
 permalink: /blog/colfecar-en-tu-region-barranquilla/
 ---

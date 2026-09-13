@@ -4,9 +4,9 @@ title: "COLFECAR en tu Región: logística, datos y decisiones desde Cali"
 description: "ATIEMPPO participa en COLFECAR en tu Región en Cali, compartiendo una conversación práctica sobre transporte, datos y mejores decisiones."
 date: 2026-07-28 14:40:00 -0500
 author: "Juan Pablo Matiz"
-lab: "ATIEMPPO"
+lab: "Conferencias"
 emoji: "🚚"
-tags: [colfecar, cali, transporte, logística, datos, atiemppo]
+tags: [conferencias, colfecar, cali, transporte, logística, datos, atiemppo]
 image: /assets/images/blog/colfecar-en-tu-region-cali/juan-pablo-matiz-colfecar-cali.jpg
 permalink: /blog/colfecar-en-tu-region-cali/
 ---
