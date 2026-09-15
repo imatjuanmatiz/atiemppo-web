@@ -2,7 +2,7 @@
 layout: post
 title: "La IA y la tragedia de los comunes: qué no hay que entregar al proveedor"
 description: "Lectura del artículo de Yossi Sheffi en The Supply Chainer y la reflexión en LinkedIn sobre lock-in operativo: capacitarse, entender y decidir qué se externaliza."
-date: 2026-09-15 08:00:00 -0500
+date: 2026-09-15 06:00:00 -0500
 author: "Juan Pablo Matiz"
 lab: "El Dato Logístico"
 emoji: "🧠"
