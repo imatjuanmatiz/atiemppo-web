@@ -62,16 +62,6 @@ Los invito hoy más que nunca a desarrollar un área de innovación y de continu
 
 En ATIEMPPO trabajamos agentes y datos (SICETAC, RNDC, señales operativas) con esa frontera: la IA ayuda a ejecutar; el ownership del criterio se queda en el equipo.
 
-## Para El Dato Logístico
-
-En el reporte semanal conviene citar tres piezas:
-
-1. el [artículo en *The Supply Chainer*](https://www.thesupplychainer.com/post/will-ai-spark-a-new-tragedy-of-the-commons);
-2. [la reflexión en LinkedIn](https://lnkd.in/p/ebe4UFKS);
-3. esta nota en ATIEMPPO.
-
-Así quien lea el boletín llega a la fuente, al comentario operativo y al marco aplicado.
-
 ## Cierre
 
 [Lee el artículo de Yossi Sheffi](https://www.thesupplychainer.com/post/will-ai-spark-a-new-tragedy-of-the-commons) · [Reflexión en LinkedIn](https://lnkd.in/p/ebe4UFKS) · [El Dato Logístico](https://atiemppo.com/eldatologistico/) · [Conoce ATIEMPPO](https://atiemppo.com/)
