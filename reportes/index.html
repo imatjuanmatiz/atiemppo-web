@@ -73,7 +73,7 @@ h1{max-width:860px;margin:0 0 20px;font-family:var(--display);font-size:clamp(46
 .summary{margin:0;color:var(--muted);font-size:14px;line-height:1.65;flex:1}
 .meta{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
 .pill{display:inline-flex;align-items:center;padding:6px 9px;border:1px solid var(--line);border-radius:999px;color:#42556a;font-size:12px;font-weight:750;background:#fbfdff}
-.open{margin-top:auto;color:var(--blue);font-size:13px;font-weight:850;letter-spacing:.1em;text-transform:uppercase}
+.open{margin-top:auto;color:var(--blue);font-size:13px;font-weight:850;letter-spacing:.1em;text-transform:uppercase}.open + .open{margin-top:10px;color:var(--green)}
 .philosophy{padding:0 0 76px}
 .client-cta{padding:58px 0 76px;background:#0d2945;color:#fff}
 .client-cta-inner{display:flex;align-items:end;justify-content:space-between;gap:32px}
@@ -137,7 +137,7 @@ h1{max-width:860px;margin:0 0 20px;font-family:var(--display);font-size:clamp(46
       <div class="report-grid">
         {% assign reports = site.data.reportes | sort: "order" | reverse %}
         {% for report in reports %}
-          <a class="report-card" href="{{ report.url | relative_url }}">
+          <div class="report-card">
             <div class="card-top">
               <span class="status{% if report.status == 'Snapshot' %} snapshot{% endif %}">{{ report.status }}</span>
               <span class="date">Actualizado {{ report.updated_at | date: "%Y-%m-%d" }}</span>
@@ -148,8 +148,9 @@ h1{max-width:860px;margin:0 0 20px;font-family:var(--display);font-size:clamp(46
               <span class="pill">{{ report.category }}</span>
               <span class="pill">{{ report.theme }}</span>
             </div>
-            <div class="open">Explorar reporte</div>
-          </a>
+            <a class="open" href="{{ report.url | relative_url }}">Explorar reporte</a>
+            {% if report.text_url %}<a class="open" href="{{ report.text_url }}">Versión textual para IA (.md)</a>{% endif %}
+          </div>
         {% endfor %}
       </div>
     </div>

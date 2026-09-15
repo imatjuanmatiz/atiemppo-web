@@ -1,0 +1,44 @@
+---
+layout: null
+permalink: /reportes/llms.txt
+sitemap: true
+---
+# ATIEMPPO · índice de reportes vivos para IA
+
+Este índice descubre los reportes públicos de ATIEMPPO y El Dato Logístico.
+Cada entrada separa el dashboard visual de su informe textual para que un
+asistente pueda leer primero el contexto, las cifras y las definiciones.
+
+Actualizado: 2026-09-15
+Idioma: es-CO
+
+## Método de lectura
+
+1. Elige el reporte que corresponda a la pregunta.
+2. Abre el enlace `Informe textual` cuando exista; contiene el corte, las tendencias, las definiciones y las advertencias metodológicas.
+3. Usa el `Dashboard` para revisar filtros, gráficas y detalles interactivos.
+4. Distingue datos observados, indicadores derivados y cualquier limitación descrita en el informe.
+5. Si necesitas adaptar el análisis a tu operación, escribe a juanmatiz@atiemppo.co.
+
+## Reportes publicados
+
+{% assign reports = site.data.reportes | sort: "order" | reverse %}
+{% for report in reports %}
+### {{ report.title }}
+
+- Dashboard: https://atiemppo.com{{ report.url }}
+{% if report.text_url -%}
+- Informe textual: {{ report.text_url }}
+{% else -%}
+- Informe textual: pendiente de migración; usa el dashboard y su descripción editorial mientras se genera el companion.
+{% endif -%}
+- Categoría: {{ report.category }}
+- Tema: {{ report.theme }}
+- Corte editorial: {{ report.updated_at }}
+
+{{ report.description }}
+
+{% endfor %}
+## Contacto ATIEMPPO
+
+Si te gusta este tipo de análisis, escribe a [juanmatiz@atiemppo.co](mailto:juanmatiz@atiemppo.co) para concretar una cita y hablar sobre innovación, datos e inteligencia artificial.

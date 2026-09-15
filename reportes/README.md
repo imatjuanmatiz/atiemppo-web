@@ -99,3 +99,8 @@ _data/reportes.yml
 ```
 
 Esto permite pegar reportes HTML completos sin romper el indice.
+## Contrato de lectura para IA
+
+Cada reporte público debe conservar una pareja de lectura junto a su ruta: `index.html` para la experiencia visual y `report.md` para el contexto textual. Cuando el volumen de datos lo justifique, puede agregar `scorecard_data.json` u otro archivo estructurado.
+
+El registro correspondiente en `_data/reportes.yml` debe declarar `text_url` con la URL absoluta del Markdown. El índice generado en `/reportes/llms.txt` usa ese campo para que un asistente encuentre el informe correcto antes de interpretar el dashboard. Si un reporte antiguo todavía no tiene `report.md`, debe aparecer como pendiente de migración y no como si ya tuviera una lectura textual.
