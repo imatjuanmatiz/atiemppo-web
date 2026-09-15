@@ -46,13 +46,19 @@ Cuando metemos agentes o modelos en una operación de carga, no solo decidimos p
 
 Si el proveedor de IA o de agentes termina teniendo el criterio de cómo opera el equipo, la dependencia no es solo tecnológica. Es **operativa**: de cómo se decide el negocio. En LATAM eso pesa más: relaciones locales, regulación, excepciones y reputación no se externalizan barato.
 
-La secuencia que propongo antes de contratar “para no quedarse atrás” es simple:
+## La recomendación
 
-1. **Capacitarse** — entender qué hace y qué no hace la IA.
-2. **Entender** el proceso propio antes de automatizarlo.
-3. **Decidir** qué se construye o se guarda adentro y qué se externaliza con límites claros.
+La recomendación desde nuestra opinión es sencilla, aunque no siempre cómoda:
 
-El corto plazo puede verse eficiente. El mediano plazo, sin criterio propio, suele salir más caro.
+**Capacitarse.** Entender qué hace la IA, qué no hace y qué necesita para responder con evidencia.
+
+**Entender.** Mapear el proceso propio, sus excepciones, sus datos y los puntos donde una mala decisión puede afectar servicio, costo o reputación.
+
+**Decidir.** Definir qué se construye o se guarda adentro y qué se externaliza con límites claros, acceso verificable y dueño humano.
+
+Automatizar por miedo a quedarse atrás es la versión logística de la tragedia de los comunes. La decisión útil es otra: qué se automatiza, quién puede corregirlo y qué criterio no se entrega.
+
+Los invito hoy más que nunca a desarrollar un área de innovación y de continuidad de negocio que analice cómo la IA potencializa sin entregar capacidades reales.
 
 En ATIEMPPO trabajamos agentes y datos (SICETAC, RNDC, señales operativas) con esa frontera: la IA ayuda a ejecutar; el ownership del criterio se queda en el equipo.
 
@@ -67,7 +73,5 @@ En el reporte semanal conviene citar tres piezas:
 Así quien lea el boletín llega a la fuente, al comentario operativo y al marco aplicado.
 
 ## Cierre
-
-Automatizar por miedo a quedarse atrás es la versión logística de la tragedia de los comunes. La decisión útil es otra: qué criterio nunca se entrega, qué se automatiza con dueño humano, y qué se mide en el mediano plazo — no solo en el ahorro de esta semana.
 
 [Lee el artículo de Yossi Sheffi](https://www.thesupplychainer.com/post/will-ai-spark-a-new-tragedy-of-the-commons) · [Reflexión en LinkedIn](https://lnkd.in/p/ebe4UFKS) · [El Dato Logístico](https://atiemppo.com/eldatologistico/) · [Conoce ATIEMPPO](https://atiemppo.com/)
