@@ -10,12 +10,42 @@ Este reporte hace parte de lo que hacemos en ATIEMPPO: ayudamos a que los datos 
 
 ## Lectura acumulada ene–ago
 
+La lectura principal conserva **todos los movimientos RNDC**: intermunicipales y urbanos (origen = destino).
+
 | Indicador | 2026 | 2025 | Variación |
 |---|---:|---:|---:|
 | Valores pagados (COP) | 16.098.802.170.713 | 14.286.938.577.915 | +12.7% |
 | Toneladas | 111.393.419,8 | 100.067.172,2 | +11.3% |
 | Viajes | 9.677.564 | 8.579.877 | +12.8% |
 | Valor por tonelada (COP/t) | 144.522 | 142.773 | +1.2% |
+
+## Lectura específica excluyendo movimientos urbanos
+
+Los movimientos urbanos (origen = destino) ya aparecen en meses anteriores, pero su volumen aumenta fuertemente desde mayo de 2026 y se acentúa desde junio. Como ese componente no tiene la misma lógica de recorrido que un viaje intermunicipal, puede elevar artificialmente toneladas, viajes y valores cuando se compara la serie completa con meses anteriores. Esta lectura recalcula el mismo acumulado dejando solo movimientos intermunicipales.
+
+| Indicador acumulado | 2026 todos | 2026 intermunicipal | 2025 todos | 2025 intermunicipal |
+|---|---:|---:|---:|---:|
+| Valores pagados (COP) | 16.098.802.170.713 | 15.342.346.838.964 | 14.286.938.577.915 | 14.093.130.630.437 |
+| Toneladas | 111.393.419,8 | 102.944.016,7 | 100.067.172,2 | 99.036.177,0 |
+| Viajes | 9.677.564 | 8.534.973 | 8.579.877 | 8.478.207 |
+| Valor por tonelada (COP/t) | 144.522 | 149.036 | 142.773 | 142.303 |
+
+En el acumulado 2026, los urbanos representan 7,6% de las toneladas y 11,8% de los viajes. La diferencia entre las columnas permite separar el crecimiento real de los corredores intermunicipales del efecto de incorporar actividad urbana.
+
+### Señal mensual del componente urbano en 2026
+
+| Mes | Viajes urbanos | Toneladas urbanas | Participación de toneladas del mes |
+|---|---:|---:|---:|
+| ene 2026 | 15.590 | 157.915,7 | 1,3% |
+| feb 2026 | 14.371 | 150.062,0 | 1,2% |
+| mar 2026 | 15.023 | 147.036,0 | 1,1% |
+| abr 2026 | 14.909 | 158.614,1 | 1,3% |
+| may 2026 | 178.171 | 1.335.371,0 | 9,3% |
+| jun 2026 | 283.622 | 2.058.536,2 | 13,6% |
+| jul 2026 | 313.117 | 2.238.744,4 | 13,6% |
+| ago 2026 | 307.788 | 2.203.123,8 | 14,1% |
+
+La vista completa sigue siendo la lectura oficial del tablero; la vista intermunicipal es una prueba de sensibilidad para evaluar la posible distorsión y debe usarse cuando se comparen tendencias homogéneas entre años.
 
 ## Serie mensual observada
 
@@ -87,6 +117,7 @@ La serie usa las 100 rutas 3S3 intermunicipales con mayor tonelaje acumulado 202
 ## Filtros y alcance
 
 - El dashboard permite incluir todos los movimientos, incluir urbanos (origen = destino) o excluir urbanos.
+- La serie y los KPI principales muestran todos los movimientos; el bloque de sensibilidad del informe Markdown muestra también el recálculo intermunicipal.
 - Las toneladas son kilogramos RNDC divididos por 1.000.
 - El valor por tonelada es descriptivo: valores pagados RNDC divididos por toneladas reportadas.
 - La referencia SICETAC H8 es un valor de referencia 2026 por ruta y configuración; no es el valor pagado RNDC.
