@@ -3,7 +3,7 @@
 
   var priorityData = {
   "decision": {
-    "chapter": "01",
+    "chapter": "03",
     "title": "What is happening in your market?",
     "description": "A growth opportunity, a warehouse location or a network that needs to change. We work with you to compare the options and understand what they mean for your business.",
     "outcomes": [
@@ -26,7 +26,7 @@
     ]
   },
   "data": {
-    "chapter": "02",
+    "chapter": "01",
     "title": "Work with data for your routes.",
     "description": "Look up a transport reference value, use the SICETAC database in your analysis or track changes in your network costs. Choose the service you need.",
     "outcomes": [
@@ -49,23 +49,23 @@
     ]
   },
   "ai": {
-    "chapter": "03",
-    "title": "Bring a task you want to improve.",
-    "description": "Prepare a report, analyze a file or find information. With Profe Bruno and our workshops, you learn to use AI on something from your own work.",
+    "chapter": "02",
+    "title": "AI accompaniment for companies",
+    "description": "Prepare a report, analyze a file or find information. With ATIEMPPO and our workshops, you learn to use AI on something from your own work.",
     "outcomes": [
-      "Profe Bruno for guided learning.",
+      "Human guidance and continuity with Bruno.",
       "Workshops built around a task from your team.",
       "Sessions for executives exploring where to start."
     ],
     "serviceUrl": "#experiencias",
     "serviceCta": "Explore learning options",
     "category": "Applied learning",
-    "product": "Profe Bruno",
+    "product": "AI accompaniment",
     "productDescription": "Learn to explain what you need, work with your materials and check the result. From there, we can explore how an agent could repeat the task.",
     "productImage": "/assets/images/atiemppo/mesa-trabajo-ia.png",
     "productAlt": "Illustration of a workspace with artificial intelligence tools",
     "productUrl": "/en/?servicio=profe-bruno#contacto",
-    "productCta": "Learn with Profe Bruno",
+    "productCta": "Plan AI accompaniment",
     "proof": [
       "A task of your own",
       "Guided practice"
@@ -138,6 +138,7 @@
   if (contactForm) {
     var serviceSelect = contactForm.querySelector('[name="servicio"]');
     var requestedService = new URLSearchParams(window.location.search).get("servicio");
+    if (requestedService === "profe-bruno") requestedService = "acompanamiento-ia";
     if (serviceSelect && requestedService && Array.prototype.some.call(serviceSelect.options, function (option) { return option.value === requestedService; })) {
       serviceSelect.value = requestedService;
     }

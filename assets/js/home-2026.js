@@ -2,73 +2,73 @@
   "use strict";
 
   var priorityData = {
-  "decision": {
-    "chapter": "01",
-    "title": "¿Qué está pasando en tu mercado?",
-    "description": "Una oportunidad de crecimiento, una bodega por ubicar o una red que necesita cambiar. Investigamos contigo para comparar opciones y entender qué implican para tu empresa.",
-    "outcomes": [
-      "Estudios de mercado y prospectiva.",
-      "Diseño de redes y alternativas de localización.",
-      "Costos, operación y política de transporte."
-    ],
-    "serviceUrl": "/consultoria/",
-    "serviceCta": "Encuentra tu consultoría",
-    "category": "Un ejemplo de nuestro trabajo",
-    "product": "Los datos también se pueden recorrer",
-    "productDescription": "Abre un reporte y explora sus mapas, rutas e indicadores. Así puedes conocer una de las formas en que presentamos un análisis.",
-    "productImage": "/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png",
-    "productAlt": "Ejemplo de un reporte SICETAC con variaciones por ruta",
-    "productUrl": "/reportes/",
-    "productCta": "Explorar los reportes",
-    "proof": [
-      "Mapas e indicadores",
-      "Análisis para consultar"
-    ]
-  },
   "data": {
-    "chapter": "02",
-    "title": "Trabaja con los datos de tus rutas.",
-    "description": "Consulta una referencia de transporte, lleva la base SICETAC a tus análisis o sigue los cambios en los costos de tu red. Elige el servicio que necesitas.",
+    "chapter": "01",
+    "title": "Inteligencia y planeación de transporte",
+    "description": "Datos, análisis, herramientas y agentes para entender tu red, preparar presupuestos y responder con mayor agilidad.",
     "outcomes": [
-      "Una consulta para una ruta.",
-      "Una base para trabajar con muchas rutas.",
-      "Un índice para seguir los cambios de tu red."
+      "Base SICETAC actualizada.",
+      "Homologación e Índice de Red.",
+      "Sesiones especializadas y servicios de agentes."
     ],
-    "serviceUrl": "#soluciones",
-    "serviceCta": "Elegir un servicio SICETAC",
-    "category": "Para trabajar con tus datos",
-    "product": "Base SICETAC",
-    "productDescription": "Información estructurada para cruzar con las rutas de tu empresa y preparar tus propios análisis. Puedes solicitar una entrega puntual o recurrente.",
+    "serviceUrl": "/inteligencia-planeacion-transporte/",
+    "serviceCta": "Explorar inteligencia y planeación",
+    "category": "Información lista para usar",
+    "product": "Base SICETAC actualizada",
+    "productDescription": "Información lista para cruzar con tus archivos y preparar análisis. Acceso recurrente o entrega puntual.",
     "productImage": "/assets/images/atiemppo/cover-base.png",
-    "productAlt": "Presentación de la Base SICETAC de ATIEMPPO",
+    "productAlt": "Base SICETAC actualizada",
     "productUrl": "/?servicio=base-sicetac#contacto",
     "productCta": "Solicitar la base",
     "proof": [
-      "Entrega puntual o recurrente",
-      "Cruce con tus rutas"
+      "Corte identificado",
+      "Acceso puntual o recurrente"
     ]
   },
   "ai": {
-    "chapter": "03",
-    "title": "Trae una tarea que quieras hacer mejor.",
-    "description": "Preparar un informe, analizar un archivo o encontrar información. Con Profe Bruno y nuestros talleres aprendes a usar la IA sobre algo que forma parte de tu trabajo.",
+    "chapter": "02",
+    "title": "Acompañamiento en IA para empresas",
+    "description": "Formación práctica, dirección humana y continuidad con Bruno para desarrollar capacidades propias y conservar el conocimiento de tu empresa.",
     "outcomes": [
-      "Profe Bruno para aprender con acompañamiento.",
-      "Talleres para trabajar sobre un caso de tu equipo.",
-      "Sesiones para gerentes que quieren explorar dónde empezar."
+      "Talleres para directivos y equipos.",
+      "Proyectos, reglas y fuentes documentadas.",
+      "Seguimiento humano y agéntico entre sesiones."
     ],
-    "serviceUrl": "#experiencias",
-    "serviceCta": "Conocer las opciones para aprender",
-    "category": "Aprendizaje aplicado",
-    "product": "Profe Bruno",
-    "productDescription": "Aprende a explicar lo que necesitas, trabajar con tus materiales y revisar el resultado. A partir de ahí podemos explorar cómo repetir una tarea con un agente.",
+    "serviceUrl": "/acompanamiento-ia/",
+    "serviceCta": "Conocer el acompañamiento",
+    "category": "Gestión de innovación aplicada",
+    "product": "Capacidades propias para tu equipo",
+    "productDescription": "Aprende a formular necesidades, crear y revisar tus primeros agentes y conservar fuentes, reglas y memoria dentro de tu organización.",
     "productImage": "/assets/images/atiemppo/mesa-trabajo-ia.png",
-    "productAlt": "Ilustración de una mesa de trabajo con herramientas de inteligencia artificial",
-    "productUrl": "/?servicio=profe-bruno#contacto",
-    "productCta": "Quiero aprender con Profe Bruno",
+    "productAlt": "Trabajo en equipo con inteligencia artificial",
+    "productUrl": "/?servicio=acompanamiento-ia#contacto",
+    "productCta": "Diseñar el acompañamiento",
     "proof": [
-      "Una tarea propia",
-      "Práctica acompañada"
+      "Formación práctica",
+      "Continuidad con Bruno"
+    ]
+  },
+  "decision": {
+    "chapter": "03",
+    "title": "Consultoría especializada",
+    "description": "Experiencia sectorial, investigación, datos, herramientas y agentes para convertir preguntas complejas en decisiones sustentadas.",
+    "outcomes": [
+      "Estudios de mercado y prospectiva.",
+      "Redes, localización y costos.",
+      "Evidencia, alternativas y hoja de ruta."
+    ],
+    "serviceUrl": "/consultoria/",
+    "serviceCta": "Conversar sobre mi reto",
+    "category": "Capacidad transversal",
+    "product": "Análisis acelerado, criterio humano",
+    "productDescription": "Combinamos el conocimiento de ATIEMPPO con herramientas y agentes para investigar, contrastar y recomendar un camino.",
+    "productImage": "/assets/images/generated/atiemppo-lectura-mercado.png",
+    "productAlt": "Territorio y escenarios de mercado",
+    "productUrl": "/consultoria/",
+    "productCta": "Explorar la consultoría",
+    "proof": [
+      "Fuentes trazables",
+      "Resultados revisados"
     ]
   }
 };
@@ -76,7 +76,7 @@
   var serviceData = {
     consulting: {
       eyebrow: "Servicio 01",
-      title: "Consultoría para decidir mejor",
+      title: "Consultoría especializada",
       description: "Convertimos preguntas de transporte, logística y supply chain en decisiones sustentadas con datos, escenarios comparables, fuentes especializadas y revisión humana.",
       capabilities: ["Redes, costos y escenarios", "Mercados, nodos y corredores", "Salida ejecutiva y soporte técnico"],
       image: "/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png",
@@ -85,17 +85,17 @@
     },
     training: {
       eyebrow: "Servicio 02",
-      title: "Capacitación para la era de la IA",
+      title: "Acompañamiento en IA para empresas",
       description: "El equipo pasa de conversar con una IA a dirigir agentes sobre tareas de transporte con propósito, fuentes, límites y revisión.",
       capabilities: ["Caso real del equipo", "Práctica acompañada", "Capacidad transferible"],
       image: "/assets/images/atiemppo/mesa-trabajo-ia.png",
       alt: "Mesa de trabajo de capacitación con inteligencia artificial",
-      url: "/formacion/profe-bruno-ia-aplicada/"
+      url: "/acompanamiento-ia/"
     },
     factory: {
       eyebrow: "Servicio 03",
-      title: "Fábrica de Agentes",
-      description: "Diseñamos y construimos agentes especializados para una operación concreta, con criterios de aceptación y control humano.",
+      title: "ATIEMPPO Agéntica",
+      description: "Aplicamos nuestra experiencia con agentes al análisis, la formación y la consultoría. El desarrollo técnico se acuerda como alcance adicional.",
       capabilities: ["Caso y alcance", "Fuentes y herramientas", "Prueba y trazabilidad"],
       image: "/assets/images/blog/bruno-openclaw/bruno-discord-hq-orquestador.png",
       alt: "Centro de orquestación de agentes de Bruno",
@@ -258,6 +258,7 @@
       serviceSelect.appendChild(option);
     });
     var requestedService = new URLSearchParams(window.location.search).get("servicio");
+    if (requestedService === "profe-bruno") requestedService = "acompanamiento-ia";
     if (serviceSelect && requestedService && Array.prototype.some.call(serviceSelect.options, function (option) { return option.value === requestedService; })) {
       serviceSelect.value = requestedService;
     }
