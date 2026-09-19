@@ -2,17 +2,24 @@
   "schema_version": "1.2",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-09-13-am",
-  "fecha": "2026-09-13",
+  "cut_id": "2026-09-19-am",
+  "fecha": "2026-09-19",
   "ventana": "AM",
   "hora": "07:00",
-  "generado_en": "2026-09-13T07:00:00",
-  "artefacto_fuente": "2026-09-13-editor-eldato-version-vias-colombia-am.md",
+  "generado_en": "2026-09-19T07:00:00",
+  "artefacto_fuente": "2026-09-19-editor-eldato-version-vias-colombia-am.md",
   "que_cambio": [],
   "notas_cambio": [
     "Este corte es el listado base del día. MD y PM miden el cambio contra esta mañana, no contra el mismo corredor del corte anterior."
   ],
   "listado": [
+    {
+      "icono": "🔴",
+      "corredor": "Paz de Ariporo–La Cabuya (por homologar)",
+      "km": "",
+      "estado": "cierre total — inundación y pérdida de banca; sin alterna en el punto — no despachar",
+      "fuente": ""
+    },
     {
       "icono": "🔴",
       "corredor": "La Unión–La Victoria",
@@ -45,7 +52,7 @@
       "icono": "🔴",
       "corredor": "Libertadores Sácama–La Cabuya",
       "km": "",
-      "estado": "cierre total — puente y lodo; sin alterna — no despachar",
+      "estado": "cierre total — puente y pérdida de banca en PR 12/13/16; sin alterna — no despachar",
       "fuente": ""
     },
     {
@@ -77,24 +84,59 @@
       "fuente": ""
     },
     {
+      "icono": "🔴",
+      "corredor": "Acceso a Cúcuta / Sardinata–El Zulia (por homologar)",
+      "km": "",
+      "estado": "cierre total — árbol sobre la calzada; sin alterna — no despachar",
+      "fuente": ""
+    },
+    {
+      "icono": "🔴",
+      "corredor": "Las Ánimas–Bogotá",
+      "km": "",
+      "estado": "cierre total — deslizamiento y árbol en Pueblo Viejo; sin alterna — no despachar",
+      "fuente": ""
+    },
+    {
+      "icono": "🟠",
+      "corredor": "Puerto López–Puerto Gaitán",
+      "km": "",
+      "estado": "paso controlado — un carril en Río Metica por mantenimiento; Fazenda Aliar y Rancho La Gloria a un carril — circular con demora, no es corredor cerrado",
+      "fuente": ""
+    },
+    {
+      "icono": "🟠",
+      "corredor": "Villavicencio–Puerto López (por homologar)",
+      "km": "",
+      "estado": "paso controlado — un carril PR08+800 por vehículo varado — circular con demora, no es corredor cerrado",
+      "fuente": ""
+    },
+    {
       "icono": "🟠",
       "corredor": "Accesos a Yopal / El Crucero–Aguazul",
       "km": "",
-      "estado": "paso controlado — un carril por caída de roca; el lodo en El Crucero quedó habilitado — circular con demora, no es corredor cerrado",
+      "estado": "paso controlado — un carril por caída de roca en PR 115 y en PR 64 Pajarito; el lodo en El Crucero quedó habilitado — circular con demora, no es corredor cerrado",
+      "fuente": ""
+    },
+    {
+      "icono": "🟠",
+      "corredor": "Chocontá–Tunja / Troncal Central del Norte (por homologar)",
+      "km": "",
+      "estado": "paso controlado — un carril por árbol — circular con demora, no es corredor cerrado",
       "fuente": ""
     },
     {
       "icono": "🟠",
       "corredor": "Ibagué–Cajamarca / La Línea",
       "km": "",
-      "estado": "paso controlado — cierres totales intermitentes ~1 h por trasiego de GLP; 2ª calzada Los Osos; PMT un carril en la 2ª calzada — programar despacho; no es corredor cerrado de forma continua",
+      "estado": "paso controlado — cierre parcial Perales PR 37–38; 2ª calzada Los Osos; PMT un carril — programar despacho; no es corredor cerrado de forma continua",
       "fuente": ""
     },
     {
       "icono": "🟠",
       "corredor": "Ibagué–Espinal",
       "km": "",
-      "estado": "cierre parcial — Variante Picaleña cerrada en El Rodeo por manifestación (hay alterna por la antigua); un carril en Payandé — circular por la 40TLC, no es corredor cerrado",
+      "estado": "cierre parcial — Variante Picaleña cerrada en El Rodeo por manifestación (hay alterna por la antigua); PMT un carril en Variante Ibagué, Picaleña y Chicoral — circular por la 40TLC, no es corredor cerrado",
       "fuente": ""
     },
     {
@@ -115,7 +157,7 @@
       "icono": "🟠",
       "corredor": "Bogotá–Villavicencio",
       "km": "",
-      "estado": "cierre parcial — k50+100 sentido Bogotá–Villavicencio por siniestro en puente metálico; mix PMT en el resto — no despachar en ese sentido hasta habilitación",
+      "estado": "cierre puntual — K44+700 y peaje Naranjal por falla de recaudo; k50+100 sigue; mix PMT en el resto — no despachar hasta habilitación",
       "fuente": ""
     },
     {
@@ -155,37 +197,16 @@
     },
     {
       "icono": "🟠",
-      "corredor": "Villavicencio–Puerto López",
-      "km": "",
-      "estado": "paso controlado — un carril en El Carajo por incidente vial — circular con demora",
-      "fuente": ""
-    },
-    {
-      "icono": "🟠",
-      "corredor": "Puerto López–Puerto Gaitán",
-      "km": "",
-      "estado": "paso controlado — un carril en Río Metica y Hacienda Mundo Nuevo — circular con demora",
-      "fuente": ""
-    },
-    {
-      "icono": "🟠",
       "corredor": "Puerto Salgar–Barrancabermeja (por homologar)",
       "km": "",
-      "estado": "paso controlado — calzada N/S cerrada en El Maranal por volcamiento; PMT 24 h y un carril en Tierra Adentro, San Cayetano y La Legía — circular con demora, no es corredor cerrado",
+      "estado": "paso controlado — paso intermitente El Maranal km 73; calzada S Puerto Gutiérrez; PMT 24 h — circular con demora, no es corredor cerrado",
       "fuente": ""
     },
     {
       "icono": "🟠",
       "corredor": "Accesos norte / Zipaquirá–Cajicá (por homologar)",
       "km": "",
-      "estado": "paso controlado — berma Refisal — circular con demora, no es corredor cerrado",
-      "fuente": ""
-    },
-    {
-      "icono": "🟠",
-      "corredor": "Las Ánimas–Bogotá",
-      "km": "",
-      "estado": "cierre parcial — un carril en Mumbú–Santa Cecilia — circular con demora",
+      "estado": "paso controlado — berma Refisal; topografía km 5 sin parte de habilitación total — circular con demora, no es corredor cerrado",
       "fuente": ""
     },
     {
@@ -206,7 +227,7 @@
       "icono": "🟠",
       "corredor": "Ruta del Sol / Variante Pueblo Nuevo",
       "km": "",
-      "estado": "cierre parcial — un carril (21 ago–19 sep)",
+      "estado": "cierre parcial — un carril (21 ago–5 dic)",
       "fuente": ""
     },
     {
@@ -250,30 +271,44 @@
       "km": "",
       "estado": "paso controlado — árboles a un carril en dos puntos — circular con demora",
       "fuente": ""
+    },
+    {
+      "icono": "🟠",
+      "corredor": "Transversal Depresión Momposina / Mompós–Guamal (por homologar)",
+      "km": "",
+      "estado": "paso controlado — un carril por árbol — circular con demora, no es corredor cerrado",
+      "fuente": ""
+    },
+    {
+      "icono": "🟠",
+      "corredor": "Transversal Depresión Momposina / Puerta de Hierro–Magangué–Yatí (por homologar)",
+      "km": "",
+      "estado": "paso controlado — un carril por árbol — circular con demora, no es corredor cerrado",
+      "fuente": ""
     }
   ],
   "senales_tempranas": [
     {
-      "tramo": "Los Santos / 45A",
-      "senal": "ControlT persistente: cierre total y restringido para carga pesada por socavón",
+      "tramo": "Alto del Vino / La Vega",
+      "senal": "ControlT NUEVA: accidente en el alto del vino llegando a La Vega",
       "fuente": "ControlT AM",
-      "vigilar": "0 DITRA / 0 INVÍAS / 0 concesión"
+      "vigilar": "0 concesión / 0 DITRA de calzada"
     },
     {
-      "tramo": "Aratoca / 45A",
-      "senal": "ControlT persistente: socavón; cierre total y restringido carga pesada",
+      "tramo": "Alto de Calima / Dagua",
+      "senal": "ControlT NUEVA: choque de tres tractocamiones, solo daños; sentido Loboguerrero–Buga",
       "fuente": "ControlT AM",
-      "vigilar": "0 DITRA / 0 INVÍAS / 0 concesión"
+      "vigilar": "0 CaminoPacífico AM"
     },
     {
-      "tramo": "Calima, Ruta 40",
-      "senal": "ControlT persistente: 06:00–20:00 toda clase; nocturno solo emergencias",
+      "tramo": "Santo Domingo / Medellín–Bucaramanga",
+      "senal": "ControlT persistente: accidente volqueta–carrotanque; carril cerrado",
       "fuente": "ControlT AM",
-      "vigilar": "0 INVÍAS / 0 DITRA de ese punto; no fusionar con Yolomba"
+      "vigilar": "0 concesión de ventana"
     },
     {
       "tramo": "El Carmen (Norte de Santander)",
-      "senal": "ControlT persistente: 20:00–05:00 motos y carga pesada, septiembre, por orden público",
+      "senal": "ControlT persistente: 20:00–05:00 motos y carga pesada, septiembre",
       "fuente": "ControlT AM",
       "vigilar": "0 DITRA / 0 Policía de ventana / 0 concesión"
     }
@@ -298,14 +333,14 @@
   "eventos_confirmados": [],
   "eventos_vigilancia": [],
   "historial_corredores": {
-    "periodo_inicio": "2026-09-07",
-    "periodo_fin": "2026-09-13",
+    "periodo_inicio": "2026-09-13",
+    "periodo_fin": "2026-09-19",
     "metodologia": "Días distintos por corredor; confirmado exige estado activo y confianza mínima de 0,65.",
     "corredores": []
   },
   "cambios_dia": [
     {
-      "cut_id": "2026-09-13-am",
+      "cut_id": "2026-09-19-am",
       "hora": "07:00",
       "ventana": "AM",
       "tipo": "corte_final",
