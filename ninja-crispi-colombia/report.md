@@ -328,4 +328,4 @@ Positiva · Referente: Sin referente explícito
 - Separar reacciones positivas, deseo, dudas, soporte y señales de compra; no inferir ventas.
 - La respuesta puede explicar qué repetir, responder o verificar, indicando límites de cobertura.
 
-SHA-256 del snapshot fuente: `47b639efaf6d4299ffcb9db252bab1c3539723acd723c767566cd394beacbc55`. Los archivos de esta publicación comparten corte e identidad.
+SHA-256 del snapshot fuente: `78a424f148dbbf7d184976f5c78b5bc2bc0fa3a3dab8b279a67833560bbb77fa`. Los archivos de esta publicación comparten corte e identidad.
