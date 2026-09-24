@@ -2,7 +2,7 @@
 
 **Corte de datos: 24/09/2026 07:34:41 Colombia (UTC−5)**. Cobertura pública parcial.
 
-Generación de esta versión: 24/09/2026 07:34:51 Colombia (UTC−5). No equivale a una nueva captura.
+Generación de esta versión: 24/09/2026 07:36:55 Colombia (UTC−5). No equivale a una nueva captura.
 
 Ventana: publicaciones desde el 23/09/2026 00:00 Colombia, más excepciones aprobadas. Instagram y TikTok. Fuente: capturas públicas Apify y enlaces de Equipo Pangea. Cálculos ATIEMPPO.
 
@@ -340,4 +340,4 @@ Positiva · Referente: Receta / contenido
 - Separar reacciones positivas, deseo, dudas, soporte y señales de compra; no inferir ventas.
 - La respuesta puede explicar qué repetir, responder o verificar, indicando límites de cobertura.
 
-SHA-256 del snapshot fuente: `68b8702995fb27b5f8d9ef9cf0ba5375f3507733ce55b8d8a2e51ac00d114409`. Los archivos de esta publicación comparten corte e identidad.
+SHA-256 del snapshot fuente: `c56d5b4fbb8b1b4abd92ed632cd115016483ff1068a3476159d93dd6bf9b0de0`. Los archivos de esta publicación comparten corte e identidad.
