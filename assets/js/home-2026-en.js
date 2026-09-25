@@ -34,7 +34,7 @@
       "A dataset for working with many routes.",
       "An index to track changes in your network."
     ],
-    "serviceUrl": "#soluciones",
+    "serviceUrl": "/en/inteligencia-planeacion-transporte/",
     "serviceCta": "Choose a SICETAC service",
     "category": "For your own analysis",
     "product": "SICETAC Database",
@@ -50,22 +50,22 @@
   },
   "ai": {
     "chapter": "02",
-    "title": "AI accompaniment for companies",
+    "title": "AI productivity for companies",
     "description": "Prepare a report, analyze a file or find information. With ATIEMPPO and our workshops, you learn to use AI on something from your own work.",
     "outcomes": [
       "Human guidance and continuity with Bruno.",
       "Workshops built around a task from your team.",
       "Sessions for executives exploring where to start."
     ],
-    "serviceUrl": "#experiencias",
-    "serviceCta": "Explore learning options",
+    "serviceUrl": "/en/acompanamiento-ia/",
+    "serviceCta": "Explore the AI adoption program",
     "category": "Applied learning",
-    "product": "AI accompaniment",
-    "productDescription": "Learn to explain what you need, work with your materials and check the result. From there, we can explore how an agent could repeat the task.",
+    "product": "AI productivity",
+    "productDescription": "Learn to prioritize a task, define and test an AI project, document the procedure and share what you learn with your team.",
     "productImage": "/assets/images/atiemppo/mesa-trabajo-ia.png",
     "productAlt": "Illustration of a workspace with artificial intelligence tools",
-    "productUrl": "/en/?servicio=profe-bruno#contacto",
-    "productCta": "Plan AI accompaniment",
+    "productUrl": "/en/?servicio=acompanamiento-ia#contacto",
+    "productCta": "Plan AI productivity",
     "proof": [
       "A task of your own",
       "Guided practice"

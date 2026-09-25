@@ -26,34 +26,84 @@ render_with_liquid: false
 <link rel="alternate" hreflang="es" href="https://atiemppo.com/enfoque/"/>
 <link rel="alternate" hreflang="en" href="https://atiemppo.com/en/"/>
 <link rel="alternate" hreflang="x-default" href="https://atiemppo.com/enfoque/"/>
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["Organization","ProfessionalService"],
+      "@type": [
+        "Organization",
+        "ProfessionalService"
+      ],
       "@id": "https://atiemppo.com/#organization",
       "name": "ATIEMPPO S.A.S.",
       "description": "Empresa colombiana que transforma áreas de transporte para tomar mejores decisiones, trabajar con datos y aprovechar agentes de IA, con foco en logística y supply chain en Colombia y América Latina.",
       "url": "https://atiemppo.com",
       "foundingDate": "2013",
       "logo": "https://atiemppo.com/assets/images/logo-atiemppo.png",
-      "address": { "@type": "PostalAddress", "streetAddress": "Calle 146 #7-64 of. 401", "addressLocality": "Bogotá", "addressCountry": "CO" },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle 146 #7-64 of. 401",
+        "addressLocality": "Bogotá",
+        "addressCountry": "CO"
+      },
       "email": "juanmatiz@atiemppo.co",
-      "telephone": "+57-310-768-7010",
       "contactPoint": [
-        { "@type": "ContactPoint", "telephone": "+57-310-768-7010", "email": "juanmatiz@atiemppo.co", "contactType": "sales", "areaServed": "CO", "availableLanguage": ["es", "en"], "url": "https://wa.me/573107687010?text=Hola%20Juan%2C%20quiero%20hablar%20con%20ATIEMPPO%20sobre%20una%20decision%20o%20tarea%20de%20transporte." },
-        { "@type": "ContactPoint", "telephone": "+57-313-450-3694", "contactType": "customer support", "name": "SICETAC al Instante", "areaServed": "CO", "availableLanguage": "es", "url": "https://wa.me/573134503694?text=Hola%2C%20quiero%20consultar%20SICETAC%20al%20Instante." }
+        {
+          "@type": "ContactPoint",
+          "email": "juanmatiz@atiemppo.co",
+          "contactType": "sales",
+          "areaServed": "CO",
+          "availableLanguage": [
+            "es",
+            "en"
+          ],
+          "url": "https://atiemppo.com/#contacto"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+57-313-450-3694",
+          "contactType": "customer support",
+          "name": "SICETAC al Instante",
+          "areaServed": "CO",
+          "availableLanguage": "es",
+          "url": "https://wa.me/573134503694?text=Hola%2C%20quiero%20consultar%20SICETAC%20al%20Instante."
+        }
       ],
-      "founder": { "@id": "https://atiemppo.com/#juan-pablo-matiz" },
-      "areaServed": ["Colombia", "América Latina"],
-      "sameAs": ["https://www.eldatologistico.com", "https://linkedin.com/in/juanmatizg", "https://github.com/imatjuanmatiz", "https://atiemppo.com/llms.txt"],
+      "founder": {
+        "@id": "https://atiemppo.com/#juan-pablo-matiz"
+      },
+      "areaServed": [
+        "Colombia",
+        "América Latina"
+      ],
+      "sameAs": [
+        "https://www.eldatologistico.com",
+        "https://linkedin.com/in/juanmatizg",
+        "https://github.com/imatjuanmatiz",
+        "https://atiemppo.com/llms.txt"
+      ],
       "potentialAction": [
-        { "@type": "CommunicateAction", "name": "Hablar con Juan Pablo Matiz por WhatsApp", "target": "https://wa.me/573107687010?text=Hola%20Juan%2C%20quiero%20hablar%20con%20ATIEMPPO%20sobre%20una%20decision%20o%20tarea%20de%20transporte." },
-        { "@type": "CommunicateAction", "name": "Escribir a Juan Pablo Matiz", "target": "mailto:juanmatiz@atiemppo.co?subject=ATIEMPPO%20—%20quiero%20hablar" },
-        { "@type": "UseAction", "name": "Consultar SICETAC al Instante por WhatsApp", "target": "https://wa.me/573134503694?text=Hola%2C%20quiero%20consultar%20SICETAC%20al%20Instante.%20Mi%20ruta%20es%3A" }
+        {
+          "@type": "CommunicateAction",
+          "name": "Escribir a Juan Pablo Matiz",
+          "target": "mailto:juanmatiz@atiemppo.co?subject=ATIEMPPO%20—%20quiero%20hablar"
+        },
+        {
+          "@type": "UseAction",
+          "name": "Consultar SICETAC al Instante por WhatsApp",
+          "target": "https://wa.me/573134503694?text=Hola%2C%20quiero%20consultar%20SICETAC%20al%20Instante.%20Mi%20ruta%20es%3A"
+        }
       ],
-      "knowsAbout": ["Logística", "Supply chain", "SICETAC", "Costos de transporte en Colombia", "Inteligencia artificial aplicada", "Agentes de IA", "Análisis de datos", "Automatización de procesos"]
+      "knowsAbout": [
+        "Logística",
+        "Supply chain",
+        "SICETAC",
+        "Costos de transporte en Colombia",
+        "Inteligencia artificial aplicada",
+        "Agentes de IA",
+        "Análisis de datos",
+        "Automatización de procesos"
+      ]
     },
     {
       "@type": "Person",
@@ -61,32 +111,72 @@ render_with_liquid: false
       "name": "Juan Pablo Matiz",
       "jobTitle": "Fundador",
       "email": "juanmatiz@atiemppo.co",
-      "telephone": "+57-310-768-7010",
       "url": "https://atiemppo.com/#contacto",
-      "worksFor": { "@id": "https://atiemppo.com/#organization" }
+      "worksFor": {
+        "@id": "https://atiemppo.com/#organization"
+      }
     },
     {
       "@type": "Service",
       "@id": "https://atiemppo.com/#service-industria-tiempo",
       "name": "Servicios para transformar áreas de transporte",
-      "provider": { "@id": "https://atiemppo.com/#organization" },
-      "areaServed": ["Colombia", "América Latina"],
+      "provider": {
+        "@id": "https://atiemppo.com/#organization"
+      },
+      "areaServed": [
+        "Colombia",
+        "América Latina"
+      ],
       "serviceType": "Consultoría, datos SICETAC, capacitación agéntica y conexión con agentes",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Cinco servicios ATIEMPPO 2026",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Consultorías potencializadas con IA para decisiones de transporte", "url": "https://atiemppo.com/consultoria/" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Datos SICETAC e inteligencia de red", "url": "https://atiemppo.com/#datos" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Capacitación y Experiencia Agéntica", "url": "https://atiemppo.com/#capacitacion" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Conexión con agentes especializados de ATIEMPPO", "url": "https://atiemppo.com/#agentes-gestionados" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hoja de ruta de agentes y capacidades propias", "url": "https://atiemppo.com/#hoja-de-ruta" } }
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Consultorías potencializadas con IA para decisiones de transporte",
+              "url": "https://atiemppo.com/consultoria/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Datos SICETAC e inteligencia de red",
+              "url": "https://atiemppo.com/#datos"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Capacitación y Experiencia Agéntica",
+              "url": "https://atiemppo.com/#capacitacion"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Conexión con agentes especializados de ATIEMPPO",
+              "url": "https://atiemppo.com/#agentes-gestionados"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Hoja de ruta de agentes y capacidades propias",
+              "url": "https://atiemppo.com/#hoja-de-ruta"
+            }
+          }
         ]
       }
     }
   ]
-}
-</script>
+}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
@@ -723,7 +813,7 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
         <p class="lead" style="margin:18px 0 32px;max-width:460px">¿Cuál es la decisión o tarea de transporte que más tiempo, incertidumbre o retrabajo está generando hoy?</p>
         <div class="contact-links">
           <a href="mailto:juanmatiz@atiemppo.co" class="c-link"><span class="ic">@</span><div><div class="v">juanmatiz@atiemppo.co</div><div class="k">Correo</div></div></a>
-          <a href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20hablar%20sobre%20un%20proyecto%20para%20recuperar%20tiempo%20operativo." target="_blank" rel="noopener" class="c-link"><span class="ic">↗</span><div><div class="v">+57 310 768 7010</div><div class="k">WhatsApp · Bogotá, Colombia</div></div></a>
+
         </div>
       </div>
       <div class="contact-form" data-reveal>
@@ -755,7 +845,7 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:60px 28px 36px}
 
 </main>
 
-<a href="https://wa.me/573107687010?text=Hola%20ATIEMPPO%2C%20quiero%20hablar%20sobre%20un%20proyecto%20para%20recuperar%20tiempo%20operativo." class="wa-float" target="_blank" rel="noopener" aria-label="Abrir WhatsApp de ATIEMPPO">WhatsApp</a>
+<a aria-label="Escribir a ATIEMPPO por correo" class="wa-float" href="mailto:juanmatiz@atiemppo.co?subject=Consulta%20ATIEMPPO&amp;body=Hola%20ATIEMPPO%2C%20quiero%20hablar%20sobre%20un%20proyecto%20para%20recuperar%20tiempo%20operativo.">Correo</a>
 
 <footer>
   <div class="footer-inner">

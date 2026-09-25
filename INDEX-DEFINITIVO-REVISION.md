@@ -144,7 +144,6 @@ No necesitas tener todo claro. Escuchamos tu contexto, te ayudamos a definir el 
 
 Contacto:
 - juanmatiz@atiemppo.co
-- WhatsApp 3107687010
 - atiemppo.com
 - Bogotá, Colombia
 

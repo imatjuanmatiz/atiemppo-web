@@ -27,7 +27,7 @@
   },
   "ai": {
     "chapter": "02",
-    "title": "Acompañamiento en IA para empresas",
+    "title": "Productividad con IA para empresas",
     "description": "Formación práctica, dirección humana y continuidad con Bruno para desarrollar capacidades propias y conservar el conocimiento de tu empresa.",
     "outcomes": [
       "Talleres para directivos y equipos.",
@@ -35,14 +35,14 @@
       "Seguimiento humano y agéntico entre sesiones."
     ],
     "serviceUrl": "/acompanamiento-ia/",
-    "serviceCta": "Conocer el acompañamiento",
+    "serviceCta": "Conocer el programa de IA",
     "category": "Gestión de innovación aplicada",
     "product": "Capacidades propias para tu equipo",
-    "productDescription": "Aprende a formular necesidades, crear y revisar tus primeros agentes y conservar fuentes, reglas y memoria dentro de tu organización.",
+    "productDescription": "Aprende a priorizar una tarea, formular y probar un proyecto de IA, documentar el procedimiento y transferir lo aprendido a tu equipo.",
     "productImage": "/assets/images/atiemppo/mesa-trabajo-ia.png",
     "productAlt": "Trabajo en equipo con inteligencia artificial",
     "productUrl": "/?servicio=acompanamiento-ia#contacto",
-    "productCta": "Diseñar el acompañamiento",
+    "productCta": "Diseñar el programa de IA",
     "proof": [
       "Formación práctica",
       "Continuidad con Bruno"
@@ -85,7 +85,7 @@
     },
     training: {
       eyebrow: "Servicio 02",
-      title: "Acompañamiento en IA para empresas",
+      title: "Productividad con IA para empresas",
       description: "El equipo pasa de conversar con una IA a dirigir agentes sobre tareas de transporte con propósito, fuentes, límites y revisión.",
       capabilities: ["Caso real del equipo", "Práctica acompañada", "Capacidad transferible"],
       image: "/assets/images/atiemppo/mesa-trabajo-ia.png",
