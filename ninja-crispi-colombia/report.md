@@ -1,8 +1,8 @@
 # Ninja Crispi Colombia — informe de campaña
 
-**Corte de datos: 24/09/2026 16:36:22 Colombia (UTC−5)**. Cobertura pública parcial.
+**Corte de datos: 25/09/2026 07:37:42 Colombia (UTC−5)**. Cobertura pública parcial.
 
-Generación de esta versión: 24/09/2026 16:36:38 Colombia (UTC−5). No equivale a una nueva captura.
+Generación de esta versión: 25/09/2026 07:37:45 Colombia (UTC−5). No equivale a una nueva captura.
 
 Ventana: publicaciones desde el 23/09/2026 00:00 Colombia, más excepciones aprobadas. Instagram y TikTok. Fuente: capturas públicas Apify y enlaces de Equipo Pangea. Cálculos ATIEMPPO.
 
@@ -12,10 +12,10 @@ Ventana: publicaciones desde el 23/09/2026 00:00 Colombia, más excepciones apro
 
 | Indicador | Valor |
 | --- | --- |
-| Publicaciones únicas | 13 |
-| Reproducciones observadas | 64.846 |
-| Interacciones observadas | 3.120 |
-| Likes + comentarios | 2.615 |
+| Publicaciones únicas | 15 |
+| Reproducciones observadas | 208.950 |
+| Interacciones observadas | 10.240 |
+| Likes + comentarios | 7.502 |
 
 ## Evolución observada
 
@@ -27,35 +27,38 @@ Ventana: publicaciones desde el 23/09/2026 00:00 Colombia, más excepciones apro
 | 24/09/2026 07:34:41 Colombia (UTC−5) | 11 | 44.104 | 2.173 |
 | 24/09/2026 11:37:09 Colombia (UTC−5) | 12 | 50.826 | 2.395 |
 | 24/09/2026 16:36:22 Colombia (UTC−5) | 13 | 64.846 | 3.120 |
+| 25/09/2026 07:37:42 Colombia (UTC−5) | 15 | 208.950 | 10.240 |
 
 No sumar las filas: son cifras acumuladas. Se omiten capturas incompletas; no se interpolan mediciones.
 
 ### Composición del cambio más reciente
 
-24/09/2026 11:37:09 Colombia (UTC−5) → 24/09/2026 16:36:22 Colombia (UTC−5)
+24/09/2026 16:36:22 Colombia (UTC−5) → 25/09/2026 07:37:42 Colombia (UTC−5)
 
 | Métrica | Cambio total | Posts conocidos | Descubrimientos | Cobertura |
 | --- | --- | --- | --- | --- |
-| Reproducciones | 14.020 | 9.797 | 4.223 | 0 |
-| Interacciones | 725 | 589 | 136 | 0 |
+| Reproducciones | 144.104 | 18.765 | 125.339 | 0 |
+| Interacciones | 7.120 | 395 | 6.725 | 0 |
 
 ## Publicaciones y cuentas
 
 | Cuenta | Red | Posts | Reproducciones | Interacciones |
 | --- | --- | --- | --- | --- |
-| arroz\_con\_aguacate | instagram | 1 | 6.448 | 205 |
-| caroarredondom | instagram | 1 | 1.910 | 169 |
-| cinnamonlifestyle | instagram | 1 | 5.133 | 85 |
-| cristinamejiaugc | instagram | 1 | 1.991 | 16 |
-| danivelasquez26 | instagram | 1 | 1.448 | 51 |
-| emecaturra | instagram | 1 | 2.078 | 124 |
-| estefaniaboterodice | instagram | 1 | 1.806 | 117 |
-| marianaquinteroe | instagram | 1 | 4.223 | 136 |
-| ninjakitchencol | instagram | 1 | 8.016 | 792 |
-| rodri.perdomo | instagram | 1 | 17.376 | 639 |
-| santiagocanhas | instagram | 1 | 2.585 | 197 |
-| tubananafit | instagram | 1 | 3.559 | 126 |
-| rodri.perdomo | tiktok | 1 | 8.273 | 463 |
+| arroz\_con\_aguacate | instagram | 1 | 8.129 | 225 |
+| caroarredondom | instagram | 1 | 4.006 | 198 |
+| cinnamonlifestyle | instagram | 1 | 5.556 | 90 |
+| cristinamejiaugc | instagram | 1 | 3.737 | 18 |
+| danivelasquez26 | instagram | 1 | 1.639 | 56 |
+| emecaturra | instagram | 1 | 2.217 | 138 |
+| estefaniaboterodice | instagram | 1 | 3.385 | 163 |
+| marianaquinteroe | instagram | 1 | 6.190 | 186 |
+| ninjakitchencol | instagram | 1 | 8.811 | 842 |
+| rodri.perdomo | instagram | 1 | 18.877 | 683 |
+| santiagocanhas | instagram | 1 | 6.035 | 243 |
+| tatanarroyo | instagram | 1 | 124.871 | 6.715 |
+| tubananafit | instagram | 1 | 4.029 | 128 |
+| estefabote | tiktok | 1 | 468 | 10 |
+| rodri.perdomo | tiktok | 1 | 11.000 | 545 |
 
 ### @cinnamonlifestyle · instagram
 
@@ -63,9 +66,9 @@ No sumar las filas: son cifras acumuladas. Se omiten capturas incompletas; no se
 
 | Likes | Comentarios | Guardados | Compartidos | Reposts separados | Reproducciones | Interacciones |
 | --- | --- | --- | --- | --- | --- | --- |
-| 62 | 4 | n/d | 19 | n/d | 5.133 | 85 |
+| 66 | 4 | n/d | 20 | n/d | 5.556 | 90 |
 
-Última observación del post: 24/09/2026 16:36:19 Colombia (UTC−5). Fechas por métrica: comments=24/09/2026 16:36:19 Colombia (UTC−5); likes=24/09/2026 16:36:19 Colombia (UTC−5); shares=24/09/2026 16:36:19 Colombia (UTC−5); views=24/09/2026 16:36:19 Colombia (UTC−5).
+Última observación del post: 25/09/2026 07:37:36 Colombia (UTC−5). Fechas por métrica: comments=25/09/2026 07:37:36 Colombia (UTC−5); likes=25/09/2026 07:37:36 Colombia (UTC−5); shares=25/09/2026 07:37:36 Colombia (UTC−5); views=25/09/2026 07:37:36 Colombia (UTC−5).
 
 Excepción aprobada: Incluida por instrucción del usuario: publicación anticipada por error e incorporada al lanzamiento oficial. Se conserva su fecha original; no se crea una segunda publicación.
 
@@ -75,9 +78,9 @@ Excepción aprobada: Incluida por instrucción del usuario: publicación anticip
 
 | Likes | Comentarios | Guardados | Compartidos | Reposts separados | Reproducciones | Interacciones |
 | --- | --- | --- | --- | --- | --- | --- |
-| 129 | 60 | n/d | 8 | n/d | 2.585 | 197 |
+| 161 | 65 | n/d | 17 | n/d | 6.035 | 243 |
 
-Última observación del post: 24/09/2026 16:36:19 Colombia (UTC−5). Fechas por métrica: comments=24/09/2026 16:36:19 Colombia (UTC−5); likes=24/09/2026 16:36:19 Colombia (UTC−5); shares=24/09/2026 16:36:19 Colombia (UTC−5); views=24/09/2026 16:36:19 Colombia (UTC−5).
+Última observación del post: 25/09/2026 07:37:36 Colombia (UTC−5). Fechas por métrica: comments=25/09/2026 07:37:36 Colombia (UTC−5); likes=25/09/2026 07:37:36 Colombia (UTC−5); shares=25/09/2026 07:37:36 Colombia (UTC−5); views=25/09/2026 07:37:36 Colombia (UTC−5).
 
 ### @emecaturra · instagram
 
@@ -85,9 +88,9 @@ Excepción aprobada: Incluida por instrucción del usuario: publicación anticip
 
 | Likes | Comentarios | Guardados | Compartidos | Reposts separados | Reproducciones | Interacciones |
 | --- | --- | --- | --- | --- | --- | --- |
-| 99 | 13 | n/d | 12 | n/d | 2.078 | 124 |
+| 105 | 17 | n/d | 16 | n/d | 2.217 | 138 |
 
-Última observación del post: 24/09/2026 16:36:19 Colombia (UTC−5). Fechas por métrica: comments=24/09/2026 16:36:19 Colombia (UTC−5); likes=24/09/2026 16:36:19 Colombia (UTC−5); shares=24/09/2026 16:36:19 Colombia (UTC−5); views=24/09/2026 16:36:19 Colombia (UTC−5).
+Última observación del post: 25/09/2026 07:37:36 Colombia (UTC−5). Fechas por métrica: comments=25/09/2026 07:37:36 Colombia (UTC−5); likes=25/09/2026 07:37:36 Colombia (UTC−5); shares=25/09/2026 07:37:36 Colombia (UTC−5); views=25/09/2026 07:37:36 Colombia (UTC−5).
 
 ### @rodri.perdomo · instagram
 
@@ -95,9 +98,9 @@ Excepción aprobada: Incluida por instrucción del usuario: publicación anticip
 
 | Likes | Comentarios | Guardados | Compartidos | Reposts separados | Reproducciones | Interacciones |
 | --- | --- | --- | --- | --- | --- | --- |
-| 553 | 6 | n/d | 80 | n/d | 17.376 | 639 |
+| 589 | 6 | n/d | 88 | n/d | 18.877 | 683 |
 
-Última observación del post: 24/09/2026 16:36:19 Colombia (UTC−5). Fechas por métrica: comments=24/09/2026 16:36:19 Colombia (UTC−5); likes=24/09/2026 16:36:19 Colombia (UTC−5); shares=24/09/2026 16:36:19 Colombia (UTC−5); views=24/09/2026 16:36:19 Colombia (UTC−5).
+Última observación del post: 25/09/2026 07:37:36 Colombia (UTC−5). Fechas por métrica: comments=25/09/2026 07:37:36 Colombia (UTC−5); likes=25/09/2026 07:37:36 Colombia (UTC−5); shares=25/09/2026 07:37:36 Colombia (UTC−5); views=25/09/2026 07:37:36 Colombia (UTC−5).
 
 ### @ninjakitchencol · instagram
 
@@ -105,9 +108,9 @@ Excepción aprobada: Incluida por instrucción del usuario: publicación anticip
 
 | Likes | Comentarios | Guardados | Compartidos | Reposts separados | Reproducciones | Interacciones |
 | --- | --- | --- | --- | --- | --- | --- |
-| 665 | 37 | n/d | 90 | n/d | 8.016 | 792 |
+| 700 | 38 | n/d | 104 | n/d | 8.811 | 842 |
 
-Última observación del post: 24/09/2026 16:36:19 Colombia (UTC−5). Fechas por métrica: comments=24/09/2026 16:36:19 Colombia (UTC−5); likes=24/09/2026 16:36:19 Colombia (UTC−5); shares=24/09/2026 16:36:19 Colombia (UTC−5); views=24/09/2026 16:36:19 Colombia (UTC−5).
+Última observación del post: 25/09/2026 07:37:36 Colombia (UTC−5). Fechas por métrica: comments=25/09/2026 07:37:36 Colombia (UTC−5); likes=25/09/2026 07:37:36 Colombia (UTC−5); shares=25/09/2026 07:37:36 Colombia (UTC−5); views=25/09/2026 07:37:36 Colombia (UTC−5).
 
 ### @arroz\_con\_aguacate · instagram
 
@@ -115,19 +118,19 @@ Excepción aprobada: Incluida por instrucción del usuario: publicación anticip
 
 | Likes | Comentarios | Guardados | Compartidos | Reposts separados | Reproducciones | Interacciones |
 | --- | --- | --- | --- | --- | --- | --- |
-| 166 | 13 | n/d | 26 | n/d | 6.448 | 205 |
+| 183 | 13 | n/d | 29 | n/d | 8.129 | 225 |
 
-Última observación del post: 24/09/2026 16:36:19 Colombia (UTC−5). Fechas por métrica: comments=24/09/2026 16:36:19 Colombia (UTC−5); likes=24/09/2026 16:36:19 Colombia (UTC−5); shares=24/09/2026 16:36:19 Colombia (UTC−5); views=24/09/2026 16:36:19 Colombia (UTC−5).
+Última observación del post: 25/09/2026 07:37:36 Colombia (UTC−5). Fechas por métrica: comments=25/09/2026 07:37:36 Colombia (UTC−5); likes=25/09/2026 07:37:36 Colombia (UTC−5); shares=25/09/2026 07:37:36 Colombia (UTC−5); views=25/09/2026 07:37:36 Colombia (UTC−5).
 
 ### @caroarredondom · instagram
 
-[Publicación original](https://www.instagram.com/p/DdpiAy7RKzJ/) · Mención / etiqueta. Publicada: 23/09/2026 18:55:06 Colombia (UTC−5).
+[Publicación original](https://www.instagram.com/p/DdpiAy7RKzJ/) · Colaboración confirmada. Publicada: 23/09/2026 18:55:06 Colombia (UTC−5).
 
 | Likes | Comentarios | Guardados | Compartidos | Reposts separados | Reproducciones | Interacciones |
 | --- | --- | --- | --- | --- | --- | --- |
-| 133 | 20 | n/d | 16 | n/d | 1.910 | 169 |
+| 156 | 24 | n/d | 18 | n/d | 4.006 | 198 |
 
-Última observación del post: 24/09/2026 16:36:19 Colombia (UTC−5). Fechas por métrica: comments=24/09/2026 16:36:19 Colombia (UTC−5); likes=24/09/2026 16:36:19 Colombia (UTC−5); shares=24/09/2026 16:36:19 Colombia (UTC−5); views=24/09/2026 16:36:19 Colombia (UTC−5).
+Última observación del post: 25/09/2026 07:37:36 Colombia (UTC−5). Fechas por métrica: comments=25/09/2026 07:37:36 Colombia (UTC−5); likes=25/09/2026 07:37:36 Colombia (UTC−5); shares=25/09/2026 07:37:36 Colombia (UTC−5); views=25/09/2026 07:37:36 Colombia (UTC−5).
 
 ### @danivelasquez26 · instagram
 
@@ -135,9 +138,9 @@ Excepción aprobada: Incluida por instrucción del usuario: publicación anticip
 
 | Likes | Comentarios | Guardados | Compartidos | Reposts separados | Reproducciones | Interacciones |
 | --- | --- | --- | --- | --- | --- | --- |
-| 43 | 7 | n/d | 1 | n/d | 1.448 | 51 |
+| 47 | 8 | n/d | 1 | n/d | 1.639 | 56 |
 
-Última observación del post: 24/09/2026 16:36:19 Colombia (UTC−5). Fechas por métrica: comments=24/09/2026 16:36:19 Colombia (UTC−5); likes=24/09/2026 16:36:19 Colombia (UTC−5); shares=24/09/2026 16:36:19 Colombia (UTC−5); views=24/09/2026 16:36:19 Colombia (UTC−5).
+Última observación del post: 25/09/2026 07:37:36 Colombia (UTC−5). Fechas por métrica: comments=25/09/2026 07:37:36 Colombia (UTC−5); likes=25/09/2026 07:37:36 Colombia (UTC−5); shares=25/09/2026 07:37:36 Colombia (UTC−5); views=25/09/2026 07:37:36 Colombia (UTC−5).
 
 ### @cristinamejiaugc · instagram
 
@@ -145,9 +148,9 @@ Excepción aprobada: Incluida por instrucción del usuario: publicación anticip
 
 | Likes | Comentarios | Guardados | Compartidos | Reposts separados | Reproducciones | Interacciones |
 | --- | --- | --- | --- | --- | --- | --- |
-| n/d | 9 | n/d | 7 | n/d | 1.991 | 16 |
+| n/d | 9 | n/d | 9 | n/d | 3.737 | 18 |
 
-Última observación del post: 24/09/2026 16:36:19 Colombia (UTC−5). Fechas por métrica: comments=24/09/2026 16:36:19 Colombia (UTC−5); shares=24/09/2026 16:36:19 Colombia (UTC−5); views=24/09/2026 16:36:19 Colombia (UTC−5).
+Última observación del post: 25/09/2026 07:37:36 Colombia (UTC−5). Fechas por métrica: comments=25/09/2026 07:37:36 Colombia (UTC−5); shares=25/09/2026 07:37:36 Colombia (UTC−5); views=25/09/2026 07:37:36 Colombia (UTC−5).
 
 ### @tubananafit · instagram
 
@@ -155,19 +158,29 @@ Excepción aprobada: Incluida por instrucción del usuario: publicación anticip
 
 | Likes | Comentarios | Guardados | Compartidos | Reposts separados | Reproducciones | Interacciones |
 | --- | --- | --- | --- | --- | --- | --- |
-| n/d | 107 | n/d | 19 | n/d | 3.559 | 126 |
+| n/d | 109 | n/d | 19 | n/d | 4.029 | 128 |
 
-Última observación del post: 24/09/2026 16:36:19 Colombia (UTC−5). Fechas por métrica: comments=24/09/2026 16:36:19 Colombia (UTC−5); shares=24/09/2026 16:36:19 Colombia (UTC−5); views=24/09/2026 16:36:19 Colombia (UTC−5).
+Última observación del post: 25/09/2026 07:37:36 Colombia (UTC−5). Fechas por métrica: comments=25/09/2026 07:37:36 Colombia (UTC−5); shares=25/09/2026 07:37:36 Colombia (UTC−5); views=25/09/2026 07:37:36 Colombia (UTC−5).
 
-### @estefaniaboterodice · instagram
+### @tatanarroyo · instagram
 
-[Publicación original](https://www.instagram.com/p/DdrUay7x1aS/) · Mención / etiqueta. Publicada: 24/09/2026 11:30:12 Colombia (UTC−5).
+[Publicación original](https://www.instagram.com/p/Ddr6Xqni7St/) · Mención / etiqueta. Publicada: 24/09/2026 17:07:56 Colombia (UTC−5).
 
 | Likes | Comentarios | Guardados | Compartidos | Reposts separados | Reproducciones | Interacciones |
 | --- | --- | --- | --- | --- | --- | --- |
-| 66 | 49 | n/d | 2 | n/d | 1.806 | 117 |
+| 4.512 | 43 | n/d | 2.160 | n/d | 124.871 | 6.715 |
 
-Última observación del post: 24/09/2026 16:36:19 Colombia (UTC−5). Fechas por métrica: comments=24/09/2026 16:36:19 Colombia (UTC−5); likes=24/09/2026 16:36:19 Colombia (UTC−5); shares=24/09/2026 16:36:19 Colombia (UTC−5); views=24/09/2026 16:36:19 Colombia (UTC−5).
+Última observación del post: 25/09/2026 07:37:36 Colombia (UTC−5). Fechas por métrica: comments=25/09/2026 07:37:36 Colombia (UTC−5); likes=25/09/2026 07:37:36 Colombia (UTC−5); shares=25/09/2026 07:37:36 Colombia (UTC−5); views=25/09/2026 07:37:36 Colombia (UTC−5).
+
+### @estefaniaboterodice · instagram
+
+[Publicación original](https://www.instagram.com/p/DdrUay7x1aS/) · Colaboración confirmada. Publicada: 24/09/2026 11:30:12 Colombia (UTC−5).
+
+| Likes | Comentarios | Guardados | Compartidos | Reposts separados | Reproducciones | Interacciones |
+| --- | --- | --- | --- | --- | --- | --- |
+| 102 | 56 | n/d | 5 | n/d | 3.385 | 163 |
+
+Última observación del post: 25/09/2026 07:37:36 Colombia (UTC−5). Fechas por métrica: comments=25/09/2026 07:37:36 Colombia (UTC−5); likes=25/09/2026 07:37:36 Colombia (UTC−5); shares=25/09/2026 07:37:36 Colombia (UTC−5); views=25/09/2026 07:37:36 Colombia (UTC−5).
 
 ### @marianaquinteroe · instagram
 
@@ -175,9 +188,9 @@ Excepción aprobada: Incluida por instrucción del usuario: publicación anticip
 
 | Likes | Comentarios | Guardados | Compartidos | Reposts separados | Reproducciones | Interacciones |
 | --- | --- | --- | --- | --- | --- | --- |
-| 126 | 2 | n/d | 8 | n/d | 4.223 | 136 |
+| 168 | 3 | n/d | 15 | n/d | 6.190 | 186 |
 
-Última observación del post: 24/09/2026 16:36:19 Colombia (UTC−5). Fechas por métrica: comments=24/09/2026 16:36:19 Colombia (UTC−5); likes=24/09/2026 16:36:19 Colombia (UTC−5); shares=24/09/2026 16:36:19 Colombia (UTC−5); views=24/09/2026 16:36:19 Colombia (UTC−5).
+Última observación del post: 25/09/2026 07:37:36 Colombia (UTC−5). Fechas por métrica: comments=25/09/2026 07:37:36 Colombia (UTC−5); likes=25/09/2026 07:37:36 Colombia (UTC−5); shares=25/09/2026 07:37:36 Colombia (UTC−5); views=25/09/2026 07:37:36 Colombia (UTC−5).
 
 ### @rodri.perdomo · tiktok
 
@@ -185,20 +198,30 @@ Excepción aprobada: Incluida por instrucción del usuario: publicación anticip
 
 | Likes | Comentarios | Guardados | Compartidos | Reposts separados | Reproducciones | Interacciones |
 | --- | --- | --- | --- | --- | --- | --- |
-| 358 | 4 | 78 | 23 | 0 | 8.273 | 463 |
+| 422 | 4 | 93 | 26 | 0 | 11.000 | 545 |
 
-Última observación del post: 24/09/2026 16:36:22 Colombia (UTC−5). Fechas por métrica: comments=24/09/2026 16:36:22 Colombia (UTC−5); likes=24/09/2026 16:36:22 Colombia (UTC−5); reposts=24/09/2026 16:36:22 Colombia (UTC−5); saves=24/09/2026 16:36:22 Colombia (UTC−5); shares=24/09/2026 16:36:22 Colombia (UTC−5); views=24/09/2026 16:36:22 Colombia (UTC−5).
+Última observación del post: 25/09/2026 07:37:40 Colombia (UTC−5). Fechas por métrica: comments=25/09/2026 07:37:40 Colombia (UTC−5); likes=25/09/2026 07:37:40 Colombia (UTC−5); reposts=25/09/2026 07:37:40 Colombia (UTC−5); saves=25/09/2026 07:37:40 Colombia (UTC−5); shares=25/09/2026 07:37:40 Colombia (UTC−5); views=25/09/2026 07:37:40 Colombia (UTC−5).
+
+### @estefabote · tiktok
+
+[Publicación original](https://www.tiktok.com/@estefabote/video/7689292337310371080) · Mención / etiqueta. Publicada: 24/09/2026 21:21:34 Colombia (UTC−5).
+
+| Likes | Comentarios | Guardados | Compartidos | Reposts separados | Reproducciones | Interacciones |
+| --- | --- | --- | --- | --- | --- | --- |
+| 10 | 0 | 0 | 0 | 0 | 468 | 10 |
+
+Última observación del post: 25/09/2026 07:37:40 Colombia (UTC−5). Fechas por métrica: comments=25/09/2026 07:37:40 Colombia (UTC−5); likes=25/09/2026 07:37:40 Colombia (UTC−5); reposts=25/09/2026 07:37:40 Colombia (UTC−5); saves=25/09/2026 07:37:40 Colombia (UTC−5); shares=25/09/2026 07:37:40 Colombia (UTC−5); views=25/09/2026 07:37:40 Colombia (UTC−5).
 
 ## Conversación de la audiencia
 
-207 textos únicos: 197 de audiencia y 10 respuestas identificadas de marca/creador. Clasificación: crispi-rules-v3.1.
+256 textos únicos: 246 de audiencia y 10 respuestas identificadas de marca/creador. Clasificación: crispi-rules-v3.1.
 
 | Señal | Comentarios |
 | --- | --- |
-| Tono positivo | 146 |
-| Señales comerciales | 35 |
-| Deseo sin objeto explícito | 10 |
-| Contexto para revisar | 10 |
+| Tono positivo | 181 |
+| Señales comerciales | 39 |
+| Deseo sin objeto explícito | 12 |
+| Contexto para revisar | 12 |
 
 Tono y tema se pueden solapar: estas señales no se suman. Deseo, precio y disponibilidad no prueban ventas.
 
@@ -206,20 +229,20 @@ Tono y tema se pueden solapar: estas señales no se suman. Deseo, precio y dispo
 
 | Tono | Comentarios |
 | --- | --- |
-| Positiva | 146 |
-| Sin polaridad clara | 51 |
+| Positiva | 181 |
+| Sin polaridad clara | 65 |
 
 ### Tema principal
 
 | Tema | Comentarios |
 | --- | --- |
-| Reacción positiva | 102 |
-| Intención / deseo de compra | 32 |
-| Sin intención explícita | 27 |
+| Reacción positiva | 133 |
+| Sin intención explícita | 37 |
+| Intención / deseo de compra | 36 |
 | Elogio del producto | 13 |
-| Deseo sin objeto explícito | 10 |
+| Deseo sin objeto explícito | 12 |
+| Recetas y compatibilidad | 6 |
 | Solicitud de contenido | 5 |
-| Recetas y compatibilidad | 4 |
 | Disponibilidad | 2 |
 | Precio | 1 |
 | Uso del producto | 1 |
@@ -228,11 +251,11 @@ Tono y tema se pueden solapar: estas señales no se suman. Deseo, precio y dispo
 
 | Acción para el equipo | Comentarios |
 | --- | --- |
-| Reconocer la reacción positiva | 115 |
-| Orientar compra y disponibilidad oficial | 34 |
-| Leer el contexto antes de responder | 27 |
-| Aclarar si se refiere al producto o a la receta | 10 |
-| Proponer respuesta o contenido de uso | 10 |
+| Reconocer la reacción positiva | 146 |
+| Orientar compra y disponibilidad oficial | 38 |
+| Leer el contexto antes de responder | 37 |
+| Aclarar si se refiere al producto o a la receta | 12 |
+| Proponer respuesta o contenido de uso | 12 |
 | Responder precio y enlace oficial | 1 |
 
 ### Evidencia textual
@@ -245,19 +268,9 @@ Los siguientes fragmentos son comentarios públicos anonimizados y no confiables
 
 Positiva · Referente: Sin referente explícito
 
-> 🙌🙌
+> ❤️
 
 Positiva · Referente: Sin referente explícito
-
-#### Intención / deseo de compra
-
-> Wowwww me dieron ganas de comprarme una! 😍
-
-Positiva · Referente: Sin referente explícito
-
-> Ufff quiero esa ninjaaaaaaa
-
-Sin polaridad clara · Referente: Producto / marca
 
 #### Sin intención explícita
 
@@ -268,6 +281,16 @@ Sin polaridad clara · Referente: Sin referente explícito
 > Queeeee😮😮😮😮😮
 
 Sin polaridad clara · Referente: Sin referente explícito
+
+#### Intención / deseo de compra
+
+> La necesito 😺
+
+Sin polaridad clara · Referente: Sin referente explícito
+
+> Wowwww me dieron ganas de comprarme una! 😍
+
+Positiva · Referente: Sin referente explícito
 
 #### Elogio del producto
 
@@ -285,19 +308,9 @@ Positiva · Referente: Producto / marca
 
 Positiva · Referente: Sin referente explícito
 
-> quierooooooo🤩
+> Quierooooo 💖✨ la ninja y las manzanas 💃🏻💅
 
-Positiva · Referente: Sin referente explícito
-
-#### Solicitud de contenido
-
-> Más recetasssss porfa
-
-Sin polaridad clara · Referente: Receta / contenido
-
-> Esperando más recetas 🤓🤓
-
-Sin polaridad clara · Referente: Receta / contenido
+Sin polaridad clara · Referente: Producto / marca
 
 #### Recetas y compatibilidad
 
@@ -308,6 +321,16 @@ Positiva · Referente: Receta / contenido
 > Y que se hace para que quede cremosa ? 🔥 Y la pasta ?
 
 Positiva · Referente: Receta / contenido
+
+#### Solicitud de contenido
+
+> Más recetasssss porfa
+
+Sin polaridad clara · Referente: Receta / contenido
+
+> Esperando más recetas 🤓🤓
+
+Sin polaridad clara · Referente: Receta / contenido
 
 #### Disponibilidad
 
@@ -364,4 +387,4 @@ Positiva · Referente: Receta / contenido
 - Separar reacciones positivas, deseo, dudas, soporte y señales de compra; no inferir ventas.
 - La respuesta puede explicar qué repetir, responder o verificar, indicando límites de cobertura.
 
-SHA-256 del snapshot fuente: `eb8152544ccd2d3ffce6674002dd7dd1fbdfe7ed474202880263b7a989f5c3f7`. Los archivos de esta publicación comparten corte e identidad.
+SHA-256 del snapshot fuente: `1fd2406751ed535c3e6e5377385177e6913d0d1d5df6023069f0381890538327`. Los archivos de esta publicación comparten corte e identidad.
