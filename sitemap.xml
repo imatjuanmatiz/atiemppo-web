@@ -8,7 +8,7 @@ sitemap: false
 {%- assign seen_urls = "|" -%}
 {%- assign documents = site.documents | concat: site.html_pages -%}
 {%- for doc in documents -%}
-  {%- unless doc.sitemap == false or doc.url contains '/gracias/' or doc.url contains '/confirmado/' or doc.url contains '/404' -%}
+  {%- unless doc.sitemap == false or doc.url contains '/gracias/' or doc.url contains '/confirmado/' or doc.url contains '/404' or doc.url contains '/newsletter/' -%}
     {%- assign path = doc.url | replace: '/index.html', '/' -%}
     {%- assign key = path | prepend: '|' | append: '|' -%}
     {%- unless seen_urls contains key -%}
@@ -19,7 +19,7 @@ sitemap: false
 {%- endfor -%}
 {%- for file in site.static_files -%}
   {%- if file.extname == '.html' or file.extname == '.pdf' -%}
-    {%- unless file.sitemap == false or file.path contains '/gracias/' or file.path contains '/confirmado/' or file.path contains '/404' -%}
+    {%- unless file.sitemap == false or file.path contains '/gracias/' or file.path contains '/confirmado/' or file.path contains '/404' or file.path contains '/newsletter/' -%}
       {%- assign path = file.path | replace: '/index.html', '/' -%}
       {%- assign key = path | prepend: '|' | append: '|' -%}
       {%- unless seen_urls contains key -%}
