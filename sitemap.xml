@@ -8,7 +8,8 @@ sitemap: false
 {%- assign seen_urls = "|" -%}
 {%- assign documents = site.documents | concat: site.html_pages -%}
 {%- for doc in documents -%}
-  {%- unless doc.sitemap == false or doc.url contains '/gracias/' or doc.url contains '/confirmado/' or doc.url contains '/404' or doc.url contains '/newsletter/' -%}
+  {%- assign root_prefix = doc.url | slice: 0, 12 -%}
+  {%- unless doc.sitemap == false or doc.url contains '/gracias/' or doc.url contains '/confirmado/' or doc.url contains '/404' or root_prefix == '/newsletter/' -%}
     {%- assign path = doc.url | replace: '/index.html', '/' -%}
     {%- assign key = path | prepend: '|' | append: '|' -%}
     {%- unless seen_urls contains key -%}
@@ -18,8 +19,9 @@ sitemap: false
   {%- endunless -%}
 {%- endfor -%}
 {%- for file in site.static_files -%}
+  {%- assign root_prefix = file.path | slice: 0, 12 -%}
   {%- if file.extname == '.html' or file.extname == '.pdf' -%}
-    {%- unless file.sitemap == false or file.path contains '/gracias/' or file.path contains '/confirmado/' or file.path contains '/404' or file.path contains '/newsletter/' -%}
+    {%- unless file.sitemap == false or file.path contains '/gracias/' or file.path contains '/confirmado/' or file.path contains '/404' or root_prefix == '/newsletter/' -%}
       {%- assign path = file.path | replace: '/index.html', '/' -%}
       {%- assign key = path | prepend: '|' | append: '|' -%}
       {%- unless seen_urls contains key -%}
