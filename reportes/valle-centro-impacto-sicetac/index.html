@@ -113,16 +113,16 @@
       <div class="brand-title">
         <span class="report-kicker">El Dato Logístico · Reporte vivo SICETAC</span>
         <strong>Valle del Cauca hacia el centro: impacto SICETAC</strong>
-        <span>Rutas con origen en Valle del Cauca y destino en la zona centro · julio 2026 vs diciembre 2025.</span>
+        <span>Rutas con origen en Valle del Cauca y destino en la zona centro · septiembre 2026 vs diciembre 2025.</span>
       </div>
     </div>
     <nav class="top-actions" aria-label="Navegación superior">
       <a class="nav-button" href="https://atiemppo.com/">ATIEMPPO</a>
       <a class="nav-button primary" href="https://atiemppo.com/reportes/">Reportes</a>
     </nav>
-    <div class="top-meta">Reporte vivo · Julio 2026</div>
+    <div class="top-meta">Reporte vivo · Septiembre 2026</div>
   </header>
-  <div class="source-strip"><b>ATIEMPPO · El Dato Logístico.</b> Fuente: Mintransporte, Cálculos Atiemppo 2026. Cobertura: rutas SICETAC con origen en Valle del Cauca y destino en Bogotá D.C., Cundinamarca, Boyacá, Tolima, Huila o Meta. Comparación julio 2026 vs diciembre 2025. Se excluyen geometrías con distancia GraphHopper inconsistente frente a SICETAC.</div>
+  <div class="source-strip"><b>ATIEMPPO · El Dato Logístico.</b> Fuente: Mintransporte, Cálculos Atiemppo 2026. Cobertura: rutas SICETAC con origen en Valle del Cauca y destino en Bogotá D.C., Cundinamarca, Boyacá, Tolima, Huila o Meta. Comparación septiembre 2026 vs diciembre 2025. Se excluyen geometrías con distancia GraphHopper inconsistente frente a SICETAC.</div>
   <main class="app">
     <aside>
       <header>
@@ -138,7 +138,7 @@
       <section class="impact-panel">
         <div class="impact-head">
           <h2>Impacto por tipo de vehículo</h2>
-          <span>promedio de rutas con dato · dic-25 a julio</span>
+          <span>promedio de rutas con dato · dic-25 a septiembre</span>
         </div>
         <div id="vehicleBars" class="vehicle-bars"></div>
         <div class="matrix-wrap">
@@ -159,7 +159,7 @@
         </div>
       </section>
       <section class="origin-chart">
-        <div class="origin-chart-head"><span id="distributionTitle">Número y porcentaje de rutas según el aumento acumulado dic-25 a julio</span><span id="distributionTotal">0 rutas</span></div>
+        <div class="origin-chart-head"><span id="distributionTitle">Número y porcentaje de rutas según el aumento acumulado dic-25 a septiembre</span><span id="distributionTotal">0 rutas</span></div>
         <div id="rangeDistribution" class="distribution"></div>
         <div class="origin-chart-head"><span>Orígenes por rango</span><span>top 30</span></div>
         <div id="originBars" class="origin-bars"></div>
@@ -170,7 +170,7 @@
     <section id="map"></section>
   </main>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-  <script src="./rutas_valle_centro_impacto_sicetac_data.js?v=45864531f1b8"></script>
+  <script src="./rutas_valle_centro_impacto_sicetac_data.js?v=296efcbaf866"></script>
   <script>
     const DATA = window.SICETAC_VARIACION_DATA;
     const COLORS = {
@@ -256,9 +256,9 @@
           <tr><td>rango</td><td>${LABELS[m.rango] || "Sin dato"}</td></tr>
           <tr><td>variación</td><td>${fmtPct(m.variacion_pct)}</td></tr>
           <tr><td>diciembre 2025</td><td>${fmtMoney(m.valor_202512)}</td></tr>
-          <tr><td>julio 2026</td><td>${fmtMoney(m.valor_202607)}</td></tr>
+          <tr><td>septiembre 2026</td><td>${fmtMoney(m.valor_202609)}</td></tr>
           <tr><td>valor hora dic-25</td><td>${fmtMoney(m.valorhora_202512)}</td></tr>
-          <tr><td>valor hora julio</td><td>${fmtMoney(m.valorhora_202607)}</td></tr>
+          <tr><td>valor hora septiembre</td><td>${fmtMoney(m.valorhora_202609)}</td></tr>
           <tr><td>horas logísticas</td><td>2</td></tr>
           <tr><td>fuente geometría</td><td>${p.fuente_geojson || ""}</td></tr>
           <tr><td>vía</td><td>${p.via || ""}</td></tr>
@@ -305,7 +305,7 @@
           const m = feature.properties.metricas[cfg] || {};
           if (m.variacion_pct == null) return;
           values.push(Number(m.variacion_pct));
-          if (m.valor_202512 != null && m.valor_202607 != null) absValues.push(Number(m.valor_202607) - Number(m.valor_202512));
+          if (m.valor_202512 != null && m.valor_202609 != null) absValues.push(Number(m.valor_202609) - Number(m.valor_202512));
         });
         values.sort((a, b) => a - b);
         const n = values.length;
@@ -427,7 +427,7 @@
       }, {});
       const selectedOriginText = els.origin.options[els.origin.selectedIndex]?.text || "Todos los orígenes";
       els.distributionTitle.textContent = origin === "all"
-        ? "Número y porcentaje de rutas según el aumento acumulado dic-25 a julio"
+        ? "Número y porcentaje de rutas según el aumento acumulado dic-25 a septiembre"
         : `Número y porcentaje de rutas desde ${selectedOriginText.split(" · ")[0]}`;
       els.distributionTotal.textContent = `${total.toLocaleString("es-CO")} rutas`;
       els.rangeDistribution.innerHTML = DISTRIBUTION_ORDER.map(key => {

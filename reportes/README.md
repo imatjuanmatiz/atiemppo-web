@@ -42,6 +42,7 @@ Estas rutas muestran siempre la version mas actualizada:
 - `/reportes/mapa-variacion-junio-sicetac/`
 - `/reportes/seguimiento-acpm-sicetac/`
 - `/reportes/perfil-rutas-sicetac/`
+- `/reportes/indice-cargue-descargue-rndc/`
 - `/reportes/impacto-horas-sicetac/`
 
 ## Snapshots historicos
