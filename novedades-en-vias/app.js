@@ -74,18 +74,39 @@ function render() {
           <td>${escapeHtml(row.cambio)}</td>
           <td>${linkify(row.evidencia)}</td>
         `)
-      : empty("Ningún tramo cambió de estado frente al listado de la mañana.");
+      : empty("No se identificó un cambio verificable frente al listado de la mañana. La ausencia de una fila no confirma apertura.");
     document.getElementById("delta-notes").innerHTML = notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("");
   }
 
   const listado = (state.listado && state.listado.length) ? state.listado : fallbackListado();
+  let memorySection = document.getElementById("memoria-vial");
+  if (!memorySection) {
+    memorySection = document.createElement("section");
+    memorySection.id = "memoria-vial";
+    memorySection.className = "section";
+    document.getElementById("listado-vias").after(memorySection);
+  }
+  const points = [...(state.eventos_confirmados || []), ...(state.eventos_vigilancia || []), ...(state.eventos_resueltos || [])];
+  const quality = state.calidad_ingesta || {};
+  memorySection.innerHTML = `<h2>Detalle y fecha de la evidencia</h2>
+    <p>${escapeHtml(state.nota_vigencia || "Verifique la fuente antes de decidir.")}</p>
+    <p>${points.length} puntos de seguimiento · ${quality.evidencia_del_dia || 0} con fecha de evidencia del día · ${quality.evidencia_heredada_o_sin_fecha || 0} con evidencia anterior o sin fecha.</p>
+    <details><summary>Consultar puntos, fuentes y vigencia</summary><div class="table-wrap">${table(
+      ["Corredor / punto", "Último estado reportado", "Fecha de evidencia", "Verificación", "Fuente"], points,
+      (point) => `<td>${escapeHtml(point.corredor)}<br>${escapeHtml(point.tramo)}</td>
+        <td>${escapeHtml(point.resumen)}</td><td>${escapeHtml(point.fecha_evidencia || "Sin fecha verificable")}</td>
+        <td>${escapeHtml(point.base_confirmacion === "dated_direct_row_source" ? "Fuente directa fechada al corte" : "Por verificar")}</td>
+        <td>${(point.fuentes || []).map(source => source.url ? linkify(source.url) : escapeHtml(source.nombre)).join("<br>")}</td>`
+    )}</div></details>
+    <details><summary>Fuentes del reporte</summary><ul>${(state.bibliografia_reporte || []).map(source => `<li><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener">${escapeHtml(source.nombre)}</a></li>`).join("")}</ul></details>
+    <p><a href="estado_vial.json">Consultar los datos del corte y el historial de siete días</a></p>`;
   document.getElementById("listado-table").innerHTML = listado.length
     ? table(["", "Corredor / tramo", "km / PR / sector", "Estado", "Corte / fuente"], listado, (row) => `
         <td class="icon-cell">${escapeHtml(row.icono || "")}</td>
         <td>${escapeHtml(row.corredor)}</td>
         <td>${escapeHtml(row.km)}</td>
-        <td>${escapeHtml(row.estado)}</td>
-        <td>${linkify(row.fuente)}</td>
+        <td>${escapeHtml(row.estado)}${state.calidad_ingesta ? "<br><small>Resumen editorial: contrastar con la evidencia del detalle.</small>" : ""}</td>
+        <td>${row.fuente ? linkify(row.fuente) : '<a href="#memoria-vial">Ver fecha y fuente por punto</a>'}</td>
       `)
     : empty("No hay listado de vías para este corte.");
 
@@ -116,7 +137,7 @@ async function loadState() {
     state = await response.json();
     render();
     status.className = "load-status ready";
-    status.textContent = `Corte ${state.cut_id} · listado de vías y estados.`;
+    status.textContent = `Corte ${state.cut_id} · ${state.calidad_ingesta?.observation_count ?? 0} puntos de seguimiento. La fecha del reporte no confirma la vigencia de cada novedad.`;
   } catch (error) {
     status.className = "load-status error";
     status.textContent = `No fue posible cargar el corte. ${error.message}`;
