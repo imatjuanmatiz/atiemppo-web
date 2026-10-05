@@ -2,7 +2,7 @@
 
 **Corte de datos: 05/10/2026 07:37:35 Colombia (UTC−5)**. Cobertura pública parcial.
 
-Generación de esta versión: 05/10/2026 07:37:47 Colombia (UTC−5). No equivale a una nueva captura.
+Generación de esta versión: 05/10/2026 07:59:28 Colombia (UTC−5). No equivale a una nueva captura.
 
 Ventana: publicaciones desde el 23/09/2026 00:00 Colombia, más excepciones aprobadas. Instagram y TikTok. Fuente: capturas públicas Apify y enlaces de Equipo Pangea. Cálculos ATIEMPPO.
 
@@ -19,51 +19,60 @@ Ventana: publicaciones desde el 23/09/2026 00:00 Colombia, más excepciones apro
 
 ## Evolución observada
 
-| Corte Colombia | Posts | Reproducciones | Interacciones |
-| --- | --- | --- | --- |
-| 23/09/2026 19:00:03 Colombia (UTC−5) | 6 | 12.221 | 483 |
-| 23/09/2026 19:22:32 Colombia (UTC−5) | 9 | 15.387 | 663 |
-| 23/09/2026 21:06:17 Colombia (UTC−5) | 11 | 27.576 | 1.263 |
-| 24/09/2026 07:34:41 Colombia (UTC−5) | 11 | 44.104 | 2.173 |
-| 24/09/2026 11:37:09 Colombia (UTC−5) | 12 | 50.826 | 2.395 |
-| 24/09/2026 16:36:22 Colombia (UTC−5) | 13 | 64.846 | 3.120 |
-| 25/09/2026 07:37:42 Colombia (UTC−5) | 15 | 208.950 | 10.240 |
-| 25/09/2026 11:34:51 Colombia (UTC−5) | 16 | 256.498 | 12.814 |
-| 25/09/2026 16:33:29 Colombia (UTC−5) | 17 | 310.106 | 15.885 |
-| 26/09/2026 07:34:31 Colombia (UTC−5) | 18 | 371.094 | 19.212 |
-| 26/09/2026 11:35:49 Colombia (UTC−5) | 18 | 385.375 | 19.823 |
-| 26/09/2026 16:34:47 Colombia (UTC−5) | 18 | 404.927 | 20.729 |
-| 27/09/2026 07:34:39 Colombia (UTC−5) | 19 | 428.515 | 21.866 |
-| 27/09/2026 11:36:04 Colombia (UTC−5) | 19 | 435.446 | 22.220 |
-| 27/09/2026 16:34:00 Colombia (UTC−5) | 19 | 446.573 | 23.384 |
-| 27/09/2026 18:47:44 Colombia (UTC−5) | 20 | 454.617 | 23.651 |
-| 28/09/2026 07:33:10 Colombia (UTC−5) | 20 | 478.303 | 24.580 |
-| 28/09/2026 11:33:31 Colombia (UTC−5) | 20 | 485.882 | 24.837 |
-| 28/09/2026 16:33:44 Colombia (UTC−5) | 20 | 498.584 | 25.287 |
-| 29/09/2026 07:33:24 Colombia (UTC−5) | 20 | 526.017 | 26.173 |
-| 29/09/2026 11:32:55 Colombia (UTC−5) | 22 | 538.073 | 26.552 |
-| 29/09/2026 16:32:07 Colombia (UTC−5) | 22 | 560.161 | 27.436 |
-| 30/09/2026 07:33:30 Colombia (UTC−5) | 25 | 606.534 | 29.043 |
-| 30/09/2026 11:34:17 Colombia (UTC−5) | 25 | 607.672 | 29.391 |
-| 30/09/2026 16:33:06 Colombia (UTC−5) | 25 | 622.893 | 29.828 |
-| 01/10/2026 07:33:47 Colombia (UTC−5) | 25 | 646.198 | 30.172 |
-| 01/10/2026 11:33:15 Colombia (UTC−5) | 25 | 648.854 | 30.467 |
-| 01/10/2026 16:32:35 Colombia (UTC−5) | 25 | 653.329 | 30.669 |
-| 02/10/2026 07:32:20 Colombia (UTC−5) | 25 | 662.417 | 31.013 |
-| 02/10/2026 11:33:50 Colombia (UTC−5) | 25 | 665.076 | 31.114 |
+| Corte Colombia | Estado | Posts | Reproducciones | Interacciones | Actor con fallo |
+| --- | --- | --- | --- | --- | --- |
+| 23/09/2026 19:00:03 Colombia (UTC−5) | Completo | 6 | 12.221 | 483 | — |
+| 23/09/2026 19:22:32 Colombia (UTC−5) | Completo | 9 | 15.387 | 663 | — |
+| 23/09/2026 20:08:14 Colombia (UTC−5) | Parcial | 9 | 20.530 | 943 | tiktok\_search |
+| 23/09/2026 21:06:17 Colombia (UTC−5) | Completo | 11 | 27.576 | 1.263 | — |
+| 24/09/2026 07:34:41 Colombia (UTC−5) | Completo | 11 | 44.104 | 2.173 | — |
+| 24/09/2026 11:37:09 Colombia (UTC−5) | Completo | 12 | 50.826 | 2.395 | — |
+| 24/09/2026 16:36:22 Colombia (UTC−5) | Completo | 13 | 64.846 | 3.120 | — |
+| 25/09/2026 07:37:42 Colombia (UTC−5) | Completo | 15 | 208.950 | 10.240 | — |
+| 25/09/2026 11:34:51 Colombia (UTC−5) | Completo | 16 | 256.498 | 12.814 | — |
+| 25/09/2026 16:33:29 Colombia (UTC−5) | Completo | 17 | 310.106 | 15.885 | — |
+| 26/09/2026 07:34:31 Colombia (UTC−5) | Completo | 18 | 371.094 | 19.212 | — |
+| 26/09/2026 11:35:49 Colombia (UTC−5) | Completo | 18 | 385.375 | 19.823 | — |
+| 26/09/2026 16:34:47 Colombia (UTC−5) | Completo | 18 | 404.927 | 20.729 | — |
+| 27/09/2026 07:34:39 Colombia (UTC−5) | Completo | 19 | 428.515 | 21.866 | — |
+| 27/09/2026 11:36:04 Colombia (UTC−5) | Completo | 19 | 435.446 | 22.220 | — |
+| 27/09/2026 16:34:00 Colombia (UTC−5) | Completo | 19 | 446.573 | 23.384 | — |
+| 27/09/2026 18:47:44 Colombia (UTC−5) | Completo | 20 | 454.617 | 23.651 | — |
+| 28/09/2026 07:33:10 Colombia (UTC−5) | Completo | 20 | 478.303 | 24.580 | — |
+| 28/09/2026 11:33:31 Colombia (UTC−5) | Completo | 20 | 485.882 | 24.837 | — |
+| 28/09/2026 16:33:44 Colombia (UTC−5) | Completo | 20 | 498.584 | 25.287 | — |
+| 29/09/2026 07:33:24 Colombia (UTC−5) | Completo | 20 | 526.017 | 26.173 | — |
+| 29/09/2026 11:32:55 Colombia (UTC−5) | Completo | 22 | 538.073 | 26.552 | — |
+| 29/09/2026 16:32:07 Colombia (UTC−5) | Completo | 22 | 560.161 | 27.436 | — |
+| 30/09/2026 07:33:30 Colombia (UTC−5) | Completo | 25 | 606.534 | 29.043 | — |
+| 30/09/2026 11:34:17 Colombia (UTC−5) | Completo | 25 | 607.672 | 29.391 | — |
+| 30/09/2026 16:33:06 Colombia (UTC−5) | Completo | 25 | 622.893 | 29.828 | — |
+| 01/10/2026 07:33:47 Colombia (UTC−5) | Completo | 25 | 646.198 | 30.172 | — |
+| 01/10/2026 11:33:15 Colombia (UTC−5) | Completo | 25 | 648.854 | 30.467 | — |
+| 01/10/2026 16:32:35 Colombia (UTC−5) | Completo | 25 | 653.329 | 30.669 | — |
+| 02/10/2026 07:32:20 Colombia (UTC−5) | Completo | 25 | 662.417 | 31.013 | — |
+| 02/10/2026 11:33:50 Colombia (UTC−5) | Completo | 25 | 665.076 | 31.114 | — |
+| 02/10/2026 16:34:13 Colombia (UTC−5) | Parcial | 25 | 669.396 | 31.239 | tiktok\_search |
+| 03/10/2026 07:34:10 Colombia (UTC−5) | Parcial | 25 | 677.314 | 31.455 | tiktok\_search |
+| 03/10/2026 11:34:12 Colombia (UTC−5) | Parcial | 25 | 679.976 | 31.531 | tiktok\_search |
+| 03/10/2026 16:34:12 Colombia (UTC−5) | Parcial | 25 | 684.217 | 31.646 | tiktok\_search |
+| 04/10/2026 07:34:13 Colombia (UTC−5) | Parcial | 25 | 691.996 | 31.818 | tiktok\_search |
+| 04/10/2026 11:34:13 Colombia (UTC−5) | Parcial | 25 | 694.625 | 31.909 | tiktok\_search |
+| 04/10/2026 16:34:12 Colombia (UTC−5) | Parcial | 25 | 698.798 | 32.044 | tiktok\_search |
+| 05/10/2026 07:37:35 Colombia (UTC−5) | Parcial | 26 | 711.102 | 32.914 | instagram\_owned |
 
-No sumar las filas: son cifras acumuladas. Se omiten capturas incompletas; no se interpolan mediciones.
+No sumar las filas: son cifras acumuladas. Los cortes parciales incluyen mediciones disponibles y conservan últimos valores conocidos; no prueban cobertura exhaustiva. No se interpolan mediciones.
 
-**Corte parcial:** fallaron instagram\_owned. Los totales conservan el último dato disponible por publicación; la tendencia termina en el último corte completo.
+**Corte parcial:** fallaron instagram\_owned. Los totales y la tendencia incorporan las mediciones de otros actores y conservan el último dato disponible para las fuentes ausentes.
 
 ### Composición del cambio más reciente
 
-02/10/2026 07:32:20 Colombia (UTC−5) → 02/10/2026 11:33:50 Colombia (UTC−5)
+04/10/2026 16:34:12 Colombia (UTC−5) → 05/10/2026 07:37:35 Colombia (UTC−5)
 
 | Métrica | Cambio total | Posts conocidos | Descubrimientos | Cobertura |
 | --- | --- | --- | --- | --- |
-| Reproducciones | 2.659 | 2.659 | 0 | 0 |
-| Interacciones | 101 | 101 | 0 | 0 |
+| Reproducciones | 12.304 | 6.846 | 5.458 | 0 |
+| Interacciones | 870 | 730 | 140 | 0 |
 
 ## Publicaciones y cuentas
 
@@ -508,7 +517,7 @@ Positiva · Referente: Receta / contenido
 - **interactions**: Likes + comentarios + guardados/favoritos disponibles + compartidos. Se usa reposts solo si no existe compartidos. No sumar compartidos y reposts entre sí.
 - **interactions_base**: Suma de likes + comentarios solo en publicaciones con ambos contadores disponibles. n/d por publicación si falta uno. Puede diferir de sumar los totales independientes de likes y comentarios porque las coberturas son distintas.
 - **null**: Dato no disponible. No equivale a cero. Los agregados suman solo valores conocidos e indican cuántas publicaciones tienen el dato.
-- **history**: Una observación acumulada por publicación y corte válido. No sumar cortes sucesivos. Una línea entre cortes no representa una medición intermedia.
+- **history**: Una observación acumulada por publicación y corte con medición utilizable. Los cortes parciales conservan últimos valores conocidos y declaran actores fallidos; no prueban cobertura exhaustiva. No sumar cortes sucesivos ni interpretar la línea como medición intermedia.
 - **changes**: Variación = cambio comparable de publicaciones ya conocidas + valores iniciales de nuevas publicaciones descubiertas + cambio de cobertura. Descubrimiento no equivale a publicación nueva.
 - **sentiment**: Tono del texto, no satisfacción demostrada con el producto. Wow, amo y emojis de aprobación son positivos; se consideran negación y posibles señales mixtas.
 - **commercial**: Señales textuales de precio, disponibilidad o deseo de compra; no ventas. Deseo sin objeto explícito se presenta separado.
@@ -529,9 +538,9 @@ Positiva · Referente: Receta / contenido
 
 - Declarar el corte de datos y su zona horaria; no afirmar datos en vivo ni hasta hoy si el corte es anterior.
 - Citar este informe y las publicaciones originales; distinguir evidencia, interpretación y recomendación.
-- Comparar únicamente cortes válidos y separar crecimiento comparable de descubrimientos y cambios de cobertura.
+- Comparar cortes con mediciones utilizables y declarar cuáles son parciales y qué actores faltaron; separar crecimiento de descubrimientos y cambios de cobertura.
 - No sumar snapshots, no convertir nulos a cero y no confundir reproducciones con alcance.
 - Separar reacciones positivas, deseo, dudas, soporte y señales de compra; no inferir ventas.
 - La respuesta puede explicar qué repetir, responder o verificar, indicando límites de cobertura.
 
-SHA-256 del snapshot fuente: `185203f934c4293ea62f6a2d83dcc4171d36c0e0186d52533dbec2a782d05de1`. Los archivos de esta publicación comparten corte e identidad.
+SHA-256 del snapshot fuente: `8c92171a1fe7d0abf5b4df51fd019612d3fdd328942e4678198b2ca41ad6e1c2`. Los archivos de esta publicación comparten corte e identidad.
