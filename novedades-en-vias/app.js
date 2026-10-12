@@ -78,7 +78,10 @@ function render() {
     document.getElementById("delta-notes").innerHTML = notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("");
   }
 
-  const listado = (state.listado && state.listado.length) ? state.listado : fallbackListado();
+  // Post = top 5; la web muestra el listado completo vigente (puntos activos del corte).
+  const top = state.listado || [];
+  const completo = fallbackListado();
+  const listado = completo.length > top.length ? completo : (top.length ? top : completo);
   let memorySection = document.getElementById("memoria-vial");
   if (!memorySection) {
     memorySection = document.createElement("section");
