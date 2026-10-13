@@ -27,25 +27,25 @@
   },
   "ai": {
     "chapter": "02",
-    "title": "Productividad con IA para empresas",
-    "description": "Formación práctica, dirección humana y continuidad con Bruno para desarrollar capacidades propias y conservar el conocimiento de tu empresa.",
+    "title": "Capacitación y acompañamiento en IA",
+    "description": "Capacitamos a tu equipo para crear sus propios agentes, probarlos y documentarlos. Acompañamos sus proyectos para que el conocimiento y la capacidad de seguir mejorando se queden en la empresa.",
     "outcomes": [
-      "Talleres para directivos y equipos.",
-      "Proyectos, reglas y fuentes documentadas.",
-      "Seguimiento humano y agéntico entre sesiones."
+      "Aprende con una tarea propia.",
+      "Construyan sus propios agentes.",
+      "Documenten y continúen."
     ],
-    "serviceUrl": "/acompanamiento-ia/",
-    "serviceCta": "Conocer el programa de IA",
-    "category": "Gestión de innovación aplicada",
+    "serviceUrl": "/formacion/profe-bruno-ia-aplicada/",
+    "serviceCta": "Conocer la capacitación",
+    "category": "Capacitación práctica en IA",
     "product": "Capacidades propias para tu equipo",
-    "productDescription": "Aprende a priorizar una tarea, formular y probar un proyecto de IA, documentar el procedimiento y transferir lo aprendido a tu equipo.",
-    "productImage": "/assets/images/atiemppo/mesa-trabajo-ia.png",
-    "productAlt": "Trabajo en equipo con inteligencia artificial",
-    "productUrl": "/?servicio=acompanamiento-ia#contacto",
-    "productCta": "Diseñar el programa de IA",
+    "productDescription": "Tu equipo conserva un método, fuentes, instrucciones y criterios de revisión que puede aplicar en nuevos proyectos. ATIEMPPO acompaña el aprendizaje y los siguientes retos según el alcance acordado.",
+    "productImage": "/assets/images/servicios-2026/capacitacion-ia-ficha-es.png",
+    "productAlt": "Capacitación para crear agentes propios, probarlos y documentarlos",
+    "productUrl": "/acompanamiento-ia/",
+    "productCta": "Conocer el programa para empresas",
     "proof": [
-      "Formación práctica",
-      "Continuidad con Bruno"
+      "Práctica y documentación",
+      "Continuidad del conocimiento"
     ]
   },
   "decision": {
@@ -85,11 +85,11 @@
     },
     training: {
       eyebrow: "Servicio 02",
-      title: "Productividad con IA para empresas",
-      description: "El equipo pasa de conversar con una IA a dirigir agentes sobre tareas de transporte con propósito, fuentes, límites y revisión.",
-      capabilities: ["Caso real del equipo", "Práctica acompañada", "Capacidad transferible"],
-      image: "/assets/images/atiemppo/mesa-trabajo-ia.png",
-      alt: "Mesa de trabajo de capacitación con inteligencia artificial",
+      title: "Capacitación y acompañamiento en IA",
+      description: "Capacitamos al equipo para crear, probar y documentar sus propios agentes. Acompañamos sus nuevos proyectos para conservar y ampliar lo aprendido.",
+      capabilities: ["Aprendizaje práctico", "Agentes propios y documentación", "Acompañamiento a nuevos proyectos"],
+      image: "/assets/images/servicios-2026/capacitacion-ia-ficha-es.png",
+      alt: "Capacitación, agentes propios, documentación y nuevos proyectos",
       url: "/acompanamiento-ia/"
     },
     factory: {

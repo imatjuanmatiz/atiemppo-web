@@ -50,25 +50,25 @@
   },
   "ai": {
     "chapter": "02",
-    "title": "AI productivity for companies",
-    "description": "Prepare a report, analyze a file or find information. With ATIEMPPO and our workshops, you learn to use AI on something from your own work.",
+    "title": "AI training and project support",
+    "description": "We train your team to build its own agents, test them and document how they work. We support its projects so the knowledge and ability to keep improving stay within your company.",
     "outcomes": [
-      "Human guidance and continuity with Bruno.",
-      "Workshops built around a task from your team.",
-      "Sessions for executives exploring where to start."
+      "Learn through your own task.",
+      "Build your own agents together.",
+      "Document and keep going."
     ],
-    "serviceUrl": "/en/acompanamiento-ia/",
-    "serviceCta": "Explore the AI adoption program",
-    "category": "Applied learning",
-    "product": "AI productivity",
-    "productDescription": "Learn to prioritize a task, define and test an AI project, document the procedure and share what you learn with your team.",
-    "productImage": "/assets/images/atiemppo/mesa-trabajo-ia.png",
-    "productAlt": "Illustration of a workspace with artificial intelligence tools",
-    "productUrl": "/en/?servicio=acompanamiento-ia#contacto",
-    "productCta": "Plan AI productivity",
+    "serviceUrl": "/en/formacion/profe-bruno-ia-aplicada/",
+    "serviceCta": "Explore the training",
+    "category": "Practical AI training",
+    "product": "AI capabilities for your team",
+    "productDescription": "Your team retains a method, sources, instructions and review criteria to apply to new projects. ATIEMPPO supports learning and future challenges within the agreed scope.",
+    "productImage": "/assets/images/servicios-2026/capacitacion-ia-ficha-en.png",
+    "productAlt": "AI training to build, test and document your team’s own agents",
+    "productUrl": "/en/acompanamiento-ia/",
+    "productCta": "Explore the program for companies",
     "proof": [
-      "A task of your own",
-      "Guided practice"
+      "Practice and documentation",
+      "Knowledge your team retains"
     ]
   }
 };
