@@ -5,24 +5,24 @@
   "data": {
     "chapter": "01",
     "title": "Inteligencia y planeación de transporte",
-    "description": "Datos, análisis, herramientas y agentes para entender tu red, preparar presupuestos y responder con mayor agilidad.",
+    "description": "Organizamos tus datos de transporte, relacionamos tus rutas con SICETAC y te ayudamos a comparar valores y entender la evolución de tu red.",
     "outcomes": [
       "Base SICETAC actualizada.",
       "Homologación e Índice de Red.",
       "Sesiones especializadas y servicios de agentes."
     ],
     "serviceUrl": "/inteligencia-planeacion-transporte/",
-    "serviceCta": "Explorar inteligencia y planeación",
-    "category": "Información lista para usar",
-    "product": "Base SICETAC actualizada",
-    "productDescription": "Información lista para cruzar con tus archivos y preparar análisis. Acceso recurrente o entrega puntual.",
-    "productImage": "/assets/images/atiemppo/cover-base.png",
-    "productAlt": "Base SICETAC actualizada",
-    "productUrl": "/?servicio=base-sicetac#contacto",
-    "productCta": "Solicitar la base",
+    "serviceCta": "Conoce cómo trabajamos",
+    "category": "ATICA · Cuenta gratuita",
+    "product": "Empieza a conocer tu red.",
+    "productDescription": "Una cuenta individual para empezar con hasta diez combinaciones de rutas y consultar sus referencias disponibles en ATICA. Acceso anticipado. Recibimos tu solicitud y coordinamos contigo la habilitación de la cuenta.",
+    "productImage": "/assets/images/blog/sicetac-instant-atica/01-centro-servicios.png",
+    "productAlt": "Centro de servicios ATICA: portal de transporte, reportes vivos y archivos SICETAC",
+    "productUrl": "/?servicio=cuenta-gratuita-atica#contacto",
+    "productCta": "Solicitar mi cuenta gratuita",
     "proof": [
-      "Corte identificado",
-      "Acceso puntual o recurrente"
+      "1 persona",
+      "Hasta 10 combinaciones"
     ]
   },
   "ai": {

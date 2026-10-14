@@ -28,24 +28,24 @@
   "data": {
     "chapter": "01",
     "title": "Work with data for your routes.",
-    "description": "Look up a transport reference value, use the SICETAC database in your analysis or track changes in your network costs. Choose the service you need.",
+    "description": "We organize your transport data, match your routes to SICETAC and help you compare values and understand changes across your network.",
     "outcomes": [
       "A lookup for one route.",
       "A dataset for working with many routes.",
       "An index to track changes in your network."
     ],
     "serviceUrl": "/en/inteligencia-planeacion-transporte/",
-    "serviceCta": "Choose a SICETAC service",
-    "category": "For your own analysis",
-    "product": "SICETAC Database",
-    "productDescription": "Structured data to match with your company routes and use in your own analysis. Request a one-time or recurring delivery.",
-    "productImage": "/assets/images/atiemppo/cover-base.png",
-    "productAlt": "ATIEMPPO SICETAC Database overview",
-    "productUrl": "/en/?servicio=base-sicetac#contacto",
-    "productCta": "Request the database",
+    "serviceCta": "See how we work",
+    "category": "ATICA · Free account",
+    "product": "Start exploring your network.",
+    "productDescription": "An individual account to start with up to ten route combinations and consult their available references in ATICA. Early access. We receive your request and coordinate account activation with you.",
+    "productImage": "/assets/images/blog/sicetac-instant-atica/01-centro-servicios.png",
+    "productAlt": "ATICA service center: transport portal, live reports and SICETAC files; interface in Spanish",
+    "productUrl": "/en/?servicio=cuenta-gratuita-atica#contacto",
+    "productCta": "Request my free account",
     "proof": [
-      "One-time or recurring delivery",
-      "Match data to your routes"
+      "1 person",
+      "Up to 10 combinations"
     ]
   },
   "ai": {
