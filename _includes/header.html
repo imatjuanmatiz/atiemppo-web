@@ -4,7 +4,20 @@
 {%- assign nav_copy = site.data.navigation[nav_lang] -%}
 {%- assign nav_path = page.url -%}
 {%- if nav_prefix == '/en/' -%}{%- assign nav_path = page.url | remove_first: '/en' -%}{%- endif -%}
-{%- assign nav_translation = include.translation | default: page.translations[nav_copy.other_lang] | default: nav_copy.other_home -%}
+{%- assign nav_translation = include.translation | default: page.translations[nav_copy.other_lang] -%}
+{%- unless nav_translation -%}
+  {%- if page.layout == 'post' or page.layout == 'post-en' -%}
+    {%- assign nav_siblings = site.posts | where: 'slug', page.slug -%}
+    {%- for sibling in nav_siblings -%}
+      {%- if nav_lang == 'en' and sibling.lang != 'en' -%}
+        {%- assign nav_translation = sibling.url -%}
+      {%- elsif nav_lang == 'es' and sibling.lang == 'en' -%}
+        {%- assign nav_translation = sibling.url -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endunless -%}
+{%- assign nav_translation = nav_translation | default: nav_copy.other_home -%}
 <link rel="stylesheet" href="/assets/css/navigation.css"/>
 <header class="global-header" data-language="{{ nav_lang }}">
   <div class="global-header-inner">
