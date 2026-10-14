@@ -1,3 +1,6 @@
+---
+layout: none
+---
 <!doctype html>
 <html lang="es">
 <head>
@@ -16,22 +19,7 @@
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <div class="atiemppo-nav-wrap">
-    <nav class="atiemppo-nav" aria-label="Navegación principal ATIEMPPO">
-      <a href="/" class="atiemppo-logo" aria-label="ATIEMPPO, inicio">
-        <img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO">
-      </a>
-      <div class="atiemppo-links">
-        <a href="/">Inicio</a>
-        <a href="/consultoria/">Consultoría</a>
-        <a href="/#soluciones">Aplicaciones</a>
-        <a href="/#experiencias">Aprender</a>
-        <a href="/novedades-en-vias/" class="active" aria-current="page">Novedades en Vías</a>
-        <a href="/blog/">Blog</a>
-        <a href="/quienes-somos/">Quiénes somos</a>
-      </div>
-    </nav>
-  </div>
+  {% include header.html translation="/en/novedades-en-vias/" %}
 
   <header class="site-header">
     <div class="header-grid">

@@ -151,32 +151,8 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:56px 28px 34px;margin-top:
 </head>
 <body>
 
-<div class="nav-wrap">
-  <nav class="site-nav">
-    <a href="/" class="nav-logo" aria-label="ATIEMPPO"><img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO"/></a>
-    <div class="nav-links">
-      <a href="/#puente">El puente</a>
-      <a href="/#productos">Productos</a>
-      <a href="/novedades-en-vias/">Novedades en Vías</a>
-      <a href="/reportes/">Reportes</a>
-      <a href="/conferencias/">Conferencias</a>
-      <a href="/blog/" class="active">Blog</a>
-      <a href="/en/blog/" class="lang-switch" aria-label="View in English">EN</a>
-      <a href="/#contacto" class="nav-cta">Hablemos <span class="dot"></span></a>
-    </div>
-    <button class="nav-burger" id="burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
-  </nav>
-</div>
-<div class="mobile-nav" id="mobileNav">
-  <a href="/#puente" onclick="closeMenu()">El puente</a>
-  <a href="/#productos" onclick="closeMenu()">Productos</a>
-  <a href="/novedades-en-vias/" onclick="closeMenu()">Novedades en Vías</a>
-  <a href="/reportes/" onclick="closeMenu()">Reportes</a>
-  <a href="/conferencias/" onclick="closeMenu()">Conferencias</a>
-  <a href="/blog/" onclick="closeMenu()">Blog</a>
-  <a href="/en/blog/" onclick="closeMenu()">English</a>
-  <a href="/#contacto" onclick="closeMenu()">Hablemos</a>
-</div>
+{% include header.html translation="/en/blog/" %}
+
 
 <main>
   <section class="blog-hero">

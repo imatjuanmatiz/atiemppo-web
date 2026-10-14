@@ -120,28 +120,8 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:56px 28px 34px;margin-top:
 </style>
 </head>
 <body>
-<div class="nav-wrap">
-  <nav class="site-nav">
-    <a href="/en/" class="nav-logo" aria-label="ATIEMPPO"><img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO"/></a>
-    <div class="nav-links">
-      <a href="/en/consultoria/">Consulting</a>
-      <a href="/en/#soluciones">Applications</a>
-      <a href="/reportes/">Reports</a>
-      <a href="/en/blog/">Blog</a>
-      <a href="{{ page.translations.es | default: '/' }}" class="lang-switch" aria-label="Ver en español">ES</a>
-      <a href="/en/#contacto" class="nav-cta">Let's talk <span class="dot"></span></a>
-    </div>
-    <button class="nav-burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
-  </nav>
-</div>
-<div class="mobile-nav" id="mobileNav">
-  <a href="/en/consultoria/" onclick="closeMenu()">Consulting</a>
-  <a href="/en/#soluciones" onclick="closeMenu()">Applications</a>
-  <a href="/reportes/" onclick="closeMenu()">Reports</a>
-  <a href="/en/blog/" onclick="closeMenu()">Blog</a>
-  <a href="{{ page.translations.es | default: '/' }}" onclick="closeMenu()">Español</a>
-  <a href="/en/#contacto" onclick="closeMenu()">Let's talk</a>
-</div>
+{% include header.html lang="en" %}
+
 
 <main>
   <div class="article-hero">

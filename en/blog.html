@@ -150,35 +150,8 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:56px 28px 34px;margin-top:
 </head>
 <body>
 
-<div class="nav-wrap">
-  <nav class="site-nav">
-    <a href="/en/" class="nav-logo" aria-label="ATIEMPPO"><img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO"/></a>
-    <div class="nav-links">
-      <a href="/en/">Home</a>
-      <a href="/en/consultoria/">Consulting</a>
-      <a href="/en/inteligencia-planeacion-transporte/">Intelligence</a>
-      <a href="/en/acompanamiento-ia/">AI productivity</a>
-      <a href="/en/novedades-en-vias/">Road updates</a>
-      <a href="/en/reportes/">Reports</a>
-      <a href="/en/blog/" class="active">Blog</a>
-      <a href="/en/quienes-somos/">About us</a>
-      <a href="/blog/" class="lang-switch" aria-label="View in Spanish">ES</a>
-      <a href="/en/#contacto" class="nav-cta">Let's talk <span class="dot"></span></a>
-    </div>
-    <button class="nav-burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
-  </nav>
-</div>
-<div class="mobile-nav" id="mobileNav">
-  <a href="/en/" onclick="closeMenu()">Home</a>
-  <a href="/en/consultoria/" onclick="closeMenu()">Consulting</a>
-  <a href="/en/inteligencia-planeacion-transporte/" onclick="closeMenu()">Applications</a>
-  <a href="/en/acompanamiento-ia/" onclick="closeMenu()">Learn</a>
-  <a href="/en/novedades-en-vias/" onclick="closeMenu()">Road updates</a>
-  <a href="/en/reportes/" onclick="closeMenu()">Reports</a>
-  <a href="/en/blog/" onclick="closeMenu()">Blog</a>
-  <a href="/blog/" onclick="closeMenu()">Español</a>
-  <a href="/en/#contacto" onclick="closeMenu()">Let's talk</a>
-</div>
+{% include header.html lang="en" translation="/blog/" %}
+
 
 <main>
   <section class="blog-hero">

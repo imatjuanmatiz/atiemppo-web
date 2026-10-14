@@ -1,7 +1,6 @@
 ---
 layout: none
 permalink: /sicetac-al-instante/
-render_with_liquid: false
 ---
 <!DOCTYPE html>
 <html lang="es">
@@ -209,28 +208,9 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:40px 28px}
 </style>
 </head>
 <body>
-<div class="nav-wrap">
-  <nav class="site-nav">
-    <a href="/" class="nav-logo" aria-label="ATIEMPPO"><img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO"/></a>
-    <div class="nav-links">
-      <a href="#modelo">Modelo</a>
-      <a href="#modos">Modos</a>
-      <a href="#peajes">Peajes</a>
-      <a href="/sicetac-al-instante/manual/">Manual</a>
-      <a href="/sicetac-api/">API</a>
-      <a href="/#contacto" class="nav-cta">Hablemos <span class="dot"></span></a>
-    </div>
-    <button class="nav-burger" id="burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
-  </nav>
-</div>
-<div class="mobile-nav" id="mobileNav">
-  <a href="#modelo" onclick="closeMenu()">Modelo</a>
-  <a href="#modos" onclick="closeMenu()">Modos</a>
-  <a href="#peajes" onclick="closeMenu()">Peajes</a>
-  <a href="/sicetac-al-instante/manual/" onclick="closeMenu()">Manual</a>
-  <a href="/sicetac-api/" onclick="closeMenu()">API</a>
-  <a href="/#contacto" onclick="closeMenu()">Hablemos</a>
-</div>
+{% include header.html %}
+<nav class="global-context-nav" aria-label="En esta herramienta"><a href="#modelo">Modelo</a><a href="#modos">Modos</a><a href="#peajes">Peajes</a><a href="/sicetac-al-instante/manual/">Manual</a><a href="/sicetac-api/">API</a></nav>
+
 
 <main>
   <section class="hero" id="inicio">

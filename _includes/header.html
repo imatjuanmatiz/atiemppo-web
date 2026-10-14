@@ -1,18 +1,28 @@
-<nav id="nav">
-  <a href="/" class="nav-logo" aria-label="ATIEMPPO">
-    <img src="/assets/images/logo-atiemppo.png" alt="Logo ATIEMPPO" class="nav-logo-mark"/>
-  </a>
-  <button class="nav-burger" id="burger" aria-label="Menú"><span></span><span></span><span></span></button>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="/">Inicio</a></li>
-    <li><a href="/consultoria/">Consultoría</a></li>
-    <li><a href="/inteligencia-planeacion-transporte/">Inteligencia</a></li>
-    <li><a href="/acompanamiento-ia/">Capacitación y acompañamiento en IA</a></li>
-    <li><a href="/novedades-en-vias/">Novedades en Vías</a></li>
-    <li><a href="/reportes/">Reportes Vivos</a></li>
-    <li><a href="/conferencias/">Conferencias</a></li>
-    <li><a href="/blog/">Blog</a></li>
-    <li><a href="/quienes-somos/">Quiénes somos</a></li>
-    <li><a href="/portaltransporte/" class="nav-cta">Portal de clientes</a></li>
-  </ul>
-</nav>
+{%- assign nav_lang = include.lang | default: page.lang | default: 'es' -%}
+{%- assign nav_prefix = page.url | slice: 0, 4 -%}
+{%- if nav_prefix == '/en/' -%}{%- assign nav_lang = 'en' -%}{%- endif -%}
+{%- assign nav_copy = site.data.navigation[nav_lang] -%}
+{%- assign nav_path = page.url -%}
+{%- if nav_prefix == '/en/' -%}{%- assign nav_path = page.url | remove_first: '/en' -%}{%- endif -%}
+{%- assign nav_translation = include.translation | default: page.translations[nav_copy.other_lang] | default: nav_copy.other_home -%}
+<link rel="stylesheet" href="/assets/css/navigation.css"/>
+<header class="global-header" data-language="{{ nav_lang }}">
+  <div class="global-header-inner">
+    <a class="global-brand" href="{{ nav_copy.home }}" aria-label="ATIEMPPO, {{ nav_copy.home_label }}"><img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO" width="176" height="44"/></a>
+    <button class="global-menu-toggle" type="button" aria-controls="global-menu" aria-expanded="false" aria-label="{{ nav_copy.open }}" data-open-label="{{ nav_copy.open }}" data-close-label="{{ nav_copy.close }}"><span aria-hidden="true">☰</span> {{ nav_copy.menu }}</button>
+    <nav class="global-menu" id="global-menu" aria-label="{{ nav_copy.label }}">
+      {%- for item in site.data.navigation.items -%}
+        {%- assign nav_active = false -%}
+        {%- if nav_path == item.path -%}{%- assign nav_active = true -%}{%- endif -%}
+        {%- for prefix in item.sections -%}
+          {%- assign path_start = nav_path | slice: 0, prefix.size -%}
+          {%- if path_start == prefix -%}{%- assign nav_active = true -%}{%- endif -%}
+        {%- endfor -%}
+        <a href="{{ nav_copy.prefix }}{{ item.path }}"{% if nav_active %} aria-current="{% if nav_path == item.path %}page{% else %}true{% endif %}"{% endif %}>{{ item[nav_lang] }}</a>
+      {%- endfor -%}
+      <a class="global-language" href="{{ nav_translation }}" lang="{{ nav_copy.other_lang }}" hreflang="{{ nav_copy.other_lang }}" aria-label="{{ nav_copy.language_label }}">{{ nav_copy.language }}</a>
+      <a class="global-account" href="{{ nav_copy.home }}?servicio=cuenta-gratuita-atica#contacto">{{ nav_copy.account }}</a>
+    </nav>
+  </div>
+</header>
+<script src="/assets/js/navigation.js" defer></script>
