@@ -17,6 +17,7 @@ layout: none
 {% if page.image %}<meta property="og:image" content="https://atiemppo.com{{ page.image }}"/>{% endif %}
 <meta name="twitter:card" content="summary_large_image"/>
 <link rel="canonical" href="https://atiemppo.com{{ page.url }}"/>
+{% include hreflang.html %}
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -127,7 +128,7 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:56px 28px 34px;margin-top:
       <a href="/en/#soluciones">Applications</a>
       <a href="/reportes/">Reports</a>
       <a href="/en/blog/">Blog</a>
-      <a href="/" class="lang-switch" aria-label="Ver en español">ES</a>
+      <a href="{{ page.translations.es | default: '/' }}" class="lang-switch" aria-label="Ver en español">ES</a>
       <a href="/en/#contacto" class="nav-cta">Let's talk <span class="dot"></span></a>
     </div>
     <button class="nav-burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
@@ -138,7 +139,7 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:56px 28px 34px;margin-top:
   <a href="/en/#soluciones" onclick="closeMenu()">Applications</a>
   <a href="/reportes/" onclick="closeMenu()">Reports</a>
   <a href="/en/blog/" onclick="closeMenu()">Blog</a>
-  <a href="/" onclick="closeMenu()">Español</a>
+  <a href="{{ page.translations.es | default: '/' }}" onclick="closeMenu()">Español</a>
   <a href="/en/#contacto" onclick="closeMenu()">Let's talk</a>
 </div>
 
