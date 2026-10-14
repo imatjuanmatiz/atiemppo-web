@@ -4,7 +4,7 @@ permalink: /sitemap.xml
 sitemap: false
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 {%- assign seen_urls = "|" -%}
 {%- assign documents = site.documents | concat: site.html_pages -%}
 {%- for doc in documents -%}
@@ -13,7 +13,7 @@ sitemap: false
     {%- assign path = doc.url | replace: '/index.html', '/' -%}
     {%- assign key = path | prepend: '|' | append: '|' -%}
     {%- unless seen_urls contains key -%}
-      <url><loc>{{ path | absolute_url | xml_escape }}</loc>{% if doc.last_modified_at or doc.date %}<lastmod>{{ doc.last_modified_at | default: doc.date | date_to_xmlschema }}</lastmod>{% endif %}</url>
+      <url><loc>{{ path | absolute_url | xml_escape }}</loc>{% if doc.last_modified_at or doc.date %}<lastmod>{{ doc.last_modified_at | default: doc.date | date_to_xmlschema }}</lastmod>{% endif %}{% if doc.translations %}{% for t in doc.translations %}<xhtml:link rel="alternate" hreflang="{{ t[0] }}" href="{{ t[1] | absolute_url | xml_escape }}"/>{% endfor %}<xhtml:link rel="alternate" hreflang="x-default" href="{{ doc.translations.es | absolute_url | xml_escape }}"/>{% endif %}</url>
       {%- assign seen_urls = seen_urls | append: key -%}
     {%- endunless -%}
   {%- endunless -%}

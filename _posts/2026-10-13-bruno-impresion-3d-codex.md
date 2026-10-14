@@ -12,6 +12,9 @@ emoji: "🐾"
 tags: [inteligencia-artificial, codex, impresion-3d, bruno, atiemppo-lab]
 permalink: /blog/bruno-impresion-3d-codex/
 image: /assets/images/blog/bruno-impresion-3d-codex/imagen5.png
+translations:
+  es: /blog/bruno-impresion-3d-codex/
+  en: /en/blog/bruno-3d-print-codex/
 ---
 
 <style>
