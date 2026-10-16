@@ -9,6 +9,9 @@ emoji: "📰"
 tags: [newsletter, logistics, transport, editorial]
 lang: en
 permalink: /en/blog/el-dato-logistico-newsletter/
+translations:
+  es: /blog/2026/03/el-dato-logistico-newsletter/
+  en: /en/blog/el-dato-logistico-newsletter/
 ---
 
 **El Dato Logístico** isn't just a newsletter. It's an editorial layer.

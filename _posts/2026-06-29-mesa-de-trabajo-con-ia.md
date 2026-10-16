@@ -8,6 +8,9 @@ lab: "ATIEMPPO Lab"
 emoji: "🧠"
 tags: [inteligencia-artificial, agentes, atiemppo-lab, bruno, openclaw]
 permalink: /ia-aplicada/
+translations:
+  es: /ia-aplicada/
+  en: /en/blog/mesa-de-trabajo-con-ia/
 ---
 
 # Como estamos construyendo una mesa de trabajo con IA

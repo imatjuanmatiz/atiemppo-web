@@ -7,6 +7,9 @@ author: "Equipo fundador de ATICA"
 lab: "ATICA"
 emoji: "🚛"
 tags: [atica, transporte, agentes, colombia]
+translations:
+  es: /blog/2026/02/atica-carta-del-fundador-7-meses-despues/
+  en: /en/blog/atica-carta-del-fundador-7-meses-despues/
 ---
 
 # 🚛 Carta del Fundador: 7 meses después

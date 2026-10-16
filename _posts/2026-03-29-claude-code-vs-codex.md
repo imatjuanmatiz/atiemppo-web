@@ -9,6 +9,9 @@ tags: [claude-code, codex, openai, anthropic, herramientas, desarrollo]
 author: "Juan Pablo Matiz"
 newsletter: "El Dato Logístico"
 permalink: /blog/2026/03/claude-code-vs-codex/
+translations:
+  es: /blog/2026/03/claude-code-vs-codex/
+  en: /en/blog/claude-code-vs-codex/
 ---
 
 Hay herramientas de IA que sirven para conversar, y otras para ejecutar trabajo real. Claude Code y Codex entran en esta segunda categoría: asistentes pensados para construir, corregir y mover código con menos fricción. Apuntan al mismo problema, pero no lo resuelven igual.

@@ -9,6 +9,9 @@ emoji: "🤖"
 tags: [atica, transport, ai, colombia]
 lang: en
 permalink: /en/blog/atica-agente-transporte-colombia/
+translations:
+  es: /blog/2026/02/atica-agente-transporte-colombia/
+  en: /en/blog/atica-agente-transporte-colombia/
 ---
 
 ATICA isn't a generic chatbot. It's an agent specialized in Colombian transport, designed to understand the sector's real context.

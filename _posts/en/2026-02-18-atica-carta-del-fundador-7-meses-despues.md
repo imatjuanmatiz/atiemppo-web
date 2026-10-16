@@ -9,6 +9,9 @@ emoji: "🚛"
 tags: [atica, transport, agents, colombia]
 lang: en
 permalink: /en/blog/atica-carta-del-fundador-7-meses-despues/
+translations:
+  es: /blog/2026/02/atica-carta-del-fundador-7-meses-despues/
+  en: /en/blog/atica-carta-del-fundador-7-meses-despues/
 ---
 
 # 🚛 Founder's Letter: 7 months later

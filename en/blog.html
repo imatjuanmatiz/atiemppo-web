@@ -3,6 +3,9 @@ layout: none
 permalink: /en/blog/
 title: Blog — Live Lab
 description: Notes, updates and editorial pieces from ATIEMPPO's live projects. SICETAC, El Dato Logístico, La Comunidad, Insignia Impact and more.
+translations:
+  es: /blog/
+  en: /en/blog/
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -20,9 +23,7 @@ description: Notes, updates and editorial pieces from ATIEMPPO's live projects. 
 <meta property="og:locale" content="en_US"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <link rel="canonical" href="https://atiemppo.com/en/blog/"/>
-<link rel="alternate" hreflang="es" href="https://atiemppo.com/blog/"/>
-<link rel="alternate" hreflang="en" href="https://atiemppo.com/en/blog/"/>
-<link rel="alternate" hreflang="x-default" href="https://atiemppo.com/blog/"/>
+{% include hreflang.html %}
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",

@@ -7,6 +7,9 @@ author: "Juan Pablo Matiz"
 lab: "Atiemppo Lab"
 emoji: "🏁"
 tags: [appsco, historia, atiemppo, producto]
+translations:
+  es: /blog/2026/02/appsco-vuelta-colombia-origen-atiemppo/
+  en: /en/blog/appsco-vuelta-colombia-origen-atiemppo/
 ---
 
 # El día que nos ganamos Apps.co con mi hermana siguiendo la Vuelta a Colombia

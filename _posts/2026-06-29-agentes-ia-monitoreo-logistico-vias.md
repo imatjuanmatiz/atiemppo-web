@@ -9,6 +9,9 @@ emoji: "🛣️"
 tags: [logistica, inteligencia-artificial, monitoreo, agentes, transporte]
 image: /assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia.png
 permalink: /casos/agentes-ia-monitoreo-logistico-vias/
+translations:
+  es: /casos/agentes-ia-monitoreo-logistico-vias/
+  en: /en/blog/agentes-ia-monitoreo-logistico-vias/
 ---
 
 # Agentes de IA para logística: el caso de Novedades en Vías

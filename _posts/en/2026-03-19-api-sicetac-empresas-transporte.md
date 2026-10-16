@@ -9,6 +9,9 @@ emoji: "🔌"
 tags: [sicetac, api, transport, integrations]
 lang: en
 permalink: /en/blog/api-sicetac-empresas-transporte/
+translations:
+  es: /blog/2026/03/api-sicetac-empresas-transporte/
+  en: /en/blog/api-sicetac-empresas-transporte/
 ---
 
 In many transport companies, the reference value of a route still lives in manual lookups, loose spreadsheets or people who carry the knowledge in their heads.

@@ -9,6 +9,9 @@ emoji: "📊"
 tags: [data, artificial-intelligence, agents, analytics, business]
 lang: en
 permalink: /en/blog/agentes-conversacionales-datos/
+translations:
+  es: /soluciones/agentes-conversacionales-datos/
+  en: /en/blog/agentes-conversacionales-datos/
 ---
 
 # Asking your data: conversational agents for better decisions

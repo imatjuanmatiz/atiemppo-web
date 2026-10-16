@@ -7,6 +7,9 @@ author: "Equipo Atiemppo"
 lab: "La Comunidad"
 emoji: "👥"
 tags: [comunidad, skool, logistica, aprendizaje]
+translations:
+  es: /blog/2026/03/la-comunidad-skool/
+  en: /en/blog/la-comunidad-skool/
 ---
 
 El contenido abierto sirve para atraer y orientar. Pero hay un punto donde hace falta profundidad.

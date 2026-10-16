@@ -7,6 +7,9 @@ author: "Equipo Atiemppo"
 lab: "Insignia Impact"
 emoji: "⭐"
 tags: [insignia-impact, supply-chain, responsabilidad-social, logistica]
+translations:
+  es: /blog/2026/03/insignia-impact/
+  en: /en/blog/insignia-impact/
 ---
 
 No todo en logística es eficiencia, costo o velocidad.

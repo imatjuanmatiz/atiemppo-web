@@ -7,6 +7,9 @@ author: "Equipo Atiemppo"
 lab: "SICETAC al Instante"
 emoji: "📲"
 tags: [sicetac, whatsapp, transporte, ia]
+translations:
+  es: /blog/2026/03/sicetac-al-instante-whatsapp/
+  en: /en/blog/sicetac-al-instante-whatsapp/
 ---
 
 Hay momentos en los que una persona no necesita una plataforma entera. Necesita una respuesta rápida.

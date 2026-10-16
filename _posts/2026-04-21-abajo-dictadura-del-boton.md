@@ -8,6 +8,9 @@ lab: "El Dato Logístico"
 emoji: "🔘"
 tags: [logistica, datos, dashboards, agentes, ia, analytics]
 newsletter: "El Dato Logístico"
+translations:
+  es: /blog/2026/04/abajo-dictadura-del-boton/
+  en: /en/blog/abajo-dictadura-del-boton/
 ---
 
 Durante años, analizar datos en logística significó una cosa muy simple: si no había botón, no había respuesta.

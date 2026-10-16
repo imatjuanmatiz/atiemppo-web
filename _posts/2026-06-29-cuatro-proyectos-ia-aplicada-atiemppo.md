@@ -9,6 +9,9 @@ emoji: "🧩"
 image: /assets/images/blog/mesa-trabajo-ia/tokens-130-dias-juan-pablo-matiz.png
 tags: [inteligencia-artificial, agentes, atiemppo-lab, bruno, openclaw]
 permalink: /ia-aplicada/cuatro-proyectos-atiemppo-lab/
+translations:
+  es: /ia-aplicada/cuatro-proyectos-atiemppo-lab/
+  en: /en/blog/cuatro-proyectos-ia-aplicada-atiemppo/
 ---
 
 # Cuatro proyectos para mostrar cómo estamos construyendo IA aplicada

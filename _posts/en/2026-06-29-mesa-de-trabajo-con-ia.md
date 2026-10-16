@@ -9,6 +9,9 @@ emoji: "🧠"
 tags: [artificial-intelligence, agents, atiemppo-lab, bruno, openclaw]
 lang: en
 permalink: /en/blog/mesa-de-trabajo-con-ia/
+translations:
+  es: /ia-aplicada/
+  en: /en/blog/mesa-de-trabajo-con-ia/
 ---
 
 # How we're building an AI workbench

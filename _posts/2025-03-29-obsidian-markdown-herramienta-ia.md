@@ -9,6 +9,9 @@ tags: [obsidian, markdown, herramientas, conocimiento, ia]
 autor: "Juan Pablo Matiz"
 newsletter: "El Dato Logístico"
 permalink: /blog/2025/03/obsidian-markdown-herramienta-ia/
+translations:
+  es: /blog/2025/03/obsidian-markdown-herramienta-ia/
+  en: /en/blog/obsidian-markdown-herramienta-ia/
 ---
 
 No todas las herramientas de IA viven en la nube ni dependen de interfaces complejas. Algunas de las más útiles son las que ayudan a pensar mejor, ordenar mejor y conservar mejor el conocimiento. En esa lista, Obsidian ocupa un lugar especial.

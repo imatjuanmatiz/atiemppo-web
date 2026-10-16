@@ -8,6 +8,9 @@ lab: "ATIEMPPO Lab"
 emoji: "📊"
 tags: [datos, inteligencia-artificial, agentes, analitica, negocio]
 permalink: /soluciones/agentes-conversacionales-datos/
+translations:
+  es: /soluciones/agentes-conversacionales-datos/
+  en: /en/blog/agentes-conversacionales-datos/
 ---
 
 # Preguntarle a los datos: agentes conversacionales para tomar mejores decisiones

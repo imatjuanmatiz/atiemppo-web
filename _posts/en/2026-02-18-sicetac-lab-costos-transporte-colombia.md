@@ -9,6 +9,9 @@ emoji: "🚚"
 tags: [sicetac, transport, agents, colombia]
 lang: en
 permalink: /en/blog/sicetac-lab-costos-transporte-colombia/
+translations:
+  es: /blog/2026/02/sicetac-lab-costos-transporte-colombia/
+  en: /en/blog/sicetac-lab-costos-transporte-colombia/
 ---
 
 SICETAC-LAB was born to solve a concrete friction: in many operations, calculating transport costs is still slow, manual and hard to trace.

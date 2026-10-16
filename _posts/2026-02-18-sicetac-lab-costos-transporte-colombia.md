@@ -7,6 +7,9 @@ author: "Equipo Atiemppo"
 lab: "SICETAC-LAB"
 emoji: "🚚"
 tags: [sicetac, transporte, agentes, colombia]
+translations:
+  es: /blog/2026/02/sicetac-lab-costos-transporte-colombia/
+  en: /en/blog/sicetac-lab-costos-transporte-colombia/
 ---
 
 SICETAC-LAB nació para resolver una fricción concreta: en muchas operaciones, calcular costos de transporte sigue siendo lento, manual y poco trazable.
