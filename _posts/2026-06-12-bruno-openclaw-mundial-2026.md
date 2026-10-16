@@ -9,6 +9,9 @@ emoji: "⚽"
 tags: [inteligencia-artificial, agentes, openclaw, bruno, mundial-2026, atiemppo]
 newsletter: "El Dato Logístico"
 permalink: /blog/2026/06/bruno-openclaw-mundial-2026/
+translations:
+  es: /blog/2026/06/bruno-openclaw-mundial-2026/
+  en: /en/blog/bruno-openclaw-mundial-2026/
 ---
 
 Ayer empezó el Mundial 2026 y quiero contarles cómo nosotros decidimos aprovecharlo para hacer un experimento que venimos imaginando hace meses: sacar a Bruno de mi mesa de trabajo con IA y meterlo en un chat futbolero.

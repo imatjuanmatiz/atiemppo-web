@@ -8,6 +8,9 @@ lab: "ATIEMPPO Lab"
 emoji: "📡"
 tags: [inteligencia-artificial, agentes, mcp, x, monitoreo, atiemppo-lab]
 permalink: /laboratorio/x-mcp-agentes-fuentes-vivas/
+translations:
+  es: /laboratorio/x-mcp-agentes-fuentes-vivas/
+  en: /en/blog/x-mcp-agentes-fuentes-vivas/
 ---
 
 # X MCP y agentes conectados a fuentes vivas

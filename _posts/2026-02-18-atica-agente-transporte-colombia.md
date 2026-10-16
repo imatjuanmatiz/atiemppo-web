@@ -7,6 +7,9 @@ author: "Equipo Atiemppo"
 lab: "ATICA"
 emoji: "🤖"
 tags: [atica, transporte, ia, colombia]
+translations:
+  es: /blog/2026/02/atica-agente-transporte-colombia/
+  en: /en/blog/atica-agente-transporte-colombia/
 ---
 
 ATICA no es un chatbot genérico. Es un agente especializado en transporte colombiano, diseñado para entender el contexto real del sector.

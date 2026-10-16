@@ -7,6 +7,9 @@ author: "Equipo Atiemppo"
 lab: "API SICETAC"
 emoji: "🔌"
 tags: [sicetac, api, transporte, integraciones]
+translations:
+  es: /blog/2026/03/api-sicetac-empresas-transporte/
+  en: /en/blog/api-sicetac-empresas-transporte/
 ---
 
 En muchas empresas de transporte, el valor de referencia de una ruta sigue viviendo en consultas manuales, hojas sueltas o personas que cargan el conocimiento en la cabeza.

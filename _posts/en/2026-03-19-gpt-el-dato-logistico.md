@@ -9,6 +9,9 @@ emoji: "🧠"
 tags: [gpt, chatgpt, logistics, data]
 lang: en
 permalink: /en/blog/gpt-el-dato-logistico/
+translations:
+  es: /blog/2026/03/gpt-el-dato-logistico/
+  en: /en/blog/gpt-el-dato-logistico/
 ---
 
 Not all questions are answered the same way.

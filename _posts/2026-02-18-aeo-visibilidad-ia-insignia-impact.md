@@ -7,6 +7,9 @@ author: "Equipo Atiemppo"
 lab: "Insignia Impact"
 emoji: "🌐"
 tags: [aeo, geo, ia, visibilidad]
+translations:
+  es: /blog/2026/02/aeo-visibilidad-ia-insignia-impact/
+  en: /en/blog/aeo-visibilidad-ia-insignia-impact/
 ---
 
 La búsqueda está cambiando. En muchos sectores, el primer punto de contacto ya no es Google: es un asistente de IA.

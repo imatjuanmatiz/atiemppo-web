@@ -9,6 +9,9 @@ emoji: "👥"
 tags: [community, skool, logistics, learning]
 lang: en
 permalink: /en/blog/la-comunidad-skool/
+translations:
+  es: /blog/2026/03/la-comunidad-skool/
+  en: /en/blog/la-comunidad-skool/
 ---
 
 Open content is good for attracting and orienting. But there's a point where depth is needed.

@@ -10,6 +10,9 @@ author: "Juan Pablo Matiz"
 newsletter: "El Dato Logístico"
 lang: en
 permalink: /en/blog/claude-code-vs-codex/
+translations:
+  es: /blog/2026/03/claude-code-vs-codex/
+  en: /en/blog/claude-code-vs-codex/
 ---
 
 Some AI tools are for conversing, and others for executing real work. Claude Code and Codex fall into this second category: assistants designed to build, fix and move code with less friction. They aim at the same problem, but don't solve it the same way.

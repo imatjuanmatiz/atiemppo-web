@@ -9,6 +9,9 @@ emoji: "🏁"
 tags: [appsco, history, atiemppo, product]
 lang: en
 permalink: /en/blog/appsco-vuelta-colombia-origen-atiemppo/
+translations:
+  es: /blog/2026/02/appsco-vuelta-colombia-origen-atiemppo/
+  en: /en/blog/appsco-vuelta-colombia-origen-atiemppo/
 ---
 
 # The day my sister and I won Apps.co following the Vuelta a Colombia

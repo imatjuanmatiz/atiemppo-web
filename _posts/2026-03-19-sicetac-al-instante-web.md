@@ -7,6 +7,9 @@ author: "Equipo Atiemppo"
 lab: "SICETAC al Instante"
 emoji: "🗄️"
 tags: [sicetac, producto, ui, transporte]
+translations:
+  es: /blog/2026/03/sicetac-al-instante-web/
+  en: /en/blog/sicetac-al-instante-web/
 ---
 
 Una consulta de costos puede ser técnicamente compleja y, aun así, sentirse simple para quien la usa.

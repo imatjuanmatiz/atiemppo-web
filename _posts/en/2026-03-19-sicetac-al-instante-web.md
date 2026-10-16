@@ -9,6 +9,9 @@ emoji: "🗄️"
 tags: [sicetac, product, ui, transport]
 lang: en
 permalink: /en/blog/sicetac-al-instante-web/
+translations:
+  es: /blog/2026/03/sicetac-al-instante-web/
+  en: /en/blog/sicetac-al-instante-web/
 ---
 
 A cost query can be technically complex and still feel simple to whoever uses it.

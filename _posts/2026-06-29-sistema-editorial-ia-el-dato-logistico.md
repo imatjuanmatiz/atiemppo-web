@@ -9,6 +9,9 @@ emoji: "📰"
 tags: [el-dato-logistico, inteligencia-artificial, agentes, contenido, reportes-vivos]
 image: /assets/images/blog/el-dato-logistico/home-radar-logistico-semanal.png
 permalink: /casos/sistema-editorial-ia-el-dato-logistico/
+translations:
+  es: /casos/sistema-editorial-ia-el-dato-logistico/
+  en: /en/blog/sistema-editorial-ia-el-dato-logistico/
 ---
 
 # El Dato Logistico: un sistema editorial vivo construido con agentes de IA

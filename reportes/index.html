@@ -3,6 +3,9 @@ layout: none
 title: "Reportes vivos de El Dato Logístico | ATIEMPPO"
 permalink: /reportes/
 description: "Biblioteca pública de reportes vivos de El Dato Logístico y ATIEMPPO: análisis HTML actualizables sobre logística, transporte, SICETAC y datos en LATAM."
+translations:
+  es: /reportes/
+  en: /en/reportes/
 ---
 <!DOCTYPE html>
 <html lang="es">
@@ -16,9 +19,7 @@ description: "Biblioteca pública de reportes vivos de El Dato Logístico y ATIE
 <meta content="website" property="og:type"/>
 <meta content="https://atiemppo.com/reportes/" property="og:url"/>
 <link href="https://atiemppo.com/reportes/" rel="canonical"/>
-<link href="https://atiemppo.com/reportes/" hreflang="es" rel="alternate"/>
-<link href="https://atiemppo.com/en/reportes/" hreflang="en" rel="alternate"/>
-<link href="https://atiemppo.com/reportes/" hreflang="x-default" rel="alternate"/>
+{% include hreflang.html %}
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Outfit:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>

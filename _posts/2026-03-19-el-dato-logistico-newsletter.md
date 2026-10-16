@@ -7,6 +7,9 @@ author: "Equipo Atiemppo"
 lab: "El Dato Logístico"
 emoji: "📰"
 tags: [newsletter, logistica, transporte, editorial]
+translations:
+  es: /blog/2026/03/el-dato-logistico-newsletter/
+  en: /en/blog/el-dato-logistico-newsletter/
 ---
 
 **El Dato Logístico** no es solo una newsletter. Es una capa editorial.

@@ -9,6 +9,9 @@ emoji: "⭐"
 tags: [insignia-impact, supply-chain, social-responsibility, logistics]
 lang: en
 permalink: /en/blog/insignia-impact/
+translations:
+  es: /blog/2026/03/insignia-impact/
+  en: /en/blog/insignia-impact/
 ---
 
 Not everything in logistics is efficiency, cost or speed.

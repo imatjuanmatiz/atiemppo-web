@@ -9,6 +9,9 @@ emoji: "⚽"
 image: /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-ruta-colombia.png
 tags: [agentes, conversaciones, bruno, mundialero, inteligencia-artificial]
 permalink: /laboratorio/bruno-futbolero-agentes-conversacionales/
+translations:
+  es: /laboratorio/bruno-futbolero-agentes-conversacionales/
+  en: /en/blog/bruno-futbolero-agentes-conversacionales/
 ---
 
 # Bruno Futbolero y Mundialero: agentes que conversan con contexto

@@ -10,6 +10,9 @@ tags: [logistics, data, dashboards, agents, ai, analytics]
 newsletter: "El Dato Logístico"
 lang: en
 permalink: /en/blog/abajo-dictadura-del-boton/
+translations:
+  es: /blog/2026/04/abajo-dictadura-del-boton/
+  en: /en/blog/abajo-dictadura-del-boton/
 ---
 
 For years, analyzing data in logistics meant one very simple thing: if there was no button, there was no answer.

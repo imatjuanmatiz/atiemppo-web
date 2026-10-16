@@ -9,6 +9,9 @@ emoji: "⚙️"
 tags: [inteligencia-artificial, agentes, openclaw, bruno, automatizacion]
 image: /assets/images/blog/bruno-openclaw/bruno-whatsapp-explica-quien-es.png
 permalink: /ia-que-ejecuta-bruno-openclaw/
+translations:
+  es: /ia-que-ejecuta-bruno-openclaw/
+  en: /en/blog/ia-que-ejecuta-bruno-openclaw/
 ---
 
 # Bruno y OpenClaw: una IA que no solo responde, también hace

@@ -10,6 +10,9 @@ tags: [el-dato-logistico, artificial-intelligence, agents, content, live-reports
 image: /assets/images/blog/el-dato-logistico/home-radar-logistico-semanal.png
 lang: en
 permalink: /en/blog/sistema-editorial-ia-el-dato-logistico/
+translations:
+  es: /casos/sistema-editorial-ia-el-dato-logistico/
+  en: /en/blog/sistema-editorial-ia-el-dato-logistico/
 ---
 
 # El Dato Logístico: a live editorial system built with AI agents

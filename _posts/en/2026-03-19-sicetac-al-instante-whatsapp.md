@@ -9,6 +9,9 @@ emoji: "📲"
 tags: [sicetac, whatsapp, transport, ai]
 lang: en
 permalink: /en/blog/sicetac-al-instante-whatsapp/
+translations:
+  es: /blog/2026/03/sicetac-al-instante-whatsapp/
+  en: /en/blog/sicetac-al-instante-whatsapp/
 ---
 
 There are moments when a person doesn't need an entire platform. They need a fast answer.

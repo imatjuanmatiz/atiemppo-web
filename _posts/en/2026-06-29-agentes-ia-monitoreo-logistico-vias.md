@@ -10,6 +10,9 @@ tags: [logistics, artificial-intelligence, monitoring, agents, transport]
 image: /assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia.png
 lang: en
 permalink: /en/blog/agentes-ia-monitoreo-logistico-vias/
+translations:
+  es: /casos/agentes-ia-monitoreo-logistico-vias/
+  en: /en/blog/agentes-ia-monitoreo-logistico-vias/
 ---
 
 # AI agents for logistics: the Novedades en Vías case

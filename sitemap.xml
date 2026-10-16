@@ -9,8 +9,12 @@ sitemap: false
 {%- assign documents = site.documents | concat: site.html_pages -%}
 {%- for doc in documents -%}
   {%- assign root_prefix = doc.url | slice: 0, 12 -%}
-  {%- unless doc.sitemap == false or doc.url contains '/gracias/' or doc.url contains '/confirmado/' or doc.url contains '/404' or root_prefix == '/newsletter/' -%}
+  {%- unless doc.sitemap == false or doc.url contains '/gracias/' or doc.url contains '/confirmado/' or doc.url contains '/404' or doc.url contains '/mechita' or root_prefix == '/newsletter/' -%}
     {%- assign path = doc.url | replace: '/index.html', '/' -%}
+    {%- if path == '/politicaprivacidad/' or path == '/politicaprivacidad.html' or path == '/politicaprivacidad/index.html' -%}
+      {%- assign path = '/politicaprivacidad' -%}
+    {%- endif -%}
+    {%- assign path = path | replace: '.html/', '.html' -%}
     {%- assign key = path | prepend: '|' | append: '|' -%}
     {%- unless seen_urls contains key -%}
       <url><loc>{{ path | absolute_url | xml_escape }}</loc>{% if doc.last_modified_at or doc.date %}<lastmod>{{ doc.last_modified_at | default: doc.date | date_to_xmlschema }}</lastmod>{% endif %}{% if doc.translations %}{% for t in doc.translations %}<xhtml:link rel="alternate" hreflang="{{ t[0] }}" href="{{ t[1] | absolute_url | xml_escape }}"/>{% endfor %}<xhtml:link rel="alternate" hreflang="x-default" href="{{ doc.translations.es | absolute_url | xml_escape }}"/>{% endif %}</url>
@@ -21,8 +25,12 @@ sitemap: false
 {%- for file in site.static_files -%}
   {%- assign root_prefix = file.path | slice: 0, 12 -%}
   {%- if file.extname == '.html' or file.extname == '.pdf' -%}
-    {%- unless file.sitemap == false or file.path contains '/gracias/' or file.path contains '/confirmado/' or file.path contains '/404' or root_prefix == '/newsletter/' -%}
+    {%- unless file.sitemap == false or file.path contains '/gracias/' or file.path contains '/confirmado/' or file.path contains '/404' or file.path contains '/mechita' or root_prefix == '/newsletter/' -%}
       {%- assign path = file.path | replace: '/index.html', '/' -%}
+      {%- if path == '/politicaprivacidad/' or path == '/politicaprivacidad.html' or path == '/politicaprivacidad/index.html' -%}
+        {%- assign path = '/politicaprivacidad' -%}
+      {%- endif -%}
+      {%- assign path = path | replace: '.html/', '.html' -%}
       {%- assign key = path | prepend: '|' | append: '|' -%}
       {%- unless seen_urls contains key -%}
         <url><loc>{{ path | absolute_url | xml_escape }}</loc></url>

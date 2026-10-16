@@ -9,6 +9,9 @@ emoji: "🌐"
 tags: [aeo, geo, ai, visibility]
 lang: en
 permalink: /en/blog/aeo-visibilidad-ia-insignia-impact/
+translations:
+  es: /blog/2026/02/aeo-visibilidad-ia-insignia-impact/
+  en: /en/blog/aeo-visibilidad-ia-insignia-impact/
 ---
 
 Search is changing. In many sectors, the first point of contact is no longer Google: it's an AI assistant.

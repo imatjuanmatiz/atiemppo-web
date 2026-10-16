@@ -10,6 +10,9 @@ author: "Juan Pablo Matiz"
 newsletter: "El Dato Logístico"
 lang: en
 permalink: /en/blog/obsidian-markdown-herramienta-ia/
+translations:
+  es: /blog/2025/03/obsidian-markdown-herramienta-ia/
+  en: /en/blog/obsidian-markdown-herramienta-ia/
 ---
 
 Not all AI tools live in the cloud or depend on complex interfaces. Some of the most useful are the ones that help you think better, organize better and preserve knowledge better. On that list, Obsidian holds a special place.

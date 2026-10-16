@@ -7,6 +7,9 @@ author: "Equipo Atiemppo"
 lab: "El Dato Logístico"
 emoji: "🧠"
 tags: [gpt, chatgpt, logistica, datos]
+translations:
+  es: /blog/2026/03/gpt-el-dato-logistico/
+  en: /en/blog/gpt-el-dato-logistico/
 ---
 
 No todas las preguntas se responden igual.

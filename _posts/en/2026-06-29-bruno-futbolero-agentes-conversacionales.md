@@ -10,6 +10,9 @@ image: /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-ruta-col
 tags: [agents, conversations, bruno, mundialero, artificial-intelligence]
 lang: en
 permalink: /en/blog/bruno-futbolero-agentes-conversacionales/
+translations:
+  es: /laboratorio/bruno-futbolero-agentes-conversacionales/
+  en: /en/blog/bruno-futbolero-agentes-conversacionales/
 ---
 
 # Bruno Futbolero and Mundialero: agents that converse with context

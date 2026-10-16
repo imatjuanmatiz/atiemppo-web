@@ -10,6 +10,9 @@ tags: [artificial-intelligence, agents, openclaw, bruno, world-cup-2026, atiempp
 newsletter: "El Dato Logístico"
 lang: en
 permalink: /en/blog/bruno-openclaw-mundial-2026/
+translations:
+  es: /blog/2026/06/bruno-openclaw-mundial-2026/
+  en: /en/blog/bruno-openclaw-mundial-2026/
 ---
 
 Yesterday the 2026 World Cup kicked off and I want to tell you how we decided to take advantage of it to run an experiment we've been imagining for months: taking Bruno out of my AI workbench and putting it into a football group chat.

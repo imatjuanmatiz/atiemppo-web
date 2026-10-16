@@ -10,6 +10,9 @@ tags: [artificial-intelligence, agents, openclaw, bruno, automation]
 image: /assets/images/blog/bruno-openclaw/bruno-whatsapp-explica-quien-es.png
 lang: en
 permalink: /en/blog/ia-que-ejecuta-bruno-openclaw/
+translations:
+  es: /ia-que-ejecuta-bruno-openclaw/
+  en: /en/blog/ia-que-ejecuta-bruno-openclaw/
 ---
 
 # Bruno and OpenClaw: an AI that doesn't just answer, it does
