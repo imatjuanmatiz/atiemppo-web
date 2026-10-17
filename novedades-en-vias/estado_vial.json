@@ -2,15 +2,15 @@
   "schema_version": "1.3",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-10-17-am",
-  "revision_id": "rev-92736a604d040927cae67b07cf9e1bdc",
+  "cut_id": "2026-10-17-md",
+  "revision_id": "rev-dfe709d1ad21660896c850178336bd66",
   "calidad_ingesta": {
     "state": "complete",
-    "revision_id": "rev-92736a604d040927cae67b07cf9e1bdc",
-    "report_sha256": "ca2167667fd2c09ace65d1fd839d01446ab439616fbc8290ea0612b11b7790c0",
+    "revision_id": "rev-dfe709d1ad21660896c850178336bd66",
+    "report_sha256": "c92738ad656cc5cf79e371854953128438ff9f90dc9d61580937938aa2043368",
     "parser_version": "roads-2.0.0",
     "detail_rows": 0,
-    "signal_rows": 6,
+    "signal_rows": 8,
     "observation_count": 0,
     "duplicate_rows": 0,
     "complete": true,
@@ -20,61 +20,78 @@
   "zona_horaria": "America/Bogota",
   "nota_vigencia": "La fecha del corte acredita la actualización del reporte. Cada punto conserva la fecha de su evidencia; las referencias heredadas o sin enlace directo requieren verificación. El resumen editorial reproduce el reporte y no confirma por sí solo el estado actual.",
   "fecha": "2026-10-17",
-  "ventana": "AM",
-  "hora": "07:00",
-  "generado_en": "2026-10-17T07:00:00",
-  "artefacto_fuente": "2026-10-17-editor-eldato-version-vias-colombia-am.md",
+  "ventana": "MD",
+  "hora": "12:00",
+  "generado_en": "2026-10-17T12:00:00",
+  "artefacto_fuente": "2026-10-17-editor-eldato-version-vias-colombia-md.md",
   "que_cambio": [],
   "notas_cambio": [
-    "Este corte es el listado base del día. MD y PM miden el cambio contra esta mañana, no contra el mismo corredor del corte anterior."
+    "Mosquera–Facatativá: franja RCN 07:30–11:30 venció; respuestas #767 11:24 no entran; no estaba en el AM.",
+    "Túnel de Oriente: cierre 11:35 y habilitación 11:41 (TAO). No entra.",
+    "Bogotá–Villavicencio: Coviandina 09:30 mix PMT; hay paso. No entra.",
+    "Las Palmas: TAO 12:00 movilidad reducida km 6+610. PMT de bajo impacto. No entra."
   ],
   "listado": [],
   "senales_tempranas": [
     {
-      "tramo": "Mosquera–Facatativá",
-      "senal": "original #767 16:33 16-oct: cierre total sáb 17 y dom 18 oct, 07:30–11:30, Clásico RCN; alterna Mosquera–La Gran Vía–Cachipay–Zipacón–Facatativá",
-      "fuente": "INVÍAS #767 https://x.com/numeral767/status/2111209048767099092",
-      "vigilar": "programado; no está vigente a las 07:00 del 17-oct"
+      "tramo": "Zipaquirá–Ubaté / Ubaté–Puente Nacional",
+      "senal": "MovilidadCundi 11:41: franjas de calzada Clásico RCN hasta 12:10–13:10; Mosquera–Facatativá 07:30–11:30 ya vencida",
+      "fuente": "@MovilidadCundi https://x.com/MovilidadCundi/status/2111497881513349160",
+      "vigilar": "PMT deportivo de calzada; 0 original #767 de esta ventana"
     },
     {
-      "tramo": "Buga–Buenaventura / Dagua, El Naranjo km 56",
-      "senal": "último original #767 07:17 16-oct: cierre total ambos sentidos por caída de piedra; 0 CaminoPacifico; 0 habilitación",
-      "fuente": "INVÍAS #767 https://x.com/numeral767/status/2111069140060602497",
-      "vigilar": "heredado sin parte de esta ventana; caducidad ~24 h; 3c no reingresa"
-    },
-    {
-      "tramo": "Honda–Bogotá / San Francisco km 103",
-      "senal": "último original #767 07:20 16-oct: cierre total sentido Bogotá–Villeta por vehículo incinerado; 0 ConPanamericana; 0 habilitación",
-      "fuente": "INVÍAS #767 https://x.com/numeral767/status/2111069744837070901",
-      "vigilar": "heredado sin parte de esta ventana; caducidad ~24 h; 3c no reingresa"
+      "tramo": "Los Alpes–Villeta",
+      "senal": "ConPanamericana 11:27: cierre temporal 18-oct 09:30–11:00, 2ª etapa RCN",
+      "fuente": "@ConPanamericana https://x.com/ConPanamericana/status/2111494279629553746",
+      "vigilar": "programado para mañana; no vigente a las 12:00"
     },
     {
       "tramo": "Cerrito–Cúcuta / Pr 58+0300",
-      "senal": "respuesta #767 18:21 16-oct: sigue cierre total por pérdida de banca; original 12:58 15-oct",
-      "fuente": "INVÍAS #767 https://x.com/numeral767/status/2111236141651300834",
-      "vigilar": "respuesta a usuario; no confirma estado; original ~42 h"
+      "senal": "respuesta #767 07:27: continúa cierre total por obras; original 12:58 15-oct",
+      "fuente": "INVÍAS #767 https://x.com/numeral767/status/2111434025072304391",
+      "vigilar": "respuesta a usuario; no confirma estado; original ~47 h"
     },
     {
-      "tramo": "Cordialidad / Baranoa–Sabanalarga",
-      "senal": "ControlT NUEVA ~06:00: accidente de tránsito",
-      "fuente": "ControlT AM https://risk.controlt.io/map",
+      "tramo": "Mosquera / puente Mondoñedo",
+      "senal": "ControlT NUEVA ~07:35: trancón sentido Bogotá–Mosquera–Madrid, posible accidente",
+      "fuente": "ControlT MD https://risk.controlt.io/map",
       "vigilar": "ControlT no confirma; 0 #767 ni autoridad de calzada"
     },
     {
-      "tramo": "Valdivia / El Repecho de la Frisolera",
-      "senal": "ControlT NUEVA ~20:55 16-oct: vehículo varado, paso a un carril",
-      "fuente": "ControlT AM https://risk.controlt.io/map",
+      "tramo": "Riofrío / Zona Bananera",
+      "senal": "ControlT NUEVA ~06:25: mula atravesada ambos sentidos; desvío por montallantas",
+      "fuente": "ControlT MD https://risk.controlt.io/map",
       "vigilar": "ControlT no confirma; 0 #767 ni concesión de calzada"
+    },
+    {
+      "tramo": "Puebloviejo / Barranquilla–Santa Marta",
+      "senal": "ControlT NUEVA ~08:51: vehículo varado, trancón",
+      "fuente": "ControlT MD https://risk.controlt.io/map",
+      "vigilar": "ControlT no confirma; 0 #767 ni autoridad de calzada"
+    },
+    {
+      "tramo": "Curumaní",
+      "senal": "ControlT NUEVA ~08:00: trancón por inspección a mulas de combustible",
+      "fuente": "ControlT MD https://risk.controlt.io/map",
+      "vigilar": "ControlT no confirma; 0 #767 ni autoridad de calzada"
+    },
+    {
+      "tramo": "Cerrito / Presidente–Cerrito",
+      "senal": "ControlT NUEVA ~08:00: bus quemado a ~2 km del monumento",
+      "fuente": "ControlT MD https://risk.controlt.io/map",
+      "vigilar": "ControlT no confirma; 0 original #767 de esta ventana"
     }
   ],
   "alertas_inmediatas": [],
   "salud_fuentes": {
     "estado_general": "estable",
     "ventanas_esperadas": [
-      "AM"
+      "AM",
+      "MD"
     ],
     "ventanas_recibidas": [
-      "AM"
+      "AM",
+      "MD"
     ],
     "eventos_confirmados": 0,
     "eventos_vigilancia": 0,
@@ -4406,47 +4423,60 @@
         "resueltos": 0,
         "por_verificar": 0
       }
+    },
+    {
+      "cut_id": "2026-10-17-md",
+      "hora": "12:00",
+      "ventana": "MD",
+      "tipo": "corte_final",
+      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
+      "conteos": {
+        "nuevos": 0,
+        "persistentes": 0,
+        "resueltos": 0,
+        "por_verificar": 0
+      }
     }
   ],
   "fuentes": [],
   "bibliografia_reporte": [
     {
-      "nombre": "INVÍAS #767 16:33 16-oct (cierre programado Mosquera–Facatativá, Clásico RCN, sáb 17 y dom 18 oct 07:30–11:30)",
-      "url": "https://x.com/numeral767/status/2111209048767099092",
+      "nombre": "Secretaría de Movilidad Cundinamarca 11:41 17-oct (Clásico RCN, franjas progresivas etapa 1)",
+      "url": "https://x.com/MovilidadCundi/status/2111497881513349160",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "INVÍAS #767 07:17 16-oct (cierre total Buga–Buenaventura, Dagua El Naranjo Km 56+0000)",
-      "url": "https://x.com/numeral767/status/2111069140060602497",
+      "nombre": "Concesionaria Panamericana 11:27 17-oct (cierre programado 18-oct Los Alpes–Villeta 09:30–11:00)",
+      "url": "https://x.com/ConPanamericana/status/2111494279629553746",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "INVÍAS #767 07:20 16-oct (cierre total Honda–Bogotá, San Francisco Km 103+0000, sentido Bogotá–Villeta)",
-      "url": "https://x.com/numeral767/status/2111069744837070901",
+      "nombre": "Concesión TAO 11:41 17-oct (Túnel de Oriente habilitado ambos sentidos)",
+      "url": "https://x.com/ConcesionTAO/status/2111498047234478487",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "INVÍAS #767 18:21 16-oct (respuesta Cerrito–Cúcuta Pr 58+0300)",
-      "url": "https://x.com/numeral767/status/2111236141651300834",
+      "nombre": "Concesión TAO 12:00 17-oct (movilidad reducida doble calzada Las Palmas Km 6+610)",
+      "url": "https://x.com/ConcesionTAO/status/2111502680287826334",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "Concesión Vial de los Llanos 03:55 17-oct (Villavicencio–Granada / Puerto López / Puerto Gaitán operativas)",
-      "url": "https://x.com/cviallanos/status/2111380569850572993",
+      "nombre": "Coviandina 09:30 17-oct (mix PMT Bogotá–Villavicencio; hay paso)",
+      "url": "https://x.com/CoviandinaSAS/status/2111464649346412892",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "Concesión TAO 04:30 17-oct (habilitada Santa Elena Km 11+200 ambos sentidos)",
-      "url": "https://x.com/ConcesionTAO/status/2111389297001611307",
+      "nombre": "INVÍAS #767 11:24 17-oct (respuesta Mosquera–Facatativá RCN; no es original)",
+      "url": "https://x.com/numeral767/status/2111493510335803764",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "Coviandina 05:55 17-oct (mix PMT Bogotá–Villavicencio; flujo moderado)",
-      "url": "https://x.com/CoviandinaSAS/status/2111410970996133924",
+      "nombre": "INVÍAS #767 07:27 17-oct (respuesta Cerrito–Cúcuta Pr 58+0300)",
+      "url": "https://x.com/numeral767/status/2111434025072304391",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "Radar ControlT AM",
+      "nombre": "Radar ControlT MD",
       "url": "https://risk.controlt.io/map",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
