@@ -8,7 +8,8 @@ description: Política de privacidad de ATICA by ATIEMPPO S.A.S.
 <section class="page-hero">
   <div class="wrapper-narrow">
     <h1>Política de Privacidad — ATICA by ATIEMPPO S.A.S.</h1>
-    <p class="page-subtitle">Última actualización: 18 de febrero de 2026</p>
+    <p class="page-subtitle">Última actualización: 16 de octubre de 2026</p>
+    <p>Esta política corresponde a la consulta pública por WhatsApp sin cuenta del portal. Para ATICA y SICETAC al Instante con cuenta, API o agentes, consulta la <a href="https://clientes.atiemppo.com/privacidad">política del portal</a>. Los <a href="/legal/">términos de cada servicio y soporte</a> están disponibles por separado.</p>
   </div>
 </section>
 
@@ -18,7 +19,7 @@ description: Política de privacidad de ATICA by ATIEMPPO S.A.S.
 ## 1. Responsable del tratamiento
 
 **ATIEMPPO S.A.S.**  
-NIT: [Tu NIT aquí]  
+NIT: 900658013  
 Bogotá D.C., Colombia  
 Contacto: contacto@atiemppo.com
 

@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<link rel="stylesheet" href="/assets/css/legal.css"/>
+<article class="legal-page">
+  <nav class="legal-breadcrumb" aria-label="Ubicación"><a href="/">ATIEMPPO</a><span aria-hidden="true">/</span><a href="/legal/">Términos y soporte</a></nav>
+  <header class="legal-header">
+    <p class="legal-eyebrow">ATIEMPPO S.A.S. · Información del servicio</p>
+    <h1>{{ page.heading | default: page.title }}</h1>
+    <p class="legal-summary">{{ page.description }}</p>
+    <p class="legal-version">Versión del 16 de octubre de 2026 · Bogotá, Colombia</p>
+  </header>
+  <div class="legal-body">{{ content }}</div>
+  <nav class="legal-related" aria-label="Información relacionada"><a href="/legal/terminos/atica/">Términos ATICA</a><a href="/legal/terminos/sicetac-al-instante/">Términos SICETAC al Instante</a><a href="/soporte/">Soporte</a><a href="https://clientes.atiemppo.com/privacidad">Privacidad del portal, API y agentes</a></nav>
+</article>
