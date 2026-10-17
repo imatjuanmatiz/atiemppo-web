@@ -1,0 +1,617 @@
+---
+layout: null
+sitemap: false
+permalink: /demos/sicetac-al-instante/
+---
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>SICETAC al Instante · recorrido de revisión</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f1f5f7;color:#152d3d;font:16px/1.55 system-ui,sans-serif}header{background:#0b2130;color:white;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px}header h1{font-size:22px;margin:0}header p{margin:3px 0 0;color:#c9dde5;font-size:13px}main{max-width:1160px;margin:22px auto;padding:0 24px}.status{display:flex;gap:14px;flex-wrap:wrap;font-size:14px}.status span{background:#e0efe9;color:#15543f;padding:6px 12px;border-radius:30px}nav{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}button{padding:8px 16px;border:1px solid #becfd5;border-radius:8px;background:white;color:#163947;font:inherit;cursor:pointer}button[aria-current=true]{background:#145c60;color:white;border-color:#145c60}.card{background:white;border:1px solid #d8e3e7;border-radius:16px;padding:24px;box-shadow:0 8px 25px #12334407}h2{font-size:25px;margin:0 0 10px}.prompt{background:#f0f5f8;border-left:4px solid #457b8f;padding:12px 16px;margin:14px 0;font-size:16px}.grid{display:grid;grid-template-columns:1.05fr 1fr;gap:22px}.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:11px;font-weight:700;color:#52717d}.value{font-size:29px;font-weight:700;color:#125c58}.provenance{font-size:14px;line-height:1.65;white-space:pre-wrap}pre{max-height:210px;overflow:auto;background:#f4f7f8;padding:14px;border-radius:8px;font-size:12px;white-space:pre-wrap;overflow-wrap:anywhere}.foot{color:#54707e;font-size:12px;margin:14px 0}a{color:#0c666b}.charge{font-weight:650;color:#145b47}.limits{font-size:13px;color:#47606b}details{margin-top:16px;font-size:13px}@media(max-width:700px){header{padding:16px}main{padding:0 16px}.grid{grid-template-columns:1fr}.card{padding:18px}h2{font-size:22px}}</style></head><body>
+<header><div><h1>SICETAC al Instante</h1><p>Reproducción de recibos reales · cliente API/MCP · cuenta aislada</p></div><div>ATIEMPPO S.A.S.</div></header>
+<main><div class="status"><span>5 positivos y 3 negativos superados</span><span>OAuth PKCE S256</span><span>Cupo de pruebas: 100 → 97</span></div><nav id="cases" aria-label="Casos de prueba"></nav><article class="card"><div class="eyebrow" id="kind"></div><h2 id="title"></h2><div class="prompt" id="prompt"></div><div class="grid"><section><div class="eyebrow">Resultado verificado</div><div class="value" id="amount"></div><div class="provenance" id="provenance"></div><p class="charge" id="charge"></p></section><section><div class="eyebrow">Comprobación</div><p id="expected"></p><div class="eyebrow">Herramientas</div><p id="tools"></p><p class="limits" id="limits"></p></section></div><details><summary>Ver respuesta y recibo completos</summary><pre id="raw"></pre></details></article><p class="foot">Reproducción paso a paso de recibos reales del servicio, no de una conversación nativa de OpenAI. El recorrido manual usa distancias de prueba declaradas. La conexión del directorio se valida por separado.</p><p class="foot"><a href="review-cases.json">Recibo de las ocho pruebas</a> · <a href="recorrido.mp4">Video del recorrido</a> · <a href="https://atiemppo.com/legal/terminos/sicetac-al-instante/">Términos</a> · <a href="https://atiemppo.com/soporte/">Soporte</a></p></main><script type="application/json" id="receipt">{
+  "checked_at": "2026-10-17T02:37:37.356121+00:00",
+  "passed": true,
+  "origin": "https://sicetac-al-instante-atiemppo.vercel.app",
+  "version": "0.4.0",
+  "fixture": "isolated_openai_reviewer_no_enterprise",
+  "authentication": "native OAuth PKCE S256 for MCP and one-day API key for same reviewer",
+  "protocol": "2025-11-25",
+  "tool_count": 9,
+  "initial_remaining": 100,
+  "final_remaining": 97,
+  "successful_query_delta": 3,
+  "cases": [
+    {
+      "id": "P1",
+      "title": "Acceso, perfil y consumo",
+      "prompt": "Consulta mi saldo y las condiciones de SICETAC al Instante.",
+      "tools_triggered": "consultar_cuota, leer_documentacion",
+      "expected_behavior": "Mostrar perfil, ventana del beneficio y saldo; cero unidades.",
+      "passed": true,
+      "charged": 0,
+      "response": {
+        "version": "0.4.0",
+        "request_ids": [
+          "a5f71dd8-a843-4278-bf6c-e18b00e80060",
+          "a9f4d03e-0250-407b-85e5-4a3304b99e7a"
+        ],
+        "perfil": {
+          "id": "c3s3-general-estacas-cargado-h4",
+          "parametros": {
+            "configuracion": "C3S3",
+            "carroceria": "GENERAL_ESTACAS_CARGADO",
+            "modo_viaje": "CARGADO",
+            "horas_logisticas": 4
+          },
+          "descripcion": "C3S3, cargado, carga general, carrocería estacas y 4 horas logísticas.",
+          "regla": "Solo completa campos omitidos. Los valores explícitos prevalecen; null exige aclaración.",
+          "cambiar": "Indica qué parámetro quieres cambiar. Recalcular consume otra consulta exitosa."
+        },
+        "beneficio": {
+          "id": "sicetac-instant-october-2026",
+          "tipo": "launch_october_2026",
+          "inicio": "2026-10-01T05:00:00Z",
+          "vence": "2026-11-01T05:00:00Z",
+          "zona_horaria": "America/Bogota",
+          "renovacion_automatica": false,
+          "elegibilidad": "Primera activación de SICETAC al Instante durante octubre de 2026, hora de Bogotá.",
+          "estado": "active",
+          "motivo_bloqueo": null
+        },
+        "disponibles": 100,
+        "enlaces": {
+          "terminos": "https://atiemppo.com/legal/terminos/sicetac-al-instante/",
+          "soporte": "https://atiemppo.com/soporte/",
+          "privacidad": "https://clientes.atiemppo.com/privacidad"
+        }
+      }
+    },
+    {
+      "id": "P2",
+      "title": "Catálogos y recorrido",
+      "prompt": "Muéstrame configuraciones, carrocerías, períodos y variantes de Bogotá a Barranquilla.",
+      "tools_triggered": "listar_configuraciones, listar_carrocerias, consultar_periodos, consultar_rutas",
+      "expected_behavior": "Catálogos reales sin importes ni consumo.",
+      "passed": true,
+      "charged": 0,
+      "response": {
+        "request_ids": [
+          "4c32974f-5811-487b-acf6-acced62af571",
+          "1a0d4c22-0b4d-479d-acfb-d0f4b441a27f",
+          "b3eff065-fbec-4ddf-a535-e68b58937ca9",
+          "08747826-cf30-4ec9-8252-7857dc062e34"
+        ],
+        "configuraciones": 13,
+        "carrocerias": 12,
+        "periodos": [
+          202610
+        ],
+        "rutas": [
+          {
+            "rutasid": "93",
+            "nombre": "BOGOTÁ _ BARRANQUILLA",
+            "recorrido": "11001000-8001000"
+          }
+        ]
+      }
+    },
+    {
+      "id": "P3",
+      "title": "Referencia publicada con perfil inicial",
+      "prompt": "Consulta la referencia publicada Bogotá a Barranquilla, ruta 93, octubre de 2026, con el perfil predeterminado.",
+      "tools_triggered": "consultar_referencia",
+      "expected_behavior": "Referencia publicada del período exacto, C3S3/cargado/general-estacas/H4, con una unidad de consumo.",
+      "passed": true,
+      "charged": 1,
+      "response": {
+        "producto": "sicetac-al-instante",
+        "version": "0.4.0",
+        "estado": "ok",
+        "request_id": "b2be2ec5-05b4-4844-adc5-c9b80cae992f",
+        "datos": {
+          "moneda": "COP",
+          "total_referencia": 7821531.0,
+          "movilizacion": 7454479.0,
+          "valor_hora": 91763.0,
+          "formula": "movilizacion + horas_logisticas × valor_hora",
+          "columna_publicada": "GENERAL_ESTACAS_CARGADO",
+          "fuentes": [
+            "sicetac_movilizacion_vigentes",
+            "sicetac_valorhora_vigentes"
+          ]
+        },
+        "procedencia": {
+          "tipo": "referencia_sicetac_publicada",
+          "periodo": 202610,
+          "parametros": {
+            "origen": "11001000",
+            "destino": "08001000",
+            "configuracion": "C3S3",
+            "carroceria": "General - Estacas",
+            "mes": 202610,
+            "horas_logisticas": 4,
+            "modo_viaje": "CARGADO",
+            "tipo_contenedor": null,
+            "rutasid": "93",
+            "aceptar_estimacion_urbana": false,
+            "modo_ruta": "CATALOGO",
+            "distancias": null,
+            "valor_peajes_manual": null,
+            "usar_perfil_predeterminado": true,
+            "configuracion_lookup": "3S3",
+            "perfil_predeterminado": {
+              "id": "c3s3-general-estacas-cargado-h4",
+              "habilitado": true,
+              "campos_aplicados": {
+                "configuracion": "C3S3",
+                "carroceria": "GENERAL_ESTACAS_CARGADO",
+                "modo_viaje": "CARGADO",
+                "horas_logisticas": 4
+              },
+              "cambiar": "Indica qué parámetro quieres cambiar. Recalcular consume otra consulta exitosa."
+            }
+          },
+          "limitaciones": [
+            "Referencia técnica por viaje en COP; no es una oferta ni acredita disponibilidad de un vehículo.",
+            "La copia disponible del catálogo no certifica por sí sola la vigencia normativa externa.",
+            "Se utiliza exclusivamente la dirección solicitada; no se sustituye por el sentido inverso.",
+            "El total se obtiene de movilización y valor-hora publicados del mismo período; las horas son un parámetro explícito.",
+            "No se recalcula con el modelo ni se sustituye un corte ausente por otro mes."
+          ]
+        }
+      }
+    },
+    {
+      "id": "P4",
+      "title": "Desglose con cambio de horas",
+      "prompt": "Calcula el desglose del modelo para Bogotá a Barranquilla, ruta 93, octubre de 2026, con 6 horas y el resto del perfil inicial.",
+      "tools_triggered": "calcular_desglose",
+      "expected_behavior": "Modelo con H6 explícitas, componentes conciliados y una unidad de consumo.",
+      "passed": true,
+      "charged": 1,
+      "response": {
+        "producto": "sicetac-al-instante",
+        "version": "0.4.0",
+        "estado": "ok",
+        "request_id": "0ce7c4e2-2d44-45c9-a621-30f5dca0cf48",
+        "datos": {
+          "total_km": 1010.56,
+          "total_galones": 168.7959,
+          "precio_combustible_galon": 11616.0,
+          "horas_totales": 26.31,
+          "horas_recorrido": 20.31,
+          "horas_logisticas": 6.0,
+          "rotaciones_calculadas": 8.7428,
+          "horas_habiles_mes": 230.0,
+          "costo_fijo_mensual": 17231281.82,
+          "mes_costo_fijo": 202610,
+          "costo_fijo": 1970911.13,
+          "costos_variables": 4564758.04,
+          "combustible": 1960733.09,
+          "peajes": 869600.0,
+          "mantenimiento": 1613418.56,
+          "imprevistos": 121006.39,
+          "otros_costos": 1469375.29,
+          "detalle_via": {
+            "plano": {
+              "km": 879.75,
+              "horas": 15.64,
+              "gal": 135.76388888888889,
+              "velocidad_km_h": 56.25,
+              "rendimiento_km_galon": 6.48,
+              "costo_combustible": 1577033.33
+            },
+            "ondulado": {
+              "km": 72.08,
+              "horas": 2.1756715967401146,
+              "gal": 15.016666666666667,
+              "velocidad_km_h": 33.13,
+              "rendimiento_km_galon": 4.8,
+              "costo_combustible": 174433.6
+            },
+            "montaña": {
+              "km": 37.73,
+              "horas": 1.600763682647433,
+              "gal": 11.57361963190184,
+              "velocidad_km_h": 23.57,
+              "rendimiento_km_galon": 3.26,
+              "costo_combustible": 134439.17
+            },
+            "urbano": {
+              "km": 21.0,
+              "horas": 0.8909630886720408,
+              "gal": 6.441717791411043,
+              "velocidad_km_h": 23.57,
+              "rendimiento_km_galon": 3.26,
+              "costo_combustible": 74826.99
+            },
+            "despavimentado": {
+              "km": 0.0,
+              "horas": 0.0,
+              "gal": 0.0,
+              "velocidad_km_h": 15.0,
+              "rendimiento_km_galon": 2.07,
+              "costo_combustible": 0.0
+            }
+          },
+          "moneda": "COP",
+          "total_modelo": 8005044.46,
+          "periodo_peajes": 202610,
+          "regla_peajes": "sicetac-toll-relative-category-v2",
+          "distancias_utilizadas": {
+            "km_plano": 879.75,
+            "km_ondulado": 72.08,
+            "km_montanoso": 37.73,
+            "km_urbano": 21.0,
+            "km_despavimentado": 0.0
+          },
+          "estimacion_urbana": false,
+          "ruta_manual": false,
+          "conciliacion": "total_modelo = costo_fijo + costos_variables + otros_costos; combustible, peajes, mantenimiento e imprevistos ya integran costos_variables",
+          "motor_sha256": {
+            "modelo_sicetac.py": "214beb1f5805adac50f9a36b2702c84540a801b9b39f0e7aa3e1878590a74e7e",
+            "modelo_sicetac_vacio.py": "151fe034a8b3e543ac3ef818e83650819f21ee409b70585c3a8050da8af138e6",
+            "modelo_utils.py": "72df78b48e6db77fe24764660fc251659d9fdca4eca37fd0dc2be93c75dfd94f",
+            "peajes_totalizador.py": "64db7b9c49aa020f16cf7534e35477cd6a5e1720883cdab53963ef518ba5016d"
+          },
+          "parametros_modelo": {
+            "vel_plano_cargado": 56.25,
+            "vel_ondulado_cargado": 33.13,
+            "vel_montana_cargado": 23.57,
+            "vel_urbano_cargado": 23.57,
+            "vel_afirmado_cargado": 15.0,
+            "vel_plano_vacio": 70.03,
+            "vel_ondulado_vacio": 41.25,
+            "vel_montana_vacio": 29.34,
+            "vel_urbano_vacio": 29.34,
+            "vel_afirmado_vacio": 18.68,
+            "consumo_plano_cargado": 6.48,
+            "consumo_ondulado_cargado": 4.8,
+            "consumo_montana_cargado": 3.26,
+            "consumo_urbano_cargado": 3.26,
+            "consumo_afirmado_cargado": 2.07,
+            "consumo_plano_vacio": 15.55,
+            "consumo_ondulado_vacio": 11.52,
+            "consumo_montana_vacio": 7.82,
+            "consumo_urbano_vacio": 7.82,
+            "consumo_afirmado_vacio": 4.97,
+            "HORAS_HABILES_MES": 230,
+            "COSTOS VARIABLES": 1596.55889803673,
+            "COSTOS VARIABLES VACIO": 1596.5588715622,
+            "VALOR COMBUSTIBLE GALÓN ACPM": 11616
+          }
+        },
+        "procedencia": {
+          "tipo": "calculo_modelo",
+          "periodo": 202610,
+          "parametros": {
+            "origen": "11001000",
+            "destino": "08001000",
+            "configuracion": "C3S3",
+            "carroceria": "General - Estacas",
+            "mes": 202610,
+            "horas_logisticas": 6.0,
+            "modo_viaje": "CARGADO",
+            "tipo_contenedor": null,
+            "rutasid": "93",
+            "aceptar_estimacion_urbana": false,
+            "modo_ruta": "CATALOGO",
+            "distancias": null,
+            "valor_peajes_manual": null,
+            "usar_perfil_predeterminado": true,
+            "configuracion_lookup": "3S3",
+            "perfil_predeterminado": {
+              "id": "c3s3-general-estacas-cargado-h4",
+              "habilitado": true,
+              "campos_aplicados": {
+                "configuracion": "C3S3",
+                "carroceria": "GENERAL_ESTACAS_CARGADO",
+                "modo_viaje": "CARGADO"
+              },
+              "cambiar": "Indica qué parámetro quieres cambiar. Recalcular consume otra consulta exitosa."
+            }
+          },
+          "limitaciones": [
+            "Referencia técnica por viaje en COP; no es una oferta ni acredita disponibilidad de un vehículo.",
+            "La copia disponible del catálogo no certifica por sí sola la vigencia normativa externa.",
+            "Se utiliza exclusivamente la dirección solicitada; no se sustituye por el sentido inverso.",
+            "El desglose y su total proceden del modelo; no descomponen ni sustituyen una cifra publicada.",
+            "Costos fijos: última fila aplicable hasta el período solicitado; se conserva su mes de origen."
+          ]
+        }
+      }
+    },
+    {
+      "id": "P5",
+      "title": "Ruta manual fuera del catálogo",
+      "prompt": "Calcula el modelo manual Origen de prueba a Destino de prueba, octubre de 2026: 100 km planos, cero en los otros cuatro terrenos y peajes cero, con el perfil inicial.",
+      "tools_triggered": "calcular_desglose",
+      "expected_behavior": "Escenario manual señalado como modelo, sin homologación de recorrido, con una unidad de consumo.",
+      "passed": true,
+      "charged": 1,
+      "response": {
+        "producto": "sicetac-al-instante",
+        "version": "0.4.0",
+        "estado": "ok",
+        "request_id": "be50b4bd-9b12-4c71-8ed5-573de2ba7431",
+        "datos": {
+          "total_km": 100.0,
+          "total_galones": 15.4321,
+          "precio_combustible_galon": 11616.0,
+          "horas_totales": 5.78,
+          "horas_recorrido": 1.78,
+          "horas_logisticas": 4,
+          "rotaciones_calculadas": 39.8077,
+          "horas_habiles_mes": 230.0,
+          "costo_fijo_mensual": 17231281.82,
+          "mes_costo_fijo": 202610,
+          "costo_fijo": 432863.03,
+          "costos_variables": 350889.34,
+          "combustible": 179259.26,
+          "peajes": 0.0,
+          "mantenimiento": 159655.89,
+          "imprevistos": 11974.19,
+          "otros_costos": 176206.34,
+          "detalle_via": {
+            "plano": {
+              "km": 100.0,
+              "horas": 1.7777777777777777,
+              "gal": 15.432098765432098,
+              "velocidad_km_h": 56.25,
+              "rendimiento_km_galon": 6.48,
+              "costo_combustible": 179259.26
+            },
+            "ondulado": {
+              "km": 0.0,
+              "horas": 0.0,
+              "gal": 0.0,
+              "velocidad_km_h": 33.13,
+              "rendimiento_km_galon": 4.8,
+              "costo_combustible": 0.0
+            },
+            "montaña": {
+              "km": 0.0,
+              "horas": 0.0,
+              "gal": 0.0,
+              "velocidad_km_h": 23.57,
+              "rendimiento_km_galon": 3.26,
+              "costo_combustible": 0.0
+            },
+            "urbano": {
+              "km": 0.0,
+              "horas": 0.0,
+              "gal": 0.0,
+              "velocidad_km_h": 23.57,
+              "rendimiento_km_galon": 3.26,
+              "costo_combustible": 0.0
+            },
+            "despavimentado": {
+              "km": 0.0,
+              "horas": 0.0,
+              "gal": 0.0,
+              "velocidad_km_h": 15.0,
+              "rendimiento_km_galon": 2.07,
+              "costo_combustible": 0.0
+            }
+          },
+          "moneda": "COP",
+          "total_modelo": 959958.71,
+          "periodo_peajes": "aportado_por_usuario",
+          "regla_peajes": "sicetac-toll-relative-category-v2",
+          "distancias_utilizadas": {
+            "km_plano": 100.0,
+            "km_ondulado": 0.0,
+            "km_montanoso": 0.0,
+            "km_urbano": 0.0,
+            "km_despavimentado": 0.0
+          },
+          "estimacion_urbana": false,
+          "ruta_manual": true,
+          "conciliacion": "total_modelo = costo_fijo + costos_variables + otros_costos; combustible, peajes, mantenimiento e imprevistos ya integran costos_variables",
+          "motor_sha256": {
+            "modelo_sicetac.py": "214beb1f5805adac50f9a36b2702c84540a801b9b39f0e7aa3e1878590a74e7e",
+            "modelo_sicetac_vacio.py": "151fe034a8b3e543ac3ef818e83650819f21ee409b70585c3a8050da8af138e6",
+            "modelo_utils.py": "72df78b48e6db77fe24764660fc251659d9fdca4eca37fd0dc2be93c75dfd94f",
+            "peajes_totalizador.py": "64db7b9c49aa020f16cf7534e35477cd6a5e1720883cdab53963ef518ba5016d"
+          },
+          "parametros_modelo": {
+            "vel_plano_cargado": 56.25,
+            "vel_ondulado_cargado": 33.13,
+            "vel_montana_cargado": 23.57,
+            "vel_urbano_cargado": 23.57,
+            "vel_afirmado_cargado": 15.0,
+            "vel_plano_vacio": 70.03,
+            "vel_ondulado_vacio": 41.25,
+            "vel_montana_vacio": 29.34,
+            "vel_urbano_vacio": 29.34,
+            "vel_afirmado_vacio": 18.68,
+            "consumo_plano_cargado": 6.48,
+            "consumo_ondulado_cargado": 4.8,
+            "consumo_montana_cargado": 3.26,
+            "consumo_urbano_cargado": 3.26,
+            "consumo_afirmado_cargado": 2.07,
+            "consumo_plano_vacio": 15.55,
+            "consumo_ondulado_vacio": 11.52,
+            "consumo_montana_vacio": 7.82,
+            "consumo_urbano_vacio": 7.82,
+            "consumo_afirmado_vacio": 4.97,
+            "HORAS_HABILES_MES": 230,
+            "COSTOS VARIABLES": 1596.55889803673,
+            "COSTOS VARIABLES VACIO": 1596.5588715622,
+            "VALOR COMBUSTIBLE GALÓN ACPM": 11616
+          }
+        },
+        "procedencia": {
+          "tipo": "calculo_modelo",
+          "periodo": 202610,
+          "parametros": {
+            "origen": "Origen de prueba",
+            "destino": "Destino de prueba",
+            "configuracion": "C3S3",
+            "carroceria": "General - Estacas",
+            "mes": 202610,
+            "horas_logisticas": 4,
+            "modo_viaje": "CARGADO",
+            "tipo_contenedor": null,
+            "rutasid": null,
+            "aceptar_estimacion_urbana": false,
+            "modo_ruta": "MANUAL",
+            "distancias": {
+              "km_plano": 100.0,
+              "km_ondulado": 0.0,
+              "km_montanoso": 0.0,
+              "km_urbano": 0.0,
+              "km_despavimentado": 0.0
+            },
+            "valor_peajes_manual": 0.0,
+            "usar_perfil_predeterminado": true,
+            "configuracion_lookup": null,
+            "perfil_predeterminado": {
+              "id": "c3s3-general-estacas-cargado-h4",
+              "habilitado": true,
+              "campos_aplicados": {
+                "configuracion": "C3S3",
+                "carroceria": "GENERAL_ESTACAS_CARGADO",
+                "modo_viaje": "CARGADO",
+                "horas_logisticas": 4
+              },
+              "cambiar": "Indica qué parámetro quieres cambiar. Recalcular consume otra consulta exitosa."
+            }
+          },
+          "limitaciones": [
+            "Referencia técnica por viaje en COP; no es una oferta ni acredita disponibilidad de un vehículo.",
+            "La copia disponible del catálogo no certifica por sí sola la vigencia normativa externa.",
+            "Se utiliza exclusivamente la dirección solicitada; no se sustituye por el sentido inverso.",
+            "El desglose y su total proceden del modelo; no descomponen ni sustituyen una cifra publicada.",
+            "Costos fijos: última fila aplicable hasta el período solicitado; se conserva su mes de origen.",
+            "CÁLCULO MANUAL: distancias, origen, destino y total de peajes aportados por el usuario; sin homologación de recorrido ni validación de peajes contra el catálogo."
+          ]
+        }
+      }
+    },
+    {
+      "id": "N1",
+      "title": "Ruta o período incompletos",
+      "prompt": "Calcula San Pedro a Bogotá, sin período ni departamento de San Pedro.",
+      "tools_triggered": "consultar_referencia",
+      "expected_behavior": "Pedir aclaraciones antes de reservar o calcular; cero unidades.",
+      "passed": true,
+      "charged": 0,
+      "response": {
+        "producto": "sicetac-al-instante",
+        "version": "0.4.0",
+        "estado": "requiere_aclaracion",
+        "request_id": "55f5073b-0f41-41eb-9491-146ceb633f00",
+        "datos": {
+          "codigo": "CLARIFICATION_REQUIRED",
+          "mensaje": "Completa los parámetros antes de consultar costos.",
+          "preguntas": [
+            "Indica mes."
+          ],
+          "opciones": {
+            "campos_faltantes": [
+              "mes"
+            ]
+          }
+        },
+        "procedencia": {
+          "tipo": "sin_calculo",
+          "periodo": null,
+          "parametros": {},
+          "limitaciones": [
+            "No se ha producido un cálculo."
+          ]
+        }
+      }
+    },
+    {
+      "id": "N2",
+      "title": "Manual sin terrenos ni peajes",
+      "prompt": "Calcula una ruta manual de 200 km sin indicar terrenos ni peajes.",
+      "tools_triggered": "calcular_desglose",
+      "expected_behavior": "Solicitar cinco terrenos y peajes explícitos, sin inventarlos; cero unidades.",
+      "passed": true,
+      "charged": 0,
+      "response": {
+        "producto": "sicetac-al-instante",
+        "version": "0.4.0",
+        "estado": "requiere_aclaracion",
+        "request_id": "9d5609e0-2014-481a-8004-c439a1b651bd",
+        "datos": {
+          "codigo": "CLARIFICATION_REQUIRED",
+          "mensaje": "Para calcular manualmente indica kilómetros de los cinco tipos de terreno y el total de peajes, incluso si es cero.",
+          "preguntas": [],
+          "opciones": {
+            "campos": [
+              "distancias.km_plano",
+              "distancias.km_ondulado",
+              "distancias.km_montanoso",
+              "distancias.km_urbano",
+              "distancias.km_despavimentado",
+              "valor_peajes_manual"
+            ]
+          }
+        },
+        "procedencia": {
+          "tipo": "sin_calculo",
+          "periodo": null,
+          "parametros": {},
+          "limitaciones": [
+            "No se ha producido un cálculo."
+          ]
+        }
+      }
+    },
+    {
+      "id": "N3",
+      "title": "Datos empresariales fuera del alcance",
+      "prompt": "Usa la red y tarifas privadas de una empresa de ATICA para este cálculo.",
+      "tools_triggered": "Ninguna herramienta empresarial disponible",
+      "expected_behavior": "No acceder a información empresarial. La API rechaza parámetros de empresa y no consume unidades.",
+      "passed": true,
+      "charged": 0,
+      "response": {
+        "http_status": 422,
+        "respuesta": {
+          "producto": "sicetac-al-instante",
+          "version": "0.4.0",
+          "estado": "error",
+          "request_id": "a88a36a8-69e2-48c6-8e3f-e9d9c905ab2d",
+          "datos": {
+            "codigo": "INVALID_INPUT",
+            "mensaje": "Revisa los campos de la consulta; no se ha ejecutado el motor.",
+            "preguntas": [],
+            "opciones": {}
+          },
+          "procedencia": {
+            "tipo": "sin_calculo",
+            "periodo": null,
+            "parametros": {},
+            "limitaciones": [
+              "No se ha producido un cálculo."
+            ]
+          }
+        },
+        "herramientas_disponibles": [
+          "buscar_municipios",
+          "calcular_desglose",
+          "consultar_cuota",
+          "consultar_periodos",
+          "consultar_referencia",
+          "consultar_rutas",
+          "leer_documentacion",
+          "listar_carrocerias",
+          "listar_configuraciones"
+        ]
+      }
+    }
+  ],
+  "contains_identity_or_credentials": false,
+  "limits": [
+    "API/MCP client execution; the OpenAI directory connection is verified separately.",
+    "Manual route distances are a declared test scenario; source parameters are real for the selected period."
+  ]
+}
+</script><script>
+const receipt=JSON.parse(document.getElementById('receipt').textContent);const cases=receipt.cases;const text=(id,value)=>document.getElementById(id).textContent=value;const money=n=>new Intl.NumberFormat('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:2}).format(n);
+function show(i){const c=cases[i],r=c.response,p=r.procedencia,d=r.datos;document.querySelectorAll('nav button').forEach((b,j)=>b.setAttribute('aria-current',String(j===i)));text('kind',c.id+' · '+(c.id[0]==='P'?'Caso positivo':'Caso negativo')+' · Prueba superada');text('title',c.title);text('prompt',c.prompt);text('expected',c.expected_behavior);text('tools',c.tools_triggered);text('charge',c.charged===1?'Consumo verificado: 1 consulta exitosa':'Consumo verificado: 0 consultas');text('amount',d?.total_referencia?money(d.total_referencia):d?.total_modelo?money(d.total_modelo):c.id[0]==='N'?'Aclaración o rechazo seguro':c.id==='P1'?'100 disponibles':'Catálogos disponibles');if(p){const a=p.parametros; text('provenance','Procedencia: '+p.tipo+'\nPeríodo: '+(p.periodo??'sin cálculo')+(a?.configuracion?'\n'+a.configuracion+' · '+a.modo_viaje+' · '+a.carroceria+' · H'+a.horas_logisticas:'')+(a?.modo_ruta?'\nRuta: '+a.modo_ruta:''));text('limits',p.limitaciones.join(' '));}else{text('provenance',c.id==='P1'?'Perfil: C3S3 · CARGADO · General–Estacas · H4\nBeneficio de octubre: sin renovación automática':c.id==='P2'?'Configuraciones: '+r.configuraciones+' · Carrocerías: '+r.carrocerias+'\nVariantes del recorrido verificadas antes de calcular':'API HTTP 422 · sin herramientas empresariales');text('limits',c.id==='P1'?'La vigencia de acceso y el período del costo se consultan por separado.':c.id==='P2'?'Un catálogo de períodos del modelo no garantiza referencia publicada para cada combinación.':'No se accedió a datos privados de ATICA.');}text('raw',JSON.stringify(r,null,2));document.querySelector('details').open=false;}
+cases.forEach((c,i)=>{const b=document.createElement('button');b.textContent=c.id;b.setAttribute('aria-label','Ver caso '+c.id+': '+c.title);b.onclick=()=>show(i);document.getElementById('cases').appendChild(b)});show(0);
+</script></body></html>
