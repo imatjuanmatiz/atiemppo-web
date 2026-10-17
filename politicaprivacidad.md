@@ -19,7 +19,7 @@ description: Política de privacidad de ATICA by ATIEMPPO S.A.S.
 ## 1. Responsable del tratamiento
 
 **ATIEMPPO S.A.S.**  
-NIT: 900658013  
+NIT: 900658013<br/>
 Bogotá D.C., Colombia  
 Contacto: contacto@atiemppo.com
 
