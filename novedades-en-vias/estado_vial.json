@@ -2,139 +2,122 @@
   "schema_version": "1.3",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-10-18-am",
-  "revision_id": "rev-1a0d3bee0a1cfd3df7b38b50c57e74a5",
+  "cut_id": "2026-10-18-md",
+  "revision_id": "rev-f1035fae81c9c4eb317537475e56909e",
   "calidad_ingesta": {
     "state": "complete",
-    "revision_id": "rev-1a0d3bee0a1cfd3df7b38b50c57e74a5",
-    "report_sha256": "bd2d1940bd4a8e05ba20e81e37bc840aee5702900ddd0fb7acdb61e6420c006a",
+    "revision_id": "rev-f1035fae81c9c4eb317537475e56909e",
+    "report_sha256": "b0cde6e791a991d27845423e7bff528bae57c2456979559349b3a2f3deb712db",
     "parser_version": "roads-2.0.0",
-    "detail_rows": 4,
-    "signal_rows": 4,
-    "observation_count": 4,
+    "detail_rows": 1,
+    "signal_rows": 8,
+    "observation_count": 1,
     "duplicate_rows": 0,
     "complete": true,
-    "evidencia_del_dia": 2,
-    "evidencia_heredada_o_sin_fecha": 2
+    "evidencia_del_dia": 1,
+    "evidencia_heredada_o_sin_fecha": 0
   },
   "zona_horaria": "America/Bogota",
   "nota_vigencia": "La fecha del corte acredita la actualización del reporte. Cada punto conserva la fecha de su evidencia; las referencias heredadas o sin enlace directo requieren verificación. El resumen editorial reproduce el reporte y no confirma por sí solo el estado actual.",
   "fecha": "2026-10-18",
-  "ventana": "AM",
-  "hora": "07:00",
-  "generado_en": "2026-10-18T07:00:00",
-  "artefacto_fuente": "2026-10-18-editor-eldato-version-vias-colombia-am.md",
-  "que_cambio": [],
+  "ventana": "MD",
+  "hora": "12:00",
+  "generado_en": "2026-10-18T12:00:00",
+  "artefacto_fuente": "2026-10-18-editor-eldato-version-vias-colombia-md.md",
+  "que_cambio": [
+    {
+      "corredor": "Villavicencio–Granada",
+      "antes": "cierre total",
+      "ahora": "paso a un carril",
+      "cambio": "mejoró",
+      "evidencia": "Concesión Vial de los Llanos 09:03 https://x.com/cviallanos/status/2111820545293726056"
+    }
+  ],
   "notas_cambio": [
-    "Este corte es el listado base del día. MD y PM miden el cambio contra esta mañana, no contra el mismo corredor del corte anterior."
+    "Honda–Bogotá: franja RCN #767 05:00–11:30 venció; 0 original nuevo ni ConPanamericana/MovilidadCundi en esta ventana; no es reapertura explícita.",
+    "Saravena–Cubará y Hato Corozal–Tame: 0 original nuevo (~17 h); salen del listado a señales.",
+    "Bogotá–Villavicencio: Coviandina 10:48 mix PMT; hay paso. No entra.",
+    "Las Palmas: TAO 12:00 movilidad reducida km 6+610. PMT de bajo impacto. No entra."
   ],
   "listado": [
     {
-      "icono": "🔴",
-      "corredor": "Honda–Bogotá",
-      "km": "",
-      "estado": "cierre total 05:00–11:30 — Clásico RCN Mosquera–Villeta–Guaduas–Honda, ambos sentidos — alterna Mariquita–Armero–San Juan de Río Seco–Albán–Facatativá",
-      "fuente": ""
-    },
-    {
-      "icono": "🔴",
+      "icono": "🟠",
       "corredor": "Villavicencio–Granada",
       "km": "",
-      "estado": "cierre total — PR58+631 Defensas–Variante por incidente vial — esperar indicaciones en vía",
-      "fuente": ""
-    },
-    {
-      "icono": "🔴",
-      "corredor": "Saravena–Cubará",
-      "km": "",
-      "estado": "cierre total — puente Caño Negro Km 9 caído — sin alterna",
-      "fuente": ""
-    },
-    {
-      "icono": "🔴",
-      "corredor": "Hato Corozal–Tame",
-      "km": "",
-      "estado": "cierre total — puente Lopeño Km 18+900, pérdida de calzada — sin alterna",
+      "estado": "paso a un carril — Hotel Reina Victoria por incidente vial — atender indicaciones en vía",
       "fuente": ""
     }
   ],
   "senales_tempranas": [
     {
-      "tramo": "Los Alpes–Villeta",
-      "senal": "ConPanamericana 11:27 17-oct: cierre temporal 18-oct 09:30–11:00, 2ª etapa RCN; 0 parte nuevo en esta ventana",
-      "fuente": "@ConPanamericana https://x.com/ConPanamericana/status/2111494279629553746",
-      "vigilar": "franja de concesión anterior al original #767 05:00–11:30; el listado usa el original"
+      "tramo": "Honda–Bogotá / Mosquera–Villeta–Guaduas–Honda",
+      "senal": "original #767 20:01 17-oct: cierre total Clásico RCN 05:00–11:30 18-oct; franja vencida a las 12:00; TransitoPolicia 10:44 acompaña Etapa 2",
+      "fuente": "INVÍAS #767 https://x.com/numeral767/status/2111623691385860125",
+      "vigilar": "franja vencida; 0 original ni habilitación de concesión en esta ventana; #767 no confirma reapertura"
     },
     {
-      "tramo": "Funza–Mosquera–Madrid–Facatativá",
-      "senal": "MovilidadCundi 18:32 17-oct: cierre Etapa II 08:30–09:15; carrera sale 08:00",
+      "tramo": "Villeta–Guaduas–Honda",
+      "senal": "MovilidadCundi 18:32 17-oct: Etapa II RCN 09:30–13:00 en Ruta 5008",
       "fuente": "@MovilidadCundi https://x.com/MovilidadCundi/status/2111601367047389217",
-      "vigilar": "franja aún no vigente a las 07:00; no contradice con hora más reciente al original #767"
+      "vigilar": "flyer anterior a esta ventana; 0 parte nuevo; PMT deportivo de calzada"
     },
     {
-      "tramo": "La Mansa–Primavera / La Chuchita",
-      "senal": "original #767 20:21 17-oct: cierre parcial con paso a carril, Km 36+000, deslizamiento",
-      "fuente": "INVÍAS #767 https://x.com/numeral767/status/2111628594661433444",
-      "vigilar": "hay paso; no es corredor principal de carga"
+      "tramo": "Saravena–Cubará / puente Caño Negro Km 9",
+      "senal": "original #767 18:49 17-oct: cierre total, puente metálico caído, sin alterna",
+      "fuente": "INVÍAS #767 https://x.com/numeral767/status/2111605605052080254",
+      "vigilar": "0 original de esta ventana; ~17 h; caducidad 24 h; no es reapertura"
     },
     {
-      "tramo": "Tintal / Bogotá",
-      "senal": "ControlT NUEVA ~06:00: accidente, sin más datos",
-      "fuente": "ControlT AM https://risk.controlt.io/map",
-      "vigilar": "ControlT no confirma; 0 #767 ni autoridad de calzada"
-    }
-  ],
-  "alertas_inmediatas": [
+      "tramo": "Hato Corozal–Tame / puente Lopeño Km 18+900",
+      "senal": "original #767 18:59 17-oct: cierre total, pérdida de calzada, sin alterna",
+      "fuente": "INVÍAS #767 https://x.com/numeral767/status/2111608011588571405",
+      "vigilar": "0 original de esta ventana; ~17 h; caducidad 24 h; no es reapertura"
+    },
     {
-      "id": "alert-evt-967ce6c4e9fe61e4a490",
-      "nivel": "critical",
-      "titulo": "cierre total · Villavicencio–Granada",
-      "mensaje": "cierre total por incidente vial",
-      "event_id": "evt-967ce6c4e9fe61e4a490",
-      "corredor": "Villavicencio–Granada",
-      "fuente_ids": [
-        "src-4557f955375c1cb6293f3ddf"
-      ]
+      "tramo": "Tenjo / peaje Siberia, Ruta 50",
+      "senal": "ControlT NUEVA ~08:00–08:40: accidente con persona fallecida, carril bloqueado",
+      "fuente": "ControlT MD https://risk.controlt.io/map",
+      "vigilar": "ControlT no confirma; 0 Accenorte ni #767 de calzada"
+    },
+    {
+      "tramo": "Nilo / Melgar–Ibagué, Ruta 40",
+      "senal": "ControlT NUEVA ~08:11: accidente sentido Melgar–Ibagué",
+      "fuente": "ControlT MD https://risk.controlt.io/map",
+      "vigilar": "ControlT no confirma; 0 ViaSumapaz ni #767 de calzada"
+    },
+    {
+      "tramo": "Santa Bárbara–Medellín Km 31+700",
+      "senal": "ControlT NUEVA ~08:18: árbol caído, paso a un carril, Alto de Los Gómez",
+      "fuente": "ControlT MD https://risk.controlt.io/map",
+      "vigilar": "ControlT no confirma; no es corredor principal de carga"
+    },
+    {
+      "tramo": "Vado Real / Tolota, Bogotá–Bucaramanga",
+      "senal": "ControlT NUEVA ~08:15: socavón, precaución",
+      "fuente": "ControlT MD https://risk.controlt.io/map",
+      "vigilar": "ControlT no confirma; 0 #767 ni concesión de calzada"
     }
   ],
+  "alertas_inmediatas": [],
   "salud_fuentes": {
-    "estado_general": "degradada",
+    "estado_general": "estable",
     "ventanas_esperadas": [
-      "AM"
+      "AM",
+      "MD"
     ],
     "ventanas_recibidas": [
-      "AM"
+      "AM",
+      "MD"
     ],
     "eventos_confirmados": 1,
-    "eventos_vigilancia": 3,
-    "pendientes_georreferencia": 4,
+    "eventos_vigilancia": 0,
+    "pendientes_georreferencia": 1,
     "fuentes": [
       {
-        "id": "src-1510c3ba742db2e74b645eb5",
-        "nombre": "INVÍAS #767 https://x.com/numeral767/status/2111605605052080254",
+        "id": "src-190d76d6190b9947a45fd161",
+        "nombre": "Concesión Vial de los Llanos https://x.com/cviallanos/status/2111820545293726056",
         "estado": "referenciada_en_reporte",
-        "ultima_consulta": "2026-10-18T07:00:00",
-        "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
-      },
-      {
-        "id": "src-da31edcab884534834ff72d0",
-        "nombre": "INVÍAS #767 https://x.com/numeral767/status/2111623691385860125",
-        "estado": "referenciada_en_reporte",
-        "ultima_consulta": "2026-10-18T07:00:00",
-        "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
-      },
-      {
-        "id": "src-b5ba86845a5e125e2e22e250",
-        "nombre": "INVÍAS #767 https://x.com/numeral767/status/2111608011588571405",
-        "estado": "referenciada_en_reporte",
-        "ultima_consulta": "2026-10-18T07:00:00",
-        "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
-      },
-      {
-        "id": "src-4557f955375c1cb6293f3ddf",
-        "nombre": "Concesión Vial de los Llanos https://x.com/cviallanos/status/2111712742725878083",
-        "estado": "referenciada_en_reporte",
-        "ultima_consulta": "2026-10-18T07:00:00",
+        "ultima_consulta": "2026-10-18T12:00:00",
         "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
       }
     ]
@@ -142,23 +125,23 @@
   "acciones_sugeridas": [],
   "eventos_confirmados": [
     {
-      "id": "evt-967ce6c4e9fe61e4a490",
+      "id": "evt-c2bc84ed4db8976a2d49",
       "corredor": "Villavicencio–Granada",
-      "tramo": "PR58+631, sector Defensas–Variante",
+      "tramo": "PR33+050, sector Hotel Reina Victoria",
       "departamento": null,
       "municipio": null,
       "via": null,
       "km": null,
-      "tipo": "cierre_total",
-      "severidad": "critical",
+      "tipo": "paso_controlado",
+      "severidad": "medium",
       "estado": "active",
-      "resumen": "cierre total por incidente vial",
+      "resumen": "paso a un carril por incidente vial",
       "impacto_operativo": "",
       "confianza": 0.9,
-      "actualizado_en": "2026-10-18T07:00:00",
+      "actualizado_en": "2026-10-18T12:00:00",
       "estado_reportado": "active",
       "fecha_evidencia": "2026-10-18",
-      "fuente_publicada_en": "2026-10-18T01:55:00",
+      "fuente_publicada_en": "2026-10-18T09:03:00",
       "precision_fecha_evidencia": "minute",
       "vigencia_evidencia": "same_day",
       "base_confirmacion": "dated_direct_row_source",
@@ -171,139 +154,18 @@
       },
       "fuentes": [
         {
-          "id": "src-4557f955375c1cb6293f3ddf",
-          "nombre": "Concesión Vial de los Llanos https://x.com/cviallanos/status/2111712742725878083",
-          "url": "https://x.com/cviallanos/status/2111712742725878083",
+          "id": "src-190d76d6190b9947a45fd161",
+          "nombre": "Concesión Vial de los Llanos https://x.com/cviallanos/status/2111820545293726056",
+          "url": "https://x.com/cviallanos/status/2111820545293726056",
           "fortaleza": "official",
-          "publicada_en": "2026-10-18T01:55:00",
-          "consultada_en": "2026-10-18T07:00:00",
-          "evidencia": "cierre total por incidente vial"
+          "publicada_en": "2026-10-18T09:03:00",
+          "consultada_en": "2026-10-18T12:00:00",
+          "evidencia": "paso a un carril por incidente vial"
         }
       ]
     }
   ],
-  "eventos_vigilancia": [
-    {
-      "id": "evt-58020569f7cfe34800d3",
-      "corredor": "Hato Corozal–Tame",
-      "tramo": "puente Lopeño, Km 18+900, ambos sentidos",
-      "departamento": null,
-      "municipio": null,
-      "via": null,
-      "km": null,
-      "tipo": "cierre_total",
-      "severidad": "critical",
-      "estado": "uncertain",
-      "resumen": "cierre total (daños estructurales y pérdida de calzada; hasta superar intervención)",
-      "impacto_operativo": "",
-      "confianza": 0.35,
-      "actualizado_en": "2026-10-18T07:00:00",
-      "estado_reportado": "active",
-      "fecha_evidencia": "2026-10-17",
-      "fuente_publicada_en": "2026-10-17T18:59:00",
-      "precision_fecha_evidencia": "minute",
-      "vigencia_evidencia": "inherited",
-      "base_confirmacion": "requires_source_verification",
-      "identidad": "seguimiento_de_punto_no_incidente_unico",
-      "georreferencia": {
-        "estado": "sin_georreferencia",
-        "lat": null,
-        "lon": null,
-        "etiqueta": "Sin coordenadas; marcador oculto"
-      },
-      "fuentes": [
-        {
-          "id": "src-b5ba86845a5e125e2e22e250",
-          "nombre": "INVÍAS #767 https://x.com/numeral767/status/2111608011588571405",
-          "url": "https://x.com/numeral767/status/2111608011588571405",
-          "fortaleza": "social",
-          "publicada_en": "2026-10-17T18:59:00",
-          "consultada_en": "2026-10-18T07:00:00",
-          "evidencia": "cierre total (daños estructurales y pérdida de calzada; hasta superar intervención)"
-        }
-      ]
-    },
-    {
-      "id": "evt-226980008a936fecbdce",
-      "corredor": "Honda–Bogotá",
-      "tramo": "Mosquera–Madrid–Albán–Sasaima–Villeta–Guaduas–Honda, ambos sentidos",
-      "departamento": null,
-      "municipio": null,
-      "via": null,
-      "km": null,
-      "tipo": "cierre_total",
-      "severidad": "critical",
-      "estado": "uncertain",
-      "resumen": "cierre total (Clásico RCN Sistecrédito 2026)",
-      "impacto_operativo": "",
-      "confianza": 0.35,
-      "actualizado_en": "2026-10-18T07:00:00",
-      "estado_reportado": "active",
-      "fecha_evidencia": "2026-10-18",
-      "fuente_publicada_en": null,
-      "precision_fecha_evidencia": "date",
-      "vigencia_evidencia": "same_day",
-      "base_confirmacion": "requires_source_verification",
-      "identidad": "seguimiento_de_punto_no_incidente_unico",
-      "georreferencia": {
-        "estado": "sin_georreferencia",
-        "lat": null,
-        "lon": null,
-        "etiqueta": "Sin coordenadas; marcador oculto"
-      },
-      "fuentes": [
-        {
-          "id": "src-da31edcab884534834ff72d0",
-          "nombre": "INVÍAS #767 https://x.com/numeral767/status/2111623691385860125",
-          "url": "https://x.com/numeral767/status/2111623691385860125",
-          "fortaleza": "social",
-          "publicada_en": null,
-          "consultada_en": "2026-10-18T07:00:00",
-          "evidencia": "cierre total (Clásico RCN Sistecrédito 2026)"
-        }
-      ]
-    },
-    {
-      "id": "evt-1d090b739beed49747c7",
-      "corredor": "Saravena–Cubará",
-      "tramo": "Km 9, puente Caño Negro, ambos sentidos",
-      "departamento": null,
-      "municipio": null,
-      "via": null,
-      "km": null,
-      "tipo": "cierre_total",
-      "severidad": "critical",
-      "estado": "uncertain",
-      "resumen": "cierre total (caída de puente metálico; hasta superar intervención)",
-      "impacto_operativo": "",
-      "confianza": 0.35,
-      "actualizado_en": "2026-10-18T07:00:00",
-      "estado_reportado": "active",
-      "fecha_evidencia": "2026-10-17",
-      "fuente_publicada_en": "2026-10-17T18:49:00",
-      "precision_fecha_evidencia": "minute",
-      "vigencia_evidencia": "inherited",
-      "base_confirmacion": "requires_source_verification",
-      "identidad": "seguimiento_de_punto_no_incidente_unico",
-      "georreferencia": {
-        "estado": "sin_georreferencia",
-        "lat": null,
-        "lon": null,
-        "etiqueta": "Sin coordenadas; marcador oculto"
-      },
-      "fuentes": [
-        {
-          "id": "src-1510c3ba742db2e74b645eb5",
-          "nombre": "INVÍAS #767 https://x.com/numeral767/status/2111605605052080254",
-          "url": "https://x.com/numeral767/status/2111605605052080254",
-          "fortaleza": "social",
-          "publicada_en": "2026-10-17T18:49:00",
-          "consultada_en": "2026-10-18T07:00:00",
-          "evidencia": "cierre total (caída de puente metálico; hasta superar intervención)"
-        }
-      ]
-    }
-  ],
+  "eventos_vigilancia": [],
   "eventos_resueltos": [],
   "historial_corredores": {
     "periodo_inicio": "2026-10-12",
@@ -470,9 +332,9 @@
         "corredor": "Villavicencio–Granada",
         "dias_confirmados": 1,
         "dias_vigilancia": 0,
-        "cortes_con_observacion": 1,
+        "cortes_con_observacion": 2,
         "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-18T07:00:00",
+        "ultima_observacion": "2026-10-18T12:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
           {
@@ -526,13 +388,15 @@
           {
             "fecha": "2026-10-18",
             "ventanas": [
-              "AM"
+              "AM",
+              "MD"
             ],
-            "confirmados": 1,
+            "confirmados": 2,
             "vigilancia": 0,
             "severidad_maxima": "critical",
             "resumenes": [
-              "cierre total por incidente vial"
+              "cierre total por incidente vial",
+              "paso a un carril por incidente vial"
             ]
           }
         ]
@@ -4513,59 +4377,62 @@
         "resueltos": 0,
         "por_verificar": 3
       }
+    },
+    {
+      "cut_id": "2026-10-18-md",
+      "hora": "12:00",
+      "ventana": "MD",
+      "tipo": "corte_final",
+      "descripcion": "1 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
+      "conteos": {
+        "nuevos": 1,
+        "persistentes": 0,
+        "resueltos": 0,
+        "por_verificar": 0
+      }
     }
   ],
   "fuentes": [
     {
-      "id": "src-1510c3ba742db2e74b645eb5",
-      "nombre": "INVÍAS #767 https://x.com/numeral767/status/2111605605052080254",
-      "url": "https://x.com/numeral767/status/2111605605052080254",
-      "fortaleza": "social",
-      "consultada_en": "2026-10-18T07:00:00",
-      "eventos": [
-        "evt-1d090b739beed49747c7"
-      ]
-    },
-    {
-      "id": "src-da31edcab884534834ff72d0",
-      "nombre": "INVÍAS #767 https://x.com/numeral767/status/2111623691385860125",
-      "url": "https://x.com/numeral767/status/2111623691385860125",
-      "fortaleza": "social",
-      "consultada_en": "2026-10-18T07:00:00",
-      "eventos": [
-        "evt-226980008a936fecbdce"
-      ]
-    },
-    {
-      "id": "src-b5ba86845a5e125e2e22e250",
-      "nombre": "INVÍAS #767 https://x.com/numeral767/status/2111608011588571405",
-      "url": "https://x.com/numeral767/status/2111608011588571405",
-      "fortaleza": "social",
-      "consultada_en": "2026-10-18T07:00:00",
-      "eventos": [
-        "evt-58020569f7cfe34800d3"
-      ]
-    },
-    {
-      "id": "src-4557f955375c1cb6293f3ddf",
-      "nombre": "Concesión Vial de los Llanos https://x.com/cviallanos/status/2111712742725878083",
-      "url": "https://x.com/cviallanos/status/2111712742725878083",
+      "id": "src-190d76d6190b9947a45fd161",
+      "nombre": "Concesión Vial de los Llanos https://x.com/cviallanos/status/2111820545293726056",
+      "url": "https://x.com/cviallanos/status/2111820545293726056",
       "fortaleza": "official",
-      "consultada_en": "2026-10-18T07:00:00",
+      "consultada_en": "2026-10-18T12:00:00",
       "eventos": [
-        "evt-967ce6c4e9fe61e4a490"
+        "evt-c2bc84ed4db8976a2d49"
       ]
     }
   ],
   "bibliografia_reporte": [
+    {
+      "nombre": "Concesión Vial de los Llanos 09:03 18-oct (Villavicencio–Granada paso a un carril PR33+050 Hotel Reina Victoria; Puerto López y Puerto Gaitán sin novedad en el boletín)",
+      "url": "https://x.com/cviallanos/status/2111820545293726056",
+      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
+    },
+    {
+      "nombre": "Coviandina 10:48 18-oct (mix PMT Bogotá–Villavicencio; hay paso)",
+      "url": "https://x.com/CoviandinaSAS/status/2111846802143986168",
+      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
+    },
+    {
+      "nombre": "Concesión TAO 12:00 18-oct (movilidad reducida doble calzada Las Palmas Km 6+610)",
+      "url": "https://x.com/ConcesionTAO/status/2111865052248649741",
+      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
+    },
+    {
+      "nombre": "Dirección de Tránsito y Transporte 10:44 18-oct (acompaña Etapa 2 Clásico RCN Funza–Honda)",
+      "url": "https://x.com/TransitoPolicia/status/2111845926612693299",
+      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
+    },
     {
       "nombre": "INVÍAS #767 20:01 17-oct (cierre total Bogotá–Honda, Clásico RCN, 05:00–11:30 18-oct)",
       "url": "https://x.com/numeral767/status/2111623691385860125",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "Concesión Vial de los Llanos 01:55 18-oct (Villavicencio–Granada PR58+631 CERRADA)",
-      "url": "https://x.com/cviallanos/status/2111712742725878083",
+      "nombre": "Secretaría de Movilidad Cundinamarca 18:32 17-oct (cierres Etapa II Clásico RCN 18-oct)",
+      "url": "https://x.com/MovilidadCundi/status/2111601367047389217",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
@@ -4579,37 +4446,12 @@
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "INVÍAS #767 18:00 17-oct (Honda–Bogotá Km 103+0000 habilitado)",
-      "url": "https://x.com/numeral767/status/2111593293259665902",
+      "nombre": "Concesión Vial de los Llanos 01:55 18-oct (Villavicencio–Granada PR58+631 CERRADA; no nombrada en el boletín 09:03)",
+      "url": "https://x.com/cviallanos/status/2111712742725878083",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "Secretaría de Movilidad Cundinamarca 18:32 17-oct (cierres Etapa II Clásico RCN 18-oct)",
-      "url": "https://x.com/MovilidadCundi/status/2111601367047389217",
-      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
-    },
-    {
-      "nombre": "Concesionaria Panamericana 11:27 17-oct (cierre programado 18-oct Los Alpes–Villeta 09:30–11:00)",
-      "url": "https://x.com/ConPanamericana/status/2111494279629553746",
-      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
-    },
-    {
-      "nombre": "Coviandina 06:10 18-oct (mix PMT Bogotá–Villavicencio; hay paso)",
-      "url": "https://x.com/CoviandinaSAS/status/2111776580867420372",
-      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
-    },
-    {
-      "nombre": "Concesión TAO 06:21 18-oct (Túnel de Oriente habilitado ambos sentidos)",
-      "url": "https://x.com/ConcesionTAO/status/2111779839371866356",
-      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
-    },
-    {
-      "nombre": "INVÍAS #767 06:28 18-oct (Plato–Salamina habilitado)",
-      "url": "https://x.com/numeral767/status/2111781356766445586",
-      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
-    },
-    {
-      "nombre": "Radar ControlT AM",
+      "nombre": "Radar ControlT MD",
       "url": "https://risk.controlt.io/map",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
