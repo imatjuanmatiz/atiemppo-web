@@ -5,13 +5,17 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>{{ page.title | default: site.title }}</title>
 <meta name="description" content="{{ page.description | default: site.description }}"/>
-<meta name="ai-content-declaration" content="human-authored"/>
+<meta name="ai-content-declaration" content="{{ page.ai_content_declaration | default: 'human-authored' }}"/>
 <meta name="llms-txt" content="https://atiemppo.com/llms.txt"/>
 <link rel="alternate" type="text/plain" title="LLMs.txt" href="/llms.txt"/>
 <meta property="og:title" content="{{ page.title | default: site.title }}"/>
 <meta property="og:description" content="{{ page.description | default: site.description }}"/>
 <meta property="og:url" content="{{ page.url | absolute_url }}"/>
 <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}"/>
+{% if page.image %}
+<meta property="og:image" content="{{ page.image | absolute_url }}"/>
+<meta name="twitter:image" content="{{ page.image | absolute_url }}"/>
+{% endif %}
 <meta property="og:locale" content="es_CO"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="@atiemppo"/>

@@ -5,7 +5,7 @@ layout: default
   <header class="post-header">
     <div class="post-meta-top">
       {% if page.lab %}<span class="post-lab-tag">{{ page.lab }}</span>{% endif %}
-      <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d de %B de %Y" }}</time>
+      <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">{% if page.display_date %}{{ page.display_date }}{% else %}{{ page.date | date: "%d de %B de %Y" }}{% endif %}</time>
       {% if page.author %}<span class="post-author">· {{ page.author }}</span>{% endif %}
     </div>
     <h1 class="post-title">{{ page.title }}</h1>
