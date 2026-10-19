@@ -2,15 +2,15 @@
   "schema_version": "1.3",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-10-19-am",
-  "revision_id": "rev-22af9863117f96d8f535dcdc0337e78a",
+  "cut_id": "2026-10-19-md",
+  "revision_id": "rev-3fcf75782536855ff31fb41b80bc7723",
   "calidad_ingesta": {
     "state": "complete",
-    "revision_id": "rev-22af9863117f96d8f535dcdc0337e78a",
-    "report_sha256": "275c2a8c7e1d4961f011af8b1ad26b256f846fd4f50c245c425987901527912f",
+    "revision_id": "rev-3fcf75782536855ff31fb41b80bc7723",
+    "report_sha256": "f2e2b4684a3e0f002f3be416db2408363bd75334dc193e1700ab9de759ffce46",
     "parser_version": "roads-2.0.0",
     "detail_rows": 0,
-    "signal_rows": 3,
+    "signal_rows": 6,
     "observation_count": 0,
     "duplicate_rows": 0,
     "complete": true,
@@ -20,43 +20,67 @@
   "zona_horaria": "America/Bogota",
   "nota_vigencia": "La fecha del corte acredita la actualización del reporte. Cada punto conserva la fecha de su evidencia; las referencias heredadas o sin enlace directo requieren verificación. El resumen editorial reproduce el reporte y no confirma por sí solo el estado actual.",
   "fecha": "2026-10-19",
-  "ventana": "AM",
-  "hora": "07:00",
-  "generado_en": "2026-10-19T07:00:00",
-  "artefacto_fuente": "2026-10-19-editor-eldato-version-vias-colombia-am.md",
+  "ventana": "MD",
+  "hora": "12:00",
+  "generado_en": "2026-10-19T12:00:00",
+  "artefacto_fuente": "2026-10-19-editor-eldato-version-vias-colombia-md.md",
   "que_cambio": [],
   "notas_cambio": [
-    "Este corte es el listado base del día. MD y PM miden el cambio contra esta mañana, no contra el mismo corredor del corte anterior."
+    "Bogotá–Villavicencio: Coviandina 11:07 mix PMT; hay paso. No entra.",
+    "Túnel de Oriente: TAO accidente 10:48, habilitado 11:18. No entra.",
+    "Las Palmas: TAO 12:00 movilidad reducida Km 6+610. PMT de bajo impacto. No entra.",
+    "Buga–Buenaventura Km 79: original #767 habilitado 11:39. No entra.",
+    "Saravena–Cubará y Hato Corozal–Tame: 0 original nuevo (~41 h); siguen en señales."
   ],
   "listado": [],
   "senales_tempranas": [
     {
-      "tramo": "Cartagena–Barranquilla / Ruta 90",
-      "senal": "ControlT NUEVA ~06:14: accidente bus de servicio público y moto, posible lesionado",
-      "fuente": "ControlT AM https://risk.controlt.io/map",
+      "tramo": "Panamericana Cauca / El Estrecho–Rosas",
+      "senal": "ControlT NUEVA ~06:00–10:26: alerta de explosiones en calzada, flujo detenido ambos sentidos de forma preventiva",
+      "fuente": "ControlT MD https://risk.controlt.io/map",
+      "vigilar": "ControlT no confirma; 0 ConPanamericana ni #767 de calzada"
+    },
+    {
+      "tramo": "Bogotá–Villavicencio / Chirajara",
+      "senal": "ControlT NUEVA ~07:00–08:15: accidente objeto fijo, un carril",
+      "fuente": "ControlT MD https://risk.controlt.io/map",
+      "vigilar": "ControlT no confirma; Coviandina 11:07 mix PMT no nombra el punto"
+    },
+    {
+      "tramo": "Zona Bananera / Puente Sevilla",
+      "senal": "ControlT NUEVA ~08:00–08:42: accidente tractomula y camión, ambulancia en el lugar",
+      "fuente": "ControlT MD https://risk.controlt.io/map",
       "vigilar": "ControlT no confirma; 0 #767 ni autoridad de calzada"
+    },
+    {
+      "tramo": "Bogotá–Siberia / Cota",
+      "senal": "ControlT NUEVA ~09:31: accidente moto y tractomula, posible lesionado",
+      "fuente": "ControlT MD https://risk.controlt.io/map",
+      "vigilar": "ControlT no confirma; Accenorte 09:04 es oficinas"
     },
     {
       "tramo": "Saravena–Cubará / puente Caño Negro Km 9",
       "senal": "original #767 18:49 17-oct: cierre total, puente metálico caído, sin alterna",
       "fuente": "INVÍAS #767 https://x.com/numeral767/status/2111605605052080254",
-      "vigilar": "0 original de esta ventana; ~36 h; caducidad 24 h; no es reapertura"
+      "vigilar": "0 original de esta ventana; ~41 h; caducidad 24 h; no es reapertura"
     },
     {
       "tramo": "Hato Corozal–Tame / puente Lopeño Km 18+900",
       "senal": "original #767 18:59 17-oct: cierre total, pérdida de calzada, sin alterna",
       "fuente": "INVÍAS #767 https://x.com/numeral767/status/2111608011588571405",
-      "vigilar": "0 original de esta ventana; ~36 h; caducidad 24 h; no es reapertura"
+      "vigilar": "0 original de esta ventana; ~41 h; caducidad 24 h; no es reapertura"
     }
   ],
   "alertas_inmediatas": [],
   "salud_fuentes": {
     "estado_general": "estable",
     "ventanas_esperadas": [
-      "AM"
+      "AM",
+      "MD"
     ],
     "ventanas_recibidas": [
-      "AM"
+      "AM",
+      "MD"
     ],
     "eventos_confirmados": 0,
     "eventos_vigilancia": 0,
@@ -883,38 +907,46 @@
         "resueltos": 0,
         "por_verificar": 0
       }
+    },
+    {
+      "cut_id": "2026-10-19-md",
+      "hora": "12:00",
+      "ventana": "MD",
+      "tipo": "corte_final",
+      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
+      "conteos": {
+        "nuevos": 0,
+        "persistentes": 0,
+        "resueltos": 0,
+        "por_verificar": 0
+      }
     }
   ],
   "fuentes": [],
   "bibliografia_reporte": [
     {
-      "nombre": "Concesión Vial de los Llanos 04:00 19-oct (Villavicencio–Granada, Villavicencio–Puerto López y Puerto López–Puerto Gaitán operativas)",
-      "url": "https://x.com/cviallanos/status/2112106529801334992",
+      "nombre": "Coviandina 11:07 19-oct (mix PMT Bogotá–Villavicencio; hay paso)",
+      "url": "https://x.com/CoviandinaSAS/status/2112214137312788765",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "Coviandina 05:15 19-oct (mix PMT Bogotá–Villavicencio; hay paso)",
-      "url": "https://x.com/CoviandinaSAS/status/2112126258968436840",
+      "nombre": "INVÍAS #767 11:39 19-oct (Buenaventura–Buga, Km 79+0400 habilitado)",
+      "url": "https://x.com/numeral767/status/2112222027302265155",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "Vía Sumapaz 05:31 19-oct (habilita puente Mariano Ospina, Flandes–Girardot)",
-      "url": "https://x.com/ViaSumapaz/status/2112129530148040849",
+      "nombre": "Concesión TAO 12:00 19-oct (movilidad reducida doble calzada Las Palmas Km 6+610)",
+      "url": "https://x.com/ConcesionTAO/status/2112227467746287765",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "Concesión TAO 04:30 19-oct (Santa Elena habilitada ambos sentidos)",
-      "url": "https://x.com/ConcesionTAO/status/2112114447292551510",
+      "nombre": "Concesión TAO 11:18 19-oct (Túnel de Oriente habilitado sentido Rionegro–Medellín)",
+      "url": "https://x.com/ConcesionTAO/status/2112217151985582392",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "INVÍAS #767 17:50 18-oct (Buenaventura–Buga, El Naranjo Pr 56+0000 habilitado)",
-      "url": "https://x.com/numeral767/status/2111953112445636956",
-      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
-    },
-    {
-      "nombre": "INVÍAS #767 21:33 18-oct (Santuario–Caño Alegre, Peaje Puerto Triunfo Pr 130+0000 habilitado)",
-      "url": "https://x.com/numeral767/status/2112009141208179198",
+      "nombre": "APP GICA 10:17 19-oct (PMT demarcación Variante Ibagué PR18+180)",
+      "url": "https://x.com/APPGICA/status/2112201570049720832",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
@@ -928,7 +960,7 @@
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "Radar ControlT AM",
+      "nombre": "Radar ControlT MD",
       "url": "https://risk.controlt.io/map",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
