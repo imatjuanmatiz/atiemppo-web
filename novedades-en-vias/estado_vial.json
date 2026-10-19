@@ -2,15 +2,15 @@
   "schema_version": "1.3",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-10-18-pm",
-  "revision_id": "rev-69c39d2f51796d6200f632a6e57d36a8",
+  "cut_id": "2026-10-19-am",
+  "revision_id": "rev-22af9863117f96d8f535dcdc0337e78a",
   "calidad_ingesta": {
     "state": "complete",
-    "revision_id": "rev-69c39d2f51796d6200f632a6e57d36a8",
-    "report_sha256": "de703eda5e02b5e551b96433f1dfc2bab9ce245c52baaa57b7bf8e2a56ed1add",
+    "revision_id": "rev-22af9863117f96d8f535dcdc0337e78a",
+    "report_sha256": "275c2a8c7e1d4961f011af8b1ad26b256f846fd4f50c245c425987901527912f",
     "parser_version": "roads-2.0.0",
     "detail_rows": 0,
-    "signal_rows": 5,
+    "signal_rows": 3,
     "observation_count": 0,
     "duplicate_rows": 0,
     "complete": true,
@@ -19,71 +19,44 @@
   },
   "zona_horaria": "America/Bogota",
   "nota_vigencia": "La fecha del corte acredita la actualización del reporte. Cada punto conserva la fecha de su evidencia; las referencias heredadas o sin enlace directo requieren verificación. El resumen editorial reproduce el reporte y no confirma por sí solo el estado actual.",
-  "fecha": "2026-10-18",
-  "ventana": "PM",
-  "hora": "17:30",
-  "generado_en": "2026-10-18T17:30:00",
-  "artefacto_fuente": "2026-10-18-editor-eldato-version-vias-colombia-pm.md",
-  "que_cambio": [
-    {
-      "corredor": "Villavicencio–Granada",
-      "antes": "cierre total",
-      "ahora": "operativa",
-      "cambio": "se resolvió",
-      "evidencia": "Concesión Vial de los Llanos 16:08 https://x.com/cviallanos/status/2111927620501651712"
-    }
-  ],
+  "fecha": "2026-10-19",
+  "ventana": "AM",
+  "hora": "07:00",
+  "generado_en": "2026-10-19T07:00:00",
+  "artefacto_fuente": "2026-10-19-editor-eldato-version-vias-colombia-am.md",
+  "que_cambio": [],
   "notas_cambio": [
-    "Honda–Bogotá: franja RCN #767 05:00–11:30 venció; original 14:46 marca #Habilitado Cundinamarca por el evento; #767 no confirma reapertura; 0 ConPanamericana/MovilidadCundi de calzada.",
-    "Saravena–Cubará y Hato Corozal–Tame: 0 original nuevo (~22,5 h); salen del listado a señales.",
-    "Bogotá–Villavicencio: Coviandina 14:15 mix PMT idéntico al de la mañana; hay paso. No entra.",
-    "Túnel de Oriente: TAO 15:48 cierre constructivo; 15:54 habilitado ambos sentidos. Plan retorno 17:00–21:00 unidireccional. PMT de bajo impacto. No entra."
+    "Este corte es el listado base del día. MD y PM miden el cambio contra esta mañana, no contra el mismo corredor del corte anterior."
   ],
   "listado": [],
   "senales_tempranas": [
     {
-      "tramo": "Honda–Bogotá / Mosquera–Villeta–Guaduas–Honda",
-      "senal": "original #767 20:01 17-oct: cierre total Clásico RCN 05:00–11:30 18-oct; franja vencida; original 14:46 #Habilitado Cundinamarca por el evento",
-      "fuente": "INVÍAS #767 https://x.com/numeral767/status/2111906849633227066",
-      "vigilar": "#767 no confirma reapertura; 0 parte de concesión de calzada"
+      "tramo": "Cartagena–Barranquilla / Ruta 90",
+      "senal": "ControlT NUEVA ~06:14: accidente bus de servicio público y moto, posible lesionado",
+      "fuente": "ControlT AM https://risk.controlt.io/map",
+      "vigilar": "ControlT no confirma; 0 #767 ni autoridad de calzada"
     },
     {
       "tramo": "Saravena–Cubará / puente Caño Negro Km 9",
       "senal": "original #767 18:49 17-oct: cierre total, puente metálico caído, sin alterna",
       "fuente": "INVÍAS #767 https://x.com/numeral767/status/2111605605052080254",
-      "vigilar": "0 original de esta ventana; ~22,5 h; caducidad 24 h; no es reapertura"
+      "vigilar": "0 original de esta ventana; ~36 h; caducidad 24 h; no es reapertura"
     },
     {
       "tramo": "Hato Corozal–Tame / puente Lopeño Km 18+900",
       "senal": "original #767 18:59 17-oct: cierre total, pérdida de calzada, sin alterna",
       "fuente": "INVÍAS #767 https://x.com/numeral767/status/2111608011588571405",
-      "vigilar": "0 original de esta ventana; ~22,5 h; caducidad 24 h; no es reapertura"
-    },
-    {
-      "tramo": "Túnel de Oriente / Rionegro aeropuerto",
-      "senal": "ControlT NUEVA ~13:00: accidente con persona fallecida; TAO 15:48–15:54 fue cierre constructivo breve",
-      "fuente": "ControlT PM https://risk.controlt.io/map",
-      "vigilar": "ControlT no confirma; TAO habilitó el túnel 15:54"
-    },
-    {
-      "tramo": "Oiba–Barbosa / Ruta 45A",
-      "senal": "ControlT NUEVA ~12:00: volcada en paso malo",
-      "fuente": "ControlT PM https://risk.controlt.io/map",
-      "vigilar": "ControlT no confirma; 0 #767 ni concesión de calzada"
+      "vigilar": "0 original de esta ventana; ~36 h; caducidad 24 h; no es reapertura"
     }
   ],
   "alertas_inmediatas": [],
   "salud_fuentes": {
     "estado_general": "estable",
     "ventanas_esperadas": [
-      "AM",
-      "MD",
-      "PM"
+      "AM"
     ],
     "ventanas_recibidas": [
-      "AM",
-      "MD",
-      "PM"
+      "AM"
     ],
     "eventos_confirmados": 0,
     "eventos_vigilancia": 0,
@@ -95,89 +68,10 @@
   "eventos_vigilancia": [],
   "eventos_resueltos": [],
   "historial_corredores": {
-    "periodo_inicio": "2026-10-12",
-    "periodo_fin": "2026-10-18",
+    "periodo_inicio": "2026-10-13",
+    "periodo_fin": "2026-10-19",
     "metodologia": "Días distintos por corredor; confirmado exige estado activo y confianza mínima de 0,65.",
     "corredores": [
-      {
-        "corredor": "Bogotá - Villavicencio",
-        "dias_confirmados": 2,
-        "dias_vigilancia": 0,
-        "cortes_con_observacion": 4,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-14T17:30:00",
-        "ultimo_estado": "confirmed",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM",
-              "MD",
-              "PM"
-            ],
-            "confirmados": 2,
-            "vigilancia": 35,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "reducción 15:51 superada; paso normalizado 17:30 29-sep; mix 05:05 no lo nombra",
-              "último estado reportado cierre temporal y preventivo por siniestro; vigencia por verificar; mix 15:17 no lo nombra",
-              "mix PMT 12:00; pasos alternos K29+500; superado como vigente por mix 15:17"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [
-              "PM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "cierre total para levantamiento del vehículo siniestrado en la madrugada; 0 paso alterno nombrado"
-            ]
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
       {
         "corredor": "Villavicencio–Puerto López",
         "dias_confirmados": 2,
@@ -187,14 +81,6 @@
         "ultima_observacion": "2026-10-15T17:30:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-13",
             "ventanas": [],
@@ -252,6 +138,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-10-19",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -264,14 +158,6 @@
         "ultima_observacion": "2026-10-18T12:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-13",
             "ventanas": [],
@@ -325,45 +211,45 @@
               "cierre total por incidente vial",
               "paso a un carril por incidente vial"
             ]
+          },
+          {
+            "fecha": "2026-10-19",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
-        "corredor": "Samanga–El Canelo",
+        "corredor": "Bogotá - Villavicencio",
         "dias_confirmados": 1,
         "dias_vigilancia": 0,
         "cortes_con_observacion": 1,
         "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-12T07:00:00",
+        "ultima_observacion": "2026-10-14T17:30:00",
         "ultimo_estado": "confirmed",
         "dias": [
           {
-            "fecha": "2026-10-12",
+            "fecha": "2026-10-13",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-14",
             "ventanas": [
-              "AM"
+              "PM"
             ],
             "confirmados": 1,
             "vigilancia": 0,
             "severidad_maxima": "critical",
             "resumenes": [
-              "cierre total (sin paso); tablero Policía p.2 sigue al AM"
+              "cierre total para levantamiento del vehículo siniestrado en la madrugada; 0 paso alterno nombrado"
             ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
           },
           {
             "fecha": "2026-10-15",
@@ -396,72 +282,9 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Paso Nacional por Tolú",
-        "dias_confirmados": 1,
-        "dias_vigilancia": 0,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "high",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "confirmed",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 1,
-            "vigilancia": 0,
-            "severidad_maxima": "high",
-            "resumenes": [
-              "cierre parcial por obras; tablero Policía p.1 sigue al AM"
-            ]
           },
           {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
+            "fecha": "2026-10-19",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
@@ -479,14 +302,6 @@
         "ultima_observacion": "2026-10-18T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-13",
             "ventanas": [],
@@ -543,32 +358,26 @@
             "resumenes": [
               "cierre total (Clásico RCN Sistecrédito 2026)"
             ]
+          },
+          {
+            "fecha": "2026-10-19",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
         "corredor": "Buga–Buenaventura",
         "dias_confirmados": 0,
-        "dias_vigilancia": 2,
-        "cortes_con_observacion": 3,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 2,
         "severidad_maxima": "critical",
         "ultima_observacion": "2026-10-16T17:30:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 6,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "paso restablecido (cierre total 08:11 11-sep superado); superado como vigente por #767 16:31 1-oct",
-              "sin novedad vigente (#767 17:31); franja CaminoPacífico venció 10:00 17-ago",
-              "#Habilitado por volcamiento; ambos sentidos"
-            ]
-          },
           {
             "fecha": "2026-10-13",
             "ventanas": [],
@@ -621,32 +430,97 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-10-19",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          }
+        ]
+      },
+      {
+        "corredor": "Saravena–Cubará",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "critical",
+        "ultima_observacion": "2026-10-18T07:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-10-13",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-14",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-15",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-16",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-18",
+            "ventanas": [
+              "AM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "cierre total (caída de puente metálico; hasta superar intervención)"
+            ]
+          },
+          {
+            "fecha": "2026-10-19",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
         "corredor": "Puerto Salgar–Barrancabermeja (por homologar)",
         "dias_confirmados": 0,
-        "dias_vigilancia": 2,
-        "cortes_con_observacion": 2,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
         "severidad_maxima": "critical",
         "ultima_observacion": "2026-10-14T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 21,
-            "severidad_maxima": "high",
-            "resumenes": [
-              "último estado reportado cierre a un carril por vehículo varado; vigencia por verificar; 0 habilitación AM",
-              "paso normal 05:19; ControlT de tráfico detenido Campo 23–El Bambú queda contrastada",
-              "flyer PMT 09-oct 11:04; un carril 24 h / hasta 22:00; km 143+400 paso controlado 24 h por pérdida de banca; hay paso; superado como vigente de flyer 08-oct"
-            ]
-          },
           {
             "fecha": "2026-10-13",
             "ventanas": [],
@@ -699,1154 +573,9 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Panamericana / Mojarras–Popayán",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 2,
-        "cortes_con_observacion": 2,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-13T17:30:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "cierre total #NovedadVial #EnDesarrollo"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "paso a un carril por novedades de seguridad, hasta finalizar intervención; 0 ruta alterna"
-            ]
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Transversal del Sisga",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 12,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "paso a un carril (concesión); INVÍAS inactivo sin parte de apertura",
-              "VÍA LIBRE (paso controlado 22:09 31-ago superado); no resuelve PR 43+600",
-              "replica pasos controlados; no resuelve PR 43+600"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Tesalia / Candelaria–Laberinto (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "último estado reportado cierre total; vigencia por verificar; incendio; 34611 no lo nombra"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Saravena–Cubará",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-18T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "cierre total (caída de puente metálico; hasta superar intervención)"
-            ]
-          }
-        ]
-      },
-      {
-        "corredor": "San Gil–Onzaga (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "último estado reportado cierre total; vigencia por verificar; falla estructural en pontón; 34611 no lo nombra"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Ruta del Sol / San Roque–La Loma (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "PMT cierre total de calzada izquierda; desvío bidireccional por calzada derecha; 24 h desde 9-oct hasta finalizar reparación; hay paso"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Remedios–Zaragoza (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 2,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "reitera cierre total por deslizamiento de tierra; #EnDesarrollo",
-              "cierre total 15:14 8-oct; superado como vigente de reiteración por #767 10:43"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Paz de Ariporo–La Cabuya (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "último estado reportado cierre total; vigencia por verificar; inundación con arrastre de material; sin carril; alterna Tame–San Salvador; 34688/34687/34685 no extraídos; 34611 no reabre"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Mosquera–La Mesa (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 2,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "#NovedadVial cierre total; #EnDesarrollo; superado como vigente de detalle por 09:34",
-              "último estado reportado cierre total; vigencia por verificar; afectación total de calzada; sin ruta alterna; incidencia desde 17:10 6-oct; 0 habilitación PM 9-oct"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Montenegro–Quimbaya",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "último estado reportado cierre total; vigencia por verificar; caída de árboles; Hermes inactivo 01:25 30-ago sin fecha de apertura"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Libertadores Sácama–La Cabuya",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 5,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "último estado reportado cierre total; vigencia por verificar; socavación / novedad en puente; 34611 no reabre",
-              "último estado reportado paso a un carril; vigencia por verificar",
-              "último estado reportado paso a un carril; vigencia por verificar; material vegetal"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Libertadores Belén–Sácama (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 2,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "último estado reportado cierre parcial; vigencia por verificar; movimiento en masa",
-              "último estado reportado cierre total; vigencia por verificar; deslizamiento y árboles; alterna Belén–Yopal–La Cabuya–Sácama; 34611 no reabre"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Las Ánimas–Bogotá",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 4,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "último estado reportado paso a un carril; vigencia por verificar; movimiento en masa",
-              "izaje programado; a las 17:30 no rige",
-              "último estado reportado cierre total; vigencia por verificar; deslizamiento y árbol; 34611 no lo nombra ni habilita"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "La Unión–La Victoria",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "último estado reportado cierre total; vigencia por verificar; 0 parte AM de reapertura"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Ibagué–Espinal / Variante Picaleña",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 3,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "cierre de un carril; siniestro tipo choque con objeto fijo; hay paso; 0 parte AM de habilitación",
-              "PMT medición de deflectometría 8-oct; hay paso de esa actividad",
-              "cierre total de esa variante; manifestación; hay alterna por Ruta Antigua 40TLC (Glorieta Casa de la Moneda)–Picaleña–Ruta 4004 Puente Blanco–Buenos Aires"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Ibagué–Cajamarca / La Línea",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 12,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "paso a un carril por siniestro vial; #EnDesarrollo; hay paso; 0 parte AM de habilitación",
-              "cierre parcial; obras 15-sep a 31-dic 24 h; ambos sentidos; alterna Manizales–Alto de Letras",
-              "#Habilitado por choque; ambos sentidos"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
           },
           {
-            "fecha": "2026-10-18",
+            "fecha": "2026-10-19",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
@@ -1864,14 +593,6 @@
         "ultima_observacion": "2026-10-18T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-13",
             "ventanas": [],
@@ -1923,6 +644,14 @@
             "resumenes": [
               "cierre total (daños estructurales y pérdida de calzada; hasta superar intervención)"
             ]
+          },
+          {
+            "fecha": "2026-10-19",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -1935,14 +664,6 @@
         "ultima_observacion": "2026-10-15T17:30:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-13",
             "ventanas": [],
@@ -1994,72 +715,9 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Bucaramanga–Pamplona (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "franja de cierre total 04:30–12:00 6-sep vencida; 0 parte AM de habilitación"
-            ]
           },
           {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
+            "fecha": "2026-10-19",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
@@ -2069,822 +727,25 @@
         ]
       },
       {
-        "corredor": "Bogotá–Girardot (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 3,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "reitera cierre total superado como vigente por #Habilitado 23:45",
-              "último estado reportado cierre total temporal por mantenimiento; vigencia por verificar; interrupciones de ~20 min; hay paso entre cortes; 0 parte PM de fin de franja",
-              "cierre 09:29 superado; #Habilitado 23:45 ambos sentidos"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Barranquilla–Santa Marta",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 2,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "cierre total por manifestación (falta de agua potable); ~100 personas en 3 puntos; duración pendiente; superado como vigente de reiteración por #767 22:34",
-              "reitera cierre total por novedades de orden público; #EnDesarrollo"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Armenia–Alcalá",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "último estado reportado cierre total programado 06:30–16:00 del 17-ago; vigencia por verificar; franja vencida; 0 parte AM de habilitación"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Accesos norte / Zipaquirá–Cajicá (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 3,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "topografía 15–18 sep, 08:00–12:00 y 13:30–16:30; la franja cerró 16:30 18-sep; 0 parte de habilitación total; hay paso",
-              "berma y carril de baja velocidad; hay paso (cierre total 14:25 superado)",
-              "cierre total de esa calzada por incendio de tractocamión con sustancias peligrosas; hay paso por la occidental; 0 habilitación PM"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Acceso a Florencia (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 2,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "último estado reportado cierre total; vigencia por verificar; novedad en obra de arte; 34611 no reabre",
-              "último estado reportado cierre total; vigencia por verificar; caída de rocas y material vegetal; 34688/34687/34685 no extraídos; 34611 no reabre"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Acceso a Cúcuta / Sardinata–El Zulia (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "último estado reportado cierre total; vigencia por verificar; árbol sobre la calzada; 34611 no lo nombra ni habilita"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Ruta del Sol / Pueblo Nuevo",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "high",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "high",
-            "resumenes": [
-              "cierre parcial de carril; PMT en tramos de 1 km"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Ruta del Sol / Plato–El Difícil (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "high",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "high",
-            "resumenes": [
-              "paso restringido carril izquierdo; vehículo incinerado; hay paso"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Yopal–Paz de Ariporo (por homologar)",
+        "corredor": "Panamericana / Mojarras–Popayán",
         "dias_confirmados": 0,
         "dias_vigilancia": 1,
         "cortes_con_observacion": 1,
         "severidad_maxima": "medium",
-        "ultima_observacion": "2026-10-12T07:00:00",
+        "ultima_observacion": "2026-10-13T17:30:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 2,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "último estado reportado paso a un carril; vigencia por verificar; material vegetal"
-            ]
-          },
           {
             "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Villavicencio–Granada (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "medium",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
             "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 30,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "operativa según tablero; superado como vigente por 04:00 2-oct",
-              "un carril 09:53 superado; habilitada y operando con normalidad 15:52",
-              "operativa según tablero; superado como vigente por 16:00"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Troncal de Occidente / Sincelejo–Puerta de Hierro (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "medium",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 2,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "último estado reportado paso a un carril; vigencia por verificar; caída de árboles"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Transversal Depresión Momposina / Puerta de Hierro–Magangué–Yatí (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "medium",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
+              "PM"
             ],
             "confirmados": 0,
             "vigilancia": 1,
             "severidad_maxima": "medium",
             "resumenes": [
-              "último estado reportado paso a un carril; vigencia por verificar; árbol sobre la calzada; 34688/34687/34685 no extraídos; 34611 no habilita"
+              "paso a un carril por novedades de seguridad, hasta finalizar intervención; 0 ruta alterna"
             ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
           },
           {
             "fecha": "2026-10-14",
@@ -2925,505 +786,9 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Transversal Depresión Momposina / Mompós–Guamal (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "medium",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "último estado reportado paso a un carril; vigencia por verificar; árbol sobre la calzada; 34611 no habilita"
-            ]
           },
           {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Ruta del Sol / El Copey–Fundación (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "medium",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "PMT cierre de un carril de la calzada izquierda 7-oct a 5-nov; hay paso"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Puerto López–Puerto Gaitán",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "medium",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 45,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "habilitada y operando con normalidad 11:45; tablero 09:18 🟡 superado; tablero 16:00 ✅",
-              "habilitada 17:14 26-sep; 0 AM de recierre",
-              "un carril 09:18 por vehículo varado superado como vigente de tablero por 16:00 ✅"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Pacífico Tres / Peaje Supía (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "medium",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 3,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "habilitada a ambos sentidos 29-sep; no resuelve el peaje Supía",
-              "habilitada a ambos sentidos; no resuelve el peaje Supía",
-              "paso a un carril; apertura total sin hora"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Manizales–Fresno / Letras",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "medium",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 2,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "sin parte de apertura",
-              "paso a un carril; Hermes inactivo sin fecha de apertura"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Ibagué–Espinal / Variante Ibagué",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "medium",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 4,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "PMT; paso a un carril por demarcación vial",
-              "paso a un carril; marcas viales; PMT",
-              "cierre de carril por siniestro tipo choque; hay paso; PMT"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Ibagué–Espinal / Variante Chicoral",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "medium",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "cierre de un carril; siniestro tipo choque con objeto fijo; hay paso; 0 parte AM de habilitación"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
+            "fecha": "2026-10-19",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
@@ -3441,14 +806,6 @@
         "ultima_observacion": "2026-10-15T17:30:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-13",
             "ventanas": [],
@@ -3500,787 +857,9 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Cimitarra–Landázuri (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "medium",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 2,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "reitera paso a un carril por mal estado y lluvias; sin ruta alterna",
-              "paso a un carril por mal estado de la vía y lluvias; sin ruta alterna; superado como vigente de reiteración por 21:54"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Chocontá–Tunja / Troncal Central del Norte (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "medium",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "último estado reportado paso a un carril; vigencia por verificar; árbol sobre el carril derecho; 34611 no lo nombra ni habilita"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Cali–Loboguerrero",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "medium",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 3,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "último estado reportado paso restringido a un carril por derrumbe / caída de piedra; vigencia por verificar; duración pendiente de establecer; 0 parte AM de habilitación; ausencia no reabre",
-              "paso a un carril en tres puntos; Hermes inactivo 08:33–08:35 31-ago sin parte de apertura",
-              "último estado reportado paso a un carril; vigencia por verificar; pérdida de banca"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Accesos a Yopal / El Crucero–Aguazul",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "medium",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 3,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "último estado reportado paso a un carril; vigencia por verificar; caída de roca; 34611 no lo nombra",
-              "último estado reportado paso a un carril; vigencia por verificar; caída de roca; 34611 no habilita",
-              "habilitada (cierre total por lodo superado)"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Acceso a Sincelejo / Sincelejo–Toluviejo (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "medium",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "último estado reportado calzada izquierda por árboles; vigencia por verificar; paso habilitado a un carril"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Ruta del Sol / Variante Aracataca (por homologar)",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "low",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "cierre temporal del carril interno; desvío por separador central; hay paso por el carril externo; 4 meses"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Ruta del Sol / Bosconia–Valledupar",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "low",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "PMT: desvío bidireccional de Vía Nueva a vía existente"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Pereira–Chinchiná",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "low",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "sin parte de apertura"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Ibagué - Espinal",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "low",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "obras / restricción de carga; tablero Policía sigue"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Bogotá–Girardot",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "low",
-        "ultima_observacion": "2026-10-12T17:30:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "low",
-            "resumenes": [
-              "contraflujo activo sentido Girardot–Bogotá; alto flujo y tráfico lento en peaje y túnel"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "La Lejía - Saravena",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "unknown",
-        "ultima_observacion": "2026-10-12T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-12",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "unknown",
-            "resumenes": [
-              "habilitada 15:56 29-sep (INVÍAS #767); tablero Policía p.2 aún cierre total (discrepancia; manda INVÍAS); 0 recierre AM"
-            ]
-          },
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
           },
           {
-            "fecha": "2026-10-18",
+            "fecha": "2026-10-19",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
@@ -4293,35 +872,9 @@
   },
   "cambios_dia": [
     {
-      "cut_id": "2026-10-18-am",
+      "cut_id": "2026-10-19-am",
       "hora": "07:00",
       "ventana": "AM",
-      "tipo": "corte_final",
-      "descripcion": "1 nuevas; 0 persistentes; 0 resueltas; 3 por verificar.",
-      "conteos": {
-        "nuevos": 1,
-        "persistentes": 0,
-        "resueltos": 0,
-        "por_verificar": 3
-      }
-    },
-    {
-      "cut_id": "2026-10-18-md",
-      "hora": "12:00",
-      "ventana": "MD",
-      "tipo": "corte_final",
-      "descripcion": "1 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
-      "conteos": {
-        "nuevos": 1,
-        "persistentes": 0,
-        "resueltos": 0,
-        "por_verificar": 0
-      }
-    },
-    {
-      "cut_id": "2026-10-18-pm",
-      "hora": "17:30",
-      "ventana": "PM",
       "tipo": "corte_final",
       "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
       "conteos": {
@@ -4335,38 +888,33 @@
   "fuentes": [],
   "bibliografia_reporte": [
     {
-      "nombre": "Concesión Vial de los Llanos 16:08 18-oct (Villavicencio–Granada, Villavicencio–Puerto López y Puerto López–Puerto Gaitán operativas)",
-      "url": "https://x.com/cviallanos/status/2111927620501651712",
+      "nombre": "Concesión Vial de los Llanos 04:00 19-oct (Villavicencio–Granada, Villavicencio–Puerto López y Puerto López–Puerto Gaitán operativas)",
+      "url": "https://x.com/cviallanos/status/2112106529801334992",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "Concesión Vial de los Llanos 09:03 18-oct (Villavicencio–Granada paso a un carril PR33+050 Hotel Reina Victoria; superado por el boletín 16:08)",
-      "url": "https://x.com/cviallanos/status/2111820545293726056",
+      "nombre": "Coviandina 05:15 19-oct (mix PMT Bogotá–Villavicencio; hay paso)",
+      "url": "https://x.com/CoviandinaSAS/status/2112126258968436840",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "Coviandina 14:15 18-oct (mix PMT Bogotá–Villavicencio; hay paso)",
-      "url": "https://x.com/CoviandinaSAS/status/2111899146370035925",
+      "nombre": "Vía Sumapaz 05:31 19-oct (habilita puente Mariano Ospina, Flandes–Girardot)",
+      "url": "https://x.com/ViaSumapaz/status/2112129530148040849",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "Concesión TAO 15:54 18-oct (Túnel de Oriente habilitado ambos sentidos)",
-      "url": "https://x.com/ConcesionTAO/status/2111924119784550691",
+      "nombre": "Concesión TAO 04:30 19-oct (Santa Elena habilitada ambos sentidos)",
+      "url": "https://x.com/ConcesionTAO/status/2112114447292551510",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "Concesión TAO 15:48 18-oct (cierre constructivo Túnel de Oriente, minutos)",
-      "url": "https://x.com/ConcesionTAO/status/2111922569552998478",
+      "nombre": "INVÍAS #767 17:50 18-oct (Buenaventura–Buga, El Naranjo Pr 56+0000 habilitado)",
+      "url": "https://x.com/numeral767/status/2111953112445636956",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "INVÍAS #767 14:46 18-oct (#Habilitado Cundinamarca por Clásico RCN; #767 no confirma reapertura)",
-      "url": "https://x.com/numeral767/status/2111906849633227066",
-      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
-    },
-    {
-      "nombre": "INVÍAS #767 20:01 17-oct (cierre total Bogotá–Honda, Clásico RCN, 05:00–11:30 18-oct)",
-      "url": "https://x.com/numeral767/status/2111623691385860125",
+      "nombre": "INVÍAS #767 21:33 18-oct (Santuario–Caño Alegre, Peaje Puerto Triunfo Pr 130+0000 habilitado)",
+      "url": "https://x.com/numeral767/status/2112009141208179198",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
@@ -4380,7 +928,7 @@
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "Radar ControlT PM",
+      "nombre": "Radar ControlT AM",
       "url": "https://risk.controlt.io/map",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
