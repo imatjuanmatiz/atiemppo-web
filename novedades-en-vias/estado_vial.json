@@ -2,88 +2,98 @@
   "schema_version": "1.3",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-10-20-am",
-  "revision_id": "rev-2a4d6fddbb129f19774760a1718d0c1c",
+  "cut_id": "2026-10-20-md",
+  "revision_id": "rev-86eb147063ec61f37f2fc05eb9c33e3a",
   "calidad_ingesta": {
     "state": "complete",
-    "revision_id": "rev-2a4d6fddbb129f19774760a1718d0c1c",
-    "report_sha256": "544a32f4928f7ffb86af9eeb6bd2fe1a36c4fab0a866d5cec0cb37ca7ef3880d",
+    "revision_id": "rev-86eb147063ec61f37f2fc05eb9c33e3a",
+    "report_sha256": "46d3e9d8ba35fef45601b1f1fc7f55ca31f398633e710af65861f30d5aa2f53f",
     "parser_version": "roads-2.0.0",
-    "detail_rows": 3,
-    "signal_rows": 1,
-    "observation_count": 3,
+    "detail_rows": 1,
+    "signal_rows": 4,
+    "observation_count": 1,
     "duplicate_rows": 0,
     "complete": true,
-    "evidencia_del_dia": 2,
-    "evidencia_heredada_o_sin_fecha": 1
+    "evidencia_del_dia": 1,
+    "evidencia_heredada_o_sin_fecha": 0
   },
   "zona_horaria": "America/Bogota",
   "nota_vigencia": "La fecha del corte acredita la actualización del reporte. Cada punto conserva la fecha de su evidencia; las referencias heredadas o sin enlace directo requieren verificación. El resumen editorial reproduce el reporte y no confirma por sí solo el estado actual.",
   "fecha": "2026-10-20",
-  "ventana": "AM",
-  "hora": "07:00",
-  "generado_en": "2026-10-20T07:00:00",
-  "artefacto_fuente": "2026-10-20-editor-eldato-version-vias-colombia-am.md",
-  "que_cambio": [],
+  "ventana": "MD",
+  "hora": "12:00",
+  "generado_en": "2026-10-20T12:00:00",
+  "artefacto_fuente": "2026-10-20-editor-eldato-version-vias-colombia-md.md",
+  "que_cambio": [
+    {
+      "corredor": "Ibagué–Cajamarca / La Línea",
+      "antes": "cierre total",
+      "ahora": "paso controlado",
+      "cambio": "mejoró",
+      "evidencia": "APPGICA 09:22 etapa 4 en calzada GICA; #767 09:34 acota cierre Armenia–Ibagué 06:00–08:54"
+    }
+  ],
   "notas_cambio": [
-    "Este corte es el listado base del día. MD y PM miden el cambio contra esta mañana, no contra el mismo corredor del corte anterior."
+    "Puente Río Negro–El Palo: 0 original nuevo (~17 h desde 19:16 19-oct). 3c no hereda; señales.",
+    "Puerto López–Puerto Gaitán: cviallanos 11:49 un carril PR14+580 mantenimiento. Bajo impacto. No entra.",
+    "Las Palmas: TAO 12:00 movilidad reducida por trabajos. Bajo impacto. No entra.",
+    "Bogotá–Villavicencio: Coviandina 08:52 mix PMT; hay paso. No entra."
   ],
   "listado": [
     {
-      "icono": "🔴",
+      "icono": "🟠",
       "corredor": "Ibagué–Cajamarca / La Línea",
       "km": "",
-      "estado": "cierre total — Clásico RCN etapa 4, Ibagué–Cajamarca–Alto de La Línea–Calarcá ambos sentidos 07:00–13:00 (APPGICA desde 06:00) — alterna Honda–Mariquita–Fresno–Letras–Manizales.",
-      "fuente": ""
-    },
-    {
-      "icono": "🔴",
-      "corredor": "Puente Río Negro–El Palo",
-      "km": "",
-      "estado": "cierre total — puente La Símbola Pr 13+1640–13+1774, ambos sentidos, sin alterna — no despachar por ese tramo.",
+      "estado": "paso controlado — Clásico RCN etapa 4 aún en calzada GICA (llegada prevista 13:00 Caicedonia–Sevilla) — transitar con PMT; alterna Honda–Mariquita–Fresno–Letras si el pelotón ocupa el tramo.",
       "fuente": ""
     }
   ],
   "senales_tempranas": [
     {
-      "tramo": "Calarcá–Caicedonia–Sevilla",
-      "senal": "ControlT NUEVA ~07:00–13:00: cierre por evento ciclístico (Clásico RCN)",
-      "fuente": "ControlT AM https://risk.controlt.io/map",
-      "vigilar": "ControlT no confirma; #767 y APPGICA cubren Ibagué–La Línea, no esa calzada del Valle"
+      "tramo": "Armenia–Ibagué Km 73+0300–10+0530",
+      "senal": "original #767 09:35 flyer Habilitado desde 08:54",
+      "fuente": "INVÍAS #767 https://x.com/numeral767/status/2112553354895179834",
+      "vigilar": "3b: #767 no confirma reapertura; APPGICA no publicó habilitación"
+    },
+    {
+      "tramo": "Puente Río Negro–El Palo / puente La Símbola Pr 13+1640–13+1774",
+      "senal": "original #767 19:16 19-oct: cierre total, sin alterna",
+      "fuente": "INVÍAS #767 https://x.com/numeral767/status/2112337093401973052",
+      "vigilar": "0 original de esta ventana; ~17 h; caducidad 24 h; no es reapertura"
+    },
+    {
+      "tramo": "Mosquera–Mondoñedo",
+      "senal": "ControlT NUEVA ~08:12: accidente furgón y motociclista",
+      "fuente": "ControlT MD https://risk.controlt.io/map",
+      "vigilar": "ControlT no confirma; 0 Accenorte ni #767 de calzada"
+    },
+    {
+      "tramo": "Zambrano, Bolívar / El Carmen–Plato",
+      "senal": "ControlT NUEVA ~07:36: volcamiento de carga pesada",
+      "fuente": "ControlT MD https://risk.controlt.io/map",
+      "vigilar": "ControlT no confirma; 0 #767 ni autoridad de calzada"
     }
   ],
   "alertas_inmediatas": [],
   "salud_fuentes": {
     "estado_general": "degradada",
     "ventanas_esperadas": [
-      "AM"
+      "AM",
+      "MD"
     ],
     "ventanas_recibidas": [
-      "AM"
+      "AM",
+      "MD"
     ],
     "eventos_confirmados": 0,
-    "eventos_vigilancia": 3,
-    "pendientes_georreferencia": 3,
+    "eventos_vigilancia": 1,
+    "pendientes_georreferencia": 1,
     "fuentes": [
       {
-        "id": "src-37fa9413461d0c7bc7bcb80f",
-        "nombre": "INVÍAS #767 https://x.com/numeral767/status/2112337093401973052",
+        "id": "src-94adda48718039f753dba17a",
+        "nombre": "APP GICA https://x.com/APPGICA/status/2112549991457927425",
         "estado": "referenciada_en_reporte",
-        "ultima_consulta": "2026-10-20T07:00:00",
-        "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
-      },
-      {
-        "id": "src-6a36646c04792551624ed1f3",
-        "nombre": "APP GICA https://x.com/APPGICA/status/2112501811667947871",
-        "estado": "referenciada_en_reporte",
-        "ultima_consulta": "2026-10-20T07:00:00",
-        "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
-      },
-      {
-        "id": "src-54df6aae90233ddbad41748e",
-        "nombre": "APP GICA https://x.com/APPGICA/status/2112507937599975724",
-        "estado": "referenciada_en_reporte",
-        "ultima_consulta": "2026-10-20T07:00:00",
+        "ultima_consulta": "2026-10-20T12:00:00",
         "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
       }
     ]
@@ -92,23 +102,23 @@
   "eventos_confirmados": [],
   "eventos_vigilancia": [
     {
-      "id": "evt-a92c1ae8442b4847e236",
+      "id": "evt-e6d96edb91bfa2e48dc3",
       "corredor": "Ibagué–Cajamarca / La Línea",
-      "tramo": "Ibagué–Cajamarca–Calarcá, sector Alto de La Línea–Calarcá–Barcelona, ambos sentidos",
+      "tramo": "corredor GICA Ibagué–Cajamarca–Alto línea / Armenia–Ibagué Km 73+0300–10+0530",
       "departamento": null,
       "municipio": null,
       "via": null,
       "km": null,
-      "tipo": "cierre_total",
-      "severidad": "critical",
+      "tipo": "paso_controlado",
+      "severidad": "medium",
       "estado": "uncertain",
-      "resumen": "cierre total por Clásico RCN etapa 4, 07:00–13:00 20-oct; APPGICA cierra Ibagué–Cajamarca–Alto línea desde 06:00; alterna Honda–Mariquita–Fresno–Letras",
+      "resumen": "paso controlado: pelotón etapa 4 en calzada; #767 acota cierre total Armenia–Ibagué 06:00–08:54",
       "impacto_operativo": "",
       "confianza": 0.35,
-      "actualizado_en": "2026-10-20T07:00:00",
+      "actualizado_en": "2026-10-20T12:00:00",
       "estado_reportado": "active",
       "fecha_evidencia": "2026-10-20",
-      "fuente_publicada_en": "2026-10-20T06:10:00",
+      "fuente_publicada_en": "2026-10-20T09:22:00",
       "precision_fecha_evidencia": "minute",
       "vigencia_evidencia": "same_day",
       "base_confirmacion": "requires_source_verification",
@@ -121,93 +131,13 @@
       },
       "fuentes": [
         {
-          "id": "src-6a36646c04792551624ed1f3",
-          "nombre": "APP GICA https://x.com/APPGICA/status/2112501811667947871",
-          "url": "https://x.com/APPGICA/status/2112501811667947871",
+          "id": "src-94adda48718039f753dba17a",
+          "nombre": "APP GICA https://x.com/APPGICA/status/2112549991457927425",
+          "url": "https://x.com/APPGICA/status/2112549991457927425",
           "fortaleza": "social",
-          "publicada_en": "2026-10-20T06:10:00",
-          "consultada_en": "2026-10-20T07:00:00",
-          "evidencia": "cierre total por Clásico RCN etapa 4, 07:00–13:00 20-oct; APPGICA cierra Ibagué–Cajamarca–Alto línea desde 06:00; alterna Honda–Mariquita–Fresno–Letras"
-        }
-      ]
-    },
-    {
-      "id": "evt-c5c38deafd83072610e5",
-      "corredor": "Ibagué–Cajamarca / La Línea",
-      "tramo": "K10+530 segunda calzada Ibagué–Cajamarca, intersección Los Osos",
-      "departamento": null,
-      "municipio": null,
-      "via": null,
-      "km": null,
-      "tipo": "cierre_total",
-      "severidad": "critical",
-      "estado": "uncertain",
-      "resumen": "cierre total de la vía por autoridades, Clásico RCN etapa 4; PMT instalado",
-      "impacto_operativo": "",
-      "confianza": 0.35,
-      "actualizado_en": "2026-10-20T07:00:00",
-      "estado_reportado": "active",
-      "fecha_evidencia": "2026-10-20",
-      "fuente_publicada_en": "2026-10-20T06:35:00",
-      "precision_fecha_evidencia": "minute",
-      "vigencia_evidencia": "same_day",
-      "base_confirmacion": "requires_source_verification",
-      "identidad": "seguimiento_de_punto_no_incidente_unico",
-      "georreferencia": {
-        "estado": "sin_georreferencia",
-        "lat": null,
-        "lon": null,
-        "etiqueta": "Sin coordenadas; marcador oculto"
-      },
-      "fuentes": [
-        {
-          "id": "src-54df6aae90233ddbad41748e",
-          "nombre": "APP GICA https://x.com/APPGICA/status/2112507937599975724",
-          "url": "https://x.com/APPGICA/status/2112507937599975724",
-          "fortaleza": "social",
-          "publicada_en": "2026-10-20T06:35:00",
-          "consultada_en": "2026-10-20T07:00:00",
-          "evidencia": "cierre total de la vía por autoridades, Clásico RCN etapa 4; PMT instalado"
-        }
-      ]
-    },
-    {
-      "id": "evt-4ab578397ffeaf47d3be",
-      "corredor": "Puente Río Negro–El Palo",
-      "tramo": "puente La Símbola, Pr 13+1640 al Pr 13+1774, ambos sentidos",
-      "departamento": null,
-      "municipio": null,
-      "via": null,
-      "km": null,
-      "tipo": "cierre_total",
-      "severidad": "critical",
-      "estado": "uncertain",
-      "resumen": "cierre total por emergencia vial desde 19-oct hasta finalizar intervención; sin ruta alterna",
-      "impacto_operativo": "",
-      "confianza": 0.35,
-      "actualizado_en": "2026-10-20T07:00:00",
-      "estado_reportado": "active",
-      "fecha_evidencia": "2026-10-19",
-      "fuente_publicada_en": "2026-10-19T19:16:00",
-      "precision_fecha_evidencia": "minute",
-      "vigencia_evidencia": "inherited",
-      "base_confirmacion": "requires_source_verification",
-      "identidad": "seguimiento_de_punto_no_incidente_unico",
-      "georreferencia": {
-        "estado": "sin_georreferencia",
-        "lat": null,
-        "lon": null,
-        "etiqueta": "Sin coordenadas; marcador oculto"
-      },
-      "fuentes": [
-        {
-          "id": "src-37fa9413461d0c7bc7bcb80f",
-          "nombre": "INVÍAS #767 https://x.com/numeral767/status/2112337093401973052",
-          "url": "https://x.com/numeral767/status/2112337093401973052",
-          "fortaleza": "social",
-          "publicada_en": "2026-10-19T19:16:00",
-          "consultada_en": "2026-10-20T07:00:00",
-          "evidencia": "cierre total por emergencia vial desde 19-oct hasta finalizar intervención; sin ruta alterna"
+          "publicada_en": "2026-10-20T09:22:00",
+          "consultada_en": "2026-10-20T12:00:00",
+          "evidencia": "paso controlado: pelotón etapa 4 en calzada; #767 acota cierre total Armenia–Ibagué 06:00–08:54"
         }
       ]
     }
@@ -440,6 +370,84 @@
         ]
       },
       {
+        "corredor": "Ibagué–Cajamarca / La Línea",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 2,
+        "cortes_con_observacion": 3,
+        "severidad_maxima": "critical",
+        "ultima_observacion": "2026-10-20T12:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-10-14",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-15",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-16",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-18",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-19",
+            "ventanas": [
+              "PM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "high",
+            "resumenes": [
+              "cierre parcial por emergencia; hay paso; ruta alterna Manizales–Alto de Letras–Fresno–Mariquita"
+            ]
+          },
+          {
+            "fecha": "2026-10-20",
+            "ventanas": [
+              "AM",
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 3,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "cierre total por Clásico RCN etapa 4, 07:00–13:00 20-oct; APPGICA cierra Ibagué–Cajamarca–Alto línea desde 06:00; alterna Honda–Mariquita–Fresno–Letras",
+              "cierre total de la vía por autoridades, Clásico RCN etapa 4; PMT instalado",
+              "paso controlado: pelotón etapa 4 en calzada; #767 acota cierre total Armenia–Ibagué 06:00–08:54"
+            ]
+          }
+        ]
+      },
+      {
         "corredor": "Honda–Bogotá",
         "dias_confirmados": 0,
         "dias_vigilancia": 2,
@@ -512,82 +520,6 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Ibagué–Cajamarca / La Línea",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 2,
-        "cortes_con_observacion": 2,
-        "severidad_maxima": "critical",
-        "ultima_observacion": "2026-10-20T07:00:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-19",
-            "ventanas": [
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "high",
-            "resumenes": [
-              "cierre parcial por emergencia; hay paso; ruta alterna Manizales–Alto de Letras–Fresno–Mariquita"
-            ]
-          },
-          {
-            "fecha": "2026-10-20",
-            "ventanas": [
-              "AM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 2,
-            "severidad_maxima": "critical",
-            "resumenes": [
-              "cierre total por Clásico RCN etapa 4, 07:00–13:00 20-oct; APPGICA cierra Ibagué–Cajamarca–Alto línea desde 06:00; alterna Honda–Mariquita–Fresno–Letras",
-              "cierre total de la vía por autoridades, Clásico RCN etapa 4; PMT instalado"
-            ]
           }
         ]
       },
@@ -1105,54 +1037,62 @@
         "resueltos": 0,
         "por_verificar": 3
       }
+    },
+    {
+      "cut_id": "2026-10-20-md",
+      "hora": "12:00",
+      "ventana": "MD",
+      "tipo": "corte_final",
+      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 1 por verificar.",
+      "conteos": {
+        "nuevos": 0,
+        "persistentes": 0,
+        "resueltos": 0,
+        "por_verificar": 1
+      }
     }
   ],
   "fuentes": [
     {
-      "id": "src-37fa9413461d0c7bc7bcb80f",
-      "nombre": "INVÍAS #767 https://x.com/numeral767/status/2112337093401973052",
-      "url": "https://x.com/numeral767/status/2112337093401973052",
+      "id": "src-94adda48718039f753dba17a",
+      "nombre": "APP GICA https://x.com/APPGICA/status/2112549991457927425",
+      "url": "https://x.com/APPGICA/status/2112549991457927425",
       "fortaleza": "social",
-      "consultada_en": "2026-10-20T07:00:00",
+      "consultada_en": "2026-10-20T12:00:00",
       "eventos": [
-        "evt-4ab578397ffeaf47d3be"
-      ]
-    },
-    {
-      "id": "src-6a36646c04792551624ed1f3",
-      "nombre": "APP GICA https://x.com/APPGICA/status/2112501811667947871",
-      "url": "https://x.com/APPGICA/status/2112501811667947871",
-      "fortaleza": "social",
-      "consultada_en": "2026-10-20T07:00:00",
-      "eventos": [
-        "evt-a92c1ae8442b4847e236"
-      ]
-    },
-    {
-      "id": "src-54df6aae90233ddbad41748e",
-      "nombre": "APP GICA https://x.com/APPGICA/status/2112507937599975724",
-      "url": "https://x.com/APPGICA/status/2112507937599975724",
-      "fortaleza": "social",
-      "consultada_en": "2026-10-20T07:00:00",
-      "eventos": [
-        "evt-c5c38deafd83072610e5"
+        "evt-e6d96edb91bfa2e48dc3"
       ]
     }
   ],
   "bibliografia_reporte": [
     {
-      "nombre": "APP GICA 06:10 20-oct (Clásico RCN etapa 4; cierre Ibagué–Cajamarca–Alto línea desde 06:00)",
-      "url": "https://x.com/APPGICA/status/2112501811667947871",
+      "nombre": "APP GICA 09:22 20-oct (Clásico RCN etapa 4 en calzada del corredor GICA)",
+      "url": "https://x.com/APPGICA/status/2112549991457927425",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "APP GICA 06:35 20-oct (cierre total K10+530 Los Osos, segunda calzada Ibagué–Cajamarca)",
-      "url": "https://x.com/APPGICA/status/2112507937599975724",
+      "nombre": "INVÍAS #767 09:34 20-oct (cierre total Armenia–Ibagué Km 73+0300–10+0530, 06:00–08:54, RCN etapa 4)",
+      "url": "https://x.com/numeral767/status/2112553024422048257",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "INVÍAS #767 01:57 20-oct (cierre total Ibagué–Cajamarca–Calarcá, Alto de La Línea–Calarcá–Barcelona, Clásico RCN 07:00–13:00)",
-      "url": "https://x.com/numeral767/status/2112438043231560125",
+      "nombre": "INVÍAS #767 09:35 20-oct (flyer Habilitado Armenia–Ibagué desde 08:54)",
+      "url": "https://x.com/numeral767/status/2112553354895179834",
+      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
+    },
+    {
+      "nombre": "Concesión Vial de los Llanos 11:49 20-oct (paso a un carril Puerto López–Puerto Gaitán PR14+580)",
+      "url": "https://x.com/cviallanos/status/2112587186176463111",
+      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
+    },
+    {
+      "nombre": "Coviandina 08:52 20-oct (mix PMT Bogotá–Villavicencio; hay paso)",
+      "url": "https://x.com/CoviandinaSAS/status/2112542665795653803",
+      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
+    },
+    {
+      "nombre": "Concesión TAO 12:00 20-oct (movilidad reducida Las Palmas Km 6+610)",
+      "url": "https://x.com/ConcesionTAO/status/2112589855788073258",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
@@ -1161,22 +1101,7 @@
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "APP GICA 06:23 20-oct (PR63+700 Armenia–Ibagué habilitada tras choque 05:55)",
-      "url": "https://x.com/APPGICA/status/2112504985909137425",
-      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
-    },
-    {
-      "nombre": "Coviandina 05:15 20-oct (mix PMT Bogotá–Villavicencio; hay paso)",
-      "url": "https://x.com/CoviandinaSAS/status/2112488116984418772",
-      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
-    },
-    {
-      "nombre": "Concesión TAO 04:30 20-oct (Santa Elena habilitada ambos sentidos)",
-      "url": "https://x.com/ConcesionTAO/status/2112476735019102566",
-      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
-    },
-    {
-      "nombre": "Radar ControlT AM",
+      "nombre": "Radar ControlT MD",
       "url": "https://risk.controlt.io/map",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
