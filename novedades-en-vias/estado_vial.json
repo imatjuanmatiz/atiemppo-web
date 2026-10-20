@@ -2,98 +2,220 @@
   "schema_version": "1.3",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-10-19-md",
-  "revision_id": "rev-3fcf75782536855ff31fb41b80bc7723",
+  "cut_id": "2026-10-20-am",
+  "revision_id": "rev-2a4d6fddbb129f19774760a1718d0c1c",
   "calidad_ingesta": {
     "state": "complete",
-    "revision_id": "rev-3fcf75782536855ff31fb41b80bc7723",
-    "report_sha256": "f2e2b4684a3e0f002f3be416db2408363bd75334dc193e1700ab9de759ffce46",
+    "revision_id": "rev-2a4d6fddbb129f19774760a1718d0c1c",
+    "report_sha256": "544a32f4928f7ffb86af9eeb6bd2fe1a36c4fab0a866d5cec0cb37ca7ef3880d",
     "parser_version": "roads-2.0.0",
-    "detail_rows": 0,
-    "signal_rows": 6,
-    "observation_count": 0,
+    "detail_rows": 3,
+    "signal_rows": 1,
+    "observation_count": 3,
     "duplicate_rows": 0,
     "complete": true,
-    "evidencia_del_dia": 0,
-    "evidencia_heredada_o_sin_fecha": 0
+    "evidencia_del_dia": 2,
+    "evidencia_heredada_o_sin_fecha": 1
   },
   "zona_horaria": "America/Bogota",
   "nota_vigencia": "La fecha del corte acredita la actualización del reporte. Cada punto conserva la fecha de su evidencia; las referencias heredadas o sin enlace directo requieren verificación. El resumen editorial reproduce el reporte y no confirma por sí solo el estado actual.",
-  "fecha": "2026-10-19",
-  "ventana": "MD",
-  "hora": "12:00",
-  "generado_en": "2026-10-19T12:00:00",
-  "artefacto_fuente": "2026-10-19-editor-eldato-version-vias-colombia-md.md",
+  "fecha": "2026-10-20",
+  "ventana": "AM",
+  "hora": "07:00",
+  "generado_en": "2026-10-20T07:00:00",
+  "artefacto_fuente": "2026-10-20-editor-eldato-version-vias-colombia-am.md",
   "que_cambio": [],
   "notas_cambio": [
-    "Bogotá–Villavicencio: Coviandina 11:07 mix PMT; hay paso. No entra.",
-    "Túnel de Oriente: TAO accidente 10:48, habilitado 11:18. No entra.",
-    "Las Palmas: TAO 12:00 movilidad reducida Km 6+610. PMT de bajo impacto. No entra.",
-    "Buga–Buenaventura Km 79: original #767 habilitado 11:39. No entra.",
-    "Saravena–Cubará y Hato Corozal–Tame: 0 original nuevo (~41 h); siguen en señales."
+    "Este corte es el listado base del día. MD y PM miden el cambio contra esta mañana, no contra el mismo corredor del corte anterior."
   ],
-  "listado": [],
+  "listado": [
+    {
+      "icono": "🔴",
+      "corredor": "Ibagué–Cajamarca / La Línea",
+      "km": "",
+      "estado": "cierre total — Clásico RCN etapa 4, Ibagué–Cajamarca–Alto de La Línea–Calarcá ambos sentidos 07:00–13:00 (APPGICA desde 06:00) — alterna Honda–Mariquita–Fresno–Letras–Manizales.",
+      "fuente": ""
+    },
+    {
+      "icono": "🔴",
+      "corredor": "Puente Río Negro–El Palo",
+      "km": "",
+      "estado": "cierre total — puente La Símbola Pr 13+1640–13+1774, ambos sentidos, sin alterna — no despachar por ese tramo.",
+      "fuente": ""
+    }
+  ],
   "senales_tempranas": [
     {
-      "tramo": "Panamericana Cauca / El Estrecho–Rosas",
-      "senal": "ControlT NUEVA ~06:00–10:26: alerta de explosiones en calzada, flujo detenido ambos sentidos de forma preventiva",
-      "fuente": "ControlT MD https://risk.controlt.io/map",
-      "vigilar": "ControlT no confirma; 0 ConPanamericana ni #767 de calzada"
-    },
-    {
-      "tramo": "Bogotá–Villavicencio / Chirajara",
-      "senal": "ControlT NUEVA ~07:00–08:15: accidente objeto fijo, un carril",
-      "fuente": "ControlT MD https://risk.controlt.io/map",
-      "vigilar": "ControlT no confirma; Coviandina 11:07 mix PMT no nombra el punto"
-    },
-    {
-      "tramo": "Zona Bananera / Puente Sevilla",
-      "senal": "ControlT NUEVA ~08:00–08:42: accidente tractomula y camión, ambulancia en el lugar",
-      "fuente": "ControlT MD https://risk.controlt.io/map",
-      "vigilar": "ControlT no confirma; 0 #767 ni autoridad de calzada"
-    },
-    {
-      "tramo": "Bogotá–Siberia / Cota",
-      "senal": "ControlT NUEVA ~09:31: accidente moto y tractomula, posible lesionado",
-      "fuente": "ControlT MD https://risk.controlt.io/map",
-      "vigilar": "ControlT no confirma; Accenorte 09:04 es oficinas"
-    },
-    {
-      "tramo": "Saravena–Cubará / puente Caño Negro Km 9",
-      "senal": "original #767 18:49 17-oct: cierre total, puente metálico caído, sin alterna",
-      "fuente": "INVÍAS #767 https://x.com/numeral767/status/2111605605052080254",
-      "vigilar": "0 original de esta ventana; ~41 h; caducidad 24 h; no es reapertura"
-    },
-    {
-      "tramo": "Hato Corozal–Tame / puente Lopeño Km 18+900",
-      "senal": "original #767 18:59 17-oct: cierre total, pérdida de calzada, sin alterna",
-      "fuente": "INVÍAS #767 https://x.com/numeral767/status/2111608011588571405",
-      "vigilar": "0 original de esta ventana; ~41 h; caducidad 24 h; no es reapertura"
+      "tramo": "Calarcá–Caicedonia–Sevilla",
+      "senal": "ControlT NUEVA ~07:00–13:00: cierre por evento ciclístico (Clásico RCN)",
+      "fuente": "ControlT AM https://risk.controlt.io/map",
+      "vigilar": "ControlT no confirma; #767 y APPGICA cubren Ibagué–La Línea, no esa calzada del Valle"
     }
   ],
   "alertas_inmediatas": [],
   "salud_fuentes": {
-    "estado_general": "estable",
+    "estado_general": "degradada",
     "ventanas_esperadas": [
-      "AM",
-      "MD"
+      "AM"
     ],
     "ventanas_recibidas": [
-      "AM",
-      "MD"
+      "AM"
     ],
     "eventos_confirmados": 0,
-    "eventos_vigilancia": 0,
-    "pendientes_georreferencia": 0,
-    "fuentes": []
+    "eventos_vigilancia": 3,
+    "pendientes_georreferencia": 3,
+    "fuentes": [
+      {
+        "id": "src-37fa9413461d0c7bc7bcb80f",
+        "nombre": "INVÍAS #767 https://x.com/numeral767/status/2112337093401973052",
+        "estado": "referenciada_en_reporte",
+        "ultima_consulta": "2026-10-20T07:00:00",
+        "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
+      },
+      {
+        "id": "src-6a36646c04792551624ed1f3",
+        "nombre": "APP GICA https://x.com/APPGICA/status/2112501811667947871",
+        "estado": "referenciada_en_reporte",
+        "ultima_consulta": "2026-10-20T07:00:00",
+        "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
+      },
+      {
+        "id": "src-54df6aae90233ddbad41748e",
+        "nombre": "APP GICA https://x.com/APPGICA/status/2112507937599975724",
+        "estado": "referenciada_en_reporte",
+        "ultima_consulta": "2026-10-20T07:00:00",
+        "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
+      }
+    ]
   },
   "acciones_sugeridas": [],
   "eventos_confirmados": [],
-  "eventos_vigilancia": [],
+  "eventos_vigilancia": [
+    {
+      "id": "evt-a92c1ae8442b4847e236",
+      "corredor": "Ibagué–Cajamarca / La Línea",
+      "tramo": "Ibagué–Cajamarca–Calarcá, sector Alto de La Línea–Calarcá–Barcelona, ambos sentidos",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
+      "tipo": "cierre_total",
+      "severidad": "critical",
+      "estado": "uncertain",
+      "resumen": "cierre total por Clásico RCN etapa 4, 07:00–13:00 20-oct; APPGICA cierra Ibagué–Cajamarca–Alto línea desde 06:00; alterna Honda–Mariquita–Fresno–Letras",
+      "impacto_operativo": "",
+      "confianza": 0.35,
+      "actualizado_en": "2026-10-20T07:00:00",
+      "estado_reportado": "active",
+      "fecha_evidencia": "2026-10-20",
+      "fuente_publicada_en": "2026-10-20T06:10:00",
+      "precision_fecha_evidencia": "minute",
+      "vigencia_evidencia": "same_day",
+      "base_confirmacion": "requires_source_verification",
+      "identidad": "seguimiento_de_punto_no_incidente_unico",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
+      "fuentes": [
+        {
+          "id": "src-6a36646c04792551624ed1f3",
+          "nombre": "APP GICA https://x.com/APPGICA/status/2112501811667947871",
+          "url": "https://x.com/APPGICA/status/2112501811667947871",
+          "fortaleza": "social",
+          "publicada_en": "2026-10-20T06:10:00",
+          "consultada_en": "2026-10-20T07:00:00",
+          "evidencia": "cierre total por Clásico RCN etapa 4, 07:00–13:00 20-oct; APPGICA cierra Ibagué–Cajamarca–Alto línea desde 06:00; alterna Honda–Mariquita–Fresno–Letras"
+        }
+      ]
+    },
+    {
+      "id": "evt-c5c38deafd83072610e5",
+      "corredor": "Ibagué–Cajamarca / La Línea",
+      "tramo": "K10+530 segunda calzada Ibagué–Cajamarca, intersección Los Osos",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
+      "tipo": "cierre_total",
+      "severidad": "critical",
+      "estado": "uncertain",
+      "resumen": "cierre total de la vía por autoridades, Clásico RCN etapa 4; PMT instalado",
+      "impacto_operativo": "",
+      "confianza": 0.35,
+      "actualizado_en": "2026-10-20T07:00:00",
+      "estado_reportado": "active",
+      "fecha_evidencia": "2026-10-20",
+      "fuente_publicada_en": "2026-10-20T06:35:00",
+      "precision_fecha_evidencia": "minute",
+      "vigencia_evidencia": "same_day",
+      "base_confirmacion": "requires_source_verification",
+      "identidad": "seguimiento_de_punto_no_incidente_unico",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
+      "fuentes": [
+        {
+          "id": "src-54df6aae90233ddbad41748e",
+          "nombre": "APP GICA https://x.com/APPGICA/status/2112507937599975724",
+          "url": "https://x.com/APPGICA/status/2112507937599975724",
+          "fortaleza": "social",
+          "publicada_en": "2026-10-20T06:35:00",
+          "consultada_en": "2026-10-20T07:00:00",
+          "evidencia": "cierre total de la vía por autoridades, Clásico RCN etapa 4; PMT instalado"
+        }
+      ]
+    },
+    {
+      "id": "evt-4ab578397ffeaf47d3be",
+      "corredor": "Puente Río Negro–El Palo",
+      "tramo": "puente La Símbola, Pr 13+1640 al Pr 13+1774, ambos sentidos",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
+      "tipo": "cierre_total",
+      "severidad": "critical",
+      "estado": "uncertain",
+      "resumen": "cierre total por emergencia vial desde 19-oct hasta finalizar intervención; sin ruta alterna",
+      "impacto_operativo": "",
+      "confianza": 0.35,
+      "actualizado_en": "2026-10-20T07:00:00",
+      "estado_reportado": "active",
+      "fecha_evidencia": "2026-10-19",
+      "fuente_publicada_en": "2026-10-19T19:16:00",
+      "precision_fecha_evidencia": "minute",
+      "vigencia_evidencia": "inherited",
+      "base_confirmacion": "requires_source_verification",
+      "identidad": "seguimiento_de_punto_no_incidente_unico",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
+      "fuentes": [
+        {
+          "id": "src-37fa9413461d0c7bc7bcb80f",
+          "nombre": "INVÍAS #767 https://x.com/numeral767/status/2112337093401973052",
+          "url": "https://x.com/numeral767/status/2112337093401973052",
+          "fortaleza": "social",
+          "publicada_en": "2026-10-19T19:16:00",
+          "consultada_en": "2026-10-20T07:00:00",
+          "evidencia": "cierre total por emergencia vial desde 19-oct hasta finalizar intervención; sin ruta alterna"
+        }
+      ]
+    }
+  ],
   "eventos_resueltos": [],
   "historial_corredores": {
-    "periodo_inicio": "2026-10-13",
-    "periodo_fin": "2026-10-19",
+    "periodo_inicio": "2026-10-14",
+    "periodo_fin": "2026-10-20",
     "metodologia": "Días distintos por corredor; confirmado exige estado activo y confianza mínima de 0,65.",
     "corredores": [
       {
@@ -105,14 +227,6 @@
         "ultima_observacion": "2026-10-15T17:30:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-14",
             "ventanas": [
@@ -170,6 +284,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-10-20",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -182,14 +304,6 @@
         "ultima_observacion": "2026-10-18T12:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-14",
             "ventanas": [],
@@ -243,6 +357,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-10-20",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -255,14 +377,6 @@
         "ultima_observacion": "2026-10-14T17:30:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-14",
             "ventanas": [
@@ -314,6 +428,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-10-20",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -326,14 +448,6 @@
         "ultima_observacion": "2026-10-18T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-14",
             "ventanas": [],
@@ -390,6 +504,90 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-10-20",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          }
+        ]
+      },
+      {
+        "corredor": "Ibagué–Cajamarca / La Línea",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 2,
+        "cortes_con_observacion": 2,
+        "severidad_maxima": "critical",
+        "ultima_observacion": "2026-10-20T07:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-10-14",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-15",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-16",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-18",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-19",
+            "ventanas": [
+              "PM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "high",
+            "resumenes": [
+              "cierre parcial por emergencia; hay paso; ruta alterna Manizales–Alto de Letras–Fresno–Mariquita"
+            ]
+          },
+          {
+            "fecha": "2026-10-20",
+            "ventanas": [
+              "AM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 2,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "cierre total por Clásico RCN etapa 4, 07:00–13:00 20-oct; APPGICA cierra Ibagué–Cajamarca–Alto línea desde 06:00; alterna Honda–Mariquita–Fresno–Letras",
+              "cierre total de la vía por autoridades, Clásico RCN etapa 4; PMT instalado"
+            ]
           }
         ]
       },
@@ -402,14 +600,6 @@
         "ultima_observacion": "2026-10-16T17:30:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-14",
             "ventanas": [],
@@ -462,6 +652,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-10-20",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -474,14 +672,6 @@
         "ultima_observacion": "2026-10-18T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-14",
             "ventanas": [],
@@ -533,6 +723,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-10-20",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -545,14 +743,6 @@
         "ultima_observacion": "2026-10-14T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-14",
             "ventanas": [
@@ -605,6 +795,85 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-10-20",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          }
+        ]
+      },
+      {
+        "corredor": "Puente Río Negro–El Palo",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "critical",
+        "ultima_observacion": "2026-10-20T07:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-10-14",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-15",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-16",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-17",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-18",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-19",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-20",
+            "ventanas": [
+              "AM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "cierre total por emergencia vial desde 19-oct hasta finalizar intervención; sin ruta alterna"
+            ]
           }
         ]
       },
@@ -617,14 +886,6 @@
         "ultima_observacion": "2026-10-18T07:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-14",
             "ventanas": [],
@@ -676,6 +937,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-10-20",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -688,14 +957,6 @@
         "ultima_observacion": "2026-10-15T17:30:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-14",
             "ventanas": [],
@@ -747,72 +1008,9 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
-          }
-        ]
-      },
-      {
-        "corredor": "Panamericana / Mojarras–Popayán",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "medium",
-        "ultima_observacion": "2026-10-13T17:30:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [
-              "PM"
-            ],
-            "confirmados": 0,
-            "vigilancia": 1,
-            "severidad_maxima": "medium",
-            "resumenes": [
-              "paso a un carril por novedades de seguridad, hasta finalizar intervención; 0 ruta alterna"
-            ]
           },
           {
-            "fecha": "2026-10-14",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-15",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-16",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-17",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-18",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-19",
+            "fecha": "2026-10-20",
             "ventanas": [],
             "confirmados": 0,
             "vigilancia": 0,
@@ -830,14 +1028,6 @@
         "ultima_observacion": "2026-10-15T17:30:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-10-13",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-14",
             "ventanas": [],
@@ -889,6 +1079,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-10-20",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       }
@@ -896,71 +1094,89 @@
   },
   "cambios_dia": [
     {
-      "cut_id": "2026-10-19-am",
+      "cut_id": "2026-10-20-am",
       "hora": "07:00",
       "ventana": "AM",
       "tipo": "corte_final",
-      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
+      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 3 por verificar.",
       "conteos": {
         "nuevos": 0,
         "persistentes": 0,
         "resueltos": 0,
-        "por_verificar": 0
-      }
-    },
-    {
-      "cut_id": "2026-10-19-md",
-      "hora": "12:00",
-      "ventana": "MD",
-      "tipo": "corte_final",
-      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 0 por verificar.",
-      "conteos": {
-        "nuevos": 0,
-        "persistentes": 0,
-        "resueltos": 0,
-        "por_verificar": 0
+        "por_verificar": 3
       }
     }
   ],
-  "fuentes": [],
+  "fuentes": [
+    {
+      "id": "src-37fa9413461d0c7bc7bcb80f",
+      "nombre": "INVÍAS #767 https://x.com/numeral767/status/2112337093401973052",
+      "url": "https://x.com/numeral767/status/2112337093401973052",
+      "fortaleza": "social",
+      "consultada_en": "2026-10-20T07:00:00",
+      "eventos": [
+        "evt-4ab578397ffeaf47d3be"
+      ]
+    },
+    {
+      "id": "src-6a36646c04792551624ed1f3",
+      "nombre": "APP GICA https://x.com/APPGICA/status/2112501811667947871",
+      "url": "https://x.com/APPGICA/status/2112501811667947871",
+      "fortaleza": "social",
+      "consultada_en": "2026-10-20T07:00:00",
+      "eventos": [
+        "evt-a92c1ae8442b4847e236"
+      ]
+    },
+    {
+      "id": "src-54df6aae90233ddbad41748e",
+      "nombre": "APP GICA https://x.com/APPGICA/status/2112507937599975724",
+      "url": "https://x.com/APPGICA/status/2112507937599975724",
+      "fortaleza": "social",
+      "consultada_en": "2026-10-20T07:00:00",
+      "eventos": [
+        "evt-c5c38deafd83072610e5"
+      ]
+    }
+  ],
   "bibliografia_reporte": [
     {
-      "nombre": "Coviandina 11:07 19-oct (mix PMT Bogotá–Villavicencio; hay paso)",
-      "url": "https://x.com/CoviandinaSAS/status/2112214137312788765",
+      "nombre": "APP GICA 06:10 20-oct (Clásico RCN etapa 4; cierre Ibagué–Cajamarca–Alto línea desde 06:00)",
+      "url": "https://x.com/APPGICA/status/2112501811667947871",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "INVÍAS #767 11:39 19-oct (Buenaventura–Buga, Km 79+0400 habilitado)",
-      "url": "https://x.com/numeral767/status/2112222027302265155",
+      "nombre": "APP GICA 06:35 20-oct (cierre total K10+530 Los Osos, segunda calzada Ibagué–Cajamarca)",
+      "url": "https://x.com/APPGICA/status/2112507937599975724",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "Concesión TAO 12:00 19-oct (movilidad reducida doble calzada Las Palmas Km 6+610)",
-      "url": "https://x.com/ConcesionTAO/status/2112227467746287765",
+      "nombre": "INVÍAS #767 01:57 20-oct (cierre total Ibagué–Cajamarca–Calarcá, Alto de La Línea–Calarcá–Barcelona, Clásico RCN 07:00–13:00)",
+      "url": "https://x.com/numeral767/status/2112438043231560125",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "Concesión TAO 11:18 19-oct (Túnel de Oriente habilitado sentido Rionegro–Medellín)",
-      "url": "https://x.com/ConcesionTAO/status/2112217151985582392",
+      "nombre": "INVÍAS #767 19:16 19-oct (cierre total Puente Río Negro–El Palo, puente La Símbola Pr 13+1640–13+1774)",
+      "url": "https://x.com/numeral767/status/2112337093401973052",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "APP GICA 10:17 19-oct (PMT demarcación Variante Ibagué PR18+180)",
-      "url": "https://x.com/APPGICA/status/2112201570049720832",
+      "nombre": "APP GICA 06:23 20-oct (PR63+700 Armenia–Ibagué habilitada tras choque 05:55)",
+      "url": "https://x.com/APPGICA/status/2112504985909137425",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "INVÍAS #767 18:49 17-oct (cierre total Saravena–Cubará, puente Caño Negro Km 9)",
-      "url": "https://x.com/numeral767/status/2111605605052080254",
+      "nombre": "Coviandina 05:15 20-oct (mix PMT Bogotá–Villavicencio; hay paso)",
+      "url": "https://x.com/CoviandinaSAS/status/2112488116984418772",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "INVÍAS #767 18:59 17-oct (cierre total Hato Corozal–Tame, puente Lopeño Km 18+900)",
-      "url": "https://x.com/numeral767/status/2111608011588571405",
+      "nombre": "Concesión TAO 04:30 20-oct (Santa Elena habilitada ambos sentidos)",
+      "url": "https://x.com/ConcesionTAO/status/2112476735019102566",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "Radar ControlT MD",
+      "nombre": "Radar ControlT AM",
       "url": "https://risk.controlt.io/map",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
