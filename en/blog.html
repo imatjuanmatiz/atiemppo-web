@@ -27,16 +27,17 @@ description: Notes, updates and editorial pieces from ATIEMPPO's live projects. 
 {
   "@context":"https://schema.org",
   "@type":"Blog",
-  "@id":"https://atiemppo.com/blog/#blog",
+  "@id":"https://atiemppo.com/en/blog/#blog",
   "name":"Live Lab — ATIEMPPO",
-  "description":"Avances, experimentos y aprendizajes de IA aplicada, logística y datos.",
-  "url":"https://atiemppo.com/blog/",
+  "description":"Progress, experiments and lessons from applied AI, logistics and data.",
+  "inLanguage":"en",
+  "url":"https://atiemppo.com/en/blog/",
   "publisher":{"@type":"Organization","name":"ATIEMPPO S.A.S.","logo":"https://atiemppo.com/assets/images/logo-atiemppo.png"}
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
 <style>
 :root{
   --bg:#F4F6F2; --ink:#0B1220; --navy:#0E2C4D; --navy-d:#0a2138;
@@ -147,6 +148,8 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:56px 28px 34px;margin-top:
   .blog-featured .body{padding:26px}
 }
 </style>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/assets/css/site-foundation.css?v=20261021"/>
 </head>
 <body>
 
@@ -195,26 +198,7 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:56px 28px 34px;margin-top:
   </div>
 </main>
 
-<footer>
-  <div class="footer-inner">
-    <div class="footer-top">
-      <a href="/en/" aria-label="ATIEMPPO"><img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO"/></a>
-      <div class="footer-nav">
-        <a href="/en/consultoria/">Consulting</a>
-        <a href="/en/inteligencia-planeacion-transporte/">Intelligence</a>
-        <a href="/en/acompanamiento-ia/">AI productivity</a>
-        <a href="/en/quienes-somos/">About us</a>
-        <a href="/en/reportes/">Reports</a>
-        <a href="/en/blog/">Blog</a>
-        <a href="/en/#contacto">Let's talk</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 ATIEMPPO S.A.S. · Bogotá, Colombia</span>
-      <span class="mono">Live Lab</span>
-    </div>
-  </div>
-</footer>
+{% include footer.html %}
 
 <script>
 const burgerBtn=document.getElementById("burger");

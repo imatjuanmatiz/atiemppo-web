@@ -1,0 +1,21 @@
+{%- assign offer_lang = include.lang | default: 'es' -%}
+{%- assign offer = site.data.portal_offer -%}
+{%- assign offer_copy = offer[offer_lang] -%}
+{%- assign offer_heading = include.heading | default: 'h3' -%}
+<div class="atica-start">
+  <div class="atica-start-copy">
+    <p class="eyebrow">{{ offer_copy.category }}</p>
+    <{{ offer_heading }} id="atica-offer-title">{{ offer_copy.title }}</{{ offer_heading }}>
+    <p>{{ offer_copy.description }}</p>
+    <p class="atica-plan-limit">{{ offer_copy.limit }}</p>
+    <p class="atica-plan-detail">{{ offer_copy.detail }}</p>
+    <div class="atica-start-actions">
+      <a class="btn btn-primary" data-atica-signup href="{{ offer.register_url }}">{{ offer_copy.cta }} →</a>
+      <a class="text-link" href="{{ offer.login_url }}">{{ offer_copy.login }}</a>
+    </div>
+    <p class="atica-access-note">{{ offer_copy.access }}</p>
+    {% if offer_copy.language_note != '' %}<p class="atica-plan-detail">{{ offer_copy.language_note }}</p>{% endif %}
+    <p class="atica-plan-detail">{{ offer_copy.extras }}</p>
+  </div>
+  <figure><img src="{{ offer.image }}" alt="{{ offer_copy.image_alt }}" loading="lazy" width="1489" height="898"/></figure>
+</div>

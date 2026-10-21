@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "SICETAC al Instante evoluciona hacia el análisis de tu red de transporte"
-description: "4.743 consultas registradas y 428 contactos consultantes: de WhatsApp al mapa, las tarifas propias y el índice de la red. Solicita acceso anticipado a ATICA."
+description: "4.743 consultas registradas y 428 contactos consultantes: de WhatsApp al mapa, las tarifas propias y el índice de la red. Conoce la evolución de ATICA y crea tu cuenta gratuita."
 date: 2026-10-13 09:05:00 -0500
 author: "Juan Pablo Matiz"
 lab: "SICETAC al Instante"
@@ -9,7 +9,17 @@ emoji: "🗺️"
 tags: [sicetac, atica, transporte, analítica, índice-de-red, whatsapp]
 image: /assets/images/blog/sicetac-instant-atica/01-centro-servicios.png
 permalink: /blog/sicetac-instant-atica-red-transporte/
+lang: es
+translations:
+  es: /blog/sicetac-instant-atica-red-transporte/
+  en: /en/blog/sicetac-instant-atica-red-transporte/
+last_modified_at: 2026-10-21
+ai_content_declaration: ai-assisted
+portal_featured: true
 ---
+
+> **Actualización del 21 de octubre de 2026:** el registro gratuito ya está disponible en el [portal ATIEMPPO](https://clientes.atiemppo.com/registro). Las cifras, capturas y etapas de desarrollo que describimos a continuación corresponden al 13 de octubre. Consulta en el portal las condiciones de acceso vigentes.
+
 
 Consultar el valor de una ruta es un buen comienzo. Para gestionar el transporte de una empresa también necesitamos entender cómo cambia esa referencia, cómo se relaciona con lo negociado y cuánto pesa la ruta dentro de la operación.
 
@@ -47,7 +57,7 @@ Una combinación distingue origen, destino y configuración, junto con las dimen
 
 El objetivo es que una persona pueda cargar su primera información, ver la red en el mapa y volver después para revisar sus referencias y tendencias. Para ampliar el número de combinaciones o de personas se prevé un plan mensual. La descarga de los archivos Excel SICETAC corresponde a la cuenta paga.
 
-**Esta modalidad está en validación y todavía no está abierta al público.** Estamos terminando el proceso de ingreso, verificación de correo y activación. Anunciaremos la apertura y las condiciones comerciales cuando estén listas.
+**Estado al 13 de octubre de 2026:** esta modalidad estaba en validación y todavía no estaba abierta al público. Estábamos terminando el proceso de ingreso, verificación de correo y activación. El registro ya está disponible según la actualización al inicio de este artículo.
 
 ## El equipo de una empresa también puede consultar por WhatsApp
 
@@ -96,11 +106,11 @@ Lo que buscamos es que la empresa tenga su información de transporte a mano: un
 
 **¿Qué pregunta sobre tu red te gustaría poder responder sin reconstruir el análisis en un Excel cada vez?**
 
-## Solicita acceso anticipado a la plataforma
+## Crea tu cuenta gratuita en el portal
 
-Si quieres probar ATICA con las rutas de tu empresa o de tu actividad profesional, **[escríbenos para solicitar acceso anticipado](mailto:juanmatiz@atiemppo.com?subject=Acceso%20anticipado%20a%20ATICA&body=Hola%20Juan%2C%20quiero%20solicitar%20acceso%20anticipado%20a%20ATICA.%20Mi%20empresa%20o%20actividad%20es%3A)**.
+Puedes **[crear tu cuenta gratuita de ATIEMPPO](https://clientes.atiemppo.com/registro)** y comenzar con tu red personal. El portal presenta las condiciones de acceso y los pasos de verificación y habilitación.
 
-Cuéntanos cómo trabajas hoy con tus rutas y qué análisis te gustaría hacer. Coordinaremos contigo una prueba según el estado de habilitación de la plataforma. Solicitar acceso anticipado no activa automáticamente una cuenta ni garantiza una fecha de apertura.
+Si necesitas trabajar con los datos de una empresa o profundizar en el análisis, [cuéntanos qué necesitas](/?servicio=indice-red#contacto). Acordaremos contigo el alcance del trabajo.
 
 Nuestro [centro de servicios](https://clientes.atiemppo.com/) reúne los accesos habilitados. La consulta pública sigue disponible en [SICETAC al Instante por WhatsApp](https://wa.me/573134503694?text=Hola%2C%20quiero%20consultar%20SICETAC%20al%20Instante.%20Mi%20ruta%20es%3A).
 

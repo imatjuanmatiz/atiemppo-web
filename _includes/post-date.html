@@ -1,0 +1,13 @@
+{%- assign date_lang = include.lang | default: page.lang | default: 'es' -%}
+{%- assign post_date = include.date | default: page.date -%}
+{%- if page.display_date and include.date == nil -%}
+  {{- page.display_date -}}
+{%- else -%}
+  {%- assign month_index = post_date | date: '%m' | minus: 1 -%}
+  {%- assign month_name = site.data.navigation[date_lang].months[month_index] -%}
+  {%- if date_lang == 'en' -%}
+    {{- month_name }} {{ post_date | date: '%-d, %Y' -}}
+  {%- else -%}
+    {{- post_date | date: '%-d' }} de {{ month_name }} de {{ post_date | date: '%Y' -}}
+  {%- endif -%}
+{%- endif -%}

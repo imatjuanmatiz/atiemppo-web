@@ -35,18 +35,7 @@
       "An index to track changes in your network."
     ],
     "serviceUrl": "/en/inteligencia-planeacion-transporte/",
-    "serviceCta": "See how we work",
-    "category": "ATICA · Free account",
-    "product": "Start exploring your network.",
-    "productDescription": "An individual account to start with up to ten route combinations and consult their available references in ATICA. Early access. We receive your request and coordinate account activation with you.",
-    "productImage": "/assets/images/blog/sicetac-instant-atica/01-centro-servicios.png",
-    "productAlt": "ATICA service center: transport portal, live reports and SICETAC files; interface in Spanish",
-    "productUrl": "/en/?servicio=cuenta-gratuita-atica#contacto",
-    "productCta": "Request my free account",
-    "proof": [
-      "1 person",
-      "Up to 10 combinations"
-    ]
+    "serviceCta": "See how we work"
   },
   "ai": {
     "chapter": "02",
@@ -72,6 +61,11 @@
     ]
   }
 };
+
+  var portalOfferElement = document.getElementById("portal-offer-data");
+  if (portalOfferElement) {
+    Object.assign(priorityData.data, JSON.parse(portalOfferElement.textContent));
+  }
 
   var tabs = Array.prototype.slice.call(document.querySelectorAll(".journey-card"));
   var panel = document.getElementById("recommended-chapter");

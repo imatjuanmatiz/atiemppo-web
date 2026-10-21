@@ -1,0 +1,31 @@
+{%- assign news_lang = include.lang | default: 'es' -%}
+{%- assign news_copy = site.data.portal_offer[news_lang] -%}
+{%- assign news_nav = site.data.navigation[news_lang] -%}
+{%- if news_lang == 'en' -%}
+  {%- assign portal_posts = site.posts | where: 'lang', 'en' | sort: 'date' | reverse -%}
+{%- else -%}
+  {%- assign portal_posts = site.posts | where_exp: 'post', "post.lang != 'en'" | sort: 'date' | reverse -%}
+{%- endif -%}
+{%- assign featured_portal_posts = portal_posts | where: 'portal_featured', true -%}
+<section class="portal-news" aria-labelledby="portal-title">
+  <div class="container">
+    <div class="portal-news-intro">
+      <div><p class="eyebrow">{{ news_copy.portal_label }}</p><h2 id="portal-title">{{ news_copy.portal_title }}</h2><p>{{ news_copy.portal_description }}</p></div>
+      <div class="portal-news-actions">
+        <a class="btn btn-primary" href="{{ site.data.portal_offer.register_url }}">{{ news_copy.cta }} →</a>
+        <a class="text-link" href="{{ site.data.portal_offer.login_url }}">{{ news_copy.login }}</a>
+        <a class="text-link" href="{{ site.data.portal_offer.guides_url }}">{{ news_copy.guides }} →</a>
+        {% if news_copy.language_note != '' %}<p class="portal-language-note">{{ news_copy.language_note }}</p>{% endif %}
+      </div>
+    </div>
+    <div class="portal-news-heading"><h3>{{ news_copy.news_title }}</h3><a class="text-link" href="{{ news_nav.prefix }}/blog/">{{ news_copy.blog }} →</a></div>
+    <div class="portal-posts">
+      {% for post in featured_portal_posts limit:3 %}
+      <article class="portal-post"><a href="{{ post.url | relative_url }}">
+        {% if post.image %}<img src="{{ post.image | relative_url }}" alt="" width="640" height="360" loading="lazy"/>{% endif %}
+        <div><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d/%m/%Y' }}</time><h4>{{ post.title | escape }}</h4><p>{{ post.description | default: post.subtitle | strip_html | truncate: 155 }}</p><span>{{ news_copy.read }} →</span></div>
+      </a></article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

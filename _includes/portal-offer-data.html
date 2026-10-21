@@ -1,0 +1,12 @@
+{%- assign offer = site.data.portal_offer -%}
+{%- assign offer_copy = offer[include.lang] -%}
+<script type="application/json" id="portal-offer-data">{
+  "category": {{ offer_copy.category | jsonify }},
+  "product": {{ offer_copy.title | jsonify }},
+  "productDescription": {{ offer_copy.description | append: ' ' | append: offer_copy.access | jsonify }},
+  "productImage": {{ offer.image | jsonify }},
+  "productAlt": {{ offer_copy.image_alt | jsonify }},
+  "productUrl": {{ offer.register_url | jsonify }},
+  "productCta": {{ offer_copy.cta | jsonify }},
+  "proof": {{ offer_copy.proof | jsonify }}
+}</script>

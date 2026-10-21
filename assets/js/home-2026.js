@@ -12,18 +12,7 @@
       "Sesiones especializadas y servicios de agentes."
     ],
     "serviceUrl": "/inteligencia-planeacion-transporte/",
-    "serviceCta": "Conoce cómo trabajamos",
-    "category": "ATICA · Cuenta gratuita",
-    "product": "Empieza a conocer tu red.",
-    "productDescription": "Una cuenta individual para empezar con hasta diez combinaciones de rutas y consultar sus referencias disponibles en ATICA. Acceso anticipado. Recibimos tu solicitud y coordinamos contigo la habilitación de la cuenta.",
-    "productImage": "/assets/images/blog/sicetac-instant-atica/01-centro-servicios.png",
-    "productAlt": "Centro de servicios ATICA: portal de transporte, reportes vivos y archivos SICETAC",
-    "productUrl": "/?servicio=cuenta-gratuita-atica#contacto",
-    "productCta": "Solicitar mi cuenta gratuita",
-    "proof": [
-      "1 persona",
-      "Hasta 10 combinaciones"
-    ]
+    "serviceCta": "Conoce cómo trabajamos"
   },
   "ai": {
     "chapter": "02",
@@ -72,6 +61,11 @@
     ]
   }
 };
+
+  var portalOfferElement = document.getElementById("portal-offer-data");
+  if (portalOfferElement) {
+    Object.assign(priorityData.data, JSON.parse(portalOfferElement.textContent));
+  }
 
   var serviceData = {
     consulting: {

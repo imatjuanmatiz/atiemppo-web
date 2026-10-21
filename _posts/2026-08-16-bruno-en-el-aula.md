@@ -9,9 +9,12 @@ emoji: "🎓"
 tags: [profe-bruno, educación, inteligencia-artificial, agentes, datos, aprendizaje]
 image: /assets/images/blog/bruno-en-el-aula/profe-bruno-whatsapp-tip.jpg
 permalink: /blog/bruno-en-el-aula-agente-ia-asistente-clase/
+lang: es
+translations:
+  es: /blog/bruno-en-el-aula-agente-ia-asistente-clase/
+  en: /en/blog/bruno-en-el-aula-agente-ia-asistente-clase/
+portal_featured: true
 ---
-
-# Bruno en el aula: qué pasa cuando un agente de IA se convierte en asistente de clase
 
 *Una experiencia experimental sobre datos, criterio y el futuro de la educación.*
 

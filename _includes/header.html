@@ -6,17 +6,15 @@
 {%- if nav_prefix == '/en/' -%}{%- assign nav_path = page.url | remove_first: '/en' -%}{%- endif -%}
 {%- assign nav_translation = include.translation | default: page.translations[nav_copy.other_lang] -%}
 {%- unless nav_translation -%}
-  {%- if page.layout == 'post' or page.layout == 'post-en' -%}
-    {%- assign nav_siblings = site.posts | where: 'slug', page.slug -%}
-    {%- for sibling in nav_siblings -%}
-      {%- if nav_lang == 'en' and sibling.lang != 'en' -%}
-        {%- assign nav_translation = sibling.url -%}
-      {%- elsif nav_lang == 'es' and sibling.lang == 'en' -%}
-        {%- assign nav_translation = sibling.url -%}
-      {%- endif -%}
-    {%- endfor -%}
-  {%- endif -%}
+  {%- for translation_pair in site.data.translations -%}
+    {%- if translation_pair[nav_lang] == page.url -%}
+      {%- assign nav_translation = translation_pair[nav_copy.other_lang] -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
 {%- endunless -%}
+{%- assign nav_language_label = nav_copy.language_label -%}
+{%- unless nav_translation -%}{%- assign nav_language_label = nav_copy.other_home_label -%}{%- endunless -%}
 {%- assign nav_translation = nav_translation | default: nav_copy.other_home -%}
 <link rel="stylesheet" href="/assets/css/navigation.css"/>
 <header class="global-header" data-language="{{ nav_lang }}">
@@ -33,7 +31,7 @@
         {%- endfor -%}
         <a href="{{ nav_copy.prefix }}{{ item.path }}"{% if nav_active %} aria-current="{% if nav_path == item.path %}page{% else %}true{% endif %}"{% endif %}>{{ item[nav_lang] }}</a>
       {%- endfor -%}
-      <a class="global-language" href="{{ nav_translation }}" lang="{{ nav_copy.other_lang }}" hreflang="{{ nav_copy.other_lang }}" aria-label="{{ nav_copy.language_label }}">{{ nav_copy.language }}</a>
+      <a class="global-language" href="{{ nav_translation }}" lang="{{ nav_copy.other_lang }}" hreflang="{{ nav_copy.other_lang }}" aria-label="{{ nav_language_label }}" title="{{ nav_language_label }}">{{ nav_copy.language }}</a>
       <a class="global-account" href="https://clientes.atiemppo.com/registro">{{ nav_copy.account }}</a>
     </nav>
   </div>

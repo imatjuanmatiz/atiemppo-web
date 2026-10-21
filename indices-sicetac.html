@@ -36,7 +36,6 @@ permalink: /indices-sicetac/
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <style>
 :root{
   --bg:#f6fbf7;
@@ -290,15 +289,17 @@ a{text-decoration:none;color:inherit}
   .hero,.grid,.split,.story-grid,.contact-shell{grid-template-columns:1fr}
 }
 </style>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/assets/css/site-foundation.css?v=20261021"/>
 </head>
-<body>
+<body class="product-page">
 {% include header.html translation="/en/indices-sicetac/" %}
 
   <div class="shell">
     <section class="hero">
       <div class="card">
         <div class="eyebrow">Herramienta para planeación y presupuesto</div>
-        <h1 class="title">PRESUPUESTA TU RED<br/>CON UN <em>ÍNDICE SICETAC</em><br/>PROPIO</h1>
+        <h1 class="title">Presupuesta tu red con un <em>índice SICETAC propio.</em></h1>
         <p class="copy">ATIEMPPO analiza las rutas que concentran el movimiento de tu operación, tanto largas como cortas. Las homologa frente al SICETAC y calcula su impacto según su peso en la red. El resultado es una referencia propia para preparar presupuestos, actualizar escenarios y negociar con evidencia.</p>
         <div class="actions">
           <a class="btn btn-primary" href="mailto:juanmatiz@atiemppo.co?subject=Consulta%20ATIEMPPO&amp;body=Hola%20ATIEMPPO%2C%20quiero%20un%20an%C3%A1lisis%20de%20red%20para%20preparar%20mi%20presupuesto%20de%20transporte.">Quiero un análisis de red</a>
@@ -471,5 +472,6 @@ if(contactForm){
   });
 }
 </script>
+{% include footer.html %}
 </body>
 </html>

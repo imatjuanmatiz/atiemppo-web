@@ -1,0 +1,37 @@
+{%- assign post_nav_lang = include.lang | default: page.lang | default: 'es' -%}
+{%- assign post_nav_copy = site.data.navigation[post_nav_lang] -%}
+{%- assign post_nav_translation = page.translations[post_nav_copy.other_lang] -%}
+{%- unless post_nav_translation -%}
+  {%- for translation_pair in site.data.translations -%}
+    {%- if translation_pair[post_nav_lang] == page.url -%}
+      {%- assign post_nav_translation = translation_pair[post_nav_copy.other_lang] -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endunless -%}
+{%- assign older_post = nil -%}
+{%- assign newer_post = nil -%}
+{%- assign current_post_found = false -%}
+{%- for candidate in site.posts -%}
+  {%- assign candidate_lang = candidate.lang | default: 'es' -%}
+  {%- if candidate_lang == post_nav_lang and candidate.url != post_nav_translation -%}
+    {%- if candidate.layout == 'post' or candidate.layout == 'post-en' -%}
+      {%- if candidate.url == page.url -%}
+        {%- assign current_post_found = true -%}
+      {%- elsif current_post_found -%}
+        {%- assign older_post = candidate -%}
+        {%- break -%}
+      {%- else -%}
+        {%- assign newer_post = candidate -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if current_post_found -%}
+  {%- if older_post or newer_post %}
+<nav class="post-nav" aria-label="{{ post_nav_copy.post_navigation }}">
+  {% if older_post %}<a href="{{ older_post.url }}" class="post-nav-link" rel="prev"><span class="post-nav-label">← {{ post_nav_copy.previous }}</span><span class="post-nav-title">{{ older_post.title }}</span></a>{% endif %}
+  {% if newer_post %}<a href="{{ newer_post.url }}" class="post-nav-link post-nav-next" rel="next"><span class="post-nav-label">{{ post_nav_copy.next }} →</span><span class="post-nav-title">{{ newer_post.title }}</span></a>{% endif %}
+</nav>
+  {%- endif -%}
+{%- endif -%}

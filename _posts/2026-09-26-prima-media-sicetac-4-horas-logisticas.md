@@ -9,9 +9,11 @@ emoji: "📊"
 tags: [sicetac, valor-en-plaza, fletes, transporte, 3s3, datos, el-dato-logistico, atiemppo]
 image: /assets/images/blog/prima-media-4h-sicetac/prima-media-4-horas-logisticas-3s3-ene-jul-2026.png
 permalink: /blog/prima-media-sicetac-4-horas-logisticas/
+lang: es
+translations:
+  es: /blog/prima-media-sicetac-4-horas-logisticas/
+  en: /en/blog/prima-media-sicetac-4-horas-logisticas/
 ---
-
-# El mercado va por encima del SICETAC: en el 49 % de las rutas la prima es del 20 % o más
 
 En la última semana he estado hablando con algunas de las 400 personas que usan mi aplicación [SICETAC al Instante](https://sicealinstante.vercel.app/). Primero debo decir que me alegra enormemente escuchar el uso y sus palabras sobre este proyecto. ¡GRACIASSSSSS!
 

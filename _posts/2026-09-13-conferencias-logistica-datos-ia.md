@@ -9,9 +9,11 @@ emoji: "🎙️"
 tags: [conferencias, transporte, logística, ética-de-datos, inteligencia-artificial, atiemppo]
 image: /assets/images/blog/juan-pablo-matiz-trayectoria/trayectoria-logistica-datos-ia.jpg
 permalink: /blog/conferencias-logistica-transporte-ia-aplicada/
+lang: es
+translations:
+  es: /blog/conferencias-logistica-transporte-ia-aplicada/
+  en: /en/blog/conferencias-logistica-transporte-ia-aplicada/
 ---
-
-# Conferencias de logística, transporte e inteligencia artificial aplicada
 
 Una buena conferencia no se queda en una idea llamativa. Ayuda a que un equipo nombre mejor el problema, conecte la conversación con su operación y salga con preguntas que pueda trabajar.
 

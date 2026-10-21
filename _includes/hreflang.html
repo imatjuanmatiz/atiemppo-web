@@ -1,6 +1,15 @@
-{%- if page.translations -%}
-{%- for t in page.translations %}
+{%- assign page_translations = page.translations -%}
+{%- unless page_translations -%}
+  {%- for translation_pair in site.data.translations -%}
+    {%- if translation_pair.es == page.url or translation_pair.en == page.url -%}
+      {%- assign page_translations = translation_pair -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endunless -%}
+{%- if page_translations -%}
+{%- for t in page_translations %}
 <link rel="alternate" hreflang="{{ t[0] }}" href="{{ t[1] | absolute_url }}"/>
 {%- endfor %}
-<link rel="alternate" hreflang="x-default" href="{{ page.translations.es | default: page.url | absolute_url }}"/>
+<link rel="alternate" hreflang="x-default" href="{{ page_translations.es | default: page.url | absolute_url }}"/>
 {%- endif -%}

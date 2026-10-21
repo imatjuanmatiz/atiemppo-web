@@ -3,7 +3,7 @@
 .global-header {
   position: sticky; top: 0; z-index: 300; width: 100%; margin: 0; padding: 0;
   background: #071e35; border-bottom: 1px solid #ffffff24;
-  color: #fff; font: 400 14px/1.4 Arial, sans-serif; text-align: left;
+  color: #fff; font: 400 14px/1.4 var(--atiemppo-sans, Arial, sans-serif); text-align: left;
 }
 .global-header-inner {
   width: min(1280px, calc(100% - 48px)); min-height: 76px; margin: 0 auto;
@@ -15,17 +15,17 @@
 .global-header .global-menu a {
   display: inline-flex; align-items: center; min-height: 44px; padding: 8px 0; margin: 0;
   border: 0; border-radius: 0; background: transparent; color: #d5dee7;
-  font: 400 13px/1.4 Arial, sans-serif; text-decoration: none; letter-spacing: 0;
+  font: 400 13px/1.4 var(--atiemppo-sans, Arial, sans-serif); text-decoration: none; letter-spacing: 0;
   white-space: nowrap; text-transform: none;
 }
 .global-header .global-menu a:hover { color: #fff; }
 .global-header .global-menu a[aria-current] { color: #fff; text-decoration: underline; text-decoration-color: #8fc9f3; text-underline-offset: 7px; text-decoration-thickness: 2px; }
-.global-header .global-menu .global-account { padding: 10px 16px; border-radius: 24px; background: #2f79c5; color: #fff; font-weight: 700; }
+.global-header .global-menu .global-account { padding: 10px 16px; border-radius: 24px; background: #246aaf; color: #fff; font-weight: 700; }
 .global-header .global-menu .global-account:hover { background: #246aaf; }
 .global-header a:focus-visible, .global-header button:focus-visible { outline: 3px solid #8fc9f3; outline-offset: 4px; }
-.global-header .global-menu-toggle { display: none; min-height: 44px; border: 1px solid #ffffff50; border-radius: 6px; padding: 8px 12px; background: transparent; color: #fff; font: 400 14px/1.4 Arial, sans-serif; cursor: pointer; }
+.global-header .global-menu-toggle { display: none; min-height: 44px; border: 1px solid #ffffff50; border-radius: 6px; padding: 8px 12px; background: transparent; color: #fff; font: 400 14px/1.4 var(--atiemppo-sans, Arial, sans-serif); cursor: pointer; }
 .global-menu-toggle span { margin-right: 6px; }
-.global-context-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 24px; padding: 12px 24px; background: #eef3f8; color: #0d2945; font: 400 14px/1.5 Arial, sans-serif; }
+.global-context-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 24px; padding: 12px 24px; background: #eef3f8; color: #0d2945; font: 400 14px/1.5 var(--atiemppo-sans, Arial, sans-serif); }
 .global-context-nav a { color: #0d2945; text-decoration: underline; text-underline-offset: 3px; }
 @media (max-width: 1199px) {
   .global-header-inner { flex-wrap: wrap; gap: 0; }

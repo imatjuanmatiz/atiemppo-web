@@ -10,6 +10,11 @@ tags: [sicetac, atica, mcp, agentes-ia, claude, grok-bot, openclaw, bruno]
 image: /assets/images/blog/sicetac-al-instante-mcp/01-portada-sicetac.jpg
 permalink: /blog/sicetac-al-instante-conectar-agente-ia/
 ai_content_declaration: ai-assisted
+lang: es
+translations:
+  es: /blog/sicetac-al-instante-conectar-agente-ia/
+  en: /en/blog/sicetac-al-instante-conectar-agente-ia/
+portal_featured: true
 ---
 
 <style>
