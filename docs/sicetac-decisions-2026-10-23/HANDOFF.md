@@ -1,11 +1,11 @@
 # Blog SICETAC al Instante · Decisions · 23 octubre 2026
 
-Estado: artículo preparado localmente, sin publicar ni desplegar.
+Estado: artículo publicado y verificado en https://atiemppo.com/blog/sicetac-al-instante-5000-consultas-decisions-openai/.
 
 ## Entrega
 
 - Artículo: `_posts/2026-10-23-sicetac-al-instante-5000-consultas-decisions-openai.md`.
-- URL prevista: https://atiemppo.com/blog/sicetac-al-instante-5000-consultas-decisions-openai/
+- URL pública: https://atiemppo.com/blog/sicetac-al-instante-5000-consultas-decisions-openai/
 - Tres imágenes en `assets/images/blog/sicetac-decisions-5000/`: portada de campaña optimizada a JPEG y dos capturas reales PNG sin modificaciones.
 - Fuentes, dimensiones y SHA-256 en `sources.json`.
 
@@ -17,9 +17,18 @@ La fuente primaria es la guía oficial de Decisions, consultada el 23 de octubre
 
 CTA principal: consulta gratuita por WhatsApp al +57 313 450 3694. CTA secundario: artículo existente sobre portal/API/MCP, que conserva sus propias condiciones de acceso. Sin cambios de cuotas, secretos, motor, contactos, permisos o cuentas.
 
-## Publicación posterior
+## Publicación autorizada y verificada
 
-Revisar este diff y sus evidencias locales; integrar solo los archivos de esta entrega. No incluir el artículo ajeno sin seguimiento _posts/2026-10-21-que-es-sicetac.md ni otras carpetas de trabajo. Publicar requiere una instrucción posterior. La URL prevista no se presenta como ya publicada.
+Juan autorizó «publícalo» el 23 de octubre de 2026. Se incorporaron los commits remotos existentes sin modificar sus contenidos. El artículo aprobado se integró en main y se publicó mediante GitHub Pages.
+
+- Commit de contenido: `1f0ab8e2bb62b7983f2484cd90892063fcfd86ed` (el commit local previo e3f5c67 cambió de hash al rebasar sobre las actualizaciones remotas).
+- Despliegue: [39960399613](https://github.com/imatjuanmatiz/atiemppo-web/actions/runs/39960399613), construcción y publicación completadas con éxito.
+- Lectura pública verificada: 23 de octubre de 2026, 13:22 UTC / 08:22 Colombia.
+- Siete lecturas HTTP 200: artículo, tres imágenes, índice del blog, portada y artículo relacionado.
+- Las tres imágenes públicas coinciden por SHA-256 con los archivos aprobados. Canonical, Open Graph, título y destino de WhatsApp correctos; artículo enlazado desde blog y portada.
+- Recibo en `publication.json`; comprobador reproducible `verify-public.py` (solo GET públicos, sin credenciales).
+
+El artículo ajeno sin seguimiento _posts/2026-10-21-que-es-sicetac.md y las demás carpetas de trabajo se conservaron sin incluirlas en esta publicación. Este registro documental posterior no cambia el artículo ni sus imágenes.
 
 ## Validación local completada
 
