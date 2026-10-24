@@ -3,20 +3,14 @@
   "modo": "operativo",
   "draft": false,
   "fuente_datos": "supabase:radar.v_novedades_vigentes",
-  "cut_id": "2026-10-24-am",
-  "calidad_ingesta": {
-    "state": "complete",
-    "observation_count": 6,
-    "complete": true,
-    "fuente": "supabase"
-  },
+  "cut_id": "2026-10-24-md",
   "revision_id": null,
   "zona_horaria": "America/Bogota",
   "nota_vigencia": "Solo novedades vigentes: cada una tiene fecha de vencimiento y sale sola del listado cuando vence o se resuelve.",
   "fecha": "2026-10-24",
-  "ventana": "AM",
-  "hora": "09:19",
-  "generado_en": "2026-10-24T09:19:46-05:00",
+  "ventana": "MD",
+  "hora": "11:58",
+  "generado_en": "2026-10-24T11:58:24-05:00",
   "que_cambio": [],
   "notas_cambio": [],
   "listado": [
@@ -25,35 +19,35 @@
       "corredor": "Transversal del Sisga",
       "km": "42+0000 – 42+0800",
       "estado": "Transversal del Sisga, Guateque–El Secreto, Santa María PR 42+0000–42+0800: paso controlado a un carril por pérdida de banca, sin ruta alterna",
-      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
+      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
     },
     {
       "icono": "🟠",
       "corredor": "BARBOSA (ANTIOQUIA), CISNEROS (ANTIOQUIA)",
-      "km": "0+0000 – 35+0500",
-      "estado": "Troncal del Nordeste 6205B calzada derecha, PR 0–20 y PR 20+0800–35+0500 (Túnel de la Quiebra–Retorno Cisneros): cierre total 08:40–10:50 (Clásico RCN, Resolución 5048)",
-      "fuente": "https://x.com/numeral767/status/2113935839201783811 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
+      "km": "9+0700 – 19+0000",
+      "estado": "Troncal del Nordeste, Barbosa–Cisneros PR 9+0700–19+0000: cierre total por el Clásico RCN 2026; alterna Bello–San Pedro–Don Matías–Santa Rosa de Osos",
+      "fuente": "https://risk.controlt.io/map · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
     },
     {
       "icono": "🟠",
       "corredor": "BARBOSA (ANTIOQUIA), CISNEROS (ANTIOQUIA)",
       "km": "23+0650 – 0+0000",
       "estado": "Troncal del Nordeste 6205B calzada izquierda, PR 23+0650–0+0000: cierre total 09:30–12:00 (Clásico RCN, Resolución 5048)",
-      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
+      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
     },
     {
       "icono": "🟠",
       "corredor": "Transversal del Sisga",
       "km": "68+0000",
       "estado": "Transversal del Sisga, Guateque–El Secreto, San Luis de Gaceno PR 68+0000, ambos sentidos: paso a un carril por pérdida de banca, sin ruta alterna",
-      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
+      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
     },
     {
       "icono": "🟡",
       "corredor": "Bogotá - Santander",
       "km": "11+0000",
       "estado": "San Gil–Bucaramanga, peaje Curití PR 11: cierre parcial por obra hasta el 29-oct 23:00",
-      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
+      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
     }
   ],
   "senales_tempranas": [],
@@ -72,9 +66,14 @@
       "estado": "active",
       "resumen": "Transversal del Sisga, Guateque–El Secreto, Santa María PR 42+0000–42+0800: paso controlado a un carril por pérdida de banca, sin ruta alterna",
       "vigente_hasta": "2026-10-25T12:10:00+00:00",
-      "actualizado_en": "2026-10-24T12:10:00+00:00",
+      "actualizado_en": "2026-10-24T16:52:00+00:00",
       "estado_ubicacion": "ubicada",
       "fuentes": [
+        {
+          "nombre": "INVÍAS 767 ArcGIS",
+          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
+          "tier": "1"
+        },
         {
           "nombre": "INVÍAS 767 ArcGIS",
           "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
@@ -83,27 +82,27 @@
       ]
     },
     {
-      "id": "evt-1e62bfa5f0ad96bbd40a7e9c",
+      "id": "evt-8a964a8f8b09705274f97949",
       "corredor": "Sin corredor asignado",
-      "tramo": "Troncal del Nordeste 6205B calzada derecha, PR 0–20 y PR 20+0800–35+0500 (Túnel de la Quiebra–Retorno Cisneros): cierre total 08:40–10:50 (Clásico RCN, Resolución 5048)",
+      "tramo": "Troncal del Nordeste, Barbosa–Cisneros PR 9+0700–19+0000: cierre total por el Clásico RCN 2026; alterna Bello–San Pedro–Don Matías–Santa Rosa de Osos",
       "municipio": "BARBOSA (ANTIOQUIA), CISNEROS (ANTIOQUIA)",
-      "via": "6205B",
-      "km": "0+0000 – 35+0500",
+      "via": "",
+      "km": "9+0700 – 19+0000",
       "tipo": "cierre_total",
       "severidad": "high",
       "estado": "active",
-      "resumen": "Troncal del Nordeste 6205B calzada derecha, PR 0–20 y PR 20+0800–35+0500 (Túnel de la Quiebra–Retorno Cisneros): cierre total 08:40–10:50 (Clásico RCN, Resolución 5048)",
-      "vigente_hasta": "2026-10-24T15:50:00+00:00",
-      "actualizado_en": "2026-10-24T12:10:00+00:00",
+      "resumen": "Troncal del Nordeste, Barbosa–Cisneros PR 9+0700–19+0000: cierre total por el Clásico RCN 2026; alterna Bello–San Pedro–Don Matías–Santa Rosa de Osos",
+      "vigente_hasta": "2026-10-24T17:10:00+00:00",
+      "actualizado_en": "2026-10-24T16:52:00+00:00",
       "estado_ubicacion": "parcial",
       "fuentes": [
         {
-          "nombre": "@numeral767",
-          "url": "https://x.com/numeral767/status/2113935839201783811",
-          "tier": "1bis"
+          "nombre": "ControlT radar",
+          "url": "https://risk.controlt.io/map",
+          "tier": "3"
         },
         {
-          "nombre": "INVÍAS 767 ArcGIS, Resolución 5048",
+          "nombre": "INVÍAS 767 ArcGIS",
           "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
           "tier": "1"
         }
@@ -121,9 +120,14 @@
       "estado": "active",
       "resumen": "Troncal del Nordeste 6205B calzada izquierda, PR 23+0650–0+0000: cierre total 09:30–12:00 (Clásico RCN, Resolución 5048)",
       "vigente_hasta": "2026-10-24T17:00:00+00:00",
-      "actualizado_en": "2026-10-24T12:10:00+00:00",
+      "actualizado_en": "2026-10-24T16:52:00+00:00",
       "estado_ubicacion": "parcial",
       "fuentes": [
+        {
+          "nombre": "INVÍAS 767 ArcGIS",
+          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
+          "tier": "1"
+        },
         {
           "nombre": "INVÍAS 767 ArcGIS, Resolución 5048",
           "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
@@ -143,9 +147,14 @@
       "estado": "active",
       "resumen": "Transversal del Sisga, Guateque–El Secreto, San Luis de Gaceno PR 68+0000, ambos sentidos: paso a un carril por pérdida de banca, sin ruta alterna",
       "vigente_hasta": "2026-10-25T12:10:00+00:00",
-      "actualizado_en": "2026-10-24T12:10:00+00:00",
+      "actualizado_en": "2026-10-24T16:52:00+00:00",
       "estado_ubicacion": "ubicada",
       "fuentes": [
+        {
+          "nombre": "INVÍAS 767 ArcGIS",
+          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
+          "tier": "1"
+        },
         {
           "nombre": "INVÍAS 767 ArcGIS",
           "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
@@ -165,9 +174,14 @@
       "estado": "active",
       "resumen": "San Gil–Bucaramanga, peaje Curití PR 11: cierre parcial por obra hasta el 29-oct 23:00",
       "vigente_hasta": "2026-10-30T04:00:00+00:00",
-      "actualizado_en": "2026-10-24T12:10:00+00:00",
+      "actualizado_en": "2026-10-24T16:52:00+00:00",
       "estado_ubicacion": "ubicada",
       "fuentes": [
+        {
+          "nombre": "INVÍAS 767 ArcGIS",
+          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
+          "tier": "1"
+        },
         {
           "nombre": "INVÍAS 767 ArcGIS",
           "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
@@ -189,7 +203,7 @@
       "estado": "watch",
       "resumen": "Peaje San Pedro (Villanueva–Monterrey, Casanare): prensa reporta vehículo bomba y cierre total el 23-oct; sin parte oficial",
       "vigente_hasta": "2026-10-25T00:10:00+00:00",
-      "actualizado_en": "2026-10-24T12:10:00+00:00",
+      "actualizado_en": "2026-10-24T16:52:00+00:00",
       "estado_ubicacion": "ubicada",
       "fuentes": [
         {
@@ -214,14 +228,7 @@
       "nombre": "INVÍAS 767 ArcGIS",
       "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
       "fortaleza": "1",
-      "eventos": 5
-    },
-    {
-      "id": "@numeral767",
-      "nombre": "@numeral767",
-      "url": "https://x.com/numeral767/status/2113935839201783811",
-      "fortaleza": "1bis",
-      "eventos": 1
+      "eventos": 9
     },
     {
       "id": "El Pulso (prensa)",
@@ -235,7 +242,7 @@
       "nombre": "ControlT radar",
       "url": "https://risk.controlt.io/map",
       "fortaleza": "3",
-      "eventos": 1
+      "eventos": 2
     }
   ],
   "bibliografia_reporte": []
