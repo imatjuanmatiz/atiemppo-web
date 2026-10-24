@@ -3,10 +3,10 @@
   "modo": "operativo",
   "draft": false,
   "fuente_datos": "supabase:radar.v_novedades_vigentes",
-  "cut_id": "2026-10-24-am",
+  "cut_id": "2026-10-24-pm",
   "calidad_ingesta": {
     "state": "complete",
-    "observation_count": 6,
+    "observation_count": 7,
     "complete": true,
     "fuente": "supabase"
   },
@@ -14,9 +14,9 @@
   "zona_horaria": "America/Bogota",
   "nota_vigencia": "Solo novedades vigentes: cada una tiene fecha de vencimiento y sale sola del listado cuando vence o se resuelve.",
   "fecha": "2026-10-24",
-  "ventana": "AM",
-  "hora": "09:19",
-  "generado_en": "2026-10-24T09:19:46-05:00",
+  "ventana": "PM",
+  "hora": "16:55",
+  "generado_en": "2026-10-24T16:55:23-05:00",
   "que_cambio": [],
   "notas_cambio": [],
   "listado": [
@@ -25,35 +25,42 @@
       "corredor": "Transversal del Sisga",
       "km": "42+0000 – 42+0800",
       "estado": "Transversal del Sisga, Guateque–El Secreto, Santa María PR 42+0000–42+0800: paso controlado a un carril por pérdida de banca, sin ruta alterna",
-      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
+      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
+    },
+    {
+      "icono": "🔴",
+      "corredor": "FLORIDABLANCA (SANTANDER)",
+      "km": "18+0030 – 18+0030",
+      "estado": "Bucaramanga–Pamplona PR18+0030, vereda El Mortiño (Floridablanca, Santander): cierre total por siniestro vial; no hay ruta alterna",
+      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://x.com/numeral767/status/2114063748541390995"
     },
     {
       "icono": "🟠",
-      "corredor": "BARBOSA (ANTIOQUIA), CISNEROS (ANTIOQUIA)",
-      "km": "0+0000 – 35+0500",
-      "estado": "Troncal del Nordeste 6205B calzada derecha, PR 0–20 y PR 20+0800–35+0500 (Túnel de la Quiebra–Retorno Cisneros): cierre total 08:40–10:50 (Clásico RCN, Resolución 5048)",
-      "fuente": "https://x.com/numeral767/status/2113935839201783811 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
+      "corredor": "BARRANCABERMEJA (SANTANDER)",
+      "km": "124+950 – 124+950",
+      "estado": "Ruta 4511 Km 124+950, sector La Lejía (Barrancabermeja, Santander): cierre total de una calzada por vehículo incinerado",
+      "fuente": "https://x.com/AMagdalenaMedio/status/2114108535873417394"
     },
     {
       "icono": "🟠",
-      "corredor": "BARBOSA (ANTIOQUIA), CISNEROS (ANTIOQUIA)",
-      "km": "23+0650 – 0+0000",
-      "estado": "Troncal del Nordeste 6205B calzada izquierda, PR 23+0650–0+0000: cierre total 09:30–12:00 (Clásico RCN, Resolución 5048)",
-      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
+      "corredor": "Santa Marta - Paraguachón",
+      "km": "37+700 – 37+700",
+      "estado": "Santa Marta–Palomino Km 37+700, puente Mendihuaca: paso a un carril por puente provisional del Ejército tras colapso estructural; alterna Zona Bananera–Fundación–Bosconia–Valledupar",
+      "fuente": "https://x.com/numeral767/status/2114094954322784450 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
     },
     {
       "icono": "🟠",
       "corredor": "Transversal del Sisga",
       "km": "68+0000",
       "estado": "Transversal del Sisga, Guateque–El Secreto, San Luis de Gaceno PR 68+0000, ambos sentidos: paso a un carril por pérdida de banca, sin ruta alterna",
-      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
+      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
     },
     {
       "icono": "🟡",
       "corredor": "Bogotá - Santander",
       "km": "11+0000",
       "estado": "San Gil–Bucaramanga, peaje Curití PR 11: cierre parcial por obra hasta el 29-oct 23:00",
-      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
+      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
     }
   ],
   "senales_tempranas": [],
@@ -72,9 +79,19 @@
       "estado": "active",
       "resumen": "Transversal del Sisga, Guateque–El Secreto, Santa María PR 42+0000–42+0800: paso controlado a un carril por pérdida de banca, sin ruta alterna",
       "vigente_hasta": "2026-10-25T12:10:00+00:00",
-      "actualizado_en": "2026-10-24T12:10:00+00:00",
+      "actualizado_en": "2026-10-24T21:50:00+00:00",
       "estado_ubicacion": "ubicada",
       "fuentes": [
+        {
+          "nombre": "INVÍAS 767 ArcGIS",
+          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
+          "tier": "1"
+        },
+        {
+          "nombre": "INVÍAS 767 ArcGIS",
+          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
+          "tier": "1"
+        },
         {
           "nombre": "INVÍAS 767 ArcGIS",
           "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
@@ -83,49 +100,76 @@
       ]
     },
     {
-      "id": "evt-1e62bfa5f0ad96bbd40a7e9c",
+      "id": "evt-5fd224fa03a818a43b5b769c",
       "corredor": "Sin corredor asignado",
-      "tramo": "Troncal del Nordeste 6205B calzada derecha, PR 0–20 y PR 20+0800–35+0500 (Túnel de la Quiebra–Retorno Cisneros): cierre total 08:40–10:50 (Clásico RCN, Resolución 5048)",
-      "municipio": "BARBOSA (ANTIOQUIA), CISNEROS (ANTIOQUIA)",
-      "via": "6205B",
-      "km": "0+0000 – 35+0500",
+      "tramo": "Bucaramanga–Pamplona PR18+0030, vereda El Mortiño (Floridablanca, Santander): cierre total por siniestro vial; no hay ruta alterna",
+      "municipio": "FLORIDABLANCA (SANTANDER)",
+      "via": "",
+      "km": "18+0030 – 18+0030",
       "tipo": "cierre_total",
-      "severidad": "high",
+      "severidad": "critical",
       "estado": "active",
-      "resumen": "Troncal del Nordeste 6205B calzada derecha, PR 0–20 y PR 20+0800–35+0500 (Túnel de la Quiebra–Retorno Cisneros): cierre total 08:40–10:50 (Clásico RCN, Resolución 5048)",
-      "vigente_hasta": "2026-10-24T15:50:00+00:00",
-      "actualizado_en": "2026-10-24T12:10:00+00:00",
+      "resumen": "Bucaramanga–Pamplona PR18+0030, vereda El Mortiño (Floridablanca, Santander): cierre total por siniestro vial; no hay ruta alterna",
+      "vigente_hasta": "2026-10-25T12:10:00+00:00",
+      "actualizado_en": "2026-10-24T21:50:00+00:00",
       "estado_ubicacion": "parcial",
       "fuentes": [
         {
-          "nombre": "@numeral767",
-          "url": "https://x.com/numeral767/status/2113935839201783811",
-          "tier": "1bis"
+          "nombre": "INVÍAS 767 ArcGIS",
+          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
+          "tier": "1"
         },
         {
-          "nombre": "INVÍAS 767 ArcGIS, Resolución 5048",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
+          "nombre": "X @numeral767",
+          "url": "https://x.com/numeral767/status/2114063748541390995",
           "tier": "1"
         }
       ]
     },
     {
-      "id": "evt-982ce2f0d2782f8a01fa5ea8",
+      "id": "evt-7772d8663ee81c2915a1602b",
       "corredor": "Sin corredor asignado",
-      "tramo": "Troncal del Nordeste 6205B calzada izquierda, PR 23+0650–0+0000: cierre total 09:30–12:00 (Clásico RCN, Resolución 5048)",
-      "municipio": "BARBOSA (ANTIOQUIA), CISNEROS (ANTIOQUIA)",
-      "via": "6205B",
-      "km": "23+0650 – 0+0000",
+      "tramo": "Ruta 4511 Km 124+950, sector La Lejía (Barrancabermeja, Santander): cierre total de una calzada por vehículo incinerado",
+      "municipio": "BARRANCABERMEJA (SANTANDER)",
+      "via": "",
+      "km": "124+950 – 124+950",
       "tipo": "cierre_total",
       "severidad": "high",
       "estado": "active",
-      "resumen": "Troncal del Nordeste 6205B calzada izquierda, PR 23+0650–0+0000: cierre total 09:30–12:00 (Clásico RCN, Resolución 5048)",
-      "vigente_hasta": "2026-10-24T17:00:00+00:00",
-      "actualizado_en": "2026-10-24T12:10:00+00:00",
+      "resumen": "Ruta 4511 Km 124+950, sector La Lejía (Barrancabermeja, Santander): cierre total de una calzada por vehículo incinerado",
+      "vigente_hasta": "2026-10-25T12:10:00+00:00",
+      "actualizado_en": "2026-10-24T21:50:00+00:00",
       "estado_ubicacion": "parcial",
       "fuentes": [
         {
-          "nombre": "INVÍAS 767 ArcGIS, Resolución 5048",
+          "nombre": "X @AMagdalenaMedio",
+          "url": "https://x.com/AMagdalenaMedio/status/2114108535873417394",
+          "tier": "1"
+        }
+      ]
+    },
+    {
+      "id": "evt-c07e40a0a04a3a9217127502",
+      "corredor": "Santa Marta - Paraguachón",
+      "tramo": "Santa Marta–Palomino Km 37+700, puente Mendihuaca: paso a un carril por puente provisional del Ejército tras colapso estructural; alterna Zona Bananera–Fundación–Bosconia–Valledupar",
+      "municipio": "SANTA MARTA (MAGDALENA)",
+      "via": "",
+      "km": "37+700 – 37+700",
+      "tipo": "paso_un_carril",
+      "severidad": "high",
+      "estado": "active",
+      "resumen": "Santa Marta–Palomino Km 37+700, puente Mendihuaca: paso a un carril por puente provisional del Ejército tras colapso estructural; alterna Zona Bananera–Fundación–Bosconia–Valledupar",
+      "vigente_hasta": "2026-10-25T12:10:00+00:00",
+      "actualizado_en": "2026-10-24T21:50:00+00:00",
+      "estado_ubicacion": "ubicada",
+      "fuentes": [
+        {
+          "nombre": "X @numeral767",
+          "url": "https://x.com/numeral767/status/2114094954322784450",
+          "tier": "1"
+        },
+        {
+          "nombre": "INVÍAS 767 ArcGIS",
           "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
           "tier": "1"
         }
@@ -143,9 +187,19 @@
       "estado": "active",
       "resumen": "Transversal del Sisga, Guateque–El Secreto, San Luis de Gaceno PR 68+0000, ambos sentidos: paso a un carril por pérdida de banca, sin ruta alterna",
       "vigente_hasta": "2026-10-25T12:10:00+00:00",
-      "actualizado_en": "2026-10-24T12:10:00+00:00",
+      "actualizado_en": "2026-10-24T21:50:00+00:00",
       "estado_ubicacion": "ubicada",
       "fuentes": [
+        {
+          "nombre": "INVÍAS 767 ArcGIS",
+          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
+          "tier": "1"
+        },
+        {
+          "nombre": "INVÍAS 767 ArcGIS",
+          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
+          "tier": "1"
+        },
         {
           "nombre": "INVÍAS 767 ArcGIS",
           "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
@@ -165,9 +219,19 @@
       "estado": "active",
       "resumen": "San Gil–Bucaramanga, peaje Curití PR 11: cierre parcial por obra hasta el 29-oct 23:00",
       "vigente_hasta": "2026-10-30T04:00:00+00:00",
-      "actualizado_en": "2026-10-24T12:10:00+00:00",
+      "actualizado_en": "2026-10-24T21:50:00+00:00",
       "estado_ubicacion": "ubicada",
       "fuentes": [
+        {
+          "nombre": "INVÍAS 767 ArcGIS",
+          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
+          "tier": "1"
+        },
+        {
+          "nombre": "INVÍAS 767 ArcGIS",
+          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
+          "tier": "1"
+        },
         {
           "nombre": "INVÍAS 767 ArcGIS",
           "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
@@ -189,7 +253,7 @@
       "estado": "watch",
       "resumen": "Peaje San Pedro (Villanueva–Monterrey, Casanare): prensa reporta vehículo bomba y cierre total el 23-oct; sin parte oficial",
       "vigente_hasta": "2026-10-25T00:10:00+00:00",
-      "actualizado_en": "2026-10-24T12:10:00+00:00",
+      "actualizado_en": "2026-10-24T16:52:00+00:00",
       "estado_ubicacion": "ubicada",
       "fuentes": [
         {
@@ -214,14 +278,7 @@
       "nombre": "INVÍAS 767 ArcGIS",
       "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
       "fortaleza": "1",
-      "eventos": 5
-    },
-    {
-      "id": "@numeral767",
-      "nombre": "@numeral767",
-      "url": "https://x.com/numeral767/status/2113935839201783811",
-      "fortaleza": "1bis",
-      "eventos": 1
+      "eventos": 11
     },
     {
       "id": "El Pulso (prensa)",
@@ -235,6 +292,27 @@
       "nombre": "ControlT radar",
       "url": "https://risk.controlt.io/map",
       "fortaleza": "3",
+      "eventos": 1
+    },
+    {
+      "id": "X @numeral767",
+      "nombre": "X @numeral767",
+      "url": "https://x.com/numeral767/status/2114063748541390995",
+      "fortaleza": "1",
+      "eventos": 1
+    },
+    {
+      "id": "X @AMagdalenaMedio",
+      "nombre": "X @AMagdalenaMedio",
+      "url": "https://x.com/AMagdalenaMedio/status/2114108535873417394",
+      "fortaleza": "1",
+      "eventos": 1
+    },
+    {
+      "id": "X @numeral767",
+      "nombre": "X @numeral767",
+      "url": "https://x.com/numeral767/status/2114094954322784450",
+      "fortaleza": "1",
       "eventos": 1
     }
   ],
