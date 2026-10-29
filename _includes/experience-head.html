@@ -1,0 +1,33 @@
+{%- assign ec = site.data.experiences[page.lang] -%}
+{%- assign detail = ec.offers | where: 'key', page.experience | first -%}
+{%- assign title = page.title | default: detail.seo_title | default: detail.label | default: ec.title -%}
+{%- assign description = page.description | default: detail.summary | default: ec.intro -%}
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>{{ title }} | ATIEMPPO</title>
+<meta name="description" content="{{ description | escape }}"/>
+<link rel="canonical" href="https://atiemppo.com{{ page.url }}"/>
+<link rel="alternate" hreflang="es" href="https://atiemppo.com{{ page.translations.es }}"/>
+<link rel="alternate" hreflang="en" href="https://atiemppo.com{{ page.translations.en }}"/>
+<link rel="alternate" hreflang="x-default" href="https://atiemppo.com{{ page.translations.es }}"/>
+<meta property="og:title" content="{{ title | escape }} | ATIEMPPO"/>
+<meta property="og:description" content="{{ description | escape }}"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://atiemppo.com{{ page.url }}"/>
+<meta property="og:locale" content="{% if page.lang == 'en' %}en_US{% else %}es_CO{% endif %}"/>
+<meta property="og:image" content="https://atiemppo.com{{ ec.photo }}"/>
+<meta property="og:image:alt" content="{{ ec.photo_alt }}"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/assets/css/home-2026.css"/>
+<link rel="stylesheet" href="/assets/css/site-foundation.css?v=20261021"/>
+<link rel="stylesheet" href="/assets/css/experiences.css?v=20261029"/>
+<script type="application/ld+json">{
+  "@context": "https://schema.org", "@type": "{% if detail %}Service{% else %}CollectionPage{% endif %}",
+  "name": {{ title | jsonify }}, "description": {{ description | jsonify }},
+  "url": "https://atiemppo.com{{ page.url }}"{% if detail %},
+  "provider": {"@type": "Organization", "name": "ATIEMPPO S.A.S.", "url": "https://atiemppo.com/"}{% else %},
+  "inLanguage": "{{ page.lang }}"{% endif %}
+}</script>

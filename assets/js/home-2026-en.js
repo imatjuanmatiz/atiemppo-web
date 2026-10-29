@@ -128,28 +128,4 @@
     });
   }
 
-  var contactForm = document.getElementById("contactForm");
-  if (contactForm) {
-    var serviceSelect = contactForm.querySelector('[name="servicio"]');
-    var requestedService = new URLSearchParams(window.location.search).get("servicio");
-    if (requestedService === "profe-bruno") requestedService = "acompanamiento-ia";
-    if (serviceSelect && requestedService && Array.prototype.some.call(serviceSelect.options, function (option) { return option.value === requestedService; })) {
-      serviceSelect.value = requestedService;
-    }
-    // The existing receiver stores mensaje; include the selected service there too.
-    contactForm.addEventListener("formdata", function (event) {
-      if (!serviceSelect || !serviceSelect.value) return;
-      var serviceLabel = serviceSelect.options[serviceSelect.selectedIndex].text;
-      var message = event.formData.get("mensaje") || "";
-      event.formData.set("mensaje", "Service: " + serviceLabel + "\n\n" + message);
-    });
-    var endpoint = contactForm.dataset.googleScriptUrl;
-    var userAgentField = contactForm.querySelector('input[name="user_agent"]');
-    var submitButton = contactForm.querySelector('button[type="submit"]');
-    if (userAgentField) userAgentField.value = navigator.userAgent || "";
-    if (endpoint) contactForm.action = endpoint;
-    contactForm.addEventListener("submit", function () {
-      if (submitButton) { submitButton.disabled = true; submitButton.textContent = "Sending..."; }
-    });
-  }
 })();

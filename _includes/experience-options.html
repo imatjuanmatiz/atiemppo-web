@@ -1,0 +1,15 @@
+{% assign ec = site.data.experiences[include.lang] %}
+<section class="experience-section experience-options" id="experiencias">
+  <div class="container">
+    <div class="experience-section-heading"><p class="eyebrow">{{ ec.title }}</p><h2 class="section-heading">{{ ec.options_title }}</h2><p>{{ ec.options_intro }}</p></div>
+    <div class="experience-grid">
+      {% for offer in ec.offers %}
+      <article class="experience-option">
+        <span class="experience-number" aria-hidden="true">0{{ forloop.index }}</span>
+        <div><p class="experience-label">{{ offer.label }}</p><h3>{{ offer.title }}</h3><p>{{ offer.summary }}</p><a class="experience-link" href="{{ ec.prefix }}{{ offer.path }}">{{ offer.link }} <span aria-hidden="true">↗</span></a></div>
+      </article>
+      {% endfor %}
+    </div>
+    <div class="experience-question"><p>{{ ec.contact_body }}</p><a class="btn btn-primary" href="{{ ec.prefix }}/contacto/">{{ ec.write }} →</a></div>
+  </div>
+</section>

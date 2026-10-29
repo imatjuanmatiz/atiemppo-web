@@ -1,0 +1,17 @@
+{% assign ec = site.data.experiences[page.lang] %}
+{% assign detail = ec.offers | where: 'key', page.experience | first %}
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+<head>{% include experience-head.html %}</head>
+<body class="experience-page">
+{% include header.html %}
+<main id="main-content">
+  {% include experience-hero.html lang=page.lang %}
+  {% include experience-options.html lang=page.lang %}
+  {% include experience-bruno.html lang=page.lang %}
+  <section class="experience-section"><div class="container experience-split"><div><p class="eyebrow">{{ ec.context_eyebrow }}</p><h2 class="section-heading">{{ ec.context_title }}</h2><p>{{ ec.context_body }}</p></div><div class="experience-business-links"><a href="{{ ec.prefix }}/consultoria/"><strong>{{ ec.consulting_title }}</strong><span>{{ ec.consulting_text }} →</span></a><a href="{{ ec.prefix }}/inteligencia-planeacion-transporte/"><strong>{{ ec.transport_title }}</strong><span>{{ ec.transport_text }} →</span></a><a href="{{ ec.prefix }}/reportes/"><strong>{{ ec.publications_title }}</strong><span>{{ ec.publications_text }} →</span></a></div></div></section>
+  <section class="experience-section experience-close"><div class="container"><p class="eyebrow">{{ ec.next }}</p><h2 class="section-heading">{{ ec.contact_title }}</h2><p>{{ ec.contact_body }}</p><div class="hero-actions"><a class="btn btn-primary" href="{{ ec.prefix }}/contacto/">{{ ec.write }}</a><a class="experience-link" href="mailto:juanmatiz@atiemppo.co">juanmatiz@atiemppo.co →</a></div></div></section>
+</main>
+{% include footer.html %}
+</body>
+</html>

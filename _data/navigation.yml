@@ -3,14 +3,14 @@ items:
   - path: /
     es: Inicio
     en: Home
+  - path: /experiencias/
+    es: Experiencias con SI
+    en: SI experiences
+    sections: [/sesion-personalizada/, /acompanamiento-ia/, /conferencias/, /workshop/, /formacion/, /sesiones/, /agentes/, /banco-de-conocimiento/, /ia-aplicada/]
   - path: /inteligencia-planeacion-transporte/
     es: Inteligencia
     en: Intelligence
     sections: [/base-completa-sicetac/, /indices-sicetac/, /indice-red-sicetac/, /sicetac-api/, /sicetac-al-instante/, /novedades-en-vias/]
-  - path: /acompanamiento-ia/
-    es: Capacitación en IA
-    en: AI training
-    sections: [/formacion/, /sesiones/, /agentes/, /banco-de-conocimiento/, /ia-aplicada/]
   - path: /consultoria/
     es: Consultoría
     en: Consulting
@@ -25,7 +25,6 @@ items:
   - path: /quienes-somos/
     es: Quiénes somos
     en: About us
-    sections: [/conferencias/]
 es:
   prefix: ''
   home: /
@@ -34,6 +33,7 @@ es:
   open: Abrir navegación
   close: Cerrar navegación
   menu: Menú
+  contact: Escríbenos
   account: Cuenta gratuita
   other_lang: en
   other_home: /en/
@@ -45,13 +45,13 @@ es:
   previous: Anterior
   next: Siguiente
   footer:
-    description: Inteligencia de transporte, capacitación en IA y consultoría para convertir datos y conocimiento en decisiones.
+    description: Experiencias con SI, consultoría e inteligencia de transporte para aprender, investigar y decidir.
     navigation: Navegación
     ecosystem: Herramientas y proyectos
     contact: Contacto
     contact_label: Hablemos
     spanish: en español
-    tagline: Negocio, datos e IA para recuperar tiempo
+    tagline: Experiencia, datos y superinteligencia
     support: Soporte de los servicios
     legal: Términos y privacidad
     extra_navigation:
@@ -82,6 +82,7 @@ en:
   open: Open navigation
   close: Close navigation
   menu: Menu
+  contact: Get in touch
   account: Free account
   other_lang: es
   other_home: /
@@ -93,21 +94,20 @@ en:
   previous: Previous
   next: Next
   footer:
-    description: Transport intelligence, AI training and consulting to turn data and knowledge into decisions.
+    description: SI experiences, consulting and transport intelligence to learn, investigate and decide.
     navigation: Navigation
     ecosystem: Tools and projects
     contact: Contact
     contact_label: Let's talk
     spanish: in Spanish
-    tagline: Business, data and AI to reclaim time
+    tagline: Experience, data and superintelligence
     support: Service support
     legal: Terms and privacy
     extra_navigation:
       - path: /en/novedades-en-vias/
         label: Road updates
-      - path: /conferencias/
-        label: Conferences
-        lang: es
+      - path: /en/conferencias/
+        label: Talks and conferences
     products:
       - path: https://clientes.atiemppo.com/clientes
         label: Client portal · ATICA

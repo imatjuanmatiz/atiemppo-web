@@ -1,0 +1,7 @@
+{% assign ec = site.data.experiences[include.lang] %}
+<section class="experience-section experience-bruno">
+  <div class="container experience-split">
+    <div><p class="eyebrow">Bruno OpenClaw · {{ ec.bruno_eyebrow }}</p><h2 class="section-heading">{{ include.title | default: ec.bruno_title }}</h2></div>
+    <div><p class="experience-lead">{{ include.body | default: ec.bruno_body }}</p><p>{{ ec.bruno_review }}</p><p class="experience-note">{{ ec.bruno_scope }}</p></div>
+  </div>
+</section>

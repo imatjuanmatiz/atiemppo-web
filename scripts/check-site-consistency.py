@@ -8,6 +8,7 @@ args=parser.parse_args()
 root=args.build; base=Path(__file__).resolve().parents[1]
 routes=['/','/en/','/consultoria/','/en/consultoria/','/inteligencia-planeacion-transporte/','/en/inteligencia-planeacion-transporte/','/acompanamiento-ia/','/en/acompanamiento-ia/','/quienes-somos/','/en/quienes-somos/','/blog/','/en/blog/','/sicetac-al-instante/','/en/sicetac-al-instante/','/reportes/','/en/reportes/']
 routes += ['/base-completa-sicetac/','/indices-sicetac/','/sicetac-api/','/servicios/','/formacion/profe-bruno-ia-aplicada/','/en/base-completa-sicetac/','/en/indices-sicetac/','/en/sicetac-api/','/en/formacion/profe-bruno-ia-aplicada/']
+routes += [prefix+path for prefix in ['', '/en'] for path in ['/experiencias/','/sesion-personalizada/','/conferencias/','/workshop/','/contacto/']]
 errors=[];warnings=[];checks=0
 for route in routes:
  file=root/route.lstrip('/')/'index.html';soup=BeautifulSoup(file.read_text(),'html.parser');en=route.startswith('/en/')
@@ -33,7 +34,12 @@ for route in routes:
   if any(link['href'].startswith('/en/') != en for link in news):errors.append([route,'news wrong language'])
 # Form submission destinations, field names/types and options must remain intact.
 for f in ['index.html','en/index.html']:
- old=BeautifulSoup(subprocess.check_output(['git','show','HEAD:'+f],text=True),'html.parser');new=BeautifulSoup((base/f).read_text(),'html.parser')
+ old=BeautifulSoup(subprocess.check_output(['git','show','HEAD:'+f],text=True),'html.parser');new=BeautifulSoup((root/f).read_text(),'html.parser')
+ if not old.select_one('#contactForm'):
+  # The shared form replaced inline home markup; compare the matching language.
+  shared=BeautifulSoup(subprocess.check_output(['git','show','HEAD:_includes/contact.html'],text=True),'html.parser')
+  name='contacto-en' if f.startswith('en/') else 'contacto'
+  old=BeautifulSoup(str(shared.select_one('form[name="'+name+'"]')),'html.parser')
  def contract(s):
   form=s.select_one('#contactForm');return {'action':form.get('action'),'method':form.get('method'),'fields':[(e.name,e.get('name'),e.get('type'),e.has_attr('required')) for e in form.select('input,select,textarea')],'options':[e.get('value') for e in form.select('option')]}
  checks+=1

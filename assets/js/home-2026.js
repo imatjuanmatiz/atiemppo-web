@@ -16,7 +16,7 @@
   },
   "ai": {
     "chapter": "02",
-    "title": "Capacitación y acompañamiento en IA",
+    "title": "Experiencias con SI",
     "description": "Capacitamos a tu equipo para crear sus propios agentes, probarlos y documentarlos. Acompañamos sus proyectos para que el conocimiento y la capacidad de seguir mejorando se queden en la empresa.",
     "outcomes": [
       "Aprende con una tarea propia.",
@@ -79,7 +79,7 @@
     },
     training: {
       eyebrow: "Servicio 02",
-      title: "Capacitación y acompañamiento en IA",
+      title: "Experiencias con SI",
       description: "Capacitamos al equipo para crear, probar y documentar sus propios agentes. Acompañamos sus nuevos proyectos para conservar y ampliar lo aprendido.",
       capabilities: ["Aprendizaje práctico", "Agentes propios y documentación", "Acompañamiento a nuevos proyectos"],
       image: "/assets/images/servicios-2026/capacitacion-ia-ficha-es.png",
@@ -238,41 +238,4 @@
     });
   }
 
-  var contactForm = document.getElementById("contactForm");
-  if (contactForm) {
-    var serviceSelect = contactForm.querySelector('[name="servicio"]');
-    [
-      { value: "reportes-vivos", text: "Reportes Vivos para mi empresa" },
-      { value: "conferencias", text: "Conferencias para mi evento" }
-    ].forEach(function (item) {
-      if (!serviceSelect || Array.prototype.some.call(serviceSelect.options, function (option) { return option.value === item.value; })) return;
-      var option = document.createElement("option");
-      option.value = item.value;
-      option.textContent = item.text;
-      serviceSelect.appendChild(option);
-    });
-    var requestedService = new URLSearchParams(window.location.search).get("servicio");
-    if (requestedService === "profe-bruno") requestedService = "acompanamiento-ia";
-    if (serviceSelect && requestedService && Array.prototype.some.call(serviceSelect.options, function (option) { return option.value === requestedService; })) {
-      serviceSelect.value = requestedService;
-    }
-    // The existing receiver stores mensaje; include the selected service there too.
-    contactForm.addEventListener("formdata", function (event) {
-      if (!serviceSelect || !serviceSelect.value) return;
-      var serviceLabel = serviceSelect.options[serviceSelect.selectedIndex].text;
-      var message = event.formData.get("mensaje") || "";
-      event.formData.set("mensaje", "Servicio: " + serviceLabel + "\n\n" + message);
-    });
-    var endpoint = contactForm.dataset.googleScriptUrl;
-    var userAgentField = contactForm.querySelector('input[name="user_agent"]');
-    var submitButton = contactForm.querySelector('button[type="submit"]');
-    if (userAgentField) userAgentField.value = navigator.userAgent || "";
-    if (endpoint) contactForm.action = endpoint;
-    contactForm.addEventListener("submit", function () {
-      if (submitButton) {
-        submitButton.disabled = true;
-        submitButton.textContent = "Enviando...";
-      }
-    });
-  }
 })();

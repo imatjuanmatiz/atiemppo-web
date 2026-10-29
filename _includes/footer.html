@@ -20,7 +20,7 @@
       <ul class="global-footer-links">
         {% for item in site.data.navigation.items %}<li><a href="{{ footer_nav.prefix }}{{ item.path }}">{{ item[footer_lang] }}</a></li>{% endfor %}
         {% for item in footer_copy.extra_navigation %}<li><a href="{{ item.path }}"{% if item.lang %} hreflang="{{ item.lang }}"{% endif %}>{{ item.label }}{% if item.lang == 'es' and footer_lang == 'en' %} <span class="global-footer-language">({{ footer_copy.spanish }})</span>{% endif %}</a></li>{% endfor %}
-        <li><a href="{{ footer_nav.home }}#contacto">{{ footer_copy.contact_label }}</a></li>
+        <li><a href="{{ footer_nav.prefix }}/contacto/">{{ footer_copy.contact_label }}</a></li>
       </ul>
     </div>
     <div class="global-footer-column">
