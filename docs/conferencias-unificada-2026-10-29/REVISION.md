@@ -8,7 +8,7 @@ El objetivo es abrir conversaciones y captar consultas: portada con invitación 
 
 Se integró la propuesta A «Posibilidades» de Bruno con los colores, las fuentes DM Serif Display e Instrument Sans, el encabezado y el pie compartidos de ATIEMPPO. Se reutiliza la fotografía pública del encuentro de COLFECAR en Cali, con contexto y enlace a la publicación original. No se presentan testimonios ni resultados comerciales inventados.
 
-Las experiencias se presentan como alternativas independientes: sesión personalizada, acompañamiento a equipos, conferencias y workshop. Se utiliza SI/superinteligencia para la oferta propia de ATIEMPPO. Bruno OpenClaw participa en la experiencia guiada por Juan; la continuidad posterior requiere un alcance acordado.
+Las experiencias se presentan como alternativas independientes: sesión personalizada, acompañamiento a equipos, conferencias y workshop. Se utiliza inteligencia artificial (IA) en español y artificial intelligence (AI) en inglés, según el ajuste solicitado por Juan el 29 de octubre. Bruno OpenClaw participa en la experiencia guiada por Juan; la continuidad posterior requiere un alcance acordado.
 
 ## Fuentes revisadas
 

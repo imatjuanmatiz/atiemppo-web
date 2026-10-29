@@ -16,7 +16,7 @@
   },
   "ai": {
     "chapter": "02",
-    "title": "Experiencias con SI",
+    "title": "Experiencias con IA",
     "description": "Capacitamos a tu equipo para crear sus propios agentes, probarlos y documentarlos. Acompañamos sus proyectos para que el conocimiento y la capacidad de seguir mejorando se queden en la empresa.",
     "outcomes": [
       "Aprende con una tarea propia.",
@@ -79,7 +79,7 @@
     },
     training: {
       eyebrow: "Servicio 02",
-      title: "Experiencias con SI",
+      title: "Experiencias con IA",
       description: "Capacitamos al equipo para crear, probar y documentar sus propios agentes. Acompañamos sus nuevos proyectos para conservar y ampliar lo aprendido.",
       capabilities: ["Aprendizaje práctico", "Agentes propios y documentación", "Acompañamiento a nuevos proyectos"],
       image: "/assets/images/servicios-2026/capacitacion-ia-ficha-es.png",
