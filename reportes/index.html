@@ -105,6 +105,8 @@ h1{max-width:860px;margin:0 0 20px;font-family:var(--display);font-size:clamp(46
   h1{font-size:42px}
   .hero-copy{font-size:17px}
   .section-head{display:block}
+  .quick-index-head{display:block}
+  .quick-index-head p{margin-top:12px}
 }
 </style>
 <meta content="Reportes de logística y transporte · RNDC y SICETAC | ATIEMPPO" name="twitter:title"/><meta content="Análisis públicos de transporte, rutas, costos y SICETAC con fuentes, cortes y metodología. Explora reportes de ATIEMPPO y su aplicación empresarial." name="twitter:description"/><script type="application/ld+json">{
@@ -166,12 +168,13 @@ h1{max-width:860px;margin:0 0 20px;font-family:var(--display);font-size:clamp(46
     <div class="container">
       <div class="quick-index-box">
         {% assign indexed_reports = site.data.reportes | sort: "title" %}
+        {% assign latest_catalog_report = site.data.reportes | sort: "updated_at" | last %}
         <div class="quick-index-head">
           <div>
             <div class="eyebrow">Índice completo</div>
             <h2 id="indice-reportes">{{ indexed_reports | size }} reportes públicos activos</h2>
           </div>
-          <p>Actualizado al 25 de septiembre de 2026.</p>
+          <p>Catálogo actualizado: {{ latest_catalog_report.updated_at | date: "%Y-%m-%d" }}. El período de los datos se indica en cada reporte.</p>
         </div>
         <ol class="quick-index-list">
           {% for report in indexed_reports %}

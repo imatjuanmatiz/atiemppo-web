@@ -1,0 +1,10 @@
+.transport-tasks { background: #fff; border-bottom: 1px solid #d5dfe8; color: #0d2945; }
+.transport-tasks-inner { width: min(1180px, calc(100% - 48px)); margin: 0 auto; padding: 28px 0; }
+.transport-tasks-label { margin: 0 0 16px; font-size: 18px; font-weight: 700; }
+.transport-tasks-links { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.transport-tasks-links a { display: block; padding: 20px; border: 1px solid #c9d8e5; border-radius: 12px; background: #f3f7fa; color: #0d2945; text-decoration: none; }
+.transport-tasks-links strong { display: block; margin-bottom: 8px; font-size: 17px; line-height: 1.35; }
+.transport-tasks-links span { display: block; color: #425b70; font-size: 14px; line-height: 1.55; }
+.transport-tasks-links a:hover { border-color: #246aaf; background: #e8f1f9; }
+.transport-tasks-links a:focus-visible { outline: 3px solid #246aaf; outline-offset: 3px; }
+@media (max-width: 700px) { .transport-tasks-links { grid-template-columns: 1fr; } }

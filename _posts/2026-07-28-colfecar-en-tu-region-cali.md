@@ -9,9 +9,12 @@ emoji: "🚚"
 tags: [conferencias, colfecar, cali, transporte, logística, datos, atiemppo]
 image: /assets/images/blog/colfecar-en-tu-region-cali/juan-pablo-matiz-colfecar-cali.jpg
 permalink: /blog/colfecar-en-tu-region-cali/
+lang: es
+translations:
+  es: /blog/colfecar-en-tu-region-cali/
+  en: /en/blog/colfecar-en-tu-region-cali/
 ---
 
-# COLFECAR en tu Región: logística, datos y decisiones desde Cali
 
 Hoy estamos en **COLFECAR en tu Región, en Cali**, compartiendo con empresarios y profesionales del transporte una conversación cercana a los desafíos reales de la operación.
 

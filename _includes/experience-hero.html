@@ -10,11 +10,11 @@
         {% include bruno-link.html lang=include.lang %}
         <a class="btn btn-outline" href="#experiencias">{{ ec.choose }}</a>
       </div>
-      <a class="experience-portal-link" href="{{ site.data.portal_offer.register_url }}">{{ ec.portal_link }} →</a>
+      <a class="experience-portal-link experience-transport-link" href="{{ ec.prefix }}/inteligencia-planeacion-transporte/">{{ ec.transport_link }} →</a>
     </div>
     <figure class="experience-photo">
       <img src="{{ ec.photo }}" alt="{{ ec.photo_alt }}" width="1600" height="900" fetchpriority="high"/>
-      <figcaption><strong>Juan Pablo Matiz · ATIEMPPO</strong><span>{{ ec.photo_caption }}</span><a href="/blog/colfecar-en-tu-region-cali/"{% if include.lang == 'en' %} hreflang="es"{% endif %}>{{ ec.photo_link }} →</a></figcaption>
+      <figcaption><strong>Juan Pablo Matiz · ATIEMPPO</strong><span>{{ ec.photo_caption }}</span><a href="{{ ec.photo_path | default: '/blog/colfecar-en-tu-region-cali/' }}">{{ ec.photo_link }} →</a></figcaption>
     </figure>
   </div>
 </section>

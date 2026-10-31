@@ -205,13 +205,16 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:40px 28px}
   .toll-row div:last-child{text-align:left}
   .cta-panel{padding:32px 24px}
 }
+
+.example-note { margin: 16px 0; padding: 14px 16px; border: 1px solid currentColor; border-radius: 10px; font-size: 14px; line-height: 1.6; }
+.product-panel .example-note { position: relative; z-index: 2; color: #fff; }
 </style>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="/assets/css/site-foundation.css?v=20261021"/>
 <link rel="alternate" hreflang="es" href="https://atiemppo.com/sicetac-al-instante/"/><link rel="alternate" hreflang="en" href="https://atiemppo.com/en/sicetac-al-instante/"/>
 </head>
 <body>
-{% include header.html %}
+{% include header.html translation="/en/sicetac-al-instante/" %}
 <nav class="global-context-nav" aria-label="En esta herramienta"><a href="#modelo">Modelo</a><a href="#modos">Modos</a><a href="#peajes">Peajes</a><a href="/sicetac-al-instante/manual/">Manual</a><a href="/sicetac-api/">API</a></nav>
 
 
@@ -237,6 +240,7 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:40px 28px}
         </div>
       </div>
       <div class="product-panel" aria-label="Ejemplo de consulta SICETAC al Instante">
+        <p class="example-note">Ejemplo de respuesta · valores ilustrativos. Consulta el período y las referencias disponibles en la aplicación.</p>
         <div class="dots" aria-hidden="true"></div>
         <div class="sweep a" aria-hidden="true"></div>
         <div class="sweep b" aria-hidden="true"></div>
@@ -309,6 +313,7 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:40px 28px}
         </div>
         <p class="lead" style="max-width:520px">La respuesta rápida muestra el valor SICETAC y cuánto corresponde a peajes. Comercial, operación y finanzas pueden revisar la misma referencia.</p>
       </div>
+      <p class="example-note">Ejemplo de comparación · valores ilustrativos. Consulta el período y las referencias disponibles en la aplicación.</p>
       <div class="table" role="table" aria-label="Ejemplo modo plus con peajes">
         <div class="row head" role="row"><div class="cell" role="columnheader">Configuración</div><div class="cell" role="columnheader">SICETAC H4</div><div class="cell" role="columnheader">SICETAC H8</div><div class="cell" role="columnheader">Peajes ruta</div></div>
         <div class="row" role="row"><div class="cell cfg" role="cell">C2</div><div class="cell h4" role="cell">$5.22M</div><div class="cell h8" role="cell">$5.61M</div><div class="cell peaje" role="cell">$296.800</div></div>
@@ -328,6 +333,7 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:40px 28px}
         </div>
         <p class="lead" style="max-width:520px">Después de consultar una ruta, el sistema recuerda la última consulta. Puedes pedir el detalle completo o filtrar por configuración.</p>
       </div>
+      <p class="example-note">Muestra parcial de peajes: las filas no representan el total de la ruta. Valores ilustrativos.</p>
       <div class="split">
         <div class="note">
           <h3>Comandos útiles</h3>

@@ -1,0 +1,29 @@
+{%- assign ec = site.data.experiences[page.lang] -%}
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+<head>{% include experience-head.html %}{% unless page.session_status == 'overview' %}<meta name="robots" content="noindex,follow"/>{% endunless %}</head>
+<body class="experience-page">
+{% include header.html %}
+<main id="main-content">
+  <nav class="experience-context container" aria-label="{{ ec.context_label }}"><a href="{{ ec.prefix }}/experiencias/">{{ ec.title }}</a><span aria-hidden="true">/</span><span>{% if page.lang == 'en' %}Open sessions{% else %}Sesiones abiertas{% endif %}</span></nav>
+  <section class="experience-opening">
+    <div class="container session-status-panel">
+      {% if page.lang == 'en' %}
+      <p class="eyebrow">Previous session</p>
+      <h1>{% if page.session_status == 'confirmation' %}Information about the previous session.{% else %}Check the current learning options.{% endif %}</h1>
+      <p class="experience-lead">The advertised session date of August 12, 2026 has passed. This page is kept as a reference for that invitation.</p>
+      <div class="session-status-note"><h2>Ask about a new session.</h2><p>Tell us what you would like to learn and whether you are looking for individual practice or a team activity. We can discuss the format and availability with you.</p>{% if page.session_status == 'confirmation' %}<p>If you have already sent a request, contact us to check its status.</p>{% else %}<p>For current enquiries, use the contact page below.</p>{% endif %}</div>
+      <div class="hero-actions"><a class="btn btn-primary" href="/en/contacto/?servicio=profe-bruno">Ask about availability</a><a class="experience-link" href="/en/experiencias/">Compare learning options →</a></div>
+      {% else %}
+      <p class="eyebrow">Convocatoria anterior</p>
+      <h1>{% if page.session_status == 'confirmation' %}Información de la convocatoria anterior.{% else %}Consulta las opciones actuales para aprender.{% endif %}</h1>
+      <p class="experience-lead">La fecha anunciada para la sesión del 12 de agosto de 2026 ya pasó. Esta página se conserva como referencia de esa convocatoria.</p>
+      <div class="session-status-note"><h2>Conversemos sobre un nuevo encuentro.</h2><p>Cuéntanos qué te gustaría aprender y si buscas una práctica individual o una actividad para tu equipo. Revisamos contigo el formato y la disponibilidad.</p>{% if page.session_status == 'confirmation' %}<p>Si ya enviaste una solicitud, escríbenos para revisar su estado.</p>{% else %}<p>Para una solicitud actual, utiliza la página de contacto que encontrarás a continuación.</p>{% endif %}</div>
+      <div class="hero-actions"><a class="btn btn-primary" href="/contacto/?servicio=profe-bruno">Consultar disponibilidad</a><a class="experience-link" href="/experiencias/">Comparar las opciones para aprender →</a></div>
+      {% endif %}
+    </div>
+  </section>
+</main>
+{% include footer.html %}
+</body>
+</html>

@@ -6,7 +6,7 @@
       {% for offer in ec.offers %}
       <article class="experience-option">
         <span class="experience-number" aria-hidden="true">0{{ forloop.index }}</span>
-        <div><p class="experience-label">{{ offer.label }}</p><h3>{{ offer.title }}</h3><p>{{ offer.summary }}</p><a class="experience-link" href="{{ ec.prefix }}{{ offer.path }}">{{ offer.link }} <span aria-hidden="true">↗</span></a></div>
+        <div><p class="experience-label">{{ offer.label }}</p><h3>{{ offer.title }}</h3><p>{{ offer.summary }}</p><dl class="experience-format"><div><dt>{{ ec.audience_label }}</dt><dd>{{ offer.format_audience }}</dd></div><div><dt>{{ ec.activity_label }}</dt><dd>{{ offer.format_activity }}</dd></div><div><dt>{{ ec.outcome_label }}</dt><dd>{{ offer.format_outcome }}</dd></div></dl><a class="experience-link" href="{{ ec.prefix }}{{ offer.path }}">{{ offer.link }} <span aria-hidden="true">↗</span></a></div>
       </article>
       {% endfor %}
     </div>

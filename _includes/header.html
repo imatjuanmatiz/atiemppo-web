@@ -16,8 +16,8 @@
 {%- assign nav_language_label = nav_copy.language_label -%}
 {%- unless nav_translation -%}{%- assign nav_language_label = nav_copy.other_home_label -%}{%- endunless -%}
 {%- assign nav_translation = nav_translation | default: nav_copy.other_home -%}
-<link rel="stylesheet" href="/assets/css/navigation.css"/>
-<link rel="stylesheet" href="/assets/css/bruno-contact.css?v=20261031"/>
+<link rel="stylesheet" href="/assets/css/navigation.css?v=20261031-audit"/>
+<link rel="stylesheet" href="/assets/css/bruno-contact.css?v=20261031-audit"/>
 <header class="global-header" data-language="{{ nav_lang }}">
   <div class="global-header-inner">
     <a class="global-brand" href="{{ nav_copy.home }}" aria-label="ATIEMPPO, {{ nav_copy.home_label }}"><img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO" width="176" height="44"/></a>
@@ -34,7 +34,7 @@
       {%- endfor -%}
       <a class="global-contact" href="{{ nav_copy.prefix }}/contacto/">{{ nav_copy.contact }}</a>
       <a class="global-language" href="{{ nav_translation }}" lang="{{ nav_copy.other_lang }}" hreflang="{{ nav_copy.other_lang }}" aria-label="{{ nav_language_label }}" title="{{ nav_language_label }}">{{ nav_copy.language }}</a>
-      <a class="global-account" href="https://clientes.atiemppo.com/registro">{{ nav_copy.account }}</a>
+      <a class="global-account" href="https://clientes.atiemppo.com/registro" hreflang="es" title="{{ nav_copy.account_title }}">{{ nav_copy.account }}</a>
     </nav>
   </div>
 </header>

@@ -32,7 +32,8 @@ for route in routes:
   news=soup.select('.portal-post a');checks+=1
   if len(news)!=3:errors.append([route,'expected three selected articles'])
   if any(link['href'].startswith('/en/') != en for link in news):errors.append([route,'news wrong language'])
-# Form submission destinations, field names/types and options must remain intact.
+# Preserve submission destinations and fields; the EN service list may gain its
+# previously missing equivalent of the existing Spanish transport session.
 for f in ['index.html','en/index.html']:
  old=BeautifulSoup(subprocess.check_output(['git','show','HEAD:'+f],text=True),'html.parser');new=BeautifulSoup((root/f).read_text(),'html.parser')
  if not old.select_one('#contactForm'):
@@ -41,9 +42,12 @@ for f in ['index.html','en/index.html']:
   name='contacto-en' if f.startswith('en/') else 'contacto'
   old=BeautifulSoup(str(shared.select_one('form[name="'+name+'"]')),'html.parser')
  def contract(s):
-  form=s.select_one('#contactForm');return {'action':form.get('action'),'method':form.get('method'),'fields':[(e.name,e.get('name'),e.get('type'),e.has_attr('required')) for e in form.select('input,select,textarea')],'options':[e.get('value') for e in form.select('option')]}
+  form=s.select_one('#contactForm');return {'action':form.get('action'),'method':form.get('method'),'script_endpoint':form.get('data-google-script-url'),'redirects':[(e.get('name'),e.get('value')) for e in form.select('input[name="_next"],input[name="success_redirect"]')],'fields':[(e.name,e.get('name'),e.get('type'),e.has_attr('required')) for e in form.select('input,select,textarea')],'options':[e.get('value') for e in form.select('option')]}
+ old_contract=contract(old);new_contract=contract(new)
+ if f.startswith('en/') and 'sesion-red' not in old_contract['options']:
+  new_contract['options']=[value for value in new_contract['options'] if value != 'sesion-red']
  checks+=1
- if contract(old)!=contract(new):errors.append([f,'form contract changed'])
+ if old_contract!=new_contract:errors.append([f,'form contract changed'])
 print(json.dumps({'checks':checks,'errors':errors,'main_content_warnings':warnings},ensure_ascii=False,indent=2))
 
 sys.exit(1 if errors or warnings else 0)

@@ -1,0 +1,24 @@
+{%- assign task_lang = include.lang | default: 'es' -%}
+{%- if task_lang == 'en' -%}
+<nav class="transport-tasks" aria-label="Choose your transport task">
+  <div class="transport-tasks-inner">
+    <p class="transport-tasks-label">What do you need to do?</p>
+    <div class="transport-tasks-links">
+      <a href="/en/sicetac-al-instante/"><strong>Look up a route →</strong><span>Explore SICETAC al Instante and how to query cost references.</span></a>
+      <a href="/en/indices-sicetac/"><strong>Analyze my network →</strong><span>Understand the service for matching your routes and preparing a network index.</span></a>
+      <a href="/en/reportes/"><strong>Read transport reports →</strong><span>Explore public analyses, their sources and data periods.</span></a>
+    </div>
+  </div>
+</nav>
+{%- else -%}
+<nav class="transport-tasks" aria-label="Elige tu consulta de transporte">
+  <div class="transport-tasks-inner">
+    <p class="transport-tasks-label">¿Qué necesitas hacer?</p>
+    <div class="transport-tasks-links">
+      <a href="/sicetac-al-instante/"><strong>Consultar una ruta →</strong><span>Conoce SICETAC al Instante y cómo consultar referencias de costos.</span></a>
+      <a href="/indices-sicetac/"><strong>Analizar mi red →</strong><span>Conoce el servicio de homologación de rutas e Índice de Red.</span></a>
+      <a href="/reportes/"><strong>Leer reportes de transporte →</strong><span>Explora análisis públicos, sus fuentes y períodos de los datos.</span></a>
+    </div>
+  </div>
+</nav>
+{%- endif -%}
