@@ -1,0 +1,280 @@
+/*
+ * ATIEMPPO · Contraste
+ * Presentation layer for the shared public-site frame and marketing content.
+ * Load after page component styles. Images, embedded applications, analytical
+ * charts and status colours are deliberately left intact.
+ */
+:root {
+  --atiemppo-ink: #0a0a0a;
+  --atiemppo-muted: #6b6b6b;
+  --atiemppo-paper: #f5f5f5;
+  --atiemppo-navy: #0a0a0a;
+  --atiemppo-blue: #0a0a0a;
+  --atiemppo-sans: "Instrument Sans", system-ui, -apple-system, sans-serif;
+  --contrast-canvas: #fff;
+  --contrast-surface: #f5f5f5;
+  --contrast-ink: #0a0a0a;
+  --contrast-muted: #6b6b6b;
+  --contrast-line: #dadada;
+  --contrast-dark: #0a0a0a;
+  --contrast-dark-surface: #151515;
+  --contrast-dark-muted: #a3a3a3;
+  --contrast-dark-line: #333;
+  /* Existing marketing templates use these aliases. Semantic success/error
+     variables are not remapped, so functional status remains distinguishable. */
+  --ink: #0a0a0a;
+  --muted: #6b6b6b;
+  --muted-2: #6b6b6b;
+  --muted-3: #6b6b6b;
+  --paper: #f5f5f5;
+  --bg: #fff;
+  --surface: #fff;
+  --surface2: #f5f5f5;
+  --navy: #0a0a0a;
+  --navy-d: #0a0a0a;
+  --navy-deep: #0a0a0a;
+  --navy-soft: #151515;
+  --blue: #0a0a0a;
+  --blue-light: #dadada;
+  --cyan: #0a0a0a;
+  --cyan-glow: rgb(10 10 10 / 5%);
+  --line: #dadada;
+  --line-2: #a3a3a3;
+  --line-dark: #333;
+  --border: #dadada;
+  --border2: #333;
+  --shadow: 0 16px 40px rgb(0 0 0 / 7%);
+  --display: var(--atiemppo-sans);
+  --en-ink: #0a0a0a;
+  --en-muted: #6b6b6b;
+  --en-paper: #f5f5f5;
+  --en-navy: #0a0a0a;
+  --en-blue: #0a0a0a;
+  --en-light: #dadada;
+  --en-line: #dadada;
+}
+html { background: var(--contrast-canvas); }
+body { background: var(--contrast-canvas); color: var(--contrast-ink); font-family: var(--atiemppo-sans); }
+::selection { background: #dadada; color: #0a0a0a; }
+::-webkit-scrollbar-track { background: #f5f5f5; }
+::-webkit-scrollbar-thumb { background: #888; }
+
+/* Shared navigation stays light; the original logo never needs a colour filter. */
+.global-header { background: #fff; color: #0a0a0a; border-bottom-color: #dadada; }
+.global-header .global-menu a { color: #555; }
+.global-header .global-menu a:hover,
+.global-header .global-menu a[aria-current] { color: #0a0a0a; }
+.global-header .global-menu a[aria-current] { text-decoration-color: #0a0a0a; }
+.global-header .global-menu .global-account { background: #0a0a0a; color: #fff; font-weight: 600; }
+.global-header .global-menu .global-account:hover { background: #333; color: #fff; }
+.global-header .global-menu-toggle { border-color: #888; background: #fff; color: #0a0a0a; }
+.global-header .global-menu .global-language { color: #0a0a0a; }
+.global-context-nav { background: #f5f5f5; color: #0a0a0a; border-bottom: 1px solid #dadada; }
+.global-context-nav a { color: #0a0a0a; }
+
+/* Sans titles match the geometry of the mark. Long-form article typography is
+   retained, while landing-page headings use the existing Instrument Sans. */
+.hero-copy h1, .service-opening h1, .consulting-hero h1,
+.en-hero h1, .blog-hero h1, .hero h1, .hero-page h1,
+.experience-page h1, .experience-page h2, .experience-options h2,
+.section-heading, .en-section h2, .portal-news h2,
+.commercial-service h2, .commercial-service h3,
+.consulting-card h3, .consulting-step h3, .consulting-quote,
+.consulting-cta-panel h2, .contact-page .contact-copy h1,
+.contact-copy h2, .atica-start h2, .atica-start h3,
+.atica-outcomes h3, .atica-deeper h3 {
+  font-family: var(--atiemppo-sans);
+  font-weight: 500;
+  letter-spacing: -.035em;
+}
+.hero-copy h1 em, .consulting-hero h1 em, .en-hero h1 em { font-style: normal; }
+.service-opening, .consulting-opening { background: #fff; color: #0a0a0a; border-color: #dadada; }
+.service-section, .commercial-experience { color: #0a0a0a; background: #fff; }
+.service-paper, .commercial-consult, .commercial-editorial,
+.experience-practice, .experience-close, .atica-start,
+.en-quote, .en-callout, .portal-news, .documents, .direct-entry {
+  background: #f5f5f5;
+  color: #0a0a0a;
+  border-color: #dadada;
+}
+.experience-practice, .service-result { border-color: #0a0a0a; }
+.atica-start .eyebrow, .consult-illustration figcaption { color: #6b6b6b; }
+.atica-start img, .experience-photo, .experience-format,
+.experience-format > div, .experience-option, .experience-question,
+.experience-practice dl > div, .experience-steps li,
+.experience-takeaways li, .experience-faq details,
+.experience-business-links a, .consulting-offer { border-color: #dadada; }
+.experience-number, .experience-link, .experience-takeaways li::before { color: #0a0a0a; }
+.service-shortcuts article:nth-child(2) { background: #151515; border-color: #333; box-shadow: none; }
+.service-shortcuts article:nth-child(2) p { color: #d5d5d5; }
+.commercial-product { background: #151515; border-color: #333; }
+.offer-cover { background: #0a0a0a; }
+.offer-body > p:not(.eyebrow) { color: #d5d5d5; }
+.en-list li::before, .consulting-list li::before { color: currentColor; }
+.consulting-hero-visual { background: #151515; border-color: #333; box-shadow: none; }
+.consulting-hero-note { background: #151515; border-color: #333; }
+.consulting-quote { background: #f5f5f5; color: #0a0a0a; border-color: #0a0a0a; }
+
+/* Dark chapters receive contextual tokens, including readable secondary text.
+   This does not affect a chart, image or iframe's own palette. */
+.home-hero, .experience-hero, .experience-bruno, .service-close,
+.consulting-hero, .consulting-section.dark, .consulting-cta-panel,
+.en-hero, .en-section.dark, .commercial-products, .commercial-learning,
+.profe-opening, .agentic-catalog, .conversation, .ecosystem,
+.knowledge-cta, .section.dark, .cta-panel {
+  --atiemppo-muted: #a3a3a3;
+  --atiemppo-blue: #fff;
+  --blue: #fff;
+  --blue-light: #dadada;
+  --muted: #a3a3a3;
+  --en-muted: #a3a3a3;
+  background: #0a0a0a;
+  color: #fff;
+}
+.experience-hero .eyebrow, .experience-hero-summary,
+.experience-hero .experience-photo figcaption,
+.experience-portal-link, .experience-transport-link,
+.experience-bruno .eyebrow, .experience-bruno .experience-note,
+.hero-visual figcaption, .hero-proof span, .hero-access-note,
+.commercial-products .eyebrow, .commercial-learning .eyebrow,
+.profe-opening .eyebrow, .consulting-hero-note strong { color: #d5d5d5; }
+.experience-hero .hero-copy h1 em { color: #dadada; }
+.en-section.dark .en-card { background: #151515; border-color: #333; }
+.en-section.dark .en-card p { color: #a3a3a3; }
+.en-section.dark .en-card .en-number { color: #dadada; }
+.agentic-card { background: #151515; border-color: #333; }
+.agentic-card:hover { background: #202020; border-color: #a3a3a3; }
+
+/* Actions keep the same destinations and behaviour. */
+.btn-primary, .en-btn-primary, .atica-start .btn-primary,
+.hero-actions .btn-primary, .btn-dark, .submit-btn,
+.contact button[type="submit"], .contact input[type="submit"] {
+  background: #0a0a0a;
+  color: #fff;
+  border-color: #0a0a0a;
+  border-radius: 999px;
+  box-shadow: none;
+}
+.btn-primary:hover, .en-btn-primary:hover, .atica-start .btn-primary:hover,
+.hero-actions .btn-primary:hover, .btn-dark:hover,
+.contact button[type="submit"]:hover { background: #333; color: #fff; border-color: #333; }
+.btn, .en-btn { min-height: 44px; }
+.text-link, .experience-link { display: inline-flex; align-items: center; min-height: 44px; }
+.filter-bar .chip { min-height: 44px; }
+.btn-outline, .btn-ghost, .btn-ink { background: transparent; color: #0a0a0a; border-color: #888; box-shadow: none; }
+.btn-outline:hover, .btn-ghost:hover, .btn-ink:hover { color: #0a0a0a; background: #f5f5f5; border-color: #0a0a0a; }
+.home-hero .btn-primary, .experience-hero .btn-primary,
+.experience-bruno .btn-primary, .service-close .btn-primary,
+.consulting-hero .btn-primary, .consulting-cta-panel .btn-primary,
+.en-hero .en-btn-primary, .en-section.dark .en-btn-primary,
+.commercial-products .btn-primary, .commercial-learning .btn-primary,
+.profe-opening .btn-primary, .conversation .btn-primary,
+.section.dark .btn-primary, .cta-panel .btn-primary { background: #fff; color: #0a0a0a; border-color: #fff; }
+.home-hero .btn-outline, .experience-hero .btn-outline,
+.experience-bruno .btn-outline, .service-close .btn-outline,
+.consulting-hero .btn-outline, .consulting-cta-panel .btn-outline,
+.en-hero .en-btn-outline, .en-section.dark .en-btn-outline,
+.commercial-products .btn-outline, .commercial-learning .btn-outline,
+.conversation .btn-outline, .section.dark .btn-ghost,
+.cta-panel .btn-ghost { background: transparent; color: #fff; border-color: #888; }
+.bruno-link, .bruno-link:hover { background: #0a0a0a; border-color: #888; color: #fff; }
+.bruno-link--floating { box-shadow: 0 4px 18px rgb(0 0 0 / 15%); }
+
+/* Contact fields use visible outlines; native validation/status is untouched. */
+.contact, .contact-page .contact { background: #f5f5f5; color: #0a0a0a; }
+.contact-panel { border-color: #dadada; background: #fff; box-shadow: none; }
+.field label, .form-note, .contact-copy p { color: #6b6b6b; }
+.field input, .field textarea, .contact select, .service-interest select {
+  background-color: #fff;
+  color: #0a0a0a;
+  border-color: #888;
+  min-height: 48px;
+}
+.field input::placeholder, .field textarea::placeholder { color: #6b6b6b; opacity: 1; }
+.field input:focus, .field textarea:focus, .contact select:focus { border-color: #0a0a0a; outline: 2px solid #0a0a0a; outline-offset: 3px; }
+
+/* Editorial chrome is neutral. Article illustrations and code syntax retain
+   their own content colours rather than being recoloured by a global filter. */
+.blog-hero, .blog-page-hero, .blog-main, .blog-page-main, .site-main { background: #fff; color: #0a0a0a; }
+.blog-featured { background: #0a0a0a; box-shadow: none; }
+.blog-featured .img { background: #151515; }
+.blog-featured .date, .blog-featured .ex { color: #a3a3a3; }
+.blog-featured .lab { background: #333; color: #fff; }
+/* The existing category script writes inline colours; keep category labels
+   legible on their new surfaces without changing its filtering behaviour. */
+.blog-featured .lab { background: #333 !important; color: #fff !important; }
+.blog-card .blc-lab { background: #f5f5f5 !important; color: #0a0a0a !important; }
+.blog-featured .read { color: #fff; text-decoration: underline; text-underline-offset: 4px; }
+.blog-card, .blog-list-card, .post-nav-link { border-color: #dadada; box-shadow: none; color: #0a0a0a; }
+.blog-card:hover, .blog-list-card:hover, .post-nav-link:hover { border-color: #888; box-shadow: none; }
+.blc-strip { background: repeating-linear-gradient(135deg, #f5f5f5 0 10px, #eee 10px 20px); }
+.blc-lab, .blc-lab-tag, .blc-lab-label, .post-lab-tag, .lab-chip { background: #f5f5f5; color: #0a0a0a; border-color: #dadada; }
+.blc-read, .blc-title, .post-nav-title, .post-back,
+.blog-page-tag, .blog-page-brand, .blog-page-title { color: #0a0a0a; }
+.blog-page-tag::before { background: #0a0a0a; }
+.blc-excerpt, .blc-date, .post-date, .post-author, .post-excerpt { color: #6b6b6b; }
+.post-title, .post-body, .post-body p, .post-body li,
+.post-body strong, .post-body h2, .post-body h3,
+.article, .article p, .article h2, .article h3 { color: #0a0a0a; }
+.post-body a, .post-body a:hover, .article a { color: #0a0a0a; text-decoration-color: #888; }
+.post-body figcaption, .post-body .post-meta-top, .article-meta { color: #6b6b6b; }
+.post-body blockquote { background: #f5f5f5; border-color: #888; color: #333; }
+.post-body .edl-pull { background: #0a0a0a; }
+.post-body .edl-pull p { color: #fff; }
+.post-body code { background: #f5f5f5; color: #333; border-color: #dadada; }
+.post-body pre { background: #151515; border-color: #333; }
+.post-body pre code { background: transparent; color: #eee; border: 0; }
+
+/* Institutional explainers inherit a neutral interface while retaining figures. */
+.seo-section { color: #0a0a0a; }
+.seo-soft { background: #f5f5f5; }
+.seo-section h2, .seo-section h3, .seo-section a,
+.seo-facts th, .seo-facts td { color: #0a0a0a; }
+.seo-section a { text-underline-offset: 4px; }
+.seo-grid article, .seo-faq article, .seo-facts th, .seo-facts td { border-color: #dadada; }
+
+/* Product presentation accents; no tables, road statuses or charts are remapped. */
+.hero .badge, .blog-hero .badge { color: #0a0a0a; border-color: #888; background: #fff; }
+.hero .badge .dot, .blog-hero .badge .dot { background: #0a0a0a; }
+.product-page { background: #f5f5f5; color: #0a0a0a; }
+.product-page .card { background: #fff; border-color: #dadada; color: #0a0a0a; }
+.product-page .card h1.title { font-family: var(--atiemppo-sans); font-weight: 500; }
+.product-page .btn { background: #0a0a0a; color: #fff; border-color: #0a0a0a; }
+
+/* Shared close: a dark chapter anchored by the unchanged logo on white. */
+.global-footer { background: #0a0a0a; color: #d5d5d5; }
+.global-footer h2, .global-footer h3, .global-footer h4 { color: #fff; }
+.global-footer a { color: #d5d5d5; }
+.global-footer a:hover { color: #fff; }
+.global-footer .global-footer-logo img { background: #fff; border-radius: 0; filter: none; }
+.global-footer-bottom { border-color: #333; color: #a3a3a3; }
+.global-footer .global-footer-bottom a { color: #a3a3a3; }
+
+/* The pre-existing post body colour uses !important in main.css. This targeted
+   override is needed only for that old declaration, never for chart elements. */
+body.page-blog, body.page-post { background: #fff !important; color: #0a0a0a !important; }
+
+.global-header a:focus-visible, .global-header button:focus-visible,
+.global-footer a:focus-visible, .btn:focus-visible, .en-btn:focus-visible,
+.bruno-link:focus-visible, .experience-page a:focus-visible,
+.experience-options a:focus-visible, .experience-hero a:focus-visible,
+.contact select:focus-visible, .service-interest select:focus-visible,
+.experience-faq summary:focus-visible, .chip:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px #0a0a0a;
+}
+@media (max-width: 1199px) {
+  .global-header[data-nav-ready] .global-menu { background: #fff; border-bottom-color: #dadada; box-shadow: 0 12px 24px rgb(0 0 0 / 8%); }
+}
+@media (max-width: 600px) {
+  .global-header .global-menu a { min-height: 44px; }
+  .global-footer { padding-inline: 20px; }
+  .global-footer-logo img { max-width: calc(100vw - 64px); }
+  .contact-panel { padding: 28px 20px; }
+  .field input, .field textarea, .contact select { font-size: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn, .en-btn, .blog-card, .blog-list-card, .post-nav-link { transition: none; }
+  .btn:hover, .blog-card:hover, .blog-list-card:hover { transform: none; }
+}

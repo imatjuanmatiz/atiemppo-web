@@ -3,28 +3,27 @@ items:
   - path: /
     es: Inicio
     en: Home
-  - path: /experiencias/
-    es: Formación y conferencias
-    en: Training & talks
-    sections: [/sesion-personalizada/, /acompanamiento-ia/, /conferencias/, /workshop/, /formacion/, /sesiones/, /agentes/, /banco-de-conocimiento/, /ia-aplicada/]
+  - path: /#aprender
+    es: Aprender
+    en: Learn
+    sections: [/experiencias/, /sesion-personalizada/, /acompanamiento-ia/, /workshop/, /formacion/, /sesiones/, /agentes/, /banco-de-conocimiento/, /ia-aplicada/]
+  - path: /#herramientas
+    es: Herramientas
+    en: Tools
+    sections: [/base-completa-sicetac/, /indices-sicetac/, /indice-red-sicetac/, /sicetac-api/, /sicetac-al-instante/, /novedades-en-vias/]
+  - path: /consultoria/
+    es: Resolver un reto
+    en: Solve a challenge
+  - path: /conferencias/
+    es: Conferencias
+    en: Talks
   - path: /inteligencia-planeacion-transporte/
     es: Transporte
     en: Transport
-    sections: [/base-completa-sicetac/, /indices-sicetac/, /indice-red-sicetac/, /sicetac-api/, /sicetac-al-instante/, /novedades-en-vias/]
-  - path: /consultoria/
-    es: Consultoría
-    en: Consulting
-  - path: /reportes/
-    es: Reportes
-    en: Reports
-    sections: [/reportes/]
   - path: /blog/
-    es: Blog
-    en: Blog
-    sections: [/blog/]
-  - path: /quienes-somos/
-    es: Quiénes somos
-    en: About us
+    es: Contenido
+    en: Content
+    sections: [/blog/, /reportes/]
 es:
   prefix: ''
   home: /
@@ -46,7 +45,7 @@ es:
   previous: Anterior
   next: Siguiente
   footer:
-    description: Experiencias con IA, consultoría e inteligencia de transporte para aprender, investigar y decidir.
+    description: Un taller de conocimiento para explorar, usar herramientas y trabajar juntos sobre un reto.
     navigation: Navegación
     ecosystem: Herramientas y proyectos
     contact: Contacto
@@ -56,6 +55,10 @@ es:
     support: Soporte de los servicios
     legal: Términos y privacidad
     extra_navigation:
+      - path: /quienes-somos/
+        label: Quiénes somos
+      - path: /reportes/
+        label: Reportes Vivos
       - path: /novedades-en-vias/
         label: Novedades en Vías
       - path: /conferencias/
@@ -96,7 +99,7 @@ en:
   previous: Previous
   next: Next
   footer:
-    description: AI experiences, consulting and transport intelligence to learn, investigate and decide.
+    description: A knowledge workshop to explore ideas, use tools and work through a challenge together.
     navigation: Navigation
     ecosystem: Tools and projects
     contact: Contact
@@ -106,6 +109,10 @@ en:
     support: Service support
     legal: Terms and privacy
     extra_navigation:
+      - path: /en/quienes-somos/
+        label: About us
+      - path: /en/reportes/
+        label: Reportes Vivos · Living reports
       - path: /en/novedades-en-vias/
         label: Road updates
       - path: /en/conferencias/

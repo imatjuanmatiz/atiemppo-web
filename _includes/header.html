@@ -18,6 +18,10 @@
 {%- assign nav_translation = nav_translation | default: nav_copy.other_home -%}
 <link rel="stylesheet" href="/assets/css/navigation.css?v=20261031-audit"/>
 <link rel="stylesheet" href="/assets/css/bruno-contact.css?v=20261031-audit"/>
+<link rel="stylesheet" href="/assets/css/contrast-theme.css?v=20261031-preview"/>
+{%- if page.url == '/' or page.url == '/en/' -%}
+<link rel="stylesheet" href="/assets/css/contrast-home.css?v=20261031-preview"/>
+{%- endif -%}
 <header class="global-header" data-language="{{ nav_lang }}">
   <div class="global-header-inner">
     <a class="global-brand" href="{{ nav_copy.home }}" aria-label="ATIEMPPO, {{ nav_copy.home_label }}"><img src="/assets/images/logo-atiemppo.png" alt="ATIEMPPO" width="176" height="44"/></a>

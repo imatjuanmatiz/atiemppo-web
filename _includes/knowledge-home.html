@@ -1,0 +1,64 @@
+{%- assign kh_lang = include.lang | default: 'es' -%}
+{%- assign kh = site.data.knowledge_home[kh_lang] -%}
+{%- assign kh_experiences = site.data.experiences[kh_lang] -%}
+<section class="knowledge-hero" aria-labelledby="knowledge-title">
+  <div class="container">
+    <div class="knowledge-opening">
+      <div><p class="eyebrow">{{ kh.hero_label }}</p><h1 id="knowledge-title">{{ kh.hero_title }}</h1></div>
+      <div class="knowledge-opening-copy"><p class="knowledge-lead">{{ kh.hero_lead }}</p><p>{{ kh.hero_support }}</p></div>
+    </div>
+    <nav class="knowledge-intentions" id="prioridades" aria-labelledby="intent-title">
+      <h2 id="intent-title">{{ kh.intent_title }}</h2>
+      <div class="knowledge-intent-grid">
+        {% for intent in kh.intents %}<a class="knowledge-intent" href="#{{ intent.id }}"><span class="knowledge-number" aria-hidden="true">0{{ forloop.index }}</span><strong>{{ intent.title }}</strong><span>{{ intent.text }}</span></a>{% endfor %}
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="knowledge-section knowledge-learning" id="aprender" aria-labelledby="learn-title">
+  <span class="knowledge-anchor" id="experiencias" aria-hidden="true"></span>
+  <div class="container">
+    <header class="knowledge-section-heading"><p class="eyebrow">{{ kh.learn_label }}</p><h2 id="learn-title">{{ kh.learn_title }}</h2><p>{{ kh.learn_intro }}</p></header>
+    <div class="knowledge-learning-grid">
+      <article class="knowledge-learning-card"><p class="knowledge-number" aria-hidden="true">01</p><h3>{{ kh.open_title }}</h3><p>{{ kh.open_text }}</p><ul class="knowledge-open-links">{% for link in kh.open_links %}<li><a href="{{ link.url }}">{{ link.label }} <span aria-hidden="true">→</span></a></li>{% endfor %}</ul></article>
+      <article class="knowledge-learning-card"><p class="knowledge-number" aria-hidden="true">02</p><h3>{{ kh.guided_title }}</h3><p>{{ kh.guided_text }}</p><ul class="knowledge-guided-links">{% for offer in kh_experiences.offers %}<li><a href="{{ kh.prefix }}{{ offer.path }}">{{ offer.label }} <span aria-hidden="true">→</span></a><span>{{ offer.format_activity }}</span></li>{% endfor %}</ul><a class="text-link" href="{{ kh.compare_url }}">{{ kh.compare_label }} →</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="knowledge-section knowledge-content" id="contenido-propio" aria-labelledby="content-title">
+  <div class="container">
+    <header class="knowledge-section-heading knowledge-heading-with-link"><div><h2 id="content-title">{{ kh.content_title }}</h2><p>{{ kh.content_intro }}</p></div><a class="text-link" href="{{ kh.prefix }}/blog/">{{ kh.all_content }} →</a></header>
+    <div class="knowledge-content-grid">
+      {% for feature in kh.features %}<article class="portal-post knowledge-feature"><a href="{{ feature.url }}"><img src="{{ feature.image }}" alt="" width="640" height="360" loading="lazy"/><div><p class="knowledge-type">{{ feature.type }} · <time datetime="{{ feature.published_on }}">{% include post-date.html date=feature.published_on lang=kh_lang %}</time></p><h3>{{ feature.title }}</h3><p>{{ feature.description }}</p><span class="knowledge-feature-action">{{ feature.action }} →</span></div></a></article>{% endfor %}
+    </div>
+    <div class="knowledge-reading-grid">
+      <article class="knowledge-reading"><h3>{{ kh.reports_title }}</h3><p>{{ kh.reports_text }}</p>{% if kh.reports_language != '' %}<p class="knowledge-note">{{ kh.reports_language }}</p>{% endif %}<a class="text-link" href="{{ kh.reports_url }}">{{ kh.reports_action }} →</a></article>
+      <article class="knowledge-reading" id="dato-logistico"><h3>{{ kh.publications_title }}</h3><p>{{ kh.publications_text }}</p><a class="text-link" href="https://www.eldatologistico.com/" hreflang="es" target="_blank" rel="noopener noreferrer">{{ kh.publications_action }} →</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="knowledge-section knowledge-tools" id="herramientas" aria-labelledby="tools-title">
+  <span class="knowledge-anchor" id="soluciones" aria-hidden="true"></span>
+  <div class="container">
+    <header class="knowledge-section-heading"><p class="eyebrow">{{ kh.tools_label }}</p><h2 id="tools-title">{{ kh.tools_title }}</h2><p>{{ kh.tools_intro }}</p></header>
+    <div class="knowledge-tool-grid">
+      {% for tool in kh.tools %}<article class="knowledge-tool" data-tool="{{ tool.key }}"><p class="knowledge-number" aria-hidden="true">0{{ forloop.index }}</p><h3>{{ tool.name }}</h3><p>{{ tool.description }}</p><p class="knowledge-example"><strong>{{ kh.example_label }}:</strong> {{ tool.example }}</p><p class="knowledge-note">{{ tool.access }}</p><div class="knowledge-tool-actions"><a class="btn btn-primary" href="{{ tool.url }}"{% if tool.destination_language != kh_lang %} hreflang="{{ tool.destination_language }}"{% endif %}>{{ kh.use_label }} <span aria-hidden="true">→</span></a>{% if tool.how_url %}<a class="text-link" href="{{ tool.how_url }}">{{ kh.learn_how }} →</a>{% endif %}<a class="text-link" href="{{ tool.case_url }}">{{ kh.own_case }} →</a></div></article>{% endfor %}
+    </div>
+    <aside class="knowledge-transport"><div><h3>{{ kh.transport_title }}</h3><p>{{ kh.transport_text }}</p></div><a class="text-link" href="{{ kh.transport_url }}">{{ kh.transport_action }} →</a></aside>
+  </div>
+</section>
+
+<section class="knowledge-section knowledge-challenges" id="resolver" aria-labelledby="resolve-title">
+  <div class="container"><header class="knowledge-section-heading"><p class="eyebrow">{{ kh.resolve_label }}</p><h2 id="resolve-title">{{ kh.resolve_title }}</h2><p>{{ kh.resolve_intro }}</p></header><div class="knowledge-challenge-grid">{% for challenge in kh.challenges %}<article><h3>{{ challenge.title }}</h3><p>{{ challenge.text }}</p><a class="text-link" href="{{ challenge.url }}">{{ challenge.action }} →</a></article>{% endfor %}</div></div>
+</section>
+
+<section class="knowledge-section knowledge-conferences" id="conferencias" aria-labelledby="conference-title">
+  <div class="container knowledge-conference-grid"><div><p class="eyebrow">{{ kh.conference_label }}</p><h2 id="conference-title">{{ kh.conference_title }}</h2><p>{{ kh.conference_text }}</p><div class="knowledge-conference-actions"><a class="btn btn-primary" href="{{ kh.conference_url }}">{{ kh.conference_action }} →</a><a class="text-link" href="{{ kh.conference_contact_url }}">{{ kh.conference_contact }} →</a></div></div><figure class="experience-photo"><img src="{{ kh_experiences.photo }}" alt="{{ kh_experiences.photo_alt }}" width="1600" height="900" loading="lazy"/><figcaption><strong>Juan Pablo Matiz · ATIEMPPO</strong><span>{{ kh_experiences.photo_caption }}</span><a href="{{ kh_experiences.photo_path }}">{{ kh_experiences.photo_link }} →</a></figcaption></figure></div>
+</section>
+
+<section class="knowledge-section knowledge-about" aria-labelledby="about-title"><div class="container knowledge-about-grid"><div><p class="eyebrow">{{ kh.about_label }}</p><h2 id="about-title">{{ kh.about_title }}</h2></div><div><p>{{ kh.about_text }}</p><a class="text-link" href="{{ kh.about_url }}">{{ kh.about_action }} →</a></div></div></section>
+
+{% include contact.html lang=kh_lang %}
