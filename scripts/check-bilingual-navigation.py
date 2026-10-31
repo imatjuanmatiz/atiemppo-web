@@ -78,6 +78,9 @@ for es_route in paired_routes:
               route, "wrong document language")
         check(len(soup.select("main")) == 1, route, "expected one main landmark")
         check(len(soup.select("h1")) == 1, route, "expected one H1")
+        check(len(soup.select(".global-footer")) == 1, route, "expected shared footer")
+        check(len(soup.select(".bruno-link--floating")) == 1, route, "expected shared Bruno contact")
+        check(bool(soup.select('link[href*="site-foundation.css"]')), route, "expected shared identity styles")
         switch = soup.select_one(".global-language")
         check(switch is not None and urlsplit(switch.get("href", "")).path == counterpart,
               route, "language switch must keep the same page", counterpart)
