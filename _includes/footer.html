@@ -33,6 +33,7 @@
       <h2 class="global-footer-heading">{{ footer_copy.contact }}</h2>
       <ul class="global-footer-links">
         <li><a href="mailto:juanmatiz@atiemppo.co">juanmatiz@atiemppo.co</a></li>
+        <li><a href="{{ site.data.bruno_contact.whatsapp_url }}" target="_blank" rel="noopener noreferrer">Bruno · {{ site.data.bruno_contact.display_phone }}</a></li>
         <li>Calle 146 #7-64 of. 401</li>
         <li>Bogotá, Colombia</li>
         <li><a href="/soporte/" hreflang="es">{{ footer_copy.support }}{% if footer_lang == 'en' %} <span class="global-footer-language">({{ footer_copy.spanish }})</span>{% endif %}</a></li>
@@ -45,3 +46,4 @@
     <a href="{{ footer_nav.prefix }}/llms.txt">llms.txt</a>
   </div>
 </footer>
+{% include bruno-link.html lang=footer_lang floating=true %}

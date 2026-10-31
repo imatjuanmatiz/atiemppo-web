@@ -7,7 +7,7 @@
       <p class="hero-positioning">{{ ec.hero_lead }}</p>
       <p class="experience-hero-summary">{{ ec.intro }}</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="{{ ec.prefix }}/contacto/">{{ ec.write }}</a>
+        {% include bruno-link.html lang=include.lang %}
         <a class="btn btn-outline" href="#experiencias">{{ ec.choose }}</a>
       </div>
       <a class="experience-portal-link" href="{{ site.data.portal_offer.register_url }}">{{ ec.portal_link }} →</a>

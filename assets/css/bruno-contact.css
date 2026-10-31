@@ -1,0 +1,39 @@
+/* ATIEMPPO's commercial WhatsApp contact, shared across page templates. */
+.bruno-link, .bruno-link * { box-sizing: border-box; }
+.bruno-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 100%;
+  min-height: 48px;
+  padding: 13px 20px;
+  border: 1px solid #146349;
+  border-radius: 28px;
+  background: #146349;
+  color: #fff;
+  font: 600 14px/1.45 var(--atiemppo-sans, "Instrument Sans", Arial, sans-serif);
+  text-align: left;
+  text-decoration: none;
+}
+.bruno-link svg { display: block; flex: 0 0 24px; }
+.bruno-link:hover { background: #0f4d39; border-color: #0f4d39; color: #fff; }
+.bruno-link:focus-visible { outline: 3px solid #8fc9f3; outline-offset: 4px; }
+.bruno-link--floating {
+  position: fixed;
+  right: 24px;
+  bottom: max(24px, env(safe-area-inset-bottom));
+  z-index: 250;
+  max-width: calc(100vw - 32px);
+  box-shadow: 0 6px 24px #071e3533;
+}
+.bruno-link--floating strong, .bruno-link--floating small { display: block; }
+.bruno-link--floating strong { font-size: 14px; font-weight: 700; }
+.bruno-link--floating small { font-size: 12px; font-weight: 400; }
+.contact-copy .bruno-contact-description { margin-top: 24px; font-size: 15px; line-height: 1.65; }
+.global-footer .global-footer-bottom { padding-bottom: 110px; }
+@media (max-width: 480px) {
+  .bruno-link { padding: 12px 16px; }
+  .bruno-link--floating { right: 16px; bottom: max(16px, env(safe-area-inset-bottom)); }
+}
+@media print { .bruno-link--floating { display: none; } }

@@ -1,0 +1,9 @@
+{%- assign bruno_lang = include.lang | default: page.lang | default: 'es' -%}
+{%- assign bruno_prefix = page.url | slice: 0, 4 -%}
+{%- if bruno_prefix == '/en/' -%}{%- assign bruno_lang = 'en' -%}{%- endif -%}
+{%- assign bruno_copy = site.data.bruno_contact[bruno_lang] -%}
+{%- assign bruno_message = bruno_copy.message | url_encode -%}
+<a class="bruno-link{% if include.floating %} bruno-link--floating{% endif %}" href="{{ site.data.bruno_contact.whatsapp_url }}?text={{ bruno_message }}" target="_blank" rel="noopener noreferrer" aria-label="{{ bruno_copy.cta | escape }} · WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 9 9 0 0 1-4-.9L3 21l1.9-5.5a9 9 0 0 1-.9-4A8.5 8.5 0 0 1 12.5 3 8.5 8.5 0 0 1 21 11.5Z"/><path d="M8.5 11.5h8M8.5 8.5h5"/></svg>
+  {% if include.floating %}<span><strong>{{ bruno_copy.short_cta }}</strong><small>{{ bruno_copy.appointment }} · WhatsApp</small></span>{% else %}<span>{{ bruno_copy.cta }}</span>{% endif %}
+</a>
