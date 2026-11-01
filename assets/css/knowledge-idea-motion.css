@@ -1,0 +1,119 @@
+/* ATIEMPPO Contraste: selected original illustration, desktop motion only. */
+.knowledge-idea-motion,
+.knowledge-idea-motion[hidden] {
+  display: none !important;
+}
+
+@media (min-width: 1100px) {
+  .knowledge-home .knowledge-opening.knowledge-idea-ready {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 38%);
+    grid-template-rows: auto auto;
+    column-gap: clamp(48px, 5vw, 72px);
+    row-gap: 26px;
+    align-items: center;
+    text-align: left;
+  }
+
+  .knowledge-home .knowledge-idea-ready > div:first-child {
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 0;
+    align-self: end;
+  }
+
+  .knowledge-home .knowledge-opening.knowledge-idea-ready .eyebrow {
+    justify-content: flex-start;
+  }
+
+  .knowledge-home .knowledge-opening.knowledge-idea-ready h1 {
+    margin-inline: 0;
+  }
+
+  .knowledge-home .knowledge-idea-ready > .knowledge-opening-copy {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: 100%;
+    margin-inline: 0;
+    align-self: start;
+  }
+
+  .knowledge-home .knowledge-idea-ready > .knowledge-opening-copy > p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .knowledge-home .knowledge-idea-ready > .knowledge-idea-motion:not([hidden]) {
+    display: block !important;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    width: min(100%, 440px);
+    margin: 0;
+    justify-self: end;
+    align-self: center;
+  }
+
+  .knowledge-idea-frame {
+    width: 100%;
+    aspect-ratio: 1339 / 390;
+    overflow: hidden;
+  }
+
+  .knowledge-idea-art {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1339 / 390;
+  }
+
+  .knowledge-idea-motion[data-motion="loading"] .knowledge-idea-art {
+    visibility: hidden;
+  }
+
+  .knowledge-idea-motion[data-motion="running"] .knowledge-idea-art,
+  .knowledge-idea-motion[data-motion="paused"] .knowledge-idea-art {
+    animation: knowledge-idea-reveal 8s ease-in-out infinite both;
+  }
+
+  .knowledge-idea-motion[data-motion="paused"] .knowledge-idea-art {
+    animation-play-state: paused;
+  }
+
+  .knowledge-home .knowledge-idea-toggle {
+    display: block;
+    min-height: 44px;
+    min-width: 44px;
+    margin: 8px 0 0 auto;
+    padding: 8px 0 8px 14px;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: #6b6b6b;
+    font: inherit;
+    font-size: 13px;
+    line-height: 1.4;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    cursor: pointer;
+  }
+
+  .knowledge-home .knowledge-idea-toggle:hover { color: #0a0a0a; }
+  .knowledge-home .knowledge-idea-toggle[hidden] { display: none !important; }
+}
+
+/* A short hold lets the full concept read before each left-to-right reveal. */
+@keyframes knowledge-idea-reveal {
+  0%, 14% { clip-path: inset(0 0 0 0); opacity: 1; }
+  20% { clip-path: inset(0 0 0 0); opacity: 0; }
+  20.01% { clip-path: inset(0 100% 0 0); opacity: 0; }
+  24% { clip-path: inset(0 100% 0 0); opacity: 1; }
+  74%, 100% { clip-path: inset(0 0 0 0); opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .knowledge-idea-motion .knowledge-idea-art {
+    animation: none !important;
+    clip-path: none !important;
+    opacity: 1 !important;
+  }
+  .knowledge-home .knowledge-idea-toggle { display: none !important; }
+}
