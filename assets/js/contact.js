@@ -6,6 +6,13 @@
   var service = form.querySelector('[name="servicio"]');
   var message = form.querySelector('[name="mensaje"]');
   var help = document.getElementById("contact-message-help");
+  var submitButton = form.querySelector('button[type="submit"]');
+  var defaultSubmitLabel = submitButton ? submitButton.textContent : "";
+  var origin = form.querySelector('[name="origen"]');
+  if (origin && typeof window.atiemppoContactOrigin === "function") origin.value = window.atiemppoContactOrigin();
+  var brunoLinks = Array.prototype.map.call(document.querySelectorAll(".bruno-link"), function (link) {
+    return { link: link, href: link.href };
+  });
   var hints = en ? {
     "profe-bruno": "What task would you like to improve? Tell us where you are starting.",
     "acompanamiento-ia": "What does your team do today, and what would you like to improve?",
@@ -46,6 +53,23 @@
       var hint = hints[service.value] || defaultHint;
       if (message) message.placeholder = hint;
       if (help) help.textContent = hint;
+      var requestLabels = en ? {
+        "conferencias": "Enquire about a specialized talk",
+        "taller-equipo": "Request a workshop proposal",
+        "acompanamiento-ia": "Request specialized team support"
+      } : {
+        "conferencias": "Consultar una conferencia especializada",
+        "taller-equipo": "Solicitar propuesta de workshop",
+        "acompanamiento-ia": "Solicitar acompañamiento especializado"
+      };
+      if (submitButton) submitButton.textContent = requestLabels[service.value] || defaultSubmitLabel;
+      brunoLinks.forEach(function (entry) {
+        if (!service.value) { entry.link.href = entry.href; return; }
+        var label = service.options[service.selectedIndex].text;
+        var url = new URL(entry.href);
+        url.searchParams.set("text", en ? "Hi Bruno, I am interested in " + label + ". I would like to discuss the scope and arrange a meeting." : "Hola Bruno, me interesa " + label + ". Quiero conocer el alcance y coordinar una reunión.");
+        entry.link.href = url.href;
+      });
       updateLanguageLink();
     }
     updateHint();
@@ -55,6 +79,7 @@
   }
   // Preserve the receiver's mensaje contract and the visitor's own text.
   form.addEventListener("formdata", function (event) {
+    if (typeof window.atiemppoContactOrigin === "function") event.formData.set("origen", window.atiemppoContactOrigin());
     if (!service || !service.value) return;
     var label = service.options[service.selectedIndex].text;
     event.formData.set("mensaje", (en ? "Service: " : "Servicio: ") + label + "\n\n" + (event.formData.get("mensaje") || ""));

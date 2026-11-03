@@ -1,0 +1,71 @@
+{% assign ec = site.data.experiences[include.lang] %}
+{% if include.lang == 'en' %}
+## Learning and workshops available by proposal
+
+{{ ec.hero_title }} {{ ec.hero_emphasis }}
+{{ ec.hero_lead }}
+{{ ec.intro }}
+
+Compare the learning experiences: https://atiemppo.com{{ ec.prefix }}/experiencias/
+Each format can be commissioned separately. The proposal defines the scope; this is not a dated open-enrolment course catalogue.
+{% else %}
+## Formación y talleres vigentes
+
+{{ ec.hero_title }} {{ ec.hero_emphasis }}
+{{ ec.hero_lead }}
+{{ ec.intro }}
+
+Compara las experiencias de formación: https://atiemppo.com{{ ec.prefix }}/experiencias/
+Cada formato puede contratarse por separado. La propuesta define el alcance; este bloque no anuncia un calendario de cursos abiertos.
+{% endif %}
+{% for offer in ec.offers %}
+### {{ offer.label }}
+
+{% if include.lang == 'en' %}Audience{% else %}Para quién{% endif %}: {{ offer.format_audience }}
+{% if include.lang == 'en' %}Activity{% else %}Qué hacemos{% endif %}: {{ offer.format_activity }}
+{% if include.lang == 'en' %}Outcome{% else %}Qué te llevas{% endif %}: {{ offer.format_outcome }}
+{% if include.lang == 'en' %}Information{% else %}Información{% endif %}: https://atiemppo.com{{ ec.prefix }}{{ offer.path }}
+{% if include.lang == 'en' %}Request a proposal{% else %}Solicitar una propuesta{% endif %}: https://atiemppo.com{{ ec.prefix }}/contacto/?servicio={{ offer.service }}
+{% if include.detail %}
+{% if offer.example %}
+#### {{ ec.commercial.example_label }}: {{ offer.example.title }}
+
+{{ ec.commercial.task_label }}: {{ offer.example.task }}
+{{ ec.commercial.delivery_label }}: {{ offer.example.delivery }}
+{{ ec.commercial.example_note }}
+{% endif %}
+{% if include.lang == 'en' %}Agreed deliverables{% else %}Entregas según el alcance{% endif %}:
+{% for takeaway in offer.takeaways %}- {{ takeaway }}
+{% endfor %}
+{% if include.lang == 'en' %}Scope{% else %}Alcance{% endif %}: {{ offer.scope }}
+{% for faq in offer.faq %}
+{{ faq.question }}
+{{ faq.answer }}
+{% endfor %}
+{% endif %}
+{% endfor %}
+{% if ec.commercial %}
+### {{ ec.commercial.title }}
+
+{{ ec.commercial.intro }}
+{% for term in ec.commercial.terms %}
+- {{ term.title }}: {{ term.text }}
+{% endfor %}
+{% for step in ec.commercial.steps %}
+{{ forloop.index }}. {{ step.title }}: {{ step.text }}
+{% endfor %}
+{{ ec.commercial.request_title }}
+{{ ec.commercial.request_intro }}
+{% for item in ec.commercial.request_inputs %}- {{ item }}
+{% endfor %}
+{{ ec.commercial.scope }}
+{% endif %}
+{% if include.lang == 'en' %}Bruno during and after the experience{% else %}Bruno durante y después de la experiencia{% endif %}: {{ ec.bruno_scope }}
+{% if include.detail and ec.evidence %}
+### {{ ec.evidence.title }}
+
+{{ ec.evidence.intro }}
+{% for link in ec.evidence.links %}- {{ link.label }}: https://atiemppo.com{{ link.path }}
+{% endfor %}
+{{ ec.evidence.note }}
+{% endif %}

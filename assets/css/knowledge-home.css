@@ -108,3 +108,11 @@
   .knowledge-about-grid { gap: 16px; }
 }
 @media (prefers-reduced-motion: reduce) { .knowledge-home { scroll-behavior: auto; } }
+
+/* The commercial action stays beside the opening message, before the journeys. */
+.knowledge-home .knowledge-commercial-actions { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 26px; }
+.knowledge-home .knowledge-commercial-actions .btn { min-height: 48px; white-space: normal; }
+@media (max-width: 700px) {
+  .knowledge-home .knowledge-commercial-actions { margin-top: 20px; }
+  .knowledge-home .knowledge-commercial-actions .btn { width: 100%; }
+}

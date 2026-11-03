@@ -1,0 +1,25 @@
+{%- assign commercial_ec = site.data.experiences[include.lang] -%}
+{%- assign commercial = commercial_ec.commercial -%}
+{%- if include.offer -%}
+<section class="experience-section experience-example" id="ejemplo">
+  <div class="container experience-split">
+    <div><p class="eyebrow">{{ commercial.example_label }}</p><h2 class="section-heading">{{ include.offer.example.title }}</h2><p class="experience-note">{{ commercial.example_note }}</p></div>
+    <dl class="experience-example-content"><div><dt>{{ commercial.task_label }}</dt><dd>{{ include.offer.example.task }}</dd></div><div><dt>{{ commercial.delivery_label }}</dt><dd>{{ include.offer.example.delivery }}</dd></div></dl>
+  </div>
+</section>
+{%- endif -%}
+<section class="experience-section experience-evidence" id="trabajo-publico">
+  <div class="container experience-split">
+    <div><p class="eyebrow">{{ commercial_ec.evidence.label }}</p><h2 class="section-heading">{{ commercial_ec.evidence.title }}</h2><p>{{ commercial_ec.evidence.intro }}</p></div>
+    <div><ul class="experience-evidence-links">{% for link in commercial_ec.evidence.links %}<li><a class="experience-link" href="{{ link.path }}">{{ link.label }} →</a></li>{% endfor %}</ul><p class="experience-note">{{ commercial_ec.evidence.note }}</p></div>
+  </div>
+</section>
+<section class="experience-section experience-paper experience-booking" id="como-contratar">
+  <div class="container">
+    <header class="experience-section-heading"><p class="eyebrow">{{ commercial.label }}</p><h2 class="section-heading">{{ commercial.title }}</h2><p>{{ commercial.intro }}</p></header>
+    {% if include.offer %}<div class="experience-terms"><h3>{{ commercial.terms_title }}</h3><dl>{% for term in commercial.terms %}<div><dt>{{ term.title }}</dt><dd>{{ term.text }}</dd></div>{% endfor %}</dl></div>{% endif %}
+    <ol class="experience-booking-steps">{% for step in commercial.steps %}<li><span class="experience-number" aria-hidden="true">0{{ forloop.index }}</span><h3>{{ step.title }}</h3><p>{{ step.text }}</p></li>{% endfor %}</ol>
+    <div class="experience-request"><div><h3>{{ commercial.request_title }}</h3><p>{{ commercial.request_intro }}</p></div><ul>{% for item in commercial.request_inputs %}<li>{{ item }}</li>{% endfor %}</ul></div>
+    <p class="experience-note experience-booking-scope">{{ commercial.scope }}</p>
+  </div>
+</section>
