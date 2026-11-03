@@ -6,7 +6,7 @@
   "cut_id": "2026-11-03-am",
   "calidad_ingesta": {
     "state": "complete",
-    "observation_count": 9,
+    "observation_count": 10,
     "complete": true,
     "fuente": "supabase"
   },
@@ -1058,7 +1058,31 @@
     }
   ],
   "eventos_vigilancia": [],
-  "eventos_resueltos": [],
+  "eventos_resueltos": [
+    {
+      "id": "evt-ee8cb6d46af932e002919050",
+      "corredor": "Bogotá - Villavicencio",
+      "tramo": "Bogotá–Villavicencio, sector Uval: cierre total del sentido Bogotá→Villavicencio para operar el reversible Villavicencio→Bogotá del Plan Retorno, de 15:00 a 22:00 del 2-nov (Coviandina, según autoridades). Carga hacia el Llano: esperar a después de las 22:00.",
+      "municipio": "",
+      "via": "",
+      "km": "",
+      "tipo": "cierre_total",
+      "severidad": "medium",
+      "estado": "unconfirmed",
+      "resumen": "Bogotá–Villavicencio, sector Uval: cierre total del sentido Bogotá→Villavicencio para operar el reversible Villavicencio→Bogotá del Plan Retorno, de 15:00 a 22:00 del 2-nov (Coviandina, según autoridades). Carga hacia el Llano: esperar a después de las 22:00.",
+      "vigente_hasta": "2026-11-03 03:00:00+00",
+      "actualizado_en": "2026-11-02 22:00:00+00",
+      "estado_ubicacion": "parcial",
+      "fuentes": [
+        {
+          "nombre": "Coviandina (X)",
+          "url": "https://x.com/CoviandinaSAS/status/2117334670912233916",
+          "tier": "1"
+        }
+      ],
+      "valid_from": "2026-11-02 20:00:00+00"
+    }
+  ],
   "historial_corredores": [],
   "cambios_dia": [],
   "fuentes": [
