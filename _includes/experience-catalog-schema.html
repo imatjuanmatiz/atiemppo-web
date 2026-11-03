@@ -1,0 +1,22 @@
+{%- assign catalog = site.data.experiences[include.lang] -%}
+{
+  "@type": "ItemList",
+  "name": {{ catalog.title | jsonify }},
+  "numberOfItems": {{ catalog.offers.size }},
+  "itemListElement": [
+    {% for offer in catalog.offers %}{
+      "@type": "ListItem", "position": {{ forloop.index }},
+      "item": {
+        "@type": "Service",
+        "@id": "https://atiemppo.com{{ catalog.prefix }}{{ offer.path }}#service",
+        "name": {{ offer.seo_title | default: offer.label | jsonify }},
+        "url": "https://atiemppo.com{{ catalog.prefix }}{{ offer.path }}",
+        "description": {{ offer.summary | jsonify }},
+        "audience": {"@type": "Audience", "audienceType": {{ offer.format_audience | jsonify }}},
+        "serviceOutput": {"@type": "Thing", "description": {{ offer.format_outcome | jsonify }}},
+        "provider": {"@type": "Organization", "@id": "https://atiemppo.com/#organization", "name": "ATIEMPPO S.A.S.", "url": "https://atiemppo.com/"},
+        "availableChannel": {"@type": "ServiceChannel", "serviceUrl": "https://atiemppo.com{{ catalog.prefix }}/contacto/?servicio={{ offer.service }}"}
+      }
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ]
+}

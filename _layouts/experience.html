@@ -1,5 +1,6 @@
 {% assign ec = site.data.experiences[page.lang] %}
 {% assign detail = ec.offers | where: 'key', page.experience | first %}
+{% if page.experience == 'personal' %}{% assign detail = ec.personal_offer %}{% endif %}
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
 <head>{% include experience-head.html %}</head>
@@ -31,8 +32,9 @@
       <div><ul class="experience-takeaways">{% for item in detail.takeaways %}<li>{{ item }}</li>{% endfor %}</ul><p class="experience-note">{{ detail.scope }}</p><aside class="experience-related"><h3>{{ detail.related_title }}</h3><p>{{ detail.related_text }}</p><a class="experience-link" href="{% unless detail.related_lang == 'es' and page.lang == 'en' %}{{ ec.prefix }}{% endunless %}{{ detail.related_path }}"{% if detail.related_lang %} hreflang="{{ detail.related_lang }}"{% endif %}>{{ detail.related_label }} →</a></aside></div>
     </div>
   </section>
+  {% include experience-commercial.html lang=page.lang offer=detail %}
   <section class="experience-section experience-paper" id="preguntas-frecuentes"><div class="container experience-split"><h2 class="section-heading">{{ ec.faq_title }}</h2><div class="experience-faq">{% for faq in detail.faq %}<details><summary>{{ faq.question }}</summary><p>{{ faq.answer }}</p></details>{% endfor %}</div></div></section>
-  <section class="experience-section experience-close"><div class="container"><p class="eyebrow">{{ ec.next }}</p><h2 class="section-heading">{{ detail.contact_title }}</h2><p>{{ detail.contact_body }}</p><div class="hero-actions"><a class="btn btn-primary" href="{{ ec.prefix }}/contacto/?servicio={{ detail.service }}">{{ ec.write }}</a><a class="experience-link" href="mailto:juanmatiz@atiemppo.co">juanmatiz@atiemppo.co →</a></div></div></section>
+  <section class="experience-section experience-close"><div class="container"><p class="eyebrow">{{ ec.next }}</p><h2 class="section-heading">{{ detail.contact_title }}</h2><p>{{ detail.contact_body }}</p><div class="hero-actions"><a class="btn btn-primary" href="{{ ec.prefix }}/contacto/?servicio={{ detail.service }}">{{ detail.cta }}</a><a class="experience-link" href="mailto:juanmatiz@atiemppo.co">juanmatiz@atiemppo.co →</a></div></div></section>
   <nav class="experience-siblings container" aria-label="{{ ec.more_label }}">{% for offer in ec.offers %}<a href="{{ ec.prefix }}{{ offer.path }}"{% if offer.key == page.experience %} aria-current="page"{% endif %}>{{ offer.label }}</a>{% endfor %}</nav>
 </main>
 {% include footer.html %}
