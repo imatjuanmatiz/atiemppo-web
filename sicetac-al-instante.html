@@ -89,7 +89,6 @@ section[id]{scroll-margin-top:86px}
 .hero h1 .ul::after{content:"";position:absolute;left:0;right:0;bottom:5px;height:11px;background:var(--green);opacity:.35;z-index:-1;border-radius:3px}
 .hero-sub{max-width:560px;margin:24px 0 0;font-size:18px;line-height:1.6;color:var(--muted)}
 .hero-sub strong{color:var(--navy)}
-.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
 .stats{display:flex;gap:26px;margin-top:42px;flex-wrap:wrap}
 .stat .n{font-family:var(--display);font-weight:700;font-size:28px;color:var(--navy)}
 .stat .l{font-family:var(--mono);font-size:11.5px;color:var(--muted-3);text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
@@ -189,7 +188,6 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:40px 28px}
   .site-nav{padding:0 18px}
   .section{padding:64px 0}
   .hero{padding-top:48px}
-  .hero-actions .btn{width:100%}
   .stats{gap:20px}
   .stat-div{display:none}
   .steps{grid-template-columns:1fr}
@@ -212,6 +210,7 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:40px 28px}
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="/assets/css/site-foundation.css?v=20261021"/>
 <link rel="alternate" hreflang="es" href="https://atiemppo.com/sicetac-al-instante/"/><link rel="alternate" hreflang="en" href="https://atiemppo.com/en/sicetac-al-instante/"/>
+<link rel="stylesheet" href="/assets/css/sicetac-access.css"/>
 </head>
 <body>
 {% include header.html translation="/en/sicetac-al-instante/" %}
@@ -225,12 +224,8 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:40px 28px}
       <div>
         <div class="badge"><span class="dot"></span> SICETAC · consulta rápida</div>
         <h1>SICETAC <span class="ul">al Instante</span> para consultar y decidir.</h1>
-        <p class="hero-sub">Consulta referencias de costos de transporte desde tu <strong>cuenta gratuita ATIEMPPO</strong>. Trabaja con rutas, configuraciones y horas logísticas; vincula WhatsApp o autoriza a tu agente de IA desde el portal.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="{{ site.data.portal_offer.register_url }}">Crear mi cuenta gratuita →</a>
-          <a class="btn btn-dark" href="{{ site.data.portal_offer.guides_url }}">Ver las guías del portal</a>
-          <a class="btn btn-ghost" href="#modelo">Ver el modelo</a>
-        </div>
+        <p class="hero-sub">Consulta los costos de una ruta y revisa el corte vial. También puedes consultar SICETAC por WhatsApp o entrar al portal ATIEMPPO.</p>
+        {% include sicetac-access.html lang="es" %}
         <div class="stats">
           <div class="stat"><div class="n">Ruta</div><div class="l">origen a destino</div></div>
           <div class="stat-div"></div>

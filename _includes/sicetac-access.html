@@ -1,0 +1,21 @@
+{% if include.lang == 'en' %}
+  {% assign access_label = 'Access SICETAC and road updates' %}
+  {% assign web_label = 'SICETAC al Instante on the web' %}
+  {% assign roads_label = 'Road updates on the web' %}
+  {% assign roads_url = '/en/novedades-en-vias/' %}
+  {% assign whatsapp_label = 'Ask SICETAC on WhatsApp' %}
+  {% assign portal_label = 'Open the ATIEMPPO portal' %}
+{% else %}
+  {% assign access_label = 'Accesos a SICETAC y novedades en vías' %}
+  {% assign web_label = 'SICETAC al Instante en web' %}
+  {% assign roads_label = 'Novedades en Vías en web' %}
+  {% assign roads_url = '/novedades-en-vias/' %}
+  {% assign whatsapp_label = 'Consultar SICETAC por WhatsApp' %}
+  {% assign portal_label = 'Ir al portal ATIEMPPO' %}
+{% endif %}
+<nav class="sicetac-access" aria-label="{{ access_label }}">
+  <a class="sicetac-access-primary" href="https://sicealinstante.vercel.app/" hreflang="es">{{ web_label }} <span aria-hidden="true">↗</span></a>
+  <a href="{{ roads_url }}">{{ roads_label }} <span aria-hidden="true">→</span></a>
+  <a href="https://wa.me/573134503694?text=Hola%2C%20quiero%20consultar%20SICETAC%20al%20Instante.%20Mi%20ruta%20es%3A">{{ whatsapp_label }} <span aria-hidden="true">↗</span></a>
+  <a href="https://clientes.atiemppo.com/clientes" hreflang="es">{{ portal_label }} <span aria-hidden="true">↗</span></a>
+</nav>

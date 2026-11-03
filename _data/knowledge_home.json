@@ -136,24 +136,16 @@
       {
         "key": "sicetac",
         "name": "SICETAC al Instante",
-        "url": "/sicetac-al-instante/",
+        "url": "https://sicealinstante.vercel.app/",
         "how_url": "/blog/sicetac-al-instante-conectar-agente-ia/",
         "case_url": "/contacto/?servicio=sesion-red",
         "description": "Referencias de costos para una ruta de carga en Colombia.",
         "example": "Explorar una ruta Bogotá → Barranquilla y sus condiciones.",
-        "access": "Consulta las condiciones de acceso en la aplicación.",
-        "destination_language": "es"
-      },
-      {
-        "key": "atica",
-        "name": "ATICA",
-        "url": "https://clientes.atiemppo.com/clientes",
-        "how_url": "/blog/sicetac-instant-atica-red-transporte/",
-        "case_url": "/contacto/?servicio=indice-red",
-        "description": "Un portal para trabajar con tus rutas, tus valores y las referencias disponibles.",
-        "example": "Comparar las rutas de tu red de transporte.",
-        "access": "Requiere cuenta. El portal informa sus condiciones y cupos vigentes.",
-        "destination_language": "es"
+        "access": "Para simular con tus propios kilómetros y peajes, usa SICETAC Lab.",
+        "destination_language": "es",
+        "action": "Consultar una ruta",
+        "lab_url": "https://sicetac-lab.vercel.app/",
+        "lab_action": "Abrir SICETAC Lab · cálculo manual"
       },
       {
         "key": "vias",
@@ -164,6 +156,18 @@
         "description": "Información vial por corte, con fecha y fuentes para revisar.",
         "example": "Consultar las novedades de un corredor y su evidencia.",
         "access": "La ausencia de una novedad no confirma que una vía esté abierta.",
+        "destination_language": "es",
+        "action": "Ver el corte vial"
+      },
+      {
+        "key": "atica",
+        "name": "ATICA",
+        "url": "https://clientes.atiemppo.com/clientes",
+        "how_url": "/blog/sicetac-instant-atica-red-transporte/",
+        "case_url": "/contacto/?servicio=indice-red",
+        "description": "Un portal para trabajar con tus rutas, tus valores y las referencias disponibles.",
+        "example": "Comparar las rutas de tu red de transporte.",
+        "access": "Requiere cuenta. El portal informa sus condiciones y cupos vigentes.",
         "destination_language": "es"
       },
       {
@@ -318,13 +322,28 @@
       {
         "key": "sicetac",
         "name": "SICETAC al Instante",
-        "url": "/en/sicetac-al-instante/",
+        "url": "https://sicealinstante.vercel.app/",
         "how_url": "/en/blog/sicetac-al-instante-conectar-agente-ia/",
         "case_url": "/en/contacto/?servicio=sesion-red",
         "description": "Cost references for a freight route in Colombia.",
         "example": "Explore a Bogotá → Barranquilla route and its conditions.",
-        "access": "Check the access conditions in the application. The portal is in Spanish.",
-        "destination_language": "en"
+        "access": "Use SICETAC Lab to enter your own distances and tolls. Both SICETAC tools are in Spanish.",
+        "destination_language": "es",
+        "action": "Look up a route",
+        "lab_url": "https://sicetac-lab.vercel.app/",
+        "lab_action": "Open SICETAC Lab · manual calculation"
+      },
+      {
+        "key": "vias",
+        "name": "Novedades en Vías",
+        "url": "/en/novedades-en-vias/",
+        "how_url": "/en/blog/agentes-ia-monitoreo-logistico-vias/",
+        "case_url": "/en/contacto/?servicio=agentes",
+        "description": "Road information by update, with dates and sources to review.",
+        "example": "Check a corridor’s updates and supporting evidence.",
+        "access": "An absent update does not confirm that a road is open. Source notes may be in Spanish.",
+        "destination_language": "en",
+        "action": "View road updates"
       },
       {
         "key": "atica",
@@ -336,17 +355,6 @@
         "example": "Compare the routes in your transport network.",
         "access": "An account is required. The Spanish-language portal shows current terms and allowances.",
         "destination_language": "es"
-      },
-      {
-        "key": "vias",
-        "name": "Novedades en Vías",
-        "url": "/en/novedades-en-vias/",
-        "how_url": "/en/blog/agentes-ia-monitoreo-logistico-vias/",
-        "case_url": "/en/contacto/?servicio=agentes",
-        "description": "Road information by update, with dates and sources to review.",
-        "example": "Check a corridor’s updates and supporting evidence.",
-        "access": "An absent update does not confirm that a road is open. Source notes may be in Spanish.",
-        "destination_language": "en"
       },
       {
         "key": "reportes",
