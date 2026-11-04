@@ -1,1183 +1,945 @@
 {
-  "schema_version": "1.4",
+  "schema_version": "1.3",
+  "fuente_datos": "vias_watch:watch.event_observations",
   "modo": "operativo",
   "draft": false,
-  "fuente_datos": "supabase:radar.v_novedades_vigentes",
-  "cut_id": "2026-11-04-am",
+  "cut_id": "2026-11-04-md",
+  "revision_id": "rev-e82e4ce8c859e4d626b5c4eb2bffa576",
   "calidad_ingesta": {
     "state": "complete",
-    "observation_count": 9,
+    "revision_id": "rev-e82e4ce8c859e4d626b5c4eb2bffa576",
+    "report_sha256": "8e640bf21566e55b4a9083c02df319d2d3186e60a41524d73bf317e044053804",
+    "parser_version": "roads-2.0.0",
+    "detail_rows": 5,
+    "signal_rows": 5,
+    "observation_count": 5,
+    "duplicate_rows": 0,
     "complete": true,
-    "fuente": "supabase"
+    "evidencia_del_dia": 2,
+    "evidencia_heredada_o_sin_fecha": 3
   },
-  "revision_id": null,
   "zona_horaria": "America/Bogota",
-  "nota_vigencia": "Solo novedades vigentes: cada una tiene fecha de vencimiento y sale sola del listado cuando vence o se resuelve.",
+  "nota_vigencia": "La fecha del corte acredita la actualización del reporte. Cada punto conserva la fecha de su evidencia; las referencias heredadas o sin enlace directo requieren verificación. El resumen editorial reproduce el reporte y no confirma por sí solo el estado actual.",
   "fecha": "2026-11-04",
-  "ventana": "AM",
-  "hora": "06:57",
-  "generado_en": "2026-11-04T06:57:26-05:00",
-  "que_cambio": [],
+  "ventana": "MD",
+  "hora": "15:36",
+  "generado_en": "2026-11-04T15:36:00",
+  "artefacto_fuente": "2026-11-04-editor-eldato-version-vias-colombia-md.md",
+  "que_cambio": [
+    {
+      "corredor": "Sisga–Guateque, Quebrada Hondo",
+      "antes": "sin registro en el listado AM",
+      "ahora": "paso controlado cada 20 minutos por mantenimiento de talud",
+      "cambio": "nueva",
+      "evidencia": "INVÍAS 767, registro 5183464; #767 10:35 https://x.com/numeral767/status/2118004155822268904"
+    }
+  ],
   "notas_cambio": [],
   "listado": [
     {
       "icono": "🟠",
-      "corredor": "Transversal del Sisga",
-      "km": "42+0000 – 42+0800",
-      "estado": "Transversal del Sisga, Guateque–El Secreto, Santa María PR 42+0000–42+0800: paso controlado a un carril por pérdida de banca, sin ruta alterna",
-      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
+      "corredor": "Sisga–Guateque–El Secreto",
+      "km": "",
+      "estado": "paso controlado — Quebrada Hondo y Santa María — prever espera y verificar antes de salir.",
+      "fuente": ""
     },
     {
       "icono": "🟠",
-      "corredor": "CERRITO (SANTANDER)",
-      "km": "58+0270 – 58+0390",
-      "estado": "La Palmera–Presidente, Cerrito (Santander) PR 58+0270–58+0390: cierre del carril derecho, paso alternado uno a uno; restringido el paso a vehículos de categoría superior a C3 y peso bruto mayor a 16 t; alterna Duitama–Bucaramanga–Pamplona–Cúcuta",
-      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://x.com/numeral767/status/2114869836136218982"
-    },
-    {
-      "icono": "🟡",
-      "corredor": "BOGOTA - BUGA / BOGOTA - MEDIA CANOA",
-      "km": "37+0200 – 41+0800",
-      "estado": "Girardot–Fusagasugá (Bogotá–Girardot), Túnel Sumapaz, PR 37+0200 a 41+0800: cierre total nocturno por mantenimiento de subestaciones, 22:00 a 05:00 las noches del 3, 4, 5, 10, 11 y 12-nov-2026; la concesión Vía Sumapaz habilita pasos alternados por Nariz del Diablo (INVÍAS 767).",
-      "fuente": "https://x.com/numeral767/status/2117848435638391191 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
-    },
-    {
-      "icono": "🟡",
-      "corredor": "Medellín - Buga",
-      "km": "78+0870 – 79+0150",
-      "estado": "La Victoria–Cartago (Valle del Cauca), PR 78+0870 al 79+0150, glorieta Los Almendros: cierre parcial por obra, permiso ampliado hasta el 12-abr-2027, sin ruta alterna",
-      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://x.com/numeral767/status/2114828901897961801"
-    },
-    {
-      "icono": "🟡",
-      "corredor": "BOGOTA - BUGA",
-      "km": "4+000",
-      "estado": "La Tebaida–Calarcá, sector La Paila, PR 4+0000 (Quindío): paso a un carril por mantenimiento vial, ambos sentidos",
-      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://x.com/numeral767/status/2115631714244673963"
+      "corredor": "La Palmera–Presidente",
+      "km": "",
+      "estado": "paso alternado con restricción de carga — Cerrito — revisar configuración y peso antes del viaje.",
+      "fuente": ""
     },
     {
       "icono": "🟠",
-      "corredor": "Santa Marta - Paraguachón",
-      "km": "37+700 – 37+700",
-      "estado": "Santa Marta–Palomino Km 37+700, puente Mendihuaca: paso a un carril por puente provisional del Ejército tras colapso estructural; alterna Zona Bananera–Fundación–Bosconia–Valledupar",
-      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://x.com/numeral767/status/2114094954322784450 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
-    },
-    {
-      "icono": "🟡",
-      "corredor": "Sin ubicar",
-      "km": "53+0680 – 53+0780",
-      "estado": "San Gil–Bucaramanga (Santander), peaje Los Curos, PR 53+0680 a 53+0780: cierre parcial en ambas calzadas por limpieza y pintura de la estructura del peaje, del 3-nov 06:00 al 14-nov-2026 23:00 (Resolución 5350 del 2-nov-2026); sin ruta alterna (INVÍAS 767).",
-      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://x.com/numeral767/status/2117665327542919571"
+      "corredor": "Santa Marta–Palomino",
+      "km": "",
+      "estado": "paso a un carril — puente Mendihuaca — prever demoras y consultar el estado antes de salir.",
+      "fuente": ""
     },
     {
       "icono": "🟠",
-      "corredor": "Transversal del Sisga",
-      "km": "68+0000",
-      "estado": "Transversal del Sisga, Guateque–El Secreto, San Luis de Gaceno PR 68+0000, ambos sentidos: paso a un carril por pérdida de banca, sin ruta alterna",
-      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0"
-    },
-    {
-      "icono": "🟡",
-      "corredor": "Bogotá - Costa Norte",
-      "km": "14+200 – 19+450",
-      "estado": "Ruta del Sol Sector 3, RN 4518 Fundación–Ye de Ciénaga (Magdalena), K14+200 a K19+450: PMT con cierres parciales móviles del 27-oct-2026 al 25-ene-2027",
-      "fuente": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0 · https://x.com/rutadelsoltram3/status/2115133560571281787"
+      "corredor": "Bogotá–Girardot",
+      "km": "",
+      "estado": "cierre nocturno programado de la calzada del túnel — Sumapaz — planear el paso alternado por Nariz del Diablo entre 22:00 y 05:00.",
+      "fuente": ""
     }
   ],
-  "senales_tempranas": [],
+  "senales_tempranas": [
+    {
+      "tramo": "Mediacanoa–Ansermanuevo, PR 73+0000 a PR 73+0500",
+      "senal": "cierre total programado por evento deportivo el 5 de noviembre, 07:30–13:30",
+      "fuente": "INVÍAS 767, registro 5183864",
+      "vigilar": "es una restricción futura, no cierre vigente al corte"
+    },
+    {
+      "tramo": "Valle del Cauca",
+      "senal": "#767 informa cierre total por evento deportivo a las 14:54",
+      "fuente": "#767 https://x.com/numeral767/status/2118069334723416094",
+      "vigilar": "el monitor no precisa el tramo de ese aviso; no se equipara al registro de mañana"
+    },
+    {
+      "tramo": "Bogotá–Girardot, túnel Guillermo León Valencia",
+      "senal": "#767 lo marca habilitado a las 10:21; el registro anterior de cierre no aparece en la captura",
+      "fuente": "#767 https://x.com/numeral767/status/2118000709123580202",
+      "vigilar": "el monitor advierte que ese aviso no confirma reapertura; la ausencia del registro tampoco la demuestra"
+    },
+    {
+      "tramo": "Bogotá–Villavicencio",
+      "senal": "PMT con pasos alternados y reducción de carriles a las 13:47 y 15:15",
+      "fuente": "Coviandina https://x.com/CoviandinaSAS/status/2118074734021587023",
+      "vigilar": "el mismo PMT aparece en ambos partes; no acredita cambio de estado"
+    },
+    {
+      "tramo": "Red nacional",
+      "senal": "restricciones de carga de 3,4 t o más previstas para el puente festivo desde el 7 de noviembre",
+      "fuente": "INVÍAS 767, registro 2613740 y otros",
+      "vigilar": "son restricciones futuras sujetas a horarios y tramos, no una novedad vigente general"
+    }
+  ],
   "alertas_inmediatas": [],
+  "salud_fuentes": {
+    "estado_general": "degradada",
+    "ventanas_esperadas": [
+      "AM",
+      "MD"
+    ],
+    "ventanas_recibidas": [
+      "MD"
+    ],
+    "eventos_confirmados": 0,
+    "eventos_vigilancia": 5,
+    "pendientes_georreferencia": 5,
+    "fuentes": [
+      {
+        "id": "src-2a44c26eacd2742e8c0a601e",
+        "nombre": "INVÍAS 767, registro 5183464; #767 10:35 https://x.com/numeral767/status/2118004155822268904",
+        "estado": "referenciada_en_reporte",
+        "ultima_consulta": "2026-11-04T15:36:00",
+        "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
+      },
+      {
+        "id": "src-a198d0f39cc1c1a777ee61b9",
+        "nombre": "INVÍAS 767, registro 5159064, evidencia original 2026-10-17; recaptura 15:34",
+        "estado": "nombrada_sin_enlace_directo",
+        "ultima_consulta": "2026-11-04T15:36:00",
+        "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
+      },
+      {
+        "id": "src-5c02243b45791303fdf3a210",
+        "nombre": "INVÍAS 767, registro 5169464, evidencia original 2026-10-23; recaptura 15:34",
+        "estado": "nombrada_sin_enlace_directo",
+        "ultima_consulta": "2026-11-04T15:36:00",
+        "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
+      },
+      {
+        "id": "src-4ed5ba6b28cb1f98c1984c9d",
+        "nombre": "INVÍAS 767, registro 5183064; Vía Sumapaz 11:41 https://x.com/ViaSumapaz/status/2118020886846398504",
+        "estado": "referenciada_en_reporte",
+        "ultima_consulta": "2026-11-04T15:36:00",
+        "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
+      },
+      {
+        "id": "src-23ba720fd9c9de756fe1215f",
+        "nombre": "INVÍAS 767, registro 5171465, evidencia original 2026-10-26; recaptura 15:34",
+        "estado": "nombrada_sin_enlace_directo",
+        "ultima_consulta": "2026-11-04T15:36:00",
+        "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
+      }
+    ]
+  },
   "acciones_sugeridas": [],
-  "eventos_confirmados": [
+  "eventos_confirmados": [],
+  "eventos_vigilancia": [
     {
-      "id": "evt-1381d4e0f67b2a5de7b5a83f",
-      "corredor": "Transversal del Sisga",
-      "tramo": "Transversal del Sisga, Guateque–El Secreto, Santa María PR 42+0000–42+0800: paso controlado a un carril por pérdida de banca, sin ruta alterna",
-      "municipio": "SANTA MARÍA (BOYACÁ)",
-      "via": "Guateque–El Secreto",
-      "km": "42+0000 – 42+0800",
+      "id": "evt-7ac0852cf79d4802a7e5",
+      "corredor": "Santa Marta–Palomino",
+      "tramo": "puente Mendihuaca, km 37+700",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
       "tipo": "paso_controlado",
-      "severidad": "high",
-      "estado": "active",
-      "resumen": "Transversal del Sisga, Guateque–El Secreto, Santa María PR 42+0000–42+0800: paso controlado a un carril por pérdida de banca, sin ruta alterna",
-      "vigente_hasta": "2026-11-04T22:00:00+00:00",
-      "actualizado_en": "2026-11-04T12:00:00+00:00",
-      "estado_ubicacion": "ubicada",
+      "severidad": "medium",
+      "estado": "uncertain",
+      "resumen": "paso a un carril por puente provisional",
+      "impacto_operativo": "",
+      "confianza": 0.35,
+      "actualizado_en": "2026-11-04T15:36:00",
+      "estado_reportado": "active",
+      "fecha_evidencia": "2026-10-17",
+      "fuente_publicada_en": "2026-10-17T04:41:00",
+      "precision_fecha_evidencia": "minute",
+      "vigencia_evidencia": "inherited",
+      "base_confirmacion": "requires_source_verification",
+      "identidad": "seguimiento_de_punto_no_incidente_unico",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
       "fuentes": [
         {
-          "nombre": "INVÍAS 767 ArcGIS (reverificación 06:50)",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
+          "id": "src-a198d0f39cc1c1a777ee61b9",
+          "nombre": "INVÍAS 767, registro 5159064, evidencia original 2026-10-17; recaptura 15:34",
+          "url": "",
+          "fortaleza": "named_unlinked",
+          "publicada_en": "2026-10-17T04:41:00",
+          "consultada_en": "2026-11-04T15:36:00",
+          "evidencia": "paso a un carril por puente provisional"
         }
       ]
     },
     {
-      "id": "evt-5bce6f2bffc9ccb833dcc484",
-      "corredor": "Sin corredor asignado",
-      "tramo": "La Palmera–Presidente, Cerrito (Santander) PR 58+0270–58+0390: cierre del carril derecho, paso alternado uno a uno; restringido el paso a vehículos de categoría superior a C3 y peso bruto mayor a 16 t; alterna Duitama–Bucaramanga–Pamplona–Cúcuta",
-      "municipio": "CERRITO (SANTANDER)",
-      "via": "La Palmera–Presidente",
-      "km": "58+0270 – 58+0390",
+      "id": "evt-16be93d0006d5240eedd",
+      "corredor": "Sisga–Guateque–El Secreto",
+      "tramo": "Quebrada Hondo, Machetá, km 15+300",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
       "tipo": "paso_controlado",
-      "severidad": "high",
-      "estado": "active",
-      "resumen": "La Palmera–Presidente, Cerrito (Santander) PR 58+0270–58+0390: cierre del carril derecho, paso alternado uno a uno; restringido el paso a vehículos de categoría superior a C3 y peso bruto mayor a 16 t; alterna Duitama–Bucaramanga–Pamplona–Cúcuta",
-      "vigente_hasta": "2026-11-04T22:00:00+00:00",
-      "actualizado_en": "2026-11-04T12:00:00+00:00",
-      "estado_ubicacion": "parcial",
+      "severidad": "medium",
+      "estado": "uncertain",
+      "resumen": "paso controlado cada 20 minutos por mantenimiento de talud; sin ruta alterna",
+      "impacto_operativo": "",
+      "confianza": 0.35,
+      "actualizado_en": "2026-11-04T15:36:00",
+      "estado_reportado": "active",
+      "fecha_evidencia": "2026-11-04",
+      "fuente_publicada_en": "2026-11-04T10:21:00",
+      "precision_fecha_evidencia": "minute",
+      "vigencia_evidencia": "same_day",
+      "base_confirmacion": "requires_source_verification",
+      "identidad": "seguimiento_de_punto_no_incidente_unico",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
       "fuentes": [
         {
-          "nombre": "INVÍAS 767 ArcGIS (reverificación 06:50)",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS #767 (X)",
-          "url": "https://x.com/numeral767/status/2114869836136218982",
-          "tier": "1"
+          "id": "src-2a44c26eacd2742e8c0a601e",
+          "nombre": "INVÍAS 767, registro 5183464; #767 10:35 https://x.com/numeral767/status/2118004155822268904",
+          "url": "https://x.com/numeral767/status/2118004155822268904",
+          "fortaleza": "social",
+          "publicada_en": "2026-11-04T10:21:00",
+          "consultada_en": "2026-11-04T15:36:00",
+          "evidencia": "paso controlado cada 20 minutos por mantenimiento de talud; sin ruta alterna"
         }
       ]
     },
     {
-      "id": "evt-6c5896b7389337fd19114244",
-      "corredor": "BOGOTA - BUGA / BOGOTA - MEDIA CANOA",
-      "tramo": "Girardot–Fusagasugá (Bogotá–Girardot), Túnel Sumapaz, PR 37+0200 a 41+0800: cierre total nocturno por mantenimiento de subestaciones, 22:00 a 05:00 las noches del 3, 4, 5, 10, 11 y 12-nov-2026; la concesión Vía Sumapaz habilita pasos alternados por Nariz del Diablo (INVÍAS 767).",
-      "municipio": "",
-      "via": "4005",
-      "km": "37+0200 – 41+0800",
-      "tipo": "obra_programada",
+      "id": "evt-ba03841288d2db233f2a",
+      "corredor": "Sisga–Guateque–El Secreto",
+      "tramo": "Santa María, PR 42+0000 a PR 42+0800",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
+      "tipo": "paso_controlado",
+      "severidad": "medium",
+      "estado": "uncertain",
+      "resumen": "paso controlado a un carril por pérdida de banca; sin ruta alterna",
+      "impacto_operativo": "",
+      "confianza": 0.35,
+      "actualizado_en": "2026-11-04T15:36:00",
+      "estado_reportado": "active",
+      "fecha_evidencia": "2026-10-23",
+      "fuente_publicada_en": null,
+      "precision_fecha_evidencia": "date",
+      "vigencia_evidencia": "inherited",
+      "base_confirmacion": "requires_source_verification",
+      "identidad": "seguimiento_de_punto_no_incidente_unico",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
+      "fuentes": [
+        {
+          "id": "src-5c02243b45791303fdf3a210",
+          "nombre": "INVÍAS 767, registro 5169464, evidencia original 2026-10-23; recaptura 15:34",
+          "url": "",
+          "fortaleza": "named_unlinked",
+          "publicada_en": null,
+          "consultada_en": "2026-11-04T15:36:00",
+          "evidencia": "paso controlado a un carril por pérdida de banca; sin ruta alterna"
+        }
+      ]
+    },
+    {
+      "id": "evt-ddcb7a03f844615ab069",
+      "corredor": "Bogotá–Girardot",
+      "tramo": "Túnel Sumapaz, PR 37+0200 a PR 41+0800",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
+      "tipo": "otro",
       "severidad": "low",
-      "estado": "active",
-      "resumen": "Girardot–Fusagasugá (Bogotá–Girardot), Túnel Sumapaz, PR 37+0200 a 41+0800: cierre total nocturno por mantenimiento de subestaciones, 22:00 a 05:00 las noches del 3, 4, 5, 10, 11 y 12-nov-2026; la concesión Vía Sumapaz habilita pasos alternados por Nariz del Diablo (INVÍAS 767).",
-      "vigente_hasta": "2026-11-13T10:00:00+00:00",
-      "actualizado_en": "2026-11-04T12:00:00+00:00",
-      "estado_ubicacion": "parcial",
+      "estado": "uncertain",
+      "resumen": "cierre de calzada por mantenimiento; la concesión informa pasos alternados por Nariz del Diablo",
+      "impacto_operativo": "",
+      "confianza": 0.35,
+      "actualizado_en": "2026-11-04T15:36:00",
+      "estado_reportado": "uncertain",
+      "fecha_evidencia": "2026-11-04",
+      "fuente_publicada_en": null,
+      "precision_fecha_evidencia": "date",
+      "vigencia_evidencia": "same_day",
+      "base_confirmacion": "requires_source_verification",
+      "identidad": "seguimiento_de_punto_no_incidente_unico",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
       "fuentes": [
         {
-          "nombre": "INVÍAS #767 (X): cierre total por mantenimiento PR 37+0200–41+0800 (Tolima)",
-          "url": "https://x.com/numeral767/status/2117848435638391191",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS (objectid 5183064)",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
+          "id": "src-4ed5ba6b28cb1f98c1984c9d",
+          "nombre": "INVÍAS 767, registro 5183064; Vía Sumapaz 11:41 https://x.com/ViaSumapaz/status/2118020886846398504",
+          "url": "https://x.com/ViaSumapaz/status/2118020886846398504",
+          "fortaleza": "social",
+          "publicada_en": null,
+          "consultada_en": "2026-11-04T15:36:00",
+          "evidencia": "cierre de calzada por mantenimiento; la concesión informa pasos alternados por Nariz del Diablo"
         }
       ]
     },
     {
-      "id": "evt-7473ed18f510242d3127d41e",
-      "corredor": "Medellín - Buga",
-      "tramo": "La Victoria–Cartago (Valle del Cauca), PR 78+0870 al 79+0150, glorieta Los Almendros: cierre parcial por obra, permiso ampliado hasta el 12-abr-2027, sin ruta alterna",
-      "municipio": "CARTAGO (VALLE DEL CAUCA), LA VICTORIA (VALLE DEL CAUCA)",
-      "via": "La Victoria–Cartago",
-      "km": "78+0870 – 79+0150",
-      "tipo": "obra_programada",
+      "id": "evt-de371824abf105a819c0",
+      "corredor": "La Palmera–Presidente",
+      "tramo": "Cerrito, PR 58+0270 a PR 58+0390",
+      "departamento": null,
+      "municipio": null,
+      "via": null,
+      "km": null,
+      "tipo": "restriccion",
       "severidad": "low",
-      "estado": "active",
-      "resumen": "La Victoria–Cartago (Valle del Cauca), PR 78+0870 al 79+0150, glorieta Los Almendros: cierre parcial por obra, permiso ampliado hasta el 12-abr-2027, sin ruta alterna",
-      "vigente_hasta": "2027-04-13T05:00:00+00:00",
-      "actualizado_en": "2026-11-04T12:00:00+00:00",
-      "estado_ubicacion": "ubicada",
+      "estado": "uncertain",
+      "resumen": "paso alternado uno a uno; restricción a carga C3 o superior y peso bruto superior a 16 t",
+      "impacto_operativo": "",
+      "confianza": 0.35,
+      "actualizado_en": "2026-11-04T15:36:00",
+      "estado_reportado": "uncertain",
+      "fecha_evidencia": "2026-10-26",
+      "fuente_publicada_en": "2026-10-26T18:30:00",
+      "precision_fecha_evidencia": "minute",
+      "vigencia_evidencia": "inherited",
+      "base_confirmacion": "requires_source_verification",
+      "identidad": "seguimiento_de_punto_no_incidente_unico",
+      "georreferencia": {
+        "estado": "sin_georreferencia",
+        "lat": null,
+        "lon": null,
+        "etiqueta": "Sin coordenadas; marcador oculto"
+      },
       "fuentes": [
         {
-          "nombre": "INVÍAS 767 ArcGIS (reverificación 06:50)",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS #767 (X)",
-          "url": "https://x.com/numeral767/status/2114828901897961801",
-          "tier": "1"
-        }
-      ]
-    },
-    {
-      "id": "evt-86a305a490ee9731b28a8863",
-      "corredor": "BOGOTA - BUGA",
-      "tramo": "La Tebaida–Calarcá, sector La Paila, PR 4+0000 (Quindío): paso a un carril por mantenimiento vial, ambos sentidos",
-      "municipio": "LA TEBAIDA (QUINDIO)",
-      "via": "",
-      "km": "4+000",
-      "tipo": "obra_programada",
-      "severidad": "low",
-      "estado": "active",
-      "resumen": "La Tebaida–Calarcá, sector La Paila, PR 4+0000 (Quindío): paso a un carril por mantenimiento vial, ambos sentidos",
-      "vigente_hasta": "2026-11-04T22:00:00+00:00",
-      "actualizado_en": "2026-11-04T12:00:00+00:00",
-      "estado_ubicacion": "ubicada",
-      "fuentes": [
-        {
-          "nombre": "INVÍAS 767 ArcGIS (reverificación 06:50)",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS (registro 5175864)",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS #767",
-          "url": "https://x.com/numeral767/status/2115631714244673963",
-          "tier": "1"
-        }
-      ]
-    },
-    {
-      "id": "evt-c07e40a0a04a3a9217127502",
-      "corredor": "Santa Marta - Paraguachón",
-      "tramo": "Santa Marta–Palomino Km 37+700, puente Mendihuaca: paso a un carril por puente provisional del Ejército tras colapso estructural; alterna Zona Bananera–Fundación–Bosconia–Valledupar",
-      "municipio": "SANTA MARTA (MAGDALENA)",
-      "via": "",
-      "km": "37+700 – 37+700",
-      "tipo": "paso_un_carril",
-      "severidad": "high",
-      "estado": "active",
-      "resumen": "Santa Marta–Palomino Km 37+700, puente Mendihuaca: paso a un carril por puente provisional del Ejército tras colapso estructural; alterna Zona Bananera–Fundación–Bosconia–Valledupar",
-      "vigente_hasta": "2026-11-04T22:00:00+00:00",
-      "actualizado_en": "2026-11-04T12:00:00+00:00",
-      "estado_ubicacion": "ubicada",
-      "fuentes": [
-        {
-          "nombre": "INVÍAS 767 ArcGIS (reverificación 06:50)",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "X @numeral767",
-          "url": "https://x.com/numeral767/status/2114094954322784450",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        }
-      ]
-    },
-    {
-      "id": "evt-db6c48727da97e31ee52664a",
-      "corredor": "Sin corredor asignado",
-      "tramo": "San Gil–Bucaramanga (Santander), peaje Los Curos, PR 53+0680 a 53+0780: cierre parcial en ambas calzadas por limpieza y pintura de la estructura del peaje, del 3-nov 06:00 al 14-nov-2026 23:00 (Resolución 5350 del 2-nov-2026); sin ruta alterna (INVÍAS 767).",
-      "municipio": "",
-      "via": "45A07",
-      "km": "53+0680 – 53+0780",
-      "tipo": "obra_programada",
-      "severidad": "low",
-      "estado": "active",
-      "resumen": "San Gil–Bucaramanga (Santander), peaje Los Curos, PR 53+0680 a 53+0780: cierre parcial en ambas calzadas por limpieza y pintura de la estructura del peaje, del 3-nov 06:00 al 14-nov-2026 23:00 (Resolución 5350 del 2-nov-2026); sin ruta alterna (INVÍAS 767).",
-      "vigente_hasta": "2026-11-15T04:00:00+00:00",
-      "actualizado_en": "2026-11-04T12:00:00+00:00",
-      "estado_ubicacion": "sin_ubicar",
-      "fuentes": [
-        {
-          "nombre": "INVÍAS 767 ArcGIS (reverificación 06:50)",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS (objectid 5181865)",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS #767 (X): cierre parcial San Gil–Bucaramanga PR 53+0680–53+0780",
-          "url": "https://x.com/numeral767/status/2117665327542919571",
-          "tier": "1"
-        }
-      ]
-    },
-    {
-      "id": "evt-e66f1dda104b854e6830d489",
-      "corredor": "Transversal del Sisga",
-      "tramo": "Transversal del Sisga, Guateque–El Secreto, San Luis de Gaceno PR 68+0000, ambos sentidos: paso a un carril por pérdida de banca, sin ruta alterna",
-      "municipio": "SAN LUIS DE GACENO (BOYACÁ)",
-      "via": "Guateque–El Secreto",
-      "km": "68+0000",
-      "tipo": "paso_un_carril",
-      "severidad": "high",
-      "estado": "active",
-      "resumen": "Transversal del Sisga, Guateque–El Secreto, San Luis de Gaceno PR 68+0000, ambos sentidos: paso a un carril por pérdida de banca, sin ruta alterna",
-      "vigente_hasta": "2026-11-04T22:00:00+00:00",
-      "actualizado_en": "2026-11-04T12:00:00+00:00",
-      "estado_ubicacion": "ubicada",
-      "fuentes": [
-        {
-          "nombre": "INVÍAS 767 ArcGIS (reverificación 06:50)",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        }
-      ]
-    },
-    {
-      "id": "evt-f29f311d1a39c21d53551a27",
-      "corredor": "Bogotá - Costa Norte",
-      "tramo": "Ruta del Sol Sector 3, RN 4518 Fundación–Ye de Ciénaga (Magdalena), K14+200 a K19+450: PMT con cierres parciales móviles del 27-oct-2026 al 25-ene-2027",
-      "municipio": "",
-      "via": "4518",
-      "km": "14+200 – 19+450",
-      "tipo": "obra_programada",
-      "severidad": "low",
-      "estado": "active",
-      "resumen": "Ruta del Sol Sector 3, RN 4518 Fundación–Ye de Ciénaga (Magdalena), K14+200 a K19+450: PMT con cierres parciales móviles del 27-oct-2026 al 25-ene-2027",
-      "vigente_hasta": "2027-01-26T05:00:00+00:00",
-      "actualizado_en": "2026-10-28T22:00:00+00:00",
-      "estado_ubicacion": "parcial",
-      "fuentes": [
-        {
-          "nombre": "INVÍAS 767 ArcGIS",
-          "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-          "tier": "1"
-        },
-        {
-          "nombre": "Ruta del Sol Sector 3",
-          "url": "https://x.com/rutadelsoltram3/status/2115133560571281787",
-          "tier": "1bis"
+          "id": "src-23ba720fd9c9de756fe1215f",
+          "nombre": "INVÍAS 767, registro 5171465, evidencia original 2026-10-26; recaptura 15:34",
+          "url": "",
+          "fortaleza": "named_unlinked",
+          "publicada_en": "2026-10-26T18:30:00",
+          "consultada_en": "2026-11-04T15:36:00",
+          "evidencia": "paso alternado uno a uno; restricción a carga C3 o superior y peso bruto superior a 16 t"
         }
       ]
     }
   ],
-  "eventos_vigilancia": [],
   "eventos_resueltos": [],
-  "historial_corredores": [],
-  "cambios_dia": [],
+  "historial_corredores": {
+    "periodo_inicio": "2026-10-29",
+    "periodo_fin": "2026-11-04",
+    "metodologia": "Días distintos por corredor; confirmado exige estado activo y confianza mínima de 0,65.",
+    "corredores": [
+      {
+        "corredor": "Girardot–Bogotá",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "critical",
+        "ultima_observacion": "2026-11-03T12:00:00",
+        "ultimo_estado": "confirmed",
+        "dias": [
+          {
+            "fecha": "2026-10-29",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-30",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-03",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 1,
+            "vigilancia": 0,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "INVÍAS registra cierre total por verificación estructural tras el sismo, sin ruta alterna; Vía Sumapaz informó suspensión por vehículos varados a las 06:51 y vía sin novedades a las 07:49. Persiste discrepancia con el registro oficial"
+            ]
+          },
+          {
+            "fecha": "2026-11-04",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          }
+        ]
+      },
+      {
+        "corredor": "Transversal del Sisga",
+        "dias_confirmados": 1,
+        "dias_vigilancia": 0,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "medium",
+        "ultima_observacion": "2026-11-03T12:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-10-29",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-30",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-03",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 1,
+            "vigilancia": 2,
+            "severidad_maxima": "medium",
+            "resumenes": [
+              "Restringido a vehículos que superen configuración C3, peso bruto de 30 toneladas o ancho de 2,60 m; alternativa Sisga–Tunja–Sogamoso–El Crucero–Aguazul–Monterrey–El Secreto",
+              "Restricción de paso consignada por INVÍAS y descrita como paso a un carril en el AM; sin parte nuevo que confirme cambio",
+              "Paso controlado a un carril por pérdida de banca; sin ruta alterna"
+            ]
+          },
+          {
+            "fecha": "2026-11-04",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          }
+        ]
+      },
+      {
+        "corredor": "Santa Marta–Palomino",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 2,
+        "cortes_con_observacion": 2,
+        "severidad_maxima": "medium",
+        "ultima_observacion": "2026-11-04T15:36:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-10-29",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-30",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-03",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "medium",
+            "resumenes": [
+              "Cierre parcial con paso a un carril por puente provisional del Ejército; alternativa registrada Zona Bananera–Fundación–Bosconia–Valledupar"
+            ]
+          },
+          {
+            "fecha": "2026-11-04",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "medium",
+            "resumenes": [
+              "paso a un carril por puente provisional"
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "Sisga–Guateque–El Secreto",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "medium",
+        "ultima_observacion": "2026-11-04T15:36:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-10-29",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-30",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-03",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-04",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 2,
+            "severidad_maxima": "medium",
+            "resumenes": [
+              "paso controlado cada 20 minutos por mantenimiento de talud; sin ruta alterna",
+              "paso controlado a un carril por pérdida de banca; sin ruta alterna"
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "La Tebaida–Calarcá",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "medium",
+        "ultima_observacion": "2026-11-03T12:00:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-10-29",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-30",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-03",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "medium",
+            "resumenes": [
+              "Paso a un carril por mantenimiento vial; sin ruta alterna"
+            ]
+          },
+          {
+            "fecha": "2026-11-04",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          }
+        ]
+      },
+      {
+        "corredor": "La Palmera–Presidente",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 2,
+        "cortes_con_observacion": 2,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-11-04T15:36:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-10-29",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-30",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-03",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "Carril derecho cerrado; izquierdo con paso alternado uno a uno. Restringidos C3 o superiores y vehículos con peso bruto superior a 16 t; alternativa Duitama–Bucaramanga–Pamplona–Cúcuta y viceversa"
+            ]
+          },
+          {
+            "fecha": "2026-11-04",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "paso alternado uno a uno; restricción a carga C3 o superior y peso bruto superior a 16 t"
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "Bogotá–Girardot",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "low",
+        "ultima_observacion": "2026-11-04T15:36:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-10-29",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-30",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-03",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-04",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "cierre de calzada por mantenimiento; la concesión informa pasos alternados por Nariz del Diablo"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "cambios_dia": [
+    {
+      "cut_id": "2026-11-04-md",
+      "hora": "15:36",
+      "ventana": "MD",
+      "tipo": "corte_final",
+      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 5 por verificar.",
+      "conteos": {
+        "nuevos": 0,
+        "persistentes": 0,
+        "resueltos": 0,
+        "por_verificar": 5
+      }
+    }
+  ],
   "fuentes": [
     {
-      "id": "INVÍAS 767 ArcGIS (reverificación 06:50)",
-      "nombre": "INVÍAS 767 ArcGIS (reverificación 06:50)",
-      "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
-      "fortaleza": "1",
-      "eventos": 168
+      "id": "src-2a44c26eacd2742e8c0a601e",
+      "nombre": "INVÍAS 767, registro 5183464; #767 10:35 https://x.com/numeral767/status/2118004155822268904",
+      "url": "https://x.com/numeral767/status/2118004155822268904",
+      "fortaleza": "social",
+      "consultada_en": "2026-11-04T15:36:00",
+      "eventos": [
+        "evt-16be93d0006d5240eedd"
+      ]
     },
     {
-      "id": "INVÍAS #767 (X)",
-      "nombre": "INVÍAS #767 (X)",
-      "url": "https://x.com/numeral767/status/2114869836136218982",
-      "fortaleza": "1",
-      "eventos": 1
+      "id": "src-a198d0f39cc1c1a777ee61b9",
+      "nombre": "INVÍAS 767, registro 5159064, evidencia original 2026-10-17; recaptura 15:34",
+      "url": "",
+      "fortaleza": "named_unlinked",
+      "consultada_en": "2026-11-04T15:36:00",
+      "eventos": [
+        "evt-7ac0852cf79d4802a7e5"
+      ]
     },
     {
-      "id": "INVÍAS #767 (X): cierre total por mantenimiento PR 37+0200–41+0800 (Tolima)",
-      "nombre": "INVÍAS #767 (X): cierre total por mantenimiento PR 37+0200–41+0800 (Tolima)",
-      "url": "https://x.com/numeral767/status/2117848435638391191",
-      "fortaleza": "1",
-      "eventos": 1
+      "id": "src-5c02243b45791303fdf3a210",
+      "nombre": "INVÍAS 767, registro 5169464, evidencia original 2026-10-23; recaptura 15:34",
+      "url": "",
+      "fortaleza": "named_unlinked",
+      "consultada_en": "2026-11-04T15:36:00",
+      "eventos": [
+        "evt-ba03841288d2db233f2a"
+      ]
     },
     {
-      "id": "INVÍAS #767 (X)",
-      "nombre": "INVÍAS #767 (X)",
-      "url": "https://x.com/numeral767/status/2114828901897961801",
-      "fortaleza": "1",
-      "eventos": 1
+      "id": "src-4ed5ba6b28cb1f98c1984c9d",
+      "nombre": "INVÍAS 767, registro 5183064; Vía Sumapaz 11:41 https://x.com/ViaSumapaz/status/2118020886846398504",
+      "url": "https://x.com/ViaSumapaz/status/2118020886846398504",
+      "fortaleza": "social",
+      "consultada_en": "2026-11-04T15:36:00",
+      "eventos": [
+        "evt-ddcb7a03f844615ab069"
+      ]
     },
     {
-      "id": "INVÍAS #767",
-      "nombre": "INVÍAS #767",
-      "url": "https://x.com/numeral767/status/2115631714244673963",
-      "fortaleza": "1",
-      "eventos": 1
-    },
-    {
-      "id": "X @numeral767",
-      "nombre": "X @numeral767",
-      "url": "https://x.com/numeral767/status/2114094954322784450",
-      "fortaleza": "1",
-      "eventos": 1
-    },
-    {
-      "id": "INVÍAS #767 (X): cierre parcial San Gil–Bucaramanga PR 53+0680–53+0780",
-      "nombre": "INVÍAS #767 (X): cierre parcial San Gil–Bucaramanga PR 53+0680–53+0780",
-      "url": "https://x.com/numeral767/status/2117665327542919571",
-      "fortaleza": "1",
-      "eventos": 1
-    },
-    {
-      "id": "Ruta del Sol Sector 3",
-      "nombre": "Ruta del Sol Sector 3",
-      "url": "https://x.com/rutadelsoltram3/status/2115133560571281787",
-      "fortaleza": "1bis",
-      "eventos": 1
+      "id": "src-23ba720fd9c9de756fe1215f",
+      "nombre": "INVÍAS 767, registro 5171465, evidencia original 2026-10-26; recaptura 15:34",
+      "url": "",
+      "fortaleza": "named_unlinked",
+      "consultada_en": "2026-11-04T15:36:00",
+      "eventos": [
+        "evt-de371824abf105a819c0"
+      ]
     }
   ],
-  "bibliografia_reporte": []
+  "bibliografia_reporte": [
+    {
+      "nombre": "Capa oficial INVÍAS 767, captura 15:34, 241 registros",
+      "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
+      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
+    }
+  ]
 }
