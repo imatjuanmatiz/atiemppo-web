@@ -3,12 +3,12 @@
   "fuente_datos": "vias_watch:watch.event_observations",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-11-04-pm",
-  "revision_id": "rev-a8a161fa1497040d1f9015b3336c4b0a",
+  "cut_id": "2026-11-05-am",
+  "revision_id": "rev-3becfd33cc085dfae06203c6f6ad41e5",
   "calidad_ingesta": {
     "state": "complete",
-    "revision_id": "rev-a8a161fa1497040d1f9015b3336c4b0a",
-    "report_sha256": "d9018a9dcc999d2bfd5ac83dcda4dc1f10fe2e7f0301329acab6128f5fc07033",
+    "revision_id": "rev-3becfd33cc085dfae06203c6f6ad41e5",
+    "report_sha256": "395c6dfb3e1907dab226d1f93723b4658e0134e0c594566d63615182de31b8d1",
     "parser_version": "roads-2.0.0",
     "detail_rows": 7,
     "signal_rows": 5,
@@ -20,14 +20,30 @@
   },
   "zona_horaria": "America/Bogota",
   "nota_vigencia": "La fecha del corte acredita la actualización del reporte. Cada punto conserva la fecha de su evidencia; las referencias heredadas o sin enlace directo requieren verificación. El resumen editorial reproduce el reporte y no confirma por sí solo el estado actual.",
-  "fecha": "2026-11-04",
-  "ventana": "PM",
-  "hora": "18:16",
-  "generado_en": "2026-11-04T18:16:00",
-  "artefacto_fuente": "2026-11-04-editor-eldato-version-vias-colombia-pm.md",
+  "fecha": "2026-11-05",
+  "ventana": "AM",
+  "hora": "07:46",
+  "generado_en": "2026-11-05T07:46:00",
+  "artefacto_fuente": "2026-11-05-editor-eldato-version-vias-colombia-am.md",
   "que_cambio": [],
-  "notas_cambio": [],
+  "notas_cambio": [
+    "Este corte es el listado base del día. MD y PM miden el cambio contra esta mañana, no contra el mismo corredor del corte anterior."
+  ],
   "listado": [
+    {
+      "icono": "🔴",
+      "corredor": "Mediacanoa–Ansermanuevo",
+      "km": "",
+      "estado": "cierre total programado de 07:30 a 13:30 — PR 73 — ajustar el viaje y confirmar habilitación.",
+      "fuente": ""
+    },
+    {
+      "icono": "🟠",
+      "corredor": "Bogotá–Girardot",
+      "km": "",
+      "estado": "paso a un carril cada 30 minutos según INVÍAS; la concesión reporta operación normal — km 37+0200 — confirmar condiciones antes de viajar.",
+      "fuente": ""
+    },
     {
       "icono": "🟠",
       "corredor": "Transversal del Sisga",
@@ -44,121 +60,104 @@
     },
     {
       "icono": "🟠",
-      "corredor": "Santa Marta–Palomino",
-      "km": "",
-      "estado": "paso a un carril — puente provisional de Mendihuaca — prever demoras.",
-      "fuente": ""
-    },
-    {
-      "icono": "🟠",
-      "corredor": "La Mansa–Primavera",
-      "km": "",
-      "estado": "paso a un carril — La Chuchita, km 36 — prever demoras; INVÍAS no indica ruta alterna.",
-      "fuente": ""
-    },
-    {
-      "icono": "🟠",
       "corredor": "Bogotá–Villavicencio",
       "km": "",
-      "estado": "pasos alternos y restricciones de carril — varios puntos entre K17 y K73 — prever demoras y atender el manejo de tránsito.",
+      "estado": "circulación bidireccional y restricciones de carril — varios puntos entre K17 y K73 — prever demoras y atender el manejo de tránsito.",
       "fuente": ""
     }
   ],
   "senales_tempranas": [
     {
-      "tramo": "La Mansa–Peñalisa",
-      "senal": "desapareció un registro de cierre total de la capa frente al snapshot de mediodía",
-      "fuente": "INVÍAS 767, registro 5153464",
-      "vigilar": "la baja del registro no confirma reapertura; no hubo contraste documental ni post del tramo en la captura X"
+      "tramo": "La Mansa–Primavera, La Chuchita",
+      "senal": "INVÍAS conserva registro de paso a un carril y sin ruta alterna",
+      "fuente": "INVÍAS 767, registro 5158265",
+      "vigilar": "registro iniciado el 2026-10-17 y recapturado; sin contraste nuevo en X ni documento de entidad del día"
     },
     {
-      "tramo": "Bogotá–Girardot, Túnel Sumapaz",
-      "senal": "mantenimiento nocturno previsto de 22:00 a 05:00; la concesión informa pasos alternados por Nariz del Diablo",
-      "fuente": "INVÍAS 767, registro 5183064; Vía Sumapaz 11:41 https://x.com/ViaSumapaz/status/2118020886846398504",
-      "vigilar": "restricción programada para esta noche; no estaba vigente a las 18:16"
+      "tramo": "Santa Marta–Palomino, puente Mendihuaca",
+      "senal": "INVÍAS conserva registro de paso a un carril en puente provisional",
+      "fuente": "INVÍAS 767, registro 5159064",
+      "vigilar": "registro antiguo recapturado; sin contraste nuevo en X ni documento de entidad del día"
     },
     {
-      "tramo": "Mediacanoa–Ansermanuevo, PR 73",
-      "senal": "cierre total programado por evento deportivo el 5 de noviembre, 07:30–13:30",
-      "fuente": "INVÍAS 767, registro 5183864",
-      "vigilar": "restricción futura, no cierre vigente a este corte"
+      "tramo": "Medellín–Rionegro, Las Palmas",
+      "senal": "movilidad reducida por accidente en km 11+020 a las 07:30",
+      "fuente": "Concesión Túnel Aburrá Oriente",
+      "vigilar": "aviso puntual, sin confirmación independiente de persistencia al corte"
+    },
+    {
+      "tramo": "Autopista Norte, calle 218",
+      "senal": "movilidad reducida por accidente, sentido Chía–Bogotá, a las 07:37",
+      "fuente": "Ruta Bogotá Norte",
+      "vigilar": "aviso puntual, sin confirmación independiente de persistencia al corte"
     },
     {
       "tramo": "Red nacional",
-      "senal": "restricciones de carga para el puente festivo desde el 7 de noviembre",
+      "senal": "restricciones de carga programadas para el puente festivo desde el 7 de noviembre",
       "fuente": "INVÍAS 767",
-      "vigilar": "programación futura; no es una novedad vial vigente a este corte"
-    },
-    {
-      "tramo": "Túnel de Oriente, Medellín–Rionegro",
-      "senal": "movilidad reducida por vehículo varado a las 17:55; concesión informó habilitación a las 18:06",
-      "fuente": "Concesión Túnel Aburrá Oriente https://x.com/ConcesionTAO/status/2118115081590333485 y https://x.com/ConcesionTAO/status/2118117826430984448",
-      "vigilar": "evento informado como habilitado antes del corte"
+      "vigilar": "programación futura; no es estado vigente de este corte"
     }
   ],
   "alertas_inmediatas": [],
   "salud_fuentes": {
     "estado_general": "degradada",
     "ventanas_esperadas": [
-      "AM",
-      "MD",
-      "PM"
+      "AM"
     ],
     "ventanas_recibidas": [
-      "MD",
-      "PM"
+      "AM"
     ],
     "eventos_confirmados": 0,
     "eventos_vigilancia": 7,
     "pendientes_georreferencia": 7,
     "fuentes": [
       {
-        "id": "src-0cf6b97e0a7885d31ae27f95",
-        "nombre": "INVÍAS 767, registro 5159064; recaptura 2026-11-04 18:15",
+        "id": "src-d4d2fd915c0bd85d2c33887e",
+        "nombre": "INVÍAS 767, registro 5183864; captura 07:45",
         "estado": "nombrada_sin_enlace_directo",
-        "ultima_consulta": "2026-11-04T18:16:00",
+        "ultima_consulta": "2026-11-05T07:46:00",
         "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
       },
       {
-        "id": "src-deb91183a91323cd7b4bfea3",
-        "nombre": "INVÍAS 767, registro 5169464; recaptura 2026-11-04 18:15",
+        "id": "src-30e1090a0d67f46c7a556972",
+        "nombre": "INVÍAS 767, registro 5169464; captura 07:45",
         "estado": "nombrada_sin_enlace_directo",
-        "ultima_consulta": "2026-11-04T18:16:00",
+        "ultima_consulta": "2026-11-05T07:46:00",
         "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
       },
       {
-        "id": "src-c1531b751361fe9e5fd21984",
-        "nombre": "Coviandina, 17:13 https://x.com/CoviandinaSAS/status/2118104323418952067",
-        "estado": "referenciada_en_reporte",
-        "ultima_consulta": "2026-11-04T18:16:00",
+        "id": "src-6ad5784c353db3192fd74c83",
+        "nombre": "Coviandina, 06:30",
+        "estado": "nombrada_sin_enlace_directo",
+        "ultima_consulta": "2026-11-05T07:46:00",
         "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
       },
       {
-        "id": "src-84554befaeac4af2beeecc36",
-        "nombre": "INVÍAS 767, registro 5158265; recaptura 2026-11-04 18:15",
+        "id": "src-ed38a6dacbacea99d9c27778",
+        "nombre": "INVÍAS 767, registro 4897466; captura 07:45",
         "estado": "nombrada_sin_enlace_directo",
-        "ultima_consulta": "2026-11-04T18:16:00",
+        "ultima_consulta": "2026-11-05T07:46:00",
         "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
       },
       {
-        "id": "src-c7ac32211a72207632e5d320",
-        "nombre": "INVÍAS 767, registro 4897466; recaptura 2026-11-04 18:15",
+        "id": "src-d70a14ea7fd25d28fe1fa170",
+        "nombre": "INVÍAS 767, registro 5183464; captura 07:45",
         "estado": "nombrada_sin_enlace_directo",
-        "ultima_consulta": "2026-11-04T18:16:00",
+        "ultima_consulta": "2026-11-05T07:46:00",
         "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
       },
       {
-        "id": "src-faad0f079becdcc17a3a86b0",
-        "nombre": "INVÍAS 767, registro 5183464; recaptura 2026-11-04 18:15",
+        "id": "src-29994a9452c46cae0e94e1d2",
+        "nombre": "INVÍAS 767, registros 5184264 y 5184664; Vía Sumapaz, 06:02",
         "estado": "nombrada_sin_enlace_directo",
-        "ultima_consulta": "2026-11-04T18:16:00",
+        "ultima_consulta": "2026-11-05T07:46:00",
         "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
       },
       {
-        "id": "src-1af43cca71941ee8518ddaae",
-        "nombre": "INVÍAS 767, registro 5171465; recaptura 2026-11-04 18:15",
+        "id": "src-b0e424fa7523d9101062c56b",
+        "nombre": "INVÍAS 767, registro 5171465; captura 07:45",
         "estado": "nombrada_sin_enlace_directo",
-        "ultima_consulta": "2026-11-04T18:16:00",
+        "ultima_consulta": "2026-11-05T07:46:00",
         "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
       }
     ]
@@ -167,25 +166,25 @@
   "eventos_confirmados": [],
   "eventos_vigilancia": [
     {
-      "id": "evt-704ac80862e03142dd78",
-      "corredor": "La Mansa–Primavera",
-      "tramo": "La Chuchita, km 36+000",
+      "id": "evt-30b7a87f9859e860a219",
+      "corredor": "Mediacanoa–Ansermanuevo",
+      "tramo": "PR 73+0000 a PR 73+0500",
       "departamento": null,
       "municipio": null,
       "via": null,
       "km": null,
-      "tipo": "paso_controlado",
-      "severidad": "medium",
+      "tipo": "cierre_total",
+      "severidad": "critical",
       "estado": "uncertain",
-      "resumen": "paso a un carril por deslizamiento o caída de rocas; sin ruta alterna",
+      "resumen": "cierre total programado por evento deportivo",
       "impacto_operativo": "",
       "confianza": 0.35,
-      "actualizado_en": "2026-11-04T18:16:00",
+      "actualizado_en": "2026-11-05T07:46:00",
       "estado_reportado": "active",
-      "fecha_evidencia": "2026-10-17",
-      "fuente_publicada_en": "2026-10-17T03:39:00",
-      "precision_fecha_evidencia": "minute",
-      "vigencia_evidencia": "inherited",
+      "fecha_evidencia": "2026-11-05",
+      "fuente_publicada_en": null,
+      "precision_fecha_evidencia": "date",
+      "vigencia_evidencia": "same_day",
       "base_confirmacion": "requires_source_verification",
       "identidad": "seguimiento_de_punto_no_incidente_unico",
       "georreferencia": {
@@ -196,20 +195,20 @@
       },
       "fuentes": [
         {
-          "id": "src-84554befaeac4af2beeecc36",
-          "nombre": "INVÍAS 767, registro 5158265; recaptura 2026-11-04 18:15",
+          "id": "src-d4d2fd915c0bd85d2c33887e",
+          "nombre": "INVÍAS 767, registro 5183864; captura 07:45",
           "url": "",
           "fortaleza": "named_unlinked",
-          "publicada_en": "2026-10-17T03:39:00",
-          "consultada_en": "2026-11-04T18:16:00",
-          "evidencia": "paso a un carril por deslizamiento o caída de rocas; sin ruta alterna"
+          "publicada_en": null,
+          "consultada_en": "2026-11-05T07:46:00",
+          "evidencia": "cierre total programado por evento deportivo"
         }
       ]
     },
     {
-      "id": "evt-28ac97160e9d06e4bce6",
-      "corredor": "Santa Marta–Palomino",
-      "tramo": "km 37+700, puente Mendihuaca",
+      "id": "evt-b2a774bb2f11779ad799",
+      "corredor": "Bogotá–Girardot",
+      "tramo": "km 37+0200, ambos sentidos",
       "departamento": null,
       "municipio": null,
       "via": null,
@@ -217,13 +216,13 @@
       "tipo": "paso_controlado",
       "severidad": "medium",
       "estado": "uncertain",
-      "resumen": "paso a un carril en puente provisional",
+      "resumen": "INVÍAS registra paso a un carril cada 30 minutos hasta finalizar intervención; Vía Sumapaz informa túnel en operación normal y sin afectaciones importantes a las 06:02",
       "impacto_operativo": "",
       "confianza": 0.35,
-      "actualizado_en": "2026-11-04T18:16:00",
+      "actualizado_en": "2026-11-05T07:46:00",
       "estado_reportado": "active",
-      "fecha_evidencia": "2026-10-17",
-      "fuente_publicada_en": "2026-10-17T04:41:00",
+      "fecha_evidencia": "2026-11-04",
+      "fuente_publicada_en": "2026-11-04T23:20:00",
       "precision_fecha_evidencia": "minute",
       "vigencia_evidencia": "inherited",
       "base_confirmacion": "requires_source_verification",
@@ -236,13 +235,13 @@
       },
       "fuentes": [
         {
-          "id": "src-0cf6b97e0a7885d31ae27f95",
-          "nombre": "INVÍAS 767, registro 5159064; recaptura 2026-11-04 18:15",
+          "id": "src-29994a9452c46cae0e94e1d2",
+          "nombre": "INVÍAS 767, registros 5184264 y 5184664; Vía Sumapaz, 06:02",
           "url": "",
           "fortaleza": "named_unlinked",
-          "publicada_en": "2026-10-17T04:41:00",
-          "consultada_en": "2026-11-04T18:16:00",
-          "evidencia": "paso a un carril en puente provisional"
+          "publicada_en": "2026-11-04T23:20:00",
+          "consultada_en": "2026-11-05T07:46:00",
+          "evidencia": "INVÍAS registra paso a un carril cada 30 minutos hasta finalizar intervención; Vía Sumapaz informa túnel en operación normal y sin afectaciones importantes a las 06:02"
         }
       ]
     },
@@ -260,7 +259,7 @@
       "resumen": "paso controlado a un carril por pérdida de banca; sin ruta alterna",
       "impacto_operativo": "",
       "confianza": 0.35,
-      "actualizado_en": "2026-11-04T18:16:00",
+      "actualizado_en": "2026-11-05T07:46:00",
       "estado_reportado": "active",
       "fecha_evidencia": "2026-10-23",
       "fuente_publicada_en": "2026-10-23T10:18:00",
@@ -276,12 +275,12 @@
       },
       "fuentes": [
         {
-          "id": "src-deb91183a91323cd7b4bfea3",
-          "nombre": "INVÍAS 767, registro 5169464; recaptura 2026-11-04 18:15",
+          "id": "src-30e1090a0d67f46c7a556972",
+          "nombre": "INVÍAS 767, registro 5169464; captura 07:45",
           "url": "",
           "fortaleza": "named_unlinked",
           "publicada_en": "2026-10-23T10:18:00",
-          "consultada_en": "2026-11-04T18:16:00",
+          "consultada_en": "2026-11-05T07:46:00",
           "evidencia": "paso controlado a un carril por pérdida de banca; sin ruta alterna"
         }
       ]
@@ -297,10 +296,10 @@
       "tipo": "paso_controlado",
       "severidad": "medium",
       "estado": "uncertain",
-      "resumen": "paso a un carril, sin ruta alterna",
+      "resumen": "paso a un carril; sin ruta alterna",
       "impacto_operativo": "",
       "confianza": 0.35,
-      "actualizado_en": "2026-11-04T18:16:00",
+      "actualizado_en": "2026-11-05T07:46:00",
       "estado_reportado": "active",
       "fecha_evidencia": "2026-10-23",
       "fuente_publicada_en": "2026-10-23T16:43:00",
@@ -316,13 +315,13 @@
       },
       "fuentes": [
         {
-          "id": "src-c7ac32211a72207632e5d320",
-          "nombre": "INVÍAS 767, registro 4897466; recaptura 2026-11-04 18:15",
+          "id": "src-ed38a6dacbacea99d9c27778",
+          "nombre": "INVÍAS 767, registro 4897466; captura 07:45",
           "url": "",
           "fortaleza": "named_unlinked",
           "publicada_en": "2026-10-23T16:43:00",
-          "consultada_en": "2026-11-04T18:16:00",
-          "evidencia": "paso a un carril, sin ruta alterna"
+          "consultada_en": "2026-11-05T07:46:00",
+          "evidencia": "paso a un carril; sin ruta alterna"
         }
       ]
     },
@@ -340,12 +339,12 @@
       "resumen": "paso controlado cada 20 minutos por mantenimiento; sin ruta alterna",
       "impacto_operativo": "",
       "confianza": 0.35,
-      "actualizado_en": "2026-11-04T18:16:00",
+      "actualizado_en": "2026-11-05T07:46:00",
       "estado_reportado": "active",
       "fecha_evidencia": "2026-11-04",
       "fuente_publicada_en": "2026-11-04T10:21:00",
       "precision_fecha_evidencia": "minute",
-      "vigencia_evidencia": "same_day",
+      "vigencia_evidencia": "inherited",
       "base_confirmacion": "requires_source_verification",
       "identidad": "seguimiento_de_punto_no_incidente_unico",
       "georreferencia": {
@@ -356,20 +355,20 @@
       },
       "fuentes": [
         {
-          "id": "src-faad0f079becdcc17a3a86b0",
-          "nombre": "INVÍAS 767, registro 5183464; recaptura 2026-11-04 18:15",
+          "id": "src-d70a14ea7fd25d28fe1fa170",
+          "nombre": "INVÍAS 767, registro 5183464; captura 07:45",
           "url": "",
           "fortaleza": "named_unlinked",
           "publicada_en": "2026-11-04T10:21:00",
-          "consultada_en": "2026-11-04T18:16:00",
+          "consultada_en": "2026-11-05T07:46:00",
           "evidencia": "paso controlado cada 20 minutos por mantenimiento; sin ruta alterna"
         }
       ]
     },
     {
-      "id": "evt-6842167533d7bb8dc7d6",
+      "id": "evt-6551aa13f1e293e8b8a1",
       "corredor": "Bogotá - Villavicencio",
-      "tramo": "K59+500 y K29+100; K18+300 a K19+000; K17+500 a K43+250 y K69+180; K36+500, K69+350 y K73+620",
+      "tramo": "K18+300 a K19+000; K17+500 a K43+250 y K69+180; K36+500, K69+350 y K73+620",
       "departamento": null,
       "municipio": null,
       "via": null,
@@ -377,13 +376,13 @@
       "tipo": "otro",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "pasos alternos, circulación bidireccional y reducciones o cierres de carril según el punto",
+      "resumen": "circulación bidireccional y reducciones o cierres de carril según el punto",
       "impacto_operativo": "",
       "confianza": 0.35,
-      "actualizado_en": "2026-11-04T18:16:00",
+      "actualizado_en": "2026-11-05T07:46:00",
       "estado_reportado": "uncertain",
-      "fecha_evidencia": "2026-11-04",
-      "fuente_publicada_en": "2026-11-04T17:13:00",
+      "fecha_evidencia": "2026-11-05",
+      "fuente_publicada_en": "2026-11-05T06:30:00",
       "precision_fecha_evidencia": "minute",
       "vigencia_evidencia": "same_day",
       "base_confirmacion": "requires_source_verification",
@@ -396,13 +395,13 @@
       },
       "fuentes": [
         {
-          "id": "src-c1531b751361fe9e5fd21984",
-          "nombre": "Coviandina, 17:13 https://x.com/CoviandinaSAS/status/2118104323418952067",
-          "url": "https://x.com/CoviandinaSAS/status/2118104323418952067",
-          "fortaleza": "official",
-          "publicada_en": "2026-11-04T17:13:00",
-          "consultada_en": "2026-11-04T18:16:00",
-          "evidencia": "pasos alternos, circulación bidireccional y reducciones o cierres de carril según el punto"
+          "id": "src-6ad5784c353db3192fd74c83",
+          "nombre": "Coviandina, 06:30",
+          "url": "",
+          "fortaleza": "named_unlinked",
+          "publicada_en": "2026-11-05T06:30:00",
+          "consultada_en": "2026-11-05T07:46:00",
+          "evidencia": "circulación bidireccional y reducciones o cierres de carril según el punto"
         }
       ]
     },
@@ -420,7 +419,7 @@
       "resumen": "paso alternado; restringidos vehículos de carga C3 o superiores y peso bruto superior a 16 t",
       "impacto_operativo": "",
       "confianza": 0.35,
-      "actualizado_en": "2026-11-04T18:16:00",
+      "actualizado_en": "2026-11-05T07:46:00",
       "estado_reportado": "uncertain",
       "fecha_evidencia": "2026-10-26",
       "fuente_publicada_en": "2026-10-26T18:30:00",
@@ -436,12 +435,12 @@
       },
       "fuentes": [
         {
-          "id": "src-1af43cca71941ee8518ddaae",
-          "nombre": "INVÍAS 767, registro 5171465; recaptura 2026-11-04 18:15",
+          "id": "src-b0e424fa7523d9101062c56b",
+          "nombre": "INVÍAS 767, registro 5171465; captura 07:45",
           "url": "",
           "fortaleza": "named_unlinked",
           "publicada_en": "2026-10-26T18:30:00",
-          "consultada_en": "2026-11-04T18:16:00",
+          "consultada_en": "2026-11-05T07:46:00",
           "evidencia": "paso alternado; restringidos vehículos de carga C3 o superiores y peso bruto superior a 16 t"
         }
       ]
@@ -449,8 +448,8 @@
   ],
   "eventos_resueltos": [],
   "historial_corredores": {
-    "periodo_inicio": "2026-10-29",
-    "periodo_fin": "2026-11-04",
+    "periodo_inicio": "2026-10-30",
+    "periodo_fin": "2026-11-05",
     "metodologia": "Días distintos por corredor; confirmado exige estado activo y confianza mínima de 0,65.",
     "corredores": [
       {
@@ -462,14 +461,6 @@
         "ultima_observacion": "2026-11-03T12:00:00",
         "ultimo_estado": "confirmed",
         "dias": [
-          {
-            "fecha": "2026-10-29",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-30",
             "ventanas": [],
@@ -521,26 +512,26 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-11-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
         "corredor": "Transversal del Sisga",
         "dias_confirmados": 1,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 2,
+        "dias_vigilancia": 2,
+        "cortes_con_observacion": 3,
         "severidad_maxima": "medium",
-        "ultima_observacion": "2026-11-04T18:16:00",
+        "ultima_observacion": "2026-11-05T07:46:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-10-29",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-30",
             "ventanas": [],
@@ -600,6 +591,91 @@
               "paso a un carril, sin ruta alterna",
               "paso controlado cada 20 minutos por mantenimiento; sin ruta alterna"
             ]
+          },
+          {
+            "fecha": "2026-11-05",
+            "ventanas": [
+              "AM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 3,
+            "severidad_maxima": "medium",
+            "resumenes": [
+              "paso controlado a un carril por pérdida de banca; sin ruta alterna",
+              "paso a un carril; sin ruta alterna",
+              "paso controlado cada 20 minutos por mantenimiento; sin ruta alterna"
+            ]
+          }
+        ]
+      },
+      {
+        "corredor": "Mediacanoa–Ansermanuevo",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 1,
+        "cortes_con_observacion": 1,
+        "severidad_maxima": "critical",
+        "ultima_observacion": "2026-11-05T07:46:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-10-30",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-03",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-04",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-05",
+            "ventanas": [
+              "AM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "critical",
+            "resumenes": [
+              "cierre total programado por evento deportivo"
+            ]
           }
         ]
       },
@@ -612,14 +688,6 @@
         "ultima_observacion": "2026-11-04T18:16:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-10-29",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-30",
             "ventanas": [],
@@ -677,6 +745,89 @@
               "paso a un carril por puente provisional",
               "paso a un carril en puente provisional"
             ]
+          },
+          {
+            "fecha": "2026-11-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          }
+        ]
+      },
+      {
+        "corredor": "Bogotá–Girardot",
+        "dias_confirmados": 0,
+        "dias_vigilancia": 2,
+        "cortes_con_observacion": 2,
+        "severidad_maxima": "medium",
+        "ultima_observacion": "2026-11-05T07:46:00",
+        "ultimo_estado": "watch",
+        "dias": [
+          {
+            "fecha": "2026-10-30",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-10-31",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-01",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-02",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-03",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
+          },
+          {
+            "fecha": "2026-11-04",
+            "ventanas": [
+              "MD"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "cierre de calzada por mantenimiento; la concesión informa pasos alternados por Nariz del Diablo"
+            ]
+          },
+          {
+            "fecha": "2026-11-05",
+            "ventanas": [
+              "AM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "medium",
+            "resumenes": [
+              "INVÍAS registra paso a un carril cada 30 minutos hasta finalizar intervención; Vía Sumapaz informa túnel en operación normal y sin afectaciones importantes a las 06:02"
+            ]
           }
         ]
       },
@@ -689,14 +840,6 @@
         "ultima_observacion": "2026-11-04T15:36:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-10-29",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-30",
             "ventanas": [],
@@ -749,6 +892,14 @@
               "paso controlado cada 20 minutos por mantenimiento de talud; sin ruta alterna",
               "paso controlado a un carril por pérdida de banca; sin ruta alterna"
             ]
+          },
+          {
+            "fecha": "2026-11-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -761,14 +912,6 @@
         "ultima_observacion": "2026-11-03T12:00:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-10-29",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-30",
             "ventanas": [],
@@ -820,6 +963,14 @@
             "vigilancia": 0,
             "severidad_maxima": "unknown",
             "resumenes": []
+          },
+          {
+            "fecha": "2026-11-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
@@ -832,14 +983,6 @@
         "ultima_observacion": "2026-11-04T18:16:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-10-29",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-30",
             "ventanas": [],
@@ -891,26 +1034,26 @@
             "resumenes": [
               "paso a un carril por deslizamiento o caída de rocas; sin ruta alterna"
             ]
+          },
+          {
+            "fecha": "2026-11-05",
+            "ventanas": [],
+            "confirmados": 0,
+            "vigilancia": 0,
+            "severidad_maxima": "unknown",
+            "resumenes": []
           }
         ]
       },
       {
         "corredor": "La Palmera–Presidente",
         "dias_confirmados": 0,
-        "dias_vigilancia": 2,
-        "cortes_con_observacion": 3,
+        "dias_vigilancia": 3,
+        "cortes_con_observacion": 4,
         "severidad_maxima": "low",
-        "ultima_observacion": "2026-11-04T18:16:00",
+        "ultima_observacion": "2026-11-05T07:46:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-10-29",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-30",
             "ventanas": [],
@@ -968,76 +1111,17 @@
               "paso alternado uno a uno; restricción a carga C3 o superior y peso bruto superior a 16 t",
               "paso alternado; restringidos vehículos de carga C3 o superiores y peso bruto superior a 16 t"
             ]
-          }
-        ]
-      },
-      {
-        "corredor": "Bogotá–Girardot",
-        "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
-        "severidad_maxima": "low",
-        "ultima_observacion": "2026-11-04T15:36:00",
-        "ultimo_estado": "watch",
-        "dias": [
-          {
-            "fecha": "2026-10-29",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
           },
           {
-            "fecha": "2026-10-30",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-10-31",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-11-01",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-11-02",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-11-03",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
-          {
-            "fecha": "2026-11-04",
+            "fecha": "2026-11-05",
             "ventanas": [
-              "MD"
+              "AM"
             ],
             "confirmados": 0,
             "vigilancia": 1,
             "severidad_maxima": "low",
             "resumenes": [
-              "cierre de calzada por mantenimiento; la concesión informa pasos alternados por Nariz del Diablo"
+              "paso alternado; restringidos vehículos de carga C3 o superiores y peso bruto superior a 16 t"
             ]
           }
         ]
@@ -1045,20 +1129,12 @@
       {
         "corredor": "Bogotá - Villavicencio",
         "dias_confirmados": 0,
-        "dias_vigilancia": 1,
-        "cortes_con_observacion": 1,
+        "dias_vigilancia": 2,
+        "cortes_con_observacion": 2,
         "severidad_maxima": "low",
-        "ultima_observacion": "2026-11-04T18:16:00",
+        "ultima_observacion": "2026-11-05T07:46:00",
         "ultimo_estado": "watch",
         "dias": [
-          {
-            "fecha": "2026-10-29",
-            "ventanas": [],
-            "confirmados": 0,
-            "vigilancia": 0,
-            "severidad_maxima": "unknown",
-            "resumenes": []
-          },
           {
             "fecha": "2026-10-30",
             "ventanas": [],
@@ -1110,6 +1186,18 @@
             "resumenes": [
               "pasos alternos, circulación bidireccional y reducciones o cierres de carril según el punto"
             ]
+          },
+          {
+            "fecha": "2026-11-05",
+            "ventanas": [
+              "AM"
+            ],
+            "confirmados": 0,
+            "vigilancia": 1,
+            "severidad_maxima": "low",
+            "resumenes": [
+              "circulación bidireccional y reducciones o cierres de carril según el punto"
+            ]
           }
         ]
       }
@@ -1117,22 +1205,9 @@
   },
   "cambios_dia": [
     {
-      "cut_id": "2026-11-04-md",
-      "hora": "15:36",
-      "ventana": "MD",
-      "tipo": "corte_final",
-      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 5 por verificar.",
-      "conteos": {
-        "nuevos": 0,
-        "persistentes": 0,
-        "resueltos": 0,
-        "por_verificar": 5
-      }
-    },
-    {
-      "cut_id": "2026-11-04-pm",
-      "hora": "18:16",
-      "ventana": "PM",
+      "cut_id": "2026-11-05-am",
+      "hora": "07:46",
+      "ventana": "AM",
       "tipo": "corte_final",
       "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 7 por verificar.",
       "conteos": {
@@ -1145,71 +1220,71 @@
   ],
   "fuentes": [
     {
-      "id": "src-0cf6b97e0a7885d31ae27f95",
-      "nombre": "INVÍAS 767, registro 5159064; recaptura 2026-11-04 18:15",
+      "id": "src-d4d2fd915c0bd85d2c33887e",
+      "nombre": "INVÍAS 767, registro 5183864; captura 07:45",
       "url": "",
       "fortaleza": "named_unlinked",
-      "consultada_en": "2026-11-04T18:16:00",
+      "consultada_en": "2026-11-05T07:46:00",
       "eventos": [
-        "evt-28ac97160e9d06e4bce6"
+        "evt-30b7a87f9859e860a219"
       ]
     },
     {
-      "id": "src-deb91183a91323cd7b4bfea3",
-      "nombre": "INVÍAS 767, registro 5169464; recaptura 2026-11-04 18:15",
+      "id": "src-30e1090a0d67f46c7a556972",
+      "nombre": "INVÍAS 767, registro 5169464; captura 07:45",
       "url": "",
       "fortaleza": "named_unlinked",
-      "consultada_en": "2026-11-04T18:16:00",
+      "consultada_en": "2026-11-05T07:46:00",
       "eventos": [
         "evt-6357942b8f97c48bee42"
       ]
     },
     {
-      "id": "src-c1531b751361fe9e5fd21984",
-      "nombre": "Coviandina, 17:13 https://x.com/CoviandinaSAS/status/2118104323418952067",
-      "url": "https://x.com/CoviandinaSAS/status/2118104323418952067",
-      "fortaleza": "official",
-      "consultada_en": "2026-11-04T18:16:00",
+      "id": "src-6ad5784c353db3192fd74c83",
+      "nombre": "Coviandina, 06:30",
+      "url": "",
+      "fortaleza": "named_unlinked",
+      "consultada_en": "2026-11-05T07:46:00",
       "eventos": [
-        "evt-6842167533d7bb8dc7d6"
+        "evt-6551aa13f1e293e8b8a1"
       ]
     },
     {
-      "id": "src-84554befaeac4af2beeecc36",
-      "nombre": "INVÍAS 767, registro 5158265; recaptura 2026-11-04 18:15",
+      "id": "src-ed38a6dacbacea99d9c27778",
+      "nombre": "INVÍAS 767, registro 4897466; captura 07:45",
       "url": "",
       "fortaleza": "named_unlinked",
-      "consultada_en": "2026-11-04T18:16:00",
-      "eventos": [
-        "evt-704ac80862e03142dd78"
-      ]
-    },
-    {
-      "id": "src-c7ac32211a72207632e5d320",
-      "nombre": "INVÍAS 767, registro 4897466; recaptura 2026-11-04 18:15",
-      "url": "",
-      "fortaleza": "named_unlinked",
-      "consultada_en": "2026-11-04T18:16:00",
+      "consultada_en": "2026-11-05T07:46:00",
       "eventos": [
         "evt-aaee8dace50a79245440"
       ]
     },
     {
-      "id": "src-faad0f079becdcc17a3a86b0",
-      "nombre": "INVÍAS 767, registro 5183464; recaptura 2026-11-04 18:15",
+      "id": "src-d70a14ea7fd25d28fe1fa170",
+      "nombre": "INVÍAS 767, registro 5183464; captura 07:45",
       "url": "",
       "fortaleza": "named_unlinked",
-      "consultada_en": "2026-11-04T18:16:00",
+      "consultada_en": "2026-11-05T07:46:00",
       "eventos": [
         "evt-b0d5c55d58bf55082892"
       ]
     },
     {
-      "id": "src-1af43cca71941ee8518ddaae",
-      "nombre": "INVÍAS 767, registro 5171465; recaptura 2026-11-04 18:15",
+      "id": "src-29994a9452c46cae0e94e1d2",
+      "nombre": "INVÍAS 767, registros 5184264 y 5184664; Vía Sumapaz, 06:02",
       "url": "",
       "fortaleza": "named_unlinked",
-      "consultada_en": "2026-11-04T18:16:00",
+      "consultada_en": "2026-11-05T07:46:00",
+      "eventos": [
+        "evt-b2a774bb2f11779ad799"
+      ]
+    },
+    {
+      "id": "src-b0e424fa7523d9101062c56b",
+      "nombre": "INVÍAS 767, registro 5171465; captura 07:45",
+      "url": "",
+      "fortaleza": "named_unlinked",
+      "consultada_en": "2026-11-05T07:46:00",
       "eventos": [
         "evt-de371824abf105a819c0"
       ]
@@ -1217,8 +1292,28 @@
   ],
   "bibliografia_reporte": [
     {
-      "nombre": "INVÍAS 767, capa oficial, recaptura 2026-11-04 18:15",
+      "nombre": "INVÍAS 767, capa oficial",
       "url": "https://hermes2.invias.gov.co/server/rest/services/N_767/Consulta767/FeatureServer/0",
+      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
+    },
+    {
+      "nombre": "Vía Sumapaz, 06:02",
+      "url": "https://x.com/ViaSumapaz/status/2118297775485956560",
+      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
+    },
+    {
+      "nombre": "Coviandina, 06:30",
+      "url": "https://x.com/CoviandinaSAS/status/2118304827075662060",
+      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
+    },
+    {
+      "nombre": "Concesión Túnel Aburrá Oriente, 07:30",
+      "url": "https://x.com/ConcesionTAO/status/2118320090386940208",
+      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
+    },
+    {
+      "nombre": "Ruta Bogotá Norte, 07:37",
+      "url": "https://x.com/RutaBogotaNorte/status/2118322175950438562",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     }
   ]
