@@ -60,7 +60,7 @@ Cada formato puede contratarse por separado. La propuesta define el alcance; est
 {% endfor %}
 {{ ec.commercial.scope }}
 {% endif %}
-{% if include.lang == 'en' %}Bruno during and after the experience{% else %}Bruno durante y después de la experiencia{% endif %}: {{ ec.bruno_scope }}
+{% if include.lang == 'en' %}Br1 provides personalised continuity between and after sessions. Access and conditions are agreed for each case; this does not promise permanent availability or ongoing human support.{% else %}Br1 aporta continuidad personalizada entre y después de las sesiones. El acceso y sus condiciones se acuerdan para cada caso; esto no promete disponibilidad permanente ni atención humana fuera de las sesiones.{% endif %}
 {% if include.detail and ec.evidence %}
 ### {{ ec.evidence.title }}
 
