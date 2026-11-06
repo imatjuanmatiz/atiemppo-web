@@ -3,36 +3,44 @@
   "fuente_datos": "vias_watch:watch.event_observations",
   "modo": "operativo",
   "draft": false,
-  "cut_id": "2026-11-05-md",
-  "revision_id": "rev-666cee94bfb06e9e09126a98564402e7",
+  "cut_id": "2026-11-05-pm",
+  "revision_id": "rev-2a836332894e1baecfc6fdeb5f75338a",
   "calidad_ingesta": {
     "state": "complete",
-    "revision_id": "rev-666cee94bfb06e9e09126a98564402e7",
-    "report_sha256": "0239a45b16b19fc3cf9e6cf27a5c64f5f5f0a5c85cf5258cd87451665b13ed76",
+    "revision_id": "rev-2a836332894e1baecfc6fdeb5f75338a",
+    "report_sha256": "4261905eaff5eca749fea54fb47d48e1daee17ce317273394636d7dfb0dd2390",
     "parser_version": "roads-2.0.0",
-    "detail_rows": 7,
-    "signal_rows": 5,
-    "observation_count": 7,
+    "detail_rows": 5,
+    "signal_rows": 6,
+    "observation_count": 5,
     "duplicate_rows": 0,
     "complete": true,
-    "evidencia_del_dia": 2,
-    "evidencia_heredada_o_sin_fecha": 5
+    "evidencia_del_dia": 1,
+    "evidencia_heredada_o_sin_fecha": 4
   },
   "zona_horaria": "America/Bogota",
   "nota_vigencia": "La fecha del corte acredita la actualización del reporte. Cada punto conserva la fecha de su evidencia; las referencias heredadas o sin enlace directo requieren verificación. El resumen editorial reproduce el reporte y no confirma por sí solo el estado actual.",
   "fecha": "2026-11-05",
-  "ventana": "MD",
-  "hora": "12:01",
-  "generado_en": "2026-11-05T12:01:00",
-  "artefacto_fuente": "2026-11-05-editor-eldato-version-vias-colombia-md.md",
-  "que_cambio": [],
+  "ventana": "PM",
+  "hora": "21:12",
+  "generado_en": "2026-11-05T21:12:00",
+  "artefacto_fuente": "2026-11-05-editor-eldato-version-vias-colombia-pm.md",
+  "que_cambio": [
+    {
+      "corredor": "Bogotá–Villavicencio",
+      "antes": "restricciones de carril entre K17 y K73 en el listado AM",
+      "ahora": "cierre esporádico adicional en sentido Villavicencio–Bogotá, K85+400, por manifestación",
+      "cambio": "nueva",
+      "evidencia": "Coviandina, 2026-11-05 20:04; sin tiempo estimado de cierre y apertura"
+    }
+  ],
   "notas_cambio": [],
   "listado": [
     {
-      "icono": "🔴",
-      "corredor": "Mediacanoa–Ansermanuevo",
+      "icono": "🟠",
+      "corredor": "Bogotá–Villavicencio",
       "km": "",
-      "estado": "cierre total programado de 07:30 a 13:30 — PR 73 — ajustar el viaje y confirmar habilitación.",
+      "estado": "cierres esporádicos reportados por autoridades — K85+400, sentido Villavicencio–Bogotá — prever demoras y atender a la Policía.",
       "fuente": ""
     },
     {
@@ -46,54 +54,46 @@
       "icono": "🟠",
       "corredor": "La Palmera–Presidente",
       "km": "",
-      "estado": "paso alternado y restricciones de carga — Cerrito, PR 58 — revisar peso y configuración del vehículo y planear ruta alterna.",
-      "fuente": ""
-    },
-    {
-      "icono": "🟠",
-      "corredor": "Plato–Salamina",
-      "km": "",
-      "estado": "restricción para vehículos de cuatro o más ruedas y paso alterno para vehículos exceptuados — puente Cerro San Antonio — verificar condiciones y ruta alterna.",
-      "fuente": ""
-    },
-    {
-      "icono": "🟠",
-      "corredor": "Bogotá–Villavicencio",
-      "km": "",
-      "estado": "circulación bidireccional y restricciones de carril según último parte disponible — varios puntos entre K17 y K73 — confirmar condiciones y prever demoras.",
+      "estado": "paso alternado y restricciones de carga — Cerrito, PR 58 — revisar peso y configuración y planear ruta alterna.",
       "fuente": ""
     }
   ],
   "senales_tempranas": [
     {
+      "tramo": "Bogotá–Girardot, PR 37+0200 a PR 41+0800",
+      "senal": "INVÍAS programa cierre de calzada derecha por mantenimiento de 22:00 a 05:00; vía alterna por calzada izquierda, Nariz del Diablo. Vía Sumapaz anuncia pasos alternados allí",
+      "fuente": "INVÍAS 767, registro 5183064; Vía Sumapaz 18:52",
+      "vigilar": "restricción futura al corte de 21:12; no implica cierre total del corredor"
+    },
+    {
       "tramo": "Bogotá–Girardot, km 37+0200",
-      "senal": "dos registros de paso a un carril cada 30 minutos desaparecieron del snapshot; Vía Sumapaz informó operación normal a las 06:02",
-      "fuente": "INVÍAS 767, registros 5184264 y 5184664; Vía Sumapaz",
-      "vigilar": "la baja de registros no confirma reapertura; el parte de concesión es anterior y discrepaba del registro INVÍAS del AM"
+      "senal": "el AM registró paso a un carril según INVÍAS; Vía Sumapaz informó operación normal a las 06:02",
+      "fuente": "INVÍAS 767, registros AM 5184264 y 5184664; Vía Sumapaz 06:02",
+      "vigilar": "la ausencia de esos registros en la captura actual no confirma reapertura; no hay parte nuevo que resuelva la discrepancia"
     },
     {
-      "tramo": "Túnel de Oriente",
-      "senal": "cierre a las 11:41 y habilitación en ambos sentidos a las 11:46",
-      "fuente": "Concesión Túnel Aburrá Oriente",
-      "vigilar": "episodio habilitado antes del corte; no establece restricción vigente"
+      "tramo": "Mediacanoa–Ansermanuevo, PR 73",
+      "senal": "terminó la ventana programada de cierre 07:30–13:30 y el registro figura como baja",
+      "fuente": "INVÍAS 767, registro 5183864",
+      "vigilar": "ausencia del registro y fin de la programación no prueban habilitación; sin contraste de autoridad o concesión en X"
     },
     {
-      "tramo": "La Mansa–Primavera, La Chuchita",
-      "senal": "registro de paso a un carril y sin ruta alterna",
-      "fuente": "INVÍAS 767, registro 5158265",
-      "vigilar": "registro iniciado el 2026-10-17 y recapturado, sin contraste nuevo de entidad"
+      "tramo": "Puerto Rey–Montería, puente Rojas Pinilla",
+      "senal": "baja del registro de restricción de carga",
+      "fuente": "INVÍAS 767, registro 3561406",
+      "vigilar": "una baja no demuestra que se levantó la restricción"
     },
     {
-      "tramo": "Armenia–La Línea, PR 33 y PR 41",
-      "senal": "registros editados de cierre parcial por obras",
-      "fuente": "INVÍAS 767, registros 5126665 y 5126666",
-      "vigilar": "obras registradas desde el 2026-09-15; la edición no demuestra cambio de estado"
+      "tramo": "Armenia–La Línea, PR 47",
+      "senal": "registro de cierre parcial editado, con inicio el 28 de julio",
+      "fuente": "INVÍAS 767, registro 5098264",
+      "vigilar": "edición y recaptura de registro antiguo no prueban cambio de estado"
     },
     {
-      "tramo": "Red nacional",
-      "senal": "restricciones de carga programadas para el puente festivo",
-      "fuente": "INVÍAS 767",
-      "vigilar": "programación futura; no es estado vigente de este corte"
+      "tramo": "Medellín, Autopista Norte, Tanques",
+      "senal": "movilidad reducida por siniestro sentido sur–norte",
+      "fuente": "Movilidad Medellín, 20:19",
+      "vigilar": "aviso puntual urbano sin confirmación de persistencia al corte"
     }
   ],
   "alertas_inmediatas": [],
@@ -101,63 +101,51 @@
     "estado_general": "degradada",
     "ventanas_esperadas": [
       "AM",
-      "MD"
+      "MD",
+      "PM"
     ],
     "ventanas_recibidas": [
       "AM",
-      "MD"
+      "MD",
+      "PM"
     ],
     "eventos_confirmados": 0,
-    "eventos_vigilancia": 7,
-    "pendientes_georreferencia": 7,
+    "eventos_vigilancia": 5,
+    "pendientes_georreferencia": 5,
     "fuentes": [
       {
-        "id": "src-6161b1ef32f236db19bb6b37",
-        "nombre": "INVÍAS 767, registro 5183864; captura 12:00",
+        "id": "src-3df67de27d42d798a0f5d148",
+        "nombre": "INVÍAS 767, registro 5169464; recaptura 21:11",
         "estado": "nombrada_sin_enlace_directo",
-        "ultima_consulta": "2026-11-05T12:01:00",
+        "ultima_consulta": "2026-11-05T21:12:00",
         "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
       },
       {
-        "id": "src-bd04ecb9bb1a7530a0149ce8",
-        "nombre": "INVÍAS 767, registro 5169464; captura 12:00",
+        "id": "src-c4c6487d26d3e5fe637d422b",
+        "nombre": "INVÍAS 767, registro 4897466; recaptura 21:11",
         "estado": "nombrada_sin_enlace_directo",
-        "ultima_consulta": "2026-11-05T12:01:00",
+        "ultima_consulta": "2026-11-05T21:12:00",
         "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
       },
       {
-        "id": "src-56d83330fdc0dae9c1b6b011",
-        "nombre": "Coviandina, 06:30, citado en editor AM",
+        "id": "src-94ce9179c09af6fc460d94c5",
+        "nombre": "INVÍAS 767, registro 5183464; recaptura 21:11",
         "estado": "nombrada_sin_enlace_directo",
-        "ultima_consulta": "2026-11-05T12:01:00",
+        "ultima_consulta": "2026-11-05T21:12:00",
         "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
       },
       {
-        "id": "src-0b686f009d786a79200a56bc",
-        "nombre": "INVÍAS 767, registro 4897466; captura 12:00",
+        "id": "src-3f45c27563e67a0509a806f9",
+        "nombre": "Coviandina, 20:04; autoridades reportan continuidad",
         "estado": "nombrada_sin_enlace_directo",
-        "ultima_consulta": "2026-11-05T12:01:00",
+        "ultima_consulta": "2026-11-05T21:12:00",
         "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
       },
       {
-        "id": "src-45a12c34dbfcead4b807cabc",
-        "nombre": "INVÍAS 767, registro 5183464; captura 12:00",
+        "id": "src-0e9a0cb67a286a3ebbe56598",
+        "nombre": "INVÍAS 767, registro 5171465; recaptura 21:11",
         "estado": "nombrada_sin_enlace_directo",
-        "ultima_consulta": "2026-11-05T12:01:00",
-        "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
-      },
-      {
-        "id": "src-1f44b41a56dc533c2e81c251",
-        "nombre": "INVÍAS 767, registro 5096264; captura 12:00",
-        "estado": "nombrada_sin_enlace_directo",
-        "ultima_consulta": "2026-11-05T12:01:00",
-        "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
-      },
-      {
-        "id": "src-24a166705635b94f3d3cf0e0",
-        "nombre": "INVÍAS 767, registro 5171465; captura 12:00",
-        "estado": "nombrada_sin_enlace_directo",
-        "ultima_consulta": "2026-11-05T12:01:00",
+        "ultima_consulta": "2026-11-05T21:12:00",
         "nota": "Referenciada en 1 observaciones; el cargador no consulta la fuente remota."
       }
     ]
@@ -166,25 +154,25 @@
   "eventos_confirmados": [],
   "eventos_vigilancia": [
     {
-      "id": "evt-30b7a87f9859e860a219",
-      "corredor": "Mediacanoa–Ansermanuevo",
-      "tramo": "PR 73+0000 a PR 73+0500",
+      "id": "evt-aaee8dace50a79245440",
+      "corredor": "Transversal del Sisga",
+      "tramo": "Guateque–El Secreto, San Luis de Gaceno PR 68",
       "departamento": null,
       "municipio": null,
       "via": null,
       "km": null,
-      "tipo": "cierre_total",
-      "severidad": "critical",
+      "tipo": "paso_restringido",
+      "severidad": "high",
       "estado": "uncertain",
-      "resumen": "cierre total programado por evento deportivo; sin confirmación independiente de ejecución o reapertura",
+      "resumen": "paso restringido; sin ruta alterna",
       "impacto_operativo": "",
       "confianza": 0.35,
-      "actualizado_en": "2026-11-05T12:01:00",
+      "actualizado_en": "2026-11-05T21:12:00",
       "estado_reportado": "active",
-      "fecha_evidencia": "2026-11-05",
-      "fuente_publicada_en": null,
-      "precision_fecha_evidencia": "date",
-      "vigencia_evidencia": "same_day",
+      "fecha_evidencia": "2026-10-23",
+      "fuente_publicada_en": "2026-10-23T16:43:00",
+      "precision_fecha_evidencia": "minute",
+      "vigencia_evidencia": "inherited",
       "base_confirmacion": "requires_source_verification",
       "identidad": "seguimiento_de_punto_no_incidente_unico",
       "georreferencia": {
@@ -195,13 +183,13 @@
       },
       "fuentes": [
         {
-          "id": "src-6161b1ef32f236db19bb6b37",
-          "nombre": "INVÍAS 767, registro 5183864; captura 12:00",
+          "id": "src-c4c6487d26d3e5fe637d422b",
+          "nombre": "INVÍAS 767, registro 4897466; recaptura 21:11",
           "url": "",
           "fortaleza": "named_unlinked",
-          "publicada_en": null,
-          "consultada_en": "2026-11-05T12:01:00",
-          "evidencia": "cierre total programado por evento deportivo; sin confirmación independiente de ejecución o reapertura"
+          "publicada_en": "2026-10-23T16:43:00",
+          "consultada_en": "2026-11-05T21:12:00",
+          "evidencia": "paso restringido; sin ruta alterna"
         }
       ]
     },
@@ -219,7 +207,7 @@
       "resumen": "paso controlado a un carril por pérdida de banca; sin ruta alterna",
       "impacto_operativo": "",
       "confianza": 0.35,
-      "actualizado_en": "2026-11-05T12:01:00",
+      "actualizado_en": "2026-11-05T21:12:00",
       "estado_reportado": "active",
       "fecha_evidencia": "2026-10-23",
       "fuente_publicada_en": "2026-10-23T10:18:00",
@@ -235,53 +223,13 @@
       },
       "fuentes": [
         {
-          "id": "src-bd04ecb9bb1a7530a0149ce8",
-          "nombre": "INVÍAS 767, registro 5169464; captura 12:00",
+          "id": "src-3df67de27d42d798a0f5d148",
+          "nombre": "INVÍAS 767, registro 5169464; recaptura 21:11",
           "url": "",
           "fortaleza": "named_unlinked",
           "publicada_en": "2026-10-23T10:18:00",
-          "consultada_en": "2026-11-05T12:01:00",
+          "consultada_en": "2026-11-05T21:12:00",
           "evidencia": "paso controlado a un carril por pérdida de banca; sin ruta alterna"
-        }
-      ]
-    },
-    {
-      "id": "evt-aaee8dace50a79245440",
-      "corredor": "Transversal del Sisga",
-      "tramo": "Guateque–El Secreto, San Luis de Gaceno PR 68",
-      "departamento": null,
-      "municipio": null,
-      "via": null,
-      "km": null,
-      "tipo": "paso_controlado",
-      "severidad": "medium",
-      "estado": "uncertain",
-      "resumen": "paso a un carril; sin ruta alterna",
-      "impacto_operativo": "",
-      "confianza": 0.35,
-      "actualizado_en": "2026-11-05T12:01:00",
-      "estado_reportado": "active",
-      "fecha_evidencia": "2026-10-23",
-      "fuente_publicada_en": "2026-10-23T16:43:00",
-      "precision_fecha_evidencia": "minute",
-      "vigencia_evidencia": "inherited",
-      "base_confirmacion": "requires_source_verification",
-      "identidad": "seguimiento_de_punto_no_incidente_unico",
-      "georreferencia": {
-        "estado": "sin_georreferencia",
-        "lat": null,
-        "lon": null,
-        "etiqueta": "Sin coordenadas; marcador oculto"
-      },
-      "fuentes": [
-        {
-          "id": "src-0b686f009d786a79200a56bc",
-          "nombre": "INVÍAS 767, registro 4897466; captura 12:00",
-          "url": "",
-          "fortaleza": "named_unlinked",
-          "publicada_en": "2026-10-23T16:43:00",
-          "consultada_en": "2026-11-05T12:01:00",
-          "evidencia": "paso a un carril; sin ruta alterna"
         }
       ]
     },
@@ -299,7 +247,7 @@
       "resumen": "paso controlado cada 20 minutos por mantenimiento; sin ruta alterna",
       "impacto_operativo": "",
       "confianza": 0.35,
-      "actualizado_en": "2026-11-05T12:01:00",
+      "actualizado_en": "2026-11-05T21:12:00",
       "estado_reportado": "active",
       "fecha_evidencia": "2026-11-04",
       "fuente_publicada_en": "2026-11-04T10:21:00",
@@ -315,20 +263,20 @@
       },
       "fuentes": [
         {
-          "id": "src-45a12c34dbfcead4b807cabc",
-          "nombre": "INVÍAS 767, registro 5183464; captura 12:00",
+          "id": "src-94ce9179c09af6fc460d94c5",
+          "nombre": "INVÍAS 767, registro 5183464; recaptura 21:11",
           "url": "",
           "fortaleza": "named_unlinked",
           "publicada_en": "2026-11-04T10:21:00",
-          "consultada_en": "2026-11-05T12:01:00",
+          "consultada_en": "2026-11-05T21:12:00",
           "evidencia": "paso controlado cada 20 minutos por mantenimiento; sin ruta alterna"
         }
       ]
     },
     {
-      "id": "evt-6551aa13f1e293e8b8a1",
+      "id": "evt-dafaea88d91fb72792f3",
       "corredor": "Bogotá - Villavicencio",
-      "tramo": "K18+300 a K19+000; K17+500 a K43+250 y K69+180; K36+500, K69+350 y K73+620",
+      "tramo": "K85+400, sentido Villavicencio–Bogotá",
       "departamento": null,
       "municipio": null,
       "via": null,
@@ -336,13 +284,13 @@
       "tipo": "otro",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "circulación bidireccional y reducciones o cierres de carril según el punto; parte anterior sin actualización en la muestra",
+      "resumen": "cierre esporádico por manifestación; sin tiempo estimado de cierre y apertura",
       "impacto_operativo": "",
       "confianza": 0.35,
-      "actualizado_en": "2026-11-05T12:01:00",
+      "actualizado_en": "2026-11-05T21:12:00",
       "estado_reportado": "uncertain",
       "fecha_evidencia": "2026-11-05",
-      "fuente_publicada_en": "2026-11-05T06:30:00",
+      "fuente_publicada_en": "2026-11-05T20:04:00",
       "precision_fecha_evidencia": "minute",
       "vigencia_evidencia": "same_day",
       "base_confirmacion": "requires_source_verification",
@@ -355,13 +303,13 @@
       },
       "fuentes": [
         {
-          "id": "src-56d83330fdc0dae9c1b6b011",
-          "nombre": "Coviandina, 06:30, citado en editor AM",
+          "id": "src-3f45c27563e67a0509a806f9",
+          "nombre": "Coviandina, 20:04; autoridades reportan continuidad",
           "url": "",
           "fortaleza": "named_unlinked",
-          "publicada_en": "2026-11-05T06:30:00",
-          "consultada_en": "2026-11-05T12:01:00",
-          "evidencia": "circulación bidireccional y reducciones o cierres de carril según el punto; parte anterior sin actualización en la muestra"
+          "publicada_en": "2026-11-05T20:04:00",
+          "consultada_en": "2026-11-05T21:12:00",
+          "evidencia": "cierre esporádico por manifestación; sin tiempo estimado de cierre y apertura"
         }
       ]
     },
@@ -376,10 +324,10 @@
       "tipo": "otro",
       "severidad": "low",
       "estado": "uncertain",
-      "resumen": "paso alternado; restringidos vehículos de carga C3 o superiores y vehículos con peso bruto superior a 16 t",
+      "resumen": "paso alternado; restringidos vehículos de carga C3 o superiores y peso bruto superior a 16 t",
       "impacto_operativo": "",
       "confianza": 0.35,
-      "actualizado_en": "2026-11-05T12:01:00",
+      "actualizado_en": "2026-11-05T21:12:00",
       "estado_reportado": "uncertain",
       "fecha_evidencia": "2026-10-26",
       "fuente_publicada_en": "2026-10-26T18:30:00",
@@ -395,53 +343,13 @@
       },
       "fuentes": [
         {
-          "id": "src-24a166705635b94f3d3cf0e0",
-          "nombre": "INVÍAS 767, registro 5171465; captura 12:00",
+          "id": "src-0e9a0cb67a286a3ebbe56598",
+          "nombre": "INVÍAS 767, registro 5171465; recaptura 21:11",
           "url": "",
           "fortaleza": "named_unlinked",
           "publicada_en": "2026-10-26T18:30:00",
-          "consultada_en": "2026-11-05T12:01:00",
-          "evidencia": "paso alternado; restringidos vehículos de carga C3 o superiores y vehículos con peso bruto superior a 16 t"
-        }
-      ]
-    },
-    {
-      "id": "evt-b145e551c502866af39a",
-      "corredor": "Plato–Salamina",
-      "tramo": "puente Cerro San Antonio, PR 82+0590 a PR 82+0620",
-      "departamento": null,
-      "municipio": null,
-      "via": null,
-      "km": null,
-      "tipo": "otro",
-      "severidad": "low",
-      "estado": "uncertain",
-      "resumen": "restringidos vehículos indicados de cuatro o más ruedas; bicicletas, bicitaxis, motos y motocarros con paso alterno de un vehículo",
-      "impacto_operativo": "",
-      "confianza": 0.35,
-      "actualizado_en": "2026-11-05T12:01:00",
-      "estado_reportado": "uncertain",
-      "fecha_evidencia": "2026-06-12",
-      "fuente_publicada_en": null,
-      "precision_fecha_evidencia": "date",
-      "vigencia_evidencia": "inherited",
-      "base_confirmacion": "requires_source_verification",
-      "identidad": "seguimiento_de_punto_no_incidente_unico",
-      "georreferencia": {
-        "estado": "sin_georreferencia",
-        "lat": null,
-        "lon": null,
-        "etiqueta": "Sin coordenadas; marcador oculto"
-      },
-      "fuentes": [
-        {
-          "id": "src-1f44b41a56dc533c2e81c251",
-          "nombre": "INVÍAS 767, registro 5096264; captura 12:00",
-          "url": "",
-          "fortaleza": "named_unlinked",
-          "publicada_en": null,
-          "consultada_en": "2026-11-05T12:01:00",
-          "evidencia": "restringidos vehículos indicados de cuatro o más ruedas; bicicletas, bicitaxis, motos y motocarros con paso alterno de un vehículo"
+          "consultada_en": "2026-11-05T21:12:00",
+          "evidencia": "paso alternado; restringidos vehículos de carga C3 o superiores y peso bruto superior a 16 t"
         }
       ]
     }
@@ -527,9 +435,9 @@
         "corredor": "Transversal del Sisga",
         "dias_confirmados": 1,
         "dias_vigilancia": 2,
-        "cortes_con_observacion": 4,
-        "severidad_maxima": "medium",
-        "ultima_observacion": "2026-11-05T12:01:00",
+        "cortes_con_observacion": 5,
+        "severidad_maxima": "high",
+        "ultima_observacion": "2026-11-05T21:12:00",
         "ultimo_estado": "watch",
         "dias": [
           {
@@ -596,11 +504,12 @@
             "fecha": "2026-11-05",
             "ventanas": [
               "AM",
-              "MD"
+              "MD",
+              "PM"
             ],
             "confirmados": 0,
             "vigilancia": 3,
-            "severidad_maxima": "medium",
+            "severidad_maxima": "high",
             "resumenes": [
               "paso controlado a un carril por pérdida de banca; sin ruta alterna",
               "paso a un carril; sin ruta alterna",
@@ -1052,9 +961,9 @@
         "corredor": "La Palmera–Presidente",
         "dias_confirmados": 0,
         "dias_vigilancia": 3,
-        "cortes_con_observacion": 5,
+        "cortes_con_observacion": 6,
         "severidad_maxima": "low",
-        "ultima_observacion": "2026-11-05T12:01:00",
+        "ultima_observacion": "2026-11-05T21:12:00",
         "ultimo_estado": "watch",
         "dias": [
           {
@@ -1119,7 +1028,8 @@
             "fecha": "2026-11-05",
             "ventanas": [
               "AM",
-              "MD"
+              "MD",
+              "PM"
             ],
             "confirmados": 0,
             "vigilancia": 1,
@@ -1135,9 +1045,9 @@
         "corredor": "Bogotá - Villavicencio",
         "dias_confirmados": 0,
         "dias_vigilancia": 2,
-        "cortes_con_observacion": 3,
+        "cortes_con_observacion": 4,
         "severidad_maxima": "low",
-        "ultima_observacion": "2026-11-05T12:01:00",
+        "ultima_observacion": "2026-11-05T21:12:00",
         "ultimo_estado": "watch",
         "dias": [
           {
@@ -1196,14 +1106,16 @@
             "fecha": "2026-11-05",
             "ventanas": [
               "AM",
-              "MD"
+              "MD",
+              "PM"
             ],
             "confirmados": 0,
-            "vigilancia": 1,
+            "vigilancia": 2,
             "severidad_maxima": "low",
             "resumenes": [
               "circulación bidireccional y reducciones o cierres de carril según el punto",
-              "circulación bidireccional y reducciones o cierres de carril según el punto; parte anterior sin actualización en la muestra"
+              "circulación bidireccional y reducciones o cierres de carril según el punto; parte anterior sin actualización en la muestra",
+              "cierre esporádico por manifestación; sin tiempo estimado de cierre y apertura"
             ]
           }
         ]
@@ -1307,75 +1219,68 @@
         "resueltos": 0,
         "por_verificar": 7
       }
+    },
+    {
+      "cut_id": "2026-11-05-pm",
+      "hora": "21:12",
+      "ventana": "PM",
+      "tipo": "corte_final",
+      "descripcion": "0 nuevas; 0 persistentes; 0 resueltas; 5 por verificar.",
+      "conteos": {
+        "nuevos": 0,
+        "persistentes": 0,
+        "resueltos": 0,
+        "por_verificar": 5
+      }
     }
   ],
   "fuentes": [
     {
-      "id": "src-6161b1ef32f236db19bb6b37",
-      "nombre": "INVÍAS 767, registro 5183864; captura 12:00",
+      "id": "src-3df67de27d42d798a0f5d148",
+      "nombre": "INVÍAS 767, registro 5169464; recaptura 21:11",
       "url": "",
       "fortaleza": "named_unlinked",
-      "consultada_en": "2026-11-05T12:01:00",
-      "eventos": [
-        "evt-30b7a87f9859e860a219"
-      ]
-    },
-    {
-      "id": "src-bd04ecb9bb1a7530a0149ce8",
-      "nombre": "INVÍAS 767, registro 5169464; captura 12:00",
-      "url": "",
-      "fortaleza": "named_unlinked",
-      "consultada_en": "2026-11-05T12:01:00",
+      "consultada_en": "2026-11-05T21:12:00",
       "eventos": [
         "evt-6357942b8f97c48bee42"
       ]
     },
     {
-      "id": "src-56d83330fdc0dae9c1b6b011",
-      "nombre": "Coviandina, 06:30, citado en editor AM",
+      "id": "src-c4c6487d26d3e5fe637d422b",
+      "nombre": "INVÍAS 767, registro 4897466; recaptura 21:11",
       "url": "",
       "fortaleza": "named_unlinked",
-      "consultada_en": "2026-11-05T12:01:00",
-      "eventos": [
-        "evt-6551aa13f1e293e8b8a1"
-      ]
-    },
-    {
-      "id": "src-0b686f009d786a79200a56bc",
-      "nombre": "INVÍAS 767, registro 4897466; captura 12:00",
-      "url": "",
-      "fortaleza": "named_unlinked",
-      "consultada_en": "2026-11-05T12:01:00",
+      "consultada_en": "2026-11-05T21:12:00",
       "eventos": [
         "evt-aaee8dace50a79245440"
       ]
     },
     {
-      "id": "src-45a12c34dbfcead4b807cabc",
-      "nombre": "INVÍAS 767, registro 5183464; captura 12:00",
+      "id": "src-94ce9179c09af6fc460d94c5",
+      "nombre": "INVÍAS 767, registro 5183464; recaptura 21:11",
       "url": "",
       "fortaleza": "named_unlinked",
-      "consultada_en": "2026-11-05T12:01:00",
+      "consultada_en": "2026-11-05T21:12:00",
       "eventos": [
         "evt-b0d5c55d58bf55082892"
       ]
     },
     {
-      "id": "src-1f44b41a56dc533c2e81c251",
-      "nombre": "INVÍAS 767, registro 5096264; captura 12:00",
+      "id": "src-3f45c27563e67a0509a806f9",
+      "nombre": "Coviandina, 20:04; autoridades reportan continuidad",
       "url": "",
       "fortaleza": "named_unlinked",
-      "consultada_en": "2026-11-05T12:01:00",
+      "consultada_en": "2026-11-05T21:12:00",
       "eventos": [
-        "evt-b145e551c502866af39a"
+        "evt-dafaea88d91fb72792f3"
       ]
     },
     {
-      "id": "src-24a166705635b94f3d3cf0e0",
-      "nombre": "INVÍAS 767, registro 5171465; captura 12:00",
+      "id": "src-0e9a0cb67a286a3ebbe56598",
+      "nombre": "INVÍAS 767, registro 5171465; recaptura 21:11",
       "url": "",
       "fortaleza": "named_unlinked",
-      "consultada_en": "2026-11-05T12:01:00",
+      "consultada_en": "2026-11-05T21:12:00",
       "eventos": [
         "evt-de371824abf105a819c0"
       ]
@@ -1388,18 +1293,23 @@
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
+      "nombre": "Coviandina, 20:04",
+      "url": "https://x.com/CoviandinaSAS/status/2118509824292032952",
+      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
+    },
+    {
+      "nombre": "Vía Sumapaz, 18:52",
+      "url": "https://x.com/ViaSumapaz/status/2118491701983527125",
+      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
+    },
+    {
       "nombre": "Vía Sumapaz, 06:02",
       "url": "https://x.com/ViaSumapaz/status/2118297775485956560",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     },
     {
-      "nombre": "Concesión Túnel Aburrá Oriente, cierre 11:41",
-      "url": "https://x.com/ConcesionTAO/status/2118383243254731207",
-      "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
-    },
-    {
-      "nombre": "Concesión Túnel Aburrá Oriente, habilitación 11:46",
-      "url": "https://x.com/ConcesionTAO/status/2118384727769964934",
+      "nombre": "Movilidad Medellín, 20:19",
+      "url": "https://x.com/movilidad_med/status/2118513481624215860",
       "alcance": "bibliografia_del_reporte_no_asignada_a_cada_evento"
     }
   ]
