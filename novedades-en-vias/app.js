@@ -60,23 +60,17 @@ function render() {
 
   const delta = state.que_cambio || [];
   const notes = state.notas_cambio || [];
-  const deltaSection = document.getElementById("que-cambio");
-  const isMorning = String(state.ventana || "").toUpperCase() === "AM";
-  if (isMorning) {
-    deltaSection.hidden = true;
-  } else {
-    deltaSection.hidden = false;
-    document.getElementById("delta-table").innerHTML = delta.length
-      ? table(["Corredor / tramo", "Antes (AM)", "Ahora", "Cambio", "Evidencia"], delta, (row) => `
-          <td>${escapeHtml(row.corredor)}</td>
-          <td>${escapeHtml(row.antes)}</td>
-          <td>${escapeHtml(row.ahora)}</td>
-          <td>${escapeHtml(row.cambio)}</td>
-          <td>${linkify(row.evidencia)}</td>
-        `)
-      : empty("No se identificó un cambio verificable frente al listado de la mañana. La ausencia de una fila no confirma apertura.");
-    document.getElementById("delta-notes").innerHTML = notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("");
-  }
+  document.getElementById("que-cambio").hidden = false;
+  document.getElementById("delta-table").innerHTML = delta.length
+    ? table(["Corredor / tramo", "Antes", "Ahora", "Cambio", "Evidencia"], delta, (row) => `
+        <td>${escapeHtml(row.corredor)}</td>
+        <td>${escapeHtml(row.antes)}</td>
+        <td>${escapeHtml(row.ahora)}</td>
+        <td>${escapeHtml(row.cambio)}</td>
+        <td>${linkify(row.evidencia)}</td>
+      `)
+    : empty("No hay un listado de cambios disponible para este corte. La ausencia de una fila no confirma apertura ni que no existan novedades.");
+  document.getElementById("delta-notes").innerHTML = notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("");
 
   // Post = top 5; la web muestra el listado completo vigente (puntos activos del corte).
   const top = state.listado || [];
