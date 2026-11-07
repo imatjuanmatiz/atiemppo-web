@@ -126,18 +126,60 @@ function render() {
   }
 }
 
+const VIAL_RAW_URL = "https://raw.githubusercontent.com/imatjuanmatiz/atiemppo-web/main/novedades-en-vias/estado_vial.json";
+const VIAL_FETCH_TIMEOUT_MS = 6000;
+const VIAL_STALE_MS = 8 * 60 * 60 * 1000;
+
+async function fetchVialState(url) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), VIAL_FETCH_TIMEOUT_MS);
+  try {
+    const response = await fetch(url, { cache: "no-store", signal: controller.signal });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+    if (!data || typeof data !== "object" || !/^\d{4}-\d{2}-\d{2}-(am|md|pm)$/.test(data.cut_id || "")) {
+      throw new Error("Corte inválido");
+    }
+    return data;
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+function cutFreshness(value, now = Date.now()) {
+  // Do not interpret an unzoned timestamp using the visitor's local timezone.
+  if (typeof value !== "string" || !/(Z|[+-]\d{2}:\d{2})$/i.test(value)) {
+    return { text: "Hora del corte no verificable.", warning: true };
+  }
+  const millis = Date.parse(value);
+  if (!Number.isFinite(millis)) return { text: "Hora del corte no verificable.", warning: true };
+  const formatted = new Intl.DateTimeFormat("es-CO", {
+    timeZone: "America/Bogota", dateStyle: "medium", timeStyle: "short",
+  }).format(new Date(millis));
+  if (millis > now + 2 * 60 * 1000) return { text: `Corte con fecha futura: ${formatted} COT.`, warning: true };
+  if (now - millis > VIAL_STALE_MS) return { text: `Corte de ${formatted} COT; tiene más de 8 horas.`, warning: true };
+  return { text: `Corte de ${formatted} COT.`, warning: false };
+}
+
 async function loadState() {
   const status = document.getElementById("load-status");
+  let origin = "fuente pública del consolidado";
+  let fallback = false;
   try {
-    const response = await fetch("estado_vial.json", { cache: "no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    state = await response.json();
+    try {
+      state = await fetchVialState(VIAL_RAW_URL);
+    } catch (_) {
+      fallback = true;
+      origin = "copia de esta página; fuente pública no disponible";
+      state = await fetchVialState("estado_vial.json");
+    }
     render();
-    status.className = "load-status ready";
-    status.textContent = `Corte ${state.cut_id} · ${state.calidad_ingesta?.observation_count ?? 0} puntos de seguimiento. La fecha del reporte no confirma la vigencia de cada novedad.`;
-  } catch (error) {
+    const freshness = cutFreshness(state.generado_en);
+    status.className = `load-status ${fallback || freshness.warning ? "warning" : "ready"}`;
+    status.textContent = `${freshness.text} Fuente: ${origin}. La fecha del corte no confirma la vigencia de cada novedad; consulte su evidencia.`;
+  } catch (_) {
     status.className = "load-status error";
-    status.textContent = `No fue posible cargar el corte. ${error.message}`;
+    status.textContent = "No fue posible cargar el corte vial desde la fuente pública ni desde la copia de esta página.";
   }
 }
 
