@@ -13,18 +13,5 @@
   <section class="experience-section experience-close"><div class="container"><p class="eyebrow">{{ ec.next }}</p><h2 class="section-heading">{{ ec.contact_title }}</h2><p>{{ ec.contact_body }}</p><div class="hero-actions"><a class="btn btn-primary" href="{{ ec.prefix }}/contacto/">{{ ec.write }}</a><a class="experience-link" href="{{ site.data.bruno_contact.whatsapp_url }}">{{ site.data.bruno_contact[page.lang].short_cta }} →</a><a class="experience-link" href="mailto:juanmatiz@atiemppo.co">juanmatiz@atiemppo.co →</a></div></div></section>
 </main>
 {% include footer.html %}
-<script>
-  (() => {
-    const stages = document.querySelectorAll('.experience-journey a');
-    function markCurrentStage() {
-      stages.forEach((stage) => {
-        if (stage.hash === window.location.hash) stage.setAttribute('aria-current', 'location');
-        else stage.removeAttribute('aria-current');
-      });
-    }
-    markCurrentStage();
-    window.addEventListener('hashchange', markCurrentStage);
-  })();
-</script>
 </body>
 </html>
