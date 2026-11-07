@@ -10,6 +10,7 @@ function data(time=new Date().toISOString()){return {cut_id:'2026-11-07-am',fech
 function response(d){return {ok:true,json:async()=>d}}
 (async()=>{
  let urls=[];let t=setup(async (url)=>{urls.push(url);return response(data())});await vm.runInContext('loadState()',t.context);
+ assert.match(t.element('memoria-vial').innerHTML,/Consultar los datos del corte<\/a>/);assert.doesNotMatch(t.element('memoria-vial').innerHTML,/historial de siete días/);
  assert.deepEqual(urls,[raw]);assert.match(t.element('load-status').textContent,/fuente pública del consolidado/);assert.match(t.element('load-status').textContent,/no confirma la vigencia/);assert.match(t.element('load-status').className,/ready/);
  t=setup(async()=>response(data(new Date(Date.now()-9*3600e3).toISOString())));await vm.runInContext('loadState()',t.context);
  assert.match(t.element('load-status').textContent,/más de 8 horas/);assert.match(t.element('load-status').className,/warning/);
