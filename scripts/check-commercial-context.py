@@ -59,7 +59,7 @@ for name, lang, full in files:
     section = section_match.group(1)
     section_text = normalized(section)
     check("/sesiones/" not in section, f"{name}: current offer separated from historical archive")
-    check({offer["key"] for offer in ec["offers"]} == {"teams", "conferences", "workshop"}, f"{name}: all three main commercial experiences")
+    check({offer["key"] for offer in ec["offers"]} == {"teams", "conferences", "workshop", "personal"}, f"{name}: all four commercial experiences")
     prefix = ec["prefix"]
     compare_url = f"https://atiemppo.com{prefix}/experiencias/"
     check(compare_url in section, f"{name}: direct comparison destination")

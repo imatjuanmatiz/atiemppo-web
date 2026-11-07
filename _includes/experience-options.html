@@ -2,9 +2,16 @@
 <section class="experience-section experience-options" id="experiencias">
   <div class="container">
     <div class="experience-section-heading"><p class="eyebrow">{{ ec.title }}</p><h2 class="section-heading">{{ ec.options_title }}</h2><p>{{ ec.options_intro }}</p></div>
+    <nav class="experience-journey" aria-label="{{ ec.route_label }}">
+      <ol role="list">
+        {% for offer in ec.offers %}
+        <li><a href="#formato-{{ offer.key }}"><span class="experience-stage-number">0{{ forloop.index }}</span><strong>{{ offer.stage }}</strong><span class="experience-stage-format">{{ offer.label }}</span></a></li>
+        {% endfor %}
+      </ol>
+    </nav>
     <div class="experience-grid">
       {% for offer in ec.offers %}
-      <article class="experience-option">
+      <article class="experience-option" id="formato-{{ offer.key }}" tabindex="-1">
         <span class="experience-number" aria-hidden="true">0{{ forloop.index }}</span>
         <div><p class="experience-label">{{ offer.label }}</p><h3>{{ offer.title }}</h3><p>{{ offer.summary }}</p><dl class="experience-format"><div><dt>{{ ec.audience_label }}</dt><dd>{{ offer.format_audience }}</dd></div><div><dt>{{ ec.activity_label }}</dt><dd>{{ offer.format_activity }}</dd></div><div><dt>{{ ec.outcome_label }}</dt><dd>{{ offer.format_outcome }}</dd></div></dl><p class="experience-comparison-example"><strong>{{ ec.commercial.example_label }}:</strong> {{ offer.example.title }}</p><div class="experience-option-actions"><a class="experience-link" href="{{ ec.prefix }}{{ offer.path }}">{{ offer.link }} <span aria-hidden="true">↗</span></a><a class="experience-link" href="{{ ec.prefix }}/contacto/?servicio={{ offer.service }}">{{ offer.cta }} →</a></div></div>
       </article>
