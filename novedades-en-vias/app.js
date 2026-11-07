@@ -96,7 +96,7 @@ function render() {
         <td>${(point.fuentes || []).map(source => source.url ? linkify(source.url) : escapeHtml(source.nombre)).join("<br>")}</td>`
     )}</div></details>
     <details><summary>Fuentes del reporte</summary><ul>${(state.bibliografia_reporte || []).map(source => `<li><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener">${escapeHtml(source.nombre)}</a></li>`).join("")}</ul></details>
-    <p><a href="estado_vial.json">Consultar los datos del corte y el historial de siete días</a></p>`;
+    <p><a href="estado_vial.json">Consultar los datos del corte</a></p>`;
   document.getElementById("listado-table").innerHTML = listado.length
     ? table(["", "Corredor / tramo", "km / PR / sector", "Estado", "Corte / fuente"], listado, (row) => `
         <td class="icon-cell">${escapeHtml(row.icono || "")}</td>
