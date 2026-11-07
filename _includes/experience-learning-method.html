@@ -1,0 +1,45 @@
+{% assign learning_ec = site.data.experiences[include.lang] %}
+{% assign method = learning_ec.learning_method %}
+<section class="experience-section experience-bruno experience-method" id="conocimiento" aria-labelledby="experience-method-title">
+  <div class="container">
+    <div class="experience-split">
+      <div>
+        <p class="eyebrow">{{ method.label }}</p>
+        <h2 class="section-heading" id="experience-method-title">{{ method.title }}</h2>
+        <p>{{ method.intro }}</p>
+      </div>
+      <div>
+        <p class="experience-method-statement">{{ method.statement }}</p>
+        <p>{{ method.practice }}</p>
+      </div>
+    </div>
+    <figure class="experience-loop">
+      <figcaption class="eyebrow">{{ method.diagram_title }}</figcaption>
+      <div class="experience-loop-grid">
+        <ol role="list">
+          {% for step in method.steps %}
+          <li class="experience-loop-step">
+            <h3>0{{ forloop.index }} · {{ step.title }}</h3>
+            <p>{{ step.text }}</p>
+          </li>
+          {% endfor %}
+        </ol>
+        <p class="experience-loop-core"><strong>{{ method.core }}</strong><span>{{ method.feedback }}</span></p>
+        {% assign arrow_directions = 'east,south,west,north' | split: ',' %}
+        {% for direction in arrow_directions %}
+        <svg class="experience-loop-arrow experience-loop-arrow-{{ direction }}" aria-hidden="true" viewBox="0 0 48 24">
+          <path d="M2 12h43m-7-6 7 6-7 6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        {% endfor %}
+      </div>
+      <p class="experience-loop-role">{{ method.role }}</p>
+    </figure>
+    <div class="experience-split experience-method-scope">
+      <p>{{ method.scope }}</p>
+      <div>
+        <h3>Br1 · {{ learning_ec.bruno_eyebrow }}</h3>
+        <p>{{ learning_ec.bruno_body }} {{ learning_ec.bruno_scope }}</p>
+      </div>
+    </div>
+  </div>
+</section>
