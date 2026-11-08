@@ -116,3 +116,42 @@
   .knowledge-home .knowledge-commercial-actions { margin-top: 20px; }
   .knowledge-home .knowledge-commercial-actions .btn { width: 100%; }
 }
+
+/* The home page opens with training, followed by the shared comparison and method. */
+.knowledge-home .knowledge-hero.knowledge-training-hero {
+  padding: clamp(32px, 5vw, 72px) 0;
+}
+.knowledge-training-opening {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: clamp(24px, 5vw, 72px);
+  align-items: center;
+}
+.knowledge-home .knowledge-training-hero .eyebrow { justify-content: flex-start; margin-bottom: 16px; }
+.knowledge-home .knowledge-hero.knowledge-training-hero h1 {
+  margin: 0;
+  max-width: 18ch;
+  font-size: clamp(2.75rem, 5vw, 4.5rem);
+}
+.knowledge-home .knowledge-training-hero .knowledge-training-promise {
+  max-width: 24ch;
+  margin: 12px 0 0;
+  font-size: clamp(1.5rem, 2.4vw, 2.125rem);
+  font-weight: 500;
+  letter-spacing: -.03em;
+  line-height: 1.15;
+}
+.knowledge-training-summary { margin: 16px 0 0; color: #6b6b6b; max-width: 53ch; }
+.knowledge-training-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; margin-top: 20px; }
+.knowledge-training-actions span { margin-left: 6px; }
+.knowledge-training-hero .experience-photo { background: #f5f5f5; }
+.knowledge-training-hero .experience-photo figcaption a { display: inline-flex; align-items: center; min-height: 44px; }
+.knowledge-home .experience-options, .knowledge-home .experience-booking { background: #f5f5f5; }
+.knowledge-home .experience-section { padding-block: clamp(48px, 6vw, 80px); }
+.knowledge-home .experience-options .experience-section-heading { margin-bottom: 24px; }
+.knowledge-home .experience-method h2, .knowledge-home .experience-method h3 { color: #fff; }
+.knowledge-home .experience-method .eyebrow { color: #a3a3a3; }
+@media (max-width: 740px) {
+  .knowledge-training-opening { grid-template-columns: minmax(0, 1fr); }
+  .knowledge-training-hero .experience-photo { max-width: 560px; }
+}

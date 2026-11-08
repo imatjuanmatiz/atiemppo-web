@@ -8,12 +8,14 @@
   </div>
 </section>
 {%- endif -%}
+{% unless include.home %}
 <section class="experience-section experience-evidence" id="trabajo-publico">
   <div class="container experience-split">
     <div><p class="eyebrow">{{ commercial_ec.evidence.label }}</p><h2 class="section-heading">{{ commercial_ec.evidence.title }}</h2><p>{{ commercial_ec.evidence.intro }}</p></div>
     <div><ul class="experience-evidence-links">{% for link in commercial_ec.evidence.links %}<li><a class="experience-link" href="{{ link.path }}">{{ link.label }} →</a></li>{% endfor %}</ul><p class="experience-note">{{ commercial_ec.evidence.note }}</p></div>
   </div>
 </section>
+{% endunless %}
 <section class="experience-section experience-paper experience-booking" id="como-contratar">
   <div class="container">
     <header class="experience-section-heading"><p class="eyebrow">{{ commercial.label }}</p><h2 class="section-heading">{{ commercial.title }}</h2><p>{{ commercial.intro }}</p></header>
@@ -21,5 +23,6 @@
     <ol class="experience-booking-steps">{% for step in commercial.steps %}<li><span class="experience-number" aria-hidden="true">0{{ forloop.index }}</span><h3>{{ step.title }}</h3><p>{{ step.text }}</p></li>{% endfor %}</ol>
     <div class="experience-request"><div><h3>{{ commercial.request_title }}</h3><p>{{ commercial.request_intro }}</p></div><ul>{% for item in commercial.request_inputs %}<li>{{ item }}</li>{% endfor %}</ul></div>
     <p class="experience-note experience-booking-scope">{{ commercial.scope }}</p>
+    {% if include.home %}<a class="btn btn-primary" href="#contacto">{{ commercial_ec.write }} →</a>{% endif %}
   </div>
 </section>
