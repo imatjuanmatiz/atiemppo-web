@@ -125,7 +125,7 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:56px 28px 34px;margin-top:
 {% include header.html lang="en" %}
 
 
-<main>
+<main id="main-content">
   <div class="article-hero">
     <div class="crumb"><a href="/en/">Home</a> / <a href="/en/blog/">Blog</a></div>
     <span class="lab-chip">{{ page.lab | default:'Lab' }}</span>
@@ -133,7 +133,7 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:56px 28px 34px;margin-top:
     {% if page.description %}<p class="desc">{{ page.description }}</p>{% endif %}
     <div class="article-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{% include post-date.html lang="en" %}</time><span>By {{ page.author | default:'Juan Pablo Matiz' }}</span></div>
   </div>
-  {% if page.image %}<div class="cover"><img src="{{ page.image }}" alt="{{ page.title }}"/></div>{% endif %}
+  {% if page.image %}<div class="cover">{% include responsive-image.html src=page.image alt=page.title loading="lazy" sizes="(max-width: 960px) calc(100vw - 56px), 904px" %}</div>{% endif %}
 
   <article class="article">
     {{ content }}

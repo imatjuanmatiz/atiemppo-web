@@ -96,22 +96,24 @@ a:hover { color: var(--red); }
 .atiemppo-links a {
   display: inline-flex;
   align-items: center;
-  border-bottom: 3px solid transparent;
   color: var(--ink);
   font-size: 13px;
   font-weight: 750;
-  text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.35em;
 }
 
 .atiemppo-links a:hover,
 .atiemppo-links a:focus-visible {
   color: var(--forest-2);
-  border-bottom-color: rgba(226, 173, 24, 0.45);
+  text-decoration-color: rgba(226, 173, 24, 0.45);
 }
 
 .atiemppo-links a.active {
   color: var(--forest);
-  border-bottom-color: var(--yellow);
+  text-decoration-color: var(--yellow);
 }
 
 .site-header {

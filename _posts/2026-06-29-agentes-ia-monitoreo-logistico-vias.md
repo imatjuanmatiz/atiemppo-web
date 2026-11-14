@@ -26,7 +26,7 @@ Una parte aparece en fuentes oficiales. Otra en concesiones. Otra en redes socia
 Ahí es donde un agente especializado empieza a tener sentido.
 
 <figure>
-  <img src="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia.png" alt="Captura del grupo de WhatsApp Novedades en vías - Atiemppo con reportes de Bruno sobre el corte de mediodía">
+  <picture><source type="image/avif" srcset="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-640.avif 640w, /assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-800.avif 800w, /assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-1088.avif 1088w" sizes="(max-width: 860px) 100vw, 840px"><source type="image/webp" srcset="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-640.webp 640w, /assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-800.webp 800w, /assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-1088.webp 1088w" sizes="(max-width: 860px) 100vw, 840px"><img src="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia.png" alt="Captura del grupo de WhatsApp Novedades en vías - Atiemppo con reportes de Bruno sobre el corte de mediodía" width="1088" height="1886" loading="lazy" decoding="async"></picture>
   <figcaption>El agente publica cortes operativos en WhatsApp con fuentes, cambios por corredor y lectura para carga.</figcaption>
 </figure>
 
