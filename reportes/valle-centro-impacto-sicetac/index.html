@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ATIEMPPO | Valle del Cauca hacia el centro: impacto SICETAC</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous" referrerpolicy="no-referrer">
   <style>
     :root {
       --bg: #f6f7f2;
@@ -123,7 +123,7 @@
     <div class="top-meta">Reporte vivo · Septiembre 2026</div>
   </header>
   <div class="source-strip"><b>ATIEMPPO · El Dato Logístico.</b> Fuente: Mintransporte, Cálculos Atiemppo 2026. Cobertura: rutas SICETAC con origen en Valle del Cauca y destino en Bogotá D.C., Cundinamarca, Boyacá, Tolima, Huila o Meta. Comparación septiembre 2026 vs diciembre 2025. Se excluyen geometrías con distancia GraphHopper inconsistente frente a SICETAC.</div>
-  <main class="app">
+  <main class="app" id="main-content">
     <aside>
       <header>
         <h1>Valle del Cauca hacia el centro: impacto SICETAC</h1>
@@ -169,7 +169,7 @@
     </aside>
     <section id="map"></section>
   </main>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./rutas_valle_centro_impacto_sicetac_data.js?v=296efcbaf866"></script>
   <script>
     const DATA = window.SICETAC_VARIACION_DATA;

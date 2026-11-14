@@ -23,7 +23,7 @@ Inside companies, value shows up when AI can help move real work: review informa
 That's the point of Bruno, our assistant built on OpenClaw: an AI designed to get things done.
 
 <figure>
-  <img src="/assets/images/blog/bruno-openclaw/bruno-whatsapp-explica-quien-es.png" alt="WhatsApp screenshot where Bruno explains that it is the main agent and orchestrator inside OpenClaw">
+  <picture><source type="image/avif" srcset="/assets/images/blog/bruno-openclaw/bruno-whatsapp-explica-quien-es-640.avif 640w, /assets/images/blog/bruno-openclaw/bruno-whatsapp-explica-quien-es-800.avif 800w, /assets/images/blog/bruno-openclaw/bruno-whatsapp-explica-quien-es-1000.avif 1000w" sizes="(max-width: 860px) 100vw, 840px"><source type="image/webp" srcset="/assets/images/blog/bruno-openclaw/bruno-whatsapp-explica-quien-es-640.webp 640w, /assets/images/blog/bruno-openclaw/bruno-whatsapp-explica-quien-es-800.webp 800w, /assets/images/blog/bruno-openclaw/bruno-whatsapp-explica-quien-es-1000.webp 1000w" sizes="(max-width: 860px) 100vw, 840px"><img src="/assets/images/blog/bruno-openclaw/bruno-whatsapp-explica-quien-es.png" alt="WhatsApp screenshot where Bruno explains that it is the main agent and orchestrator inside OpenClaw" width="1000" height="1052" loading="lazy" decoding="async"></picture>
   <figcaption>Bruno doesn't introduce itself as a chatbot: it defines itself as an orchestrator, a digital chief of staff and a coordination layer between agents, tools and projects.</figcaption>
 </figure>
 
@@ -157,7 +157,7 @@ OpenClaw is the layer that makes it possible to take that vision into real flows
 And specialized agents are the way to land it on each company's specific problems.
 
 <figure>
-  <img src="/assets/images/blog/bruno-openclaw/bruno-discord-hq-orquestador.png" alt="Discord Bruno HQ screenshot with work channels and an operational note about security, skills, ClawHub and suggested actions">
+  <picture><source type="image/avif" srcset="/assets/images/blog/bruno-openclaw/bruno-discord-hq-orquestador-640.avif 640w, /assets/images/blog/bruno-openclaw/bruno-discord-hq-orquestador-800.avif 800w, /assets/images/blog/bruno-openclaw/bruno-discord-hq-orquestador-1200.avif 1200w, /assets/images/blog/bruno-openclaw/bruno-discord-hq-orquestador-1600.avif 1600w, /assets/images/blog/bruno-openclaw/bruno-discord-hq-orquestador-2798.avif 2798w" sizes="(max-width: 860px) 100vw, 840px"><source type="image/webp" srcset="/assets/images/blog/bruno-openclaw/bruno-discord-hq-orquestador-640.webp 640w, /assets/images/blog/bruno-openclaw/bruno-discord-hq-orquestador-800.webp 800w, /assets/images/blog/bruno-openclaw/bruno-discord-hq-orquestador-1200.webp 1200w, /assets/images/blog/bruno-openclaw/bruno-discord-hq-orquestador-1600.webp 1600w, /assets/images/blog/bruno-openclaw/bruno-discord-hq-orquestador-2798.webp 2798w" sizes="(max-width: 860px) 100vw, 840px"><img src="/assets/images/blog/bruno-openclaw/bruno-discord-hq-orquestador.png" alt="Discord Bruno HQ screenshot with work channels and an operational note about security, skills, ClawHub and suggested actions" width="2798" height="1698" loading="lazy" decoding="async"></picture>
   <figcaption>On Discord, Bruno works like an operational office: channels, decisions, risks, suggested actions, consulted sources and traceability between agents.</figcaption>
 </figure>
 

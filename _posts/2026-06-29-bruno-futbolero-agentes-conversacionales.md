@@ -44,7 +44,7 @@ El agente no debe contestar todo. Debe saber cuándo intervenir, cuándo esperar
 Esa diferencia es clave.
 
 <figure>
-  <img src="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-ruta-colombia.png" alt="Captura de WhatsApp donde Bruno explica posibles cruces y ruta de Colombia hacia la final en una dinámica mundialista">
+  <picture><source type="image/avif" srcset="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-ruta-colombia-640.avif 640w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-ruta-colombia-800.avif 800w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-ruta-colombia-996.avif 996w" sizes="(max-width: 860px) 100vw, 840px"><source type="image/webp" srcset="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-ruta-colombia-640.webp 640w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-ruta-colombia-800.webp 800w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-ruta-colombia-996.webp 996w" sizes="(max-width: 860px) 100vw, 840px"><img src="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-ruta-colombia.png" alt="Captura de WhatsApp donde Bruno explica posibles cruces y ruta de Colombia hacia la final en una dinámica mundialista" width="996" height="1230" loading="lazy" decoding="async"></picture>
   <figcaption>La conversación futbolera obliga al agente a entender contexto, tabla, posición del grupo y escenarios posibles sin perder el tono del grupo.</figcaption>
 </figure>
 
@@ -135,7 +135,7 @@ En el caso futbolero, Bruno puede apoyarse en fuentes deportivas, calendarios, t
 Eso permite que la respuesta no dependa de memoria suelta ni de una ocurrencia del modelo.
 
 <figure>
-  <img src="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-estadisticas-anonimizado.png" alt="Captura anonimizada de WhatsApp donde Bruno entrega datos previos de partidos, lectura de probabilidad y registro de quiniela">
+  <picture><source type="image/avif" srcset="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-estadisticas-anonimizado-640.avif 640w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-estadisticas-anonimizado-800.avif 800w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-estadisticas-anonimizado-918.avif 918w" sizes="(max-width: 860px) 100vw, 840px"><source type="image/webp" srcset="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-estadisticas-anonimizado-640.webp 640w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-estadisticas-anonimizado-800.webp 800w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-estadisticas-anonimizado-918.webp 918w" sizes="(max-width: 860px) 100vw, 840px"><img src="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-estadisticas-anonimizado.png" alt="Captura anonimizada de WhatsApp donde Bruno entrega datos previos de partidos, lectura de probabilidad y registro de quiniela" width="918" height="1562" loading="lazy" decoding="async"></picture>
   <figcaption>Otro ejemplo: el agente convierte una pregunta amplia en una respuesta con estadísticas previas, lectura futbolera y registro de una dinámica de quiniela.</figcaption>
 </figure>
 
@@ -149,7 +149,7 @@ La conversación se vuelve interfaz.
 Y esa idea es poderosa para empresas: muchas tareas no empiezan con un formulario perfecto, sino con alguien escribiendo en un chat.
 
 <figure>
-  <img src="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-pronostico-anonimizado.png" alt="Captura anonimizada de WhatsApp donde Bruno responde una pregunta de pronóstico futbolero con porcentajes y marcador probable">
+  <picture><source type="image/avif" srcset="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-pronostico-anonimizado-640.avif 640w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-pronostico-anonimizado-800.avif 800w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-pronostico-anonimizado-986.avif 986w" sizes="(max-width: 860px) 100vw, 840px"><source type="image/webp" srcset="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-pronostico-anonimizado-640.webp 640w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-pronostico-anonimizado-800.webp 800w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-pronostico-anonimizado-986.webp 986w" sizes="(max-width: 860px) 100vw, 840px"><img src="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-pronostico-anonimizado.png" alt="Captura anonimizada de WhatsApp donde Bruno responde una pregunta de pronóstico futbolero con porcentajes y marcador probable" width="986" height="1230" loading="lazy" decoding="async"></picture>
   <figcaption>La misma lógica sirve para probar intervención, tono y datos vivos: alguien pregunta en lenguaje natural y el agente responde con criterio, fuentes y contexto.</figcaption>
 </figure>
 

@@ -27,7 +27,7 @@ Part shows up in official sources. Part in road concessions. Part on social medi
 That's where a specialized agent starts to make sense.
 
 <figure>
-  <img src="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia.png" alt="Screenshot of the Novedades en vías - Atiemppo WhatsApp group with Bruno's midday cutoff reports">
+  <picture><source type="image/avif" srcset="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-640.avif 640w, /assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-800.avif 800w, /assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-1088.avif 1088w" sizes="(max-width: 860px) 100vw, 840px"><source type="image/webp" srcset="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-640.webp 640w, /assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-800.webp 800w, /assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-1088.webp 1088w" sizes="(max-width: 860px) 100vw, 840px"><img src="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia.png" alt="Screenshot of the Novedades en vías - Atiemppo WhatsApp group with Bruno&#x27;s midday cutoff reports" width="1088" height="1886" loading="lazy" decoding="async"></picture>
   <figcaption>The agent publishes operational cutoffs on WhatsApp with sources, changes by corridor and a reading for cargo.</figcaption>
 </figure>
 
