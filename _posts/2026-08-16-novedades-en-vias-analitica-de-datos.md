@@ -20,7 +20,7 @@ En transporte, un cierre, una restricción, un derrumbe, una obra o una reapertu
 **Novedades en Vías** nace para organizar esas señales y convertirlas en una lectura útil para la logística colombiana.
 
 <figure class="post-figure post-figure-compact">
-  <img src="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia.png" alt="Reporte de Novedades en Vías compartido por Bruno en un canal operativo">
+  <picture><source type="image/avif" srcset="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-640.avif 640w, /assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-800.avif 800w, /assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-1088.avif 1088w" sizes="(max-width: 860px) 100vw, 840px"><source type="image/webp" srcset="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-640.webp 640w, /assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-800.webp 800w, /assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-1088.webp 1088w" sizes="(max-width: 860px) 100vw, 840px"><img src="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia.png" alt="Reporte de Novedades en Vías compartido por Bruno en un canal operativo" width="1088" height="1886" loading="lazy" decoding="async"></picture>
   <figcaption>Un corte operativo resume el estado conocido, los cambios por corredor, las fuentes y los puntos que todavía requieren seguimiento.</figcaption>
 </figure>
 

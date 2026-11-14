@@ -29,7 +29,7 @@
 </head>
 <body class="{% if page.layout == 'post' %}page-post{% endif %}{% if page.url == '/blog/' %} page-blog{% endif %}">
 {% include header.html %}
-<main class="site-main">{{ content }}</main>
+<main class="site-main" id="main-content">{{ content }}</main>
 {% include footer.html %}
 <script>
 (function(){

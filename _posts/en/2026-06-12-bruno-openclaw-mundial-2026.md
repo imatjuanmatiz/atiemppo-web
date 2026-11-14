@@ -43,7 +43,7 @@ The problem today is connecting AI with the flow where things actually happen.
 That's where I began building my AI workbench.
 
 <figure>
-  <img src="/assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia.png" alt="Diagram of ATIEMPPO's AI workbench, connecting messages, sources, Bruno, OpenClaw, Codex, Claude, GPT and work outputs">
+  <picture><source type="image/avif" srcset="/assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia-640.avif 640w, /assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia-800.avif 800w, /assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia-1200.avif 1200w, /assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia-1600.avif 1600w, /assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia-2400.avif 2400w" sizes="(max-width: 860px) 100vw, 840px"><source type="image/webp" srcset="/assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia-640.webp 640w, /assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia-800.webp 800w, /assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia-1200.webp 1200w, /assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia-1600.webp 1600w, /assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia-2400.webp 2400w" sizes="(max-width: 860px) 100vw, 840px"><img src="/assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia.png" alt="Diagram of ATIEMPPO&#x27;s AI workbench, connecting messages, sources, Bruno, OpenClaw, Codex, Claude, GPT and work outputs" width="2400" height="1450" loading="lazy" decoding="async"></picture>
   <figcaption>My AI workbench isn't a single tool. It's a system: messages, documents, data, memory, agents and useful outputs.</figcaption>
 </figure>
 

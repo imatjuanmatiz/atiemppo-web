@@ -156,7 +156,7 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:56px 28px 34px;margin-top:
 {% include header.html lang="en" translation="/blog/" %}
 
 
-<main>
+<main id="main-content">
   <section class="blog-hero">
     <div class="grid-bg" aria-hidden="true"></div>
     <div class="badge"><span class="dot"></span> Live Lab</div>
@@ -169,7 +169,7 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:56px 28px 34px;margin-top:
     {% if posts_l.size > 0 %}
       {% assign f = posts_l.first %}
       <a class="blog-featured" data-reveal data-cat="{{ f.lab | default:'Lab' | downcase }}" href="{{ f.url }}">
-        <div class="img"><img src="{% if f.image %}{{ f.image }}{% else %}/assets/images/atiemppo/cover-blog.png{% endif %}" alt="{{ f.title }}" loading="lazy"/></div>
+        <div class="img">{% if f.image %}{% assign card_src = f.image %}{% else %}{% assign card_src = '/assets/images/atiemppo/cover-blog.png' %}{% endif %}{% include responsive-image.html src=card_src alt=f.title loading="lazy" sizes="(max-width: 800px) calc(100vw - 40px), 720px" %}</div>
         <div class="body">
           <div class="meta"><span class="lab">{{ f.lab | default:'Lab' }}</span><span class="date">{{ f.date | date:"%b %Y" }} · Featured</span></div>
           <h2>{{ f.title }}</h2>

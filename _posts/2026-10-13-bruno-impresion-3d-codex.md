@@ -76,7 +76,7 @@ Usó Computer Use para operar la interfaz de mi Creality Ender-3 V3 KE y el trab
 
 <figure class="bruno-figure" style="max-width:825px">
   <a href="/assets/images/blog/bruno-impresion-3d-codex/imagen4-sin-red.png" aria-label="Abrir captura editada en tamaño completo">
-    <img src="/assets/images/blog/bruno-impresion-3d-codex/imagen4-sin-red.png" alt="Conversación con la autorización y la confirmación del inicio de la impresión" width="1550" height="1014" loading="lazy" decoding="async" />
+    <picture><source type="image/avif" srcset="/assets/images/blog/bruno-impresion-3d-codex/imagen4-sin-red-640.avif 640w, /assets/images/blog/bruno-impresion-3d-codex/imagen4-sin-red-800.avif 800w, /assets/images/blog/bruno-impresion-3d-codex/imagen4-sin-red-1200.avif 1200w, /assets/images/blog/bruno-impresion-3d-codex/imagen4-sin-red-1550.avif 1550w" sizes="(max-width: 860px) 100vw, 840px"><source type="image/webp" srcset="/assets/images/blog/bruno-impresion-3d-codex/imagen4-sin-red-640.webp 640w, /assets/images/blog/bruno-impresion-3d-codex/imagen4-sin-red-800.webp 800w, /assets/images/blog/bruno-impresion-3d-codex/imagen4-sin-red-1200.webp 1200w, /assets/images/blog/bruno-impresion-3d-codex/imagen4-sin-red-1550.webp 1550w" sizes="(max-width: 860px) 100vw, 840px"><img src="/assets/images/blog/bruno-impresion-3d-codex/imagen4-sin-red.png" alt="Conversación con la autorización y la confirmación del inicio de la impresión" width="1550" height="1014" loading="lazy" decoding="async"></picture>
   </a>
   <figcaption>Le di el visto bueno y Bruno empezó a imprimirse. <span style="display:block;font-size:.85em;margin-top:.35rem">Captura editada para ocultar información de la red local.</span></figcaption>
 </figure>

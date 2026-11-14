@@ -1,0 +1,13 @@
+{%- assign ri = site.data.responsive_images[include.src] -%}
+{%- assign ri_sizes = include.sizes | default: '(max-width: 860px) 100vw, 840px' -%}
+{%- if ri and ri.avif -%}
+<picture>
+  <source type="image/avif" srcset="{{ ri.avif }}" sizes="{{ ri_sizes }}">
+  <source type="image/webp" srcset="{{ ri.webp }}" sizes="{{ ri_sizes }}">
+  <img src="{{ include.src }}" alt="{{ include.alt | escape }}" width="{{ ri.width }}" height="{{ ri.height }}"{% if ri.srcset %} srcset="{{ ri.srcset }}" sizes="{{ ri_sizes }}"{% endif %}{% if include.loading %} loading="{{ include.loading }}"{% endif %}{% if include.fetchpriority %} fetchpriority="{{ include.fetchpriority }}"{% endif %}{% unless include.fetchpriority == 'high' %} decoding="async"{% endunless %}>
+</picture>
+{%- elsif ri -%}
+<img src="{{ include.src }}" alt="{{ include.alt | escape }}" width="{{ ri.width }}" height="{{ ri.height }}"{% if include.loading %} loading="{{ include.loading }}"{% endif %}{% if include.fetchpriority %} fetchpriority="{{ include.fetchpriority }}"{% endif %} decoding="async">
+{%- else -%}
+<img src="{{ include.src }}" alt="{{ include.alt | escape }}"{% if include.width %} width="{{ include.width }}" height="{{ include.height }}"{% endif %}{% if include.loading %} loading="{{ include.loading }}"{% endif %}{% if include.fetchpriority %} fetchpriority="{{ include.fetchpriority }}"{% endif %} decoding="async">
+{%- endif -%}

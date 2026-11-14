@@ -56,8 +56,17 @@
 html { background: var(--contrast-canvas); }
 body { background: var(--contrast-canvas); color: var(--contrast-ink); font-family: var(--atiemppo-sans); }
 ::selection { background: #dadada; color: #0a0a0a; }
-::-webkit-scrollbar-track { background: #f5f5f5; }
-::-webkit-scrollbar-thumb { background: #888; }
+html {
+  --scrollbar-thumb: #888;
+  --scrollbar-track: #f5f5f5;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+@supports not (scrollbar-color: auto) {
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+  ::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); }
+}
 
 /* Shared navigation stays light; the original logo never needs a colour filter. */
 .global-header { background: #fff; color: #0a0a0a; border-bottom-color: #dadada; }
@@ -265,7 +274,10 @@ body.page-blog, body.page-post { background: #fff !important; color: #0a0a0a !im
   box-shadow: 0 0 0 4px #0a0a0a;
 }
 @media (max-width: 1199px) {
-  .global-header[data-nav-ready] .global-menu { background: #fff; border-bottom-color: #dadada; box-shadow: 0 12px 24px rgb(0 0 0 / 8%); }
+  .global-header .global-menu[popover]:is(:popover-open, .\:popover-open),
+  .global-header[data-nav-ready] .global-menu:not([popover]).is-open {
+    background: #fff; border-bottom-color: #dadada; color: #0a0a0a; box-shadow: 0 12px 24px rgb(0 0 0 / 8%);
+  }
 }
 @media (max-width: 600px) {
   .global-header .global-menu a { min-height: 44px; }

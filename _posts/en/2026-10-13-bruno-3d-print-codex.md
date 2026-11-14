@@ -75,7 +75,7 @@ It used Computer Use to work the interface of my Creality Ender-3 V3 KE, and the
 
 <figure class="bruno-figure" style="max-width:825px">
   <a href="/assets/images/blog/bruno-impresion-3d-codex/imagen4-sin-red.png" aria-label="Open edited screenshot at full size">
-    <img src="/assets/images/blog/bruno-impresion-3d-codex/imagen4-sin-red.png" alt="Chat where I approve the print and Codex confirms it has started" width="1550" height="1014" loading="lazy" decoding="async" />
+    <picture><source type="image/avif" srcset="/assets/images/blog/bruno-impresion-3d-codex/imagen4-sin-red-640.avif 640w, /assets/images/blog/bruno-impresion-3d-codex/imagen4-sin-red-800.avif 800w, /assets/images/blog/bruno-impresion-3d-codex/imagen4-sin-red-1200.avif 1200w, /assets/images/blog/bruno-impresion-3d-codex/imagen4-sin-red-1550.avif 1550w" sizes="(max-width: 860px) 100vw, 840px"><source type="image/webp" srcset="/assets/images/blog/bruno-impresion-3d-codex/imagen4-sin-red-640.webp 640w, /assets/images/blog/bruno-impresion-3d-codex/imagen4-sin-red-800.webp 800w, /assets/images/blog/bruno-impresion-3d-codex/imagen4-sin-red-1200.webp 1200w, /assets/images/blog/bruno-impresion-3d-codex/imagen4-sin-red-1550.webp 1550w" sizes="(max-width: 860px) 100vw, 840px"><img src="/assets/images/blog/bruno-impresion-3d-codex/imagen4-sin-red.png" alt="Chat where I approve the print and Codex confirms it has started" width="1550" height="1014" loading="lazy" decoding="async"></picture>
   </a>
   <figcaption>I gave it the go-ahead and Bruno started printing. <span style="display:block;font-size:.85em;margin-top:.35rem">Screenshot edited to hide local network information.</span></figcaption>
 </figure>

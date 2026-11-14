@@ -45,7 +45,7 @@ The agent shouldn't answer everything. It should know when to step in, when to w
 That difference is key.
 
 <figure>
-  <img src="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-ruta-colombia.png" alt="WhatsApp screenshot where Bruno explains possible matchups and Colombia's route to the final in a World Cup dynamic">
+  <picture><source type="image/avif" srcset="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-ruta-colombia-640.avif 640w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-ruta-colombia-800.avif 800w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-ruta-colombia-996.avif 996w" sizes="(max-width: 860px) 100vw, 840px"><source type="image/webp" srcset="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-ruta-colombia-640.webp 640w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-ruta-colombia-800.webp 800w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-ruta-colombia-996.webp 996w" sizes="(max-width: 860px) 100vw, 840px"><img src="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-ruta-colombia.png" alt="WhatsApp screenshot where Bruno explains possible matchups and Colombia&#x27;s route to the final in a World Cup dynamic" width="996" height="1230" loading="lazy" decoding="async"></picture>
   <figcaption>Football conversation forces the agent to understand context, the table, the group's position and possible scenarios without losing the group's tone.</figcaption>
 </figure>
 
@@ -136,7 +136,7 @@ In the football case, Bruno can rely on sports sources, calendars, tables, match
 That way the answer doesn't depend on loose memory or a model's guess.
 
 <figure>
-  <img src="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-estadisticas-anonimizado.png" alt="Anonymized WhatsApp screenshot where Bruno delivers pre-match data, a probability reading and a pool record">
+  <picture><source type="image/avif" srcset="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-estadisticas-anonimizado-640.avif 640w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-estadisticas-anonimizado-800.avif 800w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-estadisticas-anonimizado-918.avif 918w" sizes="(max-width: 860px) 100vw, 840px"><source type="image/webp" srcset="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-estadisticas-anonimizado-640.webp 640w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-estadisticas-anonimizado-800.webp 800w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-estadisticas-anonimizado-918.webp 918w" sizes="(max-width: 860px) 100vw, 840px"><img src="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-estadisticas-anonimizado.png" alt="Anonymized WhatsApp screenshot where Bruno delivers pre-match data, a probability reading and a pool record" width="918" height="1562" loading="lazy" decoding="async"></picture>
   <figcaption>Another example: the agent turns a broad question into an answer with pre-match statistics, a football reading and a record of a prediction-pool dynamic.</figcaption>
 </figure>
 
@@ -150,7 +150,7 @@ Conversation becomes the interface.
 And that idea is powerful for companies: many tasks don't start with a perfect form, but with someone writing in a chat.
 
 <figure>
-  <img src="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-pronostico-anonimizado.png" alt="Anonymized WhatsApp screenshot where Bruno answers a football forecast question with percentages and a likely scoreline">
+  <picture><source type="image/avif" srcset="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-pronostico-anonimizado-640.avif 640w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-pronostico-anonimizado-800.avif 800w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-pronostico-anonimizado-986.avif 986w" sizes="(max-width: 860px) 100vw, 840px"><source type="image/webp" srcset="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-pronostico-anonimizado-640.webp 640w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-pronostico-anonimizado-800.webp 800w, /assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-pronostico-anonimizado-986.webp 986w" sizes="(max-width: 860px) 100vw, 840px"><img src="/assets/images/blog/bruno-openclaw-mundial-2026/bruno-mundialero-pronostico-anonimizado.png" alt="Anonymized WhatsApp screenshot where Bruno answers a football forecast question with percentages and a likely scoreline" width="986" height="1230" loading="lazy" decoding="async"></picture>
   <figcaption>The same logic works to test intervention, tone and live data: someone asks in natural language and the agent answers with judgment, sources and context.</figcaption>
 </figure>
 

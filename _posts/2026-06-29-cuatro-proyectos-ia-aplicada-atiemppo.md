@@ -89,7 +89,7 @@ Porque muchas organizaciones ya tienen información, documentos, procesos y herr
 Bruno y OpenClaw muestran esa posibilidad: IA como infraestructura de trabajo, no solo como ventana de chat.
 
 <figure>
-  <img src="/assets/images/blog/bruno-openclaw/bruno-whatsapp-explica-quien-es.png" alt="Captura de WhatsApp donde Bruno explica su rol como agente principal y orquestador dentro de OpenClaw">
+  <picture><source type="image/avif" srcset="/assets/images/blog/bruno-openclaw/bruno-whatsapp-explica-quien-es-640.avif 640w, /assets/images/blog/bruno-openclaw/bruno-whatsapp-explica-quien-es-800.avif 800w, /assets/images/blog/bruno-openclaw/bruno-whatsapp-explica-quien-es-1000.avif 1000w" sizes="(max-width: 860px) 100vw, 840px"><source type="image/webp" srcset="/assets/images/blog/bruno-openclaw/bruno-whatsapp-explica-quien-es-640.webp 640w, /assets/images/blog/bruno-openclaw/bruno-whatsapp-explica-quien-es-800.webp 800w, /assets/images/blog/bruno-openclaw/bruno-whatsapp-explica-quien-es-1000.webp 1000w" sizes="(max-width: 860px) 100vw, 840px"><img src="/assets/images/blog/bruno-openclaw/bruno-whatsapp-explica-quien-es.png" alt="Captura de WhatsApp donde Bruno explica su rol como agente principal y orquestador dentro de OpenClaw" width="1000" height="1052" loading="lazy" decoding="async"></picture>
   <figcaption>Bruno no se presenta como un bot suelto: funciona como orquestador, con memoria operativa, criterio y capacidad de coordinar trabajo entre herramientas y agentes.</figcaption>
 </figure>
 
@@ -118,7 +118,7 @@ Qué todavía no se puede afirmar.
 Este caso muestra algo muy concreto: los agentes de IA pueden ayudar a operaciones logísticas a convertir información dispersa en inteligencia operativa.
 
 <figure>
-  <img src="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia.png" alt="Captura de WhatsApp con un reporte de Bruno sobre novedades en vías para corredores logísticos en Colombia">
+  <picture><source type="image/avif" srcset="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-640.avif 640w, /assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-800.avif 800w, /assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-1088.avif 1088w" sizes="(max-width: 860px) 100vw, 840px"><source type="image/webp" srcset="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-640.webp 640w, /assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-800.webp 800w, /assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia-1088.webp 1088w" sizes="(max-width: 860px) 100vw, 840px"><img src="/assets/images/blog/novedades-en-vias/reporte-whatsapp-bruno-mediodia.png" alt="Captura de WhatsApp con un reporte de Bruno sobre novedades en vías para corredores logísticos en Colombia" width="1088" height="1886" loading="lazy" decoding="async"></picture>
   <figcaption>Novedades en Vías convierte señales dispersas en cortes útiles para operación: qué cambió, qué corredor mirar y qué fuente respalda la lectura.</figcaption>
 </figure>
 
@@ -154,12 +154,12 @@ Un mapa puede convertirse en reporte vivo.
 Un reporte vivo puede actualizarse cuando aparece nueva evidencia.
 
 <figure>
-  <img src="/assets/images/blog/el-dato-logistico/home-radar-logistico-semanal.png" alt="Página de inicio de El Dato Logístico con radar logístico semanal y suscripción">
+  <picture><source type="image/avif" srcset="/assets/images/blog/el-dato-logistico/home-radar-logistico-semanal-640.avif 640w, /assets/images/blog/el-dato-logistico/home-radar-logistico-semanal-800.avif 800w, /assets/images/blog/el-dato-logistico/home-radar-logistico-semanal-1200.avif 1200w, /assets/images/blog/el-dato-logistico/home-radar-logistico-semanal-1600.avif 1600w, /assets/images/blog/el-dato-logistico/home-radar-logistico-semanal-2558.avif 2558w" sizes="(max-width: 860px) 100vw, 840px"><source type="image/webp" srcset="/assets/images/blog/el-dato-logistico/home-radar-logistico-semanal-640.webp 640w, /assets/images/blog/el-dato-logistico/home-radar-logistico-semanal-800.webp 800w, /assets/images/blog/el-dato-logistico/home-radar-logistico-semanal-1200.webp 1200w, /assets/images/blog/el-dato-logistico/home-radar-logistico-semanal-1600.webp 1600w, /assets/images/blog/el-dato-logistico/home-radar-logistico-semanal-2558.webp 2558w" sizes="(max-width: 860px) 100vw, 840px"><img src="/assets/images/blog/el-dato-logistico/home-radar-logistico-semanal.png" alt="Página de inicio de El Dato Logístico con radar logístico semanal y suscripción" width="2558" height="1716" loading="lazy" decoding="async"></picture>
   <figcaption>El Dato Logístico funciona como sistema editorial vivo: no solo publica textos, también organiza señales, audiencias, reportes y temas recurrentes.</figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png" alt="Mapa interactivo de un reporte vivo sobre variación SICETAC de junio con dos horas logísticas">
+  <picture><source type="image/avif" srcset="/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas-640.avif 640w, /assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas-800.avif 800w, /assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas-1200.avif 1200w, /assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas-1584.avif 1584w" sizes="(max-width: 860px) 100vw, 840px"><source type="image/webp" srcset="/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas-640.webp 640w, /assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas-800.webp 800w, /assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas-1200.webp 1200w, /assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas-1584.webp 1584w" sizes="(max-width: 860px) 100vw, 840px"><img src="/assets/images/blog/reportes-vivos/sicetac-variacion-junio-2h-logisticas.png" alt="Mapa interactivo de un reporte vivo sobre variación SICETAC de junio con dos horas logísticas" width="1584" height="1364" loading="lazy" decoding="async"></picture>
   <figcaption>Los reportes vivos llevan el análisis a una superficie explorable: mapas, filtros, rangos, rutas y lectura ejecutiva en un mismo lugar.</figcaption>
 </figure>
 
@@ -197,7 +197,7 @@ Una clase sobre reportes puede convertirse en un flujo automatizado.
 Aprender IA, bien hecho, también es descubrir oportunidades.
 
 <figure>
-  <img src="/assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia.png" alt="Diagrama de una mesa de trabajo con IA que conecta mensajes, proyectos, memoria y artefactos vivos">
+  <picture><source type="image/avif" srcset="/assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia-640.avif 640w, /assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia-800.avif 800w, /assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia-1200.avif 1200w, /assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia-1600.avif 1600w, /assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia-2400.avif 2400w" sizes="(max-width: 860px) 100vw, 840px"><source type="image/webp" srcset="/assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia-640.webp 640w, /assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia-800.webp 800w, /assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia-1200.webp 1200w, /assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia-1600.webp 1600w, /assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia-2400.webp 2400w" sizes="(max-width: 860px) 100vw, 840px"><img src="/assets/images/blog/bruno-openclaw-mundial-2026/mesa-trabajo-ia.png" alt="Diagrama de una mesa de trabajo con IA que conecta mensajes, proyectos, memoria y artefactos vivos" width="2400" height="1450" loading="lazy" decoding="async"></picture>
   <figcaption>Profe Bruno nace de esta práctica: enseñar a construir una mesa de trabajo propia, con fuentes, memoria, agentes y entregables que se puedan revisar.</figcaption>
 </figure>
 

@@ -48,7 +48,7 @@ spanish_posts:
 </head>
 <body>
 {% include header.html %}
-<main>
+<main id="main-content">
   <section class="hero"><div class="container"><div class="eyebrow">ATIEMPPO · Conference notes</div><h1>Talks on logistics, transport and applied AI.</h1><p>Ideas, lessons and experiences from Juan Pablo Matiz, also known as Juan Matiz. If you are looking for a logistics talk or an expert for your event, explore his topics and approach before inviting him.</p><div class="actions"><a class="btn btn-primary" href="/en/conferencias/">Explore the talks</a><a class="btn btn-secondary" href="/en/">Work with ATIEMPPO</a></div></div></section>
   <section class="archive"><div class="container"><div class="archive-head"><h2>Conversations and experiences</h2><span>Event archive</span></div><div class="grid">
     {% assign conference_posts = site.posts | where: "lab", "Conferencias" | sort: "date" | reverse %}
