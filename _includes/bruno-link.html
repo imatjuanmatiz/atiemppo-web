@@ -2,15 +2,60 @@
 {%- assign bruno_prefix = page.url | slice: 0, 4 -%}
 {%- if bruno_prefix == '/en/' -%}{%- assign bruno_lang = 'en' -%}{%- endif -%}
 {%- assign bruno_copy = site.data.bruno_contact[bruno_lang] -%}
+{%- assign bruno_id = include.id | default: 'inline' -%}
+{%- if include.floating -%}{%- assign bruno_id = 'floating' -%}{%- endif -%}
+{%- assign bruno_course = nil -%}
+{%- if page.course -%}{%- assign bruno_course = site.data.courses.courses | where: 'key', page.course | first -%}{%- endif -%}
 {%- assign bruno_offer = nil -%}
 {%- if page.experience == 'personal' -%}
   {%- assign bruno_offer = site.data.experiences[bruno_lang].personal_offer -%}
 {%- elsif page.experience -%}{%- assign bruno_offer = site.data.experiences[bruno_lang].offers | where: 'key', page.experience | first -%}{%- endif -%}
-{%- if bruno_offer -%}
-  {%- capture bruno_context -%}{% if bruno_lang == 'en' %}Hi Bruno, I am interested in {{ bruno_offer.label }}. I would like to discuss the scope and arrange a meeting.{% else %}Hola Bruno, me interesa {{ bruno_offer.label }}. Quiero conocer el alcance y coordinar una reunión.{% endif %}{%- endcapture -%}
-  {%- assign bruno_message = bruno_context | url_encode -%}
-{%- else -%}{%- assign bruno_message = bruno_copy.message | url_encode -%}{%- endif -%}
-<a class="bruno-link{% if include.floating %} bruno-link--floating{% endif %}" href="{{ site.data.bruno_contact.whatsapp_url }}?text={{ bruno_message }}" target="_blank" rel="noopener noreferrer" aria-label="{{ bruno_copy.cta | escape }} · WhatsApp">
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 9 9 0 0 1-4-.9L3 21l1.9-5.5a9 9 0 0 1-.9-4A8.5 8.5 0 0 1 12.5 3 8.5 8.5 0 0 1 21 11.5Z"/><path d="M8.5 11.5h8M8.5 8.5h5"/></svg>
-  {% if include.floating %}<span><strong>{{ bruno_copy.short_cta }}</strong><small>{{ bruno_copy.appointment }} · WhatsApp</small></span>{% else %}<span>{{ bruno_copy.cta }}</span>{% endif %}
-</a>
+{%- assign bruno_url = page.url | append: '/' | replace: '//', '/' -%}
+{%- if bruno_url == '' -%}{%- assign bruno_url = '/' -%}{%- endif -%}
+{%- assign bruno_context_option = '' -%}
+{%- assign bruno_context_message = '' -%}
+{%- assign bruno_context_size = 0 -%}
+{%- for ctx in bruno_copy.contexts -%}
+  {%- assign ctx_size = ctx.prefix | size -%}
+  {%- assign ctx_hit = bruno_url | slice: 0, ctx_size -%}
+  {%- if ctx_hit == ctx.prefix and ctx_size > bruno_context_size -%}
+    {%- assign bruno_context_option = ctx.option -%}
+    {%- assign bruno_context_message = ctx.message -%}
+    {%- assign bruno_context_size = ctx_size -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if bruno_course and bruno_context_option == 'courses' -%}
+  {%- if bruno_lang == 'en' -%}
+    {%- capture bruno_context_message -%}Hi Bruno, I am interested in the {{ bruno_course.title }} course for my team.{%- endcapture -%}
+  {%- else -%}
+    {%- capture bruno_context_message -%}Hola Bruno, me interesa el curso {{ bruno_course.title }} para mi equipo.{%- endcapture -%}
+  {%- endif -%}
+{%- elsif bruno_context_option == '' and bruno_offer -%}
+  {%- assign bruno_context_option = 'courses' -%}
+  {%- if bruno_offer.key == 'conferences' -%}{%- assign bruno_context_option = 'talks' -%}{%- endif -%}
+  {%- if bruno_lang == 'en' -%}
+    {%- capture bruno_context_message -%}Hi Bruno, I am interested in {{ bruno_offer.label }}. I would like to discuss the scope and arrange a meeting.{%- endcapture -%}
+  {%- else -%}
+    {%- capture bruno_context_message -%}Hola Bruno, me interesa {{ bruno_offer.label }}. Quiero conocer el alcance y coordinar una reunión.{%- endcapture -%}
+  {%- endif -%}
+{%- endif -%}
+<div class="bruno-menu{% if include.floating %} bruno-menu--floating{% endif %}" data-bruno-menu>
+  <button class="bruno-link" id="bruno-trigger-{{ bruno_id }}" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="bruno-menu-{{ bruno_id }}" commandfor="bruno-menu-{{ bruno_id }}" command="toggle-popover" data-bruno-trigger>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 9 9 0 0 1-4-.9L3 21l1.9-5.5a9 9 0 0 1-.9-4A8.5 8.5 0 0 1 12.5 3 8.5 8.5 0 0 1 21 11.5Z"/><path d="M8.5 11.5h8M8.5 8.5h5"/></svg>
+    {% if include.floating %}<span><strong>{{ bruno_copy.short_cta }}</strong><small>{{ bruno_copy.appointment }}</small></span>{% else %}<span>{{ bruno_copy.cta }}</span>{% endif %}
+    <span class="bruno-caret" aria-hidden="true"></span>
+  </button>
+  <div class="bruno-popover" id="bruno-menu-{{ bruno_id }}" popover="auto" data-bruno-popover>
+    <div focusgroup="menu nomemory" aria-labelledby="bruno-trigger-{{ bruno_id }}">
+      {%- for option in bruno_copy.options -%}
+        {%- assign option_message = option.message -%}
+        {%- if option.id == bruno_context_option and bruno_context_message != '' -%}{%- assign option_message = bruno_context_message -%}{%- endif -%}
+        {%- if option.href -%}
+      <a href="{{ option.href }}">{{ option.label }}</a>
+        {%- else -%}
+      <a href="{{ site.data.bruno_contact.whatsapp_url }}?text={{ option_message | url_encode }}" target="_blank" rel="noopener noreferrer">{{ option.label }}</a>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>

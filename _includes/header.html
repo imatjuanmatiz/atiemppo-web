@@ -17,8 +17,8 @@
 {%- unless nav_translation -%}{%- assign nav_language_label = nav_copy.other_home_label -%}{%- endunless -%}
 {%- assign nav_translation = nav_translation | default: nav_copy.other_home -%}
 <a class="skip-link" href="#main-content">{% if nav_lang == 'en' %}Skip to content{% else %}Saltar al contenido{% endif %}</a>
-<link rel="stylesheet" href="/assets/css/navigation.css?v=20261114-mwg"/>
-<link rel="stylesheet" href="/assets/css/bruno-contact.css?v=20261031-audit"/>
+<link rel="stylesheet" href="/assets/css/navigation.css?v=20261115-menu"/>
+<link rel="stylesheet" href="/assets/css/bruno-contact.css?v=20261115-menu"/>
 <link rel="stylesheet" href="/assets/css/contrast-theme.css?v=20261114-mwg"/>
 {%- if page.url == '/' or page.url == '/en/' -%}
 <link rel="stylesheet" href="/assets/css/contrast-home.css?v=20261031-preview"/>
@@ -29,15 +29,18 @@
     <button class="global-menu-toggle" type="button" popovertarget="global-menu" popovertargetaction="toggle" aria-controls="global-menu" aria-expanded="false" aria-label="{{ nav_copy.open }}" data-open-label="{{ nav_copy.open }}" data-close-label="{{ nav_copy.close }}"><span aria-hidden="true">☰</span> {{ nav_copy.menu }}</button>
     <nav class="global-menu" id="global-menu" popover="auto" aria-label="{{ nav_copy.label }}">
       {%- for item in site.data.navigation.items -%}
+        {%- assign item_path = item.path -%}
+        {%- assign item_sections = item.sections -%}
+        {%- if nav_lang == 'en' and item.en_path -%}{%- assign item_path = item.en_path -%}{%- endif -%}
+        {%- if nav_lang == 'en' and item.en_sections -%}{%- assign item_sections = item.en_sections -%}{%- endif -%}
         {%- assign nav_active = false -%}
-        {%- if nav_path == item.path -%}{%- assign nav_active = true -%}{%- endif -%}
-        {%- for prefix in item.sections -%}
+        {%- if nav_path == item_path -%}{%- assign nav_active = true -%}{%- endif -%}
+        {%- for prefix in item_sections -%}
           {%- assign path_start = nav_path | slice: 0, prefix.size -%}
           {%- if path_start == prefix -%}{%- assign nav_active = true -%}{%- endif -%}
         {%- endfor -%}
-        <a href="{{ nav_copy.prefix }}{{ item.path }}"{% if nav_active %} aria-current="{% if nav_path == item.path %}page{% else %}true{% endif %}"{% endif %}>{{ item[nav_lang] }}</a>
+        <a href="{{ nav_copy.prefix }}{{ item_path }}"{% if nav_active %} aria-current="{% if nav_path == item_path %}page{% else %}true{% endif %}"{% endif %}>{{ item[nav_lang] }}</a>
       {%- endfor -%}
-      <a class="global-contact" href="{{ nav_copy.prefix }}/contacto/">{{ nav_copy.contact }}</a>
       <a class="global-language" href="{{ nav_translation }}" lang="{{ nav_copy.other_lang }}" hreflang="{{ nav_copy.other_lang }}" aria-label="{{ nav_language_label }}" title="{{ nav_language_label }}">{{ nav_copy.language }}</a>
       <a class="global-account" href="https://clientes.atiemppo.com/registro" hreflang="es" title="{{ nav_copy.account_title }}">{{ nav_copy.account }}</a>
     </nav>
