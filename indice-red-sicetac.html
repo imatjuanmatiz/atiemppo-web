@@ -57,6 +57,7 @@ nav#nav.scrolled{background:rgba(0,38,120,.99)!important;box-shadow:0 4px 30px r
 .tag::before{content:'';display:block;width:1.2rem;height:1px;background:var(--teal)}
 .hero h1{font-family:var(--display);font-size:clamp(2.8rem,7vw,6rem);letter-spacing:.04em;line-height:1;margin-bottom:1.25rem;color:var(--white)}
 .hero h1 em{font-style:normal;color:var(--teal)}
+.hero h1 > span{display:block}
 .hero-sub{font-size:clamp(1rem,2vw,1.15rem);color:rgba(10,22,40,.6);max-width:600px;margin:0 auto 1.5rem;line-height:1.75}
 .hero-source{font-size:.78rem;color:rgba(10,22,40,.4);margin-top:.75rem}
 .hero-note{max-width:760px;margin:1rem auto 0;font-size:.82rem;color:rgba(10,22,40,.48);line-height:1.7}
@@ -208,7 +209,7 @@ footer{background:var(--surface)!important;border-top:1px solid var(--border2);p
 <section class="hero">
   <div class="hero-inner">
     <p class="tag">Análisis de red · SICETAC · ATIEMPPO</p>
-    <h1>EL ÍNDICE<br>DE <em>TU RED</em></h1>
+    <h1><span>EL ÍNDICE</span> <span>DE <em>TU RED</em></span></h1>
     <p class="hero-sub">El índice SICETAC de tu operación combina sus rutas, configuraciones vehiculares y volúmenes de viajes. Esa composición permite calcular una referencia propia para tu red. Esta página complementa el caso publicado en <em>El Dato Logístico</em>.</p>
     <p class="hero-source">Datos: vigencia abril 2026 · Metodología: carga general, unidad estacas, condición cargado</p>
     <p class="hero-note">En este caso, la serie principal está expresada con base <strong>enero de 2025 = 100</strong>. Como referencia complementaria, en abril de 2026 las tres redes quedarían así con base <strong>diciembre de 2025 = 100</strong>: Empresa 1 <strong>99.50</strong>, Empresa 2 <strong>105.36</strong> y Empresa 3 <strong>105.28</strong>.</p>

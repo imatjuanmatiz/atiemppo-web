@@ -6,10 +6,16 @@ sitemap: false
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 {%- assign seen_urls = "|" -%}
+{%- assign excluded_prefixes = "/mechita/|/ninja-colombia/|/ninja-crispi-colombia/|/ninja-colombia-revision/|/demos/|/portaltransporte/|/reportes/newsletter/|/reportes/colfecar-bloqueos-abril-2026/|/reportes/comercio-exterior-capitales-puertos/" | split: "|" -%}
 {%- assign documents = site.documents | concat: site.html_pages -%}
 {%- for doc in documents -%}
   {%- assign root_prefix = doc.url | slice: 0, 12 -%}
-  {%- unless doc.sitemap == false or doc.url contains '/gracias/' or doc.url contains '/confirmado/' or doc.url contains '/404' or root_prefix == '/newsletter/' -%}
+  {%- assign hidden_url = false -%}
+  {%- assign doc_path = doc.url | append: "/" -%}
+  {%- for prefix in excluded_prefixes -%}
+    {%- if doc_path contains prefix -%}{%- assign hidden_url = true -%}{%- endif -%}
+  {%- endfor -%}
+  {%- unless hidden_url or doc.sitemap == false or doc.url contains '/gracias/' or doc.url contains '/confirmado/' or doc.url contains '/404' or root_prefix == '/newsletter/' -%}
     {%- assign path = doc.url | replace: '/index.html', '/' -%}
     {%- assign key = path | prepend: '|' | append: '|' -%}
     {%- unless seen_urls contains key -%}
@@ -21,8 +27,12 @@ sitemap: false
 {%- for file in site.static_files -%}
   {%- assign root_prefix = file.path | slice: 0, 12 -%}
   {%- if file.extname == '.html' or file.extname == '.pdf' -%}
-    {%- unless file.sitemap == false or file.path contains '/gracias/' or file.path contains '/confirmado/' or file.path contains '/404' or root_prefix == '/newsletter/' -%}
-      {%- assign path = file.path | replace: '/index.html', '/' -%}
+    {%- assign path = file.path | prepend: "/" | replace: "//", "/" | replace: "/index.html", "/" -%}
+    {%- assign hidden_url = false -%}
+    {%- for prefix in excluded_prefixes -%}
+      {%- if path contains prefix -%}{%- assign hidden_url = true -%}{%- endif -%}
+    {%- endfor -%}
+    {%- unless hidden_url or file.sitemap == false or file.path contains '/gracias/' or file.path contains '/confirmado/' or file.path contains '/404' or root_prefix == '/newsletter/' -%}
       {%- assign key = path | prepend: '|' | append: '|' -%}
       {%- unless seen_urls contains key -%}
         <url><loc>{{ path | absolute_url | xml_escape }}</loc></url>

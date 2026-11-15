@@ -5,9 +5,13 @@
   <div class="container knowledge-training-opening">
     <div>
       <p class="eyebrow">{{ kh.hero_label }}</p>
-      <h1 id="knowledge-title">{{ kh_experiences.hero_title }}</h1>
+      <h1 id="knowledge-title">{{ kh.hero_title | default: kh_experiences.hero_title }}</h1>
+      {%- if kh.hero_summary -%}
+      <p class="knowledge-training-summary">{{ kh.hero_summary }}</p>
+      {%- else -%}
       <p class="knowledge-training-promise">{{ kh_experiences.hero_emphasis }}</p>
       <p class="knowledge-training-summary">{{ kh_experiences.hero_lead }} {{ kh.hero_speciality }}</p>
+      {%- endif -%}
       <div class="knowledge-training-actions">
         <a class="btn btn-primary" href="#aprender">{{ kh.hero_cta }} <span aria-hidden="true">↓</span></a>
         <a class="text-link" href="#contacto">{{ kh_experiences.write }} <span aria-hidden="true">↓</span></a>
