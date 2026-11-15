@@ -1,0 +1,29 @@
+{%- assign formats_lang = include.lang | default: page.lang | default: 'es' -%}
+{%- assign ec = site.data.experiences[formats_lang] -%}
+{%- assign formats_personal = ec.personal_offer -%}
+{%- assign formats_workshop = ec.offers | where: "key", "workshop" | first -%}
+{%- assign formats_teams = ec.offers | where: "key", "teams" | first -%}
+{%- if formats_lang == 'en' -%}
+  {%- assign rollup_alt = "ATIEMPPO roll-up for the applied AI courses. The poster says “Tú conoces tu negocio. Imagina lo que puedes hacer con IA” and shows a QR code to message Bruno." -%}
+{%- else -%}
+  {%- assign rollup_alt = "Pieza vertical de ATIEMPPO para los cursos de IA aplicada. Dice «Tú conoces tu negocio. Imagina lo que puedes hacer con IA» y muestra un código QR para escribirle a Bruno." -%}
+{%- endif -%}
+<section class="experience-section courses-formats" aria-labelledby="courses-formats-title">
+  <div class="container courses-formats-layout">
+    <div>
+      <header class="experience-section-heading">
+        <p class="eyebrow">{{ ec.training_label }}</p>
+        <h2 class="section-heading" id="courses-formats-title">{{ ec.options_title }}</h2>
+      </header>
+      <div class="courses-format-list">
+        {% include courses-format-card.html offer=formats_personal ec=ec lang=formats_lang %}
+        {% include courses-format-card.html offer=formats_workshop ec=ec lang=formats_lang %}
+        {% include courses-format-card.html offer=formats_teams ec=ec lang=formats_lang %}
+      </div>
+    </div>
+    <figure class="courses-rollup">
+      {% include responsive-image.html src="/assets/images/cursos/rollup-cursos-ia.jpg" alt=rollup_alt loading="lazy" sizes="280px" %}
+      <figcaption>{% if formats_lang == 'en' %}<span lang="es">{% endif %}Tú conoces tu negocio. Imagina lo que puedes hacer con IA.{% if formats_lang == 'en' %}</span>{% endif %}</figcaption>
+    </figure>
+  </div>
+</section>
