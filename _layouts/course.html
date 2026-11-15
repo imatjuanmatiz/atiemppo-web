@@ -1,0 +1,93 @@
+{% assign course = site.data.courses.courses | where: "key", page.course | first %}
+<!DOCTYPE html>
+<html lang="es">
+<head>{% include course-head.html %}</head>
+<body class="experience-page course-page">
+{% include header.html %}
+<main id="main-content">
+  <nav class="course-breadcrumbs" aria-label="Ruta">
+    <ol>
+      <li><a href="/">Inicio</a></li>
+      <li><a href="/cursos/"{% unless page.course %} aria-current="page"{% endunless %}>Cursos</a></li>
+      {% if page.course %}<li><a href="{{ page.url }}" aria-current="page">{{ course.title }}</a></li>{% endif %}
+    </ol>
+  </nav>
+  {% if page.course %}
+  <section class="experience-opening">
+    <div class="container course-copy">
+      <p class="eyebrow">Curso</p>
+      <h1>{{ course.title }}</h1>
+      <p class="experience-lead">{{ page.description }}</p>
+      {% for paragraph in course.intro %}
+      <p>{% include course-parts.html parts=paragraph %}</p>
+      {% endfor %}
+    </div>
+  </section>
+  {% for block in course.blocks %}
+  {% assign band = forloop.index | modulo: 2 %}
+  <section class="experience-section{% if band == 0 %} experience-paper{% endif %}">
+    <div class="container course-copy">
+      <h2 class="section-heading">{{ block.heading }}</h2>
+      {% if block.items %}
+      <ul class="course-points">
+        {% for item in block.items %}<li>{% include course-parts.html parts=item %}</li>{% endfor %}
+      </ul>
+      {% endif %}
+      {% for paragraph in block.paragraphs %}
+      <p>{% include course-parts.html parts=paragraph %}</p>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+  <section class="experience-section experience-close">
+    <div class="container">
+      <h2 class="section-heading">{{ course.contact_title }}</h2>
+      <p>{{ course.contact_body }}</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/contacto/">{{ course.contact_cta }}</a>
+        <a class="experience-link" href="/cursos/">Volver a los cursos</a>
+      </div>
+    </div>
+  </section>
+  <nav class="experience-siblings container" aria-label="Cursos">
+    {% for item in site.data.courses.courses %}
+    <a href="{{ item.path }}"{% if item.key == page.course %} aria-current="page"{% endif %}>{{ item.title }}</a>
+    {% endfor %}
+  </nav>
+  {% else %}
+  <section class="experience-opening">
+    <div class="container course-copy">
+      <p class="eyebrow">Aprendizaje</p>
+      <h1>Cursos de IA aplicada</h1>
+      <p class="experience-lead">{{ page.description }}</p>
+      <p>En esta página ves qué se aprende. En <a href="/experiencias/">Experiencias</a> ves cómo se contrata.</p>
+    </div>
+  </section>
+  <section class="experience-section experience-options" aria-labelledby="cursos-lista">
+    <div class="container">
+      <h2 class="section-heading" id="cursos-lista">Qué se aprende</h2>
+      <div class="experience-grid">
+        {% for item in site.data.courses.courses %}
+        <article class="experience-option">
+          <h3><a href="{{ item.path }}">{{ item.title }}</a></h3>
+          <p>{{ item.summary }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <section class="experience-section experience-close">
+    <div class="container">
+      <h2 class="section-heading">Cuéntanos la tarea</h2>
+      <p>Escribe la tarea que quieres trabajar. Si buscas cómo se contrata el encuentro, mira Experiencias.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/contacto/">Escribir</a>
+        <a class="experience-link" href="/experiencias/">Ver cómo se contrata</a>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+</main>
+{% include footer.html %}
+</body>
+</html>

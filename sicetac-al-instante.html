@@ -204,6 +204,14 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:40px 28px}
   .cta-panel{padding:32px 24px}
 }
 
+.learn-next-wrap{padding:0 0 72px}
+.learn-next{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 22px}
+.learn-next h2{font-family:var(--display);font-size:clamp(1.25rem,2vw,1.5rem);line-height:1.25;margin:0 0 14px}
+.learn-next ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.learn-next a{color:var(--navy);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.learn-next a:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.learn-next .learn-more{margin:16px 0 0;font-size:14px}
+.learn-next .learn-more a{font-weight:500}
 .example-note { margin: 16px 0; padding: 14px 16px; border: 1px solid currentColor; border-radius: 10px; font-size: 14px; line-height: 1.6; }
 .product-panel .example-note { position: relative; z-index: 2; color: #fff; }
 </style>
@@ -388,6 +396,18 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:40px 28px}
       </div>
     </div>
   </section>
+  <div class="learn-next-wrap">
+    <div class="container">
+      <aside class="learn-next" aria-labelledby="cursos-sicetac">
+        <h2 id="cursos-sicetac">Cursos</h2>
+        <ul>
+          <li><a href="/cursos/ia-analisis-de-datos/">Aprende a consultar datos de transporte con IA</a></li>
+          <li><a href="/cursos/agentes-de-ia/">Conecta un agente a esta consulta</a></li>
+        </ul>
+        <p class="learn-more"><a href="/cursos/">Ver los cursos</a></p>
+      </aside>
+    </div>
+  </div>
 </main>
 
 {% include footer.html %}

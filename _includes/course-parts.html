@@ -1,0 +1,1 @@
+{%- for part in include.parts -%}{%- if part.href -%}<a href="{{ part.href }}">{{ part.text }}</a>{%- else -%}{{ part.text }}{%- endif -%}{%- endfor -%}
