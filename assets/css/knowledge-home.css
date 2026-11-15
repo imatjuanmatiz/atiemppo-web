@@ -107,6 +107,28 @@
   .knowledge-conference-actions { align-items: start; flex-direction: column; }
   .knowledge-about-grid { gap: 16px; }
 }
+.knowledge-start-grid, .knowledge-path-grid { display: grid; gap: 16px; }
+.knowledge-start-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.knowledge-path-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 24px; }
+.knowledge-start {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 10px;
+  min-height: 148px; padding: 20px; border: 1px solid #cbd8e2; border-radius: 14px;
+  background: #fff; color: inherit; text-decoration: none;
+}
+.knowledge-start:hover { border-color: #246aaf; }
+.knowledge-start strong { font-size: 20px; line-height: 1.3; }
+.knowledge-start span { color: var(--atiemppo-muted); font-size: 14px; line-height: 1.5; }
+.knowledge-path-grid .knowledge-tool h3 { margin: 0 0 10px; font-size: 22px; }
+.knowledge-path-grid .knowledge-tool h3 a { color: inherit; text-decoration: none; }
+.knowledge-path-grid .knowledge-tool h3 a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.knowledge-path-grid .knowledge-tool p { margin: 0; }
+@media (max-width: 1000px) {
+  .knowledge-start-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .knowledge-path-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 700px) {
+  .knowledge-start-grid { grid-template-columns: 1fr; }
+}
 @media (prefers-reduced-motion: reduce) { .knowledge-home { scroll-behavior: auto; } }
 
 /* The commercial action stays beside the opening message, before the journeys. */
