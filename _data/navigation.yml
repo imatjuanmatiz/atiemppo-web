@@ -10,7 +10,7 @@ items:
   - path: /#herramientas
     es: Herramientas
     en: Tools
-    sections: [/base-completa-sicetac/, /indices-sicetac/, /indice-red-sicetac/, /sicetac-api/, /sicetac-al-instante/, /novedades-en-vias/]
+    sections: [/sicetac/, /base-completa-sicetac/, /indices-sicetac/, /indice-red-sicetac/, /sicetac-api/, /sicetac-al-instante/, /novedades-en-vias/]
   - path: /consultoria/
     es: Resolver un reto
     en: Solve a challenge
@@ -66,6 +66,8 @@ es:
     products:
       - path: https://clientes.atiemppo.com/clientes
         label: Portal de clientes · ATICA
+      - path: /sicetac/
+        label: Consulta SICETAC
       - path: /sicetac-al-instante/
         label: SICETAC al Instante
       - path: /indices-sicetac/
@@ -120,6 +122,9 @@ en:
     products:
       - path: https://clientes.atiemppo.com/clientes
         label: Client portal · ATICA
+        lang: es
+      - path: /sicetac/
+        label: Consulta SICETAC
         lang: es
       - path: /en/sicetac-al-instante/
         label: SICETAC al Instante

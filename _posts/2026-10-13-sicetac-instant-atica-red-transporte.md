@@ -6,7 +6,7 @@ date: 2026-10-13 09:05:00 -0500
 author: "Juan Pablo Matiz"
 lab: "SICETAC al Instante"
 emoji: "🗺️"
-tags: [sicetac, atica, transporte, analítica, índice-de-red, whatsapp]
+tags: [sicetac, sisetac, siceta, sicetap, sisecta, sicetec, sietac, cicetac, sictac, "sicetac consulta", "consulta sicetac", "sicetac interactivo", "sicetac rndc", atica, transporte, analítica, índice-de-red, whatsapp]
 image: /assets/images/blog/sicetac-instant-atica/01-centro-servicios.png
 permalink: /blog/sicetac-instant-atica-red-transporte/
 lang: es

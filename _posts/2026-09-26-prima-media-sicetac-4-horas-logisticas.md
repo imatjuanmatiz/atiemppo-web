@@ -6,7 +6,7 @@ date: 2026-09-26 06:00:00 -0500
 author: "Juan Pablo Matiz"
 lab: "El Dato Logístico"
 emoji: "📊"
-tags: [sicetac, valor-en-plaza, fletes, transporte, 3s3, datos, el-dato-logistico, atiemppo]
+tags: [sicetac, sisetac, siceta, sicetap, sisecta, sicetec, sietac, cicetac, sictac, "sicetac consulta", "consulta sicetac", "sicetac interactivo", "sicetac rndc", valor-en-plaza, fletes, transporte, 3s3, datos, el-dato-logistico, atiemppo]
 image: /assets/images/blog/prima-media-4h-sicetac/prima-media-4-horas-logisticas-3s3-ene-jul-2026.png
 permalink: /blog/prima-media-sicetac-4-horas-logisticas/
 lang: es

@@ -14,7 +14,7 @@ layout: default
   <div class="post-body">{{ content }}</div>
   <footer class="post-footer">
     {% if page.tags %}
-      <div class="post-tags">{% for tag in page.tags %}<span class="post-tag">#{{ tag }}</span>{% endfor %}</div>
+      <div class="post-tags">{% for tag in page.tags %}{% unless site.data.sicetac.search_tags contains tag and tag != site.data.sicetac.canonical %}<span class="post-tag">#{{ tag }}</span>{% endunless %}{% endfor %}</div>
     {% endif %}
     <a href="/blog/" class="post-back">← Volver al blog</a>
   </footer>

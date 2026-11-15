@@ -6,7 +6,7 @@ date: 2026-03-19 09:00:00 -0500
 author: "Equipo Atiemppo"
 lab: "SICETAC al Instante"
 emoji: "📲"
-tags: [sicetac, whatsapp, transporte, ia]
+tags: [sicetac, sisetac, siceta, sicetap, sisecta, sicetec, sietac, cicetac, sictac, "sicetac consulta", "consulta sicetac", "sicetac interactivo", "sicetac rndc", whatsapp, transporte, ia]
 ---
 
 Hay momentos en los que una persona no necesita una plataforma entera. Necesita una respuesta rápida.

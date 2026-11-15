@@ -6,7 +6,7 @@ date: 2026-03-19 09:20:00 -0500
 author: "Atiemppo Team"
 lab: "SICETAC al Instante"
 emoji: "🗄️"
-tags: [sicetac, product, ui, transport]
+tags: [sicetac, sisetac, siceta, sicetap, sisecta, sicetec, sietac, cicetac, sictac, "sicetac consulta", "consulta sicetac", "sicetac interactivo", "sicetac rndc", product, ui, transport]
 lang: en
 permalink: /en/blog/sicetac-al-instante-web/
 ---

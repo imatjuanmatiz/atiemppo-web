@@ -6,7 +6,7 @@ date: 2026-10-23 00:00:00 -0500
 display_date: "23 de octubre de 2026"
 author: "ATIEMPPO S.A.S."
 lab: "SICETAC al Instante"
-tags: [sicetac, transporte-de-carga, logistica, whatsapp, openai, decisions-api]
+tags: [sicetac, sisetac, siceta, sicetap, sisecta, sicetec, sietac, cicetac, sictac, "sicetac consulta", "consulta sicetac", "sicetac interactivo", "sicetac rndc", transporte-de-carga, logistica, whatsapp, openai, decisions-api]
 image: /assets/images/blog/sicetac-decisions-5000/01-celebramos.jpg
 permalink: /blog/sicetac-al-instante-5000-consultas-decisions-openai/
 ai_content_declaration: ai-assisted

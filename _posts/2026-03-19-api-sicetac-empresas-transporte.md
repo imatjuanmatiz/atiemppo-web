@@ -6,7 +6,7 @@ date: 2026-03-19 18:55:00 -0500
 author: "Equipo Atiemppo"
 lab: "API SICETAC"
 emoji: "🔌"
-tags: [sicetac, api, transporte, integraciones]
+tags: [sicetac, sisetac, siceta, sicetap, sisecta, sicetec, sietac, cicetac, sictac, "sicetac consulta", "consulta sicetac", "sicetac interactivo", "sicetac rndc", api, transporte, integraciones]
 ---
 
 En muchas empresas de transporte, el valor de referencia de una ruta sigue viviendo en consultas manuales, hojas sueltas o personas que cargan el conocimiento en la cabeza.

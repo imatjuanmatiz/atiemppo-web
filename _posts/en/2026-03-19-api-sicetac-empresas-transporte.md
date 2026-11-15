@@ -6,7 +6,7 @@ date: 2026-03-19 18:55:00 -0500
 author: "Atiemppo Team"
 lab: "API SICETAC"
 emoji: "🔌"
-tags: [sicetac, api, transport, integrations]
+tags: [sicetac, sisetac, siceta, sicetap, sisecta, sicetec, sietac, cicetac, sictac, "sicetac consulta", "consulta sicetac", "sicetac interactivo", "sicetac rndc", api, transport, integrations]
 lang: en
 permalink: /en/blog/api-sicetac-empresas-transporte/
 ---

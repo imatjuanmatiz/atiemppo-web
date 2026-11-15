@@ -6,7 +6,7 @@ date: 2026-02-18 09:00:00 -0500
 author: "Atiemppo Team"
 lab: "SICETAC-LAB"
 emoji: "🚚"
-tags: [sicetac, transport, agents, colombia]
+tags: [sicetac, sisetac, siceta, sicetap, sisecta, sicetec, sietac, cicetac, sictac, "sicetac consulta", "consulta sicetac", "sicetac interactivo", "sicetac rndc", transport, agents, colombia]
 lang: en
 permalink: /en/blog/sicetac-lab-costos-transporte-colombia/
 ---
