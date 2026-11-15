@@ -29,13 +29,16 @@
     <button class="global-menu-toggle" type="button" popovertarget="global-menu" popovertargetaction="toggle" aria-controls="global-menu" aria-expanded="false" aria-label="{{ nav_copy.open }}" data-open-label="{{ nav_copy.open }}" data-close-label="{{ nav_copy.close }}"><span aria-hidden="true">☰</span> {{ nav_copy.menu }}</button>
     <nav class="global-menu" id="global-menu" popover="auto" aria-label="{{ nav_copy.label }}">
       {%- for item in site.data.navigation.items -%}
+        {%- assign nav_label = item[nav_lang] -%}
+        {%- if nav_label -%}
         {%- assign nav_active = false -%}
         {%- if nav_path == item.path -%}{%- assign nav_active = true -%}{%- endif -%}
         {%- for prefix in item.sections -%}
           {%- assign path_start = nav_path | slice: 0, prefix.size -%}
           {%- if path_start == prefix -%}{%- assign nav_active = true -%}{%- endif -%}
         {%- endfor -%}
-        <a href="{{ nav_copy.prefix }}{{ item.path }}"{% if nav_active %} aria-current="{% if nav_path == item.path %}page{% else %}true{% endif %}"{% endif %}>{{ item[nav_lang] }}</a>
+        <a href="{{ nav_copy.prefix }}{{ item.path }}"{% if nav_active %} aria-current="{% if nav_path == item.path %}page{% else %}true{% endif %}"{% endif %}>{{ nav_label }}</a>
+        {%- endif -%}
       {%- endfor -%}
       <a class="global-contact" href="{{ nav_copy.prefix }}/contacto/">{{ nav_copy.contact }}</a>
       <a class="global-language" href="{{ nav_translation }}" lang="{{ nav_copy.other_lang }}" hreflang="{{ nav_copy.other_lang }}" aria-label="{{ nav_language_label }}" title="{{ nav_language_label }}">{{ nav_copy.language }}</a>

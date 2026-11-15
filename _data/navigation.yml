@@ -1,25 +1,24 @@
 # Shared primary navigation. Page-specific shortcuts belong below this header.
+# Un ítem sin etiqueta en un idioma no sale en ese menú.
 items:
-  - path: /
-    es: Inicio
-    en: Home
-  - path: /#aprender
-    es: Formación
-    en: Training
-    sections: [/experiencias/, /sesion-personalizada/, /acompanamiento-ia/, /workshop/, /formacion/, /sesiones/, /agentes/, /banco-de-conocimiento/, /ia-aplicada/]
-  - path: /#herramientas
-    es: Herramientas
-    en: Tools
-    sections: [/sicetac/, /base-completa-sicetac/, /indices-sicetac/, /indice-red-sicetac/, /sicetac-api/, /sicetac-al-instante/, /novedades-en-vias/]
-  - path: /consultoria/
-    es: Resolver un reto
-    en: Solve a challenge
+  # TODO: cuando exista /cursos/, cambia solo path a /cursos/.
+  - path: /experiencias/
+    es: Cursos de IA
+    en: AI courses
   - path: /conferencias/
     es: Conferencias
     en: Talks
-  - path: /inteligencia-planeacion-transporte/
-    es: Transporte
-    en: Transport
+  - path: /consultoria/
+    es: Consultoría
+    en: Consulting
+  # Solo español: no hay página /en/sicetac/.
+  - path: /sicetac/
+    es: SICETAC
+    sections: [/sicetac/, /base-completa-sicetac/, /indices-sicetac/, /indice-red-sicetac/, /sicetac-api/, /sicetac-al-instante/]
+  # Solo inglés: sin /en/sicetac/, Tools sigue hacia la sección de la portada.
+  - path: /#herramientas
+    en: Tools
+    sections: [/base-completa-sicetac/, /indices-sicetac/, /indice-red-sicetac/, /sicetac-api/, /sicetac-al-instante/, /novedades-en-vias/]
   - path: /blog/
     es: Blog
     en: Blog
@@ -32,7 +31,7 @@ es:
   open: Abrir navegación
   close: Cerrar navegación
   menu: Menú
-  contact: Escríbenos
+  contact: Contacto
   account: Cuenta gratuita
   account_title: Crea tu cuenta gratuita en el portal ATIEMPPO
   other_lang: en
@@ -63,6 +62,8 @@ es:
         label: Novedades en Vías
       - path: /conferencias/
         label: Conferencias
+      - path: /inteligencia-planeacion-transporte/
+        label: Transporte
     products:
       - path: https://clientes.atiemppo.com/clientes
         label: Portal de clientes · ATICA
@@ -88,7 +89,7 @@ en:
   open: Open navigation
   close: Close navigation
   menu: Menu
-  contact: Get in touch
+  contact: Contact
   account: Free account · ES
   account_title: Create your free account in the Spanish-language portal
   other_lang: es
@@ -119,6 +120,8 @@ en:
         label: Road updates
       - path: /en/conferencias/
         label: Talks and conferences
+      - path: /en/inteligencia-planeacion-transporte/
+        label: Transport
     products:
       - path: https://clientes.atiemppo.com/clientes
         label: Client portal · ATICA
