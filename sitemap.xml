@@ -15,7 +15,11 @@ sitemap: false
   {%- for prefix in excluded_prefixes -%}
     {%- if doc_path contains prefix -%}{%- assign hidden_url = true -%}{%- endif -%}
   {%- endfor -%}
-  {%- unless hidden_url or doc.sitemap == false or doc.url contains '/gracias/' or doc.url contains '/confirmado/' or doc.url contains '/404' or root_prefix == '/newsletter/' -%}
+  {%- assign doc_path = doc.url | replace: '/index.html', '/' | append: '/' | replace: '//', '/' -%}
+  {%- assign redirected_url = false -%}
+  {%- if doc.redirect_to or doc.layout == 'redirect' -%}{%- assign redirected_url = true -%}{%- endif -%}
+  {%- if doc_path == '/sesiones/' or doc_path == '/en/sesiones/' or doc_path == '/servicios/' or doc_path == '/en/servicios/' or doc_path == '/herramientas/' or doc_path == '/en/herramientas/' or doc_path contains '/formacion/' -%}{%- assign redirected_url = true -%}{%- endif -%}
+  {%- unless hidden_url or redirected_url or doc.sitemap == false or doc.url contains '/gracias/' or doc.url contains '/confirmado/' or doc.url contains '/404' or root_prefix == '/newsletter/' -%}
     {%- assign path = doc.url | replace: '/index.html', '/' -%}
     {%- assign key = path | prepend: '|' | append: '|' -%}
     {%- unless seen_urls contains key -%}
@@ -32,7 +36,10 @@ sitemap: false
     {%- for prefix in excluded_prefixes -%}
       {%- if path contains prefix -%}{%- assign hidden_url = true -%}{%- endif -%}
     {%- endfor -%}
-    {%- unless hidden_url or file.sitemap == false or file.path contains '/gracias/' or file.path contains '/confirmado/' or file.path contains '/404' or root_prefix == '/newsletter/' -%}
+    {%- assign static_path = path | append: '/' | replace: '//', '/' -%}
+    {%- assign redirected_url = false -%}
+    {%- if static_path == '/sesiones/' or static_path == '/en/sesiones/' or static_path == '/servicios/' or static_path == '/en/servicios/' or static_path == '/herramientas/' or static_path == '/en/herramientas/' or static_path contains '/formacion/' -%}{%- assign redirected_url = true -%}{%- endif -%}
+    {%- unless hidden_url or redirected_url or file.sitemap == false or file.path contains '/gracias/' or file.path contains '/confirmado/' or file.path contains '/404' or root_prefix == '/newsletter/' -%}
       {%- assign key = path | prepend: '|' | append: '|' -%}
       {%- unless seen_urls contains key -%}
         <url><loc>{{ path | absolute_url | xml_escape }}</loc></url>
