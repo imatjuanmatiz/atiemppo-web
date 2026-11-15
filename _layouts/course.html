@@ -21,6 +21,9 @@
       {% for paragraph in course.intro %}
       <p>{% include course-parts.html parts=paragraph %}</p>
       {% endfor %}
+      {% if page.course == 'datos' %}
+      <p><a href="/sicetac/">Empezar por una consulta SICETAC</a></p>
+      {% endif %}
     </div>
   </section>
   {% for block in course.blocks %}
@@ -61,6 +64,8 @@
       <h1>Cursos de IA aplicada</h1>
       <p class="experience-lead">{{ page.description }}</p>
       <p>En esta página ves qué se aprende. En <a href="/experiencias/">Experiencias</a> ves cómo se contrata.</p>
+      <p><a href="/sicetac/">Consulta SICETAC y lleva el dato a la práctica</a></p>
+      <p><a href="/conferencias/">Conferencias para eventos y juntas</a></p>
     </div>
   </section>
   <section class="experience-section experience-options" aria-labelledby="cursos-lista">
