@@ -1,29 +1,33 @@
 # Shared primary navigation. Page-specific shortcuts belong below this header.
+# Flat menu: child links for courses and SICETAC live on those pages and in the footer.
+# English Courses and SICETAC point at /en/cursos/ and /en/sicetac/.
 items:
-  - path: /
-    es: Inicio
-    en: Home
-  - path: /#aprender
-    es: Formación
-    en: Training
-    sections: [/experiencias/, /sesion-personalizada/, /acompanamiento-ia/, /workshop/, /formacion/, /sesiones/, /agentes/, /banco-de-conocimiento/, /ia-aplicada/]
-  - path: /#herramientas
-    es: Herramientas
-    en: Tools
-    sections: [/sicetac/, /base-completa-sicetac/, /indices-sicetac/, /indice-red-sicetac/, /sicetac-api/, /sicetac-al-instante/, /novedades-en-vias/]
-  - path: /consultoria/
-    es: Resolver un reto
-    en: Solve a challenge
+  - path: /cursos/
+    es: Cursos de IA
+    en: Courses
+    sections: [/cursos/]
+    en_sections: [/cursos/]
   - path: /conferencias/
     es: Conferencias
     en: Talks
-  - path: /inteligencia-planeacion-transporte/
-    es: Transporte
-    en: Transport
+    sections: [/conferencias/]
+  - path: /consultoria/
+    es: Consultoría
+    en: Consulting
+    sections: [/consultoria/]
+  - path: /sicetac/
+    es: SICETAC
+    en: SICETAC
+    sections: [/sicetac/, /sicetac-al-instante/, /sicetac-api/, /base-completa-sicetac/, /indices-sicetac/, /indice-red-sicetac/]
+    en_sections: [/sicetac/, /sicetac-al-instante/, /sicetac-api/, /base-completa-sicetac/, /indices-sicetac/, /indice-red-sicetac/]
   - path: /blog/
     es: Blog
     en: Blog
     sections: [/blog/, /reportes/]
+  - path: /contacto/
+    es: Contacto
+    en: Contact
+    sections: [/contacto/]
 es:
   prefix: ''
   home: /
@@ -32,7 +36,7 @@ es:
   open: Abrir navegación
   close: Cerrar navegación
   menu: Menú
-  contact: Escríbenos
+  contact: Contacto
   account: Cuenta gratuita
   account_title: Crea tu cuenta gratuita en el portal ATIEMPPO
   other_lang: en
@@ -47,39 +51,37 @@ es:
   footer:
     description: Un taller de conocimiento para explorar, usar herramientas y trabajar juntos sobre un reto.
     navigation: Navegación
-    ecosystem: Herramientas y proyectos
+    ecosystem: Transporte y herramientas
     contact: Contacto
-    contact_label: Hablemos
+    contact_label: Contacto
     spanish: en español
     tagline: Experiencia, datos y inteligencia artificial
     support: Soporte de los servicios
     legal: Términos y privacidad
     extra_navigation:
+      - path: /inteligencia-planeacion-transporte/
+        label: Transporte
       - path: /quienes-somos/
         label: Quiénes somos
-      - path: /reportes/
-        label: Reportes Vivos
-      - path: /novedades-en-vias/
-        label: Novedades en Vías
-      - path: /conferencias/
-        label: Conferencias
     products:
-      - path: https://clientes.atiemppo.com/clientes
-        label: Portal de clientes · ATICA
-      - path: /sicetac/
-        label: Consulta SICETAC
       - path: /sicetac-al-instante/
         label: SICETAC al Instante
-      - path: /indices-sicetac/
-        label: Índice SICETAC para tu red
       - path: /sicetac-api/
         label: API SICETAC
       - path: /base-completa-sicetac/
         label: Base SICETAC
+      - path: /indices-sicetac/
+        label: Índices SICETAC
+      - path: /novedades-en-vias/
+        label: Novedades en Vías
+      - path: /reportes/
+        label: Reportes Vivos
+      - path: https://clientes.atiemppo.com/clientes
+        label: ATICA · portal de clientes
+      - path: https://sicetac-lab.vercel.app/
+        label: SICETAC Lab
       - path: https://www.eldatologistico.com
         label: El Dato Logístico
-      - path: /insignia-impact/
-        label: Insignia Impact
 en:
   prefix: /en
   home: /en/
@@ -88,7 +90,7 @@ en:
   open: Open navigation
   close: Close navigation
   menu: Menu
-  contact: Get in touch
+  contact: Contact
   account: Free account · ES
   account_title: Create your free account in the Spanish-language portal
   other_lang: es
@@ -103,40 +105,37 @@ en:
   footer:
     description: A knowledge workshop to explore ideas, use tools and work through a challenge together.
     navigation: Navigation
-    ecosystem: Tools and projects
+    ecosystem: Transport and tools
     contact: Contact
-    contact_label: Let's talk
+    contact_label: Contact
     spanish: in Spanish
     tagline: Experience, data and artificial intelligence
     support: Service support
     legal: Terms and privacy
     extra_navigation:
+      - path: /en/inteligencia-planeacion-transporte/
+        label: Transport
       - path: /en/quienes-somos/
         label: About us
-      - path: /en/reportes/
-        label: Reportes Vivos · Living reports
-      - path: /en/novedades-en-vias/
-        label: Road updates
-      - path: /en/conferencias/
-        label: Talks and conferences
     products:
-      - path: https://clientes.atiemppo.com/clientes
-        label: Client portal · ATICA
-        lang: es
-      - path: /sicetac/
-        label: Consulta SICETAC
-        lang: es
       - path: /en/sicetac-al-instante/
         label: SICETAC al Instante
-      - path: /en/indices-sicetac/
-        label: SICETAC index for your network
       - path: /en/sicetac-api/
         label: SICETAC API
       - path: /en/base-completa-sicetac/
         label: SICETAC database
+      - path: /en/indices-sicetac/
+        label: SICETAC indices
+      - path: /en/novedades-en-vias/
+        label: Road updates
+      - path: /en/reportes/
+        label: Reportes Vivos · Living reports
+      - path: https://clientes.atiemppo.com/clientes
+        label: ATICA · client portal
+        lang: es
+      - path: https://sicetac-lab.vercel.app/
+        label: SICETAC Lab
+        lang: es
       - path: https://www.eldatologistico.com
         label: El Dato Logístico
-        lang: es
-      - path: /insignia-impact/
-        label: Insignia Impact
         lang: es

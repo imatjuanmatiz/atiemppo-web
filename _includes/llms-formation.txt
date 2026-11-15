@@ -6,7 +6,11 @@
 {{ ec.hero_lead }}
 {{ ec.intro }}
 
-Compare the learning experiences: https://atiemppo.com{{ ec.prefix }}/experiencias/
+What the courses cover: https://atiemppo.com/en/cursos/
+- AI for data analysis: https://atiemppo.com/en/cursos/ia-analisis-de-datos/
+- AI for work teams: https://atiemppo.com/en/cursos/ia-equipos-de-trabajo/
+- AI agents for real processes: https://atiemppo.com/en/cursos/agentes-de-ia/
+How to commission the meeting: https://atiemppo.com{{ ec.prefix }}/experiencias/
 Each format can be commissioned separately. The proposal defines the scope; this is not a dated open-enrolment course catalogue.
 {% else %}
 ## Formación y talleres vigentes
@@ -15,7 +19,11 @@ Each format can be commissioned separately. The proposal defines the scope; this
 {{ ec.hero_lead }}
 {{ ec.intro }}
 
-Compara las experiencias de formación: https://atiemppo.com{{ ec.prefix }}/experiencias/
+Qué se aprende: https://atiemppo.com/cursos/
+- IA para análisis de datos: https://atiemppo.com/cursos/ia-analisis-de-datos/
+- IA para equipos de trabajo: https://atiemppo.com/cursos/ia-equipos-de-trabajo/
+- Agentes de IA para procesos reales: https://atiemppo.com/cursos/agentes-de-ia/
+Cómo se contrata: https://atiemppo.com{{ ec.prefix }}/experiencias/
 Cada formato puede contratarse por separado. La propuesta define el alcance; este bloque no anuncia un calendario de cursos abiertos.
 {% endif %}
 {% for offer in ec.offers %}

@@ -10,8 +10,6 @@ tags: [inteligencia-artificial, agentes, atiemppo-lab, bruno, openclaw]
 permalink: /ia-aplicada/
 ---
 
-# Como estamos construyendo una mesa de trabajo con IA
-
 Durante los ultimos meses he estado haciendo un experimento muy concreto: construir mi propia mesa de trabajo con inteligencia artificial.
 
 No una IA para responder preguntas sueltas.

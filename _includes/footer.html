@@ -18,9 +18,12 @@
     <div class="global-footer-column">
       <h2 class="global-footer-heading">{{ footer_copy.navigation }}</h2>
       <ul class="global-footer-links">
-        {% for item in site.data.navigation.items %}<li><a href="{{ footer_nav.prefix }}{{ item.path }}">{{ item[footer_lang] }}</a></li>{% endfor %}
+        {% for item in site.data.navigation.items %}
+          {%- assign footer_item_path = item.path -%}
+          {%- if footer_lang == 'en' and item.en_path -%}{%- assign footer_item_path = item.en_path -%}{%- endif -%}
+          <li><a href="{{ footer_nav.prefix }}{{ footer_item_path }}">{{ item[footer_lang] }}</a></li>
+        {% endfor %}
         {% for item in footer_copy.extra_navigation %}<li><a href="{{ item.path }}"{% if item.lang %} hreflang="{{ item.lang }}"{% endif %}>{{ item.label }}{% if item.lang == 'es' and footer_lang == 'en' %} <span class="global-footer-language">({{ footer_copy.spanish }})</span>{% endif %}</a></li>{% endfor %}
-        <li><a href="{{ footer_nav.prefix }}/contacto/">{{ footer_copy.contact_label }}</a></li>
       </ul>
     </div>
     <div class="global-footer-column">
@@ -47,5 +50,5 @@
   </div>
 </footer>
 {% include bruno-link.html lang=footer_lang floating=true %}
-<script src="/assets/js/bruno-contact.js?v=20261031-audit" defer></script>
+<script src="/assets/js/bruno-contact.js?v=20261115-menu" defer></script>
 <script src="/assets/js/contact-attribution.js?v=20261102-formacion" defer></script>
