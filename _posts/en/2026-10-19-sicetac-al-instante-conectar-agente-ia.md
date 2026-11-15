@@ -5,7 +5,7 @@ description: "Connect transport data to your AI agents. Explore ATICA, SICETAC a
 date: 2026-10-19 12:00:00 -0500
 author: "ATIEMPPO S.A.S."
 lab: "SICETAC al Instante"
-tags: [sicetac, atica, mcp, ai-agents, claude, grok-bot, openclaw, bruno]
+tags: [sicetac, sisetac, siceta, sicetap, sisecta, sicetec, sietac, cicetac, sictac, "sicetac consulta", "consulta sicetac", "sicetac interactivo", "sicetac rndc", atica, mcp, ai-agents, claude, grok-bot, openclaw, bruno]
 image: /assets/images/blog/sicetac-al-instante-mcp/01-portada-sicetac.jpg
 lang: en
 permalink: /en/blog/sicetac-al-instante-conectar-agente-ia/

@@ -6,7 +6,7 @@ date: 2026-03-19 09:00:00 -0500
 author: "Atiemppo Team"
 lab: "SICETAC al Instante"
 emoji: "📲"
-tags: [sicetac, whatsapp, transport, ai]
+tags: [sicetac, sisetac, siceta, sicetap, sisecta, sicetec, sietac, cicetac, sictac, "sicetac consulta", "consulta sicetac", "sicetac interactivo", "sicetac rndc", whatsapp, transport, ai]
 lang: en
 permalink: /en/blog/sicetac-al-instante-whatsapp/
 ---

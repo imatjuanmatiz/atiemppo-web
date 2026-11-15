@@ -6,7 +6,7 @@ date: 2026-03-19 09:20:00 -0500
 author: "Equipo Atiemppo"
 lab: "SICETAC al Instante"
 emoji: "🗄️"
-tags: [sicetac, producto, ui, transporte]
+tags: [sicetac, sisetac, siceta, sicetap, sisecta, sicetec, sietac, cicetac, sictac, "sicetac consulta", "consulta sicetac", "sicetac interactivo", "sicetac rndc", producto, ui, transporte]
 ---
 
 Una consulta de costos puede ser técnicamente compleja y, aun así, sentirse simple para quien la usa.

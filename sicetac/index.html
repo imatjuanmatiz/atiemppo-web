@@ -1,0 +1,227 @@
+---
+layout: none
+permalink: /sicetac/
+lang: es
+title: "SICETAC: consulta, costos y reportes | ATIEMPPO"
+description: "Consulta SICETAC, la referencia oficial de costos del transporte de carga por carretera en Colombia. Herramientas, reportes y artículos de ATIEMPPO."
+tags:
+  - sicetac
+  - sisetac
+  - siceta
+  - sicetap
+  - sisecta
+  - sicetec
+  - sietac
+  - cicetac
+  - sictac
+  - sicetac consulta
+  - consulta sicetac
+  - sicetac interactivo
+  - sicetac rndc
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description }}"/>
+<meta name="keywords" content="{{ site.data.sicetac.search_tags | join: ', ' | escape }}"/>
+<meta name="ai-content-declaration" content="human-authored"/>
+<meta name="llms-txt" content="https://atiemppo.com/llms.txt"/>
+<link rel="alternate" type="text/plain" title="LLMs.txt" href="/llms.txt"/>
+<meta property="og:title" content="{{ page.title }}"/>
+<meta property="og:description" content="{{ page.description }}"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://atiemppo.com/sicetac/"/>
+<meta property="og:locale" content="es_CO"/>
+<meta property="og:site_name" content="ATIEMPPO"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@atiemppo"/>
+<meta name="twitter:title" content="{{ page.title }}"/>
+<meta name="twitter:description" content="{{ page.description }}"/>
+<link rel="canonical" href="https://atiemppo.com/sicetac/"/>
+<link rel="alternate" hreflang="es" href="https://atiemppo.com/sicetac/"/>
+<link rel="alternate" hreflang="x-default" href="https://atiemppo.com/sicetac/"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/assets/css/seo-content.css"/>
+<link rel="stylesheet" href="/assets/css/site-foundation.css"/>
+<link rel="stylesheet" href="/assets/css/sicetac-hub.css"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://atiemppo.com/sicetac/#webpage",
+      "url": "https://atiemppo.com/sicetac/",
+      "name": {{ page.title | jsonify }},
+      "description": {{ page.description | jsonify }},
+      "inLanguage": "es",
+      "keywords": {{ site.data.sicetac.search_tags | join: ", " | jsonify }},
+      "isPartOf": { "@id": "https://atiemppo.com/#website" },
+      "about": { "@id": "https://atiemppo.com/#organization" },
+      "mainEntity": { "@id": "https://atiemppo.com/sicetac/#sicetac" }
+    },
+    {
+      "@type": "Thing",
+      "@id": "https://atiemppo.com/sicetac/#sicetac",
+      "name": "SICETAC",
+      "description": "Sistema de Costos Eficientes para el Transporte Automotor de Carga del Ministerio de Transporte. Referencia oficial de costos del transporte de carga por carretera en Colombia.",
+      "alternateName": {{ site.data.sicetac.search_tags | jsonify }},
+      "keywords": {{ site.data.sicetac.search_tags | join: ", " | jsonify }}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://atiemppo.com/" },
+        { "@type": "ListItem", "position": 2, "name": "SICETAC", "item": "https://atiemppo.com/sicetac/" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://atiemppo.com/sicetac/#faq",
+      "url": "https://atiemppo.com/sicetac/#preguntas",
+      "inLanguage": "es",
+      "mainEntity": [
+        {%- for item in site.data.sicetac.faqs -%}
+        {
+          "@type": "Question",
+          "name": {{ item.question | jsonify }},
+          "acceptedAnswer": { "@type": "Answer", "text": {{ item.answer | jsonify }} }
+        }{% unless forloop.last %},{% endunless %}
+        {%- endfor -%}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body class="sicetac-page">
+{% include header.html %}
+<main id="main-content">
+  <section class="hero">
+    <div class="sicetac-wrap">
+      <nav aria-label="Miga de pan">
+        <ol class="crumb">
+          <li><a href="/">Inicio</a></li>
+          <li><span aria-current="page">SICETAC</span></li>
+        </ol>
+      </nav>
+      <p class="kicker">Transporte de carga en Colombia</p>
+      <h1>SICETAC: consulta, costos y reportes</h1>
+    </div>
+  </section>
+
+  <section class="seo-section" id="que-hacemos" aria-labelledby="que-hacemos-titulo">
+    <div class="seo-wrap">
+      <h2 id="que-hacemos-titulo">Qué hacemos con SICETAC</h2>
+      <p class="lede">SICETAC es el Sistema de Costos Eficientes para el Transporte Automotor de Carga, del Ministerio de Transporte. Es la referencia oficial de costos del transporte de carga por carretera en Colombia.</p>
+      <p>ATIEMPPO ayuda a consultar esa referencia, a ver cómo se mueve y a usarla en una ruta, en una red o con un equipo. Somos independientes del Ministerio: esto no es la aplicación oficial ni una certificación.</p>
+      <p class="alias">{{ site.data.sicetac.alias_line }}</p>
+      <ul class="sicetac-actions">
+        <li><a class="btn btn-primary" href="/sicetac-al-instante/">Consultar SICETAC en la web</a></li>
+        <li><a class="btn btn-outline" href="{{ site.data.sicetac.whatsapp_url }}">Consultar SICETAC por WhatsApp</a></li>
+      </ul>
+      <ul class="sicetac-links">
+        <li><a href="/sicetac-api/">API SICETAC</a></li>
+        <li><a href="/base-completa-sicetac/">Base completa SICETAC</a></li>
+        <li><a href="/indices-sicetac/">Índice SICETAC para tu red</a></li>
+        <li><a href="/indice-red-sicetac/#simulador">Simulador del índice de red</a></li>
+        <li><a href="https://sicetac-lab.vercel.app/" hreflang="es" rel="noopener noreferrer">SICETAC Lab, cálculo manual</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="seo-section seo-soft" id="reportes" aria-labelledby="reportes-titulo">
+    <div class="seo-wrap">
+      <h2 id="reportes-titulo">Reportes vivos</h2>
+      <p>Informes públicos de ATIEMPPO sobre SICETAC. Entran en esta lista cuando el catálogo les marca el tema <code>sicetac</code>, así que se actualiza con los datos y no con un texto fijo.</p>
+      {% assign sicetac_reports = site.data.reportes | where_exp: "item", "item.topics contains 'sicetac'" | sort: "updated_at" | reverse %}
+      {% if sicetac_reports.size > 0 %}
+      <ul class="sicetac-list">
+        {% for report in sicetac_reports %}
+        <li>
+          <article>
+            <h3><a href="{{ report.url }}">{{ report.title }}</a></h3>
+            <p>{{ report.description }}</p>
+            <p class="sicetac-meta"><time datetime="{{ report.updated_at }}">Actualizado el {{ report.updated_at | date: "%Y-%m-%d" }}</time> · {{ report.theme }}</p>
+          </article>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p>Todavía no hay reportes marcados con este tema. La biblioteca completa está en <a href="/reportes/">Reportes vivos</a>.</p>
+      {% endif %}
+      <p><a href="/reportes/">Ver toda la biblioteca de reportes</a></p>
+    </div>
+  </section>
+
+  <section class="seo-section" id="articulos" aria-labelledby="articulos-titulo">
+    <div class="seo-wrap">
+      <h2 id="articulos-titulo">Artículos sobre SICETAC</h2>
+      <p>Notas en español, de la más reciente a la más antigua. <code>sicetac</code> es la etiqueta canónica. Una nota también entra si lleva alguna de las formas en que la gente escribe la búsqueda.</p>
+      {% assign spanish_posts = site.posts | where_exp: "post", "post.lang != 'en'" %}
+      <ul class="sicetac-list">
+        {% assign shown_posts = 0 %}
+        {% for post in spanish_posts %}
+          {% assign show_post = false %}
+          {% for tag in site.data.sicetac.search_tags %}
+            {% if post.tags contains tag %}{% assign show_post = true %}{% endif %}
+          {% endfor %}
+          {% if show_post %}
+            {% assign shown_posts = shown_posts | plus: 1 %}
+        <li>
+          <article>
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <p>{{ post.description }}</p>
+            <p class="sicetac-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{% include post-date.html date=post.date lang="es" %}</time></p>
+          </article>
+        </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      {% if shown_posts == 0 %}
+      <p>Todavía no hay notas con la etiqueta sicetac. El archivo completo está en <a href="/blog/">el blog</a>.</p>
+      {% endif %}
+    </div>
+  </section>
+
+  <section class="seo-section seo-soft" id="seguir" aria-label="Formación y El Dato Logístico">
+    <div class="seo-wrap sicetac-close">
+      <section id="formacion" aria-labelledby="formacion-titulo">
+        <h2 id="formacion-titulo">{{ site.data.sicetac.training.title }}</h2>
+        <p>{{ site.data.sicetac.training.text }}</p>
+        <ul>
+          {% for link in site.data.sicetac.training.links %}
+          <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+          {% endfor %}
+        </ul>
+      </section>
+      <section id="dato-logistico" aria-labelledby="dato-titulo">
+        <h2 id="dato-titulo">{{ site.data.sicetac.publication.title }}</h2>
+        <p>{{ site.data.sicetac.publication.text }}</p>
+        <p><a href="{{ site.data.sicetac.publication.url }}" rel="noopener noreferrer">{{ site.data.sicetac.publication.action }}</a></p>
+      </section>
+    </div>
+  </section>
+
+  <section class="seo-section" id="preguntas" aria-labelledby="faq-titulo">
+    <div class="seo-wrap">
+      <h2 id="faq-titulo">Preguntas frecuentes</h2>
+      <div class="seo-faq">
+        {% for item in site.data.sicetac.faqs %}
+        <article>
+          <h3>{{ item.question }}</h3>
+          <p>{{ item.answer }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</main>
+{% include footer.html %}
+</body>
+</html>

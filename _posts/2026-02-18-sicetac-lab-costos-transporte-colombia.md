@@ -6,7 +6,7 @@ date: 2026-02-18 09:00:00 -0500
 author: "Equipo Atiemppo"
 lab: "SICETAC-LAB"
 emoji: "🚚"
-tags: [sicetac, transporte, agentes, colombia]
+tags: [sicetac, sisetac, siceta, sicetap, sisecta, sicetec, sietac, cicetac, sictac, "sicetac consulta", "consulta sicetac", "sicetac interactivo", "sicetac rndc", transporte, agentes, colombia]
 ---
 
 SICETAC-LAB nació para resolver una fricción concreta: en muchas operaciones, calcular costos de transporte sigue siendo lento, manual y poco trazable.
