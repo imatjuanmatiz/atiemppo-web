@@ -1,0 +1,90 @@
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description | escape }}"/>
+<link rel="canonical" href="https://atiemppo.com{{ page.url }}"/>
+<link rel="alternate" type="text/plain" title="ATIEMPPO context" href="/llms.txt"/>
+<meta property="og:title" content="{{ page.title | escape }}"/>
+<meta property="og:description" content="{{ page.description | escape }}"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://atiemppo.com{{ page.url }}"/>
+<meta property="og:locale" content="es_CO"/>
+<meta property="og:site_name" content="ATIEMPPO"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="{{ page.title | escape }}"/>
+<meta name="twitter:description" content="{{ page.description | escape }}"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/assets/css/home-2026.css"/>
+<link rel="stylesheet" href="/assets/css/site-foundation.css?v=20261021"/>
+<link rel="stylesheet" href="/assets/css/experiences.css?v=20261107-formacion"/>
+<link rel="stylesheet" href="/assets/css/courses.css?v=20261115"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "{% if page.course %}WebPage{% else %}CollectionPage{% endif %}",
+      "@id": "https://atiemppo.com{{ page.url }}#webpage",
+      "url": "https://atiemppo.com{{ page.url }}",
+      "name": {{ page.title | jsonify }},
+      "description": {{ page.description | jsonify }},
+      "inLanguage": "es",
+      "isPartOf": {"@id": "https://atiemppo.com/#website"},
+      "breadcrumb": {"@id": "https://atiemppo.com{{ page.url }}#breadcrumbs"}{% if page.course %},
+      "mainEntity": {"@id": "https://atiemppo.com{{ page.url }}#course"}{% endif %}
+    },
+    {% if page.course %}
+    {
+      "@type": "Course",
+      "@id": "https://atiemppo.com{{ page.url }}#course",
+      "name": {{ course.title | jsonify }},
+      "description": {{ page.description | jsonify }},
+      "url": "https://atiemppo.com{{ page.url }}",
+      "inLanguage": "es",
+      "provider": {
+        "@type": "Organization",
+        "name": "ATIEMPPO",
+        "url": "https://atiemppo.com/"
+      }
+    },
+    {% else %}
+    {
+      "@type": "ItemList",
+      "@id": "https://atiemppo.com{{ page.url }}#courses",
+      "name": "Cursos de IA aplicada",
+      "itemListElement": [
+        {% for item in site.data.courses.courses %}
+        {
+          "@type": "ListItem",
+          "position": {{ forloop.index }},
+          "item": {
+            "@type": "Course",
+            "name": {{ item.title | jsonify }},
+            "description": {{ item.description | jsonify }},
+            "url": {{ item.path | prepend: "https://atiemppo.com" | jsonify }},
+            "inLanguage": "es",
+            "provider": {
+              "@type": "Organization",
+              "name": "ATIEMPPO",
+              "url": "https://atiemppo.com/"
+            }
+          }
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
+    },
+    {% endif %}
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://atiemppo.com{{ page.url }}#breadcrumbs",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://atiemppo.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Cursos", "item": "https://atiemppo.com/cursos/"}{% if page.course %},
+        {"@type": "ListItem", "position": 3, "name": {{ course.title | jsonify }}, "item": "https://atiemppo.com{{ page.url }}"}{% endif %}
+      ]
+    }
+  ]
+}
+</script>
