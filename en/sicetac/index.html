@@ -1,0 +1,169 @@
+---
+layout: none
+permalink: /en/sicetac/
+lang: en
+title: "SICETAC: lookup, costs and reports | ATIEMPPO"
+description: "Look up SICETAC, the official cost reference for road freight transport in Colombia. ATIEMPPO tools, reports and articles."
+translations:
+  es: /sicetac/
+  en: /en/sicetac/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description }}"/>
+<meta name="ai-content-declaration" content="human-authored"/>
+<meta name="llms-txt" content="https://atiemppo.com/en/llms.txt"/>
+<link rel="alternate" type="text/plain" title="LLMs.txt" href="/en/llms.txt"/>
+<meta property="og:title" content="{{ page.title }}"/>
+<meta property="og:description" content="{{ page.description }}"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://atiemppo.com/en/sicetac/"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="ATIEMPPO"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@atiemppo"/>
+<meta name="twitter:title" content="{{ page.title }}"/>
+<meta name="twitter:description" content="{{ page.description }}"/>
+<link rel="canonical" href="https://atiemppo.com/en/sicetac/"/>
+<link rel="alternate" hreflang="es" href="https://atiemppo.com/sicetac/"/>
+<link rel="alternate" hreflang="en" href="https://atiemppo.com/en/sicetac/"/>
+<link rel="alternate" hreflang="x-default" href="https://atiemppo.com/sicetac/"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/assets/css/seo-content.css"/>
+<link rel="stylesheet" href="/assets/css/site-foundation.css"/>
+<link rel="stylesheet" href="/assets/css/sicetac-hub.css"/>
+</head>
+<body class="sicetac-page">
+{% include header.html %}
+<main id="main-content">
+  <section class="hero">
+    <div class="sicetac-wrap">
+      <nav aria-label="Breadcrumb">
+        <ol class="crumb">
+          <li><a href="/en/">Home</a></li>
+          <li><span aria-current="page">SICETAC</span></li>
+        </ol>
+      </nav>
+      <p class="kicker">Road freight in Colombia</p>
+      <h1>SICETAC: lookup, costs and reports</h1>
+    </div>
+  </section>
+
+  <section class="seo-section" id="que-hacemos" aria-labelledby="que-hacemos-titulo">
+    <div class="seo-wrap">
+      <h2 id="que-hacemos-titulo">What we do with SICETAC</h2>
+      <p class="lede">SICETAC is the Efficient Cost System for Automotive Freight Transport, from the Ministry of Transport. It is the official cost reference for road freight transport in Colombia.</p>
+      <p>ATIEMPPO helps you look up that reference, see how it moves and use it on a route, on a network or with a team. We are independent of the Ministry: this is not the official application and it is not a certification.</p>
+      <p class="alias">{{ site.data.sicetac.en.alias_line }}</p>
+      <ul class="sicetac-actions">
+        <li><a class="btn btn-primary" href="/en/sicetac-al-instante/">Look up SICETAC on the web</a></li>
+        <li><a class="btn btn-outline" href="{{ site.data.sicetac.whatsapp_url }}">Look up SICETAC on WhatsApp</a></li>
+      </ul>
+      <ul class="sicetac-links">
+        <li><a href="/en/sicetac-api/">SICETAC API</a></li>
+        <li><a href="/en/cursos/">AI courses for data, teams and agents</a></li>
+        <li><a href="/en/consultoria/">Consulting with your network’s data</a></li>
+        <li><a href="/en/base-completa-sicetac/">Full SICETAC database</a></li>
+        <li><a href="/en/indices-sicetac/">SICETAC index for your network</a></li>
+        <li><a href="/indice-red-sicetac/#simulador" hreflang="es">Network index simulator</a></li>
+        <li><a href="https://sicetac-lab.vercel.app/" hreflang="es" rel="noopener noreferrer">SICETAC Lab, manual calculation</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="seo-section seo-soft" id="reportes" aria-labelledby="reportes-titulo">
+    <div class="seo-wrap">
+      <h2 id="reportes-titulo">Living reports</h2>
+      <p>Public ATIEMPPO reports on SICETAC. A report enters this list when the catalogue marks it with the topic <code>sicetac</code>, so the list updates with the data rather than with fixed text. The reports themselves are in Spanish.</p>
+      {% assign sicetac_reports = site.data.reportes | where_exp: "item", "item.topics contains 'sicetac'" | sort: "updated_at" | reverse %}
+      {% if sicetac_reports.size > 0 %}
+      <ul class="sicetac-list">
+        {% for report in sicetac_reports %}
+        <li>
+          <article>
+            <h3><a href="{{ report.url }}" hreflang="es">{{ report.title }}</a></h3>
+            <p>{{ report.description }}</p>
+            <p class="sicetac-meta"><time datetime="{{ report.updated_at }}">Updated {{ report.updated_at | date: "%Y-%m-%d" }}</time> · {{ report.theme }}</p>
+          </article>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p>There are no reports marked with this topic yet. The full library is in <a href="/en/reportes/">Living reports</a>.</p>
+      {% endif %}
+      <p><a href="/en/reportes/">See the whole report library</a></p>
+    </div>
+  </section>
+
+  <section class="seo-section" id="articulos" aria-labelledby="articulos-titulo">
+    <div class="seo-wrap">
+      <h2 id="articulos-titulo">Articles on SICETAC</h2>
+      <p>English notes, from newest to oldest. <code>sicetac</code> is the canonical tag. A note is included if it carries one of the ways people write the search.</p>
+      {% assign english_posts = site.posts | where: "lang", "en" %}
+      <ul class="sicetac-list">
+        {% assign shown_posts = 0 %}
+        {% for post in english_posts %}
+          {% assign show_post = false %}
+          {% for tag in site.data.sicetac.search_tags %}
+            {% if post.tags contains tag %}{% assign show_post = true %}{% endif %}
+          {% endfor %}
+          {% if show_post %}
+            {% assign shown_posts = shown_posts | plus: 1 %}
+        <li>
+          <article>
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <p>{{ post.description }}</p>
+            <p class="sicetac-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{% include post-date.html date=post.date lang="en" %}</time></p>
+          </article>
+        </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      {% if shown_posts == 0 %}
+      <p>There are no English notes with the sicetac tag yet. The Spanish notes are on <a href="/sicetac/#articulos" hreflang="es">the Spanish guide</a>.</p>
+      {% endif %}
+    </div>
+  </section>
+
+  <section class="seo-section seo-soft" id="seguir" aria-label="Learning and El Dato Logístico">
+    <div class="seo-wrap sicetac-close">
+      <section id="formacion" aria-labelledby="formacion-titulo">
+        <h2 id="formacion-titulo">{{ site.data.sicetac.en.training.title }}</h2>
+        <p>{{ site.data.sicetac.en.training.text }}</p>
+        <ul>
+          {% for link in site.data.sicetac.en.training.links %}
+          <li><a href="{{ link.url }}"{% if link.url == '/ia-aplicada/' %} hreflang="es"{% endif %}>{{ link.label }}</a></li>
+          {% endfor %}
+        </ul>
+      </section>
+      <section id="dato-logistico" aria-labelledby="dato-titulo">
+        <h2 id="dato-titulo">{{ site.data.sicetac.en.publication.title }}</h2>
+        <p>{{ site.data.sicetac.en.publication.text }}</p>
+        <p><a href="{{ site.data.sicetac.en.publication.url }}" hreflang="es" rel="noopener noreferrer">{{ site.data.sicetac.en.publication.action }}</a></p>
+      </section>
+    </div>
+  </section>
+
+  <section class="seo-section" id="preguntas" aria-labelledby="faq-titulo">
+    <div class="seo-wrap">
+      <h2 id="faq-titulo">Questions</h2>
+      <div class="seo-faq">
+        {% for item in site.data.sicetac.en.faqs %}
+        <article>
+          <h3>{{ item.question }}</h3>
+          <p>{{ item.answer }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</main>
+{% include footer.html %}
+</body>
+</html>

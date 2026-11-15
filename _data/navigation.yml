@@ -1,14 +1,12 @@
 # Shared primary navigation. Page-specific shortcuts belong below this header.
 # Flat menu: child links for courses and SICETAC live on those pages and in the footer.
-# English targets stay on pages that already return 200. /en/cursos/ and /en/sicetac/
-# are wired in the English-parity change, once those pages exist.
+# English Courses and SICETAC point at /en/cursos/ and /en/sicetac/.
 items:
   - path: /cursos/
-    en_path: /experiencias/
     es: Cursos de IA
     en: Courses
     sections: [/cursos/]
-    en_sections: [/experiencias/, /workshop/, /sesion-personalizada/, /acompanamiento-ia/, /formacion/, /sesiones/, /agentes/]
+    en_sections: [/cursos/]
   - path: /conferencias/
     es: Conferencias
     en: Talks
@@ -18,11 +16,10 @@ items:
     en: Consulting
     sections: [/consultoria/]
   - path: /sicetac/
-    en_path: /sicetac-al-instante/
     es: SICETAC
     en: SICETAC
     sections: [/sicetac/, /sicetac-al-instante/, /sicetac-api/, /base-completa-sicetac/, /indices-sicetac/, /indice-red-sicetac/]
-    en_sections: [/sicetac-al-instante/, /sicetac-api/, /base-completa-sicetac/, /indices-sicetac/, /indice-red-sicetac/]
+    en_sections: [/sicetac/, /sicetac-al-instante/, /sicetac-api/, /base-completa-sicetac/, /indices-sicetac/, /indice-red-sicetac/]
   - path: /blog/
     es: Blog
     en: Blog

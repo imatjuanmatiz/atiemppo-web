@@ -1,28 +1,81 @@
-{% assign course = site.data.courses.courses | where: "key", page.course | first %}
+{% if page.lang == 'en' %}
+  {% assign course_catalog = site.data.courses_en.courses %}
+  {% assign course_home = '/en/' %}
+  {% assign course_home_label = 'Home' %}
+  {% assign course_index = '/en/cursos/' %}
+  {% assign course_index_label = 'Courses' %}
+  {% assign course_crumb = 'Path' %}
+  {% assign course_eyebrow = 'Course' %}
+  {% assign course_back = 'Back to the courses' %}
+  {% assign course_siblings = 'Courses' %}
+  {% assign course_learn_eyebrow = 'Learning' %}
+  {% assign course_learn_title = 'Applied AI courses' %}
+  {% assign course_learn_note = 'This page shows what is learned. Experiences shows how the meeting is commissioned.' %}
+  {% assign course_experiences = '/en/experiencias/' %}
+  {% assign course_experiences_label = 'Experiences' %}
+  {% assign course_list_title = 'What you learn' %}
+  {% assign course_task_title = 'Tell us the task' %}
+  {% assign course_task_body = 'Write the task you want to work on. If you are looking for how the meeting is commissioned, see Experiences.' %}
+  {% assign course_task_cta = 'Write' %}
+  {% assign course_hire = 'See how it is commissioned' %}
+  {% assign course_contact = '/en/contacto/' %}
+  {% assign course_sicetac = '/en/sicetac/' %}
+  {% assign course_sicetac_label = 'Look up SICETAC and take the data into practice' %}
+  {% assign course_talks = '/en/conferencias/' %}
+  {% assign course_talks_label = 'Talks for events and meetings' %}
+  {% assign course_datos_bridge = 'Start with a SICETAC lookup' %}
+{% else %}
+  {% assign course_catalog = site.data.courses.courses %}
+  {% assign course_home = '/' %}
+  {% assign course_home_label = 'Inicio' %}
+  {% assign course_index = '/cursos/' %}
+  {% assign course_index_label = 'Cursos' %}
+  {% assign course_crumb = 'Ruta' %}
+  {% assign course_eyebrow = 'Curso' %}
+  {% assign course_back = 'Volver a los cursos' %}
+  {% assign course_siblings = 'Cursos' %}
+  {% assign course_learn_eyebrow = 'Aprendizaje' %}
+  {% assign course_learn_title = 'Cursos de IA aplicada' %}
+  {% assign course_learn_note = 'En esta página ves qué se aprende. En Experiencias ves cómo se contrata.' %}
+  {% assign course_experiences = '/experiencias/' %}
+  {% assign course_experiences_label = 'Experiencias' %}
+  {% assign course_list_title = 'Qué se aprende' %}
+  {% assign course_task_title = 'Cuéntanos la tarea' %}
+  {% assign course_task_body = 'Escribe la tarea que quieres trabajar. Si buscas cómo se contrata el encuentro, mira Experiencias.' %}
+  {% assign course_task_cta = 'Escribir' %}
+  {% assign course_hire = 'Ver cómo se contrata' %}
+  {% assign course_contact = '/contacto/' %}
+  {% assign course_sicetac = '/sicetac/' %}
+  {% assign course_sicetac_label = 'Consulta SICETAC y lleva el dato a la práctica' %}
+  {% assign course_talks = '/conferencias/' %}
+  {% assign course_talks_label = 'Conferencias para eventos y juntas' %}
+  {% assign course_datos_bridge = 'Empezar por una consulta SICETAC' %}
+{% endif %}
+{% assign course = course_catalog | where: "key", page.course | first %}
 <!DOCTYPE html>
-<html lang="es">
+<html lang="{{ page.lang | default: 'es' }}">
 <head>{% include course-head.html %}</head>
 <body class="experience-page course-page">
 {% include header.html %}
 <main id="main-content">
-  <nav class="course-breadcrumbs" aria-label="Ruta">
+  <nav class="course-breadcrumbs" aria-label="{{ course_crumb }}">
     <ol>
-      <li><a href="/">Inicio</a></li>
-      <li><a href="/cursos/"{% unless page.course %} aria-current="page"{% endunless %}>Cursos</a></li>
+      <li><a href="{{ course_home }}">{{ course_home_label }}</a></li>
+      <li><a href="{{ course_index }}"{% unless page.course %} aria-current="page"{% endunless %}>{{ course_index_label }}</a></li>
       {% if page.course %}<li><a href="{{ page.url }}" aria-current="page">{{ course.title }}</a></li>{% endif %}
     </ol>
   </nav>
   {% if page.course %}
   <section class="experience-opening">
     <div class="container course-copy">
-      <p class="eyebrow">Curso</p>
+      <p class="eyebrow">{{ course_eyebrow }}</p>
       <h1>{{ course.title }}</h1>
       <p class="experience-lead">{{ page.description }}</p>
       {% for paragraph in course.intro %}
       <p>{% include course-parts.html parts=paragraph %}</p>
       {% endfor %}
       {% if page.course == 'datos' %}
-      <p><a href="/sicetac/">Empezar por una consulta SICETAC</a></p>
+      <p><a href="{{ course_sicetac }}">{{ course_datos_bridge }}</a></p>
       {% endif %}
     </div>
   </section>
@@ -47,32 +100,32 @@
       <h2 class="section-heading">{{ course.contact_title }}</h2>
       <p>{{ course.contact_body }}</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="/contacto/">{{ course.contact_cta }}</a>
-        <a class="experience-link" href="/cursos/">Volver a los cursos</a>
+        <a class="btn btn-primary" href="{{ course_contact }}">{{ course.contact_cta }}</a>
+        <a class="experience-link" href="{{ course_index }}">{{ course_back }}</a>
       </div>
     </div>
   </section>
-  <nav class="experience-siblings container" aria-label="Cursos">
-    {% for item in site.data.courses.courses %}
+  <nav class="experience-siblings container" aria-label="{{ course_siblings }}">
+    {% for item in course_catalog %}
     <a href="{{ item.path }}"{% if item.key == page.course %} aria-current="page"{% endif %}>{{ item.title }}</a>
     {% endfor %}
   </nav>
   {% else %}
   <section class="experience-opening">
     <div class="container course-copy">
-      <p class="eyebrow">Aprendizaje</p>
-      <h1>Cursos de IA aplicada</h1>
+      <p class="eyebrow">{{ course_learn_eyebrow }}</p>
+      <h1>{{ course_learn_title }}</h1>
       <p class="experience-lead">{{ page.description }}</p>
-      <p>En esta página ves qué se aprende. En <a href="/experiencias/">Experiencias</a> ves cómo se contrata.</p>
-      <p><a href="/sicetac/">Consulta SICETAC y lleva el dato a la práctica</a></p>
-      <p><a href="/conferencias/">Conferencias para eventos y juntas</a></p>
+      <p>{{ course_learn_note | split: course_experiences_label | first }}<a href="{{ course_experiences }}">{{ course_experiences_label }}</a>{{ course_learn_note | split: course_experiences_label | last }}</p>
+      <p><a href="{{ course_sicetac }}">{{ course_sicetac_label }}</a></p>
+      <p><a href="{{ course_talks }}">{{ course_talks_label }}</a></p>
     </div>
   </section>
   <section class="experience-section experience-options" aria-labelledby="cursos-lista">
     <div class="container">
-      <h2 class="section-heading" id="cursos-lista">Qué se aprende</h2>
+      <h2 class="section-heading" id="cursos-lista">{{ course_list_title }}</h2>
       <div class="experience-grid">
-        {% for item in site.data.courses.courses %}
+        {% for item in course_catalog %}
         <article class="experience-option">
           <h3><a href="{{ item.path }}">{{ item.title }}</a></h3>
           <p>{{ item.summary }}</p>
@@ -83,11 +136,11 @@
   </section>
   <section class="experience-section experience-close">
     <div class="container">
-      <h2 class="section-heading">Cuéntanos la tarea</h2>
-      <p>Escribe la tarea que quieres trabajar. Si buscas cómo se contrata el encuentro, mira Experiencias.</p>
+      <h2 class="section-heading">{{ course_task_title }}</h2>
+      <p>{{ course_task_body }}</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="/contacto/">Escribir</a>
-        <a class="experience-link" href="/experiencias/">Ver cómo se contrata</a>
+        <a class="btn btn-primary" href="{{ course_contact }}">{{ course_task_cta }}</a>
+        <a class="experience-link" href="{{ course_experiences }}">{{ course_hire }}</a>
       </div>
     </div>
   </section>
