@@ -8,6 +8,12 @@
       <p>{{ ec.options_intro }}</p>
       {% if include.home %}<a class="experience-link" href="#como-contratar">{{ ec.commercial.label }} ↓</a>{% endif %}
     </header>
+    {% if include.home %}
+    <figure class="experience-photo knowledge-proof">
+      {% include responsive-image.html src=ec.photo alt=ec.photo_alt loading="lazy" sizes="(max-width: 700px) calc(100vw - 40px), 280px" %}
+      <figcaption><strong>Juan Pablo Matiz · ATIEMPPO</strong><span>{{ ec.photo_caption }}</span><a href="{{ ec.photo_path }}">{{ ec.photo_link }} →</a></figcaption>
+    </figure>
+    {% endif %}
     <nav class="experience-journey" aria-label="{{ ec.route_label }}">
       <ol role="list">
         {% for offer in ec.offers %}

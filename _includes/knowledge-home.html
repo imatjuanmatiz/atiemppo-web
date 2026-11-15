@@ -17,10 +17,10 @@
         <a class="text-link" href="#contacto">{{ kh_experiences.write }} <span aria-hidden="true">↓</span></a>
       </div>
     </div>
-    <figure class="experience-photo">
-      {% include responsive-image.html src=kh_experiences.photo alt=kh_experiences.photo_alt fetchpriority="high" sizes="(max-width: 740px) calc(100vw - 40px), 560px" %}
-      <figcaption><strong>Juan Pablo Matiz · ATIEMPPO</strong><span>{{ kh_experiences.photo_caption }}</span><a href="{{ kh_experiences.photo_path }}">{{ kh_experiences.photo_link }} →</a></figcaption>
-    </figure>
+    <aside class="knowledge-idea-motion" data-idea-src="/assets/images/knowledge-idea-motion.webp">
+      <div class="knowledge-idea-frame" aria-hidden="true"><img id="knowledge-idea-art" class="knowledge-idea-art" width="1339" height="390" alt="" decoding="async"></div>
+      <button class="knowledge-idea-toggle" type="button" aria-controls="knowledge-idea-art" hidden></button>
+    </aside>
   </div>
 </section>
 
