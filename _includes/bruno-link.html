@@ -7,7 +7,11 @@
 {%- assign bruno_course = nil -%}
 {%- if page.course -%}{%- assign bruno_course = site.data.courses.courses | where: 'key', page.course | first -%}{%- endif -%}
 {%- assign bruno_offer = nil -%}
-{%- if page.experience == 'personal' -%}
+{%- if include.offer_key == 'personal' -%}
+  {%- assign bruno_offer = site.data.experiences[bruno_lang].personal_offer -%}
+{%- elsif include.offer_key -%}
+  {%- assign bruno_offer = site.data.experiences[bruno_lang].offers | where: 'key', include.offer_key | first -%}
+{%- elsif page.experience == 'personal' -%}
   {%- assign bruno_offer = site.data.experiences[bruno_lang].personal_offer -%}
 {%- elsif page.experience -%}{%- assign bruno_offer = site.data.experiences[bruno_lang].offers | where: 'key', page.experience | first -%}{%- endif -%}
 {%- assign bruno_url = page.url | append: '/' | replace: '//', '/' -%}
@@ -24,6 +28,7 @@
     {%- assign bruno_context_size = ctx_size -%}
   {%- endif -%}
 {%- endfor -%}
+{%- if include.offer_key and bruno_offer -%}{%- assign bruno_context_option = '' -%}{%- endif -%}
 {%- if bruno_course and bruno_context_option == 'courses' -%}
   {%- if bruno_lang == 'en' -%}
     {%- capture bruno_context_message -%}Hi Bruno, I am interested in the {{ bruno_course.title }} course for my team.{%- endcapture -%}
@@ -42,7 +47,7 @@
 <div class="bruno-menu{% if include.floating %} bruno-menu--floating{% endif %}" data-bruno-menu>
   <button class="bruno-link" id="bruno-trigger-{{ bruno_id }}" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="bruno-menu-{{ bruno_id }}" commandfor="bruno-menu-{{ bruno_id }}" command="toggle-popover" data-bruno-trigger>
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 9 9 0 0 1-4-.9L3 21l1.9-5.5a9 9 0 0 1-.9-4A8.5 8.5 0 0 1 12.5 3 8.5 8.5 0 0 1 21 11.5Z"/><path d="M8.5 11.5h8M8.5 8.5h5"/></svg>
-    {% if include.floating %}<span><strong>{{ bruno_copy.short_cta }}</strong><small>{{ bruno_copy.appointment }}</small></span>{% else %}<span>{{ bruno_copy.cta }}</span>{% endif %}
+    {% if include.floating %}<span><strong>{{ bruno_copy.short_cta }}</strong><small>{{ bruno_copy.appointment }}</small></span>{% elsif include.short %}<span>{{ bruno_copy.short_cta }}</span>{% else %}<span>{{ bruno_copy.cta }}</span>{% endif %}
     <span class="bruno-caret" aria-hidden="true"></span>
   </button>
   <div class="bruno-popover" id="bruno-menu-{{ bruno_id }}" popover="auto" data-bruno-popover>

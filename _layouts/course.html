@@ -54,7 +54,9 @@
 {% assign course = course_catalog | where: "key", page.course | first %}
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: 'es' }}">
-<head>{% include course-head.html %}</head>
+<head>{% include course-head.html %}{% unless page.course %}
+<link rel="stylesheet" href="/assets/css/courses-index.css?v=20261115-formatos">
+{% endunless %}</head>
 <body class="experience-page course-page">
 {% include header.html %}
 <main id="main-content">
@@ -134,6 +136,8 @@
       </div>
     </div>
   </section>
+  {% include courses-formats.html lang=page.lang %}
+  {% include experience-learning-method.html lang=page.lang %}
   <section class="experience-section experience-close">
     <div class="container">
       <h2 class="section-heading">{{ course_task_title }}</h2>

@@ -1,0 +1,16 @@
+{%- assign offer = include.offer -%}
+{%- assign ec = include.ec -%}
+<article class="courses-format">
+  <p class="experience-label">{{ offer.label }}</p>
+  <h3>{{ offer.title }}</h3>
+  <p>{{ offer.summary }}</p>
+  <dl class="experience-format">
+    <div><dt>{{ ec.audience_label }}</dt><dd>{{ offer.format_audience }}</dd></div>
+    <div><dt>{{ ec.activity_label }}</dt><dd>{{ offer.format_activity }}</dd></div>
+    <div><dt>{{ ec.outcome_label }}</dt><dd>{{ offer.format_outcome }}</dd></div>
+  </dl>
+  <div class="courses-format-actions">
+    <a class="experience-link" href="{{ ec.prefix }}{{ offer.path }}">{{ offer.link }} <span aria-hidden="true">↗</span></a>
+    {% include bruno-link.html lang=include.lang id=offer.key short=true offer_key=offer.key %}
+  </div>
+</article>
