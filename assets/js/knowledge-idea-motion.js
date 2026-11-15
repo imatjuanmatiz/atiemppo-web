@@ -1,7 +1,7 @@
 /* Load the approved illustration only on desktop; animate the image itself. */
 (() => {
   'use strict';
-  const opening = document.querySelector('.knowledge-opening');
+  const opening = document.querySelector('.knowledge-training-opening');
   const media = opening?.querySelector('.knowledge-idea-motion');
   const image = media?.querySelector('.knowledge-idea-art');
   const toggle = media?.querySelector('.knowledge-idea-toggle');
