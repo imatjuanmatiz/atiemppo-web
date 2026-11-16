@@ -40,6 +40,55 @@ translations:
 <link rel="stylesheet" href="/assets/css/seo-content.css"/>
 <link rel="stylesheet" href="/assets/css/site-foundation.css"/>
 <link rel="stylesheet" href="/assets/css/sicetac-hub.css"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://atiemppo.com/en/sicetac/#webpage",
+      "url": "https://atiemppo.com/en/sicetac/",
+      "name": {{ page.title | jsonify }},
+      "description": {{ page.description | jsonify }},
+      "inLanguage": "en",
+      "keywords": {{ site.data.sicetac.search_tags | join: ", " | jsonify }},
+      "isPartOf": { "@id": "https://atiemppo.com/#website" },
+      "about": { "@id": "https://atiemppo.com/#organization" },
+      "mainEntity": { "@id": "https://atiemppo.com/en/sicetac/#sicetac" }
+    },
+    {
+      "@type": "Thing",
+      "@id": "https://atiemppo.com/en/sicetac/#sicetac",
+      "name": "SICETAC",
+      "description": "Efficient Cost System for Automotive Freight Transport of the Ministry of Transport. Official cost reference for road freight transport in Colombia.",
+      "alternateName": {{ site.data.sicetac.search_tags | jsonify }},
+      "keywords": {{ site.data.sicetac.search_tags | join: ", " | jsonify }}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://atiemppo.com/en/" },
+        { "@type": "ListItem", "position": 2, "name": "SICETAC", "item": "https://atiemppo.com/en/sicetac/" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://atiemppo.com/en/sicetac/#faq",
+      "url": "https://atiemppo.com/en/sicetac/#preguntas",
+      "inLanguage": "en",
+      "mainEntity": [
+        {%- for item in site.data.sicetac.en.faqs -%}
+        {
+          "@type": "Question",
+          "name": {{ item.question | jsonify }},
+          "acceptedAnswer": { "@type": "Answer", "text": {{ item.answer | jsonify }} }
+        }{% unless forloop.last %},{% endunless %}
+        {%- endfor -%}
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body class="sicetac-page">
 {% include header.html %}
