@@ -1,0 +1,33 @@
+{%- comment -%}
+  Un solo H1 por artículo. Si el cuerpo ya abre con un H1, ese texto
+  queda como H1 y sale del cuerpo. Si no, el H1 es el título del front matter.
+  include.part: h1 | body
+{%- endcomment -%}
+{%- assign article_lead = page.title -%}
+{%- assign article_body = content -%}
+{%- if content contains '<h1' -%}
+  {%- assign h1_chunks = content | split: '</h1>' -%}
+  {%- assign head_chunk = h1_chunks | first -%}
+  {%- assign h1_bits = head_chunk | split: '<h1' -%}
+  {%- assign extracted = h1_bits | last | split: '>' | last | strip -%}
+  {%- assign article_body = h1_bits | first -%}
+  {%- assign rest_started = false -%}
+  {%- for chunk in h1_chunks -%}
+    {%- unless forloop.first -%}
+      {%- if rest_started -%}
+        {%- assign article_body = article_body | append: '</h1>' -%}
+      {%- endif -%}
+      {%- assign rest_started = true -%}
+      {%- assign article_body = article_body | append: chunk -%}
+    {%- endunless -%}
+  {%- endfor -%}
+  {%- if extracted != '' -%}
+    {%- assign article_lead = extracted -%}
+  {%- endif -%}
+  {%- assign article_body = article_body | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' -%}
+{%- endif -%}
+{%- if include.part == 'h1' -%}
+{{- article_lead -}}
+{%- else -%}
+{{ article_body }}
+{%- endif -%}

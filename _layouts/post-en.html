@@ -129,14 +129,14 @@ footer{background:var(--navy-d);color:#cdd8e6;padding:56px 28px 34px;margin-top:
   <div class="article-hero">
     <div class="crumb"><a href="/en/">Home</a> / <a href="/en/blog/">Blog</a></div>
     <span class="lab-chip">{{ page.lab | default:'Lab' }}</span>
-    <h1>{{ page.title }}</h1>
+    <h1>{% include article-h1.html part="h1" %}</h1>
     {% if page.description %}<p class="desc">{{ page.description }}</p>{% endif %}
     <div class="article-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{% include post-date.html lang="en" %}</time><span>By {{ page.author | default:'Juan Pablo Matiz' }}</span></div>
   </div>
   {% if page.image %}<div class="cover">{% include responsive-image.html src=page.image alt=page.title loading="lazy" sizes="(max-width: 960px) calc(100vw - 56px), 904px" %}</div>{% endif %}
 
   <article class="article">
-    {{ content }}
+    {% include article-h1.html part="body" %}
   </article>
 
   <div class="article-foot">

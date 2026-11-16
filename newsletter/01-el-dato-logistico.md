@@ -13,7 +13,7 @@ Presentar El Dato Logistico como el centro editorial del ecosistema ATIEMPPO.
 Conocer El Dato Logistico
 
 ## URL destino
-https://atiemppo.com/eldatologistico/
+https://www.eldatologistico.com
 
 ## Cuerpo base
 Hay proyectos que nacen como producto. Y hay otros que nacen como una necesidad de ordenar mejor la conversacion.
@@ -35,4 +35,4 @@ Si quieres seguir de cerca lo que estamos construyendo, esta es la mejor puerta 
 ## Cierre sugerido
 Estamos construyendo un ecosistema donde contenido, datos y producto no van por caminos separados. El Dato Logistico es una de esas piezas.
 
-[Conocer El Dato Logistico](https://atiemppo.com/eldatologistico/)
+[Conocer El Dato Logistico](https://www.eldatologistico.com)

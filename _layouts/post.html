@@ -8,10 +8,10 @@ layout: default
       <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">{% include post-date.html lang="es" %}</time>
       {% if page.author %}<span class="post-author">· {{ page.author }}</span>{% endif %}
     </div>
-    <h1 class="post-title">{{ page.title }}</h1>
+    <h1 class="post-title">{% include article-h1.html part="h1" %}</h1>
     {% if page.description %}<p class="post-excerpt">{{ page.description }}</p>{% endif %}
   </header>
-  <div class="post-body">{{ content }}</div>
+  <div class="post-body">{% include article-h1.html part="body" %}</div>
   <footer class="post-footer">
     {% if page.tags %}
       <div class="post-tags">{% for tag in page.tags %}{% unless site.data.sicetac.search_tags contains tag and tag != site.data.sicetac.canonical %}<span class="post-tag">#{{ tag }}</span>{% endunless %}{% endfor %}</div>

@@ -191,7 +191,7 @@ And in this case, the table started with football.
   <p class="label">Open experiment</p>
   <h4>If you're part of the El Dato Logístico community and want to join the Atiemppo Lab FC test group, reply with the word BRUNO.</h4>
   <p class="sub">We'll live the World Cup, test the agent, learn in public and understand together what can happen when AI starts participating in real groups.</p>
-  <a class="btn" href="https://atiemppo.com/eldatologistico/">Go to El Dato Logístico</a>
+  <a class="btn" href="https://www.eldatologistico.com">Go to El Dato Logístico</a>
 </div>
 
 <em>Editorial note: this edition uses the 2026 World Cup as a social lab. The tournament's official opening was on June 11, 2026, and this post was prepared on June 12, 2026.</em>
