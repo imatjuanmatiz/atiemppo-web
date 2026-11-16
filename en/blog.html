@@ -243,7 +243,7 @@ function catColor(c){return CATC[(c||'').trim()]||['rgba(14,44,77,.1)','#0E2C4D'
   let active='todos';
   function render(){
     // chips
-    bar.innerHTML='';
+    bar.replaceChildren();
     cats.forEach(k=>{
       const b=document.createElement('button');
       b.className='chip'+(k===active?' active':'');
