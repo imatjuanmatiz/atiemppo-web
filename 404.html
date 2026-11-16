@@ -1,0 +1,115 @@
+---
+layout: default
+permalink: /404.html
+title: "Esta página no existe | ATIEMPPO"
+description: "La dirección que abriste no corresponde a una página de ATIEMPPO."
+sitemap: false
+robots: noindex
+---
+<section class="not-found">
+  <p class="not-found-code">404</p>
+  <h1>Esta página no existe o cambió de lugar</h1>
+  <p>La dirección que abriste no corresponde a una página de este sitio.</p>
+  <nav class="not-found-exits" aria-label="Salidas">
+    <a class="not-found-exit" href="{{ '/cursos/' | relative_url }}">Cursos de IA</a>
+    <a class="not-found-exit" href="{{ '/sicetac-al-instante/' | relative_url }}">Consultar SICETAC</a>
+    {% include bruno-link.html lang="es" id="not-found-es" short=true %}
+  </nav>
+  <p class="not-found-home"><a href="{{ '/' | relative_url }}">Ir a la portada</a></p>
+
+  <section class="not-found-en" lang="en">
+    <h2>This page does not exist or has moved</h2>
+    <p>The address you opened is not a page on this site.</p>
+    <nav class="not-found-exits" aria-label="Ways forward">
+      <a class="not-found-exit" href="{{ '/en/cursos/' | relative_url }}">AI courses</a>
+      <a class="not-found-exit" href="{{ '/sicetac-al-instante/' | relative_url }}">SICETAC lookup</a>
+      {% include bruno-link.html lang="en" id="not-found-en" short=true %}
+    </nav>
+    <p class="not-found-home"><a href="{{ '/' | relative_url }}">Go to the homepage</a></p>
+  </section>
+</section>
+<style>
+  .not-found {
+    box-sizing: border-box;
+    width: min(42rem, calc(100% - 2rem));
+    margin: 2.5rem auto 5rem;
+    padding: 2rem 1.5rem 1.75rem;
+    border: 1px solid #d5e3ee;
+    border-radius: 16px;
+    background: #fff;
+    color: #102c45;
+    font-family: var(--atiemppo-sans, "Instrument Sans", system-ui, sans-serif);
+  }
+  .not-found-code {
+    margin: 0 0 0.75rem;
+    color: #246aaf;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+  .not-found h1,
+  .not-found h2 {
+    margin: 0;
+    color: #102c45;
+    font-family: var(--atiemppo-serif, "DM Serif Display", Georgia, serif);
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    line-height: 1.12;
+    text-wrap: balance;
+  }
+  .not-found h1 { font-size: clamp(2rem, 4vw, 2.75rem); }
+  .not-found h2 { font-size: clamp(1.5rem, 3vw, 1.9rem); }
+  .not-found p { margin: 0.85rem 0 0; color: #496078; font-size: 1.05rem; line-height: 1.6; }
+  .not-found-exits {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1.35rem;
+  }
+  .not-found-exit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0.7rem 1.15rem;
+    border-radius: 999px;
+    background: #246aaf;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+    text-decoration: none;
+  }
+  .not-found-exit:hover { background: #174e80; color: #fff; }
+  .not-found-exit:focus-visible,
+  .not-found-home a:focus-visible {
+    outline: 3px solid #8fc9f3;
+    outline-offset: 3px;
+  }
+  .not-found-home a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    color: #246aaf;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .not-found-en {
+    margin-top: 1.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #d5e3ee;
+  }
+  @media (max-width: 600px) {
+    .not-found { width: calc(100% - 1.5rem); margin-top: 1.25rem; padding: 1.5rem 1.1rem 1.25rem; }
+    .not-found-exits { flex-direction: column; align-items: stretch; }
+    .not-found-exit,
+    .not-found .bruno-menu,
+    .not-found .bruno-link { width: 100%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .not-found-exit { transition: none; }
+  }
+</style>
