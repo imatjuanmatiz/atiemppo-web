@@ -207,7 +207,8 @@
     }
     .analdex-hero h1 { margin:10px 0 4px; font-size:34px; line-height:1; letter-spacing:0; }
     .analdex-hero p { margin:0; color:#475569; font-size:14px; }
-    .hero-actions { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:8px; max-width:520px; }
+    #fichas-inicio { position:absolute; top:0; left:0; width:1px; height:1px; pointer-events:none; }
+    .hero-actions { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:8px; max-width:520px; scroll-target-group: auto; }
     .hero-side { display:grid; gap:10px; justify-items:end; }
     .public-nav { display:flex; gap:8px; justify-content:flex-end; flex-wrap:wrap; }
     .public-nav a {
@@ -231,8 +232,26 @@
       font-size:12px;
       font-weight:850;
       cursor:pointer;
+      font-family:inherit;
+      line-height:normal;
     }
-    .hero-actions button.active { background:#153B63; color:#fff; border-color:#153B63; }
+    .hero-actions a {
+      border:1px solid #CBD5E1;
+      background:#fff;
+      color:#153B63;
+      border-radius:99px;
+      padding:8px 11px;
+      font-size:12px;
+      font-weight:850;
+      cursor:pointer;
+      font-family:inherit;
+      line-height:normal;
+      text-decoration:none;
+    }
+    .hero-actions button.active,
+    .hero-actions a.active { background:#153B63; color:#fff; border-color:#153B63; }
+    .hero-actions a:is(:target-current, .target-current) { background:#153B63; color:#fff; border-color:#153B63; }
+    .hero-actions a:target-current:not(.active) { background:#fff; color:#153B63; border-color:#CBD5E1; }
     .analdex-live {
       display:grid;
       grid-template-columns:360px minmax(0,1fr);
@@ -537,6 +556,7 @@
       .product-2026-legend { grid-template-columns:1fr 1fr; }
     }
     </style><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous" referrerpolicy="no-referrer"></script></head><body>
+    <div id="fichas-inicio" tabindex="-1"></div>
     <header class="analdex-hero transport-hero">
       <div>
         
@@ -565,7 +585,7 @@
       </aside>
       <section class="ports-stack">
         
-    <article class="port-card" id="territorio-11001000" data-port="Bogotá">
+    <article class="port-card" id="territorio-11001000" data-port="Bogotá" tabindex="-1">
       <header class="port-card-head">
         <div>
           <div class="brandline">Fichas de análisis de transporte</div>
@@ -1476,7 +1496,17 @@
     const pct = v => v == null || Number.isNaN(Number(v)) ? 'n.d.' : (v > 0 ? '+' : '') + Number(v).toFixed(1).replace('.', ',') + '%';
     const ports = Array.from(new Set(ROUTES.map(r => r.port).filter(Boolean)));
     const chips = document.getElementById('portChips');
-    chips.innerHTML = ['Todos', ...ports].map(p => `<button data-port="${p}" class="${p==='Todos'?'active':''}">${p}</button>`).join('');
+    const cards = Array.from(document.querySelectorAll('.port-card'));
+    cards.forEach(card => { if (!card.hasAttribute('tabindex')) card.tabIndex = -1; });
+    chips.innerHTML = ['Todos', ...ports].map(p => {
+      const card = cards.find(el => el.dataset.port === p);
+      const active = p === 'Todos';
+      const cls = active ? ' class="active"' : '';
+      const aria = ` aria-current="${active ? 'true' : 'false'}"`;
+      if (p === 'Todos') return `<a href="#fichas-inicio" data-port="${p}"${cls}${aria}>${p}</a>`;
+      if (card && card.id) return `<a href="#${card.id}" data-port="${p}"${cls}${aria}>${p}</a>`;
+      return `<button type="button" data-port="${p}"${cls}${aria}>${p}</button>`;
+    }).join('');
     const map = typeof L !== 'undefined' ? L.map('map', {preferCanvas:true}).setView([4.6,-74.1], 6) : null;
     if (map) L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {maxZoom:19, attribution:'&copy; OpenStreetMap &copy; CARTO'}).addTo(map);
     else document.getElementById('map').textContent = 'Mapa no disponible: revisa la conexión a internet.';
@@ -1498,28 +1528,63 @@
       group.addData({type:'FeatureCollection', features});
       if (features.length && group.getBounds().isValid()) map.fitBounds(group.getBounds(), {padding:[24,24]});
     }
-    chips.querySelectorAll('button').forEach(btn => {
-      btn.addEventListener('click', () => {
-        chips.querySelectorAll('button').forEach(b => b.classList.toggle('active', b === btn));
+    let shownPort = 'Todos';
+    let ignoreScrollSpy = false;
+    function setActivePort(port) {
+      chips.querySelectorAll('[data-port]').forEach(el => {
+        const on = el.dataset.port === port;
+        el.classList.toggle('active', on);
+        el.classList.toggle('target-current', on && el.tagName === 'A');
+        el.setAttribute('aria-current', on ? 'true' : 'false');
+      });
+    }
+    function showPort(port) {
+      if (port === shownPort) return;
+      shownPort = port;
+      setActivePort(port);
+      renderMap(port);
+    }
+    function portInView() {
+      if (window.scrollY < 80) return 'Todos';
+      let current = 'Todos';
+      for (const card of cards) {
+        if (card.getBoundingClientRect().top < window.innerHeight * 0.2) current = card.dataset.port;
+      }
+      return current;
+    }
+    chips.querySelectorAll('[data-port]').forEach(btn => {
+      btn.addEventListener('click', event => {
+        if (btn.tagName === 'A') event.preventDefault();
+        ignoreScrollSpy = true;
+        clearTimeout(showPort.timer);
+        showPort.timer = setTimeout(() => { ignoreScrollSpy = false; }, 700);
         const port = btn.dataset.port;
-        renderMap(port);
+        showPort(port);
         if (port !== 'Todos') {
-          const card = Array.from(document.querySelectorAll('.port-card')).find(el => el.dataset.port === port);
-          if (card) card.scrollIntoView({behavior:'smooth', block:'start'});
+          const card = cards.find(el => el.dataset.port === port);
+          if (card) {
+            card.scrollIntoView({behavior:'smooth', block:'start'});
+            card.focus({preventScroll:true});
+          }
         } else {
           window.scrollTo({top:0, behavior:'smooth'});
         }
       });
     });
-    const observer = new IntersectionObserver(entries => {
-      const visible = entries.filter(e => e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];
-      if (!visible) return;
-      const port = visible.target.dataset.port;
-      chips.querySelectorAll('button').forEach(b => b.classList.toggle('active', b.dataset.port === port));
-      renderMap(port);
-    }, {threshold:[0.35], rootMargin:'-120px 0px -50% 0px'});
-    document.querySelectorAll('.port-card').forEach(card => observer.observe(card));
     renderMap('Todos');
+    const supportsScrollTargetGroup = CSS.supports('scroll-target-group: auto');
+    if (!supportsScrollTargetGroup) {
+      const observer = new IntersectionObserver(entries => {
+        if (ignoreScrollSpy) return;
+        const visible = entries.filter(entry => entry.isIntersecting).at(-1);
+        showPort(visible ? visible.target.dataset.port : 'Todos');
+      }, {threshold:0, rootMargin:'0px 0px -89% 0px'});
+      cards.forEach(card => observer.observe(card));
+    }
+    document.addEventListener('scrollend', () => {
+      if (ignoreScrollSpy) { ignoreScrollSpy = false; return; }
+      if (supportsScrollTargetGroup) showPort(portInView());
+    });
     
     </script>
     </body></html>
