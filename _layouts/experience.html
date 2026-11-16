@@ -3,14 +3,14 @@
 {% if page.experience == 'personal' %}{% assign detail = ec.personal_offer %}{% endif %}
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
-<head>{% include experience-head.html %}</head>
+<head>{% include experience-head.html %}{% if page.subtitle %}<style>.experience-subtitle{margin:16px 0 0;max-width:36ch;color:var(--atiemppo-muted);font-size:1.125rem;line-height:1.45}.experience-opening .hero-copy>.experience-subtitle+.experience-lead{margin-top:12px}</style>{% endif %}</head>
 <body class="experience-page">
 {% include header.html %}
 <main id="main-content">
   <nav class="experience-context container" aria-label="{{ ec.context_label }}"><a href="{{ ec.prefix }}/experiencias/">{{ ec.title }}</a><span aria-hidden="true">/</span><span>{{ detail.label }}</span></nav>
   <section class="experience-opening">
     <div class="container experience-opening-grid">
-      <div class="hero-copy"><p class="eyebrow">{{ detail.eyebrow }}</p><h1>{{ page.h1 | default: detail.title }}</h1><p class="experience-lead">{{ detail.lead }}</p><p>{{ detail.summary }}</p><dl class="experience-format"><div><dt>{{ ec.audience_label }}</dt><dd>{{ detail.format_audience }}</dd></div><div><dt>{{ ec.activity_label }}</dt><dd>{{ detail.format_activity }}</dd></div><div><dt>{{ ec.outcome_label }}</dt><dd>{{ detail.format_outcome }}</dd></div></dl><div class="hero-actions"><a class="btn btn-primary" href="{{ ec.prefix }}/contacto/?servicio={{ detail.service }}">{{ detail.cta }}</a><a class="experience-link" href="#como-trabajamos">{{ ec.how_link }} ↓</a></div></div>
+      <div class="hero-copy"><p class="eyebrow">{{ detail.eyebrow }}</p><h1>{{ page.h1 | default: detail.title }}</h1>{% if page.subtitle %}<p class="experience-subtitle">{{ page.subtitle }}</p>{% endif %}<p class="experience-lead">{{ detail.lead }}</p><p>{{ detail.summary }}</p><dl class="experience-format"><div><dt>{{ ec.audience_label }}</dt><dd>{{ detail.format_audience }}</dd></div><div><dt>{{ ec.activity_label }}</dt><dd>{{ detail.format_activity }}</dd></div><div><dt>{{ ec.outcome_label }}</dt><dd>{{ detail.format_outcome }}</dd></div></dl><div class="hero-actions"><a class="btn btn-primary" href="{{ ec.prefix }}/contacto/?servicio={{ detail.service }}">{{ detail.cta }}</a><a class="experience-link" href="#como-trabajamos">{{ ec.how_link }} ↓</a></div></div>
       {% if page.experience == 'conferences' %}
       <figure class="experience-photo">{% include responsive-image.html src=ec.photo alt=ec.photo_alt fetchpriority="high" sizes="(max-width: 740px) calc(100vw - 40px), 560px" %}<figcaption><strong>Juan Pablo Matiz · ATIEMPPO</strong><span>{{ ec.photo_caption }}</span><a href="{{ ec.photo_path }}">{{ ec.photo_link }} →</a></figcaption></figure>
       {% else %}

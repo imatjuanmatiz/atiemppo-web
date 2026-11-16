@@ -38,3 +38,5 @@ Participar en este espacio en Cali nos permite compartir lo que estamos construy
 Seguimos llevando tecnología, datos y conocimiento logístico a las conversaciones donde pueden producir resultados concretos.
 
 [Conoce las soluciones de ATIEMPPO](https://atiemppo.com/) · [Conoce COLFECAR en tu Región](https://www.colfecar.org.co/colfecar-en-tu-region/) · [Conversemos](https://juanmatiz.com/contacto)
+
+¿Quieres una charla así en tu evento? [Conoce las conferencias](/conferencias/).

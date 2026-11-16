@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "CONALTER: conversaciones sobre inteligencia artificial para las terminales de pasajeros"
-description: "Hoy estamos reunidos con terminales de pasajeros en CONALTER para compartir información, experiencias y posibilidades concretas de la inteligencia artificial para el sector."
+title: "CONALTER: conversaciones de IA para terminales de pasajeros"
+description: "En CONALTER, con terminales de pasajeros, compartimos información, experiencias y posibilidades concretas de la inteligencia artificial para el sector."
 date: 2026-11-12 12:08:00 -0500
 display_date: "12 de noviembre de 2026"
 author: "Juan Pablo Matiz"
@@ -48,3 +48,5 @@ En ATIEMPPO compartimos herramientas y metodologías para que organizaciones pú
 Gracias a CONALTER y a las terminales de pasajeros por abrir este espacio de conversación. La transformación empieza cuando compartimos información y hacemos mejores preguntas juntos.
 
 [Conoce más sobre CONALTER](https://www.conalter.co/) · [Conoce las conferencias de ATIEMPPO](https://atiemppo.com/conferencias/) · [Conversemos](https://atiemppo.com/contacto/?servicio=conferencias)
+
+¿Quieres una charla así en tu evento? [Conoce las conferencias](/conferencias/).
