@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>{{ page.title | default: site.title }}</title>
 <meta name="description" content="{{ page.description | default: site.description }}"/>
+{%- if page.robots %}
+<meta name="robots" content="{{ page.robots | escape }}"/>
+{%- endif %}
 <meta name="ai-content-declaration" content="{{ page.ai_content_declaration | default: 'human-authored' }}"/>
 <meta name="llms-txt" content="https://atiemppo.com/llms.txt"/>
 <link rel="alternate" type="text/plain" title="LLMs.txt" href="/llms.txt"/>
