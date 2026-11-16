@@ -10,8 +10,24 @@
   var defaultSubmitLabel = submitButton ? submitButton.textContent : "";
   var origin = form.querySelector('[name="origen"]');
   if (origin && typeof window.atiemppoContactOrigin === "function") origin.value = window.atiemppoContactOrigin();
-  var brunoLinks = Array.prototype.map.call(document.querySelectorAll(".bruno-link"), function (link) {
-    return { link: link, href: link.href };
+  // .bruno-link is the menu button. Rewrite only real WhatsApp anchors.
+  var brunoLinks = [];
+  Array.prototype.forEach.call(document.querySelectorAll("[data-bruno-menu] a[href]"), function (link) {
+    var href = link.href;
+    if (!href) return;
+    try {
+      if (new URL(href).hostname !== "wa.me") return;
+    } catch (error) {
+      return;
+    }
+    brunoLinks.push({ link: link, href: href });
+  });
+  // Register before link updates so a bad href cannot drop the mensaje prefix.
+  form.addEventListener("formdata", function (event) {
+    if (typeof window.atiemppoContactOrigin === "function") event.formData.set("origen", window.atiemppoContactOrigin());
+    if (!service || !service.value) return;
+    var label = service.options[service.selectedIndex].text;
+    event.formData.set("mensaje", (en ? "Service: " : "Servicio: ") + label + "\n\n" + (event.formData.get("mensaje") || ""));
   });
   var hints = en ? {
     "profe-bruno": "What task would you like to improve? Tell us where you are starting.",
@@ -77,13 +93,6 @@
     window.addEventListener("hashchange", updateLanguageLink);
     if (languageLink) languageLink.addEventListener("click", updateLanguageLink);
   }
-  // Preserve the receiver's mensaje contract and the visitor's own text.
-  form.addEventListener("formdata", function (event) {
-    if (typeof window.atiemppoContactOrigin === "function") event.formData.set("origen", window.atiemppoContactOrigin());
-    if (!service || !service.value) return;
-    var label = service.options[service.selectedIndex].text;
-    event.formData.set("mensaje", (en ? "Service: " : "Servicio: ") + label + "\n\n" + (event.formData.get("mensaje") || ""));
-  });
   var endpoint = form.dataset.googleScriptUrl;
   if (endpoint) form.action = endpoint;
   var userAgent = form.querySelector('input[name="user_agent"]');
