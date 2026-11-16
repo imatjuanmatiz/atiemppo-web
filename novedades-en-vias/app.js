@@ -131,19 +131,13 @@ const VIAL_FETCH_TIMEOUT_MS = 6000;
 const VIAL_STALE_MS = 8 * 60 * 60 * 1000;
 
 async function fetchVialState(url) {
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), VIAL_FETCH_TIMEOUT_MS);
-  try {
-    const response = await fetch(url, { cache: "no-store", signal: controller.signal });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
-    if (!data || typeof data !== "object" || !/^\d{4}-\d{2}-\d{2}-(am|md|pm)$/.test(data.cut_id || "")) {
-      throw new Error("Corte inválido");
-    }
-    return data;
-  } finally {
-    clearTimeout(timeout);
+  const response = await fetch(url, { cache: "no-store", signal: AbortSignal.timeout(VIAL_FETCH_TIMEOUT_MS) });
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  const data = await response.json();
+  if (!data || typeof data !== "object" || !/^\d{4}-\d{2}-\d{2}-(am|md|pm)$/.test(data.cut_id || "")) {
+    throw new Error("Corte inválido");
   }
+  return data;
 }
 
 function cutFreshness(value, now = Date.now()) {

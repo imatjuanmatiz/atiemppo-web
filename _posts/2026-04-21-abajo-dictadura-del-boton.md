@@ -138,7 +138,7 @@ Antes de implementar una capa de conversación con datos, hay que entender qué 
   <h4>Seguir explorando</h4>
   <a href="https://atiemppo.com/servicios/#datos">Ver el servicio de datos SICETAC e inteligencia de red</a>
   <a href="https://atiemppo.com/sicetac-api/">Conocer la API SICETAC para empresas</a>
-  <a href="https://atiemppo.com/eldatologistico/">Ir a El Dato Logístico</a>
+  <a href="https://www.eldatologistico.com">Ir a El Dato Logístico</a>
 </div>
 
 ## El nuevo botón es una buena pregunta

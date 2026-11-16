@@ -64,4 +64,4 @@ En ATIEMPPO trabajamos agentes y datos (SICETAC, RNDC, señales operativas) con 
 
 ## Cierre
 
-[Lee el artículo de Yossi Sheffi](https://www.thesupplychainer.com/post/will-ai-spark-a-new-tragedy-of-the-commons) · [Reflexión en LinkedIn](https://lnkd.in/p/ebe4UFKS) · [El Dato Logístico](https://atiemppo.com/eldatologistico/) · [Conoce ATIEMPPO](https://atiemppo.com/)
+[Lee el artículo de Yossi Sheffi](https://www.thesupplychainer.com/post/will-ai-spark-a-new-tragedy-of-the-commons) · [Reflexión en LinkedIn](https://lnkd.in/p/ebe4UFKS) · [El Dato Logístico](https://www.eldatologistico.com) · [Conoce ATIEMPPO](https://atiemppo.com/)

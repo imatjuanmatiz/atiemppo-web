@@ -190,7 +190,7 @@ Y en este caso, la mesa empezó con fútbol.
   <p class="label">Experimento abierto</p>
   <h4>Si haces parte de la comunidad de El Dato Logístico y quieres entrar al grupo de prueba de Atiemppo Lab FC, responde con la palabra BRUNO.</h4>
   <p class="sub">Vamos a vivir el Mundial, probar el agente, aprender en público y entender juntos qué puede pasar cuando la IA empieza a participar en grupos reales.</p>
-  <a class="btn" href="https://atiemppo.com/eldatologistico/">Ir a El Dato Logístico</a>
+  <a class="btn" href="https://www.eldatologistico.com">Ir a El Dato Logístico</a>
 </div>
 
 <em>Nota editorial: esta edición usa el Mundial 2026 como laboratorio social. La apertura oficial del torneo fue el 11 de junio de 2026, y esta publicación fue preparada el 12 de junio de 2026.</em>
