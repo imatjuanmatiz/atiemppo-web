@@ -36,3 +36,5 @@ Una conversación sobre Logística 5.0 necesita combinar visión de futuro con c
 Ese es el tipo de conversación que llevo a los escenarios: una mirada regional, preguntas útiles y un puente entre la estrategia y el trabajo que puede comenzar después del evento.
 
 Si quieres invitarme a una conferencia, un panel o una sesión para tu equipo, [conoce los formatos disponibles](https://juanmatiz.com/conferencias/) o [conversemos desde ATIEMPPO](https://atiemppo.com/conferencias/).
+
+¿Quieres una charla así en tu evento? [Conoce las conferencias](/conferencias/).

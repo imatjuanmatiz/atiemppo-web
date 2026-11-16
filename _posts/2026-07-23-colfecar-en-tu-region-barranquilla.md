@@ -43,3 +43,5 @@ La foto de esta jornada resume bien el espíritu del encuentro: una comunidad re
 Seguimos conectando conocimiento logístico, datos y tecnología con los problemas que importan.
 
 [Conoce las soluciones de Atiemppo](https://atiemppo.com/) · [Conoce COLFECAR en tu Región](https://www.colfecar.org.co/colfecar-en-tu-region/) · [Conversemos](https://juanmatiz.com/contacto)
+
+¿Quieres una charla así en tu evento? [Conoce las conferencias](/conferencias/).

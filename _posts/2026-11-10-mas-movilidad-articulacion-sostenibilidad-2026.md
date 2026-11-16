@@ -37,3 +37,5 @@ En ATIEMPPO nos interesa participar en estos espacios porque nuestro trabajo par
 Gracias a la Cámara de Comercio de Bogotá y a las secretarías distritales de Movilidad y Ambiente por abrir este espacio de encuentro para el sector.
 
 [Conoce más sobre MAS+ en la Secretaría Distrital de Movilidad](https://www.movilidadbogota.gov.co/noticias/mas-encuentro-que-reunira-innovacion-sostenibilidad-y-soluciones-para-transformar-el) · [Conoce las conferencias de ATIEMPPO](https://atiemppo.com/conferencias/) · [Conversemos](https://atiemppo.com/contacto/?servicio=conferencias)
+
+¿Quieres una charla así en tu evento? [Conoce las conferencias](/conferencias/).
