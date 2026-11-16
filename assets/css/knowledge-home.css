@@ -190,3 +190,75 @@
   .knowledge-training-opening { grid-template-columns: minmax(0, 1fr); }
   .knowledge-training-hero .experience-photo { max-width: 560px; }
 }
+
+/* Home chapters: copy and a pencil illustration share the row. */
+.knowledge-home .knowledge-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(240px, 0.85fr);
+  gap: clamp(24px, 4vw, 56px);
+  align-items: center;
+}
+
+.knowledge-home .knowledge-band--start {
+  align-items: start;
+}
+
+.knowledge-home .knowledge-band--flip {
+  grid-template-columns: minmax(240px, 0.85fr) minmax(0, 1.15fr);
+}
+
+.knowledge-home .knowledge-band--flip .knowledge-band-copy {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.knowledge-home .knowledge-band--flip .knowledge-band-media {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.knowledge-home .knowledge-band-copy {
+  min-inline-size: 0;
+}
+
+.knowledge-home .knowledge-band .knowledge-section-heading {
+  max-inline-size: none;
+}
+
+.knowledge-home .knowledge-band .knowledge-path-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.knowledge-home .knowledge-band-media {
+  margin: 0;
+  min-inline-size: 0;
+}
+
+.knowledge-home .knowledge-band-media picture,
+.knowledge-home .knowledge-band-media img {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+}
+
+/* The SICETAC drawing is pure black at the edges; match that field. */
+.knowledge-home .knowledge-section.knowledge-tools {
+  background-color: #000;
+}
+
+.knowledge-home .knowledge-tools .knowledge-band-media {
+  background-color: #000;
+}
+
+@media (max-width: 900px) {
+  .knowledge-home .knowledge-band,
+  .knowledge-home .knowledge-band--flip {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .knowledge-home .knowledge-band--flip .knowledge-band-copy,
+  .knowledge-home .knowledge-band--flip .knowledge-band-media {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
