@@ -26,7 +26,7 @@ layout: none
   "description":{{ page.description | jsonify }},
   "inLanguage":"en",
   "datePublished":"{{ page.date | date_to_xmlschema }}",
-  "author":{"@type":"Person","name":"{{ page.author | default:'Juan Pablo Matiz' }}"},
+  "author":{"@type":"Person","name":{{ page.author | default: "Juan Pablo Matiz" | jsonify }}{% assign schema_author = page.author | default: "Juan Pablo Matiz" %}{% if schema_author == "Juan Pablo Matiz" %},"url":"https://juanmatiz.com/","sameAs":["https://www.linkedin.com/in/juanmatizg","https://x.com/juanmatizg","https://github.com/imatjuanmatiz","https://www.eldatologistico.com/authors/juan-pablo-matiz"]{% endif %}},
   "publisher":{"@type":"Organization","name":"ATIEMPPO S.A.S.","logo":{"@type":"ImageObject","url":"https://atiemppo.com/assets/images/logo-atiemppo.png"}},
   "mainEntityOfPage":"https://atiemppo.com{{ page.url }}"
 }
