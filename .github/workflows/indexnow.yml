@@ -1,0 +1,193 @@
+name: IndexNow
+
+# La clave es pública: IndexNow exige el archivo en el sitio.
+# El despliegue lo termina el workflow administrado pages-build-deployment
+# (Jekyll desde main; en la API, build_type legacy). El job deploy corre
+# después de «Build with Jekyll» y de report-build-status, así que
+# page_build no marca el fin del deploy. Se escuchan los dos nombres con
+# los que GitHub muestra ese workflow. Un fallo de aquí no toca Pages.
+
+on:
+  workflow_run:
+    workflows:
+      - pages-build-deployment
+      - pages build and deployment
+    types:
+      - completed
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: indexnow-atiemppo
+  cancel-in-progress: false
+
+jobs:
+  submit:
+    name: Avisar a IndexNow
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Esperar a que el sitio publicado esté disponible
+        run: sleep 60
+
+      - name: Leer el sitemap y enviar las URLs
+        shell: python3 {0}
+        run: |
+          import gzip
+          import json
+          import os
+          import traceback
+          import urllib.error
+          import urllib.request
+          import xml.etree.ElementTree as ET
+          from urllib.parse import urlparse
+
+          HOST = "atiemppo.com"
+          KEY = "be46606ebdd055ebd616dbe5340237df"
+          KEY_LOCATION = f"https://{HOST}/{KEY}.txt"
+          SITEMAP_URL = f"https://{HOST}/sitemap.xml"
+          ENDPOINT = "https://api.indexnow.org/indexnow"
+          MAX_URLS = 10000
+          TIMEOUT = 60
+          NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+
+          def log(message):
+              print(message, flush=True)
+
+          def warn(message):
+              flat = " ".join(str(message).split())
+              print(f"::warning::{flat}", flush=True)
+              log(flat)
+
+          def summary(line):
+              path = os.environ.get("GITHUB_STEP_SUMMARY")
+              if not path:
+                  return
+              with open(path, "a", encoding="utf-8") as handle:
+                  handle.write(line + "\n")
+
+          def fetch(url):
+              request = urllib.request.Request(
+                  url,
+                  headers={
+                      "User-Agent": "atiemppo-indexnow",
+                      "Cache-Control": "no-cache",
+                      "Pragma": "no-cache",
+                  },
+              )
+              with urllib.request.urlopen(request, timeout=TIMEOUT) as response:
+                  body = response.read()
+                  status = response.status
+              if body[:2] == b"\x1f\x8b":
+                  body = gzip.decompress(body)
+              return status, body
+
+          def urls_from_sitemap(body):
+              root = ET.fromstring(body)
+              found = []
+              for node in root.findall(".//sm:loc", NS):
+                  if not node.text:
+                      continue
+                  url = node.text.strip()
+                  parsed = urlparse(url)
+                  if parsed.scheme == "https" and parsed.hostname == HOST:
+                      found.append(url)
+              return list(dict.fromkeys(found))
+
+          def post_batch(batch):
+              payload = {
+                  "host": HOST,
+                  "key": KEY,
+                  "keyLocation": KEY_LOCATION,
+                  "urlList": batch,
+              }
+              data = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+              request = urllib.request.Request(
+                  ENDPOINT,
+                  data=data,
+                  method="POST",
+                  headers={
+                      "Content-Type": "application/json; charset=utf-8",
+                      "User-Agent": "atiemppo-indexnow",
+                  },
+              )
+              try:
+                  with urllib.request.urlopen(request, timeout=TIMEOUT) as response:
+                      code = response.status
+                      resp_body = response.read().decode("utf-8", errors="replace")
+              except urllib.error.HTTPError as error:
+                  code = error.code
+                  resp_body = error.read().decode("utf-8", errors="replace")
+              return code, resp_body[:500]
+
+          def notify():
+              summary("## IndexNow")
+              try:
+                  status, body = fetch(SITEMAP_URL)
+              except Exception as error:
+                  warn(f"No se pudo leer {SITEMAP_URL}: {error}")
+                  summary(f"- Sitemap: no se pudo leer ({error})")
+                  return
+              log(f"Sitemap HTTP {status}")
+              summary(f"- Sitemap HTTP {status}")
+              if status != 200:
+                  warn(f"El sitemap respondió HTTP {status}. No se envía IndexNow.")
+                  return
+
+              try:
+                  key_status, key_body = fetch(KEY_LOCATION)
+                  key_text = key_body.decode("utf-8", errors="replace").strip()
+                  matches = key_text == KEY
+                  log(f"Clave pública HTTP {key_status}; coincide: {'sí' if matches else 'no'}")
+                  summary(f"- Clave pública HTTP {key_status}; coincide: {'sí' if matches else 'no'}")
+                  if not matches:
+                      warn("La clave publicada no coincide. Se intenta IndexNow igual.")
+              except Exception as error:
+                  warn(f"No se pudo leer la clave pública: {error}")
+                  summary(f"- Clave pública: no se pudo leer ({error})")
+
+              try:
+                  urls = urls_from_sitemap(body)
+              except ET.ParseError as error:
+                  warn(f"El sitemap no es XML válido: {error}")
+                  summary("- Sitemap XML inválido")
+                  return
+
+              log(f"URLs de {HOST}: {len(urls)}")
+              summary(f"- URLs de {HOST}: {len(urls)}")
+              if not urls:
+                  warn("El sitemap no tiene URLs de atiemppo.com. No se envía IndexNow.")
+                  return
+
+              for index in range(0, len(urls), MAX_URLS):
+                  batch = urls[index : index + MAX_URLS]
+                  lote = index // MAX_URLS + 1
+                  try:
+                      code, resp_body = post_batch(batch)
+                  except Exception as error:
+                      warn(f"IndexNow no respondió (lote {lote}): {error}")
+                      summary(f"- Lote {lote}: sin respuesta ({error})")
+                      continue
+                  log(f"IndexNow HTTP {code} (lote {lote}, {len(batch)} URLs)")
+                  summary(f"- IndexNow HTTP {code} (lote {lote}, {len(batch)} URLs)")
+                  if resp_body.strip():
+                      log("IndexNow cuerpo: " + " ".join(resp_body.split()))
+                  if code not in (200, 202):
+                      warn(
+                          f"IndexNow respondió HTTP {code}. "
+                          "El despliegue de Pages no se ve afectado."
+                      )
+
+          def main():
+              try:
+                  notify()
+              except Exception:
+                  traceback.print_exc()
+                  warn("IndexNow falló. El sitio publicado no se ve afectado.")
+              return 0
+
+          raise SystemExit(main())
