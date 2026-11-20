@@ -35,11 +35,11 @@
   {% assign course_back = 'Volver a los cursos' %}
   {% assign course_siblings = 'Cursos' %}
   {% assign course_learn_eyebrow = 'Aprendizaje' %}
-  {% assign course_learn_title = 'Cursos de IA aplicada' %}
+  {% assign course_learn_title = 'Cursos de datos e IA' %}
   {% assign course_learn_note = 'En esta página ves qué se aprende. En Experiencias ves cómo se contrata.' %}
   {% assign course_experiences = '/experiencias/' %}
   {% assign course_experiences_label = 'Experiencias' %}
-  {% assign course_list_title = 'Qué se aprende' %}
+  {% assign course_list_title = 'Tres formas de sacarle más a tus datos con IA' %}
   {% assign course_task_title = 'Cuéntanos la tarea' %}
   {% assign course_task_body = 'Escribe la tarea que quieres trabajar. Si buscas cómo se contrata el encuentro, mira Experiencias.' %}
   {% assign course_task_cta = 'Escribir' %}
@@ -117,12 +117,20 @@
     <div class="container course-copy">
       <p class="eyebrow">{{ course_learn_eyebrow }}</p>
       <h1>{{ course_learn_title }}</h1>
-      <p class="experience-lead">{{ page.description }}</p>
+      <p class="experience-lead">{% if page.lead %}{{ page.lead }}{% else %}{{ page.description }}{% endif %}</p>
       <p>{{ course_learn_note | split: course_experiences_label | first }}<a href="{{ course_experiences }}">{{ course_experiences_label }}</a>{{ course_learn_note | split: course_experiences_label | last }}</p>
       <p><a href="{{ course_sicetac }}">{{ course_sicetac_label }}</a></p>
       <p><a href="{{ course_talks }}">{{ course_talks_label }}</a></p>
     </div>
   </section>
+  {% unless page.lang == 'en' %}
+  <section class="experience-section" aria-labelledby="cursos-practica">
+    <div class="container course-copy">
+      <h2 class="section-heading" id="cursos-practica">Enseñamos lo que hemos construido</h2>
+      <p>Aprendimos haciendo. Creamos el <a href="https://clientes.atiemppo.com/clientes">plugin ATICA-SICE</a>, <a href="/sicetac-al-instante/">reportes vivos</a> y agentes de IA que hoy usamos con datos reales de transporte. Esa práctica, sumada a años de análisis de datos para la logística y el transporte, nos permite entender tu negocio y ayudarte a mejorar tu día a día con inteligencia artificial.</p>
+    </div>
+  </section>
+  {% endunless %}
   <section class="experience-section experience-options" aria-labelledby="cursos-lista">
     <div class="container">
       <h2 class="section-heading" id="cursos-lista">{{ course_list_title }}</h2>
