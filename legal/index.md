@@ -27,7 +27,7 @@ puede permitirte acceder a más de un módulo, según las autorizaciones vigente
 La [política del portal, API y agentes](https://clientes.atiemppo.com/privacidad)
 explica los datos tratados, finalidades, autorizaciones y derechos de los
 titulares. La consulta pública por WhatsApp sin cuenta del portal tiene su
-[política específica](/politicaprivacidad).
+[política específica](/politicaprivacidad/).
 
 Crear una cuenta o consultar costos no autoriza por sí mismo el envío de
 publicidad. Las autorizaciones comerciales se gestionan por separado.

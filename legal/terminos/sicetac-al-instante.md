@@ -110,7 +110,7 @@ incluye su identificador y los parámetros, sin enviar contraseñas, claves o to
 
 La [política del portal, API y agentes](https://clientes.atiemppo.com/privacidad)
 explica el tratamiento de datos y tus derechos. La consulta pública por WhatsApp
-sin cuenta tiene su [política específica](/politicaprivacidad). Registrarte o
+sin cuenta tiene su [política específica](/politicaprivacidad/). Registrarte o
 consultar costos no equivale a autorizar publicidad.
 
 Esta página identifica su versión y fecha; los cambios se publicarán en esta

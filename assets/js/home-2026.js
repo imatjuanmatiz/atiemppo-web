@@ -23,7 +23,7 @@
       "Construyan sus propios agentes.",
       "Documenten y continúen."
     ],
-    "serviceUrl": "/formacion/profe-bruno-ia-aplicada/",
+    "serviceUrl": "/cursos/agentes-de-ia/",
     "serviceCta": "Conocer la capacitación",
     "category": "Capacitación práctica en IA",
     "product": "Capacidades propias para tu equipo",
