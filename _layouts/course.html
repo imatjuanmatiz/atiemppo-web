@@ -123,6 +123,14 @@
       <p><a href="{{ course_talks }}">{{ course_talks_label }}</a></p>
     </div>
   </section>
+  {% unless page.lang == 'en' %}
+  <section class="experience-section" aria-labelledby="cursos-practica">
+    <div class="container course-copy">
+      <h2 class="section-heading" id="cursos-practica">Enseñamos lo que hemos construido</h2>
+      <p>Aprendimos haciendo. Creamos el <a href="https://clientes.atiemppo.com/clientes">plugin ATICA-SICE</a>, <a href="/sicetac-al-instante/">reportes vivos</a> y agentes de IA que hoy usamos con datos reales de transporte. Esa práctica, sumada a años de análisis de datos para la logística y el transporte, nos permite entender tu negocio y ayudarte a mejorar tu día a día con inteligencia artificial.</p>
+    </div>
+  </section>
+  {% endunless %}
   <section class="experience-section experience-options" aria-labelledby="cursos-lista">
     <div class="container">
       <h2 class="section-heading" id="cursos-lista">{{ course_list_title }}</h2>
