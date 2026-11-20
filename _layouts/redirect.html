@@ -1,0 +1,19 @@
+---
+---
+{%- assign dest = page.redirect.to -%}
+{%- assign redirect_lang = page.lang | default: 'es' -%}
+{%- assign redirect_prefix = page.url | slice: 0, 4 -%}
+{%- if redirect_prefix == '/en/' -%}{%- assign redirect_lang = 'en' -%}{%- endif -%}
+<!DOCTYPE html>
+<html lang="{{ redirect_lang }}">
+<head>
+<meta charset="utf-8">
+<title>{% if redirect_lang == 'en' %}Redirecting…{% else %}Redirigiendo…{% endif %}</title>
+<link rel="canonical" href="{{ dest | escape }}">
+<meta http-equiv="refresh" content="0; url={{ dest | escape }}">
+<script>location.replace({{ dest | jsonify }});</script>
+</head>
+<body>
+<p><a href="{{ dest | escape }}">{% if redirect_lang == 'en' %}Continue{% else %}Continuar{% endif %}</a></p>
+</body>
+</html>

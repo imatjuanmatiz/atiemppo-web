@@ -120,4 +120,4 @@ For me, that means teaching students both to search and to verify; to use tools 
 
 Bruno in the classroom is still an experiment. It can nevertheless help us imagine how AI could support more students in learning with guidance, context and continued assistance.
 
-[Learn more about Profe Bruno](/en/formacion/profe-bruno-ia-aplicada/) · [Explore how we work with AI agents](/en/blog/ia-que-ejecuta-bruno-openclaw/) · [Get to know ATIEMPPO](/en/)
+[Learn more about Profe Bruno](/en/cursos/agentes-de-ia/) · [Explore how we work with AI agents](/en/blog/ia-que-ejecuta-bruno-openclaw/) · [Get to know ATIEMPPO](/en/)

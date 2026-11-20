@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Política de Privacidad — ATICA by ATIEMPPO S.A.S.
-permalink: /politicaprivacidad
+permalink: /politicaprivacidad/
 description: Política de privacidad de ATICA by ATIEMPPO S.A.S.
 ---
 

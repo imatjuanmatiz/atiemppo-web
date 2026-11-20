@@ -119,4 +119,4 @@ Para mí, la respuesta incluye enseñar a buscar, pero también a verificar. Ens
 
 Bruno en el aula es apenas un experimento. Sin embargo, puede ayudarnos a imaginar una educación en la que la inteligencia artificial no sea solamente una herramienta para hacer tareas más rápido, sino un apoyo para que más estudiantes puedan aprender con orientación, contexto y acompañamiento.
 
-[Conoce más sobre Profe Bruno](/formacion/profe-bruno-ia-aplicada/) · [Conoce cómo trabajamos con agentes de IA](/ia-que-ejecuta-bruno-openclaw/) · [Conoce ATIEMPPO](https://atiemppo.com/)
+[Conoce más sobre Profe Bruno](/cursos/agentes-de-ia/) · [Conoce cómo trabajamos con agentes de IA](/ia-que-ejecuta-bruno-openclaw/) · [Conoce ATIEMPPO](https://atiemppo.com/)

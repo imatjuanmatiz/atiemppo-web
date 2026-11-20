@@ -63,4 +63,4 @@ Para comparar resultados conserva el mismo período, ruta y parámetros. Consult
 Los canales, derechos y procedimientos para solicitudes sobre tus datos están en
 la [política del portal, API y agentes](https://clientes.atiemppo.com/privacidad).
 La consulta pública por WhatsApp sin cuenta tiene su
-[política específica](/politicaprivacidad).
+[política específica](/politicaprivacidad/).

@@ -46,7 +46,7 @@
       "Build your own agents together.",
       "Document and keep going."
     ],
-    "serviceUrl": "/en/formacion/profe-bruno-ia-aplicada/",
+    "serviceUrl": "/en/cursos/agentes-de-ia/",
     "serviceCta": "Explore the training",
     "category": "Practical AI training",
     "product": "AI capabilities for your team",
