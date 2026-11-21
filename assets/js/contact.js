@@ -12,7 +12,10 @@
   if (origin && typeof window.atiemppoContactOrigin === "function") origin.value = window.atiemppoContactOrigin();
   // .bruno-link is the menu button. Rewrite only real WhatsApp anchors.
   var brunoLinks = [];
-  Array.prototype.forEach.call(document.querySelectorAll("[data-bruno-menu] a[href]"), function (link) {
+  var inline = typeof form.dataset.contactInline !== "undefined";
+  // Inline forms share the page with contextual Bruno menus for other services.
+  var brunoAnchors = inline ? [] : document.querySelectorAll("[data-bruno-menu] a[href]");
+  Array.prototype.forEach.call(brunoAnchors, function (link) {
     var href = link.href;
     if (!href) return;
     try {
@@ -62,6 +65,7 @@
       if (service.value) translation.searchParams.set("servicio", service.value);
       var home = translation.pathname === "/" || translation.pathname === "/en/";
       var contact = /^\/(?:en\/)?contacto\/$/.test(translation.pathname);
+      if (inline) contact = /^\/(?:en\/)?(?:cursos|consultoria)\/$/.test(translation.pathname);
       translation.hash = (home || contact) && (window.location.hash === "#contacto" || (home && service.value)) ? "contacto" : "";
       languageLink.href = translation.href;
     }

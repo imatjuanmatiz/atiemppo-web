@@ -34,7 +34,7 @@ ok(blocked.window.atiemppoContactOrigin().includes('utm_source=email'));
 let malformed = page('https://atiemppo.com/', { getItem() { return '{bad JSON'; }, setItem() {} });
 equal(malformed.window.atiemppoContactOrigin(), 'atiemppo.com/');
 
-function mount(context, lang = 'es') {
+function mount(context, lang = 'es', inline = false) {
   const events = {};
   const serviceEvents = {};
   const options = [
@@ -55,16 +55,19 @@ function mount(context, lang = 'es') {
   const origin = { value: 'atiemppo.com/home' };
   const userAgent = {};
   const submit = { disabled: false, textContent: 'Send' };
-  const languageLink = { href: 'https://atiemppo.com' + (lang === 'es' ? '/en/contacto/' : '/contacto/'), addEventListener() {} };
+  const translatedPath = inline ? '/cursos/' : '/contacto/';
+  const languageLink = { href: 'https://atiemppo.com' + (lang === 'es' ? '/en' : '') + translatedPath, addEventListener() {} };
   const bruno = { href: 'https://wa.me/573188022396?text=General' };
   const nodes = { '[name="servicio"]': service, '[name="mensaje"]': message,
     '[name="origen"]': origin, 'input[name="user_agent"]': userAgent, 'button[type="submit"]': submit };
-  const form = { dataset: { googleScriptUrl: 'https://receiver.example/exec' },
+  const dataset = { googleScriptUrl: 'https://receiver.example/exec' };
+  if (inline) dataset.contactInline = '';
+  const form = { dataset,
     querySelector: selector => nodes[selector], addEventListener(name, handler) { events[name] = handler; } };
   context.document = { documentElement: { lang },
     getElementById: id => id === 'contactForm' ? form : id === 'contact-message-help' ? help : null,
     querySelector: selector => selector === '.global-language' ? languageLink : null,
-    querySelectorAll: selector => selector === '.bruno-link' ? [bruno] : [], createElement: () => ({}) };
+    querySelectorAll: selector => selector === '[data-bruno-menu] a[href]' ? [bruno] : [], createElement: () => ({}) };
   vm.runInNewContext(contact, context);
   return { form, service, serviceEvents, events, message, help, origin, submit, languageLink, bruno };
 }
@@ -95,4 +98,9 @@ const english = mount(page('https://atiemppo.com/en/contacto/?servicio=conferenc
 equal(new URL(english.languageLink.href).pathname, '/contacto/');
 ok(new URL(english.bruno.href).searchParams.get('text').startsWith('Hi Bruno'));
 english.events.formdata({ formData: new Map([['mensaje', 'A public event']]) });
+const inline = mount(page('https://atiemppo.com/cursos/?servicio=taller-equipo#contacto'), 'es', true);
+equal(new URL(inline.languageLink.href).pathname, '/en/cursos/');
+equal(new URL(inline.languageLink.href).hash, '#contacto');
+equal(inline.service.value, 'taller-equipo');
+equal(inline.bruno.href, 'https://wa.me/573188022396?text=General');
 console.log(JSON.stringify({ checks, errors: [], mode: 'synthetic-dom', network_calls: 0, forms_submitted: 0 }));

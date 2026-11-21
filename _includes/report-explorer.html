@@ -1,0 +1,86 @@
+{% assign reports = site.data.reportes | sort: "order" | reverse %}
+{% assign featured = reports | where: "destacado", true | first | default: reports.first %}
+{% assign latest_report = reports | sort: "updated_at" | last %}
+{% if include.lang == 'en' %}
+  {% assign preview_label = 'Choose a report to preview' %}
+  {% assign open_label = 'Open full report' %}
+  {% assign catalog_title = 'All reports' %}
+  {% assign report_action = 'View report' %}
+  {% assign report_preview = 'Preview here' %}
+  {% assign text_label = 'Read text version (.md)' %}
+  {% assign date_label = 'Catalog updated' %}
+  {% assign frame_prefix = 'Report preview' %}
+  {% assign catalog_id = 'library' %}
+  {% assign catalog_note = 'The previews and full reports are in Spanish unless marked otherwise.' %}
+  {% assign featured_title = featured.title_en | default: featured.title %}
+  {% assign featured_description = featured.description_en | default: featured.description %}
+{% else %}
+  {% assign preview_label = 'Elige un reporte para explorar' %}
+  {% assign open_label = 'Ampliar reporte' %}
+  {% assign catalog_title = 'Todos los reportes' %}
+  {% assign report_action = 'Ver reporte' %}
+  {% assign report_preview = 'Ver aquí' %}
+  {% assign text_label = 'Versión textual para IA (.md)' %}
+  {% assign date_label = 'Catálogo actualizado' %}
+  {% assign frame_prefix = 'Vista previa del reporte' %}
+  {% assign catalog_id = 'biblioteca' %}
+  {% assign catalog_note = 'Consulta el período de los datos en cada reporte.' %}
+  {% assign featured_title = featured.title %}
+  {% assign featured_description = featured.description %}
+{% endif %}
+{% assign featured_url = featured.url | relative_url %}
+
+<div class="report-wrap" data-report-explorer>
+  <section class="report-viewer" id="explorar-reporte" aria-labelledby="report-viewer-title">
+    <div class="report-viewer-heading">
+      <div class="report-viewer-select" hidden data-report-controls>
+        <label for="report-choice">{{ preview_label }}</label>
+        <select id="report-choice">
+          {% for report in reports %}
+            {% assign report_title = report.title %}
+            {% if include.lang == 'en' %}{% assign report_title = report.title_en | default: report.title %}{% endif %}
+            <option value="{{ report.url | relative_url }}"{% if report.url == featured.url %} selected{% endif %}>{{ report_title | escape }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <a class="report-button report-button--primary" href="{{ featured_url }}" hreflang="{{ featured.content_language | default: 'es' }}" data-report-open>{{ open_label }} <span aria-hidden="true">↗</span></a>
+    </div>
+    <iframe class="report-frame" title="{{ frame_prefix }} — {{ featured_title | escape }}" data-report-frame data-title-prefix="{{ frame_prefix }}" src="{{ featured_url }}" loading="lazy" referrerpolicy="same-origin"></iframe>
+    <div class="report-viewer-copy">
+      <h2 id="report-viewer-title" tabindex="-1">{{ featured_title }}</h2>
+      <p data-report-description>{{ featured_description }}</p>
+    </div>
+  </section>
+
+  <section class="report-catalog" id="{{ catalog_id }}" aria-labelledby="indice-reportes">
+    <h2 id="indice-reportes">{{ catalog_title }} <span class="report-count">({{ reports.size }})</span></h2>
+    <p>{{ date_label }} <time datetime="{{ latest_report.updated_at }}">{{ latest_report.updated_at }}</time>. {{ catalog_note }}</p>
+    <div class="report-library-links">
+      {% if include.lang == 'en' %}
+        <a class="report-text-link" href="/en/contacto/?servicio=reportes-vivos">Propose an analysis</a>
+      {% else %}
+        <a class="report-text-link" href="/reportes/llms.txt">Índice textual para IA</a>
+        <a class="report-text-link" href="/reportes/para-empresas/">Reportes para empresas</a>
+      {% endif %}
+    </div>
+    <ul class="report-catalog-list">
+      {% for report in reports %}
+        {% assign report_title = report.title %}
+        {% assign report_description = report.description %}
+        {% if include.lang == 'en' %}
+          {% assign report_title = report.title_en | default: report.title %}
+          {% assign report_description = report.description_en | default: report.description %}
+        {% endif %}
+        <li class="report-catalog-card">
+          <p class="report-card-category">{{ report.category }}{% if include.lang == 'es' %} · {{ report.theme }}{% endif %}</p>
+          <h3>{{ report_title }}</h3>
+          <p>{{ report_description }}</p>
+          <div class="report-card-actions">
+            <a class="report-button" href="{{ report.url | relative_url }}" hreflang="{{ report.content_language | default: 'es' }}" data-report-pick data-preview-label="{{ report_preview }}" data-title="{{ report_title | escape }}" data-description="{{ report_description | escape }}"{% if report.vista_previa %} data-anchor="{{ report.vista_previa }}"{% endif %}{% if report.vista_previa_movil %} data-mobile-anchor="{{ report.vista_previa_movil }}"{% endif %}>{{ report_action }}</a>
+            {% if report.text_url %}<a class="report-text-link" href="{{ report.text_url }}">{{ text_label }}</a>{% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>

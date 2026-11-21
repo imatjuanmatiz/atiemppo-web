@@ -1,9 +1,12 @@
+# Mover destacado: true al reporte que debe abrir el explorador.
+# Las vistas previas señalan IDs existentes en el reporte. vista_previa_movil es opcional.
 - title: "Scorecard del transporte de carga en Colombia"
   description: "Valores pagados, toneladas, viajes y viajes vacíos del RNDC, con filtros por mercancía, mapa de variación de toneladas por departamento de origen, corredores, catálogo de rutas e índice medio SICE-TAC. Cortes RNDC de octubre y SICE-TAC de noviembre de 2026."
   title_en: "Colombia freight transport scorecard"
   description_en: "RNDC amounts paid, tonnes, trips and empty trips, with commodity filters, a map of tonnes shipped by origin department, corridors, the route catalogue and an average SICE-TAC index. RNDC data through October and SICE-TAC through November 2026."
   content_language: es
   url: "/reportes/scorecard-transporte-sice/"
+  vista_previa: "variacion-departamental"
   updated_at: "2026-11-19"
   category: "RNDC"
   status: "Reporte vivo"
@@ -16,6 +19,9 @@
   description_en: "Interactive map and time series of the loading and unloading balance by municipality, month and vehicle configuration. It uses complete intermunicipal RNDC manifest records from January 2025 through September 2026 and includes a downloadable infographic."
   content_language: es
   url: "/reportes/indice-cargue-descargue-rndc/"
+  vista_previa: "mapa"
+  vista_previa_movil: "mapZoomIn"
+  destacado: true
   text_url: "https://atiemppo.com/reportes/indice-cargue-descargue-rndc/report.md"
   updated_at: "2026-11-19"
   category: "RNDC"
@@ -28,6 +34,7 @@
   description_en: "An RNDC scorecard with an intermunicipal view by default: amounts paid, tonnes, trips, routes and freight-balance indicators. The full view retains urban trips as a sensitivity check; statistical period 202501–202608."
   content_language: es
   url: "/reportes/scorecard-datos-transporte/"
+  vista_previa: "trend"
   text_url: "https://atiemppo.com/reportes/scorecard-datos-transporte/report.md"
   updated_at: "2026-09-15"
   category: "RNDC"
@@ -41,6 +48,7 @@
   description_en: "Interactive simulation of 20 routes by distance, vehicle configuration and scenarios for diesel (ACPM), structural cost, tolls and hours; SICETAC reference as of 1 September 2026 and an RNDC sample from January–June 2026."
   content_language: es
   url: "/reportes/sensibilidad-presupuesto-sicetac/"
+  vista_previa: "main-content"
   topics: [sicetac]
   updated_at: "2026-09-25"
   category: "SICETAC"
@@ -54,6 +62,7 @@
   description_en: "Executive view of the simulation by distance band, with two visible corridors per band; SICETAC reference as of 1 September 2026 and an RNDC sample from January–June 2026."
   content_language: es
   url: "/reportes/sensibilidad-presupuesto-sicetac-v2/"
+  vista_previa: "main-content"
   topics: [sicetac]
   updated_at: "2026-09-25"
   category: "SICETAC"
@@ -67,6 +76,7 @@
   description_en: "Interactive map of SICETAC routes originating in Valle del Cauca and ending in Bogotá D.C., Cundinamarca, Boyacá, Tolima, Huila or Meta. December 2025 versus September 2026 comparison, with a baseline of 2 logistics hours."
   content_language: es
   url: "/reportes/valle-centro-impacto-sicetac/"
+  vista_previa: "map"
   topics: [sicetac]
   updated_at: "2026-09-25"
   category: "SICETAC"
@@ -80,6 +90,7 @@
   description_en: "An El Dato Logístico report on index changes by capital city, logistics hour, cargo type, configuration, and short and long routes, with interactive HTML and a PDF updated through September 2026."
   content_language: es
   url: "/reportes/evolucion-sicetac-dic25-jul26/"
+  vista_previa: "cityLine"
   topics: [sicetac]
   updated_at: "2026-09-25"
   category: "SICETAC"
@@ -92,6 +103,7 @@
   description_en: "Simulation of the impact of the regulatory reduction in available vehicle hours from 288 to 230 hours per month, by configuration, distance, origin and the routes with greatest exposure."
   content_language: es
   url: "/reportes/impacto-horas-operativas-288-230/"
+  vista_previa: "rangeChart"
   topics: [sicetac]
   updated_at: "2026-07-27"
   category: "SICETAC"
@@ -105,6 +117,7 @@
   description_en: "A national live report on leading RNDC routes by trips, tonnes, products, vehicle configurations and SICETAC index; January–August 2025 versus 2026 comparison, with statistical cutoff 202608."
   content_language: es
   url: "/reportes/top50-rutas-rndc/"
+  vista_previa: "main-content"
   updated_at: "2026-09-25"
   category: "RNDC"
   status: "Reporte vivo"
@@ -117,6 +130,7 @@
   description_en: "A territorial profile of Bogotá municipality, covering inbound and outbound routes, goods moved and vehicle configurations; January–August 2025 versus 2026 comparison, with statistical cutoff 202608."
   content_language: es
   url: "/reportes/fichas-analisis-transporte-bogota/"
+  vista_previa: "map"
   updated_at: "2026-09-25"
   category: "RNDC"
   status: "Reporte vivo"
@@ -129,6 +143,7 @@
   description_en: "An analysis of corridors between capital cities and ports, freight balance, inland foreign-trade transport and return logistics; statistical comparison of January–August 2025 and 2026."
   content_language: es
   url: "/reportes/comercio-exterior-capitales-puertos/"
+  vista_previa: "rankingChart"
   updated_at: "2026-09-25"
   category: "Comercio exterior"
   status: "Reporte vivo"
@@ -141,6 +156,7 @@
   description_en: "A regional view of shorter SICETAC routes and corridors between Bogotá and the rest of Colombia, with a September 2026 cutoff, index, cost per kilometre and interactive map."
   content_language: es
   url: "/reportes/bogota-region-sicetac/"
+  vista_previa: "regionalLine"
   topics: [sicetac]
   updated_at: "2026-09-25"
   category: "SICETAC"
@@ -154,6 +170,7 @@
   description_en: "A lightweight public version with origins in capital cities: a matrix of SICETAC changes by vehicle configuration, distance range and logistics hours, with a September 2026 cutoff."
   content_language: es
   url: "/reportes/indice-sicetac-vehiculo-km/"
+  vista_previa: "scatter"
   topics: [sicetac]
   updated_at: "2026-09-25"
   category: "SICETAC"
@@ -167,6 +184,7 @@
   description_en: "An RNDC analysis of freight entering Bogotá, departing from Bogotá and using the region as a logistics hub, with a June 2026 statistical cutoff."
   content_language: es
   url: "/reportes/accesos-bogota-carga/"
+  vista_previa: "salidas"
   updated_at: "2026-07-27"
   category: "Logística urbana"
   status: "Reporte vivo"
@@ -179,6 +197,7 @@
   description_en: "An index with Jan-25=100 and Dec-25=100 bases for comparing SICETAC changes between capital cities, with a September 2026 cutoff and the applicable diesel (ACPM) price."
   content_language: es
   url: "/reportes/indice-sicetac-capitales/"
+  vista_previa: "lineChart"
   topics: [sicetac]
   updated_at: "2026-09-25"
   category: "SICETAC"
@@ -192,6 +211,7 @@
   description_en: "Tracking diesel (ACPM) and its impact on SICETAC references, with an observed series through September 2026, scenarios and effects by route and configuration."
   content_language: es
   url: "/reportes/seguimiento-acpm-sicetac/"
+  vista_previa: "acpmNominalChart"
   topics: [sicetac]
   updated_at: "2026-09-25"
   category: "SICETAC"
@@ -205,6 +225,7 @@
   description_en: "A profile of the 9,945 routes identified by SICETAC in Colombia: departments, distance ranges and road complexity."
   content_language: es
   url: "/reportes/perfil-rutas-sicetac/"
+  vista_previa: "rangeChart"
   topics: [sicetac]
   updated_at: "2026-09-25"
   category: "Logística LATAM"
@@ -218,6 +239,7 @@
   description_en: "An interactive analysis of how SICETAC hour scenarios affect cost references and operational sensitivity, updated using the current live database."
   content_language: es
   url: "/reportes/sicetac-horas/"
+  vista_previa: "barChart"
   topics: [sicetac]
   updated_at: "2026-07-27"
   category: "SICETAC"

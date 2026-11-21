@@ -21,94 +21,6 @@ description: "Biblioteca pública de reportes vivos de El Dato Logístico y ATIE
 <link href="https://atiemppo.com/reportes/" hreflang="x-default" rel="alternate"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Outfit:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<style>
-:root{
-  --blue:#1F4E79;
-  --blue-2:#15385a;
-  --green:#079763;
-  --ink:#142033;
-  --muted:#5b6a7d;
-  --line:#d8e1ea;
-  --soft:#f4f8fb;
-  --paper:#ffffff;
-  --accent:#eef5fb;
-  --radius:8px;
-  --font:'Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-  --display:'Outfit',system-ui,sans-serif;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;background:var(--paper)}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);line-height:1.6}
-a{color:inherit;text-decoration:none}
-.container{width:min(1180px,100%);margin:0 auto;padding:0 32px}
-.topbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);border-bottom:1px solid var(--line);backdrop-filter:blur(16px)}
-.topbar-inner{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--blue);letter-spacing:.02em}
-.brand img{height:40px;width:auto}
-.nav{display:flex;align-items:center;gap:20px;color:#334760;font-size:14px;font-weight:700}
-.nav a:hover{color:var(--blue)}
-.nav-cta{padding:10px 15px;border-radius:7px;background:var(--blue);color:#fff!important}
-.hero{padding:82px 0 58px;background:linear-gradient(180deg,#fff 0%,var(--soft) 100%);border-bottom:1px solid var(--line)}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;margin-bottom:18px;color:var(--green);font-size:12px;font-weight:850;letter-spacing:.16em;text-transform:uppercase}
-.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
-h1{max-width:860px;margin:0 0 20px;font-family:var(--display);font-size:clamp(46px,7vw,86px);line-height:.96;letter-spacing:-.045em;color:var(--blue-2)}
-.hero-copy{max-width:760px;margin:0;color:#4a5d72;font-size:19px;line-height:1.7}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;border-radius:7px;border:1px solid var(--line);font-size:14px;font-weight:800}
-.btn-primary{background:var(--blue);border-color:var(--blue);color:#fff}
-.btn-secondary{background:#fff;color:var(--blue-2)}
-.library{padding:56px 0 72px}
-.quick-index{padding:44px 0 0}
-.quick-index-box{padding:24px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:0 18px 45px rgba(31,78,121,.06)}
-.quick-index-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:18px}
-.quick-index-head h2{margin:0;font-family:var(--display);font-size:30px;color:var(--blue-2)}
-.quick-index-head p{margin:0;color:var(--muted);font-size:14px}
-.quick-index-list{columns:2;column-gap:30px;margin:0;padding-left:22px}
-.quick-index-list li{break-inside:avoid;margin:0 0 10px;padding-left:4px;color:var(--blue)}
-.quick-index-list a{font-weight:750;text-decoration:underline;text-decoration-color:#c8d7e5;text-underline-offset:3px}
-.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:22px;padding-bottom:18px;border-bottom:1px solid var(--line)}
-.section-head span{color:var(--green);font-size:12px;font-weight:850;letter-spacing:.16em;text-transform:uppercase}
-.section-head h2{margin:0;font-family:var(--display);font-size:32px;letter-spacing:-.02em;color:var(--blue-2)}
-.report-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.report-card{display:flex;flex-direction:column;min-height:315px;padding:22px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:0 18px 45px rgba(31,78,121,.06);transition:transform .18s,border-color .18s,box-shadow .18s}
-.report-card:hover{transform:translateY(-3px);border-color:#aac1d5;box-shadow:0 22px 60px rgba(31,78,121,.1)}
-.card-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
-.status{display:inline-flex;align-items:center;padding:6px 9px;border-radius:999px;background:var(--accent);color:var(--blue);font-size:11px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}
-.status.snapshot{background:#f7f3e8;color:#8a5b12}
-.date{color:var(--muted);font-size:12px;font-weight:700}
-.report-card h3{margin:0 0 10px;font-size:22px;line-height:1.18;color:var(--blue-2);letter-spacing:-.02em}
-.summary{margin:0;color:var(--muted);font-size:14px;line-height:1.65;flex:1}
-.meta{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
-.pill{display:inline-flex;align-items:center;padding:6px 9px;border:1px solid var(--line);border-radius:999px;color:#42556a;font-size:12px;font-weight:750;background:#fbfdff}
-.open{margin-top:auto;color:var(--blue);font-size:13px;font-weight:850;letter-spacing:.1em;text-transform:uppercase}.open + .open{margin-top:10px;color:var(--green)}
-.philosophy{padding:0 0 76px}
-.client-cta{padding:58px 0 76px;background:#0d2945;color:#fff}
-.client-cta-inner{display:flex;align-items:end;justify-content:space-between;gap:32px}
-.client-cta .eyebrow{color:#b6d5ff}.client-cta h2{max-width:700px;margin:0 0 14px;font-family:var(--display);font-size:clamp(34px,5vw,58px);line-height:1.02;letter-spacing:-.04em}.client-cta p{max-width:700px;margin:0;color:#d2deed;font-size:17px;line-height:1.7}.client-cta .btn-primary{background:#c4dcff;color:#102038;border-color:#c4dcff}
-.method{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.method article{padding:24px;border-radius:var(--radius);background:var(--soft);border:1px solid var(--line)}
-.method strong{display:block;margin-bottom:16px;font-family:var(--display);font-size:34px;line-height:1;color:rgba(31,78,121,.28)}
-.method h3{margin:0 0 8px;color:var(--blue-2);font-size:18px}
-.method p{margin:0;color:var(--muted);font-size:14px}
-.foot{padding:34px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
-.foot-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
-@media(max-width:920px){
-  .report-grid,.method{grid-template-columns:1fr}
-  .quick-index-list{columns:1}
-  .nav{display:none}
-  .client-cta-inner{display:block}
-}
-@media(max-width:560px){
-  .container{padding:0 18px}
-  .hero{padding-top:58px}
-  h1{font-size:42px}
-  .hero-copy{font-size:17px}
-  .section-head{display:block}
-  .quick-index-head{display:block}
-  .quick-index-head p{margin-top:12px}
-}
-</style>
 <meta content="Reportes de logística y transporte · RNDC y SICETAC | ATIEMPPO" name="twitter:title"/><meta content="Análisis públicos de transporte, rutas, costos y SICETAC con fuentes, cortes y metodología. Explora reportes de ATIEMPPO y su aplicación empresarial." name="twitter:description"/><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -145,109 +57,33 @@ h1{max-width:860px;margin:0 0 20px;font-family:var(--display);font-size:clamp(46
   ]
 }</script><link href="/assets/css/seo-content.css" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="/assets/css/site-foundation.css?v=20261021"/>
+<link rel="stylesheet" href="/assets/css/report-explorer.css"/>
 </head>
-<body>
+<body class="report-library-page">
 {% include header.html translation="/en/reportes/" %}
 
 <main id="main-content">
-  <section class="hero">
-    <div class="container">
-      <div class="eyebrow">Datos sin carreta</div>
-      <h1>Reportes vivos de logística en LATAM.</h1>
-      <p class="hero-copy">Explora los análisis de logística y transporte de ATIEMPPO y El Dato Logístico. Cada reporte presenta indicadores, gráficas y contexto, con las fuentes y los períodos de los datos. Puedes usarlos para entender tendencias, contrastar preguntas de tu operación y preparar una conversación con tu equipo.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#biblioteca">Explorar biblioteca</a>
-        <a class="btn btn-secondary" href="/reportes/llms.txt">Leer índice textual para IA</a>
-        <a class="btn btn-secondary" href="/reportes/para-empresas/">Crear un reporte para mi empresa</a>
-      </div>
-      <p class="hero-copy" style="margin-top:18px;font-size:14px;max-width:820px">Algunos reportes incluyen una versión de texto para consultar y citar sus hallazgos. El <a href="/reportes/llms.txt" style="color:var(--blue);font-weight:800;text-decoration:underline">índice para IA</a> indica qué informe leer, qué corte tiene y cuándo una versión textual todavía está pendiente.</p>
+  <header class="report-library-intro report-wrap">
+    <h1>Reportes vivos de logística</h1>
+    <p>Explora mapas y análisis de transporte en América Latina.</p>
+    <div class="report-library-links">
+      <a class="report-text-link" href="#biblioteca">Ver todos los reportes <span aria-hidden="true">↓</span></a>
     </div>
-  </section>
+  </header>
 
-  <section class="quick-index" aria-labelledby="indice-reportes">
-    <div class="container">
-      <div class="quick-index-box">
-        {% assign indexed_reports = site.data.reportes | sort: "title" %}
-        {% assign latest_catalog_report = site.data.reportes | sort: "updated_at" | last %}
-        <div class="quick-index-head">
-          <div>
-            <div class="eyebrow">Índice completo</div>
-            <h2 id="indice-reportes">{{ indexed_reports | size }} reportes públicos activos</h2>
-          </div>
-          <p>Catálogo actualizado: {{ latest_catalog_report.updated_at | date: "%Y-%m-%d" }}. El período de los datos se indica en cada reporte.</p>
-        </div>
-        <ol class="quick-index-list">
-          {% for report in indexed_reports %}
-            <li><a href="{{ report.url | relative_url }}">{{ report.title }}</a> · {{ report.category }}</li>
-          {% endfor %}
-        </ol>
-      </div>
-    </div>
-  </section>
+  {% include report-explorer.html lang="es" %}
 
-  <section class="library" id="biblioteca">
-    <div class="container">
-      <div class="section-head">
-        <span>Biblioteca pública</span>
-        <h2>Reportes publicados</h2>
-      </div>
-      <div class="report-grid">
-        {% assign reports = site.data.reportes | sort: "order" | reverse %}
-        {% for report in reports %}
-          <div class="report-card">
-            <div class="card-top">
-              <span class="status{% if report.status == 'Snapshot' %} snapshot{% endif %}">{{ report.status }}</span>
-              <span class="date">Actualizado {{ report.updated_at | date: "%Y-%m-%d" }}</span>
-            </div>
-            <h3>{{ report.title }}</h3>
-            <p class="summary">{{ report.description }}</p>
-            <div class="meta">
-              <span class="pill">{{ report.category }}</span>
-              <span class="pill">{{ report.theme }}</span>
-            </div>
-            <a class="open" href="{{ report.url | relative_url }}">Explorar reporte</a>
-            {% if report.text_url %}<a class="open" href="{{ report.text_url }}">Versión textual para IA (.md)</a>{% endif %}
-          </div>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
-
-  <section class="client-cta">
-    <div class="container client-cta-inner">
-      <div>
-        <div class="eyebrow">Para empresas y equipos</div>
-        <h2>¿Qué decisión necesita una lectura viva?</h2>
-        <p>Podemos convertir una pregunta de logística, transporte o mercado en una página que tu equipo pueda explorar, compartir y volver a consultar.</p>
-      </div>
-      <div class="hero-actions"><a class="btn btn-primary" href="/reportes/para-empresas/">Diseñar mi reporte vivo</a></div>
-    </div>
-  </section>
-
-  <section class="philosophy">
-    <div class="container">
-      <div class="method">
-        <article>
-          <strong>01</strong>
-          <h3>Explora los resultados</h3>
-          <p>Consulta tablas, gráficas y explicaciones en una página que puedes compartir con tu equipo.</p>
-        </article>
-        <article>
-          <strong>02</strong>
-          <h3>Reconoce el período de los datos</h3>
-          <p>Revisa el corte de cada reporte y consulta las versiones históricas cuando estén disponibles.</p>
-        </article>
-        <article>
-          <strong>03</strong>
-          <h3>Trabaja con tus preguntas</h3>
-          <p>Podemos preparar un análisis para tu empresa con fuentes, indicadores y explicaciones acordados según la decisión que necesitas tomar.</p>
-        </article>
-      </div>
+  <section class="report-about">
+    <div class="report-wrap">
+      <h2>¿Qué decisión necesita un análisis propio?</h2>
+      <p>Podemos convertir una pregunta de logística, transporte o mercado en un reporte navegable para tu equipo, con fuentes, indicadores y explicaciones acordados.</p>
+      <a class="report-button" href="/reportes/para-empresas/">Crear un reporte para mi empresa</a>
     </div>
   </section>
 <section class="seo-section seo-soft"><div class="seo-wrap"><h2>Del reporte público a la decisión de tu empresa</h2><p>Para la consulta, los costos y los reportes de SICETAC, entra a la <a href="/sicetac/">guía de SICETAC</a>.</p><div class="seo-grid"><article><h3>Preparar un presupuesto</h3><p>Usa los reportes como contexto y el <a href="/indices-sicetac/">Índice de Red</a> para analizar la combinación de rutas de tu operación.</p></article><article><h3>Investigar alternativas</h3><p>La <a href="/consultoria/">consultoría logística</a> define qué datos y escenarios hacen falta para comparar opciones.</p></article><article><h3>Desarrollar capacidades</h3><p>El <a href="/acompanamiento-ia/">programa de productividad con IA</a> ayuda a tu equipo a formular preguntas y trabajar con fuentes y criterios de revisión.</p></article></div></div></section>
 </main>
 
 {% include footer.html %}
+<script src="/assets/js/report-explorer.js" defer></script>
 </body>
 </html>
