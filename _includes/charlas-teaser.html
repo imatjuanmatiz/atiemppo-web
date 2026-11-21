@@ -1,0 +1,8 @@
+{%- assign lang = include.lang | default: 'es' -%}
+<div class="charlas-teaser">
+  {% include charlas-cifra.html lang=lang %}
+  {% include charlas-barras.html lang=lang compact=true %}
+  <p class="charlas-more">
+    <a class="text-link" href="{% if lang == 'en' %}/en/conferencias/{% else %}/conferencias/{% endif %}#trayectoria">{% if lang == 'en' %}See dates, topics and photos{% else %}Ver fechas, temas y fotos{% endif %} →</a>
+  </p>
+</div>

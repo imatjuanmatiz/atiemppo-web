@@ -1,0 +1,27 @@
+{%- assign charlas = site.data.charlas -%}
+<ul class="charlas-gallery">
+  {% for foto in charlas.fotos %}
+  <li>
+    <figure>
+      <a href="{{ foto.archivo | prepend: '/assets/images/conferencias/' | relative_url }}" data-caption="{{ foto.titulo }} · {{ foto.anio }}">
+        <img
+          src="{{ foto.archivo | prepend: '/assets/images/conferencias/' | relative_url }}"
+          alt="{{ foto.alt }}"
+          width="{{ foto.ancho }}"
+          height="{{ foto.alto }}"
+          {% if foto.ajuste or foto.posicion %}style="{% if foto.ajuste %}object-fit: {{ foto.ajuste }};{% endif %}{% if foto.posicion %}object-position: {{ foto.posicion }};{% endif %}"{% endif %}
+          loading="lazy"
+          decoding="async">
+      </a>
+      <figcaption>{{ foto.titulo }} · {{ foto.anio }}</figcaption>
+    </figure>
+  </li>
+  {% endfor %}
+</ul>
+
+<dialog class="charlas-dialog" aria-label="{% if include.lang == 'en' %}Enlarged photo{% else %}Foto ampliada{% endif %}">
+  <button type="button" class="charlas-dialog-close">{% if include.lang == 'en' %}Close{% else %}Cerrar{% endif %}</button>
+  <img alt="">
+  <p></p>
+</dialog>
+<script src="{{ '/assets/js/conferencias-tablero.js' | relative_url }}" defer></script>

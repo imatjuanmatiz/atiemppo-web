@@ -1,0 +1,19 @@
+{%- assign lang = include.lang | default: 'es' -%}
+{%- assign charlas = site.data.charlas -%}
+<ol class="charlas-list">
+  {% for charla in charlas.recientes %}
+    {% assign grupo = charlas.grupos | where: "id", charla.grupo | first %}
+    <li class="charlas-grupo-{{ charla.grupo }}">
+      <p class="charlas-when">{{ charla.fecha }}{% if charla.lugar %} · {{ charla.lugar }}{% endif %}</p>
+      <p class="charlas-tag">{% if lang == 'en' %}{{ grupo.nombre_en }}{% else %}{{ grupo.nombre }}{% endif %}</p>
+      <h3>
+        <a href="{{ charla.url }}" target="_blank" rel="noopener noreferrer">
+          {{ charla.evento }}
+          <span class="charlas-sr">{% if lang == 'en' %}, LinkedIn post{% else %}, post en LinkedIn{% endif %}</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </h3>
+      <p class="charlas-tema">{{ charla.tema }}</p>
+    </li>
+  {% endfor %}
+</ol>

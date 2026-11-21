@@ -18,6 +18,13 @@
       {% endif %}
     </div>
   </section>
+  {% if page.experience == 'conferences' %}
+  <section class="charlas-board" id="trayectoria" aria-labelledby="charlas-title">
+    <div class="container">
+      {% include charlas-tablero.html lang=page.lang %}
+    </div>
+  </section>
+  {% endif %}
   <section class="experience-section experience-paper" id="como-trabajamos">
     <div class="container">
       <div class="experience-section-heading"><p class="eyebrow">{{ detail.method_label }}</p><h2 class="section-heading">{{ detail.method_title }}</h2><p>{{ detail.method_intro }}</p></div>

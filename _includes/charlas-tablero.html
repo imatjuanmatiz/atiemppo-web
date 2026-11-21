@@ -1,0 +1,21 @@
+{%- assign lang = include.lang | default: 'es' -%}
+{%- assign charlas = site.data.charlas -%}
+<header class="charlas-intro">
+  <p class="eyebrow">{% if lang == 'en' %}Track record{% else %}Trayectoria{% endif %}</p>
+  <h2 class="section-heading" id="charlas-title">{% if lang == 'en' %}Talks, workshops and classes{% else %}Charlas, talleres y clases{% endif %}</h2>
+  <p>{% if lang == 'en' %}ATIEMPPO’s knowledge in logistics, data and artificial intelligence, shared on stage by Juan Pablo Matiz. Dates, topics and posts are in Spanish.{% else %}El conocimiento de ATIEMPPO en logística, datos e inteligencia artificial, compartido en el escenario por Juan Pablo Matiz.{% endif %}</p>
+</header>
+{% include charlas-cifra.html lang=lang %}
+{% include charlas-barras.html lang=lang %}
+<h3 class="charlas-sub">{% if lang == 'en' %}The {{ charlas.recientes.size }}, one by one{% else %}Las {{ charlas.recientes.size }}, una por una{% endif %}</h3>
+{% include charlas-lista.html lang=lang %}
+<h3 class="charlas-sub">{% if lang == 'en' %}Photos{% else %}Fotos{% endif %}</h3>
+<p class="charlas-note">{% if lang == 'en' %}Sixteen photos, from 2026 back to 2017.{% else %}Dieciséis fotos, de 2026 a 2017, de la más reciente a la más antigua.{% endif %}</p>
+{% include charlas-galeria.html lang=lang %}
+<p class="charlas-profile">
+  {% if lang == 'en' %}
+  The same record is on <a href="https://juanmatiz.com/conferencias/" rel="noopener">Juan Pablo Matiz’s speaker profile</a>.
+  {% else %}
+  El mismo recorrido está en el <a href="https://juanmatiz.com/conferencias/" rel="noopener">perfil de Juan Pablo Matiz</a>.
+  {% endif %}
+</p>

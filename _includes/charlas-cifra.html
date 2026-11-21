@@ -1,0 +1,6 @@
+{%- assign lang = include.lang | default: 'es' -%}
+{%- assign charlas = site.data.charlas -%}
+<p class="charlas-cifra">
+  <strong>{{ charlas.cifra }}</strong>
+  <span>{% if lang == 'en' %}{{ charlas.cifra_texto_en }}{% else %}{{ charlas.cifra_texto }}{% endif %}</span>
+</p>
