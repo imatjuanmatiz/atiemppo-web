@@ -1,7 +1,11 @@
 {% if include.lang == 'en' %}
+{% unless include.hide_reports %}
 <a class="service-entry-button" href="/en/reportes/">Living Reports <span aria-hidden="true">↗</span></a>
+{% endunless %}
 <a class="service-entry-button" href="/en/cursos/#conocimiento">How we use knowledge and data <span aria-hidden="true">↗</span></a>
 {% else %}
+{% unless include.hide_reports %}
 <a class="service-entry-button" href="/reportes/">Reportes Vivos <span aria-hidden="true">↗</span></a>
+{% endunless %}
 <a class="service-entry-button" href="/cursos/#conocimiento">Conocimiento y manejo de datos <span aria-hidden="true">↗</span></a>
 {% endif %}

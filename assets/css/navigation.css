@@ -27,6 +27,8 @@
   width: min(1280px, calc(100% - 48px)); min-height: 76px; margin: 0 auto;
   display: flex; align-items: center; justify-content: space-between; gap: 28px;
 }
+.global-header-controls { display: none; }
+.global-header .global-menu .global-reports-link { font-weight: 600; }
 .global-header .global-brand { display: flex; flex: 0 0 auto; padding: 0; border: 0; }
 .global-header .global-brand img { display: block; width: 176px; height: 44px; object-fit: contain; }
 .global-header .global-menu { align-items: center; gap: 16px; margin: 0; padding: 0; }
@@ -47,9 +49,16 @@
 .global-context-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 24px; padding: 12px 24px; background: #eef3f8; color: #0d2945; font: 400 14px/1.5 var(--atiemppo-sans, Arial, sans-serif); }
 .global-context-nav a { color: #0d2945; text-decoration: underline; text-underline-offset: 3px; }
 @media (max-width: 1199px) {
-  .global-header-inner { flex-wrap: wrap; gap: 0; }
-  .global-header .global-menu-toggle { display: inline-flex; align-items: center; }
-  .global-header .global-menu { width: 100%; flex-direction: column; align-items: stretch; gap: 2px; }
+  .global-header-inner { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0 8px; }
+  .global-header-controls { display: flex; align-items: center; justify-content: flex-end; gap: 8px; min-width: 0; }
+  .global-header .global-reports-shortcut {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 44px; max-width: 90px; color: #0a0a0a;
+    text-align: center; text-decoration: underline; text-underline-offset: 3px;
+    font: 600 13px/1.2 var(--atiemppo-sans, Arial, sans-serif);
+  }
+  .global-header .global-menu-toggle { display: inline-flex; align-items: center; flex: 0 0 auto; }
+  .global-header .global-menu { grid-column: 1 / -1; width: 100%; flex-direction: column; align-items: stretch; gap: 2px; }
   .global-header .global-menu:not([popover]) { padding: 12px 0 20px; }
   .global-header .global-menu a { padding: 10px 12px; white-space: normal; }
   .global-header .global-menu .global-account { justify-content: center; margin-top: 8px; }
@@ -79,4 +88,8 @@
 @media (max-width: 480px) {
   .global-header-inner { width: calc(100% - 32px); }
   .global-header .global-brand img { width: 152px; }
+}
+
+@media (max-width: 359px) {
+  .global-header .global-brand img { width: 128px; }
 }

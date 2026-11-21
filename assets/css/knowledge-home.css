@@ -141,7 +141,7 @@
 
 /* The home page opens with training, followed by the shared comparison and method. */
 .knowledge-home .knowledge-hero.knowledge-training-hero {
-  padding: clamp(32px, 5vw, 72px) 0;
+  padding: clamp(32px, 5vw, 72px) 0 40px;
 }
 .knowledge-training-opening {
   display: grid;
@@ -260,5 +260,96 @@
   .knowledge-home .knowledge-band--flip .knowledge-band-media {
     grid-column: auto;
     grid-row: auto;
+  }
+}
+
+.knowledge-home .knowledge-reports {
+  padding-block: clamp(32px, 5vw, 56px);
+  background: #151515;
+  color: #fff;
+}
+
+.knowledge-reports-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 440px);
+  align-items: center;
+  gap: clamp(24px, 5vw, 64px);
+}
+
+.knowledge-home .knowledge-reports h2 {
+  color: #fff;
+  margin: 0 0 12px;
+  font: 500 clamp(2.25rem, 5vw, 3.5rem)/1.05 var(--atiemppo-sans);
+  letter-spacing: -.04em;
+}
+
+.knowledge-reports p {
+  max-width: 48ch;
+  margin: 0 0 16px;
+  color: #dadada;
+}
+
+.knowledge-reports .knowledge-reports-language {
+  font-size: 14px;
+}
+
+.knowledge-home .knowledge-reports .knowledge-reports-action {
+  gap: 8px;
+  background: #fff;
+  border-color: #fff;
+  color: #0a0a0a;
+}
+
+.knowledge-home .knowledge-reports .knowledge-reports-action:hover {
+  background: #dadada;
+  border-color: #dadada;
+}
+
+.knowledge-reports .knowledge-reports-example {
+  display: grid;
+  grid-template-columns: minmax(0, 136px) minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #575757;
+  border-radius: 12px;
+  background: #262626;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.knowledge-reports-example:hover > span {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.knowledge-reports-example img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.knowledge-home .knowledge-reports a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+@media (max-width: 740px) {
+  .knowledge-home .knowledge-hero.knowledge-training-hero {
+    padding-block: 24px;
+  }
+
+  .knowledge-home .knowledge-training-hero .service-entry-actions {
+    margin-bottom: 0;
+  }
+
+  .knowledge-reports-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .knowledge-reports .knowledge-reports-example {
+    grid-template-columns: minmax(0, 104px) minmax(0, 1fr);
   }
 }

@@ -31,12 +31,27 @@
         <a class="text-link" href="{{ kh.hero_secondary_url }}">{{ kh.hero_secondary }}</a>
         <a class="text-link" href="{{ kh.hero_tertiary_url }}"{% if kh.hero_tertiary_lang %} hreflang="{{ kh.hero_tertiary_lang }}"{% endif %}>{{ kh.hero_tertiary }}</a>
       </div>
-      <div class="service-entry-actions">{% include service-resource-links.html lang=kh_lang %}</div>
+      <div class="service-entry-actions">{% include service-resource-links.html lang=kh_lang hide_reports=true %}</div>
     </div>
     <aside class="knowledge-idea-motion" data-idea-src="/assets/images/knowledge-idea-motion.webp">
       <div class="knowledge-idea-frame" aria-hidden="true"><img id="knowledge-idea-art" class="knowledge-idea-art" width="1339" height="390" alt="" decoding="async"></div>
       <button class="knowledge-idea-toggle" type="button" aria-controls="knowledge-idea-art" hidden></button>
     </aside>
+  </div>
+</section>
+
+<section class="knowledge-reports" id="reportes-vivos" aria-labelledby="home-reports-title">
+  <div class="container knowledge-reports-grid">
+    <div>
+      <h2 id="home-reports-title">{{ kh.reports_title }}</h2>
+      <p>{{ kh.reports_text }}</p>
+      {% if kh.reports_language != '' %}<p class="knowledge-reports-language">{{ kh.reports_language }}</p>{% endif %}
+      <a class="btn knowledge-reports-action" href="{{ kh.reports_url }}">{{ kh.reports_action }} <span aria-hidden="true">→</span></a>
+    </div>
+    <a class="knowledge-reports-example" href="/reportes/indice-cargue-descargue-rndc/#infografia" hreflang="es">
+      <img src="/reportes/indice-cargue-descargue-rndc/infografia-cargue-descargue-rndc.png" width="1440" height="1800" loading="lazy" decoding="async" alt=""/>
+      <span>{{ kh.reports_example }} <span aria-hidden="true">→</span></span>
+    </a>
   </div>
 </section>
 
@@ -166,7 +181,6 @@
       {%- endfor -%}
     </div>
     <div class="knowledge-reading-grid">
-      <article class="knowledge-reading"><h3>{{ kh.reports_title }}</h3><p>{{ kh.reports_text }}</p>{% if kh.reports_language != '' %}<p class="knowledge-note">{{ kh.reports_language }}</p>{% endif %}<a class="text-link" href="{{ kh.reports_url }}">{{ kh.reports_action }} →</a></article>
       <article class="knowledge-reading" id="dato-logistico"><h3>{{ kh.publications_title }}</h3><p>{{ kh.publications_text }}</p><a class="text-link" href="https://www.eldatologistico.com/" hreflang="es" target="_blank" rel="noopener noreferrer">{{ kh.publications_action }} →</a></article>
     </div>
   </div>
