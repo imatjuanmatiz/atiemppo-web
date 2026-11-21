@@ -7,10 +7,10 @@
       <p class="charlas-when">{{ charla.fecha }}{% if charla.lugar %} · {{ charla.lugar }}{% endif %}</p>
       <p class="charlas-tag">{% if lang == 'en' %}{{ grupo.nombre_en }}{% else %}{{ grupo.nombre }}{% endif %}</p>
       <h3>
-        <a href="{{ charla.url }}" target="_blank" rel="noopener noreferrer">
+        <a href="{{ charla.url }}"{% unless charla.interno %} target="_blank" rel="noopener noreferrer"{% endunless %}>
           {{ charla.evento }}
-          <span class="charlas-sr">{% if lang == 'en' %}, LinkedIn post{% else %}, post en LinkedIn{% endif %}</span>
-          <span aria-hidden="true">↗</span>
+          <span class="charlas-sr">{% if charla.interno %}{% if lang == 'en' %}, blog note{% else %}, nota del blog{% endif %}{% else %}{% if lang == 'en' %}, LinkedIn post{% else %}, post en LinkedIn{% endif %}{% endif %}</span>
+          {% unless charla.interno %}<span aria-hidden="true">↗</span>{% endunless %}
         </a>
       </h3>
       <p class="charlas-tema">{{ charla.tema }}</p>
