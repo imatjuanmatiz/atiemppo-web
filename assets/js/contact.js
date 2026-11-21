@@ -87,7 +87,7 @@
         if (!service.value) { entry.link.href = entry.href; return; }
         var label = service.options[service.selectedIndex].text;
         var url = new URL(entry.href);
-        url.searchParams.set("text", en ? "Hi Bruno, I am interested in " + label + ". I would like to discuss the scope and arrange a meeting." : "Hola Bruno, me interesa " + label + ". Quiero conocer el alcance y coordinar una reunión.");
+        url.searchParams.set("text", en ? "Hi, I am interested in " + label + ". I would like to discuss the scope and arrange a meeting." : "Hola, me interesa " + label + ". Quiero conocer el alcance y coordinar una reunión.");
         entry.link.href = url.href;
       });
       updateLanguageLink();
