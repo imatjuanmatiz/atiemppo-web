@@ -61,23 +61,23 @@
 {%- if include.offer_key and bruno_offer -%}{%- assign bruno_context_option = '' -%}{%- endif -%}
 {%- if bruno_course and bruno_context_option == 'courses' -%}
   {%- if bruno_lang == 'en' -%}
-    {%- capture bruno_context_message -%}Hi Bruno, I am interested in the {{ bruno_course.title }} course for my team.{%- endcapture -%}
+    {%- capture bruno_context_message -%}Hi, I am interested in the {{ bruno_course.title }} course for my team.{%- endcapture -%}
   {%- else -%}
-    {%- capture bruno_context_message -%}Hola Bruno, me interesa el curso {{ bruno_course.title }} para mi equipo.{%- endcapture -%}
+    {%- capture bruno_context_message -%}Hola, me interesa el curso {{ bruno_course.title }} para mi equipo.{%- endcapture -%}
   {%- endif -%}
 {%- elsif bruno_context_option == '' and bruno_offer -%}
   {%- assign bruno_context_option = 'courses' -%}
   {%- if bruno_offer.key == 'conferences' -%}{%- assign bruno_context_option = 'talks' -%}{%- endif -%}
   {%- if bruno_lang == 'en' -%}
-    {%- capture bruno_context_message -%}Hi Bruno, I am interested in {{ bruno_offer.label }}. I would like to discuss the scope and arrange a meeting.{%- endcapture -%}
+    {%- capture bruno_context_message -%}Hi, I am interested in {{ bruno_offer.label }}. I would like to discuss the scope and arrange a meeting.{%- endcapture -%}
   {%- else -%}
-    {%- capture bruno_context_message -%}Hola Bruno, me interesa {{ bruno_offer.label }}. Quiero conocer el alcance y coordinar una reunión.{%- endcapture -%}
+    {%- capture bruno_context_message -%}Hola, me interesa {{ bruno_offer.label }}. Quiero conocer el alcance y coordinar una reunión.{%- endcapture -%}
   {%- endif -%}
 {%- endif -%}
 <div class="bruno-menu{% if include.floating %} bruno-menu--floating{% endif %}" data-bruno-menu>
-  <button class="bruno-link" id="bruno-trigger-{{ bruno_id }}" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="bruno-menu-{{ bruno_id }}" commandfor="bruno-menu-{{ bruno_id }}" command="toggle-popover" data-bruno-trigger{% if include.floating %} aria-label="{{ widget_copy.title }}. {{ widget_copy.subtitle }}"{% endif %}>
+  <button class="bruno-link" id="bruno-trigger-{{ bruno_id }}" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="bruno-menu-{{ bruno_id }}" commandfor="bruno-menu-{{ bruno_id }}" command="toggle-popover" data-bruno-trigger aria-label="{{ widget_copy.title }}. {{ widget_copy.subtitle }}">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 9 9 0 0 1-4-.9L3 21l1.9-5.5a9 9 0 0 1-.9-4A8.5 8.5 0 0 1 12.5 3 8.5 8.5 0 0 1 21 11.5Z"/><path d="M8.5 11.5h8M8.5 8.5h5"/></svg>
-    {% if include.floating %}<span><strong>{{ widget_copy.title }}</strong><small>{{ widget_copy.subtitle }}</small></span>{% elsif include.short %}<span>{{ bruno_copy.short_cta }}</span>{% else %}<span>{{ bruno_copy.cta }}</span>{% endif %}
+    <span><strong>{{ widget_copy.title }}</strong><small>{{ widget_copy.subtitle }}</small></span>
     <span class="bruno-caret" aria-hidden="true"></span>
   </button>
   <div class="bruno-popover" id="bruno-menu-{{ bruno_id }}" popover="auto" data-bruno-popover>

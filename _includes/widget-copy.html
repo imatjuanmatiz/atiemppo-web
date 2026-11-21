@@ -1,0 +1,31 @@
+{%- assign widget_lang = include.lang | default: page.lang | default: 'es' -%}
+{%- assign widget_prefix = page.url | slice: 0, 4 -%}
+{%- if widget_prefix == '/en/' -%}{%- assign widget_lang = 'en' -%}{%- endif -%}
+{%- assign widget_url = page.url | append: '/' | replace: '//', '/' -%}
+{%- if widget_url == '' -%}{%- assign widget_url = '/' -%}{%- endif -%}
+{%- assign widget_section = site.data.widget.default -%}
+{%- assign widget_size = 0 -%}
+{%- if page.widget -%}
+  {%- for section in site.data.widget.sections -%}
+    {%- if section.id == page.widget -%}{%- assign widget_section = section -%}{%- endif -%}
+  {%- endfor -%}
+{%- else -%}
+  {%- for section in site.data.widget.sections -%}
+    {%- for prefix in section.prefixes -%}
+      {%- assign widget_prefix_size = prefix | size -%}
+      {%- assign widget_hit = widget_url | slice: 0, widget_prefix_size -%}
+      {%- if widget_hit == prefix and widget_prefix_size > widget_size -%}
+        {%- assign widget_section = section -%}
+        {%- assign widget_size = widget_prefix_size -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+  {%- if widget_size == 0 -%}
+    {%- if page.layout == 'post' or page.layout == 'post-en' -%}
+      {%- for section in site.data.widget.sections -%}
+        {%- if section.id == 'blog' -%}{%- assign widget_section = section -%}{%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+{%- assign widget_copy = widget_section[widget_lang] -%}
