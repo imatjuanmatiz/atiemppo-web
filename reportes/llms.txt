@@ -23,7 +23,8 @@ archivo institucional.
 - Archivo institucional ampliado: https://atiemppo.com/llms-full.txt
 - Contacto para crear un reporte vivo: juanmatiz@atiemppo.co
 
-Actualizado: 2026-09-26
+{% assign reports = site.data.reportes | sort: "updated_at" | reverse -%}
+Última actualización de un reporte: {{ reports.first.updated_at }}
 Idioma: es-CO
 Reportes públicos activos: {{ site.data.reportes | size }}
 
@@ -37,7 +38,6 @@ Reportes públicos activos: {{ site.data.reportes | size }}
 
 ## Reportes publicados
 
-{% assign reports = site.data.reportes | sort: "order" | reverse %}
 {% for report in reports %}
 ### {{ report.title }}
 
@@ -49,7 +49,8 @@ Reportes públicos activos: {{ site.data.reportes | size }}
 {% endif -%}
 - Categoría: {{ report.category }}
 - Tema: {{ report.theme }}
-- Corte editorial: {{ report.updated_at }}
+- Primera publicación: {{ report.published_at | default: "fecha sin registrar" }}
+- Última actualización: {{ report.updated_at }}
 
 {{ report.description }}
 

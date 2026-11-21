@@ -1,3 +1,5 @@
+# Fechas en hora de Bogotá. published_at registra la primera publicación en main.
+# updated_at registra el último cambio de datos o de contenido del reporte.
 # Mover destacado: true al reporte que debe abrir el explorador.
 # Las vistas previas señalan IDs existentes en el reporte. vista_previa_movil es opcional.
 - title: "Scorecard del transporte de carga en Colombia"
@@ -7,6 +9,7 @@
   content_language: es
   url: "/reportes/scorecard-transporte-sice/"
   vista_previa: "variacion-departamental"
+  published_at: "2026-11-19" # ef552ee
   updated_at: "2026-11-19"
   category: "RNDC"
   status: "Reporte vivo"
@@ -23,20 +26,22 @@
   vista_previa_movil: "mapZoomIn"
   destacado: true
   text_url: "https://atiemppo.com/reportes/indice-cargue-descargue-rndc/report.md"
+  published_at: "2026-09-25" # 0de6e95
   updated_at: "2026-11-19"
   category: "RNDC"
   status: "Reporte vivo"
   theme: "Cargue y descargue"
   order: 135
 - title: "Scorecard de datos del transporte"
-  description: "Scorecard RNDC con lectura intermunicipal por defecto: valores pagados, toneladas, viajes, rutas y señales de compensación de carga. La vista completa conserva los urbanos como control de sensibilidad; corte estadístico 202501–202608."
+  description: "Scorecard RNDC con lectura intermunicipal por defecto: valores pagados, toneladas, viajes, rutas y señales de compensación de carga. La vista completa conserva los urbanos como control de sensibilidad; corte estadístico 202501–202610."
   title_en: "Transport data scorecard"
-  description_en: "An RNDC scorecard with an intermunicipal view by default: amounts paid, tonnes, trips, routes and freight-balance indicators. The full view retains urban trips as a sensitivity check; statistical period 202501–202608."
+  description_en: "An RNDC scorecard with an intermunicipal view by default: amounts paid, tonnes, trips, routes and freight-balance indicators. The full view retains urban trips as a sensitivity check; statistical period 202501–202610."
   content_language: es
   url: "/reportes/scorecard-datos-transporte/"
   vista_previa: "trend"
   text_url: "https://atiemppo.com/reportes/scorecard-datos-transporte/report.md"
-  updated_at: "2026-09-15"
+  published_at: "2026-09-14" # 673fc3c
+  updated_at: "2026-11-13" # b577b11
   category: "RNDC"
   status: "Reporte vivo"
   theme: "Scorecard nacional"
@@ -50,6 +55,7 @@
   url: "/reportes/sensibilidad-presupuesto-sicetac/"
   vista_previa: "main-content"
   topics: [sicetac]
+  published_at: "2026-07-30" # 7fb606e
   updated_at: "2026-09-25"
   category: "SICETAC"
   status: "Reporte vivo"
@@ -64,6 +70,7 @@
   url: "/reportes/sensibilidad-presupuesto-sicetac-v2/"
   vista_previa: "main-content"
   topics: [sicetac]
+  published_at: "2026-08-03" # 5ada319
   updated_at: "2026-09-25"
   category: "SICETAC"
   status: "Reporte vivo"
@@ -78,6 +85,7 @@
   url: "/reportes/valle-centro-impacto-sicetac/"
   vista_previa: "map"
   topics: [sicetac]
+  published_at: "2026-07-28" # 4882b4a
   updated_at: "2026-09-25"
   category: "SICETAC"
   status: "Reporte vivo"
@@ -92,6 +100,7 @@
   url: "/reportes/evolucion-sicetac-dic25-jul26/"
   vista_previa: "cityLine"
   topics: [sicetac]
+  published_at: "2026-07-15" # cfcecd4
   updated_at: "2026-09-25"
   category: "SICETAC"
   status: "Reporte vivo"
@@ -105,6 +114,7 @@
   url: "/reportes/impacto-horas-operativas-288-230/"
   vista_previa: "rangeChart"
   topics: [sicetac]
+  published_at: "2026-07-27" # 24dcd93
   updated_at: "2026-07-27"
   category: "SICETAC"
   status: "Reporte vivo"
@@ -112,39 +122,42 @@
   order: 115
 
 - title: "Top 50 rutas RNDC"
-  description: "Reporte vivo nacional de las principales rutas RNDC por viajes, toneladas, productos, configuraciones vehiculares e índice SICETAC; comparación enero-agosto de 2025 vs. 2026, con corte estadístico 202608."
+  description: "Reporte vivo nacional de las principales rutas RNDC por viajes, toneladas, productos, configuraciones vehiculares e índice SICETAC; comparación enero-octubre de 2025 vs. 2026, con corte estadístico 202610."
   title_en: "Top 50 RNDC routes"
-  description_en: "A national live report on leading RNDC routes by trips, tonnes, products, vehicle configurations and SICETAC index; January–August 2025 versus 2026 comparison, with statistical cutoff 202608."
+  description_en: "A national live report on leading RNDC routes by trips, tonnes, products, vehicle configurations and SICETAC index; January–October 2025 versus 2026 comparison, with statistical cutoff 202610."
   content_language: es
   url: "/reportes/top50-rutas-rndc/"
   vista_previa: "main-content"
-  updated_at: "2026-09-25"
+  published_at: "2026-07-27" # 24dcd93
+  updated_at: "2026-11-13" # b577b11
   category: "RNDC"
   status: "Reporte vivo"
   theme: "Rutas nacionales"
   order: 110
 
 - title: "Fichas de análisis de transporte: Bogotá"
-  description: "Ficha territorial de Bogotá municipio con rutas que llegan y salen, productos movilizados y configuraciones vehiculares; comparación enero-agosto de 2025 vs. 2026, con corte estadístico 202608."
+  description: "Ficha territorial de Bogotá municipio con rutas que llegan y salen, productos movilizados y configuraciones vehiculares; comparación enero-octubre de 2025 vs. 2026, con corte estadístico 202610."
   title_en: "Transport analysis profiles: Bogotá"
-  description_en: "A territorial profile of Bogotá municipality, covering inbound and outbound routes, goods moved and vehicle configurations; January–August 2025 versus 2026 comparison, with statistical cutoff 202608."
+  description_en: "A territorial profile of Bogotá municipality, covering inbound and outbound routes, goods moved and vehicle configurations; January–October 2025 versus 2026 comparison, with statistical cutoff 202610."
   content_language: es
   url: "/reportes/fichas-analisis-transporte-bogota/"
   vista_previa: "map"
-  updated_at: "2026-09-25"
+  published_at: "2026-06-09" # 9bf9a20
+  updated_at: "2026-11-13" # b577b11
   category: "RNDC"
   status: "Reporte vivo"
   theme: "Fichas territoriales"
   order: 105
 
 - title: "Capitales y puertos: comercio exterior terrestre"
-  description: "Lectura de corredores entre ciudades capitales y puertos, balance de carga, comercio exterior terrestre y retorno logístico; comparación estadística enero-agosto de 2025 y 2026."
+  description: "Lectura de corredores entre ciudades capitales y puertos, balance de carga, comercio exterior terrestre y retorno logístico; comparación estadística enero-octubre de 2025 y 2026."
   title_en: "Capital cities and ports: inland foreign-trade transport"
-  description_en: "An analysis of corridors between capital cities and ports, freight balance, inland foreign-trade transport and return logistics; statistical comparison of January–August 2025 and 2026."
+  description_en: "An analysis of corridors between capital cities and ports, freight balance, inland foreign-trade transport and return logistics; statistical comparison of January–October 2025 and 2026."
   content_language: es
   url: "/reportes/comercio-exterior-capitales-puertos/"
   vista_previa: "rankingChart"
-  updated_at: "2026-09-25"
+  published_at: "2026-05-22" # eab4b2f
+  updated_at: "2026-11-13" # b577b11
   category: "Comercio exterior"
   status: "Reporte vivo"
   theme: "Puertos y capitales"
@@ -158,6 +171,7 @@
   url: "/reportes/bogota-region-sicetac/"
   vista_previa: "regionalLine"
   topics: [sicetac]
+  published_at: "2026-07-04" # b93c9c5
   updated_at: "2026-09-25"
   category: "SICETAC"
   status: "Reporte vivo"
@@ -172,6 +186,7 @@
   url: "/reportes/indice-sicetac-vehiculo-km/"
   vista_previa: "scatter"
   topics: [sicetac]
+  published_at: "2026-06-03" # 358120b
   updated_at: "2026-09-25"
   category: "SICETAC"
   status: "Reporte vivo"
@@ -179,13 +194,14 @@
   order: 80
 
 - title: "Accesos logísticos de Bogotá"
-  description: "Análisis RNDC de la carga que entra a Bogotá, sale desde Bogotá y usa la región como bisagra logística, con corte estadístico junio 2026."
+  description: "Análisis RNDC de la carga que entra a Bogotá, sale desde Bogotá y usa la región como bisagra logística, con corte estadístico octubre de 2026."
   title_en: "Bogotá logistics access corridors"
-  description_en: "An RNDC analysis of freight entering Bogotá, departing from Bogotá and using the region as a logistics hub, with a June 2026 statistical cutoff."
+  description_en: "An RNDC analysis of freight entering Bogotá, departing from Bogotá and using the region as a logistics hub, with an October 2026 statistical cutoff."
   content_language: es
   url: "/reportes/accesos-bogota-carga/"
   vista_previa: "salidas"
-  updated_at: "2026-07-27"
+  published_at: "2026-05-22" # bd3523d
+  updated_at: "2026-11-13" # b577b11
   category: "Logística urbana"
   status: "Reporte vivo"
   theme: "Bogotá"
@@ -199,6 +215,7 @@
   url: "/reportes/indice-sicetac-capitales/"
   vista_previa: "lineChart"
   topics: [sicetac]
+  published_at: "2026-05-22" # c0b2867
   updated_at: "2026-09-25"
   category: "SICETAC"
   status: "Reporte vivo"
@@ -213,6 +230,7 @@
   url: "/reportes/seguimiento-acpm-sicetac/"
   vista_previa: "acpmNominalChart"
   topics: [sicetac]
+  published_at: "2026-05-22" # 32adfae
   updated_at: "2026-09-25"
   category: "SICETAC"
   status: "Reporte vivo"
@@ -227,6 +245,7 @@
   url: "/reportes/perfil-rutas-sicetac/"
   vista_previa: "rangeChart"
   topics: [sicetac]
+  published_at: "2026-05-22" # c0b2867
   updated_at: "2026-09-25"
   category: "Logística LATAM"
   status: "Reporte vivo"
@@ -241,6 +260,7 @@
   url: "/reportes/sicetac-horas/"
   vista_previa: "barChart"
   topics: [sicetac]
+  published_at: "2026-05-22" # c0b2867
   updated_at: "2026-07-27"
   category: "SICETAC"
   status: "Reporte vivo"

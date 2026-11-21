@@ -97,7 +97,7 @@ Reglas:
 1. Genera un HTML autocontenido desde el proyecto/script externo.
 2. Reemplaza el `index.html` de la ruta viva correspondiente.
 3. Si quieres congelar un corte, copia ese mismo HTML a una carpeta `YYYY-MM/`.
-4. Actualiza `_data/reportes.yml` para cambiar titulo, descripcion, fecha, categoria, estado o URL visible en la biblioteca.
+4. Actualiza `_data/reportes.yml` para actualizar la descripción, el corte y la fecha editorial junto con el reporte.
 
 ## Metadata de la biblioteca
 
@@ -107,7 +107,9 @@ La pagina `/reportes/` no depende del front matter de cada reporte. Lee las tarj
 _data/reportes.yml
 ```
 
-Esto permite pegar reportes HTML completos sin romper el indice.
+`published_at` registra la fecha de primera publicación del reporte y se conserva al subir nuevos cortes. `updated_at` registra el último cambio en los datos o el contenido. Usa fechas ISO `AAAA-MM-DD` en hora de Bogotá. El período estadístico se indica en la descripción o dentro del reporte.
+
+La biblioteca y el índice textual muestran primero los reportes actualizados más recientemente. La biblioteca también permite ordenarlos por primera publicación.
 ## Contrato de lectura para IA
 
 Cada reporte público debe conservar una pareja de lectura junto a su ruta: `index.html` para la experiencia visual y `report.md` para el contexto textual. Cuando el volumen de datos lo justifique, puede agregar `scorecard_data.json` u otro archivo estructurado.

@@ -155,7 +155,7 @@ tags:
           <article>
             <h3><a href="{{ report.url }}">{{ report.title }}</a></h3>
             <p>{{ report.description }}</p>
-            <p class="sicetac-meta"><time datetime="{{ report.updated_at }}">Actualizado el {{ report.updated_at | date: "%Y-%m-%d" }}</time> · {{ report.theme }}</p>
+            <p class="sicetac-meta">{% if report.published_at %}Publicado el <time datetime="{{ report.published_at }}">{{ report.published_at | date: "%d/%m/%Y" }}</time> · {% endif %}Actualizado el <time datetime="{{ report.updated_at }}">{{ report.updated_at | date: "%d/%m/%Y" }}</time> · {{ report.theme }}</p>
           </article>
         </li>
         {% endfor %}

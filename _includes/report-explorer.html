@@ -1,6 +1,6 @@
-{% assign reports = site.data.reportes | sort: "order" | reverse %}
+{% assign reports = site.data.reportes | sort: "updated_at" | reverse %}
 {% assign featured = reports | where: "destacado", true | first | default: reports.first %}
-{% assign latest_report = reports | sort: "updated_at" | last %}
+{% assign latest_report = reports.first %}
 {% if include.lang == 'en' %}
   {% assign preview_label = 'Choose a report to preview' %}
   {% assign open_label = 'Open full report' %}
@@ -8,7 +8,12 @@
   {% assign report_action = 'View report' %}
   {% assign report_preview = 'Preview here' %}
   {% assign text_label = 'Read text version (.md)' %}
-  {% assign date_label = 'Catalog updated' %}
+  {% assign date_label = 'Latest report update on' %}
+  {% assign sort_label = 'Sort by' %}
+  {% assign published_label = 'First published' %}
+  {% assign updated_label = 'Last updated' %}
+  {% assign missing_date = 'Date unavailable' %}
+  {% assign date_format = '%b %-d, %Y' %}
   {% assign frame_prefix = 'Report preview' %}
   {% assign catalog_id = 'library' %}
   {% assign catalog_note = 'The previews and full reports are in Spanish unless marked otherwise.' %}
@@ -21,7 +26,12 @@
   {% assign report_action = 'Ver reporte' %}
   {% assign report_preview = 'Ver aquí' %}
   {% assign text_label = 'Versión textual para IA (.md)' %}
-  {% assign date_label = 'Catálogo actualizado' %}
+  {% assign date_label = 'Última actualización registrada el' %}
+  {% assign sort_label = 'Ordenar por' %}
+  {% assign published_label = 'Primera publicación' %}
+  {% assign updated_label = 'Última actualización' %}
+  {% assign missing_date = 'Fecha sin registrar' %}
+  {% assign date_format = '%d/%m/%Y' %}
   {% assign frame_prefix = 'Vista previa del reporte' %}
   {% assign catalog_id = 'biblioteca' %}
   {% assign catalog_note = 'Consulta el período de los datos en cada reporte.' %}
@@ -54,14 +64,23 @@
 
   <section class="report-catalog" id="{{ catalog_id }}" aria-labelledby="indice-reportes">
     <h2 id="indice-reportes">{{ catalog_title }} <span class="report-count">({{ reports.size }})</span></h2>
-    <p>{{ date_label }} <time datetime="{{ latest_report.updated_at }}">{{ latest_report.updated_at }}</time>. {{ catalog_note }}</p>
-    <div class="report-library-links">
-      {% if include.lang == 'en' %}
-        <a class="report-text-link" href="/en/contacto/?servicio=reportes-vivos">Propose an analysis</a>
-      {% else %}
-        <a class="report-text-link" href="/reportes/llms.txt">Índice textual para IA</a>
-        <a class="report-text-link" href="/reportes/para-empresas/">Reportes para empresas</a>
-      {% endif %}
+    <p>{{ date_label }} <time datetime="{{ latest_report.updated_at }}">{{ latest_report.updated_at | date: date_format }}</time>. {{ catalog_note }}</p>
+    <div class="report-catalog-toolbar">
+      <div class="report-library-links">
+        {% if include.lang == 'en' %}
+          <a class="report-text-link" href="/en/contacto/?servicio=reportes-vivos">Propose an analysis</a>
+        {% else %}
+          <a class="report-text-link" href="/reportes/llms.txt">Índice textual para IA</a>
+          <a class="report-text-link" href="/reportes/para-empresas/">Reportes para empresas</a>
+        {% endif %}
+      </div>
+      <div class="report-sort" hidden data-report-sort>
+        <label for="report-order">{{ sort_label }}</label>
+        <select id="report-order">
+          <option value="updated">{{ updated_label }}</option>
+          <option value="published">{{ published_label }}</option>
+        </select>
+      </div>
     </div>
     <ul class="report-catalog-list">
       {% for report in reports %}
@@ -71,10 +90,20 @@
           {% assign report_title = report.title_en | default: report.title %}
           {% assign report_description = report.description_en | default: report.description %}
         {% endif %}
-        <li class="report-catalog-card">
+        <li class="report-catalog-card" data-published="{{ report.published_at }}" data-updated="{{ report.updated_at }}">
           <p class="report-card-category">{{ report.category }}{% if include.lang == 'es' %} · {{ report.theme }}{% endif %}</p>
           <h3>{{ report_title }}</h3>
           <p>{{ report_description }}</p>
+          <dl class="report-card-dates">
+            <div>
+              <dt>{{ published_label }}</dt>
+              <dd>{% if report.published_at %}<time datetime="{{ report.published_at }}">{{ report.published_at | date: date_format }}</time>{% else %}{{ missing_date }}{% endif %}</dd>
+            </div>
+            <div>
+              <dt>{{ updated_label }}</dt>
+              <dd><time datetime="{{ report.updated_at }}">{{ report.updated_at | date: date_format }}</time></dd>
+            </div>
+          </dl>
           <div class="report-card-actions">
             <a class="report-button" href="{{ report.url | relative_url }}" hreflang="{{ report.content_language | default: 'es' }}" data-report-pick data-preview-label="{{ report_preview }}" data-title="{{ report_title | escape }}" data-description="{{ report_description | escape }}"{% if report.vista_previa %} data-anchor="{{ report.vista_previa }}"{% endif %}{% if report.vista_previa_movil %} data-mobile-anchor="{{ report.vista_previa_movil }}"{% endif %}>{{ report_action }}</a>
             {% if report.text_url %}<a class="report-text-link" href="{{ report.text_url }}">{{ text_label }}</a>{% endif %}

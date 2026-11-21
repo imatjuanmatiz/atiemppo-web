@@ -8,6 +8,14 @@ if (explorer) {
   const description = explorer.querySelector('[data-report-description]');
   const open = explorer.querySelector('[data-report-open]');
   const reports = [...explorer.querySelectorAll('[data-report-pick]')];
+  const catalog = explorer.querySelector('.report-catalog-list');
+  const sortControls = explorer.querySelector('[data-report-sort]');
+  const order = explorer.querySelector('#report-order');
+  const options = new Map([...choice.options].map(option => [option.value, option]));
+  const entries = reports.map(report => ({
+    card: report.closest('.report-catalog-card'),
+    option: options.get(report.getAttribute('href'))
+  }));
   let active = reports.find(report => report.href === open.href);
 
   function markCurrent(report) {
@@ -59,5 +67,16 @@ if (explorer) {
     const report = reports.find(link => link.getAttribute('href') === choice.value);
     if (report) showReport(report);
   });
+  order.addEventListener('change', () => {
+    const selectedReport = choice.value;
+    const field = order.value;
+    const sorted = [...entries].sort((a, b) => b.card.dataset[field].localeCompare(a.card.dataset[field]));
+    for (const { card, option } of sorted) {
+      catalog.append(card);
+      choice.append(option);
+    }
+    choice.value = selectedReport;
+  });
   controls.hidden = false;
+  sortControls.hidden = false;
 }

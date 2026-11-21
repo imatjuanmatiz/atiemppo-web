@@ -140,7 +140,7 @@ translations:
           <article>
             <h3><a href="{{ report.url }}" hreflang="es">{{ report.title }}</a></h3>
             <p>{{ report.description }}</p>
-            <p class="sicetac-meta"><time datetime="{{ report.updated_at }}">Updated {{ report.updated_at | date: "%Y-%m-%d" }}</time> · {{ report.theme }}</p>
+            <p class="sicetac-meta">{% if report.published_at %}Published <time datetime="{{ report.published_at }}">{{ report.published_at | date: "%b %-d, %Y" }}</time> · {% endif %}Updated <time datetime="{{ report.updated_at }}">{{ report.updated_at | date: "%b %-d, %Y" }}</time> · {{ report.theme }}</p>
           </article>
         </li>
         {% endfor %}
