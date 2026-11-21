@@ -1,0 +1,25 @@
+{%- assign lang = include.lang | default: 'es' -%}
+{%- assign charlas = site.data.charlas -%}
+<div class="charlas-ventana">
+  {% if include.compact %}
+  <p class="charlas-ventana-label">{% if lang == 'en' %}The last two years{% else %}Últimos dos años{% endif %}</p>
+  {% else %}
+  <h3>{% if lang == 'en' %}The last two years{% else %}Últimos dos años{% endif %}</h3>
+  {% endif %}
+  <p>{% if lang == 'en' %}{{ charlas.ventana_en }}{% else %}{{ charlas.ventana }}{% endif %}: <strong>{{ charlas.recientes.size }}</strong> {% if lang == 'en' %}talks{% else %}charlas{% endif %}.</p>
+  <ul class="charlas-bars">
+    {% for grupo in charlas.grupos %}
+      {% assign del_grupo = charlas.recientes | where: "grupo", grupo.id %}
+      {% assign pct = del_grupo.size | times: 100 | divided_by: charlas.recientes.size %}
+      <li class="charlas-grupo-{{ grupo.id }}">
+        <div class="charlas-bar-top">
+          <span>{% if lang == 'en' %}{{ grupo.nombre_en }}{% else %}{{ grupo.nombre }}{% endif %}</span>
+          <span>{{ del_grupo.size }}</span>
+        </div>
+        <div class="charlas-track" aria-hidden="true">
+          <span style="width: {{ pct }}%"></span>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
