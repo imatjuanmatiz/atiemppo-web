@@ -84,7 +84,11 @@
     <div focusgroup="menu nomemory" aria-labelledby="bruno-trigger-{{ bruno_id }}">
       {%- for option in bruno_copy.options -%}
         {%- assign option_message = option.message -%}
-        {%- if option.id == bruno_context_option and bruno_context_message != '' -%}{%- assign option_message = bruno_context_message -%}{%- endif -%}
+        {%- if option.id == bruno_context_option and bruno_context_message != '' -%}
+          {%- assign option_message = bruno_context_message -%}
+        {%- elsif include.floating and widget_copy.message != '' and bruno_context_option == '' -%}
+          {%- assign option_message = widget_copy.message -%}
+        {%- endif -%}
         {%- if option.href -%}
       <a href="{{ option.href }}">{{ option.label }}</a>
         {%- else -%}
