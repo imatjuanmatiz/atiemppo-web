@@ -28,6 +28,36 @@
     {%- assign bruno_context_size = ctx_size -%}
   {%- endif -%}
 {%- endfor -%}
+{%- assign widget_section = site.data.widget.default -%}
+{%- assign widget_size = 0 -%}
+{%- if page.widget -%}
+  {%- for section in site.data.widget.sections -%}
+    {%- if section.id == page.widget -%}{%- assign widget_section = section -%}{%- endif -%}
+  {%- endfor -%}
+{%- else -%}
+  {%- for section in site.data.widget.sections -%}
+    {%- for prefix in section.prefixes -%}
+      {%- assign widget_prefix_size = prefix | size -%}
+      {%- assign widget_hit = bruno_url | slice: 0, widget_prefix_size -%}
+      {%- if widget_hit == prefix and widget_prefix_size > widget_size -%}
+        {%- assign widget_section = section -%}
+        {%- assign widget_size = widget_prefix_size -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+  {%- if widget_size == 0 -%}
+    {%- if page.layout == 'post' or page.layout == 'post-en' -%}
+      {%- for section in site.data.widget.sections -%}
+        {%- if section.id == 'blog' -%}{%- assign widget_section = section -%}{%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+{%- assign widget_copy = widget_section[bruno_lang] -%}
+{%- if widget_section.option and widget_copy.message -%}
+  {%- assign bruno_context_option = widget_section.option -%}
+  {%- assign bruno_context_message = widget_copy.message -%}
+{%- endif -%}
 {%- if include.offer_key and bruno_offer -%}{%- assign bruno_context_option = '' -%}{%- endif -%}
 {%- if bruno_course and bruno_context_option == 'courses' -%}
   {%- if bruno_lang == 'en' -%}
@@ -45,16 +75,20 @@
   {%- endif -%}
 {%- endif -%}
 <div class="bruno-menu{% if include.floating %} bruno-menu--floating{% endif %}" data-bruno-menu>
-  <button class="bruno-link" id="bruno-trigger-{{ bruno_id }}" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="bruno-menu-{{ bruno_id }}" commandfor="bruno-menu-{{ bruno_id }}" command="toggle-popover" data-bruno-trigger>
+  <button class="bruno-link" id="bruno-trigger-{{ bruno_id }}" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="bruno-menu-{{ bruno_id }}" commandfor="bruno-menu-{{ bruno_id }}" command="toggle-popover" data-bruno-trigger{% if include.floating %} aria-label="{{ widget_copy.title }}. {{ widget_copy.subtitle }}"{% endif %}>
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 9 9 0 0 1-4-.9L3 21l1.9-5.5a9 9 0 0 1-.9-4A8.5 8.5 0 0 1 12.5 3 8.5 8.5 0 0 1 21 11.5Z"/><path d="M8.5 11.5h8M8.5 8.5h5"/></svg>
-    {% if include.floating %}<span><strong>{{ bruno_copy.short_cta }}</strong><small>{{ bruno_copy.appointment }}</small></span>{% elsif include.short %}<span>{{ bruno_copy.short_cta }}</span>{% else %}<span>{{ bruno_copy.cta }}</span>{% endif %}
+    {% if include.floating %}<span><strong>{{ widget_copy.title }}</strong><small>{{ widget_copy.subtitle }}</small></span>{% elsif include.short %}<span>{{ bruno_copy.short_cta }}</span>{% else %}<span>{{ bruno_copy.cta }}</span>{% endif %}
     <span class="bruno-caret" aria-hidden="true"></span>
   </button>
   <div class="bruno-popover" id="bruno-menu-{{ bruno_id }}" popover="auto" data-bruno-popover>
     <div focusgroup="menu nomemory" aria-labelledby="bruno-trigger-{{ bruno_id }}">
       {%- for option in bruno_copy.options -%}
         {%- assign option_message = option.message -%}
-        {%- if option.id == bruno_context_option and bruno_context_message != '' -%}{%- assign option_message = bruno_context_message -%}{%- endif -%}
+        {%- if option.id == bruno_context_option and bruno_context_message != '' -%}
+          {%- assign option_message = bruno_context_message -%}
+        {%- elsif include.floating and widget_copy.message != '' and bruno_context_option == '' -%}
+          {%- assign option_message = widget_copy.message -%}
+        {%- endif -%}
         {%- if option.href -%}
       <a href="{{ option.href }}">{{ option.label }}</a>
         {%- else -%}

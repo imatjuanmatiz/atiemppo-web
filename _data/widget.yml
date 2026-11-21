@@ -1,0 +1,113 @@
+# Texto del widget flotante de WhatsApp.
+# El prefijo más largo gana. Si ninguno coincide, se usa default.
+# Una página puede forzar la sección con `widget: id` en su cabecera.
+# `option` es el enlace del menú cuyo mensaje de WhatsApp se ajusta a la sección.
+# El número y la dirección siguen en _data/bruno_contact.yml.
+
+default:
+  es:
+    title: "¿Hablamos de tu operación?"
+    subtitle: "Escríbenos por WhatsApp · respuesta inmediata"
+    message: "Hola, quiero hablar de mi operación."
+  en:
+    title: "Shall we talk about your operation?"
+    subtitle: "Message us on WhatsApp · we reply right away"
+    message: "Hi, I want to talk about my operation."
+
+sections:
+  - id: fletes
+    option: courses
+    prefixes:
+      - /sicetac/
+      - /sicetac-al-instante/
+      - /sicetac-api/
+      - /base-completa-sicetac/
+      - /indices-sicetac/
+      - /indice-red-sicetac/
+      - /reportes/
+      - /demos/sicetac-al-instante/
+      - /en/sicetac/
+      - /en/sicetac-al-instante/
+      - /en/sicetac-api/
+      - /en/base-completa-sicetac/
+      - /en/indices-sicetac/
+      - /en/indice-red-sicetac/
+      - /en/reportes/
+    es:
+      title: "¿Dudas sobre fletes o SICETAC?"
+      subtitle: "Pregúntale a nuestro asistente"
+      message: "Hola, tengo una pregunta sobre fletes / SICETAC"
+    en:
+      title: "Questions about freight or SICETAC?"
+      subtitle: "Ask our assistant"
+      message: "Hi, I have a question about freight rates / SICETAC"
+
+  - id: servicios
+    option: consulting
+    prefixes:
+      - /consultoria/
+      - /servicios/
+      - /experiencias/
+      - /workshop/
+      - /sesion-personalizada/
+      - /acompanamiento-ia/
+      - /inteligencia-planeacion-transporte/
+      - /en/consultoria/
+      - /en/servicios/
+      - /en/experiencias/
+      - /en/workshop/
+      - /en/sesion-personalizada/
+      - /en/acompanamiento-ia/
+      - /en/inteligencia-planeacion-transporte/
+    es:
+      title: "¿Quieres optimizar tu logística?"
+      subtitle: "Agenda una cita con Juan Pablo"
+      message: "Hola, quiero optimizar mi logística y agendar una cita con Juan Pablo."
+    en:
+      title: "Want to improve your logistics?"
+      subtitle: "Schedule a meeting with Juan Pablo"
+      message: "Hi, I want to improve my logistics and schedule a meeting with Juan Pablo."
+
+  - id: conferencias
+    option: talks
+    prefixes:
+      - /conferencias/
+      - /en/conferencias/
+    es:
+      title: "¿Buscas un conferencista?"
+      subtitle: "Agenda una charla para tu evento"
+      message: "Hola, busco un conferencista para un evento."
+    en:
+      title: "Looking for a speaker?"
+      subtitle: "Schedule a talk for your event"
+      message: "Hi, I am looking for a speaker for an event."
+
+  - id: blog
+    option: talks
+    prefixes:
+      - /blog/
+      - /en/blog/
+    es:
+      title: "¿Te sirvió este artículo?"
+      subtitle: "Conversa con nuestro asistente"
+      message: "Hola, leí un artículo y quiero conversar."
+    en:
+      title: "Was this article useful?"
+      subtitle: "Talk with our assistant"
+      message: "Hi, I read an article and I would like to talk."
+
+  - id: cursos
+    option: courses
+    prefixes:
+      - /cursos/
+      - /formacion/
+      - /en/cursos/
+      - /en/formacion/
+    es:
+      title: "¿Un curso de IA para tu equipo?"
+      subtitle: "Escríbenos por WhatsApp"
+      message: "Hola, quiero un curso de IA para mi equipo."
+    en:
+      title: "An AI course for your team?"
+      subtitle: "Message us on WhatsApp"
+      message: "Hi, I want an AI course for my team."
