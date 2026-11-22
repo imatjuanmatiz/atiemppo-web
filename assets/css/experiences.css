@@ -240,10 +240,32 @@
   line-height: 1.25;
   font-weight: 600;
 }
-.experience-method .experience-method-scope { margin-top: 24px; color: #a3a3a3; }
-.experience-method-scope h3 { margin: 0; color: #fff; font-size: 18px; }
-.experience-method-scope p { margin: 0; }
-.experience-method-scope h3 + p { margin-top: 8px; }
+.experience-method-expectations {
+  margin: 32px 0 0;
+  padding: clamp(16px, 3vw, 28px);
+  border: 1px solid #333;
+  border-radius: 12px;
+  background: #151515;
+}
+.experience-method-expectations h3, .experience-method-scope h3 {
+  margin: 0 0 12px;
+  color: #fff;
+  font-size: 18px;
+}
+.experience-method-expectations dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 24px;
+  margin: 0;
+}
+.experience-method-expectations dt { font-weight: 600; }
+.experience-method-expectations dd, .experience-method-scope p {
+  margin: 4px 0 0;
+  color: #a3a3a3;
+}
+.experience-method-scope { margin-top: 24px; }
+.experience-loop-step .experience-step-translation { color: #fff; font-weight: 600; }
+.experience-format-coverage { font-weight: 600; }
 .experience-loop {
   max-width: 840px;
   margin: 32px auto 0;
@@ -311,6 +333,7 @@
     width: 1px;
     height: auto;
   }
+  .experience-method-expectations dl { grid-template-columns: minmax(0, 1fr); }
   .experience-loop-grid {
     grid-template-columns: minmax(0, 1fr);
     grid-template-areas: "step1" "east" "step2" "south" "step3" "west" "step4" "core";

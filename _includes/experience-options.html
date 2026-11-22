@@ -1,4 +1,5 @@
 {% assign ec = site.data.experiences[include.lang] %}
+{% assign dato_offers = ec.offers | sort: 'dato_order' %}
 <section class="experience-section experience-options" id="{% if include.home %}aprender{% else %}experiencias{% endif %}" aria-labelledby="experience-options-title">
   {% if include.home %}<span class="knowledge-anchor" id="experiencias" aria-hidden="true"></span>{% endif %}
   <div class="container">
@@ -16,16 +17,25 @@
     {% endif %}
     <nav class="experience-journey" aria-label="{{ ec.route_label }}">
       <ol role="list">
-        {% for offer in ec.offers %}
+        {% for offer in dato_offers %}
         <li><a href="#formato-{{ offer.key }}"><span class="experience-stage-number">0{{ forloop.index }}</span><strong>{{ offer.stage }}</strong><span class="experience-stage-format">{{ offer.label }}</span></a></li>
         {% endfor %}
       </ol>
     </nav>
     <div class="experience-grid">
-      {% for offer in ec.offers %}
+      {% for offer in dato_offers %}
       <article class="experience-option" id="formato-{{ offer.key }}" tabindex="-1">
         <span class="experience-number" aria-hidden="true">0{{ forloop.index }}</span>
-        <div>{% if include.home and offer.key == 'conferences' %}<span class="knowledge-anchor" id="conferencias" aria-hidden="true"></span>{% endif %}<p class="experience-label">{{ offer.label }}</p><h3>{{ offer.title }}</h3>{% unless include.home %}<p>{{ offer.summary }}</p>{% endunless %}<dl class="experience-format"><div><dt>{{ ec.audience_label }}</dt><dd>{{ offer.format_audience }}</dd></div><div><dt>{{ ec.activity_label }}</dt><dd>{{ offer.format_activity }}</dd></div><div><dt>{{ ec.outcome_label }}</dt><dd>{{ offer.format_outcome }}</dd></div></dl>{% unless include.home %}<p class="experience-comparison-example"><strong>{{ ec.commercial.example_label }}:</strong> {{ offer.example.title }}</p>{% endunless %}<div class="experience-option-actions"><a class="experience-link" href="{{ ec.prefix }}{{ offer.path }}">{{ offer.link }} <span aria-hidden="true">↗</span></a><a class="experience-link" href="{{ ec.prefix }}/contacto/?servicio={{ offer.service }}">{{ offer.cta }} →</a></div></div>
+        <div>
+          {% if include.home and offer.key == 'conferences' %}<span class="knowledge-anchor" id="conferencias" aria-hidden="true"></span>{% endif %}
+          <p class="experience-label">{{ offer.label }}</p>
+          <h3>{{ offer.title }}</h3>
+          {% include experience-format-details.html key=offer.key formats=ec.dato_formats %}
+          <div class="experience-option-actions">
+            <a class="experience-link" href="{{ ec.prefix }}{{ offer.path }}">{{ offer.link }} <span aria-hidden="true">↗</span></a>
+            <a class="experience-link" href="{{ ec.prefix }}/contacto/?servicio={{ offer.service }}">{{ offer.cta }} →</a>
+          </div>
+        </div>
       </article>
       {% endfor %}
     </div>

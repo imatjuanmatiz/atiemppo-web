@@ -1,0 +1,7 @@
+{%- assign dato_format = include.formats[include.key] -%}
+<p class="experience-format-coverage">{{ dato_format.coverage }}</p>
+<dl class="experience-format">
+  <div><dt>{{ include.formats.bring_label }}</dt><dd>{{ dato_format.bring }}</dd></div>
+  <div><dt>{{ include.formats.activity_label }}</dt><dd>{{ dato_format.activity }}</dd></div>
+  <div><dt>{{ include.formats.outcome_label }}</dt><dd>{{ dato_format.outcome }}</dd></div>
+</dl>

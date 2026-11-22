@@ -1,8 +1,6 @@
 {%- assign formats_lang = include.lang | default: page.lang | default: 'es' -%}
 {%- assign ec = site.data.experiences[formats_lang] -%}
-{%- assign formats_personal = ec.personal_offer -%}
-{%- assign formats_workshop = ec.offers | where: "key", "workshop" | first -%}
-{%- assign formats_teams = ec.offers | where: "key", "teams" | first -%}
+{% assign dato_offers = ec.offers | sort: 'dato_order' %}
 {%- if formats_lang == 'en' -%}
   {%- assign rollup_alt = "ATIEMPPO roll-up for the applied AI courses. The poster says “Tú conoces tu negocio. Imagina lo que puedes hacer con IA” and shows a QR code to message Bruno." -%}
 {%- else -%}
@@ -16,9 +14,13 @@
         <h2 class="section-heading" id="courses-formats-title">{{ ec.options_title }}</h2>
       </header>
       <div class="courses-format-list">
-        {% include courses-format-card.html offer=formats_personal ec=ec lang=formats_lang %}
-        {% include courses-format-card.html offer=formats_workshop ec=ec lang=formats_lang %}
-        {% include courses-format-card.html offer=formats_teams ec=ec lang=formats_lang %}
+        {% for offer in dato_offers %}
+          {% if offer.key == 'personal' %}
+            {% include courses-format-card.html offer=ec.personal_offer ec=ec lang=formats_lang %}
+          {% else %}
+            {% include courses-format-card.html offer=offer ec=ec lang=formats_lang %}
+          {% endif %}
+        {% endfor %}
       </div>
     </div>
     <figure class="courses-rollup">
