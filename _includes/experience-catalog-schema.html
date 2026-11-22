@@ -4,7 +4,8 @@
   "name": {{ catalog.title | jsonify }},
   "numberOfItems": {{ catalog.offers.size }},
   "itemListElement": [
-    {% for offer in catalog.offers %}{
+    {% assign catalog_offers = catalog.offers | sort: 'dato_order' %}
+    {% for offer in catalog_offers %}{% assign catalog_dato_format = catalog.dato_formats[offer.key] %}{
       "@type": "ListItem", "position": {{ forloop.index }},
       "item": {
         "@type": "Service",
@@ -13,7 +14,7 @@
         "url": "https://atiemppo.com{{ catalog.prefix }}{{ offer.path }}",
         "description": {{ offer.summary | jsonify }},
         "audience": {"@type": "Audience", "audienceType": {{ offer.format_audience | jsonify }}},
-        "serviceOutput": {"@type": "Thing", "description": {{ offer.format_outcome | jsonify }}},
+        "serviceOutput": {"@type": "Thing", "description": {{ catalog_dato_format.outcome | jsonify }}},
         "provider": {"@type": "Organization", "@id": "https://atiemppo.com/#organization", "name": "ATIEMPPO S.A.S.", "url": "https://atiemppo.com/"},
         "availableChannel": {"@type": "ServiceChannel", "serviceUrl": "https://atiemppo.com{{ catalog.prefix }}/contacto/?servicio={{ offer.service }}"}
       }

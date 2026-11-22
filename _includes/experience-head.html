@@ -3,6 +3,7 @@
 {%- if page.experience == 'personal' -%}
   {%- assign detail = ec.personal_offer -%}
 {%- elsif page.experience -%}{%- assign detail = ec.offers | where: 'key', page.experience | first -%}{%- endif -%}
+{%- assign dato_detail = ec.dato_formats[detail.key] -%}
 {%- assign title = page.title | default: detail.seo_title | default: detail.label | default: ec.seo_title | default: ec.title -%}
 {%- assign description = page.description | default: detail.summary | default: ec.seo_description | default: ec.intro -%}
 <meta charset="utf-8"/>
@@ -33,7 +34,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="/assets/css/home-2026.css"/>
 <link rel="stylesheet" href="/assets/css/site-foundation.css?v=20261021"/>
-<link rel="stylesheet" href="/assets/css/experiences.css?v=20261117-juanmatiz"/>
+<link rel="stylesheet" href="/assets/css/experiences.css?v=20261122-dato"/>
 {% if page.experience == 'conferences' %}<link rel="stylesheet" href="/assets/css/conferencias-tablero.css?v=20261121-conferencias"/>{% endif %}
 <script type="application/ld+json">{
   "@context": "https://schema.org", "@type": "{% if detail %}Service{% elsif page.layout == 'contact' %}ContactPage{% else %}CollectionPage{% endif %}",
@@ -43,7 +44,7 @@
   "@id": "https://atiemppo.com{{ page.url }}#service",
   "serviceType": {{ detail.label | jsonify }},
   "audience": {"@type": "Audience", "audienceType": {{ detail.format_audience | jsonify }}},
-  "serviceOutput": {"@type": "Thing", "description": {{ detail.format_outcome | jsonify }}},
+  "serviceOutput": {"@type": "Thing", "description": {{ dato_detail.outcome | jsonify }}},
   "provider": {"@type": "Organization", "@id": "https://atiemppo.com/#organization", "name": "ATIEMPPO S.A.S.", "url": "https://atiemppo.com/"},
   "availableChannel": {"@type": "ServiceChannel", "serviceUrl": "https://atiemppo.com{{ ec.prefix }}/contacto/?servicio={{ detail.service }}"}{% elsif page.layout == 'contact' %},
   "about": {"@type": "Organization", "name": "ATIEMPPO S.A.S.", "url": "https://atiemppo.com/"}{% else %},

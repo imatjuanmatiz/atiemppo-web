@@ -19,7 +19,8 @@
         <ol role="list">
           {% for step in method.steps %}
           <li class="experience-loop-step">
-            <h3>0{{ forloop.index }} · {{ step.title }}</h3>
+            <h3>{{ step.letter }} · {% if step.translation %}<span lang="es">{{ step.title }}</span>{% else %}{{ step.title }}{% endif %}</h3>
+            {% if step.translation %}<p class="experience-step-translation">{{ step.translation }}</p>{% endif %}
             <p>{{ step.text }}</p>
           </li>
           {% endfor %}
@@ -34,12 +35,21 @@
       </div>
       <p class="experience-loop-role">{{ method.role }}</p>
     </figure>
-    <div class="experience-split experience-method-scope">
-      <p>{{ method.scope }}</p>
-      <div>
-        <h3>Bruno · {{ learning_ec.bruno_eyebrow }}</h3>
-        <p>{{ learning_ec.bruno_body }} {{ learning_ec.bruno_scope }}</p>
-      </div>
-    </div>
+    <section class="experience-method-expectations" aria-labelledby="method-expectations-title">
+      <h3 id="method-expectations-title">{{ method.expectations_title }}</h3>
+      <dl>
+        {% for expectation in method.expectations %}
+        <div>
+          <dt>{{ expectation.title }}</dt>
+          <dd>{{ expectation.text }}</dd>
+        </div>
+        {% endfor %}
+      </dl>
+    </section>
+    <section class="experience-method-scope" aria-labelledby="method-bruno-title">
+      <h3 id="method-bruno-title">Profe Bruno</h3>
+      <p>{{ learning_ec.bruno_body }} {{ learning_ec.bruno_scope }}</p>
+      <p>{{ site.data.bruno_contact[include.lang].description }}</p>
+    </section>
   </div>
 </section>

@@ -1,4 +1,5 @@
 {% assign ec = site.data.experiences[include.lang] %}
+{% assign dato_offers = ec.offers | sort: 'dato_order' %}
 {% if include.lang == 'en' %}
 ## Learning and workshops available by proposal
 
@@ -26,12 +27,18 @@ Qué se aprende: https://atiemppo.com/cursos/
 Cómo se contrata: https://atiemppo.com{{ ec.prefix }}/experiencias/
 Cada formato puede contratarse por separado. La propuesta define el alcance; este bloque no anuncia un calendario de cursos abiertos.
 {% endif %}
-{% for offer in ec.offers %}
-### {{ offer.label }}
+### {{ ec.learning_method.label }}
 
-{% if include.lang == 'en' %}Audience{% else %}Para quién{% endif %}: {{ offer.format_audience }}
-{% if include.lang == 'en' %}Activity{% else %}Qué hacemos{% endif %}: {{ offer.format_activity }}
-{% if include.lang == 'en' %}Outcome{% else %}Qué te llevas{% endif %}: {{ offer.format_outcome }}
+{{ ec.learning_method.intro }} {{ ec.learning_method.statement }}. {{ ec.learning_method.practice }}
+{% for step in ec.learning_method.steps %}- {{ step.letter }} · {{ step.title }}{% if step.translation %} ({{ step.translation }}){% endif %}: {{ step.text }}
+{% endfor %}
+{% for offer in dato_offers %}
+{% assign dato_format = ec.dato_formats[offer.key] %}
+### {{ offer.label }} · {{ dato_format.coverage }}
+
+{{ ec.dato_formats.bring_label }}: {{ dato_format.bring }}
+{{ ec.dato_formats.activity_label }}: {{ dato_format.activity }}
+{{ ec.dato_formats.outcome_label }}: {{ dato_format.outcome }}
 {% if include.lang == 'en' %}Information{% else %}Información{% endif %}: https://atiemppo.com{{ ec.prefix }}{{ offer.path }}
 {% if include.lang == 'en' %}Request a proposal{% else %}Solicitar una propuesta{% endif %}: https://atiemppo.com{{ ec.prefix }}/contacto/?servicio={{ offer.service }}
 {% if include.detail %}
@@ -68,7 +75,11 @@ Cada formato puede contratarse por separado. La propuesta define el alcance; est
 {% endfor %}
 {{ ec.commercial.scope }}
 {% endif %}
-{% if include.lang == 'en' %}Bruno provides personalised continuity between and after sessions. Access and conditions are agreed for each case; this does not promise permanent availability or ongoing human support.{% else %}Bruno aporta continuidad personalizada entre y después de las sesiones. El acceso y sus condiciones se acuerdan para cada caso; esto no promete disponibilidad permanente ni atención humana fuera de las sesiones.{% endif %}
+### {{ ec.learning_method.expectations_title }}
+{% for expectation in ec.learning_method.expectations %}- {{ expectation.title }}. {{ expectation.text }}
+{% endfor %}
+{{ ec.bruno_body }} {{ ec.bruno_scope }}
+{{ site.data.bruno_contact[include.lang].description }}
 {% if include.detail and ec.evidence %}
 ### {{ ec.evidence.title }}
 

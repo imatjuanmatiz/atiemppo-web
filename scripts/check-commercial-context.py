@@ -75,8 +75,9 @@ for name, lang, full in files:
             continue
         soup = BeautifulSoup(offer_file.read_text(), "html.parser")
         visible_text = normalized(soup.get_text(" ", strip=True))
-        for field in ("format_audience", "format_activity", "format_outcome"):
-            value = normalized(offer[field])
+        dato_format = ec["dato_formats"][offer["key"]]
+        for field in ("coverage", "bring", "activity", "outcome"):
+            value = normalized(dato_format[field])
             check(value in section_text and value in visible_text, f"{label}: {field} agrees across text context and HTML")
         request_matches = []
         for anchor in soup.select('a[href]'):
