@@ -108,7 +108,7 @@
   .knowledge-about-grid { gap: 16px; }
 }
 .knowledge-start-grid, .knowledge-path-grid { display: grid; gap: 16px; }
-.knowledge-start-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.knowledge-start-grid { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
 .knowledge-path-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 24px; }
 .knowledge-start {
   display: flex; flex-direction: column; align-items: flex-start; gap: 10px;
