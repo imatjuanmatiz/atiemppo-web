@@ -69,6 +69,8 @@ El acceso se revoca desde la administración de la empresa. Escribir desde un n�
 
 La intención es que una consulta rápida y un análisis detallado trabajen sobre la misma información, con los mismos periodos y permisos. WhatsApp sirve para resolver la pregunta del momento; la plataforma permite examinar el conjunto de la red y conservar su historia.
 
+Si esas personas van a practicarlo juntas, el curso está en [IA para equipos de trabajo](/cursos/ia-equipos-de-trabajo/).
+
 ## Qué podemos preguntar sobre nuestra red
 
 La plataforma busca facilitar preguntas que hoy suelen exigir reunir varios archivos:
