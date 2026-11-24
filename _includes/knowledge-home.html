@@ -67,7 +67,7 @@
     <div class="knowledge-band-copy">
       <header class="knowledge-section-heading">
         <h2 id="courses-title">{{ kh.courses_title }}</h2>
-        <p>{{ kh.courses_intro }}</p>
+        <p>{% if kh.courses_intro_url %}<a href="{{ kh.courses_intro_url }}">{{ kh.courses_intro }}</a>{% else %}{{ kh.courses_intro }}{% endif %}</p>
       </header>
       <div class="knowledge-path-grid">
         {% if kh_lang == 'en' %}
