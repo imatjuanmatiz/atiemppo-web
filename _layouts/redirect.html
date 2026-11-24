@@ -7,6 +7,7 @@
 <!DOCTYPE html>
 <html lang="{{ redirect_lang }}">
 <head>
+{% include analytics.html %}
 <meta charset="utf-8">
 <title>{% if redirect_lang == 'en' %}Redirecting…{% else %}Redirigiendo…{% endif %}</title>
 <link rel="canonical" href="{{ dest | escape }}">

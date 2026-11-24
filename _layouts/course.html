@@ -54,7 +54,9 @@
 {% assign course = course_catalog | where: "key", page.course | first %}
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: 'es' }}">
-<head>{% include course-head.html %}{% unless page.course %}
+<head>
+{% include analytics.html %}
+{% include course-head.html %}{% unless page.course %}
 <link rel="stylesheet" href="/assets/css/courses-index.css?v=20261115-formatos">
 <link rel="stylesheet" href="/assets/css/service-entry.css"/>
 {% endunless %}</head>

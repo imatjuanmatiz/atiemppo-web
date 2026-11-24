@@ -6,6 +6,19 @@ render_with_liquid: false
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<!-- Google tag (gtag.js). Inlined because render_with_liquid is false; same snippet as _includes/analytics.html -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JD74ZDWT4M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JD74ZDWT4M', {
+    anonymize_ip: true,
+    allow_google_signals: false,
+    allow_ad_personalization_signals: false
+  });
+</script>
+<script src="/assets/js/analytics-events.js?v=20261124-ga4" defer></script>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Insignia Impact | ATIEMPPO</title>

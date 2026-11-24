@@ -3,7 +3,9 @@
 {% if page.experience == 'personal' %}{% assign detail = ec.personal_offer %}{% endif %}
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
-<head>{% include experience-head.html %}{% if page.subtitle %}<style>.experience-subtitle{margin:16px 0 0;max-width:36ch;color:var(--atiemppo-muted);font-size:1.125rem;line-height:1.45}.experience-opening .hero-copy>.experience-subtitle+.experience-lead{margin-top:12px}</style>{% endif %}</head>
+<head>
+{% include analytics.html %}
+{% include experience-head.html %}{% if page.subtitle %}<style>.experience-subtitle{margin:16px 0 0;max-width:36ch;color:var(--atiemppo-muted);font-size:1.125rem;line-height:1.45}.experience-opening .hero-copy>.experience-subtitle+.experience-lead{margin-top:12px}</style>{% endif %}</head>
 <body class="experience-page">
 {% include header.html %}
 <main id="main-content">
