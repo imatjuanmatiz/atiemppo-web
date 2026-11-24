@@ -224,6 +224,8 @@ Desde el mismo portal puedes revocar conexiones y claves, revisar el saldo o con
 
 Te invitamos a **[entrar a SICETAC al Instante y conectar tu agente](https://clientes.atiemppo.com/sicetac-al-instante)**. Si necesitas acompañamiento durante la configuración, puedes comunicarte con nosotros a través de [Soporte ATIEMPPO](https://atiemppo.com/soporte/).
 
+Si quieres definir la tarea y probar el agente con revisión humana, el curso está en [agentes de IA](/cursos/agentes-de-ia/).
+
 [Términos de SICETAC al Instante](https://atiemppo.com/legal/terminos/sicetac-al-instante/) · [Tratamiento de datos personales](https://clientes.atiemppo.com/privacidad)
 
 ### Fuentes y fecha de comprobación
