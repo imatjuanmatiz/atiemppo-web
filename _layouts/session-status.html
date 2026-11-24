@@ -1,7 +1,9 @@
 {%- assign ec = site.data.experiences[page.lang] -%}
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
-<head>{% include experience-head.html %}{% unless page.session_status == 'overview' %}<meta name="robots" content="noindex,follow"/>{% endunless %}</head>
+<head>
+{% include analytics.html %}
+{% include experience-head.html %}{% unless page.session_status == 'overview' %}<meta name="robots" content="noindex,follow"/>{% endunless %}</head>
 <body class="experience-page">
 {% include header.html %}
 <main id="main-content">
