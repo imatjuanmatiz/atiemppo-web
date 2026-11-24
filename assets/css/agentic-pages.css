@@ -72,6 +72,13 @@ section[id]{scroll-margin-top:88px}
 .architecture-item h3{margin:0 0 4px;font:600 16px var(--display)}
 .architecture-item p{margin:0;color:#a8b8cc;font-size:13.5px;line-height:1.5}
 .page-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:30px}
+.offer-points{display:grid;gap:36px;max-width:760px}
+.offer-points h2{margin:0;font-family:var(--display);font-weight:700;font-size:clamp(26px,3vw,34px);letter-spacing:-.6px;line-height:1.15}
+.offer-points p{margin:12px 0 0;color:var(--muted);font-size:17px;line-height:1.6}
+.offer-points a{color:var(--navy);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.offer-points a:hover{color:var(--green-d)}
+.case-list{display:grid;gap:8px;margin:14px 0 0;padding:0;list-style:none}
+.offer-points a:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
 .text-link{color:var(--green-l);font-size:13px;font-weight:700}
 
 /* BANCO DE CONOCIMIENTO · COMPOSICIÓN APROBADA EN SITES */
