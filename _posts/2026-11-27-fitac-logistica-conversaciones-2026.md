@@ -16,7 +16,7 @@ lang: es
 Hay fotografías que sirven para recordar un evento. Otras ayudan a leer el trabajo que ocurre detrás de un sector. Esta imagen, tomada durante **FITAC**, muestra una escena sencilla y poderosa: personas reunidas, credenciales al cuello, una conversación que se graba y la pausa necesaria para encontrarse en medio de una agenda intensa.
 
 <figure>
-<img src="/assets/images/blog/fitac-2026/01-foto-fitac.jpg" alt="Grupo de asistentes reunido durante FITAC alrededor de una conversación sobre transporte y logística" width="900" height="1600" fetchpriority="high" decoding="async">
+<img src="/assets/images/blog/fitac-2026/01-foto-fitac-crop.jpg" alt="Grupo de asistentes reunido durante FITAC alrededor de una conversación sobre transporte y logística" width="900" height="1125" style="display:block;width:100%;max-width:700px;height:auto;margin:0 auto" fetchpriority="high" decoding="async">
 <figcaption>Una conversación durante FITAC. Foto: Juan Pablo Matiz.</figcaption>
 </figure>
 
